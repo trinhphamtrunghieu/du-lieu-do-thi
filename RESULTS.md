@@ -140,7 +140,36 @@ Trên ARO, CLIP gần như đoán ngẫu nhiên (~50% với 2 lựa chọn), cò
 - Xoá bằng chứng làm đổi quyết định ở 11,1% mục.
 - Validity (cả hai đối tượng khớp GT, IoU ≥ 0,5): 54,9%.
 
-**Notebook gộp:** `merged/Project3_Merged.ipynb` chạy cả hai pipeline trong một lần. Phần A là `du-lieu-do-thi` (Flickr8k + Action Genome, ViT-L/14); phần B là notebook này. Thời gian khoảng 7–8 giờ trên T4. Metadata Kaggle nằm ở `merged/kernel-metadata.json`.
+**Notebook gộp:** `merged/Project3_Merged.ipynb` chạy cả ba phần trong một lần, metadata Kaggle ở `merged/kernel-metadata.json`.
+- Phần A: `du-lieu-do-thi` (Flickr8k + Action Genome, ViT-L/14).
+- Phần B: notebook ảnh + video ở trên.
+- Phần C: Level 4(b) v2-graphfix, nằm ở mục 4u, xem mục dưới.
+
+Thời gian khoảng 7–8 giờ trên T4 nếu output của phần C đã được Add Input. Nếu chưa, phần C phải chạy lại đầy đủ và tổng lên khoảng 10 giờ.
+
+## Nhánh video MSVD / MSR-VTT — Level 4(b) v2-graphfix (`level4b_v2_graphfix/`)
+
+Notebook `lamvo30ai/project03-level4b-v2-graphfix` (version 1), text → video. Nó dựng đồ thị v3 có vị từ (agent / object / svo / prep), mô hình TypedSAGE và QC-RGAT, tagger học từ caption train và cạnh ConceptNet. Nó cũng tạo cache đặc trưng frame CLIP ViT-L/14 mà notebook video v5 (mục 4v) dùng lại.
+
+Số dưới đây đọc từ `level4b_v2_graphfix/results/graph_experiment_results.csv` và `graph_confirmatory_tests.csv`, là output thật của lần chạy trên Kaggle (khoảng 2,4 giờ).
+
+| Tập | n truy vấn / video | Mô hình | R@1 | R@10 | MRR |
+| --- | --- | --- | --- | --- | --- |
+| MSR-VTT fresh1k (xác nhận) | 20.000 / 1.000 | CLIP | 38,3% | 71,9% | 0,4960 |
+| | | QC-RGAT, đồ thị đầy đủ (G3) | 39,1% | 73,2% | **0,5059** |
+| | | Chỉ cạnh contains (G1) | 39,3% | 73,4% | 0,5076 |
+| | | + ConceptNet (G9) | 39,1% | 73,3% | 0,5062 |
+| MSVD test (thăm dò, lần nhìn test thứ 6) | 27.763 / 670 | CLIP | 47,5% | 82,0% | 0,5931 |
+| | | QC-RGAT, đồ thị đầy đủ (G3) | 48,7% | 84,0% | **0,6082** |
+| | | Chỉ cạnh contains (G1) | 48,9% | 84,1% | 0,6097 |
+
+**Đọc kết quả:**
+- Trên MSR-VTT (tập xác nhận), đồ thị hơn CLIP +0,0099 MRR [+0,0065; +0,0133], có ý nghĩa sau hiệu chỉnh Holm. Trên MSVD test, đồ thị hơn CLIP +0,015 [+0,009; +0,021].
+- Các cạnh quan hệ không giúp: bản chỉ dùng cạnh contains còn nhỉnh hơn bản đầy đủ (−0,0017 trên MSR-VTT). Đúng vị từ hay vị từ bị xáo, topology thật hay đã đi dây lại, có hay không có ConceptNet đều không khác biệt có ý nghĩa.
+- Nhóm truy vấn gián tiếp (4.089 caption): đồ thị hơn CLIP +0,0117 MRR [+0,0075; +0,0158].
+- XAI: xoá phần giải thích làm tụt hạng ở 50% truy vấn, so với 0% khi xoá ngẫu nhiên.
+
+Kết luận đầy đủ: `level4b_v2_graphfix/results/level4b_conclusions.md`.
 
 **Cách chạy riêng phần B:** xem `image_video_pipeline/HUONG_DAN_CHAY_VI.md`. Cần GPU T4, Internet, 3 dataset VG / COCO và notebook nguồn `lamvo30ai/project03-level4b-v2-graphfix` cho cache video; tổng khoảng 3 giờ.
 
