@@ -102,6 +102,46 @@ CLIP trên AG chỉ đạt R@1 10,4% / R@10 31,3% (Flickr8k: 70,6% / 96,9%). Lý
 | 2 | Nhãn linear probe, bộ ba cấp ảnh, bộ quan hệ khó, sửa fidelity |
 | 1 | Bản gốc |
 
+## Nhánh Visual Genome / ARO / SugarCrepe / MSVD (notebook `image_video_pipeline/`)
+
+Notebook `image_video_pipeline/Project3_Final_Image_Video.ipynb` là một pipeline riêng, bản Kaggle gốc `lamvo30ai/project3-full-pipeline` (version 8). Nó dùng **scene graph Visual Genome (GT) và scene graph RelTR** thay cho đồ thị của notebook `du-lieu-do-thi`. Nội dung:
+
+- **TN1:** văn bản → ảnh trên VG + COCO, CLIP top-100 → điểm đường đi, cùng GraphSAGE và SCENIR.
+- **TN2:** ảnh → caption trên ARO VG-Relation và SugarCrepe.
+- **TN2b:** cạnh hình học trên COCO-spatial.
+- **XAI:** fidelity, lật ảnh, validity, sparsity.
+- **Video MSVD:** CLIP + PE-Core + đồ thị bằng chứng + Qwen2.5-VL.
+
+**Lưu ý về số liệu:** file nộp không kèm output. Các số dưới đây là hằng `REF` ghi trong notebook (cell 2), là "số của các lần chạy riêng trước, để đối chiếu tái lập". Chưa có bản chạy lại trong repo này. Số của TN1b (GraphSAGE), TN1c (SCENIR), TN2b (COCO-spatial) và video MSVD chỉ có sau khi chạy notebook (`p3_out/RESULTS.md`).
+
+**TN1 — văn bản → ảnh, full-gallery, Visual Genome (MRR):**
+
+| CLIP | G-full | G-obj (chỉ đối tượng) | G-rand (cạnh ngẫu nhiên) | G-shuf (xáo) |
+| --- | --- | --- | --- | --- |
+| 0,7182 | 0,7212 | 0,7219 | 0,7174 | 0,7200 |
+
+Đồ thị chỉ tăng khoảng +0,003 MRR. Bản chỉ dùng đối tượng ngang bản đầy đủ, và cạnh ngẫu nhiên / xáo gần bằng CLIP. Kết quả này cùng xu hướng với Flickr8k ở trên: khi CLIP đã mạnh và đồ thị không thêm thông tin mới, mức tăng rất nhỏ.
+
+**TN2 — ảnh → caption đúng, độ chính xác (%):**
+
+| Nhóm | CLIP | Chỉ đồ thị | CLIP + đồ thị |
+| --- | --- | --- | --- |
+| ARO – toàn bộ | 50,1 | 65,8 | **66,0** |
+| ARO – quan hệ không gian | 49,7 | 66,3 | **66,7** |
+| ARO – vị từ khác | 50,7 | 66,3 | 65,2 |
+| SugarCrepe – thay quan hệ | 69,9 | 54,4 | **70,3** |
+| SugarCrepe – đổi chỗ đối tượng | 63,5 | 49,7 | 61,3 |
+
+Trên ARO, CLIP gần như đoán ngẫu nhiên (~50% với 2 lựa chọn), còn đồ thị RelTR tăng lên khoảng 66% (+16 điểm). Trên SugarCrepe, đồ thị một mình kém CLIP, và kết hợp chỉ giúp nhẹ ở nhóm thay quan hệ.
+
+**XAI (ARO, toàn bộ):**
+- Độ chính xác của đồ thị trên tập XAI: 85,7%.
+- Lật ảnh trái–phải làm đồ thị đảo quyết định ở 88,1% mục.
+- Xoá bằng chứng làm đổi quyết định ở 11,1% mục.
+- Validity (cả hai đối tượng khớp GT, IoU ≥ 0,5): 54,9%.
+
+**Cách chạy:** xem `image_video_pipeline/HUONG_DAN_CHAY_VI.md`. Cần GPU T4, Internet, 3 dataset VG / COCO và notebook nguồn `lamvo30ai/project03-level4b-v2-graphfix` cho cache video; tổng khoảng 3 giờ.
+
 ## Hạn chế và việc tiếp theo
 
 - Mọi mức tăng cần gallery có chú thích của con người.
@@ -111,5 +151,7 @@ CLIP trên AG chỉ đạt R@1 10,4% / R@10 31,3% (Flickr8k: 70,6% / 96,9%). Lý
 - Đang chạy: bản ViT-H/14 (Kaggle version 11) để so cùng backbone.
 
 ## Nguồn
+
+Nhánh Visual Genome / ARO / SugarCrepe: hằng `REF` trong `image_video_pipeline/Project3_Final_Image_Video.ipynb` (cell 2).
 
 Output của notebook Kaggle `hieutrinh123/du-lieu-do-thi` (version 4, 7, 8, 9): `results/` (Flickr8k) và `output/action_genome/results/` (Action Genome) — `main_results_with_controls.csv`, `match_vs_clip.csv`, `match_paired.csv`, `relational_hard_negatives_match*.csv`, `counterfactual_verb_swap_match*.csv`, `paired_graph_vs_clip.csv`.
