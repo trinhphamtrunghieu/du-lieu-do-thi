@@ -140,7 +140,9 @@ Trên ARO, CLIP gần như đoán ngẫu nhiên (~50% với 2 lựa chọn), cò
 - Xoá bằng chứng làm đổi quyết định ở 11,1% mục.
 - Validity (cả hai đối tượng khớp GT, IoU ≥ 0,5): 54,9%.
 
-**Cách chạy:** xem `image_video_pipeline/HUONG_DAN_CHAY_VI.md`. Cần GPU T4, Internet, 3 dataset VG / COCO và notebook nguồn `lamvo30ai/project03-level4b-v2-graphfix` cho cache video; tổng khoảng 3 giờ.
+**Notebook gộp:** `merged/Project3_Merged.ipynb` chạy cả hai pipeline trong một lần. Phần A là `du-lieu-do-thi` (Flickr8k + Action Genome, ViT-L/14); phần B là notebook này. Thời gian khoảng 7–8 giờ trên T4. Metadata Kaggle nằm ở `merged/kernel-metadata.json`.
+
+**Cách chạy riêng phần B:** xem `image_video_pipeline/HUONG_DAN_CHAY_VI.md`. Cần GPU T4, Internet, 3 dataset VG / COCO và notebook nguồn `lamvo30ai/project03-level4b-v2-graphfix` cho cache video; tổng khoảng 3 giờ.
 
 ## Hạn chế và việc tiếp theo
 
