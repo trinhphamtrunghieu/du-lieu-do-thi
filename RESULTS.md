@@ -9,6 +9,22 @@ Cập nhật 16/11/2026. Số liệu là kết quả trên tập **TEST** của 
 - Xáo node giữa các mẫu làm mất mức tăng trên cả hai dataset ⇒ mức tăng đến từ **nội dung đúng** của đồ thị, không phải do thêm tham số.
 - Điều kiện: gallery có **chú thích của con người** (caption 1–4 cho Flickr8k; nhãn Action Genome + Charades). Đồ thị sinh tự động từ ảnh (tagger, linear probe, BLIP) chỉ giúp tối đa +0,007 trên Flickr8k ViT-L.
 
+## Phương pháp (mô hình cuối, version 9)
+
+1. **Tìm ứng viên bằng CLIP.** Mã hoá truy vấn và ảnh/video (video = trung bình các frame, L2) bằng CLIP ViT-L/14 (`laion2b_s32b_b82k`), lấy top-100 ứng viên.
+2. **Dựng đồ thị cảnh cho mỗi ảnh/video.** Node: đối tượng, quan hệ người–vật dạng bộ ba ⟨người, cầm, cốc⟩, khái niệm WordNet; cạnh mức lớp (scene / related / isa) chỉ tính trên tập train.
+   - **Action Genome:** bổ sung node hành động ("open door"), node bối cảnh và bộ ba thời gian ⟨a trước b⟩ từ nhãn Charades.
+   - **Flickr8k:** node lấy từ caption người viết 1–4; truy vấn là caption 0, không dùng làm node (kịch bản gallery đã được chú thích).
+3. **GNN + đường đi trên đồ thị.** GraphSAGE 2 lớp (256 chiều), huấn luyện InfoNCE trên truy vấn train, CLIP đóng băng. Thêm điểm đường đi từ khái niệm trong truy vấn đến ảnh/video theo 7 mẫu đường đi (P0–P6); các đường đi này cũng dùng để sinh giải thích.
+4. **Nhánh khớp truy vấn ↔ node đồ thị** (version 8–9). Học ridge dạng đối ngẫu, chỉ trên tập train, từ đặc trưng truy vấn [TF-IDF 1–2 gram ⊕ CLIP-text] sang vector node (IDF + L2) của ảnh/video đúng. Điểm khớp s_match(q, v) = ŷ_q · y_v. Dùng để:
+   - kéo thêm ứng viên vào top-100: xếp hạng bước đầu bằng z(CLIP) + γ·z(s_match);
+   - cộng vào điểm cuối với trọng số β.
+   Khối node bộ ba có trọng số riêng w_tri ∈ {0; 0,25; 0,5; 1}, chọn trên val bằng match-only; val chọn w_tri = 0 ở mọi lần chạy (quan hệ vẫn được dùng qua GNN).
+5. **Kết hợp điểm.** Điểm cuối = (1 − β)·[α·z(CLIP) + (1 − α)·(λ·z(GNN) + (1 − λ)·z(đường đi))] + β·z(s_match), z = chuẩn hoá theo từng truy vấn. α, λ, λ_ridge, γ, β chọn trên val.
+6. **Đánh giá.** Tập test, 3 seed; chỉ số R@1 (độ chính xác top-1), R@10, MRR; kiểm định bootstrap cặp theo truy vấn (10.000 lần). Đối chứng: xáo node / nhãn hành động giữa các mẫu, bỏ node hành động, bỏ GNN (CLIP + Match), bỏ cạnh quan hệ, bỏ cạnh mức lớp; bộ truy vấn quan hệ khó và truy vấn đổi động từ.
+
+**Cách đọc chỉ số:** R@1 là độ chính xác top-1 (tỉ lệ truy vấn có đáp án đúng ở hạng 1); R@10 là top-10 accuracy; MRR là trung bình 1/hạng của đáp án đúng, không phải tỉ lệ phần trăm.
+
 ## So sánh với các bản trước (TEST)
 
 | Bộ dữ liệu / chỉ số | CLIP | v2 | v4 | v5 | v7 | v8 | v9 (cuối) |
