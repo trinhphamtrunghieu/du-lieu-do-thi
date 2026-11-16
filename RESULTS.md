@@ -62,6 +62,24 @@ Cột v2–v9 là version notebook trên Kaggle; v9 là CLIP + Graph + Match, c�
 
 ViT-L: CLIP + Graph + Match hơn CLIP +0,033 [+0,018; +0,048], nhưng không hơn CLIP + Graph (+0,003, n.s.). ViT-B: hơn CLIP +0,072 [+0,054; +0,090].
 
+## Cùng mô hình với backbone CLIP ViT-H/14 (version 11)
+
+Code giữ nguyên như version 9, chỉ đổi backbone sang `ViT-H-14` (`laion2b_s32b_b79k`). CSV đầy đủ nằm trong `results/vit-h14/`.
+
+| Tập | Mô hình | R@1 | R@10 | MRR | Δ MRR so với CLIP (95% CI) |
+| --- | --- | --- | --- | --- | --- |
+| Action Genome | CLIP | 12,2% | 35,5% | 0,198 | — |
+| | CLIP + Graph | 36,0% | 65,2% | 0,458 | +0,260 [+0,244; +0,277] |
+| | CLIP + Match (không GNN) | 45,6% | 82,0% | 0,583 | +0,385 [+0,364; +0,406] |
+| | **CLIP + Graph + Match** | **54,6%** | **86,8%** | **0,661 ± 0,002** | **+0,463 [+0,443; +0,483]** |
+| Flickr8k | CLIP | 73,1% | 97,0% | 0,820 | — |
+| | CLIP + Graph | 76,4% | 97,2% | 0,842 | +0,022 [+0,010; +0,035] |
+| | **CLIP + Graph + Match** | **76,3%** | **97,4%** | **0,843 ± 0,009** | **+0,023 [+0,010; +0,037]** |
+
+- So với ViT-L/14: CLIP mạnh hơn (Action Genome 0,171 → 0,198; Flickr8k 0,800 → 0,820). Mô hình cuối cũng cao hơn nhẹ: Action Genome 0,650 → 0,661, Flickr8k 0,833 → 0,843.
+- Mức tăng nhờ đồ thị gần như giữ nguyên trên Action Genome (+0,46 đến +0,48). Trên Flickr8k, mức tăng giảm từ +0,033 xuống +0,023, vì CLIP đã mạnh hơn nên đồ thị còn ít chỗ để bù.
+- Đối chứng: xáo nhãn hành động hạ Action Genome còn 0,453 (−0,208); xáo node Flickr8k còn 0,823, ngang CLIP. Bộ quan hệ khó của Action Genome: 0,965 so với CLIP 0,673. ΔRR khi đổi động từ: 0,100 (CLIP 0,037).
+
 ## Thành phần nào đóng góp (Action Genome)
 
 So mô hình cuối (MRR 0,650) với từng cấu hình bị bớt một thành phần, trên cùng truy vấn test:
@@ -93,7 +111,7 @@ CLIP trên AG chỉ đạt R@1 10,4% / R@10 31,3% (Flickr8k: 70,6% / 96,9%). Lý
 
 | Version Kaggle | Thay đổi chính |
 | --- | --- |
-| 11 | Như v9, backbone CLIP ViT-H/14 (đang chạy) |
+| 11 | Như v9, backbone CLIP ViT-H/14 (Action Genome MRR 0,661; Flickr8k 0,843) |
 | 9 | Tách khối node bộ ba trong nhánh khớp, trọng số chọn trên val |
 | 8 | Nhánh khớp truy vấn↔node (ridge TF-IDF + CLIP → vector node), bổ sung ứng viên và cộng vào điểm cuối |
 | 7 | AG: node hành động, bối cảnh, bộ ba thời gian từ Charades; Flickr8k: node từ caption người viết 1–4 |
@@ -179,7 +197,7 @@ Kết luận đầy đủ: `level4b_v2_graphfix/results/level4b_conclusions.md`.
 - Flickr8k: đồ thị vẫn thua CLIP ở bộ quan hệ khó; 16 truy vấn gián tiếp bị tụt.
 - Nhánh khớp coi node như túi từ ⇒ kém nhạy với động từ hơn GNN.
 - Phần 4 (MSVD → MSR-VTT) chưa chạy lại với các cải tiến mới (kết quả cũ: CLIP 0,505 → 0,514).
-- Đang chạy: bản ViT-H/14 (Kaggle version 11) để so cùng backbone.
+- Đang chạy: notebook gộp ba phần (Kaggle `hieutrinh123/project3-merged`) để có số chạy thật cho nhánh Visual Genome / ARO / SugarCrepe / MSVD.
 
 ## Nguồn
 
