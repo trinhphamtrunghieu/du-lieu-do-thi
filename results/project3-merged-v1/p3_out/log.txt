@@ -1,0 +1,2 @@
+[     0.0s] Chế độ REAL | out=/kaggle/working/p3_out
+[     2.8s] VAL 15128 ảnh | DEV-G0 4752 ảnh (TN1)

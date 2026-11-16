@@ -1,0 +1,9 @@
+{
+  "annotation": "oracle_grams",
+  "vlm": "caption ng\u01b0\u1eddi vi\u1ebft 1\u20134",
+  "captions_per_image": 4,
+  "mean_nodes_per_image": 36.95025,
+  "mean_triples_per_image": 4.502,
+  "test_query_gram_coverage": 0.42562979327348693,
+  "test_query_triple_hit": 0.18848167539267016
+}
