@@ -1,0 +1,253 @@
+{
+  "canary": {
+    "canary": "flamingo –knit→ accordion",
+    "splits": [
+      "test",
+      "ext"
+    ],
+    "n_videos": 80,
+    "leak_vocab": [],
+    "leak_relations": [],
+    "leak_predicates": [],
+    "positive_control_detected": true
+  },
+  "invariance": {
+    "vocab": true,
+    "relations": true,
+    "predicate_vocab": true,
+    "tagger_selection": true,
+    "tags": true,
+    "taxonomy": true,
+    "inventory": true,
+    "graph": true,
+    "annotation_sample": true,
+    "automatic_verification": true
+  },
+  "guards": {
+    "test_before_freeze_blocked": true,
+    "test→gnn_train_blocked": true,
+    "test→tune_blocked": true,
+    "test→vocab_blocked": true,
+    "test→relations_blocked": true,
+    "test→annotation_blocked": true,
+    "test→agreement_blocked": true,
+    "test_eval_before_freeze_blocked": true,
+    "ext_before_freeze_blocked": true,
+    "ext→gnn_train_blocked": true,
+    "ext→tune_blocked": true,
+    "ext→vocab_blocked": true,
+    "ext→relations_blocked": true,
+    "ext→annotation_blocked": true,
+    "ext→agreement_blocked": true,
+    "ext_eval_before_freeze_blocked": true,
+    "val→gnn_train_blocked": true,
+    "val→relations_blocked": true,
+    "train→tune_blocked": true
+  },
+  "inventory": {
+    "n_graphs": 14,
+    "node_counts": [
+      4246
+    ],
+    "same_inventory": true,
+    "param_counts_by_pred_mode": {
+      "none": [
+        2622762
+      ],
+      "clip": [
+        3343914
+      ],
+      "clip_adapt": [
+        3541418
+      ]
+    }
+  },
+  "schema": {
+    "violations": {},
+    "n_checked": 33229
+  },
+  "path_identity": {
+    "weighted": {
+      "pairs": 591,
+      "mismatches": 0,
+      "recompute_maxdiff": 0.0,
+      "predicate_paths": 0,
+      "predicate_invalid": 0,
+      "negative_control_detected": 0
+    },
+    "count": {
+      "pairs": 591,
+      "mismatches": 0,
+      "recompute_maxdiff": 0.0,
+      "predicate_paths": 0,
+      "predicate_invalid": 0,
+      "negative_control_detected": 0
+    },
+    "degnorm": {
+      "pairs": 591,
+      "mismatches": 0,
+      "recompute_maxdiff": 0.0,
+      "predicate_paths": 0,
+      "predicate_invalid": 0,
+      "negative_control_detected": 0
+    },
+    "dedup": {
+      "pairs": 591,
+      "mismatches": 0,
+      "recompute_maxdiff": 0.0,
+      "predicate_paths": 0,
+      "predicate_invalid": 0,
+      "negative_control_detected": 0
+    },
+    "pred_match": {
+      "pairs": 591,
+      "mismatches": 0,
+      "recompute_maxdiff": 0.0,
+      "predicate_paths": 123,
+      "predicate_invalid": 0,
+      "negative_control_detected": 123
+    }
+  },
+  "mp_weights": {
+    "binary": {
+      "weight_changes_output": false,
+      "zero_weight_equals_edge_removed": false,
+      "isolated_nodes_finite": true,
+      "edge_order_invariant": true,
+      "grad_finite": true,
+      "matches_formula": true,
+      "scale_invariant": true,
+      "as_designed": true
+    },
+    "weighted_mean": {
+      "weight_changes_output": true,
+      "zero_weight_equals_edge_removed": true,
+      "isolated_nodes_finite": true,
+      "edge_order_invariant": true,
+      "grad_finite": true,
+      "matches_formula": true,
+      "scale_invariant": true,
+      "as_designed": true
+    },
+    "weighted_symnorm": {
+      "weight_changes_output": true,
+      "zero_weight_equals_edge_removed": true,
+      "isolated_nodes_finite": true,
+      "edge_order_invariant": true,
+      "grad_finite": true,
+      "matches_formula": true,
+      "scale_invariant": true,
+      "as_designed": true
+    }
+  },
+  "predicate_forward": {
+    "none": {
+      "max_change": 7.450580596923828e-08,
+      "finite": true
+    },
+    "clip": {
+      "max_change": 0.008144865743815899,
+      "finite": true
+    },
+    "clip_adapt": {
+      "max_change": 0.01119985245168209,
+      "finite": true
+    },
+    "predicate_used_as_designed": true,
+    "two_predicates": {
+      "predicates": [
+        "ride",
+        "feed"
+      ],
+      "message_diff": 0.019709959626197815,
+      "differ": true
+    }
+  },
+  "ablations": {
+    "mask:none": true,
+    "mask:no_scene": true,
+    "mask:no_related": true,
+    "mask:no_taxonomy": true,
+    "mask:contains_only": true,
+    "mask:no_roles": true,
+    "mask:no_svo_prep": true,
+    "policy:support": true,
+    "policy:agreement": true,
+    "pred_mode:none_has_no_predicate_params": true,
+    "pred_mode:clip_has_predicate_params": true,
+    "pred_mode:clip_no_adapter": true,
+    "path:weighted_has_no_P1m": true,
+    "path:pred_match_has_P1m": true,
+    "path:pred_match_same_other_patterns": true
+  },
+  "inductive": {
+    "test:inductive": {
+      "symbolic_changed": 5.960464477539063e-08,
+      "other_video_changed": 2.9802322387695312e-08,
+      "own_video_changed": 0.19322744011878967,
+      "all_finite": true
+    },
+    "test:transductive": {
+      "symbolic_changed": 0.054198287427425385,
+      "other_video_changed": 2.9802322387695312e-08,
+      "own_video_changed": 0.14447693526744843,
+      "all_finite": true
+    },
+    "ext:inductive": {
+      "symbolic_changed": 7.450580596923828e-08,
+      "other_video_changed": 3.725290298461914e-08,
+      "own_video_changed": 0.18422383069992065,
+      "all_finite": true
+    },
+    "ext:transductive": {
+      "symbolic_changed": 0.06967401504516602,
+      "other_video_changed": 2.60770320892334e-08,
+      "own_video_changed": 0.15243670344352722,
+      "all_finite": true
+    },
+    "edges": {
+      "train": 28876,
+      "transductive": 56740,
+      "inductive": 42808
+    }
+  },
+  "v4_decomposition": {
+    "T1": {
+      "queries": 30,
+      "relation_terms": 2926,
+      "max_abs_diff": 1.5874775272095576e-08,
+      "deletions": 30,
+      "deletion_max_abs_diff": 1.3969838619232178e-08
+    },
+    "T2": {
+      "queries": 30,
+      "relation_terms": 82676,
+      "max_abs_diff": 5.054996421449687e-08,
+      "deletions": 30,
+      "deletion_max_abs_diff": 1.0778057912830263e-07
+    }
+  },
+  "v4_predicate_query": {
+    "pred_change_use_pred=True": 0.25128698348999023,
+    "pred_change_use_pred=False": 0.0,
+    "two_queries_attention_diff_qcond=True": 0.4770851731300354,
+    "two_queries_attention_diff_qcond=False": 0.0,
+    "pred_shuffle_changes_match": 8564.7119140625,
+    "pred_shuffle_same_topology": true
+  },
+  "v4_inductive": {
+    "test": {
+      "other_video_changed": 0.0,
+      "own_video_changed": 1.1645565032958984,
+      "rerun_noise": 1.4901161193847656e-08
+    },
+    "ext": {
+      "other_video_changed": 3.725290298461914e-09,
+      "own_video_changed": 1.3298283815383911,
+      "rerun_noise": 1.4901161193847656e-08
+    },
+    "no_relation_terms_when_rel_false": true,
+    "grad_finite": true,
+    "score_finite": true
+  }
+}

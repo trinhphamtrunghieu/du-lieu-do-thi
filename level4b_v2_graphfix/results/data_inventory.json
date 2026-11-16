@@ -1,0 +1,360 @@
+{
+  "created": "2026-10-31 13:18:10",
+  "official_run": true,
+  "dev_mode": false,
+  "datasets": [
+    {
+      "key": "msvd",
+      "name": "MSVD (Microsoft Research Video Description Corpus)",
+      "paper": "Chen & Dolan, ACL 2011",
+      "repo": "friedrichor/MSVD",
+      "revision": "9aa95a3039c106ee9e0969d82d7ce5a9efab1196",
+      "license": "KHÔNG XÁC NHẬN ĐƯỢC — dataset card HF không khai báo license; dữ liệu gốc (clip YouTube) phát hành cho nghiên cứu",
+      "role": "train: từ vựng, quan hệ, huấn luyện GNN | val: chọn cấu hình | test: THĂM DÒ",
+      "videos_loaded": 1970,
+      "video_source": "hf_hub_download",
+      "splits": {
+        "train": {
+          "videos": 1200,
+          "captions": 48774,
+          "fields": [
+            "caption",
+            "source",
+            "video",
+            "video_id"
+          ],
+          "missing_files": 0,
+          "missing_examples": [],
+          "captions_per_video": [
+            18,
+            40.6,
+            66
+          ],
+          "video_field_is_filename": true
+        },
+        "val": {
+          "videos": 100,
+          "captions": 4290,
+          "fields": [
+            "caption",
+            "source",
+            "video",
+            "video_id"
+          ],
+          "missing_files": 0,
+          "missing_examples": [],
+          "captions_per_video": [
+            25,
+            42.9,
+            62
+          ],
+          "video_field_is_filename": true
+        },
+        "test": {
+          "videos": 670,
+          "captions": 27763,
+          "fields": [
+            "caption",
+            "source",
+            "video",
+            "video_id"
+          ],
+          "missing_files": 0,
+          "missing_examples": [],
+          "captions_per_video": [
+            21,
+            41.4,
+            81
+          ],
+          "video_field_is_filename": true
+        }
+      }
+    },
+    {
+      "key": "msrvtt",
+      "name": "MSR-VTT",
+      "paper": "Xu et al., CVPR 2016",
+      "repo": "friedrichor/MSR-VTT",
+      "revision": "c1af215a96934854f42683c19c51391aaee6f962",
+      "license": "KHÔNG XÁC NHẬN ĐƯỢC — dataset card HF không khai báo license; dữ liệu gốc của Microsoft Research cho nghiên cứu",
+      "role": "chỉ đánh giá (chuyển giao zero-shot): không caption nào dùng để học hay chọn",
+      "status": "OK",
+      "report": {
+        "label": "MSR-VTT fresh1k-C: 1000 video train-9k (ngoài 1k-A, dev, fresh1k, fresh1k-B; seed 20261031) — CHƯA dùng ở v1–v4 và Level 4(b) v1",
+        "set": "fresh1kC",
+        "dev": false,
+        "videos": 1000,
+        "captions": 20000,
+        "captions_per_video": [
+          20,
+          20.0,
+          20
+        ],
+        "std_captions_added": 0,
+        "missing_files": 0,
+        "n_test_1kA_ids": 1000,
+        "overlap_with_test_1kA": 0,
+        "overlap_with_dev": 0,
+        "overlap_with_fresh1k": 0,
+        "overlap_with_fresh1kB": 0,
+        "zip_members": 10000
+      }
+    }
+  ],
+  "loaded_counts_by_split": {
+    "ext": {
+      "videos": 1000,
+      "captions": 20000,
+      "video_ids_sha1": "3a366825ef9f"
+    },
+    "test": {
+      "videos": 670,
+      "captions": 27763,
+      "video_ids_sha1": "45dc74a404ab"
+    },
+    "train": {
+      "videos": 1200,
+      "captions": 48774,
+      "video_ids_sha1": "f5149bfae14f"
+    },
+    "val": {
+      "videos": 100,
+      "captions": 4290,
+      "video_ids_sha1": "f0d368ff4a85"
+    }
+  },
+  "benchmark_status": {
+    "msvd_test": {
+      "looks_before": 5,
+      "evaluated": true,
+      "status": "EXPLORATORY"
+    },
+    "msrvtt_fresh1kC": {
+      "looks_before": 0,
+      "evaluated": true,
+      "status": "CONFIRMATORY",
+      "label": "MSR-VTT fresh1k-C: 1000 video train-9k (ngoài 1k-A, dev, fresh1k, fresh1k-B; seed 20261031) — CHƯA dùng ở v1–v4 và Level 4(b) v1"
+    }
+  },
+  "benchmark_looks_before": {
+    "msvd_test": 5,
+    "msrvtt_1kA": 1,
+    "msrvtt_fresh1k": 1,
+    "msrvtt_fresh1kB": 1,
+    "msrvtt_fresh1kC": 0
+  },
+  "split_manifest": {
+    "file": "split_manifest.json",
+    "msvd_sha1": "56f2e89a1135",
+    "ext_sha1": "c16095c68eba",
+    "rule": "split CHÍNH THỨC của MSVD theo video; tập ngoài theo luật seed cố định (load_msrvtt)"
+  },
+  "features": {
+    "clip": "ViT-L-14/laion2b_s32b_b82k (đóng băng)",
+    "frames_per_video": 12,
+    "frame_policy": "uniform-segment-midpoint",
+    "pooling_selected_on_val": {
+      "n_frames": 12,
+      "pooling": "centrality",
+      "val_MRR": 0.8094808581263709
+    },
+    "video_dim": 768,
+    "n_video_embeddings": 2970,
+    "n_text_embeddings": 100827,
+    "caches": [
+      {
+        "file": "frames_msrvtt_c1af215a_fresh1kC_ViT-L-14_laion2b_s32b_b82k_F12_uniform-segment-midpoint_1000.npz",
+        "dir": "/kaggle/working/project03_level4b_v2/cache",
+        "mb": 17.6,
+        "used_by_this_run": true
+      },
+      {
+        "file": "frames_msvd_ViT-L-14_laion2b_s32b_b82k_F12_uniform-segment-midpoint_9aa95a30_1970.npz",
+        "dir": "/kaggle/working/project03_level4b_v2/cache",
+        "mb": 34.8,
+        "used_by_this_run": true
+      },
+      {
+        "file": "text_msrvtt_c1af215a_fresh1kC_ViT-L-14_laion2b_s32b_b82k_F12_uniform-segment-midpoint_20000_de876ffd71.npz",
+        "dir": "/kaggle/working/project03_level4b_v2/cache",
+        "mb": 29.3,
+        "used_by_this_run": true
+      },
+      {
+        "file": "text_msvd_ViT-L-14_laion2b_s32b_b82k_F12_uniform-segment-midpoint_9aa95a30_80827_4eb1cb0755.npz",
+        "dir": "/kaggle/working/project03_level4b_v2/cache",
+        "mb": 118.4,
+        "used_by_this_run": true
+      }
+    ]
+  },
+  "tagger": {
+    "selected_on_val": {
+      "pool": "video",
+      "norm": "raw+z",
+      "k_noun": 5,
+      "k_verb": 3,
+      "val_P": 0.29875,
+      "val_R": 0.3540740740740741,
+      "val_F1": 0.32406779661016955
+    },
+    "report": {
+      "explore": {
+        "P": 0.27667910447761196,
+        "R": 0.31926803013993543,
+        "F1": 0.2964517741129436,
+        "n_videos": 670
+      },
+      "confirm": {
+        "P": 0.19675,
+        "R": 0.29619872036130973,
+        "F1": 0.23644284212107555,
+        "n_videos": 1000
+      }
+    }
+  },
+  "graph": {
+    "design": {
+      "taxonomy": "none",
+      "contains": "binary",
+      "conf_mode": "sigmoid",
+      "rel_policy": "all",
+      "path_mode": "weighted",
+      "mp_weight": "binary",
+      "init": "learned",
+      "mask": "no_related",
+      "rewire": false,
+      "pred_shuffle": false,
+      "pred_mode": "none",
+      "related": "base",
+      "protocol": "inductive",
+      "tags": "base",
+      "model": "v4",
+      "v4_layers": 1,
+      "v4_rel": true,
+      "v4_qcond": true,
+      "v4_pred": true
+    },
+    "nodes_by_type": {
+      "video": 2970,
+      "class": 739,
+      "concept": 537
+    },
+    "edges_by_type": {
+      "contains": 23511,
+      "contains_inv": 23511,
+      "agent_of": 427,
+      "agent_of_inv": 427,
+      "object_of": 1221,
+      "object_of_inv": 1221,
+      "svo": 332,
+      "svo_inv": 332,
+      "prep": 530,
+      "prep_inv": 530
+    },
+    "n_edges": 52042,
+    "self_loops": 0,
+    "duplicate_edges": 0,
+    "isolated_non_video_nodes": 580,
+    "videos_without_tag": 0,
+    "degree_non_video": {
+      "mean": 44.71943573667711,
+      "median": 24.0,
+      "max": 540
+    },
+    "edges_with_predicate": 1724,
+    "schema_sha1": "016d14b55c88",
+    "inventory_sha1": "0b5fa59504de"
+  },
+  "checkpoints": {
+    "n_files": 65,
+    "mb": 68.9,
+    "names": [
+      "E10_v4_T1_s0.pt",
+      "E10_v4_T1_s1.pt",
+      "E10_v4_T1_s2.pt",
+      "E10_v4_T1_s3.pt",
+      "E10_v4_T1_s4.pt",
+      "E11_v4_T2_s0.pt",
+      "E11_v4_T2_s1.pt",
+      "E11_v4_T2_s2.pt",
+      "E11_v4_T2_s3.pt",
+      "E11_v4_T2_s4.pt",
+      "E20_tags_probe_s0.pt",
+      "E20_tags_probe_s1.pt",
+      "E20_tags_probe_s2.pt",
+      "E20_tags_probe_s3.pt",
+      "E20_tags_probe_s4.pt",
+      "G10_conceptnet_rewired_s0.pt",
+      "G10_conceptnet_rewired_s1.pt",
+      "G10_conceptnet_rewired_s2.pt",
+      "G10_conceptnet_rewired_s3.pt",
+      "G10_conceptnet_rewired_s4.pt",
+      "G1_contains_only_s0.pt",
+      "G1_contains_only_s1.pt",
+      "G1_contains_only_s2.pt",
+      "G1_contains_only_s3.pt",
+      "G1_contains_only_s4.pt",
+      "G2_no_predicate_s0.pt",
+      "G2_no_predicate_s1.pt",
+      "G2_no_predicate_s2.pt",
+      "G2_no_predicate_s3.pt",
+      "G2_no_predicate_s4.pt",
+      "G4_pred_shuffled_s0.pt",
+      "G4_pred_shuffled_s1.pt",
+      "G4_pred_shuffled_s2.pt",
+      "G4_pred_shuffled_s3.pt",
+      "G4_pred_shuffled_s4.pt",
+      "G5_rewired_s0.pt",
+      "G5_rewired_s1.pt",
+      "G5_rewired_s2.pt",
+      "G5_rewired_s3.pt",
+      "G5_rewired_s4.pt",
+      "G6_static_attention_s0.pt",
+      "G6_static_attention_s1.pt",
+      "G6_static_attention_s2.pt",
+      "G6_static_attention_s3.pt",
+      "G6_static_attention_s4.pt",
+      "G7_no_role_edges_s0.pt",
+      "G7_no_role_edges_s1.pt",
+      "G7_no_role_edges_s2.pt",
+      "G7_no_role_edges_s3.pt",
+      "G7_no_role_edges_s4.pt",
+      "G8_no_svo_prep_edges_s0.pt",
+      "G8_no_svo_prep_edges_s1.pt",
+      "G8_no_svo_prep_edges_s2.pt",
+      "G8_no_svo_prep_edges_s3.pt",
+      "G8_no_svo_prep_edges_s4.pt",
+      "G9_conceptnet_s0.pt",
+      "G9_conceptnet_s1.pt",
+      "G9_conceptnet_s2.pt",
+      "G9_conceptnet_s3.pt",
+      "G9_conceptnet_s4.pt"
+    ]
+  },
+  "environment": {
+    "python": "3.13.15",
+    "platform": "Linux-6.18.55+-x86_64-with-glibc2.39",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "device": "cuda",
+    "open_clip": "3.2.0",
+    "opencv": "4.14.0",
+    "numpy": "2.1.3",
+    "scipy": "1.16.3",
+    "pandas": "2.3.3",
+    "nltk": "3.9.1",
+    "kaggle": true,
+    "internet": true,
+    "gpu": "Tesla T4",
+    "nltk_status": {
+      "wordnet": true,
+      "omw-1.4": true,
+      "averaged_perceptron_tagger_eng": true,
+      "averaged_perceptron_tagger": true
+    },
+    "wordnet": true,
+    "pos_tagger": true,
+    "dep_parser": "spaCy 3.8.16 / en_core_web_sm 3.8.0"
+  }
+}

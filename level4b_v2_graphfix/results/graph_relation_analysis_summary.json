@@ -1,0 +1,18 @@
+[
+  {
+    "experiment_id": "G3_v4_full",
+    "split": "val",
+    "base_MRR": 0.8203836323454573,
+    "all_relations_knockout_MRR": 0.8232237511978131,
+    "att_pred_match": 0.11614111482123989,
+    "att_pred_nomatch": 0.048828940208989834
+  },
+  {
+    "experiment_id": "G3_v4_full",
+    "split": "ext",
+    "base_MRR": 0.5196068173382947,
+    "all_relations_knockout_MRR": 0.5191995331060143,
+    "att_pred_match": 0.12975574432755083,
+    "att_pred_nomatch": 0.047983797809652146
+  }
+]
