@@ -1,0 +1,25 @@
+{
+  "id": "hieutrinh123/project3-merged",
+  "title": "project3-merged",
+  "code_file": "Project3_Merged_kaggle.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "hieutrinh123/project3-merged-assets",
+    "hieutrinh123/action-genome",
+    "dannywu375/visualgenome",
+    "mathurinache/visual-genome",
+    "clkmuhammed/microsoft-coco-2017-common-objects-in-context"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [
+    "hieutrinh123/du-lieu-do-thi",
+    "lamvo30ai/project03-level4b-v2-graphfix"
+  ],
+  "model_sources": []
+}
