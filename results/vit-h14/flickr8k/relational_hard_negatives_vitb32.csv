@@ -1,0 +1,8 @@
+model,n_queries,seeds,MRR,R1
+none,246,3,0.8196 ± 0.0068,0.7182
+CLIP,246,3,0.8195 ± 0.0000,0.7195
+none+match,246,3,0.8324 ± 0.0064,0.7358
+none+clipmatch,246,3,0.8201 ± 0.0000,0.7114
+no_class_edges,246,3,0.8378 ± 0.0131,0.7412
+no_class_edges+match,246,3,0.8390 ± 0.0116,0.7466
+no_class_edges+clipmatch,246,3,0.8201 ± 0.0000,0.7114

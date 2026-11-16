@@ -1,0 +1,14 @@
+model,n_queries,seeds,MRR,R1
+none,246,3,0.8557 ± 0.0076,0.7683
+CLIP,246,3,0.8836 ± 0.0000,0.8089
+none+match,246,3,0.8628 ± 0.0060,0.7805
+none+clipmatch,246,3,0.8849 ± 0.0000,0.8130
+no_class_edges,246,3,0.8736 ± 0.0069,0.7873
+no_class_edges+match,246,3,0.8777 ± 0.0125,0.7967
+no_class_edges+clipmatch,246,3,0.8849 ± 0.0000,0.8130
+no_relations,246,3,0.8559 ± 0.0023,0.7588
+no_relations+match,246,3,0.8587 ± 0.0012,0.7656
+no_relations+clipmatch,246,3,0.8849 ± 0.0000,0.8130
+shuffled_nodes,246,3,0.8895 ± 0.0016,0.8211
+shuffled_nodes+match,246,3,0.8895 ± 0.0016,0.8211
+shuffled_nodes+clipmatch,246,3,0.8836 ± 0.0000,0.8089

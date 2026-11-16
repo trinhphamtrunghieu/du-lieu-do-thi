@@ -1,0 +1,352 @@
+[
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A family of five is watching a performer standing on a stepstool .",
+    "group": "direct",
+    "rank_clip": 13,
+    "rank_graph": 2,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ performer",
+        "pattern": "P0_contains",
+        "contribution": 0.7723243236541748
+      },
+      {
+        "text": "ảnh –chứa→ family",
+        "pattern": "P0_contains",
+        "contribution": 0.5646116733551025
+      },
+      {
+        "text": "ảnh –chứa→ people watch –liên_quan→ watching",
+        "pattern": "P3_related",
+        "contribution": 0.22789406776428223
+      }
+    ],
+    "detail": {
+      "n_paths": 4,
+      "score_full": 3.7745866775512695,
+      "score_without_explanation": 1.4714993238449097,
+      "score_only_explanation": 3.578382730484009,
+      "score_without_random": 1.2516422629356385,
+      "sparsity": 0.25,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A mountain climber looks down from the summit",
+    "group": "direct",
+    "rank_clip": 12,
+    "rank_graph": 1,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ climber",
+        "pattern": "P0_contains",
+        "contribution": 0.966606855392456
+      },
+      {
+        "text": "ảnh –chứa→ mountain",
+        "pattern": "P0_contains",
+        "contribution": 0.5973732471466064
+      },
+      {
+        "text": "ảnh –chứa→ climber –liên_quan→ mountain climber",
+        "pattern": "P3_related",
+        "contribution": 0.2436363697052002
+      }
+    ],
+    "detail": {
+      "n_paths": 4,
+      "score_full": 3.217116355895996,
+      "score_without_explanation": 0.1162910908460617,
+      "score_only_explanation": 3.1724605560302734,
+      "score_without_random": 0.8389406815171242,
+      "sparsity": 0.25,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A man sitting on the left near a man walking along the side of a street with colorful buildings .",
+    "group": "direct",
+    "rank_clip": 13,
+    "rank_graph": 3,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ man walking",
+        "pattern": "P0_contains",
+        "contribution": 0.32517242431640625
+      },
+      {
+        "text": "ảnh –chứa→ colorful",
+        "pattern": "P0_contains",
+        "contribution": 0.2614297866821289
+      },
+      {
+        "text": "ảnh –chứa→ building",
+        "pattern": "P0_contains",
+        "contribution": 0.20787811279296875
+      },
+      {
+        "text": "ảnh –chứa→ street",
+        "pattern": "P0_contains",
+        "contribution": 0.1752004623413086
+      },
+      {
+        "text": "ảnh –chứa→ walking",
+        "pattern": "P0_contains",
+        "contribution": 0.1610708236694336
+      }
+    ],
+    "detail": {
+      "n_paths": 11,
+      "score_full": 4.364352703094482,
+      "score_without_explanation": 2.3361685276031494,
+      "score_only_explanation": 3.8351287841796875,
+      "score_without_random": 3.384756064414978,
+      "sparsity": 0.5454545454545454,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A class full of students .",
+    "group": "direct",
+    "rank_clip": 11,
+    "rank_graph": 1,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ student",
+        "pattern": "P0_contains",
+        "contribution": 2.6109204292297363
+      }
+    ],
+    "detail": {
+      "n_paths": 1,
+      "score_full": 2.6109204292297363,
+      "score_without_explanation": 0.0,
+      "score_only_explanation": 2.6109204292297363,
+      "score_without_random": NaN,
+      "sparsity": 0.0,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "a man climbs a rock .",
+    "group": "direct",
+    "rank_clip": 16,
+    "rank_graph": 8,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ climb rock",
+        "pattern": "P0_contains",
+        "contribution": 0.5977518558502197
+      },
+      {
+        "text": "ảnh –chứa→ climb",
+        "pattern": "P0_contains",
+        "contribution": 0.4050309658050537
+      },
+      {
+        "text": "ảnh –chứa→ rock",
+        "pattern": "P0_contains",
+        "contribution": 0.3150973320007324
+      },
+      {
+        "text": "ảnh –chứa→ climb –liên_quan→ man climb",
+        "pattern": "P3_related",
+        "contribution": 0.1732022762298584
+      },
+      {
+        "text": "ảnh –thể_hiện→ ⟨man climb rock⟩",
+        "pattern": "P6_triple",
+        "contribution": 0.16827678680419922
+      }
+    ],
+    "detail": {
+      "n_paths": 6,
+      "score_full": 3.8694469928741455,
+      "score_without_explanation": 1.0849510431289673,
+      "score_only_explanation": 3.7491860389709473,
+      "score_without_random": 1.6145204037427903,
+      "sparsity": 0.16666666666666663,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "The taller man is trying to block the shorter man .",
+    "group": "indirect",
+    "rank_clip": 15,
+    "rank_graph": 33,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ box –liên_quan→ man",
+        "pattern": "P3_related",
+        "contribution": 0.18257680535316467
+      }
+    ],
+    "detail": {
+      "n_paths": 1,
+      "score_full": 0.18257680535316467,
+      "score_without_explanation": 0.0,
+      "score_only_explanation": 0.18257680535316467,
+      "score_without_random": NaN,
+      "sparsity": 0.0,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A black dog and two brown and white dogs are romping in the mud .",
+    "group": "direct",
+    "rank_clip": 7,
+    "rank_graph": 24,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ dog",
+        "pattern": "P0_contains",
+        "contribution": 1.1342530250549316
+      },
+      {
+        "text": "ảnh –chứa→ wrestle –liên_quan→ two",
+        "pattern": "P3_related",
+        "contribution": 0.052703142166137695
+      },
+      {
+        "text": "ảnh –chứa→ playing field –liên_quan→ two",
+        "pattern": "P3_related",
+        "contribution": 0.04502594470977783
+      },
+      {
+        "text": "ảnh –chứa→ dog –liên_quan→ brown",
+        "pattern": "P3_related",
+        "contribution": 0.04127979278564453
+      },
+      {
+        "text": "ảnh –chứa→ dog –liên_quan→ white dog",
+        "pattern": "P3_related",
+        "contribution": 0.038309693336486816
+      }
+    ],
+    "detail": {
+      "n_paths": 8,
+      "score_full": 1.663492202758789,
+      "score_without_explanation": 0.2869887351989746,
+      "score_only_explanation": 1.5711286067962646,
+      "score_without_random": 1.0823428511619568,
+      "sparsity": 0.375,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A helmeted boy flies through the air on a snowboard .",
+    "group": "indirect",
+    "rank_clip": 8,
+    "rank_graph": 25,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ snowboarder –liên_quan→ snowboard",
+        "pattern": "P3_related",
+        "contribution": 0.1377825140953064
+      },
+      {
+        "text": "ảnh –chứa→ above –liên_quan→ air",
+        "pattern": "P3_related",
+        "contribution": 0.046843647956848145
+      },
+      {
+        "text": "ảnh –chứa→ snowboarder –liên_quan→ through air",
+        "pattern": "P3_related",
+        "contribution": 0.043024927377700806
+      },
+      {
+        "text": "ảnh –chứa→ rail –liên_quan→ boy",
+        "pattern": "P3_related",
+        "contribution": 0.030943185091018677
+      },
+      {
+        "text": "ảnh –chứa→ night –liên_quan→ air",
+        "pattern": "P3_related",
+        "contribution": 0.019708991050720215
+      }
+    ],
+    "detail": {
+      "n_paths": 6,
+      "score_full": 0.5224131345748901,
+      "score_without_explanation": 0.0055054896511137486,
+      "score_only_explanation": 0.5169076323509216,
+      "score_without_random": 0.1750011491123587,
+      "sparsity": 0.16666666666666663,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A boy skateboarding",
+    "group": "indirect",
+    "rank_clip": 8,
+    "rank_graph": 24,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ skateboarder –liên_quan→ skateboarding",
+        "pattern": "P3_related",
+        "contribution": 0.11813414096832275
+      },
+      {
+        "text": "ảnh –chứa→ skateboard –liên_quan→ skateboarding",
+        "pattern": "P3_related",
+        "contribution": 0.11028856039047241
+      }
+    ],
+    "detail": {
+      "n_paths": 3,
+      "score_full": 0.4798169434070587,
+      "score_without_explanation": 0.17470334470272064,
+      "score_only_explanation": 0.4298798739910126,
+      "score_without_random": 0.25460685044527054,
+      "sparsity": 0.33333333333333337,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A female walking through grass .",
+    "group": "indirect",
+    "rank_clip": 7,
+    "rank_graph": 20,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ woman walk –liên_quan→ walking",
+        "pattern": "P3_related",
+        "contribution": 0.10744479298591614
+      },
+      {
+        "text": "ảnh –chứa→ girl walk –liên_quan→ walking",
+        "pattern": "P3_related",
+        "contribution": 0.09893494844436646
+      },
+      {
+        "text": "ảnh –chứa→ walk –liên_quan→ walking",
+        "pattern": "P3_related",
+        "contribution": 0.08074754476547241
+      },
+      {
+        "text": "ảnh –chứa→ girl –liên_quan→ little girl –là_một→ female",
+        "pattern": "P5_related_isa",
+        "contribution": 0.05526590347290039
+      }
+    ],
+    "detail": {
+      "n_paths": 5,
+      "score_full": 0.5909940600395203,
+      "score_without_explanation": 0.0018402327550575137,
+      "score_only_explanation": 0.5891538262367249,
+      "score_without_random": 0.11638313767034561,
+      "sparsity": 0.19999999999999996,
+      "validity": 1.0
+    }
+  }
+]
