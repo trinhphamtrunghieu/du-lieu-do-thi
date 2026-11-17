@@ -130,33 +130,49 @@ Notebook `image_video_pipeline/Project3_Final_Image_Video.ipynb` là một pipel
 - **XAI:** fidelity, lật ảnh, validity, sparsity.
 - **Video MSVD:** CLIP + PE-Core + đồ thị bằng chứng + Qwen2.5-VL.
 
-**Lưu ý về số liệu:** file nộp không kèm output. Các số dưới đây là hằng `REF` ghi trong notebook (cell 2), là "số của các lần chạy riêng trước, để đối chiếu tái lập". Chưa có bản chạy lại trong repo này. Số của TN1b (GraphSAGE), TN1c (SCENIR), TN2b (COCO-spatial) và video MSVD chỉ có sau khi chạy notebook (`p3_out/RESULTS.md`).
+Số dưới đây là **kết quả chạy thật** của notebook gộp, Kaggle `hieutrinh123/project3-merged` version 2 (phần C + B; CLIP ViT-L/14, 3 seed). Toàn bộ output nằm trong `results/project3-merged-v2/`. Số tái lập khớp hằng `REF` của nhóm trong phạm vi ±0,002 MRR.
 
-**TN1 — văn bản → ảnh, full-gallery, Visual Genome (MRR):**
+**TN1 — văn bản → ảnh, full-gallery, Visual Genome + COCO (MRR, trung bình ± std 3 seed):**
 
-| CLIP | G-full | G-obj (chỉ đối tượng) | G-rand (cạnh ngẫu nhiên) | G-shuf (xáo) |
-| --- | --- | --- | --- | --- |
-| 0,7182 | 0,7212 | 0,7219 | 0,7174 | 0,7200 |
+| CLIP | Đường đi G-full | G-obj (chỉ đối tượng) | G-rand (đồ thị ảnh khác) | GraphSAGE | SCENIR (ICML 2025) |
+| --- | --- | --- | --- | --- | --- |
+| 0,7184 ± 0,022 | 0,7214 ± 0,021 | 0,7221 ± 0,021 | 0,7175 ± 0,023 | 0,7175 ± 0,022 | 0,7191 ± 0,021 |
 
-Đồ thị chỉ tăng khoảng +0,003 MRR. Bản chỉ dùng đối tượng ngang bản đầy đủ, và cạnh ngẫu nhiên / xáo gần bằng CLIP. Kết quả này cùng xu hướng với Flickr8k ở trên: khi CLIP đã mạnh và đồ thị không thêm thông tin mới, mức tăng rất nhỏ.
+Đồ thị chỉ tăng khoảng +0,003 MRR. Theo luật đăng ký trước của notebook, cả GraphSAGE và SCENIR đều "không dương": không hơn CLIP, cũng không hơn bản cạnh ngẫu nhiên hay bỏ cạnh. Đây là cùng xu hướng với Flickr8k: khi CLIP đã mạnh và đồ thị không thêm thông tin mới, mức tăng rất nhỏ.
 
-**TN2 — ảnh → caption đúng, độ chính xác (%):**
+**TN2 — ảnh → caption đúng (2 lựa chọn), độ chính xác (%):**
 
-| Nhóm | CLIP | Chỉ đồ thị | CLIP + đồ thị |
+| Nhóm | CLIP | Chỉ đồ thị | CLIP + đồ thị | Đồ thị của mục khác | Bỏ vị trí |
+| --- | --- | --- | --- | --- | --- |
+| ARO – toàn bộ | 50,1 | 65,8 | **66,1** | 53,3 | 50,0 |
+| ARO – trái/phải | 49,7 | 66,3 | **66,7** | 50,9 | 50,0 |
+| ARO – vị từ | 50,5 | 66,3 | 65,2 | 60,3 | — |
+| SugarCrepe – thay quan hệ | 69,9 | 54,4 | **70,3** | 50,6 | — |
+| SugarCrepe – đổi chỗ đối tượng | 63,5 | 49,7 | 61,3 | 46,0 | — |
+| COCO-spatial – toàn bộ (cạnh hình học) | 46,8 | **69,8** | 63,9 | 51,3 | 50,0 |
+
+- Trên ARO, CLIP gần như đoán ngẫu nhiên; đồ thị RelTR đưa lên khoảng 66% (+16 điểm).
+- Đối chứng đồ thị của mục khác và bỏ vị trí đều tụt về khoảng 50%, nên mức tăng đến từ đúng quan hệ.
+- COCO-spatial (132 mục chấm được): lật ảnh trái–phải làm đồ thị đảo quyết định ở 87,9% mục, CLIP chỉ 8,3%.
+
+**XAI (ARO, 622 mục):**
+- Lật ảnh làm đồ thị đảo quyết định ở 87,9% mục, CLIP 4,4%.
+- Xoá bằng chứng làm đổi quyết định ở 12,3% mục, xoá ngẫu nhiên 0%.
+- Validity (khớp GT, IoU ≥ 0,5): cả hai đối tượng 54,2%, ít nhất một 92,1%.
+
+**Video MSVD — notebook Level 4(b) v5 (CLIP + PE-Core + đồ thị bằng chứng + Qwen2.5-VL; 27.763 truy vấn, 670 video):**
+
+| Mô hình | R@1 | R@10 | MRR |
 | --- | --- | --- | --- |
-| ARO – toàn bộ | 50,1 | 65,8 | **66,0** |
-| ARO – quan hệ không gian | 49,7 | 66,3 | **66,7** |
-| ARO – vị từ khác | 50,7 | 66,3 | 65,2 |
-| SugarCrepe – thay quan hệ | 69,9 | 54,4 | **70,3** |
-| SugarCrepe – đổi chỗ đối tượng | 63,5 | 49,7 | 61,3 |
+| CLIP | 47,5% | 82,0% | 0,5931 |
+| CLIP + đồ thị | 49,0% | 84,2% | 0,6109 |
+| CLIP + PE-Core, không đồ thị | 59,2% | 88,4% | 0,6982 |
+| **CLIP + PE-Core + đồ thị bằng chứng (M4)** | **60,2%** | **88,8%** | **0,7069** |
+| M4 với đồ thị ngẫu nhiên / xáo | 59,2% | 88,3% | 0,6979 |
 
-Trên ARO, CLIP gần như đoán ngẫu nhiên (~50% với 2 lựa chọn), còn đồ thị RelTR tăng lên khoảng 66% (+16 điểm). Trên SugarCrepe, đồ thị một mình kém CLIP, và kết hợp chỉ giúp nhẹ ở nhóm thay quan hệ.
-
-**XAI (ARO, toàn bộ):**
-- Độ chính xác của đồ thị trên tập XAI: 85,7%.
-- Lật ảnh trái–phải làm đồ thị đảo quyết định ở 88,1% mục.
-- Xoá bằng chứng làm đổi quyết định ở 11,1% mục.
-- Validity (cả hai đối tượng khớp GT, IoU ≥ 0,5): 54,9%.
+- M4 hơn CLIP +0,114 [+0,101; +0,127]. Phần lớn đến từ encoder PE-Core; riêng cấu trúc đồ thị chỉ thêm +0,009 [+0,004; +0,014] so với bản không đồ thị, và +0,009 so với đồ thị xáo.
+- Test MSVD đã được xem 8 lần qua các phiên bản, nên các số này chỉ mang tính thăm dò.
+- Fidelity video (60 truy vấn): xoá 3 bằng chứng hàng đầu làm tụt hạng ở 56,7% truy vấn, xoá 3 bằng chứng ngẫu nhiên chỉ 25%.
 
 **Notebook gộp:** `merged/Project3_Merged.ipynb` chạy cả ba phần trong một lần, metadata Kaggle ở `merged/kernel-metadata.json`.
 - Phần A: `du-lieu-do-thi` (Flickr8k + Action Genome, ViT-L/14).
@@ -197,10 +213,9 @@ Kết luận đầy đủ: `level4b_v2_graphfix/results/level4b_conclusions.md`.
 - Flickr8k: đồ thị vẫn thua CLIP ở bộ quan hệ khó; 16 truy vấn gián tiếp bị tụt.
 - Nhánh khớp coi node như túi từ ⇒ kém nhạy với động từ hơn GNN.
 - Phần 4 (MSVD → MSR-VTT) chưa chạy lại với các cải tiến mới (kết quả cũ: CLIP 0,505 → 0,514).
-- Đang chạy: notebook gộp ba phần (Kaggle `hieutrinh123/project3-merged`) để có số chạy thật cho nhánh Visual Genome / ARO / SugarCrepe / MSVD.
 
 ## Nguồn
 
-Nhánh Visual Genome / ARO / SugarCrepe: hằng `REF` trong `image_video_pipeline/Project3_Final_Image_Video.ipynb` (cell 2).
+Nhánh Visual Genome / ARO / SugarCrepe / COCO-spatial / video MSVD: `results/project3-merged-v2/` (Kaggle `hieutrinh123/project3-merged` version 2). Phần A của notebook gộp: `results/project3-merged-v1/`.
 
 Output của notebook Kaggle `hieutrinh123/du-lieu-do-thi` (version 4, 7, 8, 9): `results/` (Flickr8k) và `output/action_genome/results/` (Action Genome) — `main_results_with_controls.csv`, `match_vs_clip.csv`, `match_paired.csv`, `relational_hard_negatives_match*.csv`, `counterfactual_verb_swap_match*.csv`, `paired_graph_vs_clip.csv`.
