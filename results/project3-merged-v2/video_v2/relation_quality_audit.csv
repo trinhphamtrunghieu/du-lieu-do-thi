@@ -1,0 +1,22 @@
+kind,family,stratum,n_instances,n_confirmed,agreement,wilson_lo,wilson_hi,heuristic_covers_spacy,note
+silver_parser_agreement,ALL,ALL,95073,68847,0.7241488119655423,0.7212987485656694,0.7269807618046036,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,agent_of,ALL,36006,31915,0.8863800477698162,0.8830607665473429,0.8896168894410135,0.9119092519572547,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,agent_of,below_threshold,3472,2356,0.6785714285714286,0.6628465786884956,0.6939015539076505,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,agent_of,high,25356,23538,0.92830099384761,0.925060157691199,0.9314120688545693,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,agent_of,low,2267,1784,0.7869430966034406,0.7696091261567778,0.8033062194137807,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,agent_of,mid,4911,4237,0.8627570759519446,0.8528490127104245,0.8720980537423377,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,object_of,ALL,27979,16769,0.599342363915794,0.5935870906638874,0.6050703609081503,0.8210840718797434,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,object_of,below_threshold,6384,2924,0.45802005012531327,0.4458269121458999,0.47026368095834986,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,object_of,high,12759,9260,0.7257622070695195,0.717953914550466,0.7334345912819654,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,object_of,low,3711,1767,0.4761519805982215,0.46011603799627,0.4922372467305943,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,object_of,mid,5125,2818,0.5498536585365854,0.5362003504143819,0.5634322839800984,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,prep,ALL,8469,2111,0.2492620144054788,0.24016384960818374,0.2585875492141428,0.8619844834626378,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,prep,below_threshold,4933,864,0.17514696938982363,0.16479392828610598,0.18600557883196725,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,prep,high,1173,557,0.47485080988917305,0.4464017861788152,0.5034640241392428,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,prep,low,1075,286,0.266046511627907,0.24049763498164034,0.29326153782000175,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,prep,mid,1288,404,0.3136645962732919,0.2889107857002378,0.33952663263340305,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,svo,ALL,22619,18052,0.7980901012423184,0.7928082068425049,0.8032707578795926,0.676953981008035,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,svo,below_threshold,11984,8490,0.7084445927903872,0.70024174322943,0.71651384686779,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,svo,high,4489,4304,0.9587881488081978,0.9525700737505122,0.9642216511124343,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,svo,low,2923,2392,0.8183373246664386,0.8039445621010237,0.8318944255640417,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm
+silver_parser_agreement,svo,mid,3223,2866,0.889233633260937,0.8779315646507506,0.8996089257160524,,đồng thuận heuristic ↔ spaCy trên caption TRAIN; KHÔNG phải precision do người chấm

@@ -1,0 +1,823 @@
+[
+  {
+    "query": "a man is playing a guitar",
+    "gallery": "ext",
+    "alpha": 0.7,
+    "matched_concepts": [
+      "guitar#n",
+      "man#n",
+      "play#v"
+    ],
+    "results": [
+      {
+        "rank": 1,
+        "video_id": "video9502",
+        "clip_cos": 0.28890568017959595,
+        "graph_score": -0.7806321978569031,
+        "final": 2.5715737342834473,
+        "clip_rank": 1,
+        "totals": {
+          "visual": -0.7268,
+          "contains": -0.0344,
+          "relation": -0.0195
+        },
+        "explanation": [
+          "+0.0189 video9502 –chứa→ instrument#n",
+          "+0.0153 video9502 –chứa→ guitar#n",
+          "+0.0066 video9502 –chứa→ sang#n",
+          "+0.0059 violin#n –object_of→ play#v ←chứa– video9502",
+          "+0.0059 garden#n –object_of→ play#v ←chứa– video9502"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 2,
+        "video_id": "video4877",
+        "clip_cos": 0.28027480840682983,
+        "graph_score": -0.7760765552520752,
+        "final": 2.345651388168335,
+        "clip_rank": 2,
+        "totals": {
+          "visual": -0.7595,
+          "contains": -0.0214,
+          "relation": 0.0048
+        },
+        "explanation": [
+          "+0.0189 video4877 –chứa→ instrument#n",
+          "+0.0153 video4877 –chứa→ guitar#n",
+          "+0.0066 video4877 –chứa→ sang#n",
+          "+0.0064 video4877 –chứa→ practice#v",
+          "+0.0038 gym#n –object_of→ practice#v ←chứa– video4877"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 3,
+        "video_id": "video1867",
+        "clip_cos": 0.22960112988948822,
+        "graph_score": -0.47023433446884155,
+        "final": 1.5075769424438477,
+        "clip_rank": 3,
+        "totals": {
+          "visual": -0.5016,
+          "contains": 0.0349,
+          "relation": -0.0036
+        },
+        "explanation": [
+          "+0.0178 video1867 –chứa→ sunglass#n",
+          "+0.0154 video1867 –chứa→ sing#v",
+          "+0.0153 video1867 –chứa→ guitar#n",
+          "+0.0109 video1867 –chứa→ band#n",
+          "+0.0045 guitar#n –agent_of→ sing#v ←chứa– video1867"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 4,
+        "video_id": "video6461",
+        "clip_cos": 0.22177916765213013,
+        "graph_score": -0.5146316885948181,
+        "final": 1.217917561531067,
+        "clip_rank": 6,
+        "totals": {
+          "visual": -0.556,
+          "contains": 0.0318,
+          "relation": 0.0095
+        },
+        "explanation": [
+          "+0.0154 video6461 –chứa→ sing#v",
+          "+0.0153 video6461 –chứa→ guitar#n",
+          "+0.0153 video6461 –chứa→ mike#n",
+          "+0.0109 video6461 –chứa→ band#n",
+          "+0.0066 video6461 –chứa→ sang#n"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 5,
+        "video_id": "video4173",
+        "clip_cos": 0.21662713587284088,
+        "graph_score": -0.44370290637016296,
+        "final": 1.2024109363555908,
+        "clip_rank": 7,
+        "totals": {
+          "visual": -0.4433,
+          "contains": 0.013,
+          "relation": -0.0134
+        },
+        "explanation": [
+          "+0.0371 video4173 –chứa→ metal#n",
+          "+0.0153 video4173 –chứa→ guitar#n",
+          "+0.0109 video4173 –chứa→ band#n",
+          "+0.0023 pick#v –object_of_inv→ guitar#n ←chứa– video4173",
+          "+0.0021 guitar#n –prep[along with]→ band#n ←chứa– video4173"
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "query": "a child is playing football on the grass",
+    "gallery": "ext",
+    "alpha": 0.7,
+    "matched_concepts": [
+      "child#n",
+      "football#n",
+      "grass#n",
+      "play#v"
+    ],
+    "results": [
+      {
+        "rank": 1,
+        "video_id": "video5900",
+        "clip_cos": 0.2683041989803314,
+        "graph_score": -0.8383958339691162,
+        "final": 2.2762632369995117,
+        "clip_rank": 1,
+        "totals": {
+          "visual": -0.6426,
+          "contains": -0.0842,
+          "relation": -0.1116
+        },
+        "explanation": [
+          "+0.0090 piano#n –object_of→ play#v ←chứa– video5900",
+          "+0.0082 basket#n –object_of→ play#v ←chứa– video5900",
+          "+0.0081 instrument#n –object_of→ play#v ←chứa– video5900",
+          "+0.0064 water#n –object_of→ play#v ←chứa– video5900",
+          "+0.0062 paper#n –object_of→ play#v ←chứa– video5900"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 2,
+        "video_id": "video6587",
+        "clip_cos": 0.2179621309041977,
+        "graph_score": -0.7337607145309448,
+        "final": 1.2403274774551392,
+        "clip_rank": 2,
+        "totals": {
+          "visual": -0.6215,
+          "contains": -0.0765,
+          "relation": -0.0358
+        },
+        "explanation": [
+          "+0.0135 video6587 –chứa→ trainer#n",
+          "+0.0130 camera#n –object_of→ hit#v ←chứa– video6587",
+          "+0.0067 video6587 –chứa→ player#n",
+          "+0.0048 face#n –object_of→ hit#v ←chứa– video6587",
+          "+0.0042 foot#n –object_of→ kick#v ←chứa– video6587"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 3,
+        "video_id": "video9590",
+        "clip_cos": 0.19624410569667816,
+        "graph_score": -0.5792001485824585,
+        "final": 1.018566608428955,
+        "clip_rank": 4,
+        "totals": {
+          "visual": -0.528,
+          "contains": -0.0513,
+          "relation": 0.0001
+        },
+        "explanation": [
+          "+0.0177 video9590 –chứa→ exercise#v",
+          "+0.0085 video9590 –chứa→ character#n",
+          "+0.0071 art#n –object_of→ practice#v ←chứa– video9590",
+          "+0.0056 video9590 –chứa→ step#v",
+          "+0.0028 people#n –svo[play]→ football#n ←chứa– video9590"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 4,
+        "video_id": "video3563",
+        "clip_cos": 0.19521275162696838,
+        "graph_score": -0.6594623327255249,
+        "final": 0.827778697013855,
+        "clip_rank": 5,
+        "totals": {
+          "visual": -0.6217,
+          "contains": -0.0457,
+          "relation": 0.008
+        },
+        "explanation": [
+          "+0.0233 video3563 –chứa→ jumping#n",
+          "+0.0098 bar#n –object_of→ jump#v ←chứa– video3563",
+          "+0.0080 airplane#n –object_of→ fly#v ←chứa– video3563",
+          "+0.0078 lake#n –object_of→ jump#v ←chứa– video3563",
+          "+0.0077 ocean#n –object_of→ fly#v ←chứa– video3563"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 5,
+        "video_id": "video6632",
+        "clip_cos": 0.1819305121898651,
+        "graph_score": -0.5512360334396362,
+        "final": 0.7203465700149536,
+        "clip_rank": 6,
+        "totals": {
+          "visual": -0.4114,
+          "contains": -0.0808,
+          "relation": -0.0591
+        },
+        "explanation": [
+          "+0.0071 basket#n –object_of→ score#v ←chứa– video6632",
+          "+0.0067 video6632 –chứa→ player#n",
+          "+0.0048 move#v –agent_of_inv→ ball#n ←chứa– video6632",
+          "+0.0042 foot#n –object_of→ kick#v ←chứa– video6632",
+          "+0.0040 video6632 –chứa→ field#n"
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "query": "a woman is slicing a tomato",
+    "gallery": "ext",
+    "alpha": 0.7,
+    "matched_concepts": [
+      "slice#v",
+      "tomato#n",
+      "woman#n"
+    ],
+    "results": [
+      {
+        "rank": 1,
+        "video_id": "video5410",
+        "clip_cos": 0.27519890666007996,
+        "graph_score": -0.3924362361431122,
+        "final": 2.117891311645508,
+        "clip_rank": 1,
+        "totals": {
+          "visual": -0.461,
+          "contains": 0.0655,
+          "relation": 0.003
+        },
+        "explanation": [
+          "+0.0360 video5410 –chứa→ mash#v",
+          "+0.0349 video5410 –chứa→ liquid#n",
+          "+0.0189 video5410 –chứa→ chilli#n",
+          "+0.0033 video5410 –chứa→ pour#v",
+          "+0.0020 bottle#n –prep_inv[from]→ liquid#n ←chứa– video5410"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 2,
+        "video_id": "video6966",
+        "clip_cos": 0.23854666948318481,
+        "graph_score": -0.2904137969017029,
+        "final": 1.3521767854690552,
+        "clip_rank": 7,
+        "totals": {
+          "visual": -0.3224,
+          "contains": 0.0137,
+          "relation": 0.0183
+        },
+        "explanation": [
+          "+0.0337 video6966 –chứa→ cake#n",
+          "+0.0099 video6966 –chứa→ skewer#n",
+          "+0.0047 roll#v –agent_of_inv→ dough#n ←chứa– video6966",
+          "+0.0019 row#n –object_of→ slice#v ←chứa– video6966",
+          "+0.0015 bottle#n –object_of→ slice#v ←chứa– video6966"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 3,
+        "video_id": "video3576",
+        "clip_cos": 0.24019503593444824,
+        "graph_score": -0.32304948568344116,
+        "final": 1.3102890253067017,
+        "clip_rank": 5,
+        "totals": {
+          "visual": -0.4462,
+          "contains": 0.1194,
+          "relation": 0.0038
+        },
+        "explanation": [
+          "+0.0342 video3576 –chứa→ paste#n",
+          "+0.0314 video3576 –chứa→ crack#v",
+          "+0.0301 video3576 –chứa→ skin#n",
+          "+0.0172 video3576 –chứa→ suck#v",
+          "+0.0115 video3576 –chứa→ peel#v"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 4,
+        "video_id": "video7321",
+        "clip_cos": 0.24105879664421082,
+        "graph_score": -0.3583564758300781,
+        "final": 1.2387973070144653,
+        "clip_rank": 4,
+        "totals": {
+          "visual": -0.3866,
+          "contains": 0.0226,
+          "relation": 0.0056
+        },
+        "explanation": [
+          "+0.0301 video7321 –chứa→ seed#n",
+          "+0.0226 video7321 –chứa→ shell#n",
+          "+0.0171 video7321 –chứa→ chocolate#n",
+          "+0.0132 video7321 –chứa→ peel#v",
+          "+0.0016 skin#n –object_of→ peel#v ←chứa– video7321"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 5,
+        "video_id": "video3514",
+        "clip_cos": 0.23121395707130432,
+        "graph_score": -0.3177705705165863,
+        "final": 1.0689985752105713,
+        "clip_rank": 9,
+        "totals": {
+          "visual": -0.3698,
+          "contains": 0.0128,
+          "relation": 0.0392
+        },
+        "explanation": [
+          "+0.0415 video3514 –chứa→ loaf#n",
+          "+0.0106 video3514 –chứa→ knife#n",
+          "+0.0047 roll#v –agent_of_inv→ dough#n ←chứa– video3514",
+          "+0.0021 loaf#n –svo_inv[slice]→ knife#n ←chứa– video3514",
+          "+0.0020 plate#n –prep_inv[in]→ bread#n ←chứa– video3514"
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "query": "a dog is running on the beach",
+    "gallery": "ext",
+    "alpha": 0.7,
+    "matched_concepts": [
+      "beach#n",
+      "dog#n",
+      "run#v"
+    ],
+    "results": [
+      {
+        "rank": 1,
+        "video_id": "video2452",
+        "clip_cos": 0.21668963134288788,
+        "graph_score": -0.5430572032928467,
+        "final": 2.291146755218506,
+        "clip_rank": 1,
+        "totals": {
+          "visual": -0.4832,
+          "contains": -0.0477,
+          "relation": -0.0122
+        },
+        "explanation": [
+          "+0.0139 video2452 –chứa→ cow#n",
+          "+0.0111 video2452 –chứa→ cowboy#n",
+          "+0.0097 video2452 –chứa→ horse#n",
+          "+0.0070 head#n –object_of→ attack#v ←chứa– video2452",
+          "+0.0051 wear#v –object_of_inv→ cowboy#n ←chứa– video2452"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 2,
+        "video_id": "video3740",
+        "clip_cos": 0.1826200783252716,
+        "graph_score": -0.40849775075912476,
+        "final": 1.4628242254257202,
+        "clip_rank": 3,
+        "totals": {
+          "visual": -0.5777,
+          "contains": 0.1423,
+          "relation": 0.0269
+        },
+        "explanation": [
+          "+0.0642 video3740 –chứa→ shark#n",
+          "+0.0394 video3740 –chứa→ ocean#n",
+          "+0.0174 video3740 –chứa→ boat#v",
+          "+0.0146 video3740 –chứa→ water#n",
+          "+0.0093 boat#n –object_of→ sail#v ←chứa– video3740"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 3,
+        "video_id": "video3129",
+        "clip_cos": 0.19089335203170776,
+        "graph_score": -0.6324431300163269,
+        "final": 1.2693233489990234,
+        "clip_rank": 2,
+        "totals": {
+          "visual": -0.5596,
+          "contains": 0.0022,
+          "relation": -0.075
+        },
+        "explanation": [
+          "+0.0297 video3129 –chứa→ jumping#n",
+          "+0.0166 video3129 –chứa→ slide#v",
+          "+0.0165 video3129 –chứa→ skateboard#n",
+          "+0.0110 fence#n –object_of→ run#v ←chứa– video3129",
+          "+0.0108 ocean#n –object_of→ run#v ←chứa– video3129"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 4,
+        "video_id": "video2157",
+        "clip_cos": 0.17842411994934082,
+        "graph_score": -0.48535263538360596,
+        "final": 1.1680413484573364,
+        "clip_rank": 4,
+        "totals": {
+          "visual": -0.6182,
+          "contains": 0.1266,
+          "relation": 0.0062
+        },
+        "explanation": [
+          "+0.0642 video2157 –chứa→ shark#n",
+          "+0.0394 video2157 –chứa→ ocean#n",
+          "+0.0174 video2157 –chứa→ boat#v",
+          "+0.0146 video2157 –chứa→ water#n",
+          "+0.0069 video2157 –chứa→ fish#v"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 5,
+        "video_id": "video574",
+        "clip_cos": 0.17792373895645142,
+        "graph_score": -0.5544841289520264,
+        "final": 1.0091590881347656,
+        "clip_rank": 5,
+        "totals": {
+          "visual": -0.5067,
+          "contains": -0.0418,
+          "relation": -0.006
+        },
+        "explanation": [
+          "+0.0235 video574 –chứa→ say#v",
+          "+0.0161 video574 –chứa→ wallaby#n",
+          "+0.0016 camera#n –object_of→ say#v ←chứa– video574",
+          "+0.0010 carry#v –object_of_inv→ kangaroo#n ←chứa– video574",
+          "+0.0010 horse#n –prep[on]→ beach#n ←chứa– video574"
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "query": "two people are dancing on a stage",
+    "gallery": "ext",
+    "alpha": 0.7,
+    "matched_concepts": [
+      "dance#v",
+      "people#n"
+    ],
+    "results": [
+      {
+        "rank": 1,
+        "video_id": "video2486",
+        "clip_cos": 0.2699342668056488,
+        "graph_score": -0.18772926926612854,
+        "final": 1.9382507801055908,
+        "clip_rank": 3,
+        "totals": {
+          "visual": -0.1931,
+          "contains": 0.0339,
+          "relation": -0.0285
+        },
+        "explanation": [
+          "+0.0259 video2486 –chứa→ shake#v",
+          "+0.0233 video2486 –chứa→ sang#n",
+          "+0.0147 video2486 –chứa→ dancer#n",
+          "+0.0101 video2486 –chứa→ perform#v",
+          "+0.0093 head#n –object_of→ shake#v ←chứa– video2486"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 2,
+        "video_id": "video1735",
+        "clip_cos": 0.2824467420578003,
+        "graph_score": -0.3795924186706543,
+        "final": 1.7734699249267578,
+        "clip_rank": 1,
+        "totals": {
+          "visual": -0.3769,
+          "contains": 0.0421,
+          "relation": -0.0447
+        },
+        "explanation": [
+          "+0.0267 video1735 –chứa→ sang#n",
+          "+0.0200 video1735 –chứa→ jumping#n",
+          "+0.0167 video1735 –chứa→ dancer#n",
+          "+0.0115 video1735 –chứa→ perform#v",
+          "+0.0104 lake#n –object_of→ dance#v ←chứa– video1735"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 3,
+        "video_id": "video740",
+        "clip_cos": 0.2722928524017334,
+        "graph_score": -0.38746681809425354,
+        "final": 1.5058954954147339,
+        "clip_rank": 2,
+        "totals": {
+          "visual": -0.4347,
+          "contains": 0.0766,
+          "relation": -0.0294
+        },
+        "explanation": [
+          "+0.0247 video740 –chứa→ art#n",
+          "+0.0233 video740 –chứa→ drum#v",
+          "+0.0147 video740 –chứa→ dancer#n",
+          "+0.0101 video740 –chứa→ perform#v",
+          "+0.0100 video740 –chứa→ costume#n"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 4,
+        "video_id": "video1407",
+        "clip_cos": 0.2679790258407593,
+        "graph_score": -0.3931146562099457,
+        "final": 1.3865692615509033,
+        "clip_rank": 4,
+        "totals": {
+          "visual": -0.3562,
+          "contains": -0.0037,
+          "relation": -0.0331
+        },
+        "explanation": [
+          "+0.0259 video1407 –chứa→ shake#v",
+          "+0.0147 video1407 –chứa→ dancer#n",
+          "+0.0124 video1407 –chứa→ actor#n",
+          "+0.0093 head#n –object_of→ shake#v ←chứa– video1407",
+          "+0.0091 lake#n –object_of→ dance#v ←chứa– video1407"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 5,
+        "video_id": "video3549",
+        "clip_cos": 0.26413866877555847,
+        "graph_score": -0.5015754699707031,
+        "final": 1.026585340499878,
+        "clip_rank": 5,
+        "totals": {
+          "visual": -0.5118,
+          "contains": 0.0286,
+          "relation": -0.0184
+        },
+        "explanation": [
+          "+0.0200 video3549 –chứa→ trainer#n",
+          "+0.0175 video3549 –chứa→ jumping#n",
+          "+0.0153 art#n –object_of→ practice#v ←chứa– video3549",
+          "+0.0147 video3549 –chứa→ dancer#n",
+          "+0.0137 video3549 –chứa→ practice#v"
+        ],
+        "note": ""
+      }
+    ]
+  },
+  {
+    "query": "a character defeats another in combat as the fallen begins to explode",
+    "gallery": "ext",
+    "alpha": 0.7,
+    "matched_concepts": [
+      "character#n",
+      "explode#v",
+      "fall#v"
+    ],
+    "results": [
+      {
+        "rank": 1,
+        "video_id": "video5392",
+        "clip_cos": 0.3041432797908783,
+        "graph_score": -0.4202304184436798,
+        "final": 2.1402766704559326,
+        "clip_rank": 2,
+        "totals": {
+          "visual": -0.344,
+          "contains": -0.0633,
+          "relation": -0.0129
+        },
+        "explanation": [
+          "+0.0098 video5392 –chứa→ hero#n",
+          "+0.0025 head#n –object_of→ attack#v ←chứa– video5392",
+          "+0.0024 drum#n –object_of→ beat#v ←chứa– video5392",
+          "+0.0020 man#n –object_of→ attack#v ←chứa– video5392",
+          "+0.0017 field#n –prep_inv[in]→ player#n ←chứa– video5392"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 2,
+        "video_id": "video3974",
+        "clip_cos": 0.28541579842567444,
+        "graph_score": -0.39660343527793884,
+        "final": 1.7340598106384277,
+        "clip_rank": 3,
+        "totals": {
+          "visual": -0.3502,
+          "contains": -0.0339,
+          "relation": -0.0125
+        },
+        "explanation": [
+          "+0.0143 video3974 –chứa→ blade#n",
+          "+0.0098 video3974 –chứa→ hero#n",
+          "+0.0025 head#n –object_of→ attack#v ←chứa– video3974",
+          "+0.0024 drum#n –object_of→ beat#v ←chứa– video3974",
+          "+0.0020 man#n –object_of→ attack#v ←chứa– video3974"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 3,
+        "video_id": "video396",
+        "clip_cos": 0.28366756439208984,
+        "graph_score": -0.3844136893749237,
+        "final": 1.7207021713256836,
+        "clip_rank": 4,
+        "totals": {
+          "visual": -0.3487,
+          "contains": -0.0302,
+          "relation": -0.0055
+        },
+        "explanation": [
+          "+0.0414 video396 –chứa→ blast#v",
+          "+0.0106 video396 –chứa→ robot#n",
+          "+0.0098 video396 –chứa→ hero#n",
+          "+0.0025 head#n –object_of→ attack#v ←chứa– video396",
+          "+0.0020 man#n –object_of→ attack#v ←chứa– video396"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 4,
+        "video_id": "video2918",
+        "clip_cos": 0.313667893409729,
+        "graph_score": -0.6992490291595459,
+        "final": 1.689990758895874,
+        "clip_rank": 1,
+        "totals": {
+          "visual": -0.626,
+          "contains": -0.0645,
+          "relation": -0.0087
+        },
+        "explanation": [
+          "+0.0098 video2918 –chứa→ hero#n",
+          "+0.0025 head#n –object_of→ attack#v ←chứa– video2918",
+          "+0.0024 drum#n –object_of→ beat#v ←chứa– video2918",
+          "+0.0020 man#n –object_of→ attack#v ←chứa– video2918",
+          "+0.0020 show#v –agent_of_inv→ body#n ←chứa– video2918"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 5,
+        "video_id": "video7810",
+        "clip_cos": 0.2681337893009186,
+        "graph_score": -0.28947117924690247,
+        "final": 1.569124460220337,
+        "clip_rank": 7,
+        "totals": {
+          "visual": -0.3536,
+          "contains": 0.0649,
+          "relation": -0.0008
+        },
+        "explanation": [
+          "+0.0414 video7810 –chứa→ blast#v",
+          "+0.0261 video7810 –chứa→ rocket#n",
+          "+0.0098 video7810 –chứa→ hero#n",
+          "+0.0079 video7810 –chứa→ land#v",
+          "+0.0053 video7810 –chứa→ cliff#n"
+        ],
+        "note": ""
+      }
+    ],
+    "gold_video_id": "video5392",
+    "case_kind": "THÀNH CÔNG"
+  },
+  {
+    "query": "man in blue shirt who is student is giving an interview",
+    "gallery": "ext",
+    "alpha": 0.7,
+    "matched_concepts": [
+      "give#v",
+      "man#n",
+      "shirt#n",
+      "student#n"
+    ],
+    "results": [
+      {
+        "rank": 1,
+        "video_id": "video4222",
+        "clip_cos": 0.2559504508972168,
+        "graph_score": -0.7237850427627563,
+        "final": 2.0037333965301514,
+        "clip_rank": 2,
+        "totals": {
+          "visual": -0.6357,
+          "contains": -0.0713,
+          "relation": -0.0167
+        },
+        "explanation": [
+          "+0.0077 cook#v –agent_of_inv→ man#n ←chứa– video4222",
+          "+0.0056 show#v –agent_of_inv→ man#n ←chứa– video4222",
+          "+0.0050 costume#n –prep_inv[in]→ people#n ←chứa– video4222",
+          "+0.0036 jump#v –agent_of_inv→ guy#n ←chứa– video4222",
+          "+0.0034 cell#n –object_of→ speak#v ←chứa– video4222"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 2,
+        "video_id": "video5460",
+        "clip_cos": 0.2590518891811371,
+        "graph_score": -0.9823365807533264,
+        "final": 1.5628682374954224,
+        "clip_rank": 1,
+        "totals": {
+          "visual": -0.9501,
+          "contains": -0.019,
+          "relation": -0.0132
+        },
+        "explanation": [
+          "+0.0077 cook#v –agent_of_inv→ man#n ←chứa– video5460",
+          "+0.0056 show#v –agent_of_inv→ man#n ←chứa– video5460",
+          "+0.0047 video5460 –chứa→ sang#n",
+          "+0.0041 video5460 –chứa→ actor#n",
+          "+0.0031 video5460 –chứa→ doctor#n"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 3,
+        "video_id": "video300",
+        "clip_cos": 0.2462463080883026,
+        "graph_score": -0.8003807663917542,
+        "final": 1.4579484462738037,
+        "clip_rank": 3,
+        "totals": {
+          "visual": -0.736,
+          "contains": -0.04,
+          "relation": -0.0244
+        },
+        "explanation": [
+          "+0.0077 cook#v –agent_of_inv→ man#n ←chứa– video300",
+          "+0.0056 show#v –agent_of_inv→ man#n ←chứa– video300",
+          "+0.0036 jump#v –agent_of_inv→ guy#n ←chứa– video300",
+          "+0.0036 video300 –chứa→ tell#v",
+          "+0.0033 crash#v –agent_of_inv→ car#n ←chứa– video300"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 4,
+        "video_id": "video1441",
+        "clip_cos": 0.24055631458759308,
+        "graph_score": -0.752593457698822,
+        "final": 1.3394525051116943,
+        "clip_rank": 5,
+        "totals": {
+          "visual": -0.7206,
+          "contains": -0.0191,
+          "relation": -0.0128
+        },
+        "explanation": [
+          "+0.0143 video1441 –chứa→ point#v",
+          "+0.0077 cook#v –agent_of_inv→ man#n ←chứa– video1441",
+          "+0.0056 show#v –agent_of_inv→ man#n ←chứa– video1441",
+          "+0.0041 video1441 –chứa→ actor#n",
+          "+0.0036 jump#v –agent_of_inv→ guy#n ←chứa– video1441"
+        ],
+        "note": ""
+      },
+      {
+        "rank": 5,
+        "video_id": "video1500",
+        "clip_cos": 0.24508358538150787,
+        "graph_score": -0.8819097280502319,
+        "final": 1.2352651357650757,
+        "clip_rank": 4,
+        "totals": {
+          "visual": -0.7649,
+          "contains": -0.1035,
+          "relation": -0.0135
+        },
+        "explanation": [
+          "+0.0003 paper#n –object_of→ read#v ←chứa– video1500",
+          "+0.0001 walk#v –object_of_inv→ desk#n ←chứa– video1500"
+        ],
+        "note": ""
+      }
+    ],
+    "gold_video_id": "video946",
+    "case_kind": "THẤT BẠI"
+  }
+]

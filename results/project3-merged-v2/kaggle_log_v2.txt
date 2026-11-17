@@ -1,0 +1,195 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+[     0.0s] Chế độ REAL | out=/kaggle/working/p3_out
+Nhúng: 15128 id VAL, 13586 id G0, 1542 id benchmark v3
+Lõi đồ thị sẵn sàng: 150 lớp, 50 vị từ VG150 | 7s
+[     7.4s] VAL 15128 ảnh | DEV-G0 4752 ảnh (TN1)
+[   163.9s] Input VG khớp SHA-256 của G0 | {'image_data': '/kaggle/input/visualgenome/image_data.json/image_data.json', 'rel': '/kaggle/input/visual-genome/relationships.json/relationships.json', 'obj_dw': '/kaggle/input/visualgenome/objects_v1_2.json/objects.json'}
+[   168.4s] $ /usr/bin/python3 -m gdown 1kX2iCHEv0CADL8dSO1nMdW-V0NqIAiP3 -O /kaggle/working/p3_work/visual_genome_relation.json -> 0 ggle/working/p3_work/visual_genome_relation.json    0%|          | 0.00/9.13M [00:00<?, ?B/s]  98%|█████████▊| 8.91M/9.13M [00:00<00:00, 42.3MB/s] 100%|██████████| 9.13M/9.13M [00:00<00:00, 43.1MB/s] 
+[   169.0s] $ wget -q -O /kaggle/working/p3_work/replace_rel.json https://raw.githubusercontent.com/RAIVNLab/sugar-crepe/main/data/replace_rel.json -> 0 
+[   169.5s] $ wget -q -O /kaggle/working/p3_work/swap_obj.json https://raw.githubusercontent.com/RAIVNLab/sugar-crepe/main/data/swap_obj.json -> 0 
+[   169.5s] Benchmark: {'aro': '409465875a8dc4217313865cd75b7e246652ee73b8e98ec5310a72b03ea90b85', 'replace_rel': '356bcc2fc4c6aed3f4d9fd50acc58489bb1fe70c28791f9368d4cbf9ea39cdc9', 'swap_obj': '073cdb8e253d053614e80710834d9773b09dbc1dd0a412f6f9492262caa1dcad'}
+[   170.1s] Ảnh VG thuộc VAL có file: 15128
+[   170.3s] Mục benchmark: {'aro': 2955, 'replace_rel': 874, 'swap_obj': 155} | loại: {'aro_not_VAL': 20982, 'replace_rel_vg_not_VAL': 532, 'swap_obj_vg_not_VAL': 90}
+[   187.3s] Annotation: relationships 4752 ảnh, objects 5231 ảnh, 203048 hộp GT | 187s
+[   190.3s] TN1: 2404 ảnh DEV-G0 có caption COCO | loại {} | 190s
+[   193.3s] Phần C: không chạy lại — dùng output đã Add Input: /kaggle/input/project03-level4b-v2-graphfix/project03_level4b_v2 | chép 59 file kết quả
+[   193.3s] Phần C: {'status': 'reused', 'cache': ['/kaggle/input/project03-level4b-v2-graphfix/project03_level4b_v2/cache/frames_msvd_ViT-L-14_laion2b_s32b_b82k_F12_uniform-segment-midpoint_9aa95a30_1970.npz'], 'results_copied': 59, 'source': '/kaggle/input/project03-level4b-v2-graphfix/project03_level4b_v2', 'cache_dirs': ['/kaggle/input/project03-level4b-v2-graphfix/project03_level4b_v2/cache'], 'minutes': 0.0}
+[   195.1s] Video: bắt đầu chạy notebook video v5 (tiến trình riêng)…
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py:129: FutureWarning: Passing `min_pixels` and `max_pixels` to a processor call is deprecated and will be removed in v5.23. Pass in `size={'longest_edge': xxx, 'shortest_edge': xxx} to override the target size.`
+  warnings.warn(
+
+
+/usr/local/lib/python3.13/dist-packages/transformers/models/qwen2_vl/image_processing_qwen2_vl.py:129: FutureWarning: Passing `min_pixels` and `max_pixels` to a processor call is deprecated and will be removed in v5.23. Pass in `size={'longest_edge': xxx, 'shortest_edge': xxx} to override the target size.`
+  warnings.warn(
+
+[  8936.3s] Video xong: {'M0_clip': 0.5931, 'G1_clip_graph': 0.6109, 'M1_clip_pe_flat': 0.6982, 'M2_clip_pe_hub': 0.703, 'M3_clip_pe_bridge': 0.7001, 'M4_full_graph': 0.7069, 'M4_ctrl_hub_random': 0.6987, 'M4_ctrl_bridge_shuffled': 0.701, 'M4_ctrl_both': 0.6979, 'G1_ctrl_both': 0.5963} | 145.7 phút | lần nhìn test MSVD: lần thứ 8 ⇒ THĂM DÒ
+[  8949.4s] $ git clone -q --depth 1 https://github.com/yrcong/RelTR.git /kaggle/working/p3_work/RelTR -> 0 
+[  8964.1s] $ /usr/bin/python3 -m gdown 1id6oD_iwiNDD6HyCn2ORgRTIKkPD3tUD -O /kaggle/working/p3_work/reltr_vg_checkpoint0149.pth -> 0 |█████████▎| 711M/766M [00:11<00:00, 84.8MB/s]  97%|█████████▋| 741M/766M [00:11<00:00, 99.7MB/s]  99%|█████████▊| 755M/766M [00:11<00:00, 95.9MB/s] 100%|██████████| 766M/766M [00:11<00:00, 65.6MB/s] 
+Downloading: "https://download.pytorch.org/models/resnet50-0676ba61.pth" to /root/.cache/torch/hub/checkpoints/resnet50-0676ba61.pth
+  0%|          | 0.00/97.8M [00:00<?, ?B/s]
+  0%|          | 0.00/97.8M [00:00<?, ?B/s]  6%|▌         | 5.75M/97.8M [00:00<00:01, 59.8MB/s]
+  6%|▌         | 5.75M/97.8M [00:00<00:01, 59.8MB/s] 13%|█▎        | 12.2M/97.8M [00:00<00:01, 64.6MB/s]
+ 13%|█▎        | 12.2M/97.8M [00:00<00:01, 64.6MB/s] 31%|███▏      | 30.6M/97.8M [00:00<00:00, 123MB/s] 
+ 31%|███▏      | 30.6M/97.8M [00:00<00:00, 123MB/s]  50%|████▉     | 48.6M/97.8M [00:00<00:00, 149MB/s]
+ 50%|████▉     | 48.6M/97.8M [00:00<00:00, 149MB/s] 68%|██████▊   | 66.1M/97.8M [00:00<00:00, 161MB/s]
+ 68%|██████▊   | 66.1M/97.8M [00:00<00:00, 161MB/s] 86%|████████▌ | 84.2M/97.8M [00:00<00:00, 171MB/s]
+ 86%|████████▌ | 84.2M/97.8M [00:00<00:00, 171MB/s]100%|██████████| 97.8M/97.8M [00:00<00:00, 152MB/s]
+100%|██████████| 97.8M/97.8M [00:00<00:00, 152MB/s]
+
+
+[  8968.6s] RelTR: <All keys matched successfully>
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[  8979.7s] RelTR ckpt sha256 2b3601e5cc5d835d9538d78b698dd7b3f4f1646bdb0e5c459d2cbe959d5906b1 | CLIP ViT-L-14/laion2b_s32b_b82k | open_clip 3.2.0 | torch 2.11.0+cu130 | cuda
+[  9018.7s] TN1: P-TUNE 1181 / P-CHECK 1223 ảnh | 9019s
+[  9025.3s] TN1 seed 0: MRR {'CLIP': 0.6941, 'G-full': 0.6997, 'G-obj': 0.6995, 'G-rand': 0.6926, 'G-shuf': 0.6995} | H1 {'mean': 0.00561917251065032, 'lo': 0.0005684133885519778, 'hi': 0.010862104066129714}
+[  9031.6s] TN1 seed 1: MRR {'CLIP': 0.7231, 'G-full': 0.7239, 'G-obj': 0.7262, 'G-rand': 0.7221, 'G-shuf': 0.7238} | H1 {'mean': 0.0008125204259176906, 'lo': -0.004855392650417419, 'hi': 0.006378492581185464}
+[  9037.8s] TN1 seed 2: MRR {'CLIP': 0.7379, 'G-full': 0.7406, 'G-obj': 0.7406, 'G-rand': 0.7379, 'G-shuf': 0.7372} | H1 {'mean': 0.0027073696486494265, 'lo': -0.0023966434566966306, 'hi': 0.00762174073208105}
+[  9037.8s] TN1 quyết định (đăng ký trước): NO-GO | MRR trung bình: {'CLIP': 0.7184, 'G-full': 0.7214, 'G-obj': 0.7221, 'G-rand': 0.7175, 'G-shuf': 0.7202}
+[  9078.3s] GraphSAGE: 3529 ảnh huấn luyện, 1223 ảnh P-CHECK, 150 lớp + 3799 bộ ba | 9078s
+[  9098.9s] TN1b seed 0: MRR {'CLIP': 0.6941, 'SAGE': 0.6929, 'SAGE-rand': 0.6941, 'SAGE-0': 0.6961} | α {'SAGE': 0.7, 'SAGE-rand': 1.0, 'SAGE-0': 0.8} | loss {'SAGE': (4.524, 0.41), 'SAGE-rand': (4.536, 0.693), 'SAGE-0': (0.745, 0.292)}
+[  9118.8s] TN1b seed 1: MRR {'CLIP': 0.7231, 'SAGE': 0.7231, 'SAGE-rand': 0.7231, 'SAGE-0': 0.7231} | α {'SAGE': 1.0, 'SAGE-rand': 1.0, 'SAGE-0': 1.0} | loss {'SAGE': (4.574, 0.406), 'SAGE-rand': (4.588, 0.692), 'SAGE-0': (0.727, 0.296)}
+[  9138.9s] TN1b seed 2: MRR {'CLIP': 0.7379, 'SAGE': 0.7366, 'SAGE-rand': 0.7367, 'SAGE-0': 0.7315} | α {'SAGE': 0.9, 'SAGE-rand': 0.9, 'SAGE-0': 0.8} | loss {'SAGE': (4.543, 0.424), 'SAGE-rand': (4.558, 0.692), 'SAGE-0': (0.797, 0.294)}
+[  9138.9s] TN1b quyết định (đăng ký trước): {'G1 SAGE-CLIP': 'KHÔNG DƯƠNG', 'G2 SAGE-rand': 'KHÔNG DƯƠNG', 'G3 SAGE-noedge': 'KHÔNG DƯƠNG'} | MRR: {'CLIP': 0.7184, 'SAGE': 0.7175, 'SAGE-rand': 0.718, 'SAGE-0': 0.7169} | 9139s
+[  9154.4s] SCENIR: đặc trưng đỉnh sentence-transformers/all-mpnet-base-v2, (150, 768)
+[  9304.2s] TN1c seed 0: MRR {'CLIP': 0.6941, 'SCENIR': 0.6964, 'SCENIR-rand': 0.6941, 'SCENIR-noedge': 0.6941} | α {'SCENIR': 0.9, 'SCENIR-rand': 1.0, 'SCENIR-noedge': 1.0} | loss {'SCENIR': (214.8, 162.74), 'SCENIR-rand': (213.72, 172.25), 'SCENIR-noedge': (8.31, 5.48)}
+[  9452.9s] TN1c seed 1: MRR {'CLIP': 0.7231, 'SCENIR': 0.7231, 'SCENIR-rand': 0.7245, 'SCENIR-noedge': 0.7231} | α {'SCENIR': 1.0, 'SCENIR-rand': 0.9, 'SCENIR-noedge': 1.0} | loss {'SCENIR': (208.45, 163.46), 'SCENIR-rand': (207.55, 171.71), 'SCENIR-noedge': (8.16, 5.48)}
+[  9601.1s] TN1c seed 2: MRR {'CLIP': 0.7379, 'SCENIR': 0.7379, 'SCENIR-rand': 0.7379, 'SCENIR-noedge': 0.7379} | α {'SCENIR': 1.0, 'SCENIR-rand': 1.0, 'SCENIR-noedge': 1.0} | loss {'SCENIR': (214.38, 161.37), 'SCENIR-rand': (221.55, 170.25), 'SCENIR-noedge': (8.11, 5.48)}
+[  9601.1s] TN1c quyết định (đăng ký trước): {'S1 SCENIR-CLIP': 'KHÔNG DƯƠNG', 'S2 SCENIR-rand': 'KHÔNG DƯƠNG', 'S3 SCENIR-noedge': 'KHÔNG DƯƠNG'} | MRR: {'CLIP': 0.7184, 'SCENIR': 0.7191, 'SCENIR-rand': 0.7188, 'SCENIR-noedge': 0.7184} | 9601s
+[  9602.1s]   RelTR+CLIP 4/3984
+[  9739.1s]   RelTR+CLIP 804/3984
+[  9877.6s]   RelTR+CLIP 1604/3984
+[ 10017.0s]   RelTR+CLIP 2404/3984
+[ 10176.4s]   RelTR+CLIP 3204/3984
+[ 10357.7s] TN2: đặc trưng 3984 ảnh | 10358s
+[ 10371.1s] TN2 ARO_all: {'CLIP': 50.1, 'graph_only[dg]': 65.8, 'fusion[dg]': 66.1, 'fusion[dg_rand]': 52.9}
+[ 10371.1s] TN2 ARO_geo: {'CLIP': 49.7, 'graph_only[dg]': 66.3, 'fusion[dg]': 66.7, 'fusion[dg_rand]': 50.2}
+[ 10371.1s] TN2 ARO_pred: {'CLIP': 50.5, 'graph_only[dg]': 66.3, 'fusion[dg]': 65.2, 'fusion[dg_rand]': 59.5}
+[ 10371.1s] TN2 ARO_other: {'CLIP': 58.9}
+[ 10371.1s] TN2 ARO_all_excl_v3bench: {'CLIP': 50.2, 'graph_only[dg]': 65.7, 'fusion[dg]': 65.8, 'fusion[dg_rand]': 53.2}
+[ 10371.1s] TN2 SC_replace_rel: {'CLIP': 69.9, 'graph_only[dg]': 54.4, 'fusion[dg]': 70.3, 'fusion[dg_rand]': 69.9}
+[ 10371.1s] TN2 SC_swap_obj: {'CLIP': 63.5, 'graph_only[dg]': 49.7, 'fusion[dg]': 61.3, 'fusion[dg_rand]': 63.5}
+[ 10371.1s] TN2 quyết định (đăng ký trước): {'ARO_all': 'DƯƠNG', 'SC_replace_rel': 'KHÔNG DƯƠNG'} | 10371s
+[ 10373.7s] $ /usr/bin/python3 -m gdown 1TCEoM0mgFmz8T4cF7PQ3XJmO6JjtiQ-s -O /kaggle/working/p3_work/coco_qa_two_obj.json -> 0 e.google.com/uc?id=1TCEoM0mgFmz8T4cF7PQ3XJmO6JjtiQ-s To: /kaggle/working/p3_work/coco_qa_two_obj.json    0%|          | 0.00/42.8k [00:00<?, ?B/s] 100%|██████████| 42.8k/42.8k [00:00<00:00, 73.3MB/s] 
+[ 10373.8s] TN2b COCO-spatial: 292 mục giữ lại, loại {'vg_not_VAL': 148}, đồ thị chấm được 132 | 10374s
+[ 10374.6s]   RelTR+CLIP 4/292
+[ 10437.1s]   RelTR+CLIP (lật) 4/86
+[ 10453.2s]   RelTR+CLIP (lật) 4/46
+[ 10461.5s] TN2b: đặc trưng 292 ảnh + 132 ảnh lật | 10461s
+[ 10464.2s] TN2b COCOSP_all: {'CLIP': 46.8, 'graph_only[dg]': 69.8, 'fusion[dg]': 63.9, 'graph_only[dg_rand]': 51.3, 'graph_only[dg_nogeo]': 50.0}
+[ 10464.2s] TN2b COCOSP_leftright: {'CLIP': 50.0, 'graph_only[dg]': 71.7, 'fusion[dg]': 69.5, 'graph_only[dg_rand]': 50.4, 'graph_only[dg_nogeo]': 50.0}
+[ 10464.2s] TN2b COCOSP_abovebelow: {'CLIP': 41.1, 'graph_only[dg]': 66.6, 'fusion[dg]': 51.8, 'graph_only[dg_rand]': 52.6, 'graph_only[dg_nogeo]': 50.0}
+[ 10464.2s] TN2b quyết định (đăng ký trước): {'A1 fusion-CLIP': 'DƯƠNG', 'A2 graph-nogeo': 'DƯƠNG', 'A3 graph-rand': 'DƯƠNG'} | phản thực tế: {'n': 132, 'graph_reversed': 0.8787878787878788, 'clip_reversed': 0.08333333333333333, 'gap': {'mean': 0.7954545454545454, 'lo': 0.71875, 'hi': 0.8692307692307693}} | 10464s
+[ 10465.0s]   RelTR+CLIP (lật) 4/472
+[ 10543.2s] XAI: 622 mục (472 trái/phải) | đặc trưng ảnh lật xong | 10543s
+[ 10576.3s] XAI: {"all": {"n": 622, "graph_acc": 0.862, "clip_acc": 0.492, "fidelity_del_changed": 0.123, "fidelity_rand_changed": 0.0, "sufficiency_kept": 1.0, "sparsity_evidence_fraction": 0.005, "sparsity_concentration_mean": 0.178, "sparsity_concentration_median": 0.011, "validity_both_iou50": 0.542, "validity_any_iou50": 0.921, "n_validity": 531, "counterfactual_graph_reversed": 0.879, "counterfactual_clip_reversed": 0.044, "n_counterfactual": 472}, "geo": {"n": 472, "graph_acc": 0.847, "clip_acc": 0.483, "fidelity_del_changed": 0.138, "fidelity_rand_changed": 0.0, "sufficiency_kept": 1.0, "sparsity_evidence_fraction": 0.005, "sparsity_concentration_mean": 0.014, "sparsity_concentration_median": 0.006, "validity_both_iou50": 0.497, "validity_any_iou50": 0.907, "n_validity": 396, "counterfactual_graph_reversed": 0.879, "counterfactual_clip_reversed": 0.044, "n_counterfactual": 472}, "pred": {"n": 150
+[ 10578.6s] XAI: đã vẽ 10 ví dụ vào /kaggle/working/p3_out/figures | 10579s
+[ 10579.2s] DEMO 'a man riding a horse on the beach': [(2332357, 1, ['horse|on|beach<=horse|on|beach']), (2327962, 2, ['horse|on|beach<=horse|on|beach']), (2325811, 3, []), (2325953, 4, []), (2321970, 6, [])]
+[ 10579.7s] DEMO 'a dog sitting on a bench': [(2334765, 1, []), (2414009, 2, []), (2328062, 3, []), (2329829, 4, []), (2328797, 5, [])]
+[ 10580.1s] DEMO 'a woman holding an umbrella on the street': [(2332914, 2, ['woman|holding|umbrella<=woman|holding|umbrella']), (2327436, 1, []), (2321647, 3, []), (2326896, 5, []), (2415820, 4, [])]
+[ 10583.7s] Ca văn bản → ảnh: [('thanh_cong', 19, 10), ('thanh_cong', 26, 19), ('thanh_cong', 19, 12), ('thanh_cong', 25, 19), ('thanh_cong', 18, 12), ('that_bai', 83, 92), ('that_bai', 13, 18), ('that_bai', 10, 15), ('that_bai', 10, 15), ('that_bai', 17, 21)] | tăng 138, giảm 70, không đổi 1015; trùng hạng với bản chỉ đối tượng: 0.985
+[ 10584.6s] Đã xuất file split vào /kaggle/working/p3_out/splits
+[ 10585.1s] Xong toàn bộ pipeline: 10585s
+/kaggle/working/results: 0 tệp
+/kaggle/working/output/action_genome/results: 0 tệp
+/kaggle/working/p3_out: 11 tệp
+    RESULTS.md
+    cases_text_to_image.json
+    exp2_items.csv
+    exp2b_cocospatial_items.csv
+    figures
+    log.txt
+    splits
+    summary.json
+    video
+    video_v2
+    xai_items.csv
+/kaggle/working/p3_out/video_v2: 59 tệp
+    artifacts_manifest.json
+    audit_report.md
+    caption_access_log.csv
+    case_analysis.json
+    case_analysis.md
+    conceptnet_edges.csv
+    config_initial.json
+    data_inventory.json
+    data_leakage_audit.md
+    demo_outputs.json
+    env_versions.json
+    eval_queries_level4b.csv
+    eval_queries_level4b.json
+    eval_queries_metrics.csv
+    eval_queries_paired.csv
+    experiment_manifest.json
+    frame_sampling.json
+    frozen_config.json
+    gateA_dataset_report.json
+    gateB_checks.json
+    graph_ablation_results.csv
+    graph_audit_report.md
+    graph_conclusion.md
+    graph_confirmatory_tests.csv
+    graph_edges_v3.csv
+    graph_eval_parts.json
+    graph_experiment_results.csv
+    graph_nodes_v3.csv
+    graph_paired_tests.csv
+    graph_randomization_audit.csv
+    graph_relation_analysis.csv
+    graph_relation_analysis_summary.json
+    graph_relation_quality_stats.json
+    graph_schema_v3.json
+    graph_stage_decisions.csv
+    graph_structure_audit.csv
+    graph_taxonomy_audit.csv
+    graph_taxonomy_stats.json
+    graph_xai_fidelity.csv
+    graph_xai_seed_sensitivity.csv
+Phần C (Level 4(b) v2-graphfix): {'status': 'reused', 'cache': ['/kaggle/input/project03-level4b-v2-graphfix/project03_level4b_v2/cache/frames_msvd_ViT-L-14_laion2b_s32b_b82k_F12_uniform-segment-midpoint_9aa95a30_1970.npz'], 'results_copied': 59, 'source': '/kaggle/input/project03-level4b-v2-graphfix/project03_level4b_v2', 'cache_dirs': ['/kaggle/input/project03-level4b-v2-graphfix/project03_level4b_v2/cache'], 'minutes': 0.0}
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 6381817 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Support files will be in __results___files/
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Making directory __results___files
+[NbConvertApp] Writing 1188481 bytes to __results__.html

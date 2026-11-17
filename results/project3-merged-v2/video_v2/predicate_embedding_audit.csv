@@ -1,0 +1,974 @@
+family,predicate,phrase,prompt,train_videos,graph_edges,passes_support_policy,nearest,family_mean_cos,family_min_cos,family_max_cos
+svo,act,acting,someone acting something.,2,1,False,"act like, deal out, smear on",0.702387273311615,0.3610239624977112,1.0
+svo,act like,acting like,someone acting like something.,3,1,False,"act, smear on, make like",0.702387273311615,0.3610239624977112,1.0
+svo,add,adding,someone adding something.,75,14,True,"add on, add to, add in",0.702387273311615,0.3610239624977112,1.0
+svo,add chop,adding chop,someone adding chop something.,3,1,False,"show chop, cut chop, slice chop",0.702387273311615,0.3610239624977112,1.0
+svo,add dice,adding dice,someone adding dice something.,1,1,False,"crush dice, contain dice, chop dice",0.702387273311615,0.3610239624977112,1.0
+svo,add into,adding into,someone adding into something.,2,1,False,"add to, add in, add on",0.702387273311615,0.3610239624977112,1.0
+svo,add of,adding of,someone adding of something.,7,2,True,"add, add to, add on",0.702387273311615,0.3610239624977112,1.0
+svo,add to,adding to,someone adding to something.,37,8,True,"add in, add on, add",0.702387273311615,0.3610239624977112,1.0
+svo,add whisk,adding whisk,someone adding whisk something.,1,1,False,"crack whisk, whisk, whisk in",0.702387273311615,0.3610239624977112,1.0
+svo,aim,aiming,someone aiming something.,3,1,False,"aim at, aim with, aim shoot",0.702387273311615,0.3610239624977112,1.0
+svo,antagonize,antagonizing,someone antagonizing something.,1,1,False,"mess with, smear on, wage",0.702387273311615,0.3610239624977112,1.0
+svo,apply,applying,someone applying something.,11,1,True,"paste, prepare, place",0.702387273311615,0.3610239624977112,1.0
+svo,apply to,applying to,someone applying to something.,5,2,True,"apply, add into, fill in",0.702387273311615,0.3610239624977112,1.0
+svo,approach by,approaching by,someone approaching by something.,1,1,False,"approach, approach in, walk into",0.702387273311615,0.3610239624977112,1.0
+svo,ascend from,ascending from,someone ascending from something.,2,1,False,"descend, move above, walk up",0.702387273311615,0.3610239624977112,1.0
+svo,ask for,asking for,someone asking for something.,1,1,False,"give about, say about, show to",0.702387273311615,0.3610239624977112,1.0
+svo,assault,assaulting,someone assaulting something.,1,1,False,"fight over, attack, attack on",0.702387273311615,0.3610239624977112,1.0
+svo,attach,attaching,someone attaching something.,2,2,False,"attach to, put onto, place",0.702387273311615,0.3610239624977112,1.0
+svo,attach to,attaching to,someone attaching to something.,4,1,False,"attach, put onto, put into",0.702387273311615,0.3610239624977112,1.0
+svo,attack,attacking,someone attacking something.,24,11,True,"attack on, attack by, attack in",0.702387273311615,0.3610239624977112,1.0
+svo,attack by,attacking by,someone attacking by something.,4,1,False,"attack, attack on, attack in",0.702387273311615,0.3610239624977112,1.0
+svo,attack on,attacking on,someone attacking on something.,1,1,False,"attack in, attack, attack by",0.702387273311615,0.3610239624977112,1.0
+svo,attend to,attending to,someone attending to something.,1,1,False,"use to, pore to, take",0.702387273311615,0.3610239624977112,1.0
+svo,back from,backing from,someone backing from something.,1,1,False,"pull back, deal out, take",0.702387273311615,0.3610239624977112,1.0
+svo,barbecue,barbecuing,someone barbecuing something.,1,1,False,"grill, grill of, cook",0.702387273311615,0.3610239624977112,1.0
+svo,bark shake,barking shake,someone barking shake something.,1,1,False,"bark at, bark wave, scream at",0.702387273311615,0.3610239624977112,1.0
+svo,bark wave,barking wave,someone barking wave something.,1,1,False,"bark at, growl wave, bark shake",0.702387273311615,0.3610239624977112,1.0
+svo,bask on,basking on,someone basking on something.,1,1,False,"rest on, rest in, relax on",0.702387273311615,0.3610239624977112,1.0
+svo,bat,batting,someone batting something.,5,2,True,"bat at, hit with, hit in",0.702387273311615,0.3610239624977112,1.0
+svo,bathe in,bathing in,someone bathing in something.,4,1,False,"bathe into, bathe, soak in",0.702387273311615,0.3610239624977112,1.0
+svo,beat,beating,someone beating something.,21,5,True,"beat with, beat on, beat to",0.702387273311615,0.3610239624977112,1.0
+svo,beat in,beating in,someone beating in something.,2,1,False,"beat on, beat with, beat",0.702387273311615,0.3610239624977112,1.0
+svo,beat on,beating on,someone beating on something.,2,2,False,"beat with, beat, beat in",0.702387273311615,0.3610239624977112,1.0
+svo,beat up,beating up,someone beating up something.,4,2,False,"beat, beat on, beat to",0.702387273311615,0.3610239624977112,1.0
+svo,beat with,beating with,someone beating with something.,2,2,False,"beat on, beat, beat to",0.702387273311615,0.3610239624977112,1.0
+svo,bed on,beding on,someone beding on something.,1,1,False,"tide, shorten on, take on",0.702387273311615,0.3610239624977112,1.0
+svo,beef in,beefing in,someone beefing in something.,1,1,False,"bed on, deal, butter in",0.702387273311615,0.3610239624977112,1.0
+svo,bite,biting,someone biting something.,15,4,True,"bite on, bite by, bite into",0.702387273311615,0.3610239624977112,1.0
+svo,bite on,biting on,someone biting on something.,3,1,False,"bite, bite by, bite into",0.702387273311615,0.3610239624977112,1.0
+svo,blanch,blanching,someone blanching something.,1,1,False,"blanch in, drain, wash off",0.702387273311615,0.3610239624977112,1.0
+svo,blast,blasting,someone blasting something.,1,1,False,"fire off, fire, fire with",0.702387273311615,0.3610239624977112,1.0
+svo,blend,blending,someone blending something.,3,1,False,"mix into, mix up, mix",0.702387273311615,0.3610239624977112,1.0
+svo,blow up,blowing up,someone blowing up something.,2,1,False,"blow, blow on, blow of",0.702387273311615,0.3610239624977112,1.0
+svo,boat in,boating in,someone boating in something.,1,1,False,"sail in, sail on, sail",0.702387273311615,0.3610239624977112,1.0
+svo,boil,boiling,someone boiling something.,9,6,True,"boil in, steam, to boil",0.702387273311615,0.3610239624977112,1.0
+svo,bother,bothering,someone bothering something.,1,1,False,"lather, bed on, deal",0.702387273311615,0.3610239624977112,1.0
+svo,bounce,bouncing,someone bouncing something.,4,2,False,"bounce in, bounce through, bounce off",0.702387273311615,0.3610239624977112,1.0
+svo,box,boxing,someone boxing something.,1,1,False,"box in, punch, fight",0.702387273311615,0.3610239624977112,1.0
+svo,brake,braking,someone braking something.,4,2,False,"to drive, stop at, strain",0.702387273311615,0.3610239624977112,1.0
+svo,bread,breading,someone breading something.,2,3,False,"coke, season, season of",0.702387273311615,0.3610239624977112,1.0
+svo,break,breaking,someone breaking something.,29,7,True,"break of, break with, break after",0.702387273311615,0.3610239624977112,1.0
+svo,break into,breaking into,someone breaking into something.,1,1,False,"break in, break with, crack into",0.702387273311615,0.3610239624977112,1.0
+svo,break of,breaking of,someone breaking of something.,1,1,False,"break, break with, break after",0.702387273311615,0.3610239624977112,1.0
+svo,bring,bringing,someone bringing something.,6,1,True,"bring in, take, bring over",0.702387273311615,0.3610239624977112,1.0
+svo,brown,browning,someone browning something.,7,3,True,"brown in, to brown, shorten on",0.702387273311615,0.3610239624977112,1.0
+svo,brown in,browning in,someone browning in something.,1,1,False,"brown, bed on, kill in",0.702387273311615,0.3610239624977112,1.0
+svo,brush,brushing,someone brushing something.,10,4,True,"brush on, brush into, brush off",0.702387273311615,0.3610239624977112,1.0
+svo,brush into,brushing into,someone brushing into something.,1,1,False,"brush on, brush, brush off",0.702387273311615,0.3610239624977112,1.0
+svo,bump into,bumping into,someone bumping into something.,2,1,False,"bump to, bump, hit",0.702387273311615,0.3610239624977112,1.0
+svo,bump to,bumping to,someone bumping to something.,1,1,False,"bump, bump into, hit to",0.702387273311615,0.3610239624977112,1.0
+svo,bunch into,bunching into,someone bunching into something.,1,1,False,"put into, put over, put down",0.702387273311615,0.3610239624977112,1.0
+svo,butter,buttering,someone buttering something.,6,2,True,"butter in, butter of, put on",0.702387273311615,0.3610239624977112,1.0
+svo,butter in,buttering in,someone buttering in something.,1,1,False,"butter, butter of, put in",0.702387273311615,0.3610239624977112,1.0
+svo,by pull,bying pull,someone bying pull something.,1,1,False,"pull, pull on, pull by",0.702387273311615,0.3610239624977112,1.0
+svo,by spin,bying spin,someone bying spin something.,1,1,False,"toss spin, spin on, spin by",0.702387273311615,0.3610239624977112,1.0
+svo,carry,carrying,someone carrying something.,21,3,True,"carry in, carry through, carry off",0.702387273311615,0.3610239624977112,1.0
+svo,catch,catching,someone catching something.,11,2,True,"catch on, catch in, catch with",0.702387273311615,0.3610239624977112,1.0
+svo,change,changing,someone changing something.,2,1,False,"remove, put on, put onto",0.702387273311615,0.3610239624977112,1.0
+svo,charge into,charging into,someone charging into something.,1,1,False,"charge through, plug into, ladle into",0.702387273311615,0.3610239624977112,1.0
+svo,chase,chasing,someone chasing something.,12,5,True,"chase by, chase after, chase through",0.702387273311615,0.3610239624977112,1.0
+svo,chase after,chasing after,someone chasing after something.,3,1,False,"chase by, chase, chase through",0.702387273311615,0.3610239624977112,1.0
+svo,check,checking,someone checking something.,5,1,True,"check on, check if, check of",0.702387273311615,0.3610239624977112,1.0
+svo,check out,checking out,someone checking out something.,3,1,False,"check on, check, check by",0.702387273311615,0.3610239624977112,1.0
+svo,chew,chewing,someone chewing something.,5,1,True,"chew on, lick chew, bite by",0.702387273311615,0.3610239624977112,1.0
+svo,chew on,chewing on,someone chewing on something.,5,3,True,"chew, bite on, bite by",0.702387273311615,0.3610239624977112,1.0
+svo,chop,chopping,someone chopping something.,68,11,True,"chop of, chop on, chop in",0.702387273311615,0.3610239624977112,1.0
+svo,chop boil,chopping boil,someone chopping boil something.,1,1,False,"cut boil, slice boil, stir boil",0.702387273311615,0.3610239624977112,1.0
+svo,chop dice,chopping dice,someone chopping dice something.,2,2,False,"slice dice, crush dice, peel dice",0.702387273311615,0.3610239624977112,1.0
+svo,chop into,chopping into,someone chopping into something.,5,3,True,"chop through, chop from, chop in",0.702387273311615,0.3610239624977112,1.0
+svo,chop slice,chopping slice,someone chopping slice something.,1,1,False,"cut slice, slice chop, chop",0.702387273311615,0.3610239624977112,1.0
+svo,chop up,chopping up,someone chopping up something.,27,6,True,"chop through, chop into, chop on",0.702387273311615,0.3610239624977112,1.0
+svo,chop with,chopping with,someone chopping with something.,7,1,True,"chop on, chop in, chop from",0.702387273311615,0.3610239624977112,1.0
+svo,clean,cleaning,someone cleaning something.,35,8,True,"clean on, clean off, clean in",0.702387273311615,0.3610239624977112,1.0
+svo,clean of,cleaning of,someone cleaning of something.,2,1,False,"clean on, clean in, clean with",0.702387273311615,0.3610239624977112,1.0
+svo,climb,climbing,someone climbing something.,15,3,True,"climb on, climb in, climb with",0.702387273311615,0.3610239624977112,1.0
+svo,climb into,climbing into,someone climbing into something.,3,1,False,"climb to, climb onto, climb through",0.702387273311615,0.3610239624977112,1.0
+svo,climb on,climbing on,someone climbing on something.,8,1,True,"climb, climb in, climb by",0.702387273311615,0.3610239624977112,1.0
+svo,climb over,climbing over,someone climbing over something.,4,1,False,"climb down, climb onto, climb on",0.702387273311615,0.3610239624977112,1.0
+svo,climb through,climbing through,someone climbing through something.,1,1,False,"climb into, climb on, climb to",0.702387273311615,0.3610239624977112,1.0
+svo,climb up,climbing up,someone climbing up something.,7,3,True,"climb on, climb down, climb",0.702387273311615,0.3610239624977112,1.0
+svo,close to,closing to,someone closing to something.,1,1,False,"close, open of, nod",0.702387273311615,0.3610239624977112,1.0
+svo,coat,coating,someone coating something.,3,2,False,"coat with, pain, stain",0.702387273311615,0.3610239624977112,1.0
+svo,coat bake,coating bake,someone coating bake something.,1,1,False,"bake, bake on, bake in",0.702387273311615,0.3610239624977112,1.0
+svo,collect,collecting,someone collecting something.,2,1,False,"collect from, pick up, pick",0.702387273311615,0.3610239624977112,1.0
+svo,comb,combing,someone combing something.,9,3,True,"comb with, brush off, apply",0.702387273311615,0.3610239624977112,1.0
+svo,concentrate for,concentrating for,someone concentrating for something.,1,1,False,"work on, make look, work into",0.702387273311615,0.3610239624977112,1.0
+svo,contain,containing,someone containing something.,16,7,True,"contain of, contain in, bring",0.702387273311615,0.3610239624977112,1.0
+svo,contain cook,containing cook,someone containing cook something.,1,1,False,"of cook, with cook, put cook",0.702387273311615,0.3610239624977112,1.0
+svo,contain melt,containing melt,someone containing melt something.,2,1,False,"put melt, to melt, melt",0.702387273311615,0.3610239624977112,1.0
+svo,cook,cooking,someone cooking something.,75,15,True,"cook on, cook of, cook for",0.702387273311615,0.3610239624977112,1.0
+svo,cook in,cooking in,someone cooking in something.,20,3,True,"cook on, cook of, cook",0.702387273311615,0.3610239624977112,1.0
+svo,cook of,cooking of,someone cooking of something.,8,2,True,"cook, cook on, cook in",0.702387273311615,0.3610239624977112,1.0
+svo,cook on,cooking on,someone cooking on something.,7,2,True,"cook, cook in, cook for",0.702387273311615,0.3610239624977112,1.0
+svo,cook scramble,cooking scramble,someone cooking scramble something.,5,1,True,"fry scramble, make scramble, prepare scramble",0.702387273311615,0.3610239624977112,1.0
+svo,cook with,cooking with,someone cooking with something.,11,2,True,"cook on, cook for, cook",0.702387273311615,0.3610239624977112,1.0
+svo,crack,cracking,someone cracking something.,14,4,True,"crack into, crack open, to crack",0.702387273311615,0.3610239624977112,1.0
+svo,crack brown,cracking brown,someone cracking brown something.,1,1,False,"to brown, crack, crack open",0.702387273311615,0.3610239624977112,1.0
+svo,crack open,cracking open,someone cracking open something.,2,2,False,"crack, crack into, split open",0.702387273311615,0.3610239624977112,1.0
+svo,crack whip,cracking whip,someone cracking whip something.,1,1,False,"whip, whip with, whip on",0.702387273311615,0.3610239624977112,1.0
+svo,crack whisk,cracking whisk,someone cracking whisk something.,1,1,False,"add whisk, whisk, whisk to",0.702387273311615,0.3610239624977112,1.0
+svo,cradle,cradling,someone cradling something.,2,1,False,"fondle, hold between, hold onto",0.702387273311615,0.3610239624977112,1.0
+svo,crash,crashing,someone crashing something.,5,2,True,"crash to, crash on, crash with",0.702387273311615,0.3610239624977112,1.0
+svo,crash into,crashing into,someone crashing into something.,5,2,True,"crash with, crash on, crash",0.702387273311615,0.3610239624977112,1.0
+svo,crash with,crashing with,someone crashing with something.,1,1,False,"crash to, crash on, crash",0.702387273311615,0.3610239624977112,1.0
+svo,cruise on,cruising on,someone cruising on something.,1,1,False,"ride around, ride in, ride with",0.702387273311615,0.3610239624977112,1.0
+svo,crush with,crushing with,someone crushing with something.,2,1,False,"crush, hit to, hit by",0.702387273311615,0.3610239624977112,1.0
+svo,cry after,crying after,someone crying after something.,1,1,False,"cry on, cry tie, feel",0.702387273311615,0.3610239624977112,1.0
+svo,cry on,crying on,someone crying on something.,1,1,False,"cry after, cry tie, feel",0.702387273311615,0.3610239624977112,1.0
+svo,cuddle,cuddling,someone cuddling something.,3,1,False,"hug, hug on, embrace",0.702387273311615,0.3610239624977112,1.0
+svo,cup up,cuping up,someone cuping up something.,1,1,False,"cut up, cut from, cut with",0.702387273311615,0.3610239624977112,1.0
+svo,curl,curling,someone curling something.,2,1,False,"roll out, cut roll, trim",0.702387273311615,0.3610239624977112,1.0
+svo,curry,currying,someone currying something.,1,1,False,"scurry into, outrun, use",0.702387273311615,0.3610239624977112,1.0
+svo,cut,cutting,someone cutting something.,156,27,True,"cut in, cut by, cut from",0.702387273311615,0.3610239624977112,1.0
+svo,cut boil,cutting boil,someone cutting boil something.,3,1,False,"slice boil, chop boil, peel boil",0.702387273311615,0.3610239624977112,1.0
+svo,cut by,cutting by,someone cutting by something.,4,1,False,"cut with, cut from, cut in",0.702387273311615,0.3610239624977112,1.0
+svo,cut cook,cutting cook,someone cutting cook something.,3,1,False,"slice cook, put cook, place cook",0.702387273311615,0.3610239624977112,1.0
+svo,cut from,cutting from,someone cutting from something.,2,2,False,"cut by, cut in, cut with",0.702387273311615,0.3610239624977112,1.0
+svo,cut in,cutting in,someone cutting in something.,2,1,False,"cut at, cut from, cut with",0.702387273311615,0.3610239624977112,1.0
+svo,cut into,cutting into,someone cutting into something.,17,5,True,"cut through, cut in, cut from",0.702387273311615,0.3610239624977112,1.0
+svo,cut of,cutting of,someone cutting of something.,22,6,True,"cut from, cut by, cut at",0.702387273311615,0.3610239624977112,1.0
+svo,cut off,cutting off,someone cutting off something.,7,1,True,"cut up, cut into, cut",0.702387273311615,0.3610239624977112,1.0
+svo,cut roll,cutting roll,someone cutting roll something.,1,1,False,"slice roll, chop roll, cut",0.702387273311615,0.3610239624977112,1.0
+svo,cut serve,cutting serve,someone cutting serve something.,1,1,False,"cut slice, cut, to serve",0.702387273311615,0.3610239624977112,1.0
+svo,cut slice,cutting slice,someone cutting slice something.,2,1,False,"chop slice, slice cut, place slice",0.702387273311615,0.3610239624977112,1.0
+svo,cut through,cutting through,someone cutting through something.,5,2,True,"cut into, cut from, cut in",0.702387273311615,0.3610239624977112,1.0
+svo,cut up,cutting up,someone cutting up something.,68,11,True,"cut off, cut, cut into",0.702387273311615,0.3610239624977112,1.0
+svo,cut without,cutting without,someone cutting without something.,1,1,False,"cut at, cut in, cut with",0.702387273311615,0.3610239624977112,1.0
+svo,cycle,cycling,someone cycling something.,1,1,False,"bike down, pedal, rid",0.702387273311615,0.3610239624977112,1.0
+svo,damage,damaging,someone damaging something.,1,1,False,"mess with, destroy, antagonize",0.702387273311615,0.3610239624977112,1.0
+svo,dance around,dancing around,someone dancing around something.,4,1,False,"dance along, dance on, dance",0.702387273311615,0.3610239624977112,1.0
+svo,dance in,dancing in,someone dancing in something.,28,4,True,"dance on, dance, dance with",0.702387273311615,0.3610239624977112,1.0
+svo,dance on,dancing on,someone dancing on something.,19,5,True,"dance, dance in, dance along",0.702387273311615,0.3610239624977112,1.0
+svo,dance sing,dancing sing,someone dancing sing something.,2,1,False,"dance, dance to, dance along",0.702387273311615,0.3610239624977112,1.0
+svo,dance with,dancing with,someone dancing with something.,4,1,False,"dance between, dance, dance in",0.702387273311615,0.3610239624977112,1.0
+svo,dash,dashing,someone dashing something.,2,3,False,"dash in, mess with, rush into",0.702387273311615,0.3610239624977112,1.0
+svo,decorate,decorating,someone decorating something.,3,2,False,"paste, paint, paint around",0.702387273311615,0.3610239624977112,1.0
+svo,defeat,defeating,someone defeating something.,1,1,False,"fight, fight off, beat to",0.702387273311615,0.3610239624977112,1.0
+svo,demolish,demolishing,someone demolishing something.,1,1,False,"take down, remove, remove of",0.702387273311615,0.3610239624977112,1.0
+svo,demonstrate,demonstrating,someone demonstrating something.,11,1,True,"demonstrate on, demonstrate of, show",0.702387273311615,0.3610239624977112,1.0
+svo,demonstrate of,demonstrating of,someone demonstrating of something.,1,1,False,"demonstrate, demonstrate on, show of",0.702387273311615,0.3610239624977112,1.0
+svo,demonstrate shed,demonstrating shed,someone demonstrating shed something.,1,1,False,"demonstrate, demonstrate of, demonstrate on",0.702387273311615,0.3610239624977112,1.0
+svo,describe about,describing about,someone describing about something.,1,1,False,"explain about, speak about, talk about",0.702387273311615,0.3610239624977112,1.0
+svo,destroy,destroying,someone destroying something.,1,1,False,"take down, wreck, smash in",0.702387273311615,0.3610239624977112,1.0
+svo,devein,deveining,someone deveining something.,1,1,False,"drain, dab, deal",0.702387273311615,0.3610239624977112,1.0
+svo,dial,dialing,someone dialing something.,3,1,False,"dial on, call, call on",0.702387273311615,0.3610239624977112,1.0
+svo,dice,dicing,someone dicing something.,39,7,True,"dice up, dice into, dice size",0.702387273311615,0.3610239624977112,1.0
+svo,dice peel,dicing peel,someone dicing peel something.,1,1,False,"slice peel, cut peel, dice up",0.702387273311615,0.3610239624977112,1.0
+svo,dice size,dicing size,someone dicing size something.,1,1,False,"dice, dice up, dice into",0.702387273311615,0.3610239624977112,1.0
+svo,dice up,dicing up,someone dicing up something.,2,1,False,"dice, dice into, dice size",0.702387273311615,0.3610239624977112,1.0
+svo,differentiate boil,differentiating boil,someone differentiating boil something.,1,1,False,"of boil, into boil, to boil",0.702387273311615,0.3610239624977112,1.0
+svo,dip,diping,someone diping something.,5,1,True,"dip in, dip of, rip",0.702387273311615,0.3610239624977112,1.0
+svo,dip boil,diping boil,someone diping boil something.,1,1,False,"to boil, of boil, into boil",0.702387273311615,0.3610239624977112,1.0
+svo,discard,discarding,someone discarding something.,1,1,False,"damage, remove from, deal",0.702387273311615,0.3610239624977112,1.0
+svo,dislodge of,dislodging of,someone dislodging of something.,1,1,False,"stay into, attend to, occupy by",0.702387273311615,0.3610239624977112,1.0
+svo,display,displaying,someone displaying something.,4,1,False,"display on, display in, exhibit",0.702387273311615,0.3610239624977112,1.0
+svo,dive in,diving in,someone diving in something.,6,2,True,"dive, dive into, dive off",0.702387273311615,0.3610239624977112,1.0
+svo,dive into,diving into,someone diving into something.,6,6,True,"dive off, dive in, dive",0.702387273311615,0.3610239624977112,1.0
+svo,divide,dividing,someone dividing something.,1,1,False,"divide into, separate in, separate",0.702387273311615,0.3610239624977112,1.0
+svo,drain,draining,someone draining something.,2,1,False,"strain, deal, mess with",0.702387273311615,0.3610239624977112,1.0
+svo,dredge,dredging,someone dredging something.,1,1,False,"drain, extract, put down",0.702387273311615,0.3610239624977112,1.0
+svo,dress,dressing,someone dressing something.,8,2,True,"dress with, dress in, undress",0.702387273311615,0.3610239624977112,1.0
+svo,dribble,dribbling,someone dribbling something.,6,3,True,"to dribble, run down, skip through",0.702387273311615,0.3610239624977112,1.0
+svo,drift around,drifting around,someone drifting around something.,1,1,False,"float past, rotate in, race to",0.702387273311615,0.3610239624977112,1.0
+svo,drink,drinking,someone drinking something.,19,12,True,"drink at, drink with, drink of",0.702387273311615,0.3610239624977112,1.0
+svo,drink from,drinking from,someone drinking from something.,8,2,True,"drink with, drink, drink at",0.702387273311615,0.3610239624977112,1.0
+svo,drive,driving,someone driving something.,40,13,True,"drive on, drive in, drive with",0.702387273311615,0.3610239624977112,1.0
+svo,drive along,driving along,someone driving along something.,2,1,False,"drive on, drive, drive with",0.702387273311615,0.3610239624977112,1.0
+svo,drive by,driving by,someone driving by something.,2,1,False,"drive on, drive, drive past",0.702387273311615,0.3610239624977112,1.0
+svo,drive down,driving down,someone driving down something.,15,8,True,"drive through, drive on, drive",0.702387273311615,0.3610239624977112,1.0
+svo,drive in,driving in,someone driving in something.,4,3,False,"drive on, drive, drive with",0.702387273311615,0.3610239624977112,1.0
+svo,drive into,driving into,someone driving into something.,4,1,False,"drive through, drive in, drive on",0.702387273311615,0.3610239624977112,1.0
+svo,drive on,driving on,someone driving on something.,10,5,True,"drive, drive in, drive along",0.702387273311615,0.3610239624977112,1.0
+svo,drive past,driving past,someone driving past something.,1,1,False,"drive by, drive along, drive through",0.702387273311615,0.3610239624977112,1.0
+svo,drive spin,driving spin,someone driving spin something.,1,1,False,"drive, drive on, drive in",0.702387273311615,0.3610239624977112,1.0
+svo,drive through,driving through,someone driving through something.,1,1,False,"drive on, drive down, drive in",0.702387273311615,0.3610239624977112,1.0
+svo,drive up,driving up,someone driving up something.,3,1,False,"drive down, drive on, drive through",0.702387273311615,0.3610239624977112,1.0
+svo,drop,dropping,someone dropping something.,6,1,True,"drop on, drop onto, drop into",0.702387273311615,0.3610239624977112,1.0
+svo,drop into,dropping into,someone dropping into something.,2,1,False,"drop onto, drop on, drop",0.702387273311615,0.3610239624977112,1.0
+svo,drop out,dropping out,someone dropping out something.,1,1,False,"drop on, drop, drop onto",0.702387273311615,0.3610239624977112,1.0
+svo,dump,dumping,someone dumping something.,10,4,True,"dump on, dump in, dump into",0.702387273311615,0.3610239624977112,1.0
+svo,dump in,dumping in,someone dumping in something.,1,1,False,"dump on, dump, dump into",0.702387273311615,0.3610239624977112,1.0
+svo,dunk,dunking,someone dunking something.,1,2,False,"slam dunk, to jump, jump into",0.702387273311615,0.3610239624977112,1.0
+svo,dust,dusting,someone dusting something.,2,1,False,"dust with, clean, wipe",0.702387273311615,0.3610239624977112,1.0
+svo,eat,eating,someone eating something.,49,12,True,"eat from, eat of, eat at",0.702387273311615,0.3610239624977112,1.0
+svo,eat from,eating from,someone eating from something.,7,3,True,"eat, eat off, eat of",0.702387273311615,0.3610239624977112,1.0
+svo,eat in,eating in,someone eating in something.,6,1,True,"eat at, eat, eat near",0.702387273311615,0.3610239624977112,1.0
+svo,eat of,eating of,someone eating of something.,4,1,False,"eat, eat from, eat at",0.702387273311615,0.3610239624977112,1.0
+svo,eat off,eating off,someone eating off something.,3,2,False,"eat, eat from, eat of",0.702387273311615,0.3610239624977112,1.0
+svo,embrace,embracing,someone embracing something.,1,1,False,"hug, hug on, cuddle",0.702387273311615,0.3610239624977112,1.0
+svo,emerge from,emerging from,someone emerging from something.,3,1,False,"enter through, enter into, enter",0.702387273311615,0.3610239624977112,1.0
+svo,empty,emptying,someone emptying something.,4,1,False,"empty from, dump, dump into",0.702387273311615,0.3610239624977112,1.0
+svo,enjoy,enjoying,someone enjoying something.,7,3,True,"enjoy on, enjoy with, enjoy in",0.702387273311615,0.3610239624977112,1.0
+svo,enjoy in,enjoying in,someone enjoying in something.,5,1,True,"enjoy on, enjoy with, enjoy",0.702387273311615,0.3610239624977112,1.0
+svo,enjoy near,enjoying near,someone enjoying near something.,1,1,False,"enjoy, enjoy on, enjoy in",0.702387273311615,0.3610239624977112,1.0
+svo,enjoy on,enjoying on,someone enjoying on something.,2,1,False,"enjoy in, enjoy, enjoy with",0.702387273311615,0.3610239624977112,1.0
+svo,enjoy play,enjoying play,someone enjoying play something.,1,1,False,"play play, play with, show play",0.702387273311615,0.3610239624977112,1.0
+svo,enjoy with,enjoying with,someone enjoying with something.,7,4,True,"enjoy on, enjoy, enjoy in",0.702387273311615,0.3610239624977112,1.0
+svo,enter,entering,someone entering something.,5,1,True,"enter into, enter in, enter through",0.702387273311615,0.3610239624977112,1.0
+svo,enter in,entering in,someone entering in something.,1,1,False,"enter into, enter, enter through",0.702387273311615,0.3610239624977112,1.0
+svo,enter into,entering into,someone entering into something.,5,1,True,"enter, enter in, enter through",0.702387273311615,0.3610239624977112,1.0
+svo,entertain on,entertaining on,someone entertaining on something.,1,1,False,"entertain, perform on, attend to",0.702387273311615,0.3610239624977112,1.0
+svo,escape from,escaping from,someone escaping from something.,2,2,False,"escape with, flee of, run into",0.702387273311615,0.3610239624977112,1.0
+svo,escape with,escaping with,someone escaping with something.,1,1,False,"escape from, flee of, run into",0.702387273311615,0.3610239624977112,1.0
+svo,exercise,exercising,someone exercising something.,2,1,False,"exercise with, exercise in, exercise on",0.702387273311615,0.3610239624977112,1.0
+svo,exercise in,exercising in,someone exercising in something.,2,1,False,"exercise on, exercise with, exercise",0.702387273311615,0.3610239624977112,1.0
+svo,exercise on,exercising on,someone exercising on something.,3,1,False,"exercise in, exercise, exercise with",0.702387273311615,0.3610239624977112,1.0
+svo,explain about,explaining about,someone explaining about something.,3,1,False,"explain to, describe about, lecture about",0.702387273311615,0.3610239624977112,1.0
+svo,explain boil,explaining boil,someone explaining boil something.,1,1,False,"show boil, in boil, of boil",0.702387273311615,0.3610239624977112,1.0
+svo,fake make,faking make,someone faking make something.,1,1,False,"from make, to make, make on",0.702387273311615,0.3610239624977112,1.0
+svo,fake shoot,faking shoot,someone faking shoot something.,1,1,False,"in shoot, shoot, shoot on",0.702387273311615,0.3610239624977112,1.0
+svo,fall from,falling from,someone falling from something.,8,1,True,"fall, fall on, fall over",0.702387273311615,0.3610239624977112,1.0
+svo,fall into,falling into,someone falling into something.,3,2,False,"fall in, fall to, fall from",0.702387273311615,0.3610239624977112,1.0
+svo,fall off,falling off,someone falling off something.,7,2,True,"fall over, fall, fall from",0.702387273311615,0.3610239624977112,1.0
+svo,fall on,falling on,someone falling on something.,11,2,True,"fall with, fall, fall in",0.702387273311615,0.3610239624977112,1.0
+svo,fall over,falling over,someone falling over something.,1,1,False,"fall off, fall, fall on",0.702387273311615,0.3610239624977112,1.0
+svo,fall walk,falling walk,someone falling walk something.,1,1,False,"walk over, walk across, fall to",0.702387273311615,0.3610239624977112,1.0
+svo,feed,feeding,someone feeding something.,9,1,True,"feed on, feed to, feed by",0.702387273311615,0.3610239624977112,1.0
+svo,feed on,feeding on,someone feeding on something.,2,1,False,"feed to, feed, feed by",0.702387273311615,0.3610239624977112,1.0
+svo,feed to,feeding to,someone feeding to something.,2,1,False,"feed on, feed, feed by",0.702387273311615,0.3610239624977112,1.0
+svo,fetch,fetching,someone fetching something.,4,1,False,"bring in, bring, pick up",0.702387273311615,0.3610239624977112,1.0
+svo,fight in,fighting in,someone fighting in something.,6,1,True,"fight on, fight with, fight",0.702387273311615,0.3610239624977112,1.0
+svo,fill,filling,someone filling something.,9,4,True,"fill with, fill in, fill up",0.702387273311615,0.3610239624977112,1.0
+svo,fill in,filling in,someone filling in something.,2,1,False,"fill with, fill, fill up",0.702387273311615,0.3610239624977112,1.0
+svo,fill up,filling up,someone filling up something.,3,2,False,"fill, fill in, fill with",0.702387273311615,0.3610239624977112,1.0
+svo,fill with,filling with,someone filling with something.,11,5,True,"fill in, fill, fill up",0.702387273311615,0.3610239624977112,1.0
+svo,fire,firing,someone firing something.,13,1,True,"fire with, fire by, fire near",0.702387273311615,0.3610239624977112,1.0
+svo,fish,fishing,someone fishing something.,2,1,False,"fish in, boat in, paddle in",0.702387273311615,0.3610239624977112,1.0
+svo,fix,fixing,someone fixing something.,6,1,True,"fix on, repair, put down",0.702387273311615,0.3610239624977112,1.0
+svo,flick,flicking,someone flicking something.,1,1,False,"flail, catch on, hit by",0.702387273311615,0.3610239624977112,1.0
+svo,flip,flipping,someone flipping something.,5,2,True,"flip on, flip in, flip with",0.702387273311615,0.3610239624977112,1.0
+svo,flip into,flipping into,someone flipping into something.,1,1,False,"flip in, flip on, flip over",0.702387273311615,0.3610239624977112,1.0
+svo,flip with,flipping with,someone flipping with something.,1,1,False,"flip on, flip in, flip into",0.702387273311615,0.3610239624977112,1.0
+svo,float in,floating in,someone floating in something.,1,1,False,"float past, flop into, fall into",0.702387273311615,0.3610239624977112,1.0
+svo,flour,flouring,someone flouring something.,3,3,False,"smear on, face, smear",0.702387273311615,0.3610239624977112,1.0
+svo,flush in,flushing in,someone flushing in something.,1,1,False,"piss into, pee into, pee off",0.702387273311615,0.3610239624977112,1.0
+svo,fly,flying,someone flying something.,4,2,False,"fly on, fly in, fly off",0.702387273311615,0.3610239624977112,1.0
+svo,fly above,flying above,someone flying above something.,3,2,False,"fly over, fly on, fly across",0.702387273311615,0.3610239624977112,1.0
+svo,fly across,flying across,someone flying across something.,2,1,False,"fly over, fly through, fly on",0.702387273311615,0.3610239624977112,1.0
+svo,fly in,flying in,someone flying in something.,6,6,True,"fly on, fly, fly over",0.702387273311615,0.3610239624977112,1.0
+svo,fly into,flying into,someone flying into something.,2,1,False,"fly off, fly in, fly through",0.702387273311615,0.3610239624977112,1.0
+svo,fly over,flying over,someone flying over something.,3,1,False,"fly above, fly on, fly off",0.702387273311615,0.3610239624977112,1.0
+svo,fly through,flying through,someone flying through something.,3,3,False,"fly in, fly over, fly across",0.702387273311615,0.3610239624977112,1.0
+svo,fly with,flying with,someone flying with something.,2,1,False,"fly in, fly on, fly",0.702387273311615,0.3610239624977112,1.0
+svo,fold over,folding over,someone folding over something.,2,1,False,"fold in, fold, place over",0.702387273311615,0.3610239624977112,1.0
+svo,follow,following,someone following something.,3,1,False,"follow down, approach in, approach",0.702387273311615,0.3610239624977112,1.0
+svo,for play,foring play,someone foring play something.,1,1,False,"to play, by play, on play",0.702387273311615,0.3610239624977112,1.0
+svo,form,forming,someone forming something.,2,1,False,"take form, preform with, make into",0.702387273311615,0.3610239624977112,1.0
+svo,from cook,froming cook,someone froming cook something.,3,1,False,"of cook, by cook, contain cook",0.702387273311615,0.3610239624977112,1.0
+svo,from make,froming make,someone froming make something.,1,1,False,"to make, from put, turn make",0.702387273311615,0.3610239624977112,1.0
+svo,fry,frying,someone frying something.,27,15,True,"fry in, fry of, fry chop",0.702387273311615,0.3610239624977112,1.0
+svo,fry in,frying in,someone frying in something.,9,3,True,"fry, fry of, fry chop",0.702387273311615,0.3610239624977112,1.0
+svo,fry scramble,frying scramble,someone frying scramble something.,1,1,False,"cook scramble, prepare scramble, fry",0.702387273311615,0.3610239624977112,1.0
+svo,fuel,fueling,someone fueling something.,1,1,False,"fill up, fill, fill with",0.702387273311615,0.3610239624977112,1.0
+svo,gallop,galloping,someone galloping something.,4,1,False,"gallop on, gallop down, gallop through",0.702387273311615,0.3610239624977112,1.0
+svo,gallop down,galloping down,someone galloping down something.,2,1,False,"gallop on, gallop, gallop through",0.702387273311615,0.3610239624977112,1.0
+svo,gallop on,galloping on,someone galloping on something.,5,2,True,"gallop, gallop down, gallop through",0.702387273311615,0.3610239624977112,1.0
+svo,game on,gaming on,someone gaming on something.,1,1,False,"play on, play by, deal play",0.702387273311615,0.3610239624977112,1.0
+svo,garnish,garnishing,someone garnishing something.,1,1,False,"plat, mash, apply",0.702387273311615,0.3610239624977112,1.0
+svo,gaze at,gazing at,someone gazing at something.,1,1,False,"gaze in, look at, look on",0.702387273311615,0.3610239624977112,1.0
+svo,gaze in,gazing in,someone gazing in something.,1,1,False,"gaze at, look on, stare into",0.702387273311615,0.3610239624977112,1.0
+svo,give,giving,someone giving something.,30,4,True,"give on, give of, give to",0.702387273311615,0.3610239624977112,1.0
+svo,give to,giving to,someone giving to something.,8,1,True,"give, give on, give of",0.702387273311615,0.3610239624977112,1.0
+svo,glaze,glazing,someone glazing something.,1,1,False,"coat, mold, put onto",0.702387273311615,0.3610239624977112,1.0
+svo,glide across,gliding across,someone gliding across something.,1,1,False,"fly across, fly through, fly off",0.702387273311615,0.3610239624977112,1.0
+svo,grab,grabbing,someone grabbing something.,12,4,True,"grab from, grab onto, hold onto",0.702387273311615,0.3610239624977112,1.0
+svo,grab onto,grabbing onto,someone grabbing onto something.,2,2,False,"grab from, grab, hold onto",0.702387273311615,0.3610239624977112,1.0
+svo,grade into,grading into,someone grading into something.,1,1,False,"grade, test, learn",0.702387273311615,0.3610239624977112,1.0
+svo,grate,grating,someone grating something.,9,5,True,"grate into, sift, use to",0.702387273311615,0.3610239624977112,1.0
+svo,grate into,grating into,someone grating into something.,1,1,False,"grate, put into, dice into",0.702387273311615,0.3610239624977112,1.0
+svo,graze,grazing,someone grazing something.,1,1,False,"graze in, eat, feed by",0.702387273311615,0.3610239624977112,1.0
+svo,graze in,grazing in,someone grazing in something.,1,1,False,"graze, eat, eat from",0.702387273311615,0.3610239624977112,1.0
+svo,grill,grilling,someone grilling something.,7,1,True,"grill of, barbecue, cook on",0.702387273311615,0.3610239624977112,1.0
+svo,grind,grinding,someone grinding something.,3,2,False,"grind onto, crush, crush with",0.702387273311615,0.3610239624977112,1.0
+svo,groom,grooming,someone grooming something.,3,3,False,"groom with, shave, shave of",0.702387273311615,0.3610239624977112,1.0
+svo,growl wave,growling wave,someone growling wave something.,1,1,False,"bark wave, roar like, roar down",0.702387273311615,0.3610239624977112,1.0
+svo,hang onto,hanging onto,someone hanging onto something.,1,1,False,"hang on, hang off, hang from",0.702387273311615,0.3610239624977112,1.0
+svo,hang up,hanging up,someone hanging up something.,1,1,False,"hang, hang on, hang from",0.702387273311615,0.3610239624977112,1.0
+svo,help,helping,someone helping something.,3,1,False,"to help, give to, put in",0.702387273311615,0.3610239624977112,1.0
+svo,hit,hitting,someone hitting something.,31,8,True,"hit on, hit by, hit at",0.702387273311615,0.3610239624977112,1.0
+svo,hit by,hitting by,someone hitting by something.,5,2,True,"hit on, hit, hit with",0.702387273311615,0.3610239624977112,1.0
+svo,hit in,hitting in,someone hitting in something.,3,1,False,"hit on, hit at, hit with",0.702387273311615,0.3610239624977112,1.0
+svo,hit on,hitting on,someone hitting on something.,4,2,False,"hit at, hit in, hit",0.702387273311615,0.3610239624977112,1.0
+svo,hit with,hitting with,someone hitting with something.,5,1,True,"hit in, hit on, hit by",0.702387273311615,0.3610239624977112,1.0
+svo,hold,holding,someone holding something.,58,12,True,"hold by, hold of, hold on",0.702387273311615,0.3610239624977112,1.0
+svo,hold die,holding die,someone holding die something.,1,1,False,"contain dice, crush dice, add dice",0.702387273311615,0.3610239624977112,1.0
+svo,hold in,holding in,someone holding in something.,14,1,True,"hold at, hold on, hold by",0.702387273311615,0.3610239624977112,1.0
+svo,hold of,holding of,someone holding of something.,3,1,False,"hold, hold by, hold at",0.702387273311615,0.3610239624977112,1.0
+svo,hold onto,holding onto,someone holding onto something.,2,1,False,"hold on, hold in, hold across",0.702387273311615,0.3610239624977112,1.0
+svo,hold rock,holding rock,someone holding rock something.,1,1,False,"hold, hold of, hold by",0.702387273311615,0.3610239624977112,1.0
+svo,hug,hugging,someone hugging something.,2,1,False,"hug on, embrace, cuddle",0.702387273311615,0.3610239624977112,1.0
+svo,in boil,ining boil,someone ining boil something.,5,2,True,"show boil, to boil, of boil",0.702387273311615,0.3610239624977112,1.0
+svo,in enclose,ining enclose,someone ining enclose something.,1,1,False,"in put, in use, in approach",0.702387273311615,0.3610239624977112,1.0
+svo,in use,ining use,someone ining use something.,5,2,True,"in put, in enclose, in approach",0.702387273311615,0.3610239624977112,1.0
+svo,into fry,intoing fry,someone intoing fry something.,2,1,False,"to fry, in fry, fry in",0.702387273311615,0.3610239624977112,1.0
+svo,into size,intoing size,someone intoing size something.,1,1,False,"to measure, into use, show",0.702387273311615,0.3610239624977112,1.0
+svo,into use,intoing use,someone intoing use something.,5,2,True,"to use, show use, use to",0.702387273311615,0.3610239624977112,1.0
+svo,itch,itching,someone itching something.,1,1,False,"scratch on, scratch, scratch by",0.702387273311615,0.3610239624977112,1.0
+svo,jog on,joging on,someone joging on something.,2,2,False,"jog by, jog at, jog down",0.702387273311615,0.3610239624977112,1.0
+svo,jump,jumping,someone jumping something.,11,3,True,"jump on, jump with, jump like",0.702387273311615,0.3610239624977112,1.0
+svo,jump after,jumping after,someone jumping after something.,1,1,False,"jump at, jump with, jump",0.702387273311615,0.3610239624977112,1.0
+svo,jump at,jumping at,someone jumping at something.,3,1,False,"jump in, jump on, jump after",0.702387273311615,0.3610239624977112,1.0
+svo,jump from,jumping from,someone jumping from something.,7,1,True,"jump into, jump on, jump in",0.702387273311615,0.3610239624977112,1.0
+svo,jump in,jumping in,someone jumping in something.,9,3,True,"jump on, jump at, jump with",0.702387273311615,0.3610239624977112,1.0
+svo,jump inside,jumping inside,someone jumping inside something.,1,1,False,"jump through, jump into, jump in",0.702387273311615,0.3610239624977112,1.0
+svo,jump into,jumping into,someone jumping into something.,10,8,True,"jump onto, jump from, jump through",0.702387273311615,0.3610239624977112,1.0
+svo,jump make,jumping make,someone jumping make something.,1,1,False,"jump at, jump in, jump",0.702387273311615,0.3610239624977112,1.0
+svo,jump on,jumping on,someone jumping on something.,19,3,True,"jump upon, jump, jump in",0.702387273311615,0.3610239624977112,1.0
+svo,jump over,jumping over,someone jumping over something.,8,1,True,"jump across, jump onto, jump from",0.702387273311615,0.3610239624977112,1.0
+svo,jump up,jumping up,someone jumping up something.,1,1,False,"jump on, jump upon, jump",0.702387273311615,0.3610239624977112,1.0
+svo,kick,kicking,someone kicking something.,14,11,True,"kick at, kick of, kick across",0.702387273311615,0.3610239624977112,1.0
+svo,kick hit,kicking hit,someone kicking hit something.,1,1,False,"kick at, kick, kick of",0.702387273311615,0.3610239624977112,1.0
+svo,kick pass,kicking pass,someone kicking pass something.,1,1,False,"kick, kick at, kick across",0.702387273311615,0.3610239624977112,1.0
+svo,kiss,kissing,someone kissing something.,6,3,True,"kiss on, kiss in, smooch",0.702387273311615,0.3610239624977112,1.0
+svo,kitten drink,kittening drink,someone kittening drink something.,1,1,False,"kitten take, to drink, drink with",0.702387273311615,0.3610239624977112,1.0
+svo,kitten take,kittening take,someone kittening take something.,1,1,False,"take take, kitten drink, take",0.702387273311615,0.3610239624977112,1.0
+svo,knead,kneading,someone kneading something.,5,1,True,"knead of, knead on, knead in",0.702387273311615,0.3610239624977112,1.0
+svo,kneel to,kneeling to,someone kneeling to something.,1,1,False,"sit to, knead on, knead of",0.702387273311615,0.3610239624977112,1.0
+svo,knock,knocking,someone knocking something.,9,3,True,"knock from, knock over, knock down",0.702387273311615,0.3610239624977112,1.0
+svo,knock down,knocking down,someone knocking down something.,3,1,False,"knock over, knock from, knock",0.702387273311615,0.3610239624977112,1.0
+svo,knock over,knocking over,someone knocking over something.,4,1,False,"knock from, knock down, knock",0.702387273311615,0.3610239624977112,1.0
+svo,land on,landing on,someone landing on something.,2,2,False,"land in, land with, fly off",0.702387273311615,0.3610239624977112,1.0
+svo,laugh in,laughing in,someone laughing in something.,1,1,False,"laugh on, laugh with, laugh into",0.702387273311615,0.3610239624977112,1.0
+svo,laugh on,laughing on,someone laughing on something.,2,3,False,"laugh with, laugh in, laugh into",0.702387273311615,0.3610239624977112,1.0
+svo,lay,laying,someone laying something.,4,2,False,"lay by, lie, lay on",0.702387273311615,0.3610239624977112,1.0
+svo,lay in,laying in,someone laying in something.,7,2,True,"lay on, lie in, lie on",0.702387273311615,0.3610239624977112,1.0
+svo,lay on,laying on,someone laying on something.,17,5,True,"lay in, lie on, lay onto",0.702387273311615,0.3610239624977112,1.0
+svo,lead,leading,someone leading something.,3,1,False,"lead with, lead to, take on",0.702387273311615,0.3610239624977112,1.0
+svo,leaf into,leafing into,someone leafing into something.,1,1,False,"put into, ladle into, take from",0.702387273311615,0.3610239624977112,1.0
+svo,leap onto,leaping onto,someone leaping onto something.,1,1,False,"leap over, leap through, leap",0.702387273311615,0.3610239624977112,1.0
+svo,leave,leaving,someone leaving something.,5,1,True,"leave from, leave in, leave with",0.702387273311615,0.3610239624977112,1.0
+svo,leave use,leaving use,someone leaving use something.,1,1,False,"leave, leave in, leave from",0.702387273311615,0.3610239624977112,1.0
+svo,leave with,leaving with,someone leaving with something.,1,1,False,"leave from, leave, leave in",0.702387273311615,0.3610239624977112,1.0
+svo,lick,licking,someone licking something.,17,8,True,"lick on, lick up, lick off",0.702387273311615,0.3610239624977112,1.0
+svo,lick up,licking up,someone licking up something.,2,1,False,"lick, lick on, lick off",0.702387273311615,0.3610239624977112,1.0
+svo,lie,lying,someone lying something.,2,1,False,"lie in, lie on, lay",0.702387273311615,0.3610239624977112,1.0
+svo,lie in,lying in,someone lying in something.,8,1,True,"lie on, lie, lay in",0.702387273311615,0.3610239624977112,1.0
+svo,lie on,lying on,someone lying on something.,30,11,True,"lie in, lay on, lay in",0.702387273311615,0.3610239624977112,1.0
+svo,lift,lifting,someone lifting something.,12,2,True,"lift with, lift up, lift in",0.702387273311615,0.3610239624977112,1.0
+svo,lift drop,lifting drop,someone lifting drop something.,1,1,False,"lift off, lift, lift from",0.702387273311615,0.3610239624977112,1.0
+svo,lift from,lifting from,someone lifting from something.,1,1,False,"lift, lift in, lift with",0.702387273311615,0.3610239624977112,1.0
+svo,lift of,lifting of,someone lifting of something.,2,1,False,"lift, lift in, lift with",0.702387273311615,0.3610239624977112,1.0
+svo,lift off,lifting off,someone lifting off something.,1,2,False,"lift from, lift, lift up",0.702387273311615,0.3610239624977112,1.0
+svo,lift up,lifting up,someone lifting up something.,4,1,False,"lift, lift in, lift of",0.702387273311615,0.3610239624977112,1.0
+svo,light,lighting,someone lighting something.,1,1,False,"light up, light set, demonstrate",0.702387273311615,0.3610239624977112,1.0
+svo,light up,lighting up,someone lighting up something.,1,1,False,"light, light set, to fire",0.702387273311615,0.3610239624977112,1.0
+svo,look,looking,someone looking something.,5,2,True,"look on, look in, look at",0.702387273311615,0.3610239624977112,1.0
+svo,look at,looking at,someone looking at something.,17,2,True,"look on, look in, look over",0.702387273311615,0.3610239624977112,1.0
+svo,look in,looking in,someone looking in something.,6,1,True,"look on, look into, look",0.702387273311615,0.3610239624977112,1.0
+svo,look into,looking into,someone looking into something.,6,2,True,"look in, look through, look at",0.702387273311615,0.3610239624977112,1.0
+svo,maintain,maintaining,someone maintaining something.,2,1,False,"put in, man, tend",0.702387273311615,0.3610239624977112,1.0
+svo,make,making,someone making something.,143,17,True,"make with, make in, make at",0.702387273311615,0.3610239624977112,1.0
+svo,make bite,making bite,someone making bite something.,1,1,False,"to bite, of bite, bite into",0.702387273311615,0.3610239624977112,1.0
+svo,make in,making in,someone making in something.,11,3,True,"make on, make with, make at",0.702387273311615,0.3610239624977112,1.0
+svo,make into,making into,someone making into something.,5,3,True,"make in, make on, make with",0.702387273311615,0.3610239624977112,1.0
+svo,make mash,making mash,someone making mash something.,1,1,False,"prepare mash, eat mash, make",0.702387273311615,0.3610239624977112,1.0
+svo,make of,making of,someone making of something.,12,1,True,"make, make in, make at",0.702387273311615,0.3610239624977112,1.0
+svo,make on,making on,someone making on something.,7,3,True,"make in, make with, make",0.702387273311615,0.3610239624977112,1.0
+svo,make over,making over,someone making over something.,3,2,False,"put over, bring over, make on",0.702387273311615,0.3610239624977112,1.0
+svo,make scramble,making scramble,someone making scramble something.,1,1,False,"prepare scramble, spice scramble, pour scramble",0.702387273311615,0.3610239624977112,1.0
+svo,make up,making up,someone making up something.,2,1,False,"make on, make look, add on",0.702387273311615,0.3610239624977112,1.0
+svo,make wag,making wag,someone making wag something.,1,1,False,"sit wag, wag, wage",0.702387273311615,0.3610239624977112,1.0
+svo,make with,making with,someone making with something.,23,4,True,"make in, make on, make",0.702387273311615,0.3610239624977112,1.0
+svo,marinate,marinating,someone marinating something.,1,1,False,"marinade, add marinate, season",0.702387273311615,0.3610239624977112,1.0
+svo,marry,marrying,someone marrying something.,1,1,False,"attend to, ask for, act like",0.702387273311615,0.3610239624977112,1.0
+svo,mash,mashing,someone mashing something.,5,2,True,"mash on, mash with, crush",0.702387273311615,0.3610239624977112,1.0
+svo,mash with,mashing with,someone mashing with something.,2,1,False,"mash on, mash, crush",0.702387273311615,0.3610239624977112,1.0
+svo,melt,melting,someone melting something.,3,1,False,"melt on, melt in, melt of",0.702387273311615,0.3610239624977112,1.0
+svo,melt in,melting in,someone melting in something.,2,1,False,"melt on, melt, melt of",0.702387273311615,0.3610239624977112,1.0
+svo,mess with,messing with,someone messing with something.,1,1,False,"wage, smear on, deal out",0.702387273311615,0.3610239624977112,1.0
+svo,mince,mincing,someone mincing something.,5,1,True,"mince with, dice up, dice",0.702387273311615,0.3610239624977112,1.0
+svo,miss,missing,someone missing something.,4,3,False,"find, find in, need",0.702387273311615,0.3610239624977112,1.0
+svo,miss kick,missing kick,someone missing kick something.,1,1,False,"to kick, by kick, kick hit",0.702387273311615,0.3610239624977112,1.0
+svo,mix,mixing,someone mixing something.,38,10,True,"mix on, mix in, mix with",0.702387273311615,0.3610239624977112,1.0
+svo,mix in,mixing in,someone mixing in something.,12,5,True,"mix on, mix with, mix",0.702387273311615,0.3610239624977112,1.0
+svo,mix into,mixing into,someone mixing into something.,3,1,False,"mix on, mix in, mix with",0.702387273311615,0.3610239624977112,1.0
+svo,mix of,mixing of,someone mixing of something.,1,1,False,"mix in, mix on, mix with",0.702387273311615,0.3610239624977112,1.0
+svo,mix up,mixing up,someone mixing up something.,4,3,False,"mix into, mix, mix on",0.702387273311615,0.3610239624977112,1.0
+svo,mold,molding,someone molding something.,1,1,False,"put onto, adjust, apply",0.702387273311615,0.3610239624977112,1.0
+svo,mop,moping,someone moping something.,1,1,False,"sweep, sweep out, clean with",0.702387273311615,0.3610239624977112,1.0
+svo,move,moving,someone moving something.,27,6,True,"move in, move with, move down",0.702387273311615,0.3610239624977112,1.0
+svo,move along,moving along,someone moving along something.,1,1,False,"move across, move, move around",0.702387273311615,0.3610239624977112,1.0
+svo,move down,moving down,someone moving down something.,7,4,True,"move, move over, move around",0.702387273311615,0.3610239624977112,1.0
+svo,move from,moving from,someone moving from something.,4,1,False,"move to, move on, move in",0.702387273311615,0.3610239624977112,1.0
+svo,move in,moving in,someone moving in something.,7,2,True,"move with, move, move from",0.702387273311615,0.3610239624977112,1.0
+svo,move on,moving on,someone moving on something.,14,4,True,"move from, move upon, move over",0.702387273311615,0.3610239624977112,1.0
+svo,move over,moving over,someone moving over something.,4,1,False,"move down, move upon, move on",0.702387273311615,0.3610239624977112,1.0
+svo,move through,moving through,someone moving through something.,4,1,False,"move upon, move towards, move around",0.702387273311615,0.3610239624977112,1.0
+svo,muddy,muddying,someone muddying something.,1,1,False,"put down, mess with, drain",0.702387273311615,0.3610239624977112,1.0
+svo,name play,naming play,someone naming play something.,2,2,False,"name, name with, on play",0.702387273311615,0.3610239624977112,1.0
+svo,nibble in,nibbling in,someone nibbling in something.,1,1,False,"nibble on, nibble at, dibble",0.702387273311615,0.3610239624977112,1.0
+svo,occupy by,occupying by,someone occupying by something.,2,1,False,"attend to, wage, stay into",0.702387273311615,0.3610239624977112,1.0
+svo,of bite,ofing bite,someone ofing bite something.,1,1,False,"to bite, make bite, to eat",0.702387273311615,0.3610239624977112,1.0
+svo,of boil,ofing boil,someone ofing boil something.,6,2,True,"to boil, into boil, show boil",0.702387273311615,0.3610239624977112,1.0
+svo,of crack,ofing crack,someone ofing crack something.,1,1,False,"to crack, crack, crack into",0.702387273311615,0.3610239624977112,1.0
+svo,of simmer,ofing simmer,someone ofing simmer something.,1,1,False,"simmer on, saute on, saute",0.702387273311615,0.3610239624977112,1.0
+svo,offer,offering,someone offering something.,1,1,False,"give, give of, give on",0.702387273311615,0.3610239624977112,1.0
+svo,oil,oiling,someone oiling something.,2,1,False,"apply, tend, clean off",0.702387273311615,0.3610239624977112,1.0
+svo,on cook,oning cook,someone oning cook something.,1,1,False,"of cook, to cook, with cook",0.702387273311615,0.3610239624977112,1.0
+svo,on cut,oning cut,someone oning cut something.,9,2,True,"to cut, by cut, cut from",0.702387273311615,0.3610239624977112,1.0
+svo,on enclose,oning enclose,someone oning enclose something.,1,1,False,"in enclose, nod, close to",0.702387273311615,0.3610239624977112,1.0
+svo,on play,oning play,someone oning play something.,1,1,False,"to play, by play, show play",0.702387273311615,0.3610239624977112,1.0
+svo,open,opening,someone opening something.,20,1,True,"open of, open through, close",0.702387273311615,0.3610239624977112,1.0
+svo,open cover,opening cover,someone opening cover something.,1,1,False,"open, open of, open through",0.702387273311615,0.3610239624977112,1.0
+svo,organize,organizing,someone organizing something.,1,1,False,"assort, sort, arrange in",0.702387273311615,0.3610239624977112,1.0
+svo,pack,packing,someone packing something.,2,1,False,"pack in, unpack, unpack from",0.702387273311615,0.3610239624977112,1.0
+svo,paddle in,paddling in,someone paddling in something.,2,1,False,"paddle, paddle with, paddle across",0.702387273311615,0.3610239624977112,1.0
+svo,participate,participating,someone participating something.,2,2,False,"participate in, attend to, demonstrate",0.702387273311615,0.3610239624977112,1.0
+svo,pass,passing,someone passing something.,3,2,False,"pass on, pass in, pass through",0.702387273311615,0.3610239624977112,1.0
+svo,pass in,passing in,someone passing in something.,1,1,False,"pass on, pass, pass through",0.702387273311615,0.3610239624977112,1.0
+svo,past push,pasting push,someone pasting push something.,1,1,False,"paste, place, put onto",0.702387273311615,0.3610239624977112,1.0
+svo,pat,patting,someone patting something.,3,2,False,"pester, put on, touch",0.702387273311615,0.3610239624977112,1.0
+svo,paw,pawing,someone pawing something.,4,2,False,"paw in, paw at, pat",0.702387273311615,0.3610239624977112,1.0
+svo,paw at,pawing at,someone pawing at something.,5,2,True,"paw in, paw, pat",0.702387273311615,0.3610239624977112,1.0
+svo,paw in,pawing in,someone pawing in something.,1,1,False,"paw at, paw, pat",0.702387273311615,0.3610239624977112,1.0
+svo,peal,pealing,someone pealing something.,8,2,True,"pester, pore, pull out",0.702387273311615,0.3610239624977112,1.0
+svo,peck,pecking,someone pecking something.,2,1,False,"peck on, peck at, cock",0.702387273311615,0.3610239624977112,1.0
+svo,pee in,peeing in,someone peeing in something.,1,1,False,"pee on, pee into, pee off",0.702387273311615,0.3610239624977112,1.0
+svo,pee on,peeing on,someone peeing on something.,2,1,False,"pee in, pee into, pee off",0.702387273311615,0.3610239624977112,1.0
+svo,peel,peeling,someone peeling something.,25,15,True,"peel with, peel of, peel in",0.702387273311615,0.3610239624977112,1.0
+svo,peel boil,peeling boil,someone peeling boil something.,2,3,False,"cut boil, peel, peel with",0.702387273311615,0.3610239624977112,1.0
+svo,peel cook,peeling cook,someone peeling cook something.,2,1,False,"cut cook, tear cook, pull cook",0.702387273311615,0.3610239624977112,1.0
+svo,peel dice,peeling dice,someone peeling dice something.,1,1,False,"crush dice, chop dice, slice dice",0.702387273311615,0.3610239624977112,1.0
+svo,peel in,peeling in,someone peeling in something.,1,1,False,"peel with, peel of, peel",0.702387273311615,0.3610239624977112,1.0
+svo,peel of,peeling of,someone peeling of something.,3,1,False,"peel in, peel with, peel",0.702387273311615,0.3610239624977112,1.0
+svo,peel slice,peeling slice,someone peeling slice something.,2,1,False,"peel cut, cut slice, place slice",0.702387273311615,0.3610239624977112,1.0
+svo,peel with,peeling with,someone peeling with something.,3,1,False,"peel in, peel, peel of",0.702387273311615,0.3610239624977112,1.0
+svo,perform,performing,someone performing something.,25,5,True,"perform on, perform with, perform in",0.702387273311615,0.3610239624977112,1.0
+svo,perform amaze,performing amaze,someone performing amaze something.,1,1,False,"perform, perform on, perform of",0.702387273311615,0.3610239624977112,1.0
+svo,perform in,performing in,someone performing in something.,1,1,False,"perform on, perform for, perform with",0.702387273311615,0.3610239624977112,1.0
+svo,perform on,performing on,someone performing on something.,16,4,True,"perform in, perform for, perform with",0.702387273311615,0.3610239624977112,1.0
+svo,perform ride,performing ride,someone performing ride something.,1,1,False,"ride, rid, ride on",0.702387273311615,0.3610239624977112,1.0
+svo,perform with,performing with,someone performing with something.,11,4,True,"perform in, perform for, perform on",0.702387273311615,0.3610239624977112,1.0
+svo,pester,pestering,someone pestering something.,1,2,False,"pore, man, put to",0.702387273311615,0.3610239624977112,1.0
+svo,pet,petting,someone petting something.,7,1,True,"pet on, pet hold, rub",0.702387273311615,0.3610239624977112,1.0
+svo,photograph,photographing,someone photographing something.,2,1,False,"capture, capture of, record",0.702387273311615,0.3610239624977112,1.0
+svo,pick,picking,someone picking something.,12,2,True,"pick at, pick on, pick up",0.702387273311615,0.3610239624977112,1.0
+svo,pick at,picking at,someone picking at something.,2,1,False,"pick, pick on, pick up",0.702387273311615,0.3610239624977112,1.0
+svo,pick up,picking up,someone picking up something.,11,3,True,"pick on, pick, pick at",0.702387273311615,0.3610239624977112,1.0
+svo,pierce,piercing,someone piercing something.,1,1,False,"pierce with, cut into, put onto",0.702387273311615,0.3610239624977112,1.0
+svo,place,placing,someone placing something.,46,12,True,"place in, place on, place of",0.702387273311615,0.3610239624977112,1.0
+svo,place cut,placing cut,someone placing cut something.,1,1,False,"add cut, slice cut, cut",0.702387273311615,0.3610239624977112,1.0
+svo,place in,placing in,someone placing in something.,11,2,True,"place on, place, place into",0.702387273311615,0.3610239624977112,1.0
+svo,place into,placing into,someone placing into something.,7,1,True,"place in, place, place on",0.702387273311615,0.3610239624977112,1.0
+svo,place on,placing on,someone placing on something.,17,4,True,"place in, place, place into",0.702387273311615,0.3610239624977112,1.0
+svo,place slice,placing slice,someone placing slice something.,1,1,False,"put slice, cut slice, show slice",0.702387273311615,0.3610239624977112,1.0
+svo,plat in,plating in,someone plating in something.,1,1,False,"plat, garnish, prepare",0.702387273311615,0.3610239624977112,1.0
+svo,play,playing,someone playing something.,143,51,True,"play in, play play, play to",0.702387273311615,0.3610239624977112,1.0
+svo,play at,playing at,someone playing at something.,4,2,False,"play in, play on, play by",0.702387273311615,0.3610239624977112,1.0
+svo,play by,playing by,someone playing by something.,5,1,True,"play on, play in, play to",0.702387273311615,0.3610239624977112,1.0
+svo,play en,playing en,someone playing en something.,1,1,False,"play at, play in, play",0.702387273311615,0.3610239624977112,1.0
+svo,play in,playing in,someone playing in something.,44,13,True,"play on, play by, play at",0.702387273311615,0.3610239624977112,1.0
+svo,play of,playing of,someone playing of something.,6,2,True,"play at, play in, play",0.702387273311615,0.3610239624977112,1.0
+svo,play on,playing on,someone playing on something.,52,13,True,"play in, play by, play to",0.702387273311615,0.3610239624977112,1.0
+svo,play play,playing play,someone playing play something.,1,1,False,"play, play in, play on",0.702387273311615,0.3610239624977112,1.0
+svo,play with,playing with,someone playing with something.,130,38,True,"play by, play on, play in",0.702387273311615,0.3610239624977112,1.0
+svo,pluck,plucking,someone plucking something.,3,1,False,"plug into, pick, place",0.702387273311615,0.3610239624977112,1.0
+svo,ply,plying,someone plying something.,3,2,False,"put, put to, take",0.702387273311615,0.3610239624977112,1.0
+svo,poke,poking,someone poking something.,2,1,False,"snap, click on, take from",0.702387273311615,0.3610239624977112,1.0
+svo,pounce into,pouncing into,someone pouncing into something.,1,1,False,"pounce on, jump onto, jump into",0.702387273311615,0.3610239624977112,1.0
+svo,pour,pouring,someone pouring something.,70,12,True,"pour out, pour on, pour in",0.702387273311615,0.3610239624977112,1.0
+svo,pour beat,pouring beat,someone pouring beat something.,1,1,False,"pour, pour over, pour in",0.702387273311615,0.3610239624977112,1.0
+svo,pour boil,pouring boil,someone pouring boil something.,1,1,False,"pour cook, spin boil, stir boil",0.702387273311615,0.3610239624977112,1.0
+svo,pour in,pouring in,someone pouring in something.,7,5,True,"pour on, pour over, pour",0.702387273311615,0.3610239624977112,1.0
+svo,pour into,pouring into,someone pouring into something.,23,6,True,"pour onto, pour in, pour from",0.702387273311615,0.3610239624977112,1.0
+svo,pour of,pouring of,someone pouring of something.,8,1,True,"pour, pour out, pour in",0.702387273311615,0.3610239624977112,1.0
+svo,pour on,pouring on,someone pouring on something.,6,1,True,"pour in, pour, pour over",0.702387273311615,0.3610239624977112,1.0
+svo,pour scramble,pouring scramble,someone pouring scramble something.,1,1,False,"make scramble, prepare scramble, spice scramble",0.702387273311615,0.3610239624977112,1.0
+svo,powder on,powdering on,someone powdering on something.,1,1,False,"powder, sift powder, make up",0.702387273311615,0.3610239624977112,1.0
+svo,practice,practicing,someone practicing something.,7,2,True,"practice with, practice on, practice in",0.702387273311615,0.3610239624977112,1.0
+svo,practice play,practicing play,someone practicing play something.,1,1,False,"play play, practice, practice with",0.702387273311615,0.3610239624977112,1.0
+svo,prepare,preparing,someone preparing something.,83,8,True,"prepare of, prepare with, prepare in",0.702387273311615,0.3610239624977112,1.0
+svo,prepare in,preparing in,someone preparing in something.,8,1,True,"prepare with, prepare of, prepare",0.702387273311615,0.3610239624977112,1.0
+svo,prepare scramble,preparing scramble,someone preparing scramble something.,1,1,False,"make scramble, spice scramble, pour scramble",0.702387273311615,0.3610239624977112,1.0
+svo,prepare use,preparing use,someone preparing use something.,1,1,False,"prepare, prepare with, prepare of",0.702387273311615,0.3610239624977112,1.0
+svo,prepare with,preparing with,someone preparing with something.,2,1,False,"prepare in, prepare, prepare of",0.702387273311615,0.3610239624977112,1.0
+svo,pull,pulling,someone pulling something.,24,7,True,"pull by, pull on, pull in",0.702387273311615,0.3610239624977112,1.0
+svo,pull into,pulling into,someone pulling into something.,1,1,False,"pull in, pull through, pull from",0.702387273311615,0.3610239624977112,1.0
+svo,pull on,pulling on,someone pulling on something.,1,1,False,"pull by, pull, pull from",0.702387273311615,0.3610239624977112,1.0
+svo,pull up,pulling up,someone pulling up something.,2,1,False,"pull off, pull on, pull in",0.702387273311615,0.3610239624977112,1.0
+svo,punch kick,punching kick,someone punching kick something.,1,1,False,"punch, kick, kick at",0.702387273311615,0.3610239624977112,1.0
+svo,purr move,purring move,someone purring move something.,1,1,False,"with move, at move, kitten take",0.702387273311615,0.3610239624977112,1.0
+svo,push,pushing,someone pushing something.,22,6,True,"push from, push in, push by",0.702387273311615,0.3610239624977112,1.0
+svo,push across,pushing across,someone pushing across something.,1,1,False,"push from, push in, push",0.702387273311615,0.3610239624977112,1.0
+svo,push by,pushing by,someone pushing by something.,1,1,False,"push from, push in, push",0.702387273311615,0.3610239624977112,1.0
+svo,put,putting,someone putting something.,134,22,True,"put of, put to, put in",0.702387273311615,0.3610239624977112,1.0
+svo,put in,putting in,someone putting in something.,30,5,True,"put into, put, put on",0.702387273311615,0.3610239624977112,1.0
+svo,put into,putting into,someone putting into something.,33,10,True,"put in, put onto, put on",0.702387273311615,0.3610239624977112,1.0
+svo,put of,putting of,someone putting of something.,8,2,True,"put, put to, put in",0.702387273311615,0.3610239624977112,1.0
+svo,put on,putting on,someone putting on something.,22,5,True,"put in, put onto, put into",0.702387273311615,0.3610239624977112,1.0
+svo,put onto,putting onto,someone putting onto something.,3,1,False,"put into, put on, put in",0.702387273311615,0.3610239624977112,1.0
+svo,quarter,quartering,someone quartering something.,2,1,False,"wage, deal out, sever",0.702387273311615,0.3610239624977112,1.0
+svo,race,racing,someone racing something.,8,4,True,"race on, race with, race in",0.702387273311615,0.3610239624977112,1.0
+svo,race along,racing along,someone racing along something.,1,1,False,"race on, race with, race",0.702387273311615,0.3610239624977112,1.0
+svo,race around,racing around,someone racing around something.,4,1,False,"race along, race down, race on",0.702387273311615,0.3610239624977112,1.0
+svo,race down,racing down,someone racing down something.,4,1,False,"race up, race around, race along",0.702387273311615,0.3610239624977112,1.0
+svo,race in,racing in,someone racing in something.,4,2,False,"race on, race with, race",0.702387273311615,0.3610239624977112,1.0
+svo,race on,racing on,someone racing on something.,10,6,True,"race, race in, race with",0.702387273311615,0.3610239624977112,1.0
+svo,race up,racing up,someone racing up something.,1,1,False,"race down, race on, race to",0.702387273311615,0.3610239624977112,1.0
+svo,race with,racing with,someone racing with something.,3,1,False,"race on, race in, race",0.702387273311615,0.3610239624977112,1.0
+svo,raid,raiding,someone raiding something.,2,1,False,"raid on, attack by, attack",0.702387273311615,0.3610239624977112,1.0
+svo,raid on,raiding on,someone raiding on something.,1,1,False,"raid, attack on, attack in",0.702387273311615,0.3610239624977112,1.0
+svo,raise to,raising to,someone raising to something.,1,1,False,"reach into, toss onto, take",0.702387273311615,0.3610239624977112,1.0
+svo,ram,raming,someone raming something.,1,1,False,"man, take, set",0.702387273311615,0.3610239624977112,1.0
+svo,read,reading,someone reading something.,2,1,False,"read on, read in, read of",0.702387273311615,0.3610239624977112,1.0
+svo,read from,reading from,someone reading from something.,1,1,False,"read of, read on, read out",0.702387273311615,0.3610239624977112,1.0
+svo,read of,reading of,someone reading of something.,1,1,False,"read from, read on, read",0.702387273311615,0.3610239624977112,1.0
+svo,read to,reading to,someone reading to something.,1,1,False,"read, read on, read in",0.702387273311615,0.3610239624977112,1.0
+svo,recline on,reclining on,someone reclining on something.,4,1,False,"recline in, rest on, lay on",0.702387273311615,0.3610239624977112,1.0
+svo,recognize know,recognizing know,someone recognizing know something.,1,1,False,"see on, see, mean",0.702387273311615,0.3610239624977112,1.0
+svo,relax in,relaxing in,someone relaxing in something.,3,1,False,"relax on, rest in, rest on",0.702387273311615,0.3610239624977112,1.0
+svo,relax on,relaxing on,someone relaxing on something.,2,1,False,"relax in, rest in, rest on",0.702387273311615,0.3610239624977112,1.0
+svo,remove,removing,someone removing something.,25,3,True,"remove of, remove from, take down",0.702387273311615,0.3610239624977112,1.0
+svo,remove from,removing from,someone removing from something.,7,2,True,"remove, remove of, take out",0.702387273311615,0.3610239624977112,1.0
+svo,remove pack,removing pack,someone removing pack something.,1,1,False,"pack, remove, remove inside",0.702387273311615,0.3610239624977112,1.0
+svo,rest in,resting in,someone resting in something.,1,1,False,"rest on, relax in, relax on",0.702387273311615,0.3610239624977112,1.0
+svo,rest on,resting on,someone resting on something.,4,1,False,"rest in, relax on, bask on",0.702387273311615,0.3610239624977112,1.0
+svo,return,returning,someone returning something.,1,1,False,"return with, leave from, bring",0.702387273311615,0.3610239624977112,1.0
+svo,reverse,reversing,someone reversing something.,1,1,False,"traverse, take, bring over",0.702387273311615,0.3610239624977112,1.0
+svo,rid,riding,someone riding something.,5,2,True,"ride, ride on, ride in",0.702387273311615,0.3610239624977112,1.0
+svo,ride,riding,someone riding something.,75,24,True,"rid, ride on, ride in",0.702387273311615,0.3610239624977112,1.0
+svo,ride around,riding around,someone riding around something.,2,1,False,"ride down, ride on, ride in",0.702387273311615,0.3610239624977112,1.0
+svo,ride down,riding down,someone riding down something.,5,1,True,"ride on, ride, rid",0.702387273311615,0.3610239624977112,1.0
+svo,ride in,riding in,someone riding in something.,20,8,True,"ride on, ride, rid",0.702387273311615,0.3610239624977112,1.0
+svo,ride inside,riding inside,someone riding inside something.,1,1,False,"ride into, ride through, ride in",0.702387273311615,0.3610239624977112,1.0
+svo,ride jump,riding jump,someone riding jump something.,1,1,False,"jump with, jump, jump on",0.702387273311615,0.3610239624977112,1.0
+svo,ride motorize,riding motorize,someone riding motorize something.,3,1,False,"ride in, ride with, rid",0.702387273311615,0.3610239624977112,1.0
+svo,ride on,riding on,someone riding on something.,53,9,True,"ride, rid, ride in",0.702387273311615,0.3610239624977112,1.0
+svo,ride over,riding over,someone riding over something.,3,2,False,"ride on, ride down, ride across",0.702387273311615,0.3610239624977112,1.0
+svo,ride up,riding up,someone riding up something.,1,1,False,"ride down, ride on, rid",0.702387273311615,0.3610239624977112,1.0
+svo,ride with,riding with,someone riding with something.,7,3,True,"ride in, ride, rid",0.702387273311615,0.3610239624977112,1.0
+svo,ring,ringing,someone ringing something.,2,1,False,"ring with, ring up, pinch",0.702387273311615,0.3610239624977112,1.0
+svo,ring with,ringing with,someone ringing with something.,1,1,False,"ring, ring up, tap on",0.702387273311615,0.3610239624977112,1.0
+svo,rinse,rinsing,someone rinsing something.,2,1,False,"rinse of, rinse with, rinse off",0.702387273311615,0.3610239624977112,1.0
+svo,rinse off,rinsing off,someone rinsing off something.,2,2,False,"rinse, rinse with, rinse of",0.702387273311615,0.3610239624977112,1.0
+svo,rinse with,rinsing with,someone rinsing with something.,1,1,False,"rinse, rinse of, rinse off",0.702387273311615,0.3610239624977112,1.0
+svo,rip,riping,someone riping something.,2,1,False,"rip off, slip, dip",0.702387273311615,0.3610239624977112,1.0
+svo,rise from,rising from,someone rising from something.,1,1,False,"rise, raise to, emerge from",0.702387273311615,0.3610239624977112,1.0
+svo,roam around,roaming around,someone roaming around something.,1,1,False,"roam, roam in, wander in",0.702387273311615,0.3610239624977112,1.0
+svo,roast,roasting,someone roasting something.,4,1,False,"grill of, of roast, burn",0.702387273311615,0.3610239624977112,1.0
+svo,rock on,rocking on,someone rocking on something.,1,1,False,"rock, rock play, perform on",0.702387273311615,0.3610239624977112,1.0
+svo,rock play,rocking play,someone rocking play something.,1,1,False,"play play, show play, deal play",0.702387273311615,0.3610239624977112,1.0
+svo,roll,rolling,someone rolling something.,12,4,True,"roll by, roll on, roll out",0.702387273311615,0.3610239624977112,1.0
+svo,roll in,rolling in,someone rolling in something.,3,1,False,"roll on, roll over, roll by",0.702387273311615,0.3610239624977112,1.0
+svo,roll on,rolling on,someone rolling on something.,4,2,False,"roll in, roll by, roll over",0.702387273311615,0.3610239624977112,1.0
+svo,roll out,rolling out,someone rolling out something.,4,1,False,"roll, roll by, roll through",0.702387273311615,0.3610239624977112,1.0
+svo,roll over,rolling over,someone rolling over something.,3,2,False,"roll on, roll in, roll into",0.702387273311615,0.3610239624977112,1.0
+svo,roll through,rolling through,someone rolling through something.,1,1,False,"roll into, roll onto, roll by",0.702387273311615,0.3610239624977112,1.0
+svo,rotate,rotating,someone rotating something.,5,1,True,"rotate with, rotate in, revolve",0.702387273311615,0.3610239624977112,1.0
+svo,round,rounding,someone rounding something.,2,2,False,"run up, run, run along",0.702387273311615,0.3610239624977112,1.0
+svo,rub,rubbing,someone rubbing something.,14,4,True,"rub on, touch, stroke",0.702387273311615,0.3610239624977112,1.0
+svo,rub on,rubbing on,someone rubbing on something.,1,1,False,"rub, touch, stroke",0.702387273311615,0.3610239624977112,1.0
+svo,run,running,someone running something.,17,3,True,"run on, run in, run by",0.702387273311615,0.3610239624977112,1.0
+svo,run across,running across,someone running across something.,6,1,True,"run along, run on, run in",0.702387273311615,0.3610239624977112,1.0
+svo,run after,running after,someone running after something.,6,1,True,"run on, run by, run in",0.702387273311615,0.3610239624977112,1.0
+svo,run along,running along,someone running along something.,2,1,False,"run on, run in, run by",0.702387273311615,0.3610239624977112,1.0
+svo,run at,running at,someone running at something.,3,2,False,"run in, run on, run with",0.702387273311615,0.3610239624977112,1.0
+svo,run by,running by,someone running by something.,3,1,False,"run on, run in, run along",0.702387273311615,0.3610239624977112,1.0
+svo,run dance,running dance,someone running dance something.,1,1,False,"dance, dance on, dance in",0.702387273311615,0.3610239624977112,1.0
+svo,run down,running down,someone running down something.,19,4,True,"run on, run through, run up",0.702387273311615,0.3610239624977112,1.0
+svo,run in,running in,someone running in something.,16,1,True,"run on, run with, run at",0.702387273311615,0.3610239624977112,1.0
+svo,run into,running into,someone running into something.,13,6,True,"run from, run through, run to",0.702387273311615,0.3610239624977112,1.0
+svo,run jump,running jump,someone running jump something.,2,1,False,"jump, jump across, jump on",0.702387273311615,0.3610239624977112,1.0
+svo,run knock,running knock,someone running knock something.,1,1,False,"run at, run into, run",0.702387273311615,0.3610239624977112,1.0
+svo,run on,running on,someone running on something.,35,12,True,"run in, run, run by",0.702387273311615,0.3610239624977112,1.0
+svo,run over,running over,someone running over something.,3,2,False,"run down, run into, run around",0.702387273311615,0.3610239624977112,1.0
+svo,run roll,running roll,someone running roll something.,1,1,False,"roll through, roll out, roll",0.702387273311615,0.3610239624977112,1.0
+svo,run through,running through,someone running through something.,10,1,True,"run from, run towards, run on",0.702387273311615,0.3610239624977112,1.0
+svo,run to,running to,someone running to something.,6,1,True,"run from, run towards, run on",0.702387273311615,0.3610239624977112,1.0
+svo,run towards,running towards,someone running towards something.,4,2,False,"run toward, run to, run from",0.702387273311615,0.3610239624977112,1.0
+svo,run up,running up,someone running up something.,4,3,False,"run on, run, run down",0.702387273311615,0.3610239624977112,1.0
+svo,run with,running with,someone running with something.,8,1,True,"run in, run on, run along",0.702387273311615,0.3610239624977112,1.0
+svo,rush into,rushing into,someone rushing into something.,1,1,False,"run into, run through, run down",0.702387273311615,0.3610239624977112,1.0
+svo,sail in,sailing in,someone sailing in something.,2,1,False,"sail on, sail, boat in",0.702387273311615,0.3610239624977112,1.0
+svo,saute,sauteing,someone sauteing something.,7,3,True,"saute on, saute in, saute chop",0.702387273311615,0.3610239624977112,1.0
+svo,saute chop,sauteing chop,someone sauteing chop something.,1,1,False,"saute, fry chop, saute on",0.702387273311615,0.3610239624977112,1.0
+svo,saute in,sauteing in,someone sauteing in something.,4,1,False,"saute on, saute, saute chop",0.702387273311615,0.3610239624977112,1.0
+svo,saute on,sauteing on,someone sauteing on something.,1,1,False,"saute in, saute, saute chop",0.702387273311615,0.3610239624977112,1.0
+svo,scale,scaling,someone scaling something.,3,1,False,"climb, climb to, climb by",0.702387273311615,0.3610239624977112,1.0
+svo,score,scoring,someone scoring something.,5,4,True,"score in, toss score, bounce score",0.702387273311615,0.3610239624977112,1.0
+svo,score in,scoring in,someone scoring in something.,5,3,True,"score, toss score, bounce score",0.702387273311615,0.3610239624977112,1.0
+svo,scramble,scrambling,someone scrambling something.,9,3,True,"scramble in, scramble up, crash to",0.702387273311615,0.3610239624977112,1.0
+svo,scrape,scraping,someone scraping something.,5,1,True,"scrape out, scrap of, scrape use",0.702387273311615,0.3610239624977112,1.0
+svo,scratch,scratching,someone scratching something.,8,5,True,"scratch on, scratch by, scratch with",0.702387273311615,0.3610239624977112,1.0
+svo,scratch at,scratching at,someone scratching at something.,3,1,False,"scratch on, scratch in, scratch with",0.702387273311615,0.3610239624977112,1.0
+svo,scratch with,scratching with,someone scratching with something.,1,1,False,"scratch on, scratch by, scratch in",0.702387273311615,0.3610239624977112,1.0
+svo,scream at,screaming at,someone screaming at something.,1,1,False,"scream towards, yell at, yell into",0.702387273311615,0.3610239624977112,1.0
+svo,sear,searing,someone searing something.,1,1,False,"sear in, season, season of",0.702387273311615,0.3610239624977112,1.0
+svo,search on,searching on,someone searching on something.,1,1,False,"search, search in, find",0.702387273311615,0.3610239624977112,1.0
+svo,season,seasoning,someone seasoning something.,25,8,True,"season of, season in, tend",0.702387273311615,0.3610239624977112,1.0
+svo,season of,seasoning of,someone seasoning of something.,2,1,False,"season, season in, put of",0.702387273311615,0.3610239624977112,1.0
+svo,seat on,seating on,someone seating on something.,16,3,True,"seat, seat in, seat at",0.702387273311615,0.3610239624977112,1.0
+svo,seat play,seating play,someone seating play something.,9,1,True,"sit play, seat, seat on",0.702387273311615,0.3610239624977112,1.0
+svo,seat strum,seating strum,someone seating strum something.,1,1,False,"seat, seat on, seat in",0.702387273311615,0.3610239624977112,1.0
+svo,section,sectioning,someone sectioning something.,1,1,False,"section off, section cut, cut",0.702387273311615,0.3610239624977112,1.0
+svo,see,seeing,someone seeing something.,7,1,True,"see on, see in, see through",0.702387273311615,0.3610239624977112,1.0
+svo,see down,seeing down,someone seeing down something.,1,1,False,"follow down, sever, see",0.702387273311615,0.3610239624977112,1.0
+svo,see in,seeing in,someone seeing in something.,3,1,False,"see on, see, watch in",0.702387273311615,0.3610239624977112,1.0
+svo,separate,separating,someone separating something.,1,1,False,"separate in, remove, remove from",0.702387273311615,0.3610239624977112,1.0
+svo,serve,serving,someone serving something.,5,1,True,"serve on, serve by, serve of",0.702387273311615,0.3610239624977112,1.0
+svo,set,setting,someone setting something.,5,1,True,"set on, put, take",0.702387273311615,0.3610239624977112,1.0
+svo,shake,shaking,someone shaking something.,11,3,True,"shake of, take out, whet",0.702387273311615,0.3610239624977112,1.0
+svo,shape,shaping,someone shaping something.,4,1,False,"create, make onto, make",0.702387273311615,0.3610239624977112,1.0
+svo,shave,shaving,someone shaving something.,3,1,False,"shave in, shave of, brush shave",0.702387273311615,0.3610239624977112,1.0
+svo,shoot,shooting,someone shooting something.,19,5,True,"shoot on, shoot with, shoot by",0.702387273311615,0.3610239624977112,1.0
+svo,shoot at,shooting at,someone shooting at something.,2,1,False,"shoot in, shoot on, shoot from",0.702387273311615,0.3610239624977112,1.0
+svo,shoot of,shooting of,someone shooting of something.,2,1,False,"shoot from, shoot at, shoot",0.702387273311615,0.3610239624977112,1.0
+svo,shoot up,shooting up,someone shooting up something.,1,1,False,"shoot, shoot off, shoot on",0.702387273311615,0.3610239624977112,1.0
+svo,shoot use,shooting use,someone shooting use something.,1,1,False,"shoot, shoot with, shoot on",0.702387273311615,0.3610239624977112,1.0
+svo,shoot with,shooting with,someone shooting with something.,15,1,True,"shoot by, shoot on, shoot",0.702387273311615,0.3610239624977112,1.0
+svo,shop,shoping,someone shoping something.,2,1,False,"shop in, shop at, buy",0.702387273311615,0.3610239624977112,1.0
+svo,show,showing,someone showing something.,30,2,True,"show on, show to, show with",0.702387273311615,0.3610239624977112,1.0
+svo,show boil,showing boil,someone showing boil something.,1,2,False,"to boil, in boil, into boil",0.702387273311615,0.3610239624977112,1.0
+svo,show break,showing break,someone showing break something.,1,1,False,"break, break with, to break",0.702387273311615,0.3610239624977112,1.0
+svo,show in,showing in,someone showing in something.,4,1,False,"show on, show, show for",0.702387273311615,0.3610239624977112,1.0
+svo,show to,showing to,someone showing to something.,4,1,False,"show, show on, show with",0.702387273311615,0.3610239624977112,1.0
+svo,show use,showing use,someone showing use something.,1,1,False,"use, show, show on",0.702387273311615,0.3610239624977112,1.0
+svo,show with,showing with,someone showing with something.,8,4,True,"show, show on, show to",0.702387273311615,0.3610239624977112,1.0
+svo,shred,shredding,someone shredding something.,7,4,True,"shred with, spread shred, crush",0.702387273311615,0.3610239624977112,1.0
+svo,sing,singing,someone singing something.,8,1,True,"sing on, sing in, sing to",0.702387273311615,0.3610239624977112,1.0
+svo,sing in,singing in,someone singing in something.,7,1,True,"sing on, sing into, sing",0.702387273311615,0.3610239624977112,1.0
+svo,sing into,singing into,someone singing into something.,11,1,True,"sing in, sing to, sing on",0.702387273311615,0.3610239624977112,1.0
+svo,sing on,singing on,someone singing on something.,2,1,False,"sing in, sing, sing to",0.702387273311615,0.3610239624977112,1.0
+svo,sing play,singing play,someone singing play something.,19,5,True,"sing with, sing in, sing",0.702387273311615,0.3610239624977112,1.0
+svo,sing ride,singing ride,someone singing ride something.,2,2,False,"sing on, sing in, sing",0.702387273311615,0.3610239624977112,1.0
+svo,sing strum,singing strum,someone singing strum something.,2,1,False,"sing, sing to, sing through",0.702387273311615,0.3610239624977112,1.0
+svo,sing take,singing take,someone singing take something.,1,1,False,"sing at, sing use, sing of",0.702387273311615,0.3610239624977112,1.0
+svo,sing with,singing with,someone singing with something.,11,4,True,"sing to, sing on, sing in",0.702387273311615,0.3610239624977112,1.0
+svo,sit at,sitting at,someone sitting at something.,11,1,True,"sit, sit to, sit in",0.702387273311615,0.3610239624977112,1.0
+svo,sit in,sitting in,someone sitting in something.,44,6,True,"sit at, sit, sit to",0.702387273311615,0.3610239624977112,1.0
+svo,sit inside,sitting inside,someone sitting inside something.,1,1,False,"sit in, sit under, sit at",0.702387273311615,0.3610239624977112,1.0
+svo,sit like,sitting like,someone sitting like something.,1,1,False,"sit at, sit, sit in",0.702387273311615,0.3610239624977112,1.0
+svo,sit on,sitting on,someone sitting on something.,59,18,True,"sit in, sit, sit at",0.702387273311615,0.3610239624977112,1.0
+svo,sit play,sitting play,someone sitting play something.,5,2,True,"seat play, play play, deal play",0.702387273311615,0.3610239624977112,1.0
+svo,sit wag,sitting wag,someone sitting wag something.,2,2,False,"sit, sit to, sit at",0.702387273311615,0.3610239624977112,1.0
+svo,skate across,skating across,someone skating across something.,1,1,False,"skate around, skate on, skate through",0.702387273311615,0.3610239624977112,1.0
+svo,skate on,skating on,someone skating on something.,7,1,True,"skate, skate with, skate around",0.702387273311615,0.3610239624977112,1.0
+svo,skateboard across,skateboarding across,someone skateboarding across something.,3,1,False,"skateboard on, skateboard down, skateboard in",0.702387273311615,0.3610239624977112,1.0
+svo,skewer,skewering,someone skewering something.,2,1,False,"sever, smear, pester",0.702387273311615,0.3610239624977112,1.0
+svo,skid inside,skiding inside,someone skiding inside something.,1,1,False,"skip through, run inside, skip on",0.702387273311615,0.3610239624977112,1.0
+svo,skin,skinning,someone skinning something.,3,1,False,"cut with, cut, cut by",0.702387273311615,0.3610239624977112,1.0
+svo,slash,slashing,someone slashing something.,3,1,False,"slap, stab, shove",0.702387273311615,0.3610239624977112,1.0
+svo,sleep on,sleeping on,someone sleeping on something.,7,6,True,"sleep in, rest in, rest on",0.702387273311615,0.3610239624977112,1.0
+svo,slice,slicing,someone slicing something.,133,28,True,"slice along, slice up, slice with",0.702387273311615,0.3610239624977112,1.0
+svo,slice boil,slicing boil,someone slicing boil something.,2,1,False,"cut boil, chop boil, slice cook",0.702387273311615,0.3610239624977112,1.0
+svo,slice cook,slicing cook,someone slicing cook something.,3,1,False,"cut cook, slice chop, slice cut",0.702387273311615,0.3610239624977112,1.0
+svo,slice cut,slicing cut,someone slicing cut something.,1,1,False,"slice, slice chop, slice along",0.702387273311615,0.3610239624977112,1.0
+svo,slice dice,slicing dice,someone slicing dice something.,2,1,False,"chop dice, crush dice, add dice",0.702387273311615,0.3610239624977112,1.0
+svo,slice into,slicing into,someone slicing into something.,16,7,True,"slice through, slice across, slice off",0.702387273311615,0.3610239624977112,1.0
+svo,slice of,slicing of,someone slicing of something.,3,1,False,"slice, slice with, slice by",0.702387273311615,0.3610239624977112,1.0
+svo,slice off,slicing off,someone slicing off something.,1,1,False,"slice up, slice, slice into",0.702387273311615,0.3610239624977112,1.0
+svo,slice plat,slicing plat,someone slicing plat something.,1,1,False,"slice, slice along, slice cut",0.702387273311615,0.3610239624977112,1.0
+svo,slice through,slicing through,someone slicing through something.,8,3,True,"slice into, slice across, slice along",0.702387273311615,0.3610239624977112,1.0
+svo,slice up,slicing up,someone slicing up something.,20,3,True,"slice, slice off, slice along",0.702387273311615,0.3610239624977112,1.0
+svo,slice with,slicing with,someone slicing with something.,5,1,True,"slice by, slice along, slice",0.702387273311615,0.3610239624977112,1.0
+svo,slide across,sliding across,someone sliding across something.,2,1,False,"slide in, slide, slide down",0.702387273311615,0.3610239624977112,1.0
+svo,slide down,sliding down,someone sliding down something.,3,2,False,"slide in, slide off, slide across",0.702387273311615,0.3610239624977112,1.0
+svo,slide in,sliding in,someone sliding in something.,1,1,False,"slide, slide across, slide down",0.702387273311615,0.3610239624977112,1.0
+svo,slide into,sliding into,someone sliding into something.,4,2,False,"slide off, slide, slide in",0.702387273311615,0.3610239624977112,1.0
+svo,slip,sliping,someone sliping something.,1,1,False,"slip on, slide off, slide",0.702387273311615,0.3610239624977112,1.0
+svo,slip on,sliping on,someone sliping on something.,1,1,False,"slip, slide off, slide down",0.702387273311615,0.3610239624977112,1.0
+svo,smash,smashing,someone smashing something.,5,2,True,"smash with, smash by, smash in",0.702387273311615,0.3610239624977112,1.0
+svo,smash in,smashing in,someone smashing in something.,1,1,False,"smash with, smash by, smash",0.702387273311615,0.3610239624977112,1.0
+svo,smear on,smearing on,someone smearing on something.,1,1,False,"smear, mess with, show to",0.702387273311615,0.3610239624977112,1.0
+svo,smell,smelling,someone smelling something.,6,1,True,"smell in, sniff on, sniff at",0.702387273311615,0.3610239624977112,1.0
+svo,smile play,smiling play,someone smiling play something.,1,1,False,"enjoy play, smile to, play play",0.702387273311615,0.3610239624977112,1.0
+svo,smile wag,smiling wag,someone smiling wag something.,1,1,False,"smile to, smile at, laugh in",0.702387273311615,0.3610239624977112,1.0
+svo,smoke play,smoking play,someone smoking play something.,1,1,False,"smoke, contain smoke, lean smoke",0.702387273311615,0.3610239624977112,1.0
+svo,snap,snaping,someone snaping something.,1,1,False,"take in, look in, view",0.702387273311615,0.3610239624977112,1.0
+svo,sniff,sniffing,someone sniffing something.,6,1,True,"sniff on, sniff at, sniff around",0.702387273311615,0.3610239624977112,1.0
+svo,sniff around,sniffing around,someone sniffing around something.,1,1,False,"sniff on, sniff at, sniff",0.702387273311615,0.3610239624977112,1.0
+svo,sniff at,sniffing at,someone sniffing at something.,1,1,False,"sniff on, sniff around, sniff",0.702387273311615,0.3610239624977112,1.0
+svo,sniff on,sniffing on,someone sniffing on something.,1,1,False,"sniff at, sniff around, sniff",0.702387273311615,0.3610239624977112,1.0
+svo,soak,soaking,someone soaking something.,2,1,False,"soak in, soak into, soak up",0.702387273311615,0.3610239624977112,1.0
+svo,soak in,soaking in,someone soaking in something.,3,1,False,"soak into, soak, soak up",0.702387273311615,0.3610239624977112,1.0
+svo,soar in,soaring in,someone soaring in something.,1,1,False,"fly in, fly through, fly",0.702387273311615,0.3610239624977112,1.0
+svo,sort,sorting,someone sorting something.,2,1,False,"assort, organize, arrange",0.702387273311615,0.3610239624977112,1.0
+svo,speak on,speaking on,someone speaking on something.,9,1,True,"speak, speak in, speak over",0.702387273311615,0.3610239624977112,1.0
+svo,speak with,speaking with,someone speaking with something.,4,1,False,"speak to, speak over, speak into",0.702387273311615,0.3610239624977112,1.0
+svo,speed around,speeding around,someone speeding around something.,1,1,False,"speed on, speed in, speed through",0.702387273311615,0.3610239624977112,1.0
+svo,speed on,speeding on,someone speeding on something.,2,1,False,"speed in, speed around, speed through",0.702387273311615,0.3610239624977112,1.0
+svo,speed through,speeding through,someone speeding through something.,1,1,False,"speed on, speed around, speed in",0.702387273311615,0.3610239624977112,1.0
+svo,spice,spicing,someone spicing something.,1,1,False,"spice into, pore, split",0.702387273311615,0.3610239624977112,1.0
+svo,spice scramble,spicing scramble,someone spicing scramble something.,1,1,False,"make scramble, prepare scramble, pour scramble",0.702387273311615,0.3610239624977112,1.0
+svo,spin,spinning,someone spinning something.,7,1,True,"spin by, spin in, spin on",0.702387273311615,0.3610239624977112,1.0
+svo,spin boil,spinning boil,someone spinning boil something.,1,1,False,"to boil, pour boil, show boil",0.702387273311615,0.3610239624977112,1.0
+svo,spin on,spinning on,someone spinning on something.,1,1,False,"spin in, spin by, spin",0.702387273311615,0.3610239624977112,1.0
+svo,split,spliting,someone spliting something.,4,1,False,"split open, spit from, scat on",0.702387273311615,0.3610239624977112,1.0
+svo,spray,spraying,someone spraying something.,4,1,False,"spray with, sprinkle, sprinkle onto",0.702387273311615,0.3610239624977112,1.0
+svo,spray with,spraying with,someone spraying with something.,1,1,False,"spray, sprinkle, sprinkle with",0.702387273311615,0.3610239624977112,1.0
+svo,spread,spreading,someone spreading something.,16,3,True,"spread on, spread in, spread onto",0.702387273311615,0.3610239624977112,1.0
+svo,spread into,spreading into,someone spreading into something.,1,1,False,"spread in, spread onto, spread on",0.702387273311615,0.3610239624977112,1.0
+svo,sprinkle,sprinkling,someone sprinkling something.,15,2,True,"sprinkle on, sprinkle onto, sprinkle with",0.702387273311615,0.3610239624977112,1.0
+svo,sprinkle with,sprinkling with,someone sprinkling with something.,2,1,False,"sprinkle on, sprinkle into, sprinkle",0.702387273311615,0.3610239624977112,1.0
+svo,sprint down,sprinting down,someone sprinting down something.,1,1,False,"sprint on, sprint around, sprint across",0.702387273311615,0.3610239624977112,1.0
+svo,squeeze,squeezing,someone squeezing something.,4,2,False,"squeeze out, squeeze through, hold onto",0.702387273311615,0.3610239624977112,1.0
+svo,squeeze out,squeezing out,someone squeezing out something.,1,1,False,"squeeze, squeeze through, hold onto",0.702387273311615,0.3610239624977112,1.0
+svo,squirt,squirting,someone squirting something.,1,1,False,"splash, rinse off, sprinkle into",0.702387273311615,0.3610239624977112,1.0
+svo,stab,stabing,someone stabing something.,2,1,False,"stab with, slash, slam",0.702387273311615,0.3610239624977112,1.0
+svo,stack of,stacking of,someone stacking of something.,1,1,False,"hold across, put of, put onto",0.702387273311615,0.3610239624977112,1.0
+svo,stand at,standing at,someone standing at something.,2,1,False,"stand to, stand in, stand",0.702387273311615,0.3610239624977112,1.0
+svo,stand in,standing in,someone standing in something.,30,3,True,"stand at, stand, stand of",0.702387273311615,0.3610239624977112,1.0
+svo,stand inside,standing inside,someone standing inside something.,7,1,True,"stand under, stand by, stand in",0.702387273311615,0.3610239624977112,1.0
+svo,stand on,standing on,someone standing on something.,18,7,True,"stand, stand in, stand over",0.702387273311615,0.3610239624977112,1.0
+svo,stand over,standing over,someone standing over something.,1,1,False,"stand on, stand around, stand",0.702387273311615,0.3610239624977112,1.0
+svo,stand to,standing to,someone standing to something.,2,1,False,"stand at, stand, stand of",0.702387273311615,0.3610239624977112,1.0
+svo,stand with,standing with,someone standing with something.,8,1,True,"stand, stand at, stand in",0.702387273311615,0.3610239624977112,1.0
+svo,stare wag,staring wag,someone staring wag something.,1,1,False,"stare at, star of, stare out",0.702387273311615,0.3610239624977112,1.0
+svo,stay into,staying into,someone staying into something.,1,1,False,"attend to, contain in, make into",0.702387273311615,0.3610239624977112,1.0
+svo,steal,stealing,someone stealing something.,2,1,False,"steal from, steal on, to steal",0.702387273311615,0.3610239624977112,1.0
+svo,stick,sticking,someone sticking something.,6,1,True,"stick on, stick of, stick in",0.702387273311615,0.3610239624977112,1.0
+svo,stick in,sticking in,someone sticking in something.,6,2,True,"stick on, stick, stick of",0.702387273311615,0.3610239624977112,1.0
+svo,stir,stirring,someone stirring something.,36,11,True,"stir in, stir on, stir with",0.702387273311615,0.3610239624977112,1.0
+svo,stir in,stirring in,someone stirring in something.,8,4,True,"stir on, stir with, stir",0.702387273311615,0.3610239624977112,1.0
+svo,stir on,stirring on,someone stirring on something.,2,1,False,"stir in, stir with, stir",0.702387273311615,0.3610239624977112,1.0
+svo,stir up,stirring up,someone stirring up something.,2,2,False,"stir on, stir with, stir",0.702387273311615,0.3610239624977112,1.0
+svo,stir with,stirring with,someone stirring with something.,3,1,False,"stir on, stir in, stir",0.702387273311615,0.3610239624977112,1.0
+svo,stop at,stopping at,someone stopping at something.,1,1,False,"stop, take with, pass on",0.702387273311615,0.3610239624977112,1.0
+svo,straighten,straightening,someone straightening something.,3,1,False,"to straighten, with straighten, use straighten",0.702387273311615,0.3610239624977112,1.0
+svo,strain out,straining out,someone straining out something.,1,1,False,"strain, take out, pull out",0.702387273311615,0.3610239624977112,1.0
+svo,strike,striking,someone striking something.,8,1,True,"strike by, strike across, hit",0.702387273311615,0.3610239624977112,1.0
+svo,string,stringing,someone stringing something.,1,1,False,"tie, tie on, lace",0.702387273311615,0.3610239624977112,1.0
+svo,strum,strumming,someone strumming something.,5,2,True,"sing strum, rock on, rock",0.702387273311615,0.3610239624977112,1.0
+svo,stuff,stuffing,someone stuffing something.,3,1,False,"fill, put onto, put into",0.702387273311615,0.3610239624977112,1.0
+svo,stunt with,stunting with,someone stunting with something.,2,1,False,"to jump, toss onto, drop onto",0.702387273311615,0.3610239624977112,1.0
+svo,style,styling,someone styling something.,7,2,True,"dress, put on, put down",0.702387273311615,0.3610239624977112,1.0
+svo,suck,sucking,someone sucking something.,1,1,False,"suck on, to suck, blow of",0.702387273311615,0.3610239624977112,1.0
+svo,suck on,sucking on,someone sucking on something.,1,1,False,"suck, to suck, lick on",0.702387273311615,0.3610239624977112,1.0
+svo,surf on,surfing on,someone surfing on something.,4,1,False,"skateboard on, skateboard in, skateboard down",0.702387273311615,0.3610239624977112,1.0
+svo,suspend from,suspending from,someone suspending from something.,2,1,False,"shy from, sever, take from",0.702387273311615,0.3610239624977112,1.0
+svo,sweep,sweeping,someone sweeping something.,3,2,False,"sweep out, mop, clean with",0.702387273311615,0.3610239624977112,1.0
+svo,swim across,swimming across,someone swimming across something.,2,1,False,"swim along, swim on, swim through",0.702387273311615,0.3610239624977112,1.0
+svo,swim along,swimming along,someone swimming along something.,1,1,False,"swim on, swim, swim in",0.702387273311615,0.3610239624977112,1.0
+svo,swim beneath,swimming beneath,someone swimming beneath something.,1,1,False,"swim under, swim through, swim into",0.702387273311615,0.3610239624977112,1.0
+svo,swim in,swimming in,someone swimming in something.,5,5,True,"swim on, swim, swim with",0.702387273311615,0.3610239624977112,1.0
+svo,swim into,swimming into,someone swimming into something.,1,1,False,"swim through, swim to, swim in",0.702387273311615,0.3610239624977112,1.0
+svo,swim on,swimming on,someone swimming on something.,2,1,False,"swim in, swim, swim along",0.702387273311615,0.3610239624977112,1.0
+svo,swim through,swimming through,someone swimming through something.,1,1,False,"swim in, swim into, swim along",0.702387273311615,0.3610239624977112,1.0
+svo,swim under,swimming under,someone swimming under something.,1,2,False,"swim beneath, swim through, swim across",0.702387273311615,0.3610239624977112,1.0
+svo,swing,swinging,someone swinging something.,4,2,False,"swing from, swing with, swing on",0.702387273311615,0.3610239624977112,1.0
+svo,swing at,swinging at,someone swinging at something.,1,1,False,"swing in, swing on, swing with",0.702387273311615,0.3610239624977112,1.0
+svo,swipe,swiping,someone swiping something.,1,1,False,"tap on, tap, pay in",0.702387273311615,0.3610239624977112,1.0
+svo,take,taking,someone taking something.,48,12,True,"take of, take take, take from",0.702387273311615,0.3610239624977112,1.0
+svo,take down,taking down,someone taking down something.,1,1,False,"remove, pull down, take out",0.702387273311615,0.3610239624977112,1.0
+svo,take from,taking from,someone taking from something.,11,3,True,"take, take with, take for",0.702387273311615,0.3610239624977112,1.0
+svo,take of,taking of,someone taking of something.,9,1,True,"take, take from, take on",0.702387273311615,0.3610239624977112,1.0
+svo,take off,taking off,someone taking off something.,7,3,True,"take out, push off, land with",0.702387273311615,0.3610239624977112,1.0
+svo,take on,taking on,someone taking on something.,2,1,False,"take, take of, take from",0.702387273311615,0.3610239624977112,1.0
+svo,take out,taking out,someone taking out something.,9,2,True,"take, take of, take from",0.702387273311615,0.3610239624977112,1.0
+svo,talk,talking,someone talking something.,4,2,False,"talk on, talk in, talk to",0.702387273311615,0.3610239624977112,1.0
+svo,talk in,talking in,someone talking in something.,19,2,True,"talk on, talk into, talk",0.702387273311615,0.3610239624977112,1.0
+svo,talk of,talking of,someone talking of something.,1,1,False,"talk, talk on, talk at",0.702387273311615,0.3610239624977112,1.0
+svo,talk on,talking on,someone talking on something.,15,1,True,"talk, talk in, talk to",0.702387273311615,0.3610239624977112,1.0
+svo,talk to,talking to,someone talking to something.,22,4,True,"talk with, talk over, talk on",0.702387273311615,0.3610239624977112,1.0
+svo,talk with,talking with,someone talking with something.,10,2,True,"talk to, talk over, talk on",0.702387273311615,0.3610239624977112,1.0
+svo,tap,tapping,someone tapping something.,9,1,True,"tap on, tap at, press",0.702387273311615,0.3610239624977112,1.0
+svo,tap sleep,tapping sleep,someone tapping sleep something.,1,1,False,"push sleep, sleep on, sleep in",0.702387273311615,0.3610239624977112,1.0
+svo,taste,tasting,someone tasting something.,7,1,True,"taste from, taste in, sample",0.702387273311615,0.3610239624977112,1.0
+svo,taste from,tasting from,someone tasting from something.,1,1,False,"taste in, taste, drink from",0.702387273311615,0.3610239624977112,1.0
+svo,teach,teaching,someone teaching something.,7,1,True,"teach with, teach on, teach to",0.702387273311615,0.3610239624977112,1.0
+svo,teach on,teaching on,someone teaching on something.,1,1,False,"teach, teach with, teach to",0.702387273311615,0.3610239624977112,1.0
+svo,teach to,teaching to,someone teaching to something.,1,1,False,"teach, teach on, teach with",0.702387273311615,0.3610239624977112,1.0
+svo,tear,tearing,someone tearing something.,3,3,False,"tear off, tear into, remove",0.702387273311615,0.3610239624977112,1.0
+svo,tear into,tearing into,someone tearing into something.,1,1,False,"tear, tear off, break with",0.702387273311615,0.3610239624977112,1.0
+svo,tear off,tearing off,someone tearing off something.,3,1,False,"tear, tear into, remove",0.702387273311615,0.3610239624977112,1.0
+svo,tease,teasing,someone teasing something.,10,3,True,"show to, pester, smear",0.702387273311615,0.3610239624977112,1.0
+svo,tenderize,tenderizing,someone tenderizing something.,1,1,False,"touch, squeeze, squeeze out",0.702387273311615,0.3610239624977112,1.0
+svo,throw,throwing,someone throwing something.,19,4,True,"throw on, throw at, throw in",0.702387273311615,0.3610239624977112,1.0
+svo,throw burn,throwing burn,someone throwing burn something.,1,1,False,"break burn, throw flame, burn",0.702387273311615,0.3610239624977112,1.0
+svo,throw into,throwing into,someone throwing into something.,1,1,False,"throw onto, throw over, throw on",0.702387273311615,0.3610239624977112,1.0
+svo,tie,tying,someone tying something.,3,1,False,"tie on, tie to, tie over",0.702387273311615,0.3610239624977112,1.0
+svo,tie up,tying up,someone tying up something.,1,1,False,"tie to, tie, tie on",0.702387273311615,0.3610239624977112,1.0
+svo,to beat,toing beat,someone toing beat something.,2,1,False,"to put, to hit, to bring",0.702387273311615,0.3610239624977112,1.0
+svo,to bite,toing bite,someone toing bite something.,6,1,True,"of bite, make bite, to eat",0.702387273311615,0.3610239624977112,1.0
+svo,to break,toing break,someone toing break something.,2,1,False,"to take, to bring, break",0.702387273311615,0.3610239624977112,1.0
+svo,to bundle,toing bundle,someone toing bundle something.,1,1,False,"bundle, to use, to bring",0.702387273311615,0.3610239624977112,1.0
+svo,to catch,toing catch,someone toing catch something.,10,2,True,"catch, catch in, catch on",0.702387273311615,0.3610239624977112,1.0
+svo,to climb,toing climb,someone toing climb something.,2,1,False,"climb to, climb, climb on",0.702387273311615,0.3610239624977112,1.0
+svo,to crack,toing crack,someone toing crack something.,2,1,False,"of crack, crack, crack into",0.702387273311615,0.3610239624977112,1.0
+svo,to cut,toing cut,someone toing cut something.,9,4,True,"by cut, on cut, over cut",0.702387273311615,0.3610239624977112,1.0
+svo,to damage,toing damage,someone toing damage something.,1,1,False,"to remove, to destroy, to hit",0.702387273311615,0.3610239624977112,1.0
+svo,to destroy,toing destroy,someone toing destroy something.,1,2,False,"destroy, to remove, to damage",0.702387273311615,0.3610239624977112,1.0
+svo,to drain,toing drain,someone toing drain something.,3,2,False,"drain, to clean, to dry",0.702387273311615,0.3610239624977112,1.0
+svo,to dribble,toing dribble,someone toing dribble something.,1,1,False,"dribble, to kick, skip",0.702387273311615,0.3610239624977112,1.0
+svo,to drink,toing drink,someone toing drink something.,2,1,False,"drink, drink at, drink of",0.702387273311615,0.3610239624977112,1.0
+svo,to drive,toing drive,someone toing drive something.,2,1,False,"during drive, to take, to bring",0.702387273311615,0.3610239624977112,1.0
+svo,to dry,toing dry,someone toing dry something.,2,1,False,"to clean, to put, to use",0.702387273311615,0.3610239624977112,1.0
+svo,to eat,toing eat,someone toing eat something.,8,2,True,"on eat, talk eat, eat",0.702387273311615,0.3610239624977112,1.0
+svo,to fry,toing fry,someone toing fry something.,3,1,False,"into fry, in fry, fry",0.702387273311615,0.3610239624977112,1.0
+svo,to grab,toing grab,someone toing grab something.,2,1,False,"to put, to bring, to throw",0.702387273311615,0.3610239624977112,1.0
+svo,to hit,toing hit,someone toing hit something.,3,1,False,"hit at, hit in, hit to",0.702387273311615,0.3610239624977112,1.0
+svo,to kick,toing kick,someone toing kick something.,3,5,False,"by kick, kick up, kick at",0.702387273311615,0.3610239624977112,1.0
+svo,to make,toing make,someone toing make something.,25,3,True,"to create, to take, to put",0.702387273311615,0.3610239624977112,1.0
+svo,to pass,toing pass,someone toing pass something.,1,1,False,"by pass, to put, to take",0.702387273311615,0.3610239624977112,1.0
+svo,to perform,toing perform,someone toing perform something.,1,1,False,"to show, perform, perform on",0.702387273311615,0.3610239624977112,1.0
+svo,to play,toing play,someone toing play something.,6,3,True,"for play, by play, show play",0.702387273311615,0.3610239624977112,1.0
+svo,to prepare,toing prepare,someone toing prepare something.,7,1,True,"prepare, prepare with, prepare of",0.702387273311615,0.3610239624977112,1.0
+svo,to revive,toing revive,someone toing revive something.,1,1,False,"to replace, to remove, to make",0.702387273311615,0.3610239624977112,1.0
+svo,to ride,toing ride,someone toing ride something.,2,1,False,"up ride, ride on, rid",0.702387273311615,0.3610239624977112,1.0
+svo,to save,toing save,someone toing save something.,1,1,False,"to give, to take, to bring",0.702387273311615,0.3610239624977112,1.0
+svo,to scratch,toing scratch,someone toing scratch something.,1,1,False,"to touch, scratch at, scratch on",0.702387273311615,0.3610239624977112,1.0
+svo,to slice,toing slice,someone toing slice something.,5,2,True,"on slice, show slice, put slice",0.702387273311615,0.3610239624977112,1.0
+svo,to swallow,toing swallow,someone toing swallow something.,1,1,False,"to blow, to suck, suck",0.702387273311615,0.3610239624977112,1.0
+svo,to touch,toing touch,someone toing touch something.,2,1,False,"by touch, touch, to put",0.702387273311615,0.3610239624977112,1.0
+svo,to trash,toing trash,someone toing trash something.,1,1,False,"to clean, dump, dump in",0.702387273311615,0.3610239624977112,1.0
+svo,to use,toing use,someone toing use something.,3,1,False,"to put, to take, to bring",0.702387273311615,0.3610239624977112,1.0
+svo,to wake,toing wake,someone toing wake something.,1,1,False,"to take, to throw, to break",0.702387273311615,0.3610239624977112,1.0
+svo,to wash,toing wash,someone toing wash something.,1,1,False,"wash, wash of, wash in",0.702387273311615,0.3610239624977112,1.0
+svo,torment,tormenting,someone tormenting something.,1,1,False,"mess with, nail on, wage",0.702387273311615,0.3610239624977112,1.0
+svo,toss,tossing,someone tossing something.,6,1,True,"toss on, toss in, toss onto",0.702387273311615,0.3610239624977112,1.0
+svo,touch,touching,someone touching something.,6,1,True,"by touch, to touch, rub",0.702387273311615,0.3610239624977112,1.0
+svo,touch rest,touching rest,someone touching rest something.,1,1,False,"touch, lay, rub on",0.702387273311615,0.3610239624977112,1.0
+svo,trace on,tracing on,someone tracing on something.,1,1,False,"write on, draw, draw with",0.702387273311615,0.3610239624977112,1.0
+svo,transfer from,transfering from,someone transfering from something.,2,1,False,"transfer to, transfer, move from",0.702387273311615,0.3610239624977112,1.0
+svo,transfer to,transfering to,someone transfering to something.,1,1,False,"transfer from, transfer, move from",0.702387273311615,0.3610239624977112,1.0
+svo,trap in,traping in,someone traping in something.,1,1,False,"trap, traverse, take",0.702387273311615,0.3610239624977112,1.0
+svo,travel in,traveling in,someone traveling in something.,4,1,False,"travel on, travel through, travel down",0.702387273311615,0.3610239624977112,1.0
+svo,traverse,traversing,someone traversing something.,1,1,False,"trap, surpass, move towards",0.702387273311615,0.3610239624977112,1.0
+svo,trim,trimming,someone trimming something.,5,1,True,"trim from, cut, cut by",0.702387273311615,0.3610239624977112,1.0
+svo,trot,trotting,someone trotting something.,1,1,False,"trot on, trot by, trot in",0.702387273311615,0.3610239624977112,1.0
+svo,trot on,trotting on,someone trotting on something.,2,2,False,"trot in, trot by, trot",0.702387273311615,0.3610239624977112,1.0
+svo,tumble on,tumbling on,someone tumbling on something.,1,1,False,"fall off, fall over, fall",0.702387273311615,0.3610239624977112,1.0
+svo,turn,turning,someone turning something.,8,2,True,"turn by, turn in, turn with",0.702387273311615,0.3610239624977112,1.0
+svo,turn around,turning around,someone turning around something.,1,1,False,"turn by, turn, turn in",0.702387273311615,0.3610239624977112,1.0
+svo,turn over,turning over,someone turning over something.,2,1,False,"move over, put over, turn in",0.702387273311615,0.3610239624977112,1.0
+svo,type in,typing in,someone typing in something.,2,1,False,"type at, type on, type with",0.702387273311615,0.3610239624977112,1.0
+svo,type on,typing on,someone typing on something.,4,1,False,"type, type in, type at",0.702387273311615,0.3610239624977112,1.0
+svo,urinate in,urinating in,someone urinating in something.,1,1,False,"urinate on, urinate from, urinate into",0.702387273311615,0.3610239624977112,1.0
+svo,urinate into,urinating into,someone urinating into something.,1,2,False,"urinate on, urinate in, urinate from",0.702387273311615,0.3610239624977112,1.0
+svo,use,using,someone using something.,110,23,True,"use to, use in, use for",0.702387273311615,0.3610239624977112,1.0
+svo,use brush,using brush,someone using brush something.,1,1,False,"brush, brush into, brush on",0.702387273311615,0.3610239624977112,1.0
+svo,use in,using in,someone using in something.,1,1,False,"use, use to, use for",0.702387273311615,0.3610239624977112,1.0
+svo,use of,using of,someone using of something.,7,2,True,"use, use for, use in",0.702387273311615,0.3610239624977112,1.0
+svo,vacuum,vacuuming,someone vacuuming something.,2,1,False,"clean with, sweep out, sweep",0.702387273311615,0.3610239624977112,1.0
+svo,vandalize,vandalizing,someone vandalizing something.,1,1,False,"antagonize, steal, mess with",0.702387273311615,0.3610239624977112,1.0
+svo,wade into,wading into,someone wading into something.,1,1,False,"wade through, wade in, swim through",0.702387273311615,0.3610239624977112,1.0
+svo,wag,wagging,someone wagging something.,6,2,True,"wage, ware, nudge",0.702387273311615,0.3610239624977112,1.0
+svo,wage,waging,someone waging something.,2,1,False,"mess with, ware, deal",0.702387273311615,0.3610239624977112,1.0
+svo,wake up,waking up,someone waking up something.,1,1,False,"wake in, wake on, sleep on",0.702387273311615,0.3610239624977112,1.0
+svo,waken,wakening,someone wakening something.,1,1,False,"ware, wage, tide",0.702387273311615,0.3610239624977112,1.0
+svo,walk,walking,someone walking something.,10,1,True,"walk along, walk in, walk down",0.702387273311615,0.3610239624977112,1.0
+svo,walk across,walking across,someone walking across something.,5,1,True,"walk on, walk over, walk down",0.702387273311615,0.3610239624977112,1.0
+svo,walk around,walking around,someone walking around something.,6,4,True,"walk along, walk by, walk in",0.702387273311615,0.3610239624977112,1.0
+svo,walk in,walking in,someone walking in something.,20,2,True,"walk at, walk on, walk",0.702387273311615,0.3610239624977112,1.0
+svo,walk on,walking on,someone walking on something.,35,7,True,"walk in, walk from, walk down",0.702387273311615,0.3610239624977112,1.0
+svo,walk sniff,walking sniff,someone walking sniff something.,1,1,False,"sniff around, sniff at, sniff on",0.702387273311615,0.3610239624977112,1.0
+svo,walk through,walking through,someone walking through something.,12,1,True,"walk thru, walk into, walk in",0.702387273311615,0.3610239624977112,1.0
+svo,walk up,walking up,someone walking up something.,4,1,False,"walk down, walk on, walk from",0.702387273311615,0.3610239624977112,1.0
+svo,walk with,walking with,someone walking with something.,11,4,True,"walk, walk along, walk in",0.702387273311615,0.3610239624977112,1.0
+svo,wash,washing,someone washing something.,12,7,True,"wash of, wash in, wash off",0.702387273311615,0.3610239624977112,1.0
+svo,wash of,washing of,someone washing of something.,2,1,False,"wash, wash in, wash off",0.702387273311615,0.3610239624977112,1.0
+svo,watch,watching,someone watching something.,22,6,True,"watch on, watch from, watch of",0.702387273311615,0.3610239624977112,1.0
+svo,watch of,watching of,someone watching of something.,2,1,False,"watch, watch from, watch on",0.702387273311615,0.3610239624977112,1.0
+svo,wave,waving,someone waving something.,5,1,True,"wave to, hold out, hold up",0.702387273311615,0.3610239624977112,1.0
+svo,wear,wearing,someone wearing something.,22,2,True,"wear of, dress in, dress with",0.702387273311615,0.3610239624977112,1.0
+svo,wet,weting,someone weting something.,2,1,False,"wage, use to, pore",0.702387273311615,0.3610239624977112,1.0
+svo,wheel,wheeling,someone wheeling something.,1,1,False,"whet, ride down, ride around",0.702387273311615,0.3610239624977112,1.0
+svo,whip,whipping,someone whipping something.,1,1,False,"whip on, whip with, whip in",0.702387273311615,0.3610239624977112,1.0
+svo,whip in,whipping in,someone whipping in something.,1,1,False,"whip on, whip with, whip",0.702387273311615,0.3610239624977112,1.0
+svo,whip with,whipping with,someone whipping with something.,2,2,False,"whip on, whip in, whip",0.702387273311615,0.3610239624977112,1.0
+svo,whisk,whisking,someone whisking something.,10,5,True,"whisk to, whisk in, add whisk",0.702387273311615,0.3610239624977112,1.0
+svo,whisk in,whisking in,someone whisking in something.,1,1,False,"whisk to, whisk, add whisk",0.702387273311615,0.3610239624977112,1.0
+svo,whisk to,whisking to,someone whisking to something.,1,1,False,"whisk in, whisk, add whisk",0.702387273311615,0.3610239624977112,1.0
+svo,wipe,wiping,someone wiping something.,7,2,True,"wipe from, wipe with, wipe of",0.702387273311615,0.3610239624977112,1.0
+svo,wipe from,wiping from,someone wiping from something.,1,1,False,"wipe with, wipe, wipe of",0.702387273311615,0.3610239624977112,1.0
+svo,wipe of,wiping of,someone wiping of something.,1,1,False,"wipe, wipe from, wipe with",0.702387273311615,0.3610239624977112,1.0
+svo,with cook,withing cook,someone withing cook something.,1,1,False,"of cook, to cook, put cook",0.702387273311615,0.3610239624977112,1.0
+svo,with paint,withing paint,someone withing paint something.,1,1,False,"pain, paint, paint with",0.702387273311615,0.3610239624977112,1.0
+svo,with run,withing run,someone withing run something.,1,1,False,"run at, run to, run into",0.702387273311615,0.3610239624977112,1.0
+svo,without use,withouting use,someone withouting use something.,1,1,False,"to use, use around, into use",0.702387273311615,0.3610239624977112,1.0
+svo,work on,working on,someone working on something.,6,1,True,"work with, work into, work in",0.702387273311615,0.3610239624977112,1.0
+svo,wrap,wrapping,someone wrapping something.,5,2,True,"wrap with, wrap in, wrap up",0.702387273311615,0.3610239624977112,1.0
+svo,wrap up,wrapping up,someone wrapping up something.,2,1,False,"wrap, wrap in, wrap with",0.702387273311615,0.3610239624977112,1.0
+svo,wrap with,wrapping with,someone wrapping with something.,2,1,False,"wrap, wrap in, wrap around",0.702387273311615,0.3610239624977112,1.0
+svo,wrestle on,wrestling on,someone wrestling on something.,2,2,False,"wrestle in, wrestle with, wrestle over",0.702387273311615,0.3610239624977112,1.0
+svo,wring,wringing,someone wringing something.,1,1,False,"hit, hit by, take out",0.702387273311615,0.3610239624977112,1.0
+svo,write on,writing on,someone writing on something.,2,1,False,"write at, draw, draw on",0.702387273311615,0.3610239624977112,1.0
+prep,about,about,something about something else.,1,1,False,"about in, at, during",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,across,across,something across something else.,31,11,True,"across of, along, onto",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,after,after,something after something else.,6,1,True,"during, at, out from",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,against,against,something against something else.,8,1,True,"against of, across, between",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,against of,against of,something against of something else.,1,1,False,"against, on of, along of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,along,along,something along something else.,10,3,True,"along of, along with, on",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,along of,along of,something along of something else.,3,2,False,"along, of, on of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,along with,along with,something along with something else.,1,1,False,"along, on with, with",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,around,around,something around something else.,22,7,True,"around on, around of, around in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,around in,around in,something around in something else.,4,1,False,"around on, on in, in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,around of,around of,something around of something else.,2,1,False,"around on, around, along of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,around on,around on,something around on something else.,4,2,False,"around in, around, around of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,at,at,something at something else.,72,17,True,"at on, at of, in at",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,at of,at of,something at of something else.,4,1,False,"in of, on of, at",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,behind,behind,something behind something else.,11,3,True,"behind with, along, across",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,beside,beside,something beside something else.,5,2,True,"next to, along with, near",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,brough,brough,something brough something else.,1,1,False,"out, breaks, out from",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,by,by,something by something else.,47,9,True,"by of, with by, by on",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,by in,by in,something by in something else.,1,1,False,"by on, at in, in in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,by of,by of,something by of something else.,3,1,False,"by, at of, by on",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,down,down,something down something else.,46,17,True,"down on, down from, down into",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,down from,down from,something down from something else.,2,1,False,"down on, down, down into",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,down into,down into,something down into something else.,1,1,False,"down on, down, down from",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,during,during,something during something else.,4,2,False,"at, in, on",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,for,for,something for something else.,38,5,True,"for with, to of, of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,from,from,something from something else.,136,57,True,"out from, from of, of from",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,from into,from into,something from into something else.,3,2,False,"with into, at into, from onto",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,from of,from of,something from of something else.,3,1,False,"of from, from, at of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,from onto,from onto,something from onto something else.,1,1,False,"out from, to from, from",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,in,in,something in something else.,521,209,True,"in in, on in, in on",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,in in,in in,something in in something else.,3,1,False,"on in, in, into in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,in into,in into,something in into something else.,1,1,False,"into in, into into, into",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,in of,in of,something in of something else.,20,4,True,"of in, at of, on of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,in on,in on,something in on something else.,6,2,True,"on in, in, on on",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,in to,in to,something in to something else.,41,21,True,"on to, to in, in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,in with,in with,something in with something else.,9,2,True,"on with, into with, at with",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,inside,inside,something inside something else.,25,8,True,"inside of, inside through, into",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,inside of,inside of,something inside of something else.,2,1,False,"inside, inside through, into of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,into,into,something into something else.,286,140,True,"into into, into with, into in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,into of,into of,something into of something else.,8,2,True,"of into, into, in of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,into with,into with,something into with something else.,11,4,True,"into, in with, to with",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,into without,into without,something into without something else.,1,1,False,"without, into with, into",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,like in,like in,something like in something else.,1,1,False,"like, out in, in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,near,near,something near something else.,11,1,True,"near by, near of, along",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,next to,next to,something next to something else.,2,1,False,"beside, near, along with",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,of,of,something of something else.,412,100,True,"of of, than of, at of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,of in,of in,something of in something else.,7,2,True,"in of, at in, of on",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,of into,of into,something of into something else.,4,1,False,"into of, in into, at into",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,of up,of up,something of up something else.,1,1,False,"up of, up, up to",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,of with,of with,something of with something else.,5,2,True,"with of, at with, with",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,off,off,something off something else.,33,13,True,"off of, off to, of off",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,off of,off of,something off of something else.,19,7,True,"out of, off, of off",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,on,on,something on something else.,386,133,True,"on on, in on, in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,on in,on in,something on in something else.,6,4,True,"in in, in on, in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,on of,on of,something on of something else.,26,8,True,"of on, at of, in of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,on on,on on,something on on something else.,2,2,False,"on, in on, on in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,on to,on to,something on to something else.,5,3,True,"in to, to on, to",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,on with,on with,something on with something else.,3,2,False,"with, out with, at with",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,onto,onto,something onto something else.,37,12,True,"on, into, on to",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,out,out,something out something else.,5,1,True,"out to, out of, off",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,out from,out from,something out from something else.,7,1,True,"off from, out of, from",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,out of,out of,something out of something else.,39,19,True,"off of, out from, on of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,out with,out with,something out with something else.,1,1,False,"on with, at with, with",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,over,over,something over something else.,54,22,True,"over on, over of, over into",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,over on,over on,something over on something else.,2,1,False,"over in, over, over of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,through,through,something through something else.,52,11,True,"through of, from through, of through",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,to,to,something to something else.,153,75,True,"to to, of to, to into",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,to down,to down,something to down something else.,1,1,False,"down, down into, down on",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,to from,to from,something to from something else.,3,1,False,"from, of from, to of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,to in,to in,something to in something else.,7,5,True,"in to, to on, in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,to to,to to,something to to something else.,2,1,False,"to, to into, of to",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,towards,towards,something towards something else.,5,1,True,"toward, towards of, between",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,under,under,something under something else.,6,2,True,"with under, to under, along",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,until,until,something until something else.,2,1,False,"along, without, during",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,up,up,something up something else.,9,2,True,"up to, up on, up in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,up in,up in,something up in something else.,7,2,True,"up on, up to, up into",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,up off,up off,something up off something else.,1,1,False,"up on, up, off",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,up on,up on,something up on something else.,2,1,False,"up in, up, up of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,up to,up to,something up to something else.,1,1,False,"up, to up, up into",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,up with,up with,something up with something else.,2,1,False,"up, up to, up on",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,vacuums,vacuums,something vacuums something else.,1,1,False,"around, during, open",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,with,with,something with something else.,418,102,True,"on with, out with, with of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,with of,with of,something with of something else.,19,6,True,"of with, with, on of",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,with on,with on,something with on something else.,6,2,True,"on with, with, with in",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,with out,with out,something with out something else.,1,1,False,"out with, out, with",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,without,without,something without something else.,1,1,False,"without of, into without, with out",0.9093441963195801,0.5631271004676819,0.9948669672012329
+prep,without of,without of,something without of something else.,1,1,False,"without, than of, out of",0.9093441963195801,0.5631271004676819,0.9948669672012329

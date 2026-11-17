@@ -1,0 +1,1077 @@
+{
+  "config": {
+    "adoption_rule": {
+      "default": "phương án đơn giản hơn",
+      "max_p_holm": 0.1,
+      "min_delta": 0.002
+    },
+    "benchmark_looks_before": {
+      "msrvtt_1kA": 1,
+      "msrvtt_fresh1k": 1,
+      "msrvtt_fresh1kB": 1,
+      "msrvtt_fresh1kC": 0,
+      "msvd_test": 5
+    },
+    "clip": "ViT-L-14/laion2b_s32b_b82k",
+    "confirm_set": "fresh1kC",
+    "confirmatory": [
+      [
+        "H1_graph_vs_clip",
+        "G3",
+        "G0"
+      ],
+      [
+        "H2_relations_vs_contains_only",
+        "G3",
+        "G1"
+      ],
+      [
+        "H3_predicate_vs_family_only",
+        "G3",
+        "G2"
+      ],
+      [
+        "H4_true_vs_shuffled_predicates",
+        "G3",
+        "G4"
+      ],
+      [
+        "H5_true_vs_rewired_topology",
+        "G3",
+        "G5"
+      ],
+      [
+        "H6_query_conditioned_vs_static",
+        "G3",
+        "G6"
+      ],
+      [
+        "H7_v4_vs_v3",
+        "G3",
+        "V3REF"
+      ],
+      [
+        "H8_role_edges",
+        "G3",
+        "G7"
+      ],
+      [
+        "H9_svo_prep_edges",
+        "G3",
+        "G8"
+      ],
+      [
+        "H10_kg_vs_contains_only",
+        "G9",
+        "G1"
+      ],
+      [
+        "H11_kg_true_vs_rewired",
+        "G9",
+        "G10"
+      ],
+      [
+        "H12_kg_adds_to_graph",
+        "G9",
+        "G3"
+      ],
+      [
+        "H13_learned_vs_zeroshot_tags",
+        "G3",
+        "G11"
+      ]
+    ],
+    "decisions": [
+      {
+        "adopted": false,
+        "candidate": "E11_v4_T2",
+        "ci_hi": 0.004716213947341032,
+        "ci_lo": -0.0009321014240229171,
+        "delta_val_MRR": 0.001925946669026346,
+        "field": "v4_layers",
+        "incumbent": "E10_v4_T1",
+        "p_holm": 0.0922,
+        "p_not_better": 0.0922,
+        "passes": false,
+        "stage": "V1",
+        "value": "2"
+      },
+      {
+        "adopted": false,
+        "candidate": "E20_tags_probe",
+        "ci_hi": 0.003468548445111019,
+        "ci_lo": -0.0037080786486264903,
+        "delta_val_MRR": -0.0001713767487744322,
+        "field": "tags",
+        "incumbent": "E10_v4_T1",
+        "p_holm": 0.551,
+        "p_not_better": 0.551,
+        "passes": false,
+        "stage": "V2",
+        "value": "probe"
+      }
+    ],
+    "design_base": {
+      "conf_mode": "sigmoid",
+      "contains": "binary",
+      "init": "learned",
+      "mask": "none",
+      "model": "v3",
+      "mp_weight": "binary",
+      "path_mode": "weighted",
+      "pred_mode": "none",
+      "pred_shuffle": false,
+      "protocol": "inductive",
+      "rel_policy": "all",
+      "related": "base",
+      "rewire": false,
+      "tags": "base",
+      "taxonomy": "heuristic",
+      "v4_layers": 1,
+      "v4_pred": true,
+      "v4_qcond": true,
+      "v4_rel": true
+    },
+    "eval_query_rule": {
+      "n_per_group": 20,
+      "seed": 20261026
+    },
+    "experiments": {
+      "E10_v4_T1": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.8,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V1",
+        "status": "DONE",
+        "val_MRR": [
+          0.8205296287479678,
+          0.003309737283512525
+        ]
+      },
+      "E11_v4_T2": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 2,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V1",
+        "status": "DONE",
+        "val_MRR": [
+          0.8224555754169941,
+          0.0008551299682827706
+        ]
+      },
+      "E20_tags_probe": {
+        "alpha_lam": [
+          [
+            0.8,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.8,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "probe",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V2",
+        "status": "DONE",
+        "val_MRR": [
+          0.8203582519991933,
+          0.002325436816632502
+        ]
+      },
+      "G0_clip_only": {
+        "alpha_lam": null,
+        "design": null,
+        "stage": "V0",
+        "status": "DONE",
+        "val_MRR": [
+          0.8094808581263709,
+          0.0
+        ]
+      },
+      "G10_conceptnet_rewired": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "none",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "conceptnet",
+          "rewire": true,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.8227974669703808,
+          0.001331617224471779
+        ]
+      },
+      "G11_zeroshot_tags": {
+        "alpha_lam": null,
+        "design": null,
+        "stage": "V7",
+        "status": "NOT RUN",
+        "val_MRR": [
+          NaN,
+          NaN
+        ]
+      },
+      "G1_contains_only": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": false
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.8216486051097419,
+          0.0014132162134302458
+        ]
+      },
+      "G2_no_predicate": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": false,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.8206509853823446,
+          0.0025322070824685358
+        ]
+      },
+      "G3_v4_full": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.8,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.8205296287479678,
+          0.003309737283512525
+        ]
+      },
+      "G4_pred_shuffled": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.8,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": true,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.8209396656160559,
+          0.0021974237967394006
+        ]
+      },
+      "G5_rewired": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": true,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.8237506117482172,
+          0.00040028418574971795
+        ]
+      },
+      "G6_static_attention": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.8,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": false,
+          "v4_rel": true
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.8218774394954377,
+          0.0035678696498075355
+        ]
+      },
+      "G7_no_role_edges": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related+no_roles",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.8225949489652363,
+          0.0023226607645067017
+        ]
+      },
+      "G8_no_svo_prep_edges": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related+no_svo_prep",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.8230593042048028,
+          0.002391547310964826
+        ]
+      },
+      "G9_conceptnet": {
+        "alpha_lam": [
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.8,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ],
+          [
+            0.7,
+            1.0
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "none",
+          "model": "v4",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "conceptnet",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.821701755995656,
+          0.0023258904656484514
+        ]
+      },
+      "R3_v3_final": {
+        "alpha_lam": [
+          [
+            0.7,
+            0.75
+          ],
+          [
+            0.7,
+            0.75
+          ],
+          [
+            0.7,
+            0.75
+          ],
+          [
+            0.7,
+            0.75
+          ],
+          [
+            0.7,
+            0.75
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v3",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V0",
+        "status": "DONE",
+        "val_MRR": [
+          0.8259242923389699,
+          0.0014925168275375397
+        ]
+      },
+      "V3REF": {
+        "alpha_lam": [
+          [
+            0.7,
+            0.75
+          ],
+          [
+            0.7,
+            0.75
+          ],
+          [
+            0.7,
+            0.75
+          ],
+          [
+            0.7,
+            0.75
+          ],
+          [
+            0.7,
+            0.75
+          ]
+        ],
+        "design": {
+          "conf_mode": "sigmoid",
+          "contains": "binary",
+          "init": "learned",
+          "mask": "no_related",
+          "model": "v3",
+          "mp_weight": "binary",
+          "path_mode": "weighted",
+          "pred_mode": "none",
+          "pred_shuffle": false,
+          "protocol": "inductive",
+          "rel_policy": "all",
+          "related": "base",
+          "rewire": false,
+          "tags": "base",
+          "taxonomy": "none",
+          "v4_layers": 1,
+          "v4_pred": true,
+          "v4_qcond": true,
+          "v4_rel": true
+        },
+        "stage": "V7",
+        "status": "DONE",
+        "val_MRR": [
+          0.8259242923389699,
+          0.0014925168275375397
+        ]
+      }
+    },
+    "ext_sha1": "c16095c68eba",
+    "ext_status": "OK",
+    "final_design": {
+      "conf_mode": "sigmoid",
+      "contains": "binary",
+      "init": "learned",
+      "mask": "no_related",
+      "model": "v4",
+      "mp_weight": "binary",
+      "path_mode": "weighted",
+      "pred_mode": "none",
+      "pred_shuffle": false,
+      "protocol": "inductive",
+      "rel_policy": "all",
+      "related": "base",
+      "rewire": false,
+      "tags": "base",
+      "taxonomy": "none",
+      "v4_layers": 1,
+      "v4_pred": true,
+      "v4_qcond": true,
+      "v4_rel": true
+    },
+    "final_experiment": "E10_v4_T1",
+    "g3_design": {
+      "conf_mode": "sigmoid",
+      "contains": "binary",
+      "init": "learned",
+      "mask": "no_related",
+      "model": "v4",
+      "mp_weight": "binary",
+      "path_mode": "weighted",
+      "pred_mode": "none",
+      "pred_shuffle": false,
+      "protocol": "inductive",
+      "rel_policy": "all",
+      "related": "base",
+      "rewire": false,
+      "tags": "base",
+      "taxonomy": "none",
+      "v4_layers": 1,
+      "v4_pred": true,
+      "v4_qcond": true,
+      "v4_rel": true
+    },
+    "g_ids": {
+      "G0": "G0_clip_only",
+      "G1": "G1_contains_only",
+      "G10": "G10_conceptnet_rewired",
+      "G11": "G11_zeroshot_tags",
+      "G2": "G2_no_predicate",
+      "G3": "G3_v4_full",
+      "G4": "G4_pred_shuffled",
+      "G5": "G5_rewired",
+      "G6": "G6_static_attention",
+      "G7": "G7_no_role_edges",
+      "G8": "G8_no_svo_prep_edges",
+      "G9": "G9_conceptnet",
+      "V3REF": "V3REF"
+    },
+    "holm_alpha": 0.05,
+    "inventory_sha1": "0b5fa59504de",
+    "kg_status": "OK — 8990 cạnh ConceptNet giữa khoá từ vựng TRAIN",
+    "learn_clip_w": false,
+    "model": "QC-RGAT",
+    "msvd_test_looks_before": 5,
+    "n_frames": 12,
+    "note": "test MSVD đã được nhìn ở v1–v4 và Level 4(b) v1 ⇒ ở đây chỉ là THĂM DÒ (lần 6), không dùng để chọn; xác nhận = MSR-VTT fresh1k-C (1000 video CHƯA dùng ở v1–v4, Level 4(b) v1), đánh giá MỘT lần sau đóng băng",
+    "pooling": "centrality",
+    "predicate_shuffle_valid": {
+      "base": true,
+      "g3": true
+    },
+    "predicate_vocab": 2502,
+    "random_control_valid": {
+      "base": true,
+      "g3": true
+    },
+    "relation_quality": {
+      "automatic": "kiểm chứng TỰ ĐỘNG (spaCy 3.8.16 / en_core_web_sm 3.8.0): tỉ lệ quan hệ heuristic được parser độc lập xác nhận — agent_of 0.89 [0.88, 0.89]; object_of 0.60 [0.59, 0.61]; prep 0.25 [0.24, 0.26]; svo 0.80 [0.79, 0.80] (23s). SILVER — không phải precision do người chấm.",
+      "human": "không có nhãn người chấm (tuỳ chọn) — chỉ có kiểm chứng tự động"
+    },
+    "rerank_k": 50,
+    "schema_sha1": "016d14b55c88",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "split_sha1": "56f2e89a1135",
+    "stages_not_run": [
+      {
+        "experiment_id": "G11_zeroshot_tags",
+        "reason": "V2 không chọn tagger học ⇒ G3 đã dùng nhãn zero-shot",
+        "stage": "V7"
+      }
+    ],
+    "tagger": {
+      "k_noun": 5,
+      "k_verb": 3,
+      "norm": "raw+z",
+      "pool": "video",
+      "val_F1": 0.32406779661016955,
+      "val_P": 0.29875,
+      "val_R": 0.3540740740740741
+    },
+    "tagger_probe": {
+      "epochs": 300,
+      "folds": 5,
+      "k_noun": 5,
+      "k_verb": 2,
+      "method": "logistic đa nhãn trên CLIP video (TRAIN, out-of-fold cho TRAIN)",
+      "n_terms_with_train_positive": 727,
+      "val_F1": 0.48727272727272725,
+      "val_P": 0.4785714285714286,
+      "val_R": 0.4962962962962963,
+      "wd": 0.1
+    },
+    "v3_final": {
+      "conf_mode": "sigmoid",
+      "contains": "binary",
+      "init": "learned",
+      "mask": "no_related",
+      "model": "v3",
+      "mp_weight": "binary",
+      "path_mode": "weighted",
+      "pred_mode": "none",
+      "pred_shuffle": false,
+      "protocol": "inductive",
+      "rel_policy": "all",
+      "related": "base",
+      "rewire": false,
+      "tags": "base",
+      "taxonomy": "none",
+      "v4_layers": 1,
+      "v4_pred": true,
+      "v4_qcond": true,
+      "v4_rel": true
+    },
+    "v4": {
+      "dim": 64,
+      "lr": 0.002
+    },
+    "verified_cells": null,
+    "version": "level4b_v2"
+  },
+  "sha1": "a665437cfe8f",
+  "frozen_at": 1793451450.586658,
+  "frozen_at_str": "2026-10-31 12:57:30"
+}

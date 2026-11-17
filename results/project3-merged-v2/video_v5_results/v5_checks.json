@@ -1,0 +1,20 @@
+[
+  {
+    "id": "E0",
+    "check": "đặc trưng PE đủ cho mọi video / caption, cùng thứ tự với CLIP",
+    "status": "PASS",
+    "evidence": "video (1970, 1024) | caption (80827, 1024)"
+  },
+  {
+    "id": "E1",
+    "check": "trọng số học được hữu hạn; mô hình đầy đủ không kém CLIP trên VAL-CV",
+    "status": "PASS",
+    "evidence": "M0 0.8095 | M1 0.8704 | M4 0.8815"
+  },
+  {
+    "id": "V1",
+    "check": "VLM phân biệt caption đúng / sai của video VAL (AUC ≥ 0.7)",
+    "status": "PASS",
+    "evidence": "{'model': 'Qwen/Qwen2.5-VL-7B-Instruct', 'vis_fp32': False, 'finite': True, 'auc': 0.998046875}"
+  }
+]

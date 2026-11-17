@@ -1,0 +1,26 @@
+artifact,kind,source,caption_splits,video_splits,note,stage,time
+RECORDS + CaptionStore,external,friedrichor/MSVD@9aa95a30,—,—,metadata + caption gốc; caption chỉ đọc qua CaptionStore,data,10:58:50
+tập ngoài (MSR-VTT),external,"MSR-VTT fresh1k-C: 1000 video train-9k (ngoài 1k-A, dev, fresh1k, fresh1k-B; seed 20261031) — CHƯA dùng ở v1–v4 và Level 4(b) v1",—,—,chỉ frame (encode) trước đóng băng; caption chỉ để đánh giá,data,10:58:50
+"FRAME_FEAT [N,12,D]",frames,CLIP-image đóng băng ViT-L-14/laion2b_s32b_b82k trên 12 frame/video,—,"ext,test,train,val",/kaggle/working/project03_level4b_v2/cache/frames_msvd_ViT-L-14_laion2b_s32b_b82k_F12_uniform-segment-midpoint_9aa95a30_1970.npz | /kaggle/working/project03_level4b_v2/cache/text_msvd_ViT-L-14_laion2b_s32b_b82k_F12_uniform-segment-midpoint_9aa95a30_80827_4eb1cb0755.npz | /kaggle/working/project03_level4b_v2/cache/frames_msrvtt_c1af215a_fresh1kC_ViT-L-14_laion2b_s32b_b82k_F12_uniform-segment-midpoint_1000.npz | /kaggle/working/project03_level4b_v2/cache/text_msrvtt_c1af215a_fresh1kC_ViT-L-14_laion2b_s32b_b82k_F12_uniform-segment-midpoint_20000_de876ffd71.npz,features,11:18:46
+"TXT_FEAT [N_caption,D]",encoded,"CLIP-text đóng băng — mã hoá để cache, không học","ext,test,train,val",—,việc DÙNG tuân theo CaptionStore,features,11:18:46
+n_frames + pooling,selected,MRR CLIP-only text→video trên VAL,val,—,,pooling,11:18:47
+"VID_FEAT [N,D]",frames,gộp 12 frame (centrality),—,"ext,test,train,val",,pooling,11:18:47
+"từ vựng (lemma, POS)",learned,caption TRAIN (POS + WordNet),train,—,,vocab_tagger,11:19:58
+quan hệ (loại + vị từ),learned,caption TRAIN,train,—,,vocab_tagger,11:19:58
+từ vựng + support vị từ,learned,quan hệ caption TRAIN,train,—,,vocab_tagger,11:19:58
+embedding vị từ (CLIP-text đóng băng),external,prompt CFG.pred_prompts × vị từ train,—,—,,vocab_tagger,11:19:58
+mẫu quan hệ phân tầng,learned,caption TRAIN (phân tầng họ × mức phổ biến),train,—,,vocab_tagger,11:19:58
+đồng thuận heuristic ↔ spaCy (kiểm chứng tự động),learned,caption TRAIN; spaCy 3.8.16 / en_core_web_sm 3.8.0,train,—,,vocab_tagger,11:19:58
+tham số tagger,selected,F1 trên caption VAL,val,—,,vocab_tagger,11:19:58
+"thống kê hiệu chỉnh contains (μ, σ, phân vị)",frames,điểm tagger trên video TRAIN,—,train,,vocab_tagger,11:19:58
+taxonomy: sense theo ngữ cảnh + hub,learned,caption TRAIN + nhãn tagger TRAIN + WordNet,train,train,,vocab_tagger,11:19:58
+đặc trưng ngữ nghĩa node (CLIP-text),external,prompt tagger / 'lemma: định nghĩa WordNet',—,—,,vocab_tagger,11:19:58
+"cạnh quan hệ v3 (agent/object/svo/prep + _inv, phân phối vị từ)",learned,caption TRAIN,train,—,,graph_v3,11:20:20
+cạnh related (NPMI),learned,nhãn tagger của video TRAIN,—,train,,graph_v3,11:20:20
+IDF,learned,contains + isa thật của video TRAIN,—,train,,graph_v3,11:20:20
+cạnh isa,learned,WordNet + chọn sense từ ngữ cảnh caption TRAIN,train,—,,graph_v3,11:20:20
+k (số ứng viên rerank),selected,"chọn trên VAL ở v3 (k = 50), giữ nguyên ở v4",val,—,,V0,11:22:03
+tagger học (logistic đa nhãn trên CLIP video),learned,nhãn = khái niệm trong caption TRAIN; train out-of-fold,train,—,,V2,11:39:01
+"siêu tham số tagger học (weight decay, k)",selected,F1 trên VAL,val,—,,V2,11:39:01
+cạnh related = ConceptNet 5.7,external,"https://s3.amazonaws.com/conceptnet/downloads/2019/edges/conceptnet-assertions-5.7.0.csv.gz (quan hệ dương, en–en, hai đầu ∈ từ vựng train)",—,—,,V8,12:17:37
+bộ truy vấn đánh giá Level 4(b),evaluation,luật cố định: nhãn CLIP của video đúng + cạnh đồ thị train; không dùng điểm mô hình,"ext,test",—,,eval_queries,12:57:42
