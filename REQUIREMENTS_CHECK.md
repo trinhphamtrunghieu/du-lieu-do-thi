@@ -1,6 +1,6 @@
-# Đối chiếu với đề bài Project 3 (`Project03_Multimodal_XAI.pdf`)
+# Đối chiếu với đề bài Project 3 (`docs/Project03_Multimodal_XAI.pdf`)
 
-Cập nhật 17/11/2026, sau khi notebook gộp `merged/Project3_Merged.ipynb` chạy xong trên Kaggle (`hieutrinh123/project3-merged`). Phần A chạy ở version 1, phần C + B ở version 2. MMKG cấp 3 (`mmkg/`) chạy ở Kaggle `hieutrinh123/project3-mmkg-vn` version 4.
+Cập nhật 17/11/2026, sau khi notebook gộp `notebooks/Project3_Merged.ipynb` chạy xong trên Kaggle (`hieutrinh123/project3-merged`). Phần A chạy ở version 1, phần C + B ở version 2. MMKG cấp 3 (`mmkg/`) chạy ở Kaggle `hieutrinh123/project3-mmkg-vn` version 4.
 
 Ký hiệu:
 - **Đạt:** có code và output thật trong repo.
@@ -26,10 +26,10 @@ Phần A = `du-lieu-do-thi` (Flickr8k + Action Genome); phần B = pipeline ản
 | Baseline CLIP đóng băng trên ≥ 1 tập công khai | Đạt | CLIP ViT-L/14 đóng băng ở mọi phần. Flickr8k MRR 0,800; Action Genome 0,171; VG/COCO 0,718. Xem `RESULTS.md` |
 | Đồ thị từ dữ liệu có sẵn (scene graph VG, nhãn) | Đạt | Phần B: scene graph GT Visual Genome và RelTR. Phần A: nhãn Action Genome + Charades, caption Flickr8k |
 | ≥ 1 thuật toán đã học (GCN/GAT/GraphSAGE) | Đạt | GraphSAGE ở phần A (GNN chính) và phần B (TN1b); TypedSAGE / QC-RGAT ở phần C |
-| Xếp hạng lại α·cos + (1−α)·điểm đồ thị; so CLIP với CLIP + Graph trên cùng split | Đạt | `results/project3-merged-v1/partA_*/paired_graph_vs_clip.csv`; phần B TN1; `level4b_v2_graphfix/results/graph_confirmatory_tests.csv` |
+| Xếp hạng lại α·cos + (1−α)·điểm đồ thị; so CLIP với CLIP + Graph trên cùng split | Đạt | `results/partA_vitl14_*/paired_graph_vs_clip.csv`; phần B TN1; `results/partC_level4b/graph_confirmatory_tests.csv` |
 | Ablation bỏ cạnh / cạnh ngẫu nhiên | Đạt | Phần A: `no_relations`, `no_class_edges`, xáo node, xáo nhãn hành động. Phần B: G-rand, SAGE-rand, SAGE-0, "đồ thị của mục khác". Phần C: H2–H11 |
 | Hiển thị quan hệ/đường đi khi xếp hạng | Đạt | Demo `demo_query()` ở phần A, `search()` ở phần B; `fidelity_per_query.csv` |
-| Phân tích 5 thành công + 5 thất bại | Đạt (có dữ liệu) | `results/project3-merged-v1/partA_*/case_analysis.json` (10 ca mỗi tập); `results/project3-merged-v2/cases_text_to_image.json`. Phần phân tích bằng lời vẫn cần viết vào báo cáo |
+| Phân tích 5 thành công + 5 thất bại | Đạt (có dữ liệu) | `results/partA_vitl14_*/case_analysis.json` (10 ca mỗi tập); `results/partB_image_video/cases_text_to_image.json`. Phần phân tích bằng lời vẫn cần viết vào báo cáo |
 
 ## Cấp 2 — Nhiệm vụ 2
 
@@ -37,10 +37,10 @@ Phần A = `du-lieu-do-thi` (Flickr8k + Action Genome); phần B = pipeline ản
 | --- | --- | --- |
 | ≥ 2 tập công khai | Đạt | Flickr8k, Action Genome, Visual Genome + COCO, ARO, SugarCrepe, COCO-spatial, MSVD, MSR-VTT |
 | 1 phương pháp mới từ 2024 trở lại, cùng pipeline/split | Đạt | SCENIR (ICML 2025), TN1c phần B: MRR 0,7191 so với CLIP 0,7184 (không dương). Phần A có cell SCENIR nhưng đang tắt |
-| Bộ ≥ 20 truy vấn có nhóm gián tiếp, báo cáo tách nhóm | Đạt | `results/project3-merged-v1/partA_*/eval_queries_20.json` (10 trực tiếp + 10 gián tiếp, chỉ lấy từ test); kết quả tách nhóm direct/indirect trong `match_vs_clip.csv`, `paired_graph_vs_clip.csv`. Phần C có bộ 20 truy vấn gián tiếp đăng ký trước (`eval_queries_level4b.json`) |
+| Bộ ≥ 20 truy vấn có nhóm gián tiếp, báo cáo tách nhóm | Đạt | `results/partA_vitl14_*/eval_queries_20.json` (10 trực tiếp + 10 gián tiếp, chỉ lấy từ test); kết quả tách nhóm direct/indirect trong `match_vs_clip.csv`, `paired_graph_vs_clip.csv`. Phần C có bộ 20 truy vấn gián tiếp đăng ký trước (`eval_queries_level4b.json`) |
 | Bộ 20 truy vấn chỉ dùng để đánh giá | Đạt | Truy vấn lấy từ test, không dùng để chọn tham số (ghi trong file JSON) |
 | Ablation xáo trộn / đồ thị ngẫu nhiên | Đạt | Như cấp 1 |
-| So sánh các cách tạo cạnh (mở rộng) | Đạt | Phần B: bảng "So sánh các cách tạo cạnh" trong `results/project3-merged-v2/RESULTS.md`; phần A: none / no_class_edges / no_relations / no_actions |
+| So sánh các cách tạo cạnh (mở rộng) | Đạt | Phần B: bảng "So sánh các cách tạo cạnh" trong `results/partB_image_video/REPORT_generated.md`; phần A: none / no_class_edges / no_relations / no_actions |
 | Phân tích độ nhạy α (mở rộng) | Đạt | `alpha_sensitivity.csv` (phần A); `figures/alpha_sensitivity.png` trong output Kaggle (phần B, chưa lưu ảnh vào repo) |
 
 ## Cấp 3 — Nhiệm vụ 3 (xAI) + dữ liệu tự xây
@@ -69,7 +69,7 @@ Phần A = `du-lieu-do-thi` (Flickr8k + Action Genome); phần B = pipeline ản
 | Test không dùng để huấn luyện / chọn tham số / xây cạnh thống kê | Đạt | Cạnh mức lớp và IDF chỉ tính trên train; nhánh khớp học trên train; α, λ, β… chọn trên val |
 | Cạnh thống kê xây từ tập huấn luyện | Đạt | `MultimodalGraph` (phần A) chỉ đếm trên train; phần B lọc rò rỉ benchmark |
 | α và mọi siêu tham số chọn trên validation | Đạt | `match_log.csv`, `final_model_val_selection.csv`; phần B chọn α trên TUNE |
-| Cùng một tệp chia; nộp split hoặc seed + mã tạo split | Đạt (phần A cần thêm file) | Phần A: mã `make_split` / `ag_make_split` trong notebook, split cố định theo seed; file `split.json` có trong output Kaggle nhưng chưa lưu vào repo. Phần B: `results/project3-merged-v2/splits/`. Phần C: `split_manifest.json` |
+| Cùng một tệp chia; nộp split hoặc seed + mã tạo split | Đạt (phần A cần thêm file) | Phần A: mã `make_split` / `ag_make_split` trong notebook, split cố định theo seed; file `split.json` có trong output Kaggle nhưng chưa lưu vào repo. Phần B: `results/partB_image_video/splits/`. Phần C: `split_manifest.json` |
 | ≥ 3 seed, báo cáo trung bình ± độ lệch chuẩn | Đạt | Mọi thí nghiệm chính: seed 0, 1, 2 |
 
 ## Đánh giá (mục 7)
@@ -85,8 +85,8 @@ Phần A = `du-lieu-do-thi` (Flickr8k + Action Genome); phần B = pipeline ản
 
 | Sản phẩm | Tình trạng | Ghi chú |
 | --- | --- | --- |
-| Mã nguồn tiền xử lý, trích đặc trưng, tạo đồ thị, huấn luyện, đánh giá | Đạt | `merged/Project3_Merged.ipynb` và các notebook thành phần |
-| File requirements/environment + hướng dẫn chạy lại | Đạt (vừa thêm) | `requirements.txt`, `README.md`; phiên bản thật trong `results/project3-merged-v2/video_v2/env_versions.json` |
+| Mã nguồn tiền xử lý, trích đặc trưng, tạo đồ thị, huấn luyện, đánh giá | Đạt | `notebooks/Project3_Merged.ipynb` và các notebook thành phần |
+| File requirements/environment + hướng dẫn chạy lại | Đạt (vừa thêm) | `requirements.txt`, `README.md`; phiên bản thật trong `results/partC_level4b/env_versions.json` |
 | Tập chia cố định / mã tạo split, mô tả chống rò rỉ | Đạt | Xem mục 6 ở trên |
 | Báo cáo kỹ thuật 12–18 trang, slide, bảng phân công | **Thiếu** | `RESULTS.md` là nguồn số liệu; cần viết báo cáo và slide |
 | Notebook nhập truy vấn → top-k + giải thích | Đạt | `demo_query()` (phần A), `search()` (phần B và MMKG) |

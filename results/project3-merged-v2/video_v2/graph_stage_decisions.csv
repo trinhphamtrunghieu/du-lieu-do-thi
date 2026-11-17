@@ -1,3 +1,0 @@
-stage,field,incumbent,candidate,value,delta_val_MRR,ci_lo,ci_hi,p_not_better,p_holm,passes,adopted
-V1,v4_layers,E10_v4_T1,E11_v4_T2,2,0.001925946669026346,-0.0009321014240229171,0.004716213947341032,0.0922,0.0922,False,False
-V2,tags,E10_v4_T1,E20_tags_probe,probe,-0.0001713767487744322,-0.0037080786486264903,0.003468548445111019,0.551,0.551,False,False

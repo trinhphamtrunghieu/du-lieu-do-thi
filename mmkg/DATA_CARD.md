@@ -24,7 +24,7 @@ MMKG nhỏ do nhóm tự xây cho cấp 3 của Project 3. Phục vụ truy vấ
 | `images/<món>/` | Ảnh thu nhỏ rộng 384 px |
 | `collect_images.py` | Mã thu thập và lọc ảnh (xem quy trình bên dưới) |
 | `Project3_MMKG_VN.ipynb` | Notebook dựng KG, chạy phương pháp, ablation, xAI, phân tích chuyển giao; có output của lần chạy Kaggle |
-| `results/` | Output của lần chạy Kaggle `hieutrinh123/project3-mmkg-vn` v4: `entities.csv`, `triples.csv`, `splits.json`, `queries.json`, `main_results.csv`, `paired_tests.csv`, `transfer_results.csv`, `xai_per_query.csv`, `xai_summary.json`, `summary.json`, `kaggle_log.txt` |
+| `../results/mmkg/` | Output của lần chạy Kaggle `hieutrinh123/project3-mmkg-vn` v4: `entities.csv`, `triples.csv`, `splits.json`, `queries.json`, `main_results.csv`, `paired_tests.csv`, `transfer_results.csv`, `xai_per_query.csv`, `xai_summary.json`, `summary.json`, `kaggle_log.txt` |
 | `kaggle/build_kernel.py` | Sinh script kernel Kaggle (repo private nên nhúng mã nguồn; ảnh lấy từ dataset `hieutrinh123/project3-mmkg-vn-images`) |
 
 ## Lược đồ

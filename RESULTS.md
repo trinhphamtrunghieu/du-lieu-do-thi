@@ -65,7 +65,7 @@ ViT-L: CLIP + Graph + Match hơn CLIP +0,033 [+0,018; +0,048], nhưng không hơ
 
 ## Cùng mô hình với backbone CLIP ViT-H/14 (version 11)
 
-Code giữ nguyên như version 9, chỉ đổi backbone sang `ViT-H-14` (`laion2b_s32b_b79k`). CSV đầy đủ nằm trong `results/vit-h14/`.
+Code giữ nguyên như version 9, chỉ đổi backbone sang `ViT-H-14` (`laion2b_s32b_b79k`). CSV đầy đủ nằm trong `results/partA_vith14_flickr8k/` và `results/partA_vith14_action_genome/`.
 
 | Tập | Mô hình | R@1 | R@10 | MRR | Δ MRR so với CLIP (95% CI) |
 | --- | --- | --- | --- | --- | --- |
@@ -121,9 +121,9 @@ CLIP trên AG chỉ đạt R@1 10,4% / R@10 31,3% (Flickr8k: 70,6% / 96,9%). Lý
 | 2 | Nhãn linear probe, bộ ba cấp ảnh, bộ quan hệ khó, sửa fidelity |
 | 1 | Bản gốc |
 
-## Nhánh Visual Genome / ARO / SugarCrepe / MSVD (notebook `image_video_pipeline/`)
+## Phần B — Visual Genome / ARO / SugarCrepe / MSVD (`notebooks/components/partB_image_video/`)
 
-Notebook `image_video_pipeline/Project3_Final_Image_Video.ipynb` là một pipeline riêng, bản Kaggle gốc `lamvo30ai/project3-full-pipeline` (version 8). Nó dùng **scene graph Visual Genome (GT) và scene graph RelTR** thay cho đồ thị của notebook `du-lieu-do-thi`. Nội dung:
+Notebook `notebooks/components/partB_image_video/Project3_Final_Image_Video.ipynb` là một pipeline riêng, bản Kaggle gốc `lamvo30ai/project3-full-pipeline` (version 8). Nó dùng **scene graph Visual Genome (GT) và scene graph RelTR** thay cho đồ thị của notebook `du-lieu-do-thi`. Nội dung:
 
 - **TN1:** văn bản → ảnh trên VG + COCO, CLIP top-100 → điểm đường đi, cùng GraphSAGE và SCENIR.
 - **TN2:** ảnh → caption trên ARO VG-Relation và SugarCrepe.
@@ -131,7 +131,7 @@ Notebook `image_video_pipeline/Project3_Final_Image_Video.ipynb` là một pipel
 - **XAI:** fidelity, lật ảnh, validity, sparsity.
 - **Video MSVD:** CLIP + PE-Core + đồ thị bằng chứng + Qwen2.5-VL.
 
-Số dưới đây là **kết quả chạy thật** của notebook gộp, Kaggle `hieutrinh123/project3-merged` version 2 (phần C + B; CLIP ViT-L/14, 3 seed). Toàn bộ output nằm trong `results/project3-merged-v2/`. Số tái lập khớp hằng `REF` của nhóm trong phạm vi ±0,002 MRR.
+Số dưới đây là **kết quả chạy thật** của notebook gộp, Kaggle `hieutrinh123/project3-merged` version 2 (phần C + B; CLIP ViT-L/14, 3 seed). Toàn bộ output nằm trong `results/partB_image_video/`. Số tái lập khớp hằng `REF` của nhóm trong phạm vi ±0,002 MRR.
 
 **TN1 — văn bản → ảnh, full-gallery, Visual Genome + COCO (MRR, trung bình ± std 3 seed):**
 
@@ -175,18 +175,18 @@ Số dưới đây là **kết quả chạy thật** của notebook gộp, Kaggl
 - Test MSVD đã được xem 8 lần qua các phiên bản, nên các số này chỉ mang tính thăm dò.
 - Fidelity video (60 truy vấn): xoá 3 bằng chứng hàng đầu làm tụt hạng ở 56,7% truy vấn, xoá 3 bằng chứng ngẫu nhiên chỉ 25%.
 
-**Notebook gộp:** `merged/Project3_Merged.ipynb` chạy cả ba phần trong một lần, metadata Kaggle ở `merged/kernel-metadata.json`.
+**Notebook gộp:** `notebooks/Project3_Merged.ipynb` chạy cả ba phần trong một lần, metadata Kaggle ở `notebooks/kernel-metadata.json`.
 - Phần A: `du-lieu-do-thi` (Flickr8k + Action Genome, ViT-L/14).
 - Phần B: notebook ảnh + video ở trên.
 - Phần C: Level 4(b) v2-graphfix, nằm ở mục 4u, xem mục dưới.
 
 Thời gian khoảng 7–8 giờ trên T4 nếu output của phần C đã được Add Input. Nếu chưa, phần C phải chạy lại đầy đủ và tổng lên khoảng 10 giờ.
 
-## Nhánh video MSVD / MSR-VTT — Level 4(b) v2-graphfix (`level4b_v2_graphfix/`)
+## Phần C — Video MSVD / MSR-VTT, Level 4(b) v2-graphfix (`notebooks/components/partC_project03-level4b-v2-graphfix.ipynb`)
 
 Notebook `lamvo30ai/project03-level4b-v2-graphfix` (version 1), text → video. Nó dựng đồ thị v3 có vị từ (agent / object / svo / prep), mô hình TypedSAGE và QC-RGAT, tagger học từ caption train và cạnh ConceptNet. Nó cũng tạo cache đặc trưng frame CLIP ViT-L/14 mà notebook video v5 (mục 4v) dùng lại.
 
-Số dưới đây đọc từ `level4b_v2_graphfix/results/graph_experiment_results.csv` và `graph_confirmatory_tests.csv`, là output thật của lần chạy trên Kaggle (khoảng 2,4 giờ).
+Số dưới đây đọc từ `results/partC_level4b/graph_experiment_results.csv` và `graph_confirmatory_tests.csv`, là output thật của lần chạy trên Kaggle (khoảng 2,4 giờ).
 
 | Tập | n truy vấn / video | Mô hình | R@1 | R@10 | MRR |
 | --- | --- | --- | --- | --- | --- |
@@ -204,13 +204,13 @@ Số dưới đây đọc từ `level4b_v2_graphfix/results/graph_experiment_res
 - Nhóm truy vấn gián tiếp (4.089 caption): đồ thị hơn CLIP +0,0117 MRR [+0,0075; +0,0158].
 - XAI: xoá phần giải thích làm tụt hạng ở 50% truy vấn, so với 0% khi xoá ngẫu nhiên.
 
-Kết luận đầy đủ: `level4b_v2_graphfix/results/level4b_conclusions.md`.
+Kết luận đầy đủ: `results/partC_level4b/level4b_conclusions.md`.
 
-**Cách chạy riêng phần B:** xem `image_video_pipeline/HUONG_DAN_CHAY_VI.md`. Cần GPU T4, Internet, 3 dataset VG / COCO và notebook nguồn `lamvo30ai/project03-level4b-v2-graphfix` cho cache video; tổng khoảng 3 giờ.
+**Cách chạy riêng phần B:** xem `notebooks/components/partB_image_video/HUONG_DAN_CHAY_VI.md`. Cần GPU T4, Internet, 3 dataset VG / COCO và notebook nguồn `lamvo30ai/project03-level4b-v2-graphfix` cho cache video; tổng khoảng 3 giờ.
 
 ## Cấp 3 — MMKG Ẩm thực Việt Nam tự xây (`mmkg/`)
 
-Notebook `mmkg/Project3_MMKG_VN.ipynb` (đã chạy, giữ output), Kaggle `hieutrinh123/project3-mmkg-vn` version 4, GPU T4, 17/11/2026. Data card: `mmkg/DATA_CARD.md`. Output: `mmkg/results/`.
+Notebook `mmkg/Project3_MMKG_VN.ipynb` (đã chạy, giữ output), Kaggle `hieutrinh123/project3-mmkg-vn` version 4, GPU T4, 17/11/2026. Data card: `mmkg/DATA_CARD.md`. Output: `results/mmkg/`.
 
 **Dữ liệu.**
 - 148 thực thể: 45 món, 54 nguyên liệu, 10 nhóm nguyên liệu, 12 loại món, 10 cách chế biến, 13 tỉnh, 4 vùng.
@@ -309,6 +309,11 @@ Phần không chuyển được:
 
 ## Nguồn
 
-Nhánh Visual Genome / ARO / SugarCrepe / COCO-spatial / video MSVD: `results/project3-merged-v2/` (Kaggle `hieutrinh123/project3-merged` version 2). Phần A của notebook gộp: `results/project3-merged-v1/`.
+Mọi output thật nằm trong `results/`; bảng tra cứu ở `results/README.md`.
 
-Output của notebook Kaggle `hieutrinh123/du-lieu-do-thi` (version 4, 7, 8, 9): `results/` (Flickr8k) và `output/action_genome/results/` (Action Genome) — `main_results_with_controls.csv`, `match_vs_clip.csv`, `match_paired.csv`, `relational_hard_negatives_match*.csv`, `counterfactual_verb_swap_match*.csv`, `paired_graph_vs_clip.csv`.
+- Phần A, CLIP ViT-L/14: `results/partA_vitl14_flickr8k/`, `results/partA_vitl14_action_genome/`. Đây là lần chạy lại mô hình version 9 trong notebook gộp (`hieutrinh123/project3-merged` version 1): Action Genome 0,642, Flickr8k 0,839. Số version 9 trong các bảng trên (0,650 / 0,833) lấy từ kernel `hieutrinh123/du-lieu-do-thi`; CSV của các version cũ không lưu trong repo.
+- Phần A, CLIP ViT-H/14: `results/partA_vith14_*/` (kernel `hieutrinh123/du-lieu-do-thi` version 11).
+- Phần B: `results/partB_image_video/` (`hieutrinh123/project3-merged` version 2).
+- Phần C: `results/partC_level4b/`.
+- MMKG: `results/mmkg/` (`hieutrinh123/project3-mmkg-vn` version 4).
+- Log Kaggle: `results/logs/`.
