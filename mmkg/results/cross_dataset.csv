@@ -1,0 +1,6 @@
+tập,CLIP,CLIP + đồ thị,ghi_chú,Δ
+"Flickr8k (phần A, ViT-L/14)",0.8,0.833,caption tiếng Anh; đồ thị ít thông tin mới,0.03299999999999992
+"Action Genome (phần A, ViT-L/14)",0.171,0.65,nhãn hành động/bối cảnh mà CLIP không thấy,0.479
+MMKG ẩm thực — truy vấn trực tiếp,0.6342820913456994,0.8068353471460065,tên món tiếng Việt,0.17255325580030711
+MMKG ẩm thực — truy vấn gián tiếp,0.3266344514007629,0.7829544094813246,thuộc tính chỉ có trong KG,0.45631995808056164
+MMKG ẩm thực — diễn đạt tự nhiên,0.6460245757120756,0.8003637566137566,"viết tay, từ ngữ ngoài KG",0.15433918090168097

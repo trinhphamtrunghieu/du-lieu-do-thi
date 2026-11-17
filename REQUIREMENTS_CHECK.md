@@ -1,6 +1,6 @@
 # Đối chiếu với đề bài Project 3 (`Project03_Multimodal_XAI.pdf`)
 
-Cập nhật 17/11/2026, sau khi notebook gộp `merged/Project3_Merged.ipynb` chạy xong trên Kaggle (`hieutrinh123/project3-merged`). Phần A chạy ở version 1, phần C + B ở version 2.
+Cập nhật 17/11/2026, sau khi notebook gộp `merged/Project3_Merged.ipynb` chạy xong trên Kaggle (`hieutrinh123/project3-merged`). Phần A chạy ở version 1, phần C + B ở version 2. MMKG cấp 3 (`mmkg/`) chạy ở Kaggle `hieutrinh123/project3-mmkg-vn` version 4.
 
 Ký hiệu:
 - **Đạt:** có code và output thật trong repo.
@@ -15,7 +15,7 @@ Phần A = `du-lieu-do-thi` (Flickr8k + Action Genome); phần B = pipeline ản
 | --- | --- | --- |
 | 1 | 7,0 | Đạt đủ |
 | 2 | 8,5 | Đạt đủ |
-| 3 | 10 | **Một phần:** XAI định lượng đạt; **thiếu MMKG tự xây (tiếng Việt)** |
+| 3 | 10 | Đạt: XAI định lượng và MMKG tự xây tiếng Việt (`mmkg/`) |
 | 4 (mở rộng) | +1,0–2,0 | Đạt hướng (a) và (b) |
 | Sản phẩm nộp | — | **Thiếu** báo cáo 12–18 trang, slide, bảng phân công, video demo dự phòng |
 
@@ -51,7 +51,8 @@ Phần A = `du-lieu-do-thi` (Flickr8k + Action Genome); phần B = pipeline ản
 | Validity | Đạt | Phần A: validity 1,0 (đường đi có thật trong đồ thị). Phần B: khớp GT IoU ≥ 0,5: 54,2% cả hai, 92,1% ít nhất một |
 | Sparsity | Đạt | Phần A: 0,50 (Flickr8k), 0,80 (AG); phần B: `xai_items.csv` |
 | Giải thích đến từ chính cơ chế xếp hạng | Đạt | Phần A: điểm đường đi là một số hạng của điểm cuối (λ < 1 bắt buộc); phần C: giải thích = số hạng của điểm, Σ = điểm |
-| **Tự xây MMKG nhỏ (ưu tiên tiếng Việt), 50–150 thực thể, 300–1.000 triple, 200–500 ảnh, kèm data card** | **Thiếu** | Chưa có ở bất kỳ phần nào; notebook phần B ghi "hoãn". Đây là khoảng trống lớn nhất để đạt điểm trần 10 |
+| Tự xây MMKG nhỏ (ưu tiên tiếng Việt), 50–150 thực thể, 300–1.000 triple, 200–500 ảnh, kèm data card | Đạt | `mmkg/`: MMKG Ẩm thực Việt Nam, 148 thực thể, 750 triple (434 tri thức + 316 ảnh–món), 316 ảnh Wikimedia Commons có giấy phép. Data card `mmkg/DATA_CARD.md` mô tả nguồn, cách tạo triple, cách liên kết ảnh–thực thể, điều kiện sử dụng |
+| Chạy phương pháp tốt nhất cấp 1–2 trên MMKG, phân tích khả năng chuyển giao | Đạt | `mmkg/Project3_MMKG_VN.ipynb` (có output, Kaggle `hieutrinh123/project3-mmkg-vn` v4). MRR test 0,517 → 0,796; gián tiếp 0,327 → 0,783. Có ablation bỏ thuộc tính / KG ngẫu nhiên / xáo liên kết ảnh và xAI (fidelity 1,91 so với 0,01 ngẫu nhiên). Có phân tích chuyển giao (CLIP đa ngữ / tiếng Anh, có dấu / không dấu / tiếng Anh, so với Flickr8k và AG) trong `RESULTS.md`, mục "Cấp 3" |
 
 ## Cấp 4 — Mở rộng tự chọn
 
@@ -88,10 +89,10 @@ Phần A = `du-lieu-do-thi` (Flickr8k + Action Genome); phần B = pipeline ản
 | File requirements/environment + hướng dẫn chạy lại | Đạt (vừa thêm) | `requirements.txt`, `README.md`; phiên bản thật trong `results/project3-merged-v2/video_v2/env_versions.json` |
 | Tập chia cố định / mã tạo split, mô tả chống rò rỉ | Đạt | Xem mục 6 ở trên |
 | Báo cáo kỹ thuật 12–18 trang, slide, bảng phân công | **Thiếu** | `RESULTS.md` là nguồn số liệu; cần viết báo cáo và slide |
-| Notebook nhập truy vấn → top-k + giải thích | Đạt | `demo_query()` (phần A), `search()` (phần B) |
+| Notebook nhập truy vấn → top-k + giải thích | Đạt | `demo_query()` (phần A), `search()` (phần B và MMKG) |
 | Phân tích chi tiết 5 thành công + 5 thất bại | Một phần | Có dữ liệu (`case_analysis.json`); cần viết phân tích bằng lời |
 | Bộ ≥ 20 truy vấn kèm mô tả cách xây | Đạt | `eval_queries_20.json` có trường `construction` |
-| MMKG tự xây + data card (cấp 3) | **Thiếu** | Xem cấp 3 |
+| MMKG tự xây + data card (cấp 3) | Đạt | `mmkg/` và `mmkg/DATA_CARD.md` |
 | Demo trực tiếp + video dự phòng ≤ 5 phút | Thiếu video | Notebook chạy được; chưa quay video |
 | Khai báo dùng mã nguồn mở / công cụ AI trong báo cáo | Cần ghi trong báo cáo | — |
 
@@ -103,3 +104,4 @@ Phần A = `du-lieu-do-thi` (Flickr8k + Action Genome); phần B = pipeline ản
   - ARO: 50% → 66%.
   - COCO-spatial: 47% → 70% (chỉ đồ thị).
 - Video MSVD: phần lớn mức tăng đến từ encoder PE-Core; riêng cấu trúc đồ thị chỉ thêm +0,009 MRR. Test MSVD đã xem 8 lần nên chỉ là thăm dò.
+- MMKG ẩm thực: truy vấn gián tiếp sinh theo mẫu dùng đúng từ vựng của KG, nên phương pháp đồ thị có lợi thế. Bộ 24 câu viết tay dùng từ ngoài KG vẫn tăng (+0,154 MRR), nhưng ít hơn. Với truy vấn trực tiếp, mức tăng đến từ nhãn món của ảnh train, không phải từ thuộc tính KG.

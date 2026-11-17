@@ -12,6 +12,7 @@
 | `image_video_pipeline/` | Notebook gốc của phần B và hướng dẫn chạy riêng |
 | `level4b_v2_graphfix/` | Notebook gốc của phần C và kết quả lần chạy gốc |
 | `results/` | Output thật từ Kaggle: `project3-merged-v1/` (phần A), `project3-merged-v2/` (phần B + C), `vit-h14/` (phần A với CLIP ViT-H/14) |
+| `mmkg/` | Cấp 3: MMKG Ẩm thực Việt Nam tự xây (148 thực thể, 750 triple, 316 ảnh), `DATA_CARD.md`, notebook `Project3_MMKG_VN.ipynb` đã chạy (giữ output), kết quả trong `mmkg/results/` |
 
 ## Chạy lại trên Kaggle
 
@@ -41,3 +42,12 @@ Chạy trên máy riêng: `pip install -r requirements.txt`, rồi sửa các đ
 - Phần A: `/kaggle/working/results/` (Flickr8k), `/kaggle/working/output/action_genome/results/`
 - Phần B: `/kaggle/working/p3_out/` (`RESULTS.md`, `summary.json`, `splits/`, `figures/`, `video/`)
 - Phần C: `/kaggle/working/p3_out/video_v2/`
+
+## Chạy lại MMKG (cấp 3)
+
+Repo private nên kernel Kaggle không clone được.
+1. Sinh script kernel: `python mmkg/kaggle/build_kernel.py > kernel_script.py`. Script nhúng `kg_data.py`, `images.csv` và notebook.
+2. Push script với **GPU T4**, **Internet** bật, và dataset `hieutrinh123/project3-mmkg-vn-images` (316 ảnh, kiểm tra sha256).
+3. Khoảng 25 phút. Notebook đã chạy nằm ở `/kaggle/working/mmkg_out/`.
+
+Chạy máy riêng: `cd mmkg && jupyter nbconvert --execute Project3_MMKG_VN.ipynb`. Cần GPU, `open_clip_torch==3.2.0`, Internet để tải trọng số CLIP. Đặt `MMKG_SMOKE=1` để chạy thử bằng đặc trưng giả; kết quả lúc đó không có ý nghĩa.

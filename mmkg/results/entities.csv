@@ -1,0 +1,149 @@
+id,name,kind,name_en
+reg_bac_bo,Bắc Bộ,vùng,Northern Vietnam
+reg_trung_bo,Trung Bộ,vùng,Central Vietnam
+reg_nam_bo,Nam Bộ,vùng,Southern Vietnam
+reg_tay_nguyen,Tây Nguyên,vùng,the Central Highlands
+prov_ha_noi,Hà Nội,tỉnh,Hà Nội
+prov_hai_phong,Hải Phòng,tỉnh,Hải Phòng
+prov_thanh_hoa,Thanh Hóa,tỉnh,Thanh Hóa
+prov_hue,Huế,tỉnh,Huế
+prov_da_nang,Đà Nẵng,tỉnh,Đà Nẵng
+prov_quang_nam,Quảng Nam,tỉnh,Quảng Nam
+prov_binh_dinh,Bình Định,tỉnh,Bình Định
+prov_ninh_thuan,Ninh Thuận,tỉnh,Ninh Thuận
+prov_lam_dong,Lâm Đồng,tỉnh,Lâm Đồng
+prov_tp_ho_chi_minh,TP. Hồ Chí Minh,tỉnh,TP. Hồ Chí Minh
+prov_ba_ria_vung_tau,Bà Rịa – Vũng Tàu,tỉnh,Bà Rịa – Vũng Tàu
+prov_can_tho,Cần Thơ,tỉnh,Cần Thơ
+prov_soc_trang,Sóc Trăng,tỉnh,Sóc Trăng
+type_mon_soi_nuoc,món sợi nước,loại món,noodle soup
+type_mon_soi_tron,món sợi trộn,loại món,dry noodle dish
+type_mon_com_va_xoi,món cơm và xôi,loại món,rice dish
+type_banh_man,bánh mặn,loại món,savory cake
+type_banh_truyen_thong,bánh truyền thống,loại món,traditional festive cake
+type_banh_ngot,bánh ngọt,loại món,sweet cake
+type_mon_cuon_va_nem,món cuốn và nem,loại món,roll or cured meat dish
+type_mon_kho,món kho,loại món,braised dish
+type_canh_va_lau,canh và lẩu,loại món,soup or hot pot
+type_do_uong,đồ uống,loại món,drink
+type_mon_an_vat,món ăn vặt,loại món,street snack
+type_mon_nuong,món nướng,loại món,grilled dish
+meth_nau,nấu,cách chế biến,simmered
+meth_luoc,luộc,cách chế biến,boiled
+meth_nuong,nướng,cách chế biến,grilled
+meth_chien,chiên,cách chế biến,fried
+meth_hap,hấp,cách chế biến,steamed
+meth_kho,kho,cách chế biến,braised
+meth_xao,xào,cách chế biến,stir-fried
+meth_goi_la,gói lá,cách chế biến,wrapped in leaves
+meth_pha,pha,cách chế biến,brewed
+meth_len_men,lên men,cách chế biến,fermented
+grp_tinh_bot,tinh bột,nhóm nguyên liệu,starch
+grp_thit_va_trung,thịt và trứng,nhóm nguyên liệu,meat and egg
+grp_hai_san,hải sản,nhóm nguyên liệu,seafood
+grp_dau_va_hat,đậu và hạt,nhóm nguyên liệu,beans and nuts
+grp_rau_cu_qua,rau củ quả,nhóm nguyên liệu,vegetables
+grp_rau_thom_va_la,rau thơm và lá,nhóm nguyên liệu,herbs
+grp_gia_vi,gia vị,nhóm nguyên liệu,spices
+grp_mam_va_nuoc_cham,mắm và nước chấm,nhóm nguyên liệu,fish sauce and pastes
+grp_la_goi,lá gói,nhóm nguyên liệu,wrapping leaves
+grp_sua_va_do_uong,sữa và đồ uống,nhóm nguyên liệu,milk and drinks
+dish_pho_bo,Phở bò,món,beef pho noodle soup
+dish_pho_ga,Phở gà,món,chicken pho noodle soup
+dish_bun_cha,Bún chả,món,bun cha grilled pork with rice noodles
+dish_bun_bo_hue,Bún bò Huế,món,bun bo Hue spicy beef noodle soup
+dish_bun_rieu,Bún riêu cua,món,bun rieu crab noodle soup
+dish_bun_thit_nuong,Bún thịt nướng,món,bun thit nuong grilled pork vermicelli
+dish_bun_dau,Bún đậu mắm tôm,món,bun dau mam tom fried tofu with noodles and shrimp paste
+dish_banh_da_cua,Bánh đa cua,món,banh da cua red noodle crab soup
+dish_bun_oc,Bún ốc,món,bun oc snail noodle soup
+dish_bun_mam,Bún mắm,món,bun mam fermented fish noodle soup
+dish_hu_tieu_nam_vang,Hủ tiếu Nam Vang,món,hu tieu Nam Vang noodle soup
+dish_mi_quang,Mì Quảng,món,mi Quang turmeric noodles
+dish_cao_lau,Cao lầu,món,cao lau Hoi An noodles
+dish_bun_cha_ca,Bún chả cá,món,bun cha ca fish cake noodle soup
+dish_banh_canh_cua,Bánh canh cua,món,banh canh cua thick crab noodle soup
+dish_com_tam,Cơm tấm,món,com tam broken rice with grilled pork
+dish_com_ga,Cơm gà Hội An,món,com ga Hoi An chicken rice
+dish_com_hen,Cơm hến,món,com hen baby clam rice
+dish_banh_mi,Bánh mì,món,banh mi Vietnamese sandwich
+dish_banh_xeo,Bánh xèo,món,banh xeo sizzling crepe
+dish_banh_khot,Bánh khọt,món,banh khot mini rice pancakes
+dish_banh_cuon,Bánh cuốn,món,banh cuon steamed rice rolls
+dish_banh_beo,Bánh bèo,món,banh beo steamed rice cakes
+dish_banh_bot_loc,Bánh bột lọc,món,banh bot loc tapioca dumplings
+dish_banh_chung,Bánh chưng,món,banh chung square sticky rice cake
+dish_banh_tet,Bánh tét,món,banh tet cylindrical sticky rice cake
+dish_banh_can,Bánh căn,món,banh can mini rice pancakes with egg
+dish_banh_hoi,Bánh hỏi,món,banh hoi woven rice vermicelli
+dish_banh_it,Bánh ít,món,banh it sticky rice dumpling
+dish_banh_trang_nuong,Bánh tráng nướng,món,banh trang nuong grilled rice paper
+dish_banh_pia,Bánh pía,món,banh pia durian pastry
+dish_banh_da_lon,Bánh da lợn,món,banh da lon steamed layer cake
+dish_goi_cuon,Gỏi cuốn,món,goi cuon fresh spring rolls
+dish_nem_ran,Nem rán,món,nem ran fried spring rolls
+dish_cha_ca,Chả cá Lã Vọng,món,cha ca La Vong turmeric fish with dill
+dish_ca_kho_to,Cá kho tộ,món,ca kho to caramelized fish in clay pot
+dish_thit_kho,Thịt kho trứng,món,thit kho braised pork and eggs
+dish_canh_chua,Canh chua cá,món,canh chua sour fish soup
+dish_lau_mam,Lẩu mắm,món,lau mam fermented fish hot pot
+dish_xoi_xeo,Xôi xéo,món,xoi xeo sticky rice with mung bean
+dish_ca_phe_sua_da,Cà phê sữa đá,món,ca phe sua da iced milk coffee
+dish_ca_phe_trung,Cà phê trứng,món,ca phe trung egg coffee
+dish_nem_chua,Nem chua,món,nem chua fermented pork roll
+dish_bo_la_lot,Bò lá lốt,món,bo la lot beef wrapped in betel leaves
+dish_gio_lua,Giò lụa,món,gio lua Vietnamese pork sausage
+ing_banh_pho,bánh phở,nguyên liệu,flat rice noodles
+ing_bun,bún,nguyên liệu,rice vermicelli
+ing_soi_hu_tieu,sợi hủ tiếu,nguyên liệu,hu tieu noodles
+ing_soi_mi_gao,sợi mì gạo,nguyên liệu,thick rice noodles
+ing_gao,gạo,nguyên liệu,rice
+ing_gao_nep,gạo nếp,nguyên liệu,sticky rice
+ing_bot_gao,bột gạo,nguyên liệu,rice flour
+ing_bot_nang,bột năng,nguyên liệu,tapioca starch
+ing_bot_mi,bột mì,nguyên liệu,wheat flour
+ing_banh_trang,bánh tráng,nguyên liệu,rice paper
+ing_thit_bo,thịt bò,nguyên liệu,beef
+ing_thit_lon,thịt lợn,nguyên liệu,pork
+ing_thit_ga,thịt gà,nguyên liệu,chicken
+ing_trung,trứng,nguyên liệu,egg
+ing_trung_cut,trứng cút,nguyên liệu,quail egg
+ing_tom,tôm,nguyên liệu,shrimp
+ing_cua,cua,nguyên liệu,crab
+ing_ca,cá,nguyên liệu,fish
+ing_oc,ốc,nguyên liệu,snails
+ing_hen,hến,nguyên liệu,baby clams
+ing_muc,mực,nguyên liệu,squid
+ing_dau_xanh,đậu xanh,nguyên liệu,mung beans
+ing_dau_phu,đậu phụ,nguyên liệu,tofu
+ing_dau_phong,đậu phộng,nguyên liệu,peanuts
+ing_gia_do,giá đỗ,nguyên liệu,bean sprouts
+ing_rau_muong,rau muống,nguyên liệu,water spinach
+ing_ca_chua,cà chua,nguyên liệu,tomato
+ing_dua,dứa,nguyên liệu,pineapple
+ing_ca_tim,cà tím,nguyên liệu,eggplant
+ing_xa_lach,xà lách,nguyên liệu,lettuce
+ing_dua_chuot,dưa chuột,nguyên liệu,cucumber
+ing_ca_rot,cà rốt,nguyên liệu,carrot
+ing_moc_nhi,mộc nhĩ,nguyên liệu,wood ear mushroom
+ing_sau_rieng,sầu riêng,nguyên liệu,durian
+ing_rau_thom,rau thơm,nguyên liệu,fresh herbs
+ing_hanh_la,hành lá,nguyên liệu,scallions
+ing_rau_ram,rau răm,nguyên liệu,Vietnamese coriander
+ing_thi_la,thì là,nguyên liệu,dill
+ing_la_lot,lá lốt,nguyên liệu,betel leaves
+ing_sa,sả,nguyên liệu,lemongrass
+ing_gung,gừng,nguyên liệu,ginger
+ing_nghe,nghệ,nguyên liệu,turmeric
+ing_ot,ớt,nguyên liệu,chili
+ing_hoa_hoi,hoa hồi,nguyên liệu,star anise
+ing_me,me,nguyên liệu,tamarind
+ing_nuoc_mam,nước mắm,nguyên liệu,fish sauce
+ing_mam_tom,mắm tôm,nguyên liệu,shrimp paste
+ing_mam_ruoc,mắm ruốc,nguyên liệu,fermented krill paste
+ing_mam_ca,mắm cá,nguyên liệu,fermented fish
+ing_la_dong,lá dong,nguyên liệu,dong leaves
+ing_la_chuoi,lá chuối,nguyên liệu,banana leaves
+ing_nuoc_cot_dua,nước cốt dừa,nguyên liệu,coconut milk
+ing_sua_dac,sữa đặc,nguyên liệu,condensed milk
+ing_ca_phe,cà phê,nguyên liệu,coffee

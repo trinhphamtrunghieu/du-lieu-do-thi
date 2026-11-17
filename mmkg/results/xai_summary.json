@@ -1,0 +1,12 @@
+{
+ "n_queries": 108,
+ "fidelity_score_drop_expl": 1.911598551591548,
+ "fidelity_score_drop_random": 0.009404019321556446,
+ "frac_rank_worse_expl": 0.7222222222222222,
+ "frac_rank_worse_random": 0.06481481481481481,
+ "validity_dstar_is_image_dish": 0.7962962962962963,
+ "validity_triples_exist": 1.0,
+ "sparsity_mean_edges": 5.0092592592592595,
+ "share_of_graph_score_by_dstar": 0.9740803683245624,
+ "top1_correct": 0.7685185185185185
+}

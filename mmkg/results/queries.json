@@ -1,0 +1,2512 @@
+[
+ {
+  "qid": "dir_dish_pho_bo",
+  "group": "direct",
+  "gold": [
+   "dish_pho_bo"
+  ],
+  "cons": [],
+  "vi": "Phở bò",
+  "en": "beef pho noodle soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "pho bo",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_pho_bo",
+  "group": "indirect",
+  "gold": [
+   "dish_pho_bo"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "ing_hoa_hoi",
+   "reg_bac_bo"
+  ],
+  "vi": "món sợi nước của Bắc Bộ, có hoa hồi",
+  "en": "a noodle soup from Northern Vietnam with star anise",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi nuoc cua bac bo co hoa hoi"
+ },
+ {
+  "qid": "ind_val_dish_pho_bo",
+  "group": "indirect",
+  "gold": [
+   "dish_pho_bo"
+  ],
+  "cons": [
+   "prov_ha_noi",
+   "meth_nau",
+   "ing_hoa_hoi"
+  ],
+  "vi": "tìm ảnh món nào của Hà Nội và được nấu và có hoa hồi",
+  "en": "a simmered dish from Ha Noi with star anise",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua ha noi va duoc nau va co hoa hoi"
+ },
+ {
+  "qid": "dir_dish_pho_ga",
+  "group": "direct",
+  "gold": [
+   "dish_pho_ga"
+  ],
+  "cons": [],
+  "vi": "Phở gà",
+  "en": "chicken pho noodle soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "pho ga",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_pho_ga",
+  "group": "indirect",
+  "gold": [
+   "dish_pho_ga"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "ing_thit_ga",
+   "reg_bac_bo"
+  ],
+  "vi": "món sợi nước của Bắc Bộ, có thịt gà",
+  "en": "a noodle soup from Northern Vietnam with chicken",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi nuoc cua bac bo co thit ga"
+ },
+ {
+  "qid": "ind_val_dish_pho_ga",
+  "group": "indirect",
+  "gold": [
+   "dish_pho_ga"
+  ],
+  "cons": [
+   "meth_nau",
+   "ing_thit_ga",
+   "reg_bac_bo"
+  ],
+  "vi": "tìm ảnh món nào của Bắc Bộ và được nấu và có thịt gà",
+  "en": "a simmered dish from Northern Vietnam with chicken",
+  "hops": 2,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua bac bo va duoc nau va co thit ga"
+ },
+ {
+  "qid": "dir_dish_bun_cha",
+  "group": "direct",
+  "gold": [
+   "dish_bun_cha"
+  ],
+  "cons": [],
+  "vi": "Bún chả",
+  "en": "bun cha grilled pork with rice noodles",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "bun cha",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_bun_cha",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_cha"
+  ],
+  "cons": [
+   "type_mon_soi_tron",
+   "ing_ot",
+   "reg_bac_bo"
+  ],
+  "vi": "món sợi trộn của Bắc Bộ, có ớt",
+  "en": "a dry noodle dish from Northern Vietnam with chili",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi tron cua bac bo co ot"
+ },
+ {
+  "qid": "ind_val_dish_bun_cha",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_cha"
+  ],
+  "cons": [
+   "ing_bun",
+   "ing_rau_thom",
+   "ing_ot"
+  ],
+  "vi": "tìm ảnh món nào có bún và có rau thơm và có ớt",
+  "en": "a dish with rice vermicelli with fresh herbs with chili",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao co bun va co rau thom va co ot"
+ },
+ {
+  "qid": "dir_dish_bun_bo_hue",
+  "group": "direct",
+  "gold": [
+   "dish_bun_bo_hue"
+  ],
+  "cons": [],
+  "vi": "Bún bò Huế",
+  "en": "bun bo Hue spicy beef noodle soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "bun bo hue",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_bun_bo_hue",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_bo_hue"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "ing_mam_ruoc",
+   "reg_trung_bo"
+  ],
+  "vi": "món sợi nước của Trung Bộ, có mắm ruốc",
+  "en": "a noodle soup from Central Vietnam with fermented krill paste",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi nuoc cua trung bo co mam ruoc"
+ },
+ {
+  "qid": "ind_val_dish_bun_bo_hue",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_bo_hue"
+  ],
+  "cons": [
+   "prov_hue",
+   "type_mon_soi_nuoc",
+   "ing_mam_ruoc"
+  ],
+  "vi": "tìm ảnh món sợi nước nào của Huế và có mắm ruốc",
+  "en": "a noodle soup from Hue with fermented krill paste",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon soi nuoc nao cua hue va co mam ruoc"
+ },
+ {
+  "qid": "dir_dish_bun_rieu",
+  "group": "direct",
+  "gold": [
+   "dish_bun_rieu"
+  ],
+  "cons": [],
+  "vi": "Bún riêu cua",
+  "en": "bun rieu crab noodle soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "bun rieu cua",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_bun_rieu",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_rieu"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "ing_mam_tom",
+   "reg_bac_bo"
+  ],
+  "vi": "món sợi nước của Bắc Bộ, có mắm tôm",
+  "en": "a noodle soup from Northern Vietnam with shrimp paste",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi nuoc cua bac bo co mam tom"
+ },
+ {
+  "qid": "ind_val_dish_bun_rieu",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_rieu"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "ing_bun",
+   "ing_mam_tom"
+  ],
+  "vi": "tìm ảnh món sợi nước nào có bún và có mắm tôm",
+  "en": "a noodle soup with rice vermicelli with shrimp paste",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon soi nuoc nao co bun va co mam tom"
+ },
+ {
+  "qid": "dir_dish_bun_thit_nuong",
+  "group": "direct",
+  "gold": [
+   "dish_bun_thit_nuong"
+  ],
+  "cons": [],
+  "vi": "Bún thịt nướng",
+  "en": "bun thit nuong grilled pork vermicelli",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "bun thit nuong",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_bun_thit_nuong",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_thit_nuong"
+  ],
+  "cons": [
+   "type_mon_soi_tron",
+   "ing_nuoc_mam",
+   "reg_nam_bo"
+  ],
+  "vi": "món sợi trộn của Nam Bộ, có nước mắm",
+  "en": "a dry noodle dish from Southern Vietnam with fish sauce",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi tron cua nam bo co nuoc mam"
+ },
+ {
+  "qid": "ind_val_dish_bun_thit_nuong",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_thit_nuong"
+  ],
+  "cons": [
+   "meth_nuong",
+   "ing_bun",
+   "ing_sa"
+  ],
+  "vi": "tìm ảnh món nào được nướng và có bún và có sả",
+  "en": "a grilled dish with rice vermicelli with lemongrass",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao duoc nuong va co bun va co sa"
+ },
+ {
+  "qid": "dir_dish_bun_dau",
+  "group": "direct",
+  "gold": [
+   "dish_bun_dau"
+  ],
+  "cons": [],
+  "vi": "Bún đậu mắm tôm",
+  "en": "bun dau mam tom fried tofu with noodles and shrimp paste",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "bun dau mam tom",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_bun_dau",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_dau"
+  ],
+  "cons": [
+   "type_mon_soi_tron",
+   "meth_chien",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "món sợi trộn được chiên, có rau thơm và lá",
+  "en": "a fried dry noodle dish with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi tron duoc chien co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_bun_dau",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_dau"
+  ],
+  "cons": [
+   "prov_ha_noi",
+   "ing_dua_chuot",
+   "ing_mam_tom"
+  ],
+  "vi": "tìm ảnh món nào của Hà Nội và có dưa chuột và có mắm tôm",
+  "en": "a dish from Ha Noi with cucumber with shrimp paste",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua ha noi va co dua chuot va co mam tom"
+ },
+ {
+  "qid": "dir_dish_banh_da_cua",
+  "group": "direct",
+  "gold": [
+   "dish_banh_da_cua"
+  ],
+  "cons": [],
+  "vi": "Bánh đa cua",
+  "en": "banh da cua red noodle crab soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh da cua",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_da_cua",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_da_cua"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "ing_thit_lon",
+   "reg_bac_bo"
+  ],
+  "vi": "món sợi nước của Bắc Bộ, có thịt lợn",
+  "en": "a noodle soup from Northern Vietnam with pork",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi nuoc cua bac bo co thit lon"
+ },
+ {
+  "qid": "ind_val_dish_banh_da_cua",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_da_cua"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "meth_nau",
+   "ing_rau_muong"
+  ],
+  "vi": "tìm ảnh món sợi nước nào được nấu và có rau muống",
+  "en": "a simmered noodle soup with water spinach",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon soi nuoc nao duoc nau va co rau muong"
+ },
+ {
+  "qid": "dir_dish_bun_oc",
+  "group": "direct",
+  "gold": [
+   "dish_bun_oc"
+  ],
+  "cons": [],
+  "vi": "Bún ốc",
+  "en": "bun oc snail noodle soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "bun oc",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_bun_oc",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_oc"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "meth_luoc",
+   "grp_hai_san"
+  ],
+  "vi": "món sợi nước được luộc, có hải sản",
+  "en": "a boiled noodle soup with seafood",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi nuoc duoc luoc co hai san"
+ },
+ {
+  "qid": "ind_val_dish_bun_oc",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_oc"
+  ],
+  "cons": [
+   "meth_luoc",
+   "ing_bun",
+   "ing_oc"
+  ],
+  "vi": "tìm ảnh món nào được luộc và có bún và có ốc",
+  "en": "a boiled dish with rice vermicelli with snails",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao duoc luoc va co bun va co oc"
+ },
+ {
+  "qid": "dir_dish_bun_mam",
+  "group": "direct",
+  "gold": [
+   "dish_bun_mam"
+  ],
+  "cons": [],
+  "vi": "Bún mắm",
+  "en": "bun mam fermented fish noodle soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "bun mam",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_bun_mam",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_mam"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "ing_mam_ca",
+   "reg_nam_bo"
+  ],
+  "vi": "món sợi nước của Nam Bộ, có mắm cá",
+  "en": "a noodle soup from Southern Vietnam with fermented fish",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi nuoc cua nam bo co mam ca"
+ },
+ {
+  "qid": "ind_val_dish_bun_mam",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_mam"
+  ],
+  "cons": [
+   "prov_soc_trang",
+   "meth_nau",
+   "ing_tom"
+  ],
+  "vi": "tìm ảnh món nào của Sóc Trăng và được nấu và có tôm",
+  "en": "a simmered dish from Soc Trang with shrimp",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua soc trang va duoc nau va co tom"
+ },
+ {
+  "qid": "dir_dish_hu_tieu_nam_vang",
+  "group": "direct",
+  "gold": [
+   "dish_hu_tieu_nam_vang"
+  ],
+  "cons": [],
+  "vi": "Hủ tiếu Nam Vang",
+  "en": "hu tieu Nam Vang noodle soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "hu tieu nam vang",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_hu_tieu_nam_vang",
+  "group": "indirect",
+  "gold": [
+   "dish_hu_tieu_nam_vang"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "ing_soi_hu_tieu",
+   "reg_nam_bo"
+  ],
+  "vi": "món sợi nước của Nam Bộ, có sợi hủ tiếu",
+  "en": "a noodle soup from Southern Vietnam with hu tieu noodles",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi nuoc cua nam bo co soi hu tieu"
+ },
+ {
+  "qid": "ind_val_dish_hu_tieu_nam_vang",
+  "group": "indirect",
+  "gold": [
+   "dish_hu_tieu_nam_vang"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "ing_trung_cut",
+   "ing_tom"
+  ],
+  "vi": "tìm ảnh món sợi nước nào có trứng cút và có tôm",
+  "en": "a noodle soup with quail egg with shrimp",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon soi nuoc nao co trung cut va co tom"
+ },
+ {
+  "qid": "dir_dish_mi_quang",
+  "group": "direct",
+  "gold": [
+   "dish_mi_quang"
+  ],
+  "cons": [],
+  "vi": "Mì Quảng",
+  "en": "mi Quang turmeric noodles",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "mi quang",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_mi_quang",
+  "group": "indirect",
+  "gold": [
+   "dish_mi_quang"
+  ],
+  "cons": [
+   "type_mon_soi_tron",
+   "meth_nau",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "món sợi trộn được nấu, có rau thơm và lá",
+  "en": "a simmered dry noodle dish with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi tron duoc nau co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_mi_quang",
+  "group": "indirect",
+  "gold": [
+   "dish_mi_quang"
+  ],
+  "cons": [
+   "prov_quang_nam",
+   "ing_soi_mi_gao",
+   "ing_tom"
+  ],
+  "vi": "tìm ảnh món nào của Quảng Nam và có sợi mì gạo và có tôm",
+  "en": "a dish from Quang Nam with thick rice noodles with shrimp",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua quang nam va co soi mi gao va co tom"
+ },
+ {
+  "qid": "dir_dish_cao_lau",
+  "group": "direct",
+  "gold": [
+   "dish_cao_lau"
+  ],
+  "cons": [],
+  "vi": "Cao lầu",
+  "en": "cao lau Hoi An noodles",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "cao lau",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_cao_lau",
+  "group": "indirect",
+  "gold": [
+   "dish_cao_lau"
+  ],
+  "cons": [
+   "type_mon_soi_tron",
+   "ing_gia_do",
+   "reg_trung_bo"
+  ],
+  "vi": "món sợi trộn của Trung Bộ, có giá đỗ",
+  "en": "a dry noodle dish from Central Vietnam with bean sprouts",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi tron cua trung bo co gia do"
+ },
+ {
+  "qid": "ind_val_dish_cao_lau",
+  "group": "indirect",
+  "gold": [
+   "dish_cao_lau"
+  ],
+  "cons": [
+   "meth_luoc",
+   "ing_rau_thom",
+   "reg_trung_bo"
+  ],
+  "vi": "tìm ảnh món nào của Trung Bộ và được luộc và có rau thơm",
+  "en": "a boiled dish from Central Vietnam with fresh herbs",
+  "hops": 2,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua trung bo va duoc luoc va co rau thom"
+ },
+ {
+  "qid": "dir_dish_bun_cha_ca",
+  "group": "direct",
+  "gold": [
+   "dish_bun_cha_ca"
+  ],
+  "cons": [],
+  "vi": "Bún chả cá",
+  "en": "bun cha ca fish cake noodle soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "bun cha ca",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_bun_cha_ca",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_cha_ca"
+  ],
+  "cons": [
+   "prov_da_nang",
+   "type_mon_soi_nuoc",
+   "grp_hai_san"
+  ],
+  "vi": "món sợi nước của Đà Nẵng, có hải sản",
+  "en": "a noodle soup from Da Nang with seafood",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi nuoc cua da nang co hai san"
+ },
+ {
+  "qid": "ind_val_dish_bun_cha_ca",
+  "group": "indirect",
+  "gold": [
+   "dish_bun_cha_ca"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "meth_chien",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "tìm ảnh món sợi nước nào được chiên và có rau thơm và lá",
+  "en": "a fried noodle soup with herbs",
+  "hops": 2,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon soi nuoc nao duoc chien va co rau thom va la"
+ },
+ {
+  "qid": "dir_dish_banh_canh_cua",
+  "group": "direct",
+  "gold": [
+   "dish_banh_canh_cua"
+  ],
+  "cons": [],
+  "vi": "Bánh canh cua",
+  "en": "banh canh cua thick crab noodle soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh canh cua",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_canh_cua",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_canh_cua"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "reg_nam_bo",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "món sợi nước của Nam Bộ, có rau thơm và lá",
+  "en": "a noodle soup from Southern Vietnam with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon soi nuoc cua nam bo co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_banh_canh_cua",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_canh_cua"
+  ],
+  "cons": [
+   "type_mon_soi_nuoc",
+   "ing_bot_nang",
+   "ing_tom"
+  ],
+  "vi": "tìm ảnh món sợi nước nào có bột năng và có tôm",
+  "en": "a noodle soup with tapioca starch with shrimp",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon soi nuoc nao co bot nang va co tom"
+ },
+ {
+  "qid": "dir_dish_com_tam",
+  "group": "direct",
+  "gold": [
+   "dish_com_tam"
+  ],
+  "cons": [],
+  "vi": "Cơm tấm",
+  "en": "com tam broken rice with grilled pork",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "com tam",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_com_tam",
+  "group": "indirect",
+  "gold": [
+   "dish_com_tam"
+  ],
+  "cons": [
+   "type_mon_com_va_xoi",
+   "reg_nam_bo",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "món cơm và xôi của Nam Bộ, có rau thơm và lá",
+  "en": "a rice dish from Southern Vietnam with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon com va xoi cua nam bo co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_com_tam",
+  "group": "indirect",
+  "gold": [
+   "dish_com_tam"
+  ],
+  "cons": [
+   "meth_nuong",
+   "ing_hanh_la",
+   "reg_nam_bo"
+  ],
+  "vi": "tìm ảnh món nào của Nam Bộ và được nướng và có hành lá",
+  "en": "a grilled dish from Southern Vietnam with scallions",
+  "hops": 2,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua nam bo va duoc nuong va co hanh la"
+ },
+ {
+  "qid": "dir_dish_com_ga",
+  "group": "direct",
+  "gold": [
+   "dish_com_ga"
+  ],
+  "cons": [],
+  "vi": "Cơm gà Hội An",
+  "en": "com ga Hoi An chicken rice",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "com ga hoi an",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_com_ga",
+  "group": "indirect",
+  "gold": [
+   "dish_com_ga"
+  ],
+  "cons": [
+   "prov_quang_nam",
+   "type_mon_com_va_xoi",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "món cơm và xôi của Quảng Nam, có rau thơm và lá",
+  "en": "a rice dish from Quang Nam with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon com va xoi cua quang nam co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_com_ga",
+  "group": "indirect",
+  "gold": [
+   "dish_com_ga"
+  ],
+  "cons": [
+   "prov_quang_nam",
+   "meth_luoc",
+   "ing_rau_ram"
+  ],
+  "vi": "tìm ảnh món nào của Quảng Nam và được luộc và có rau răm",
+  "en": "a boiled dish from Quang Nam with Vietnamese coriander",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua quang nam va duoc luoc va co rau ram"
+ },
+ {
+  "qid": "dir_dish_com_hen",
+  "group": "direct",
+  "gold": [
+   "dish_com_hen"
+  ],
+  "cons": [],
+  "vi": "Cơm hến",
+  "en": "com hen baby clam rice",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "com hen",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_com_hen",
+  "group": "indirect",
+  "gold": [
+   "dish_com_hen"
+  ],
+  "cons": [
+   "type_mon_com_va_xoi",
+   "ing_hen",
+   "reg_trung_bo"
+  ],
+  "vi": "món cơm và xôi của Trung Bộ, có hến",
+  "en": "a rice dish from Central Vietnam with baby clams",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon com va xoi cua trung bo co hen"
+ },
+ {
+  "qid": "ind_val_dish_com_hen",
+  "group": "indirect",
+  "gold": [
+   "dish_com_hen"
+  ],
+  "cons": [
+   "type_mon_com_va_xoi",
+   "ing_hen",
+   "ing_mam_ruoc"
+  ],
+  "vi": "tìm ảnh món cơm và xôi nào có hến và có mắm ruốc",
+  "en": "a rice dish with baby clams with fermented krill paste",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon com va xoi nao co hen va co mam ruoc"
+ },
+ {
+  "qid": "dir_dish_banh_mi",
+  "group": "direct",
+  "gold": [
+   "dish_banh_mi"
+  ],
+  "cons": [],
+  "vi": "Bánh mì",
+  "en": "banh mi Vietnamese sandwich",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh mi",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_mi",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_mi"
+  ],
+  "cons": [
+   "type_banh_man",
+   "ing_dua_chuot",
+   "reg_nam_bo"
+  ],
+  "vi": "bánh mặn của Nam Bộ, có dưa chuột",
+  "en": "a savory cake from Southern Vietnam with cucumber",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh man cua nam bo co dua chuot"
+ },
+ {
+  "qid": "ind_val_dish_banh_mi",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_mi"
+  ],
+  "cons": [
+   "type_banh_man",
+   "ing_bot_mi",
+   "ing_ca_rot"
+  ],
+  "vi": "tìm ảnh bánh mặn nào có bột mì và có cà rốt",
+  "en": "a savory cake with wheat flour with carrot",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh banh man nao co bot mi va co ca rot"
+ },
+ {
+  "qid": "dir_dish_banh_xeo",
+  "group": "direct",
+  "gold": [
+   "dish_banh_xeo"
+  ],
+  "cons": [],
+  "vi": "Bánh xèo",
+  "en": "banh xeo sizzling crepe",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh xeo",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_xeo",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_xeo"
+  ],
+  "cons": [
+   "type_banh_man",
+   "ing_gia_do",
+   "ing_nuoc_mam"
+  ],
+  "vi": "bánh mặn có giá đỗ, có nước mắm",
+  "en": "a savory cake with bean sprouts with fish sauce",
+  "hops": 1,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh man co gia do co nuoc mam"
+ },
+ {
+  "qid": "ind_val_dish_banh_xeo",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_xeo"
+  ],
+  "cons": [
+   "type_banh_man",
+   "ing_nghe"
+  ],
+  "vi": "tìm ảnh bánh mặn nào có nghệ",
+  "en": "a savory cake with turmeric",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh banh man nao co nghe"
+ },
+ {
+  "qid": "dir_dish_banh_khot",
+  "group": "direct",
+  "gold": [
+   "dish_banh_khot"
+  ],
+  "cons": [],
+  "vi": "Bánh khọt",
+  "en": "banh khot mini rice pancakes",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh khot",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_khot",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_khot"
+  ],
+  "cons": [
+   "type_banh_man",
+   "ing_hanh_la",
+   "reg_nam_bo"
+  ],
+  "vi": "bánh mặn của Nam Bộ, có hành lá",
+  "en": "a savory cake from Southern Vietnam with scallions",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh man cua nam bo co hanh la"
+ },
+ {
+  "qid": "ind_val_dish_banh_khot",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_khot"
+  ],
+  "cons": [
+   "ing_tom",
+   "ing_hanh_la",
+   "ing_nuoc_cot_dua"
+  ],
+  "vi": "tìm ảnh món nào có tôm và có hành lá và có nước cốt dừa",
+  "en": "a dish with shrimp with scallions with coconut milk",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao co tom va co hanh la va co nuoc cot dua"
+ },
+ {
+  "qid": "dir_dish_banh_cuon",
+  "group": "direct",
+  "gold": [
+   "dish_banh_cuon"
+  ],
+  "cons": [],
+  "vi": "Bánh cuốn",
+  "en": "banh cuon steamed rice rolls",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh cuon",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_cuon",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_cuon"
+  ],
+  "cons": [
+   "type_banh_man",
+   "ing_bot_gao",
+   "reg_bac_bo"
+  ],
+  "vi": "bánh mặn của Bắc Bộ, có bột gạo",
+  "en": "a savory cake from Northern Vietnam with rice flour",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh man cua bac bo co bot gao"
+ },
+ {
+  "qid": "ind_val_dish_banh_cuon",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_cuon"
+  ],
+  "cons": [
+   "prov_ha_noi",
+   "meth_hap",
+   "ing_thit_lon"
+  ],
+  "vi": "tìm ảnh món nào của Hà Nội và được hấp và có thịt lợn",
+  "en": "a steamed dish from Ha Noi with pork",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua ha noi va duoc hap va co thit lon"
+ },
+ {
+  "qid": "dir_dish_banh_beo",
+  "group": "direct",
+  "gold": [
+   "dish_banh_beo"
+  ],
+  "cons": [],
+  "vi": "Bánh bèo",
+  "en": "banh beo steamed rice cakes",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh beo",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_beo",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_beo"
+  ],
+  "cons": [
+   "prov_hue",
+   "type_banh_man",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "bánh mặn của Huế, có rau thơm và lá",
+  "en": "a savory cake from Hue with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh man cua hue co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_banh_beo",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_beo"
+  ],
+  "cons": [
+   "prov_hue",
+   "type_banh_man",
+   "ing_bot_gao"
+  ],
+  "vi": "tìm ảnh bánh mặn nào của Huế và có bột gạo",
+  "en": "a savory cake from Hue with rice flour",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh banh man nao cua hue va co bot gao"
+ },
+ {
+  "qid": "dir_dish_banh_bot_loc",
+  "group": "direct",
+  "gold": [
+   "dish_banh_bot_loc"
+  ],
+  "cons": [],
+  "vi": "Bánh bột lọc",
+  "en": "banh bot loc tapioca dumplings",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh bot loc",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_bot_loc",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_bot_loc"
+  ],
+  "cons": [
+   "type_banh_man",
+   "meth_goi_la",
+   "grp_la_goi"
+  ],
+  "vi": "bánh mặn được gói lá, có lá gói",
+  "en": "a wrapped in leaves savory cake with wrapping leaves",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh man duoc goi la co la goi"
+ },
+ {
+  "qid": "ind_val_dish_banh_bot_loc",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_bot_loc"
+  ],
+  "cons": [
+   "prov_hue",
+   "ing_bot_nang",
+   "ing_nuoc_mam"
+  ],
+  "vi": "tìm ảnh món nào của Huế và có bột năng và có nước mắm",
+  "en": "a dish from Hue with tapioca starch with fish sauce",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua hue va co bot nang va co nuoc mam"
+ },
+ {
+  "qid": "dir_dish_banh_chung",
+  "group": "direct",
+  "gold": [
+   "dish_banh_chung"
+  ],
+  "cons": [],
+  "vi": "Bánh chưng",
+  "en": "banh chung square sticky rice cake",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh chung",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_chung",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_chung"
+  ],
+  "cons": [
+   "reg_bac_bo",
+   "type_banh_truyen_thong",
+   "grp_la_goi"
+  ],
+  "vi": "bánh truyền thống của Bắc Bộ, có lá gói",
+  "en": "a traditional festive cake from Northern Vietnam with wrapping leaves",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh truyen thong cua bac bo co la goi"
+ },
+ {
+  "qid": "ind_val_dish_banh_chung",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_chung"
+  ],
+  "cons": [
+   "reg_bac_bo",
+   "type_banh_truyen_thong",
+   "ing_dau_xanh"
+  ],
+  "vi": "tìm ảnh bánh truyền thống nào của Bắc Bộ và có đậu xanh",
+  "en": "a traditional festive cake from Northern Vietnam with mung beans",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh banh truyen thong nao cua bac bo va co dau xanh"
+ },
+ {
+  "qid": "dir_dish_banh_tet",
+  "group": "direct",
+  "gold": [
+   "dish_banh_tet"
+  ],
+  "cons": [],
+  "vi": "Bánh tét",
+  "en": "banh tet cylindrical sticky rice cake",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh tet",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_tet",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_tet"
+  ],
+  "cons": [
+   "reg_nam_bo",
+   "type_banh_truyen_thong",
+   "grp_la_goi"
+  ],
+  "vi": "bánh truyền thống của Nam Bộ, có lá gói",
+  "en": "a traditional festive cake from Southern Vietnam with wrapping leaves",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh truyen thong cua nam bo co la goi"
+ },
+ {
+  "qid": "ind_val_dish_banh_tet",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_tet"
+  ],
+  "cons": [
+   "reg_nam_bo",
+   "ing_gao_nep",
+   "ing_la_chuoi"
+  ],
+  "vi": "tìm ảnh món nào của Nam Bộ và có gạo nếp và có lá chuối",
+  "en": "a dish from Southern Vietnam with sticky rice with banana leaves",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua nam bo va co gao nep va co la chuoi"
+ },
+ {
+  "qid": "dir_dish_banh_can",
+  "group": "direct",
+  "gold": [
+   "dish_banh_can"
+  ],
+  "cons": [],
+  "vi": "Bánh căn",
+  "en": "banh can mini rice pancakes with egg",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh can",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_can",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_can"
+  ],
+  "cons": [
+   "type_banh_man",
+   "ing_trung",
+   "reg_trung_bo"
+  ],
+  "vi": "bánh mặn của Trung Bộ, có trứng",
+  "en": "a savory cake from Central Vietnam with egg",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh man cua trung bo co trung"
+ },
+ {
+  "qid": "ind_val_dish_banh_can",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_can"
+  ],
+  "cons": [
+   "prov_ninh_thuan",
+   "ing_muc",
+   "ing_nuoc_mam"
+  ],
+  "vi": "tìm ảnh món nào của Ninh Thuận và có mực và có nước mắm",
+  "en": "a dish from Ninh Thuan with squid with fish sauce",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua ninh thuan va co muc va co nuoc mam"
+ },
+ {
+  "qid": "dir_dish_banh_hoi",
+  "group": "direct",
+  "gold": [
+   "dish_banh_hoi"
+  ],
+  "cons": [],
+  "vi": "Bánh hỏi",
+  "en": "banh hoi woven rice vermicelli",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh hoi",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_hoi",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_hoi"
+  ],
+  "cons": [
+   "prov_binh_dinh",
+   "type_banh_man",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "bánh mặn của Bình Định, có rau thơm và lá",
+  "en": "a savory cake from Binh Dinh with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh man cua binh dinh co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_banh_hoi",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_hoi"
+  ],
+  "cons": [
+   "meth_hap",
+   "ing_thit_lon",
+   "ing_hanh_la"
+  ],
+  "vi": "tìm ảnh món nào được hấp và có thịt lợn và có hành lá",
+  "en": "a steamed dish with pork with scallions",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao duoc hap va co thit lon va co hanh la"
+ },
+ {
+  "qid": "dir_dish_banh_it",
+  "group": "direct",
+  "gold": [
+   "dish_banh_it"
+  ],
+  "cons": [],
+  "vi": "Bánh ít",
+  "en": "banh it sticky rice dumpling",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh it",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_it",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_it"
+  ],
+  "cons": [
+   "prov_binh_dinh",
+   "type_banh_truyen_thong",
+   "grp_la_goi"
+  ],
+  "vi": "bánh truyền thống của Bình Định, có lá gói",
+  "en": "a traditional festive cake from Binh Dinh with wrapping leaves",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh truyen thong cua binh dinh co la goi"
+ },
+ {
+  "qid": "ind_val_dish_banh_it",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_it"
+  ],
+  "cons": [
+   "meth_hap",
+   "ing_dau_xanh",
+   "ing_la_chuoi"
+  ],
+  "vi": "tìm ảnh món nào được hấp và có đậu xanh và có lá chuối",
+  "en": "a steamed dish with mung beans with banana leaves",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao duoc hap va co dau xanh va co la chuoi"
+ },
+ {
+  "qid": "dir_dish_banh_trang_nuong",
+  "group": "direct",
+  "gold": [
+   "dish_banh_trang_nuong"
+  ],
+  "cons": [],
+  "vi": "Bánh tráng nướng",
+  "en": "banh trang nuong grilled rice paper",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh trang nuong",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_trang_nuong",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_trang_nuong"
+  ],
+  "cons": [
+   "prov_lam_dong",
+   "type_mon_an_vat",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "món ăn vặt của Lâm Đồng, có rau thơm và lá",
+  "en": "a street snack from Lam Dong with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon an vat cua lam dong co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_banh_trang_nuong",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_trang_nuong"
+  ],
+  "cons": [
+   "type_mon_an_vat",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "tìm ảnh món ăn vặt nào có rau thơm và lá",
+  "en": "a street snack with herbs",
+  "hops": 2,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon an vat nao co rau thom va la"
+ },
+ {
+  "qid": "dir_dish_banh_pia",
+  "group": "direct",
+  "gold": [
+   "dish_banh_pia"
+  ],
+  "cons": [],
+  "vi": "Bánh pía",
+  "en": "banh pia durian pastry",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh pia",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_pia",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_pia"
+  ],
+  "cons": [
+   "type_banh_ngot",
+   "ing_trung",
+   "reg_nam_bo"
+  ],
+  "vi": "bánh ngọt của Nam Bộ, có trứng",
+  "en": "a sweet cake from Southern Vietnam with egg",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh ngot cua nam bo co trung"
+ },
+ {
+  "qid": "ind_val_dish_banh_pia",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_pia"
+  ],
+  "cons": [
+   "prov_soc_trang",
+   "ing_bot_mi",
+   "ing_sau_rieng"
+  ],
+  "vi": "tìm ảnh món nào của Sóc Trăng và có bột mì và có sầu riêng",
+  "en": "a dish from Soc Trang with wheat flour with durian",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua soc trang va co bot mi va co sau rieng"
+ },
+ {
+  "qid": "dir_dish_banh_da_lon",
+  "group": "direct",
+  "gold": [
+   "dish_banh_da_lon"
+  ],
+  "cons": [],
+  "vi": "Bánh da lợn",
+  "en": "banh da lon steamed layer cake",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "banh da lon",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_banh_da_lon",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_da_lon"
+  ],
+  "cons": [
+   "type_banh_ngot",
+   "ing_dau_xanh",
+   "ing_nuoc_cot_dua"
+  ],
+  "vi": "bánh ngọt có đậu xanh, có nước cốt dừa",
+  "en": "a sweet cake with mung beans with coconut milk",
+  "hops": 1,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "banh ngot co dau xanh co nuoc cot dua"
+ },
+ {
+  "qid": "ind_val_dish_banh_da_lon",
+  "group": "indirect",
+  "gold": [
+   "dish_banh_da_lon"
+  ],
+  "cons": [
+   "type_banh_ngot",
+   "meth_hap",
+   "ing_nuoc_cot_dua"
+  ],
+  "vi": "tìm ảnh bánh ngọt nào được hấp và có nước cốt dừa",
+  "en": "a steamed sweet cake with coconut milk",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh banh ngot nao duoc hap va co nuoc cot dua"
+ },
+ {
+  "qid": "dir_dish_goi_cuon",
+  "group": "direct",
+  "gold": [
+   "dish_goi_cuon"
+  ],
+  "cons": [],
+  "vi": "Gỏi cuốn",
+  "en": "goi cuon fresh spring rolls",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "goi cuon",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_goi_cuon",
+  "group": "indirect",
+  "gold": [
+   "dish_goi_cuon"
+  ],
+  "cons": [
+   "type_mon_cuon_va_nem",
+   "meth_luoc",
+   "grp_hai_san"
+  ],
+  "vi": "món cuốn và nem được luộc, có hải sản",
+  "en": "a boiled roll or cured meat dish with seafood",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon cuon va nem duoc luoc co hai san"
+ },
+ {
+  "qid": "ind_val_dish_goi_cuon",
+  "group": "indirect",
+  "gold": [
+   "dish_goi_cuon"
+  ],
+  "cons": [
+   "reg_nam_bo",
+   "type_mon_cuon_va_nem",
+   "ing_rau_thom"
+  ],
+  "vi": "tìm ảnh món cuốn và nem nào của Nam Bộ và có rau thơm",
+  "en": "a roll or cured meat dish from Southern Vietnam with fresh herbs",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon cuon va nem nao cua nam bo va co rau thom"
+ },
+ {
+  "qid": "dir_dish_nem_ran",
+  "group": "direct",
+  "gold": [
+   "dish_nem_ran"
+  ],
+  "cons": [],
+  "vi": "Nem rán",
+  "en": "nem ran fried spring rolls",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "nem ran",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_nem_ran",
+  "group": "indirect",
+  "gold": [
+   "dish_nem_ran"
+  ],
+  "cons": [
+   "type_mon_cuon_va_nem",
+   "ing_moc_nhi",
+   "reg_bac_bo"
+  ],
+  "vi": "món cuốn và nem của Bắc Bộ, có mộc nhĩ",
+  "en": "a roll or cured meat dish from Northern Vietnam with wood ear mushroom",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon cuon va nem cua bac bo co moc nhi"
+ },
+ {
+  "qid": "ind_val_dish_nem_ran",
+  "group": "indirect",
+  "gold": [
+   "dish_nem_ran"
+  ],
+  "cons": [
+   "type_mon_cuon_va_nem",
+   "ing_ca_rot",
+   "ing_moc_nhi"
+  ],
+  "vi": "tìm ảnh món cuốn và nem nào có cà rốt và có mộc nhĩ",
+  "en": "a roll or cured meat dish with carrot with wood ear mushroom",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon cuon va nem nao co ca rot va co moc nhi"
+ },
+ {
+  "qid": "dir_dish_cha_ca",
+  "group": "direct",
+  "gold": [
+   "dish_cha_ca"
+  ],
+  "cons": [],
+  "vi": "Chả cá Lã Vọng",
+  "en": "cha ca La Vong turmeric fish with dill",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "cha ca la vong",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_cha_ca",
+  "group": "indirect",
+  "gold": [
+   "dish_cha_ca"
+  ],
+  "cons": [
+   "type_mon_nuong",
+   "meth_nuong",
+   "reg_bac_bo"
+  ],
+  "vi": "món nướng của Bắc Bộ, được nướng",
+  "en": "a grilled grilled dish from Northern Vietnam",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon nuong cua bac bo duoc nuong"
+ },
+ {
+  "qid": "ind_val_dish_cha_ca",
+  "group": "indirect",
+  "gold": [
+   "dish_cha_ca"
+  ],
+  "cons": [
+   "meth_chien",
+   "ing_dau_phong",
+   "ing_hanh_la"
+  ],
+  "vi": "tìm ảnh món nào được chiên và có đậu phộng và có hành lá",
+  "en": "a fried dish with peanuts with scallions",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao duoc chien va co dau phong va co hanh la"
+ },
+ {
+  "qid": "dir_dish_ca_kho_to",
+  "group": "direct",
+  "gold": [
+   "dish_ca_kho_to"
+  ],
+  "cons": [],
+  "vi": "Cá kho tộ",
+  "en": "ca kho to caramelized fish in clay pot",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "ca kho to",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_ca_kho_to",
+  "group": "indirect",
+  "gold": [
+   "dish_ca_kho_to"
+  ],
+  "cons": [
+   "type_mon_kho",
+   "meth_kho",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "món kho được kho, có rau thơm và lá",
+  "en": "a braised braised dish with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon kho duoc kho co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_ca_kho_to",
+  "group": "indirect",
+  "gold": [
+   "dish_ca_kho_to"
+  ],
+  "cons": [
+   "reg_nam_bo",
+   "type_mon_kho",
+   "ing_ca"
+  ],
+  "vi": "tìm ảnh món kho nào của Nam Bộ và có cá",
+  "en": "a braised dish from Southern Vietnam with fish",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon kho nao cua nam bo va co ca"
+ },
+ {
+  "qid": "dir_dish_thit_kho",
+  "group": "direct",
+  "gold": [
+   "dish_thit_kho"
+  ],
+  "cons": [],
+  "vi": "Thịt kho trứng",
+  "en": "thit kho braised pork and eggs",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "thit kho trung",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_thit_kho",
+  "group": "indirect",
+  "gold": [
+   "dish_thit_kho"
+  ],
+  "cons": [
+   "type_mon_kho",
+   "meth_kho",
+   "ing_thit_lon"
+  ],
+  "vi": "món kho được kho, có thịt lợn",
+  "en": "a braised braised dish with pork",
+  "hops": 1,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon kho duoc kho co thit lon"
+ },
+ {
+  "qid": "ind_val_dish_thit_kho",
+  "group": "indirect",
+  "gold": [
+   "dish_thit_kho"
+  ],
+  "cons": [
+   "type_mon_kho",
+   "ing_trung",
+   "ing_nuoc_mam"
+  ],
+  "vi": "tìm ảnh món kho nào có trứng và có nước mắm",
+  "en": "a braised dish with egg with fish sauce",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon kho nao co trung va co nuoc mam"
+ },
+ {
+  "qid": "dir_dish_canh_chua",
+  "group": "direct",
+  "gold": [
+   "dish_canh_chua"
+  ],
+  "cons": [],
+  "vi": "Canh chua cá",
+  "en": "canh chua sour fish soup",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "canh chua ca",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_canh_chua",
+  "group": "indirect",
+  "gold": [
+   "dish_canh_chua"
+  ],
+  "cons": [
+   "type_canh_va_lau",
+   "meth_nau",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "canh và lẩu được nấu, có rau thơm và lá",
+  "en": "a simmered soup or hot pot with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "canh va lau duoc nau co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_canh_chua",
+  "group": "indirect",
+  "gold": [
+   "dish_canh_chua"
+  ],
+  "cons": [
+   "meth_nau",
+   "ing_gia_do",
+   "ing_dua"
+  ],
+  "vi": "tìm ảnh món nào được nấu và có giá đỗ và có dứa",
+  "en": "a simmered dish with bean sprouts with pineapple",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao duoc nau va co gia do va co dua"
+ },
+ {
+  "qid": "dir_dish_xoi_xeo",
+  "group": "direct",
+  "gold": [
+   "dish_xoi_xeo"
+  ],
+  "cons": [],
+  "vi": "Xôi xéo",
+  "en": "xoi xeo sticky rice with mung bean",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "xoi xeo",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_xoi_xeo",
+  "group": "indirect",
+  "gold": [
+   "dish_xoi_xeo"
+  ],
+  "cons": [
+   "type_mon_com_va_xoi",
+   "ing_nghe",
+   "reg_bac_bo"
+  ],
+  "vi": "món cơm và xôi của Bắc Bộ, có nghệ",
+  "en": "a rice dish from Northern Vietnam with turmeric",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon com va xoi cua bac bo co nghe"
+ },
+ {
+  "qid": "ind_val_dish_xoi_xeo",
+  "group": "indirect",
+  "gold": [
+   "dish_xoi_xeo"
+  ],
+  "cons": [
+   "type_mon_com_va_xoi",
+   "ing_dau_xanh",
+   "ing_nghe"
+  ],
+  "vi": "tìm ảnh món cơm và xôi nào có đậu xanh và có nghệ",
+  "en": "a rice dish with mung beans with turmeric",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon com va xoi nao co dau xanh va co nghe"
+ },
+ {
+  "qid": "dir_dish_ca_phe_sua_da",
+  "group": "direct",
+  "gold": [
+   "dish_ca_phe_sua_da"
+  ],
+  "cons": [],
+  "vi": "Cà phê sữa đá",
+  "en": "ca phe sua da iced milk coffee",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "ca phe sua da",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_ca_phe_sua_da",
+  "group": "indirect",
+  "gold": [
+   "dish_ca_phe_sua_da"
+  ],
+  "cons": [
+   "type_do_uong",
+   "ing_ca_phe",
+   "reg_nam_bo"
+  ],
+  "vi": "đồ uống của Nam Bộ, có cà phê",
+  "en": "a drink from Southern Vietnam with coffee",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "do uong cua nam bo co ca phe"
+ },
+ {
+  "qid": "ind_val_dish_ca_phe_sua_da",
+  "group": "indirect",
+  "gold": [
+   "dish_ca_phe_sua_da"
+  ],
+  "cons": [
+   "prov_tp_ho_chi_minh",
+   "ing_sua_dac"
+  ],
+  "vi": "tìm ảnh món nào của TP. Hồ Chí Minh và có sữa đặc",
+  "en": "a dish from Tp Ho Chi Minh with condensed milk",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua tp ho chi minh va co sua dac"
+ },
+ {
+  "qid": "dir_dish_ca_phe_trung",
+  "group": "direct",
+  "gold": [
+   "dish_ca_phe_trung"
+  ],
+  "cons": [],
+  "vi": "Cà phê trứng",
+  "en": "ca phe trung egg coffee",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "ca phe trung",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_ca_phe_trung",
+  "group": "indirect",
+  "gold": [
+   "dish_ca_phe_trung"
+  ],
+  "cons": [
+   "type_do_uong",
+   "meth_pha",
+   "reg_bac_bo"
+  ],
+  "vi": "đồ uống của Bắc Bộ, được pha",
+  "en": "a brewed drink from Northern Vietnam",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "do uong cua bac bo duoc pha"
+ },
+ {
+  "qid": "ind_val_dish_ca_phe_trung",
+  "group": "indirect",
+  "gold": [
+   "dish_ca_phe_trung"
+  ],
+  "cons": [
+   "type_do_uong",
+   "ing_trung",
+   "ing_sua_dac"
+  ],
+  "vi": "tìm ảnh đồ uống nào có trứng và có sữa đặc",
+  "en": "a drink with egg with condensed milk",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh do uong nao co trung va co sua dac"
+ },
+ {
+  "qid": "dir_dish_nem_chua",
+  "group": "direct",
+  "gold": [
+   "dish_nem_chua"
+  ],
+  "cons": [],
+  "vi": "Nem chua",
+  "en": "nem chua fermented pork roll",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "nem chua",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_nem_chua",
+  "group": "indirect",
+  "gold": [
+   "dish_nem_chua"
+  ],
+  "cons": [
+   "type_mon_cuon_va_nem",
+   "meth_len_men",
+   "grp_la_goi"
+  ],
+  "vi": "món cuốn và nem được lên men, có lá gói",
+  "en": "a fermented roll or cured meat dish with wrapping leaves",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon cuon va nem duoc len men co la goi"
+ },
+ {
+  "qid": "ind_val_dish_nem_chua",
+  "group": "indirect",
+  "gold": [
+   "dish_nem_chua"
+  ],
+  "cons": [
+   "meth_len_men",
+   "ing_thit_lon",
+   "ing_la_chuoi"
+  ],
+  "vi": "tìm ảnh món nào được lên men và có thịt lợn và có lá chuối",
+  "en": "a fermented dish with pork with banana leaves",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao duoc len men va co thit lon va co la chuoi"
+ },
+ {
+  "qid": "dir_dish_bo_la_lot",
+  "group": "direct",
+  "gold": [
+   "dish_bo_la_lot"
+  ],
+  "cons": [],
+  "vi": "Bò lá lốt",
+  "en": "bo la lot beef wrapped in betel leaves",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "bo la lot",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_bo_la_lot",
+  "group": "indirect",
+  "gold": [
+   "dish_bo_la_lot"
+  ],
+  "cons": [
+   "reg_nam_bo",
+   "type_mon_nuong",
+   "grp_rau_thom_va_la"
+  ],
+  "vi": "món nướng của Nam Bộ, có rau thơm và lá",
+  "en": "a grilled dish from Southern Vietnam with herbs",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon nuong cua nam bo co rau thom va la"
+ },
+ {
+  "qid": "ind_val_dish_bo_la_lot",
+  "group": "indirect",
+  "gold": [
+   "dish_bo_la_lot"
+  ],
+  "cons": [
+   "reg_nam_bo",
+   "ing_dau_phong",
+   "ing_la_lot"
+  ],
+  "vi": "tìm ảnh món nào của Nam Bộ và có đậu phộng và có lá lốt",
+  "en": "a dish from Southern Vietnam with peanuts with betel leaves",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua nam bo va co dau phong va co la lot"
+ },
+ {
+  "qid": "dir_dish_gio_lua",
+  "group": "direct",
+  "gold": [
+   "dish_gio_lua"
+  ],
+  "cons": [],
+  "vi": "Giò lụa",
+  "en": "gio lua Vietnamese pork sausage",
+  "hops": 0,
+  "construction": "tên món",
+  "vi_nodiac": "gio lua",
+  "use": "both"
+ },
+ {
+  "qid": "ind_test_dish_gio_lua",
+  "group": "indirect",
+  "gold": [
+   "dish_gio_lua"
+  ],
+  "cons": [
+   "reg_bac_bo",
+   "type_mon_cuon_va_nem",
+   "grp_la_goi"
+  ],
+  "vi": "món cuốn và nem của Bắc Bộ, có lá gói",
+  "en": "a roll or cured meat dish from Northern Vietnam with wrapping leaves",
+  "hops": 2,
+  "use": "test",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "mon cuon va nem cua bac bo co la goi"
+ },
+ {
+  "qid": "ind_val_dish_gio_lua",
+  "group": "indirect",
+  "gold": [
+   "dish_gio_lua"
+  ],
+  "cons": [
+   "reg_bac_bo",
+   "meth_luoc",
+   "ing_nuoc_mam"
+  ],
+  "vi": "tìm ảnh món nào của Bắc Bộ và được luộc và có nước mắm",
+  "en": "a boiled dish from Northern Vietnam with fish sauce",
+  "hops": 1,
+  "use": "val",
+  "construction": "tổ hợp thuộc tính xác định duy nhất món, sinh từ KG",
+  "vi_nodiac": "tim anh mon nao cua bac bo va duoc luoc va co nuoc mam"
+ },
+ {
+  "qid": "para_bun_bo_hue",
+  "group": "paraphrase",
+  "gold": [
+   "dish_bun_bo_hue"
+  ],
+  "cons": [],
+  "vi": "tô bún cay đặc sản xứ Huế có sả",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "to bun cay dac san xu hue co sa"
+ },
+ {
+  "qid": "para_bun_mam",
+  "group": "paraphrase",
+  "gold": [
+   "dish_bun_mam",
+   "dish_lau_mam"
+  ],
+  "cons": [],
+  "vi": "món nước của miền Tây nấu từ mắm",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "mon nuoc cua mien tay nau tu mam"
+ },
+ {
+  "qid": "para_banh_chung",
+  "group": "paraphrase",
+  "gold": [
+   "dish_banh_chung"
+  ],
+  "cons": [],
+  "vi": "bánh gói lá dong ngày Tết",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "banh goi la dong ngay tet"
+ },
+ {
+  "qid": "para_banh_tet",
+  "group": "paraphrase",
+  "gold": [
+   "dish_banh_tet"
+  ],
+  "cons": [],
+  "vi": "bánh nếp hình trụ gói lá chuối của miền Nam",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "banh nep hinh tru goi la chuoi cua mien nam"
+ },
+ {
+  "qid": "para_ca_phe_trung",
+  "group": "paraphrase",
+  "gold": [
+   "dish_ca_phe_trung"
+  ],
+  "cons": [],
+  "vi": "cà phê đánh trứng kiểu Hà Nội",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "ca phe danh trung kieu ha noi"
+ },
+ {
+  "qid": "para_ca_phe_sua_da",
+  "group": "paraphrase",
+  "gold": [
+   "dish_ca_phe_sua_da"
+  ],
+  "cons": [],
+  "vi": "cà phê pha phin uống với đá và sữa",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "ca phe pha phin uong voi da va sua"
+ },
+ {
+  "qid": "para_banh_khot",
+  "group": "paraphrase",
+  "gold": [
+   "dish_banh_khot"
+  ],
+  "cons": [],
+  "vi": "bánh chiên giòn đổ trong khuôn nhỏ của Vũng Tàu",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "banh chien gion do trong khuon nho cua vung tau"
+ },
+ {
+  "qid": "para_goi_cuon",
+  "group": "paraphrase",
+  "gold": [
+   "dish_goi_cuon"
+  ],
+  "cons": [],
+  "vi": "bánh tráng cuốn tôm thịt ăn sống, không chiên",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "banh trang cuon tom thit an song khong chien"
+ },
+ {
+  "qid": "para_nem_ran",
+  "group": "paraphrase",
+  "gold": [
+   "dish_nem_ran"
+  ],
+  "cons": [],
+  "vi": "chả giò chiên giòn",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "cha gio chien gion"
+ },
+ {
+  "qid": "para_com_tam",
+  "group": "paraphrase",
+  "gold": [
+   "dish_com_tam"
+  ],
+  "cons": [],
+  "vi": "cơm sườn nướng Sài Gòn",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "com suon nuong sai gon"
+ },
+ {
+  "qid": "para_bun_dau",
+  "group": "paraphrase",
+  "gold": [
+   "dish_bun_dau"
+  ],
+  "cons": [],
+  "vi": "bún ăn với đậu rán và mắm tôm",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "bun an voi dau ran va mam tom"
+ },
+ {
+  "qid": "para_ca_kho_to",
+  "group": "paraphrase",
+  "gold": [
+   "dish_ca_kho_to"
+  ],
+  "cons": [],
+  "vi": "cá kho trong nồi đất kiểu Nam Bộ",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "ca kho trong noi dat kieu nam bo"
+ },
+ {
+  "qid": "para_thit_kho",
+  "group": "paraphrase",
+  "gold": [
+   "dish_thit_kho"
+  ],
+  "cons": [],
+  "vi": "thịt heo kho với trứng ngày Tết miền Nam",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "thit heo kho voi trung ngay tet mien nam"
+ },
+ {
+  "qid": "para_canh_chua",
+  "group": "paraphrase",
+  "gold": [
+   "dish_canh_chua"
+  ],
+  "cons": [],
+  "vi": "món canh nấu me với cá",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "mon canh nau me voi ca"
+ },
+ {
+  "qid": "para_mi_quang",
+  "group": "paraphrase",
+  "gold": [
+   "dish_mi_quang"
+  ],
+  "cons": [],
+  "vi": "mì sợi vàng của Quảng Nam ăn với bánh tráng",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "mi soi vang cua quang nam an voi banh trang"
+ },
+ {
+  "qid": "para_nem_chua",
+  "group": "paraphrase",
+  "gold": [
+   "dish_nem_chua"
+  ],
+  "cons": [],
+  "vi": "nem làm từ thịt heo lên men của Thanh Hóa",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "nem lam tu thit heo len men cua thanh hoa"
+ },
+ {
+  "qid": "para_bo_la_lot",
+  "group": "paraphrase",
+  "gold": [
+   "dish_bo_la_lot"
+  ],
+  "cons": [],
+  "vi": "bò cuốn lá lốt nướng",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "bo cuon la lot nuong"
+ },
+ {
+  "qid": "para_banh_cuon",
+  "group": "paraphrase",
+  "gold": [
+   "dish_banh_cuon"
+  ],
+  "cons": [],
+  "vi": "bánh hấp mỏng nhân thịt và mộc nhĩ",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "banh hap mong nhan thit va moc nhi"
+ },
+ {
+  "qid": "para_banh_bot_loc",
+  "group": "paraphrase",
+  "gold": [
+   "dish_banh_bot_loc"
+  ],
+  "cons": [],
+  "vi": "bánh bột năng trong, nhân tôm, gói lá chuối kiểu Huế",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "banh bot nang trong nhan tom goi la chuoi kieu hue"
+ },
+ {
+  "qid": "para_banh_pia",
+  "group": "paraphrase",
+  "gold": [
+   "dish_banh_pia"
+  ],
+  "cons": [],
+  "vi": "bánh ngọt nhân đậu xanh và sầu riêng của miền Tây",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "banh ngot nhan dau xanh va sau rieng cua mien tay"
+ },
+ {
+  "qid": "para_pho_ga",
+  "group": "paraphrase",
+  "gold": [
+   "dish_pho_ga"
+  ],
+  "cons": [],
+  "vi": "phở nấu với thịt gà",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "pho nau voi thit ga"
+ },
+ {
+  "qid": "para_bun_cha_ca",
+  "group": "paraphrase",
+  "gold": [
+   "dish_bun_cha_ca"
+  ],
+  "cons": [],
+  "vi": "bún với chả cá chiên, nước dùng có cà chua và dứa",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "bun voi cha ca chien nuoc dung co ca chua va dua"
+ },
+ {
+  "qid": "para_banh_can",
+  "group": "paraphrase",
+  "gold": [
+   "dish_banh_can"
+  ],
+  "cons": [],
+  "vi": "bánh xèo nhỏ nướng khuôn đất có trứng của Phan Rang",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "banh xeo nho nuong khuon dat co trung cua phan rang"
+ },
+ {
+  "qid": "para_banh_mi",
+  "group": "paraphrase",
+  "gold": [
+   "dish_banh_mi"
+  ],
+  "cons": [],
+  "vi": "bánh mì kẹp thịt và đồ chua",
+  "hops": 0,
+  "use": "test",
+  "construction": "viết tay, diễn đạt tự nhiên",
+  "vi_nodiac": "banh mi kep thit va do chua"
+ }
+]

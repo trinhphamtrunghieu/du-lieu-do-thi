@@ -1,0 +1,219 @@
+{
+ "model": [
+  "xlm-roberta-large-ViT-H-14",
+  "frozen_laion5b_s13b_b90k"
+ ],
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "smoke": false,
+ "kg": {
+  "entities": 148,
+  "triples_total": 750,
+  "triples_knowledge": 434,
+  "triples_image": 316,
+  "images": 316,
+  "dishes": 45
+ },
+ "queries_test": {
+  "direct": 42,
+  "indirect": 42,
+  "paraphrase": 24
+ },
+ "test_all": {
+  "CLIP_MRR": 0.5172507834485299,
+  "FULL_MRR": 0.7961101846025745,
+  "CLIP_R1": 0.38888888888888884,
+  "FULL_R1": 0.7160493827160493
+ },
+ "by_group": {
+  "direct": {
+   "CLIP (đóng băng)": 0.6342820913456994,
+   "CLIP + KG (đầy đủ)": 0.8068353471460065,
+   "Bỏ thuộc tính KG": 0.8009122983287117,
+   "KG ngẫu nhiên": 0.7934825866373485,
+   "Xáo liên kết ảnh–món": 0.6368802700394299
+  },
+  "indirect": {
+   "CLIP (đóng băng)": 0.3266344514007629,
+   "CLIP + KG (đầy đủ)": 0.7829544094813246,
+   "Bỏ thuộc tính KG": 0.312058365747699,
+   "KG ngẫu nhiên": 0.3344437375998826,
+   "Xáo liên kết ảnh–món": 0.3288141248040153
+  },
+  "paraphrase": {
+   "CLIP (đóng băng)": 0.6460245757120756,
+   "CLIP + KG (đầy đủ)": 0.8003637566137566,
+   "Bỏ thuộc tính KG": 0.6197456764769177,
+   "KG ngẫu nhiên": 0.6100008900866745,
+   "Xáo liên kết ảnh–món": 0.656548663779056
+  }
+ },
+ "paired": [
+  {
+   "so_sánh": "Đầy đủ − CLIP",
+   "group": "all",
+   "n": 108,
+   "delta": 0.2788594011540446,
+   "ci_lo": 0.20829530901949592,
+   "ci_hi": 0.3512876428647268,
+   "p_one_sided": 0.0
+  },
+  {
+   "so_sánh": "Đầy đủ − CLIP",
+   "group": "direct",
+   "n": 42,
+   "delta": 0.17255325580030687,
+   "ci_lo": 0.07307541558670218,
+   "ci_hi": 0.2757066859713697,
+   "p_one_sided": 0.0001
+  },
+  {
+   "so_sánh": "Đầy đủ − CLIP",
+   "group": "indirect",
+   "n": 42,
+   "delta": 0.4563199580805617,
+   "ci_lo": 0.33903668863936903,
+   "ci_hi": 0.5746426777022254,
+   "p_one_sided": 0.0
+  },
+  {
+   "so_sánh": "Đầy đủ − CLIP",
+   "group": "paraphrase",
+   "n": 24,
+   "delta": 0.1543391809016809,
+   "ci_lo": 0.037272801582697426,
+   "ci_hi": 0.2839441506238379,
+   "p_one_sided": 0.0051
+  },
+  {
+   "so_sánh": "Đầy đủ − bỏ thuộc tính KG",
+   "group": "all",
+   "n": 108,
+   "delta": 0.22556699824465537,
+   "ci_lo": 0.16433097597793367,
+   "ci_hi": 0.2890785506732684,
+   "p_one_sided": 0.0
+  },
+  {
+   "so_sánh": "Đầy đủ − bỏ thuộc tính KG",
+   "group": "direct",
+   "n": 42,
+   "delta": 0.0059230488172945924,
+   "ci_lo": -0.018714469165811622,
+   "ci_hi": 0.03316232593839944,
+   "p_one_sided": 0.3221
+  },
+  {
+   "so_sánh": "Đầy đủ − bỏ thuộc tính KG",
+   "group": "indirect",
+   "n": 42,
+   "delta": 0.4708960437336256,
+   "ci_lo": 0.3638678573996804,
+   "ci_hi": 0.5792436767075934,
+   "p_one_sided": 0.0
+  },
+  {
+   "so_sánh": "Đầy đủ − bỏ thuộc tính KG",
+   "group": "paraphrase",
+   "n": 24,
+   "delta": 0.1806180801368389,
+   "ci_lo": 0.07439823994146255,
+   "ci_hi": 0.295913776742581,
+   "p_one_sided": 0.0002
+  },
+  {
+   "so_sánh": "Đầy đủ − KG ngẫu nhiên",
+   "group": "all",
+   "n": 108,
+   "delta": 0.22191641626883485,
+   "ci_lo": 0.16143254002921545,
+   "ci_hi": 0.2848795780288723,
+   "p_one_sided": 0.0
+  },
+  {
+   "so_sánh": "Đầy đủ − KG ngẫu nhiên",
+   "group": "direct",
+   "n": 42,
+   "delta": 0.01335276050865775,
+   "ci_lo": -0.03119424440763587,
+   "ci_hi": 0.05906192287409162,
+   "p_one_sided": 0.2821
+  },
+  {
+   "so_sánh": "Đầy đủ − KG ngẫu nhiên",
+   "group": "indirect",
+   "n": 42,
+   "delta": 0.4485106718814421,
+   "ci_lo": 0.3437135771223937,
+   "ci_hi": 0.5556057691169263,
+   "p_one_sided": 0.0
+  },
+  {
+   "so_sánh": "Đầy đủ − KG ngẫu nhiên",
+   "group": "paraphrase",
+   "n": 24,
+   "delta": 0.19036286652708223,
+   "ci_lo": 0.08653890386120779,
+   "ci_hi": 0.298128251616303,
+   "p_one_sided": 0.0
+  },
+  {
+   "so_sánh": "Đầy đủ − xáo liên kết ảnh",
+   "group": "all",
+   "n": 108,
+   "delta": 0.27466266132366673,
+   "ci_lo": 0.20162810818675866,
+   "ci_hi": 0.34744633584527096,
+   "p_one_sided": 0.0
+  },
+  {
+   "so_sánh": "Đầy đủ − xáo liên kết ảnh",
+   "group": "direct",
+   "n": 42,
+   "delta": 0.1699550771065763,
+   "ci_lo": 0.06668469901237897,
+   "ci_hi": 0.2771942903085729,
+   "p_one_sided": 0.0007
+  },
+  {
+   "so_sánh": "Đầy đủ − xáo liên kết ảnh",
+   "group": "indirect",
+   "n": 42,
+   "delta": 0.45414028467730927,
+   "ci_lo": 0.3389353191709541,
+   "ci_hi": 0.5719542741009661,
+   "p_one_sided": 0.0
+  },
+  {
+   "so_sánh": "Đầy đủ − xáo liên kết ảnh",
+   "group": "paraphrase",
+   "n": 24,
+   "delta": 0.1438150928347007,
+   "ci_lo": 0.01641762144672688,
+   "ci_hi": 0.27820205310554574,
+   "p_one_sided": 0.0145
+  }
+ ],
+ "xai": {
+  "n_queries": 108,
+  "fidelity_score_drop_expl": 1.911598551591548,
+  "fidelity_score_drop_random": 0.009404019321556446,
+  "frac_rank_worse_expl": 0.7222222222222222,
+  "frac_rank_worse_random": 0.06481481481481481,
+  "validity_dstar_is_image_dish": 0.7962962962962963,
+  "validity_triples_exist": 1.0,
+  "sparsity_mean_edges": 5.0092592592592595,
+  "share_of_graph_score_by_dstar": 0.9740803683245624,
+  "top1_correct": 0.7685185185185185
+ },
+ "hparams_seed0": {
+  "alpha": 0.5,
+  "lam": 0.5,
+  "eta": 1.0,
+  "T": 0.1,
+  "w2": 0.5
+ }
+}

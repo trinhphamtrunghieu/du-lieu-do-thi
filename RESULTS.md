@@ -6,6 +6,7 @@ Cập nhật 16/11/2026. Số liệu là kết quả trên tập **TEST** của 
 
 - **Action Genome:** đồ thị cảnh (có nhãn hành động/bối cảnh Charades) + GNN + nhánh khớp truy vấn↔node đưa MRR từ **0,171 (CLIP) lên 0,650**, R@1 từ 10,4% lên 53,8%, R@10 từ 31,3% lên 85,9%.
 - **Flickr8k:** đồ thị chỉ tăng khoảng **+0,03 MRR** (0,800 → 0,833 với ViT-L/14).
+- **MMKG Ẩm thực Việt Nam tự xây (cấp 3):** CLIP đa ngữ 0,517 → **0,796** MRR. Truy vấn gián tiếp tăng từ 0,327 lên 0,783; bỏ thuộc tính KG thì mức tăng này mất hết. Chi tiết ở mục "Cấp 3" bên dưới.
 - Xáo node giữa các mẫu làm mất mức tăng trên cả hai dataset ⇒ mức tăng đến từ **nội dung đúng** của đồ thị, không phải do thêm tham số.
 - Điều kiện: gallery có **chú thích của con người** (caption 1–4 cho Flickr8k; nhãn Action Genome + Charades). Đồ thị sinh tự động từ ảnh (tagger, linear probe, BLIP) chỉ giúp tối đa +0,007 trên Flickr8k ViT-L.
 
@@ -206,6 +207,98 @@ Số dưới đây đọc từ `level4b_v2_graphfix/results/graph_experiment_res
 Kết luận đầy đủ: `level4b_v2_graphfix/results/level4b_conclusions.md`.
 
 **Cách chạy riêng phần B:** xem `image_video_pipeline/HUONG_DAN_CHAY_VI.md`. Cần GPU T4, Internet, 3 dataset VG / COCO và notebook nguồn `lamvo30ai/project03-level4b-v2-graphfix` cho cache video; tổng khoảng 3 giờ.
+
+## Cấp 3 — MMKG Ẩm thực Việt Nam tự xây (`mmkg/`)
+
+Notebook `mmkg/Project3_MMKG_VN.ipynb` (đã chạy, giữ output), Kaggle `hieutrinh123/project3-mmkg-vn` version 4, GPU T4, 17/11/2026. Data card: `mmkg/DATA_CARD.md`. Output: `mmkg/results/`.
+
+**Dữ liệu.**
+- 148 thực thể: 45 món, 54 nguyên liệu, 10 nhóm nguyên liệu, 12 loại món, 10 cách chế biến, 13 tỉnh, 4 vùng.
+- 750 triple: 434 triple tri thức + 316 triple ảnh → món.
+- 316 ảnh Wikimedia Commons, mỗi ảnh ghi rõ giấy phép (CC0 / CC BY / CC BY-SA / PD) và tác giả.
+- Tri thức do nhóm biên soạn với hỗ trợ AI. Ảnh được lọc tự động rồi duyệt bằng mắt: 410 ứng viên → 316 ảnh.
+
+**Phương pháp.** Giữ cấu trúc mô hình cuối của phần A, điều chỉnh cho MMKG:
+
+s = α·z(CLIP) + (1−α)·z(Σ_d P(d|q)·[λ·p_GNN(d|ảnh) + (1−λ)·p_kNN(d|ảnh)])
+
+- P(d|q): liên kết thực thể trong truy vấn với node KG; điểm đường đi 1–2 bước (món → tỉnh → vùng, món → nguyên liệu → nhóm); cộng khớp với mô tả node.
+- p_GNN: R-GraphSAGE trên đồ thị ảnh + KG, học dự đoán cạnh ảnh–món. Cạnh `mô_tả` của ảnh val/test không có trong đồ thị.
+- CLIP đa ngữ `xlm-roberta-large-ViT-H-14`, đóng băng.
+- Mọi tham số chọn trên val; 3 seed chia ảnh theo món, nhóm ảnh gần trùng luôn cùng một tập.
+
+**Kết quả trên test** (MRR, trung bình 3 seed):
+
+| Cấu hình | Trực tiếp (42) | Gián tiếp (42) | Diễn đạt tự nhiên (24) | Tất cả (108) | R@1 tất cả |
+| --- | --- | --- | --- | --- | --- |
+| CLIP đa ngữ ViT-H/14 | 0,634 | 0,327 | 0,646 | 0,517 | 38,9% |
+| **CLIP + KG** | **0,807** | **0,783** | **0,800** | **0,796 ± 0,024** | **71,6%** |
+| Bỏ thuộc tính KG | 0,801 | 0,312 | 0,620 | 0,571 | 46,0% |
+| KG ngẫu nhiên (xáo đuôi triple) | 0,793 | 0,334 | 0,610 | 0,574 | 46,3% |
+| Xáo liên kết ảnh–món | 0,637 | 0,329 | 0,657 | 0,521 | 39,2% |
+
+Bootstrap cặp, CLIP + KG − CLIP:
+- Tất cả: +0,279 [+0,208; +0,351].
+- Gián tiếp: +0,456 [+0,339; +0,575].
+- Trực tiếp: +0,173 [+0,073; +0,276].
+- Diễn đạt tự nhiên: +0,154 [+0,037; +0,284].
+
+Đọc kết quả:
+- **Truy vấn gián tiếp:** mức tăng đến từ thuộc tính trong KG. Bỏ thuộc tính hoặc xáo KG làm mất toàn bộ mức tăng.
+- **Truy vấn trực tiếp:** mức tăng đến từ liên kết ảnh–món của ảnh train. Thuộc tính KG không giúp gì (+0,006, không có ý nghĩa). So sánh này không hoàn toàn cân bằng: CLIP là zero-shot, còn nhánh đồ thị dùng nhãn món của ảnh train.
+- **Diễn đạt tự nhiên** (câu viết tay, dùng từ ngoài KG như "heo", "miền Tây"): vẫn tăng +0,154. Mức tăng này nhỏ hơn và khoảng tin cậy rộng hơn so với truy vấn sinh theo mẫu.
+
+**Thành phần** (seed 0, giữ tham số chọn trên val, tắt từng phần, MRR tất cả):
+
+| Cấu hình | MRR |
+| --- | --- |
+| Tham số chọn trên val (α = 0,5, λ = 0,5) | 0,829 |
+| Chỉ đồ thị (α = 0) | 0,804 |
+| Chỉ CLIP | 0,525 |
+| Ảnh→món chỉ kNN (λ = 0) | 0,766 |
+| Ảnh→món chỉ GNN (λ = 1) | 0,842 |
+| Truy vấn→món chỉ mô tả node, không dùng ràng buộc KG | 0,666 |
+
+GNN tốt hơn kNN 0,08 MRR khi dùng một mình. Val chọn λ = 0,5 nên trên test thấp hơn GNN thuần một chút.
+
+**xAI** (108 truy vấn test, seed 0; giải thích = món trung gian + đường đi KG + ≤ 3 ảnh train làm bằng chứng):
+
+| Chỉ số | Giá trị |
+| --- | --- |
+| Fidelity: độ tụt điểm khi xoá cạnh trong giải thích | **1,91** (xoá cùng số cạnh ngẫu nhiên: 0,01) |
+| Fidelity: tỉ lệ ảnh top-1 bị tụt hạng | **72%** (ngẫu nhiên: 6,5%) |
+| Validity: món trong giải thích đúng là món của ảnh top-1 | 79,6% |
+| Validity: triple trong giải thích có thật trong KG | 100% |
+| Sparsity: số cạnh trong giải thích | 5,0 (món trung gian chiếm 97% điểm đồ thị) |
+
+Fidelity là cận dưới vì mô hình không huấn luyện lại và mô tả văn bản của node giữ nguyên.
+
+Khi ảnh top-1 sai, giải thích cho thấy lý do. Ví dụ ảnh Bánh ít được kéo lên vì mô hình đoán nó là Bánh bột lọc.
+
+**Khả năng chuyển giao** (MRR tất cả, CLIP → CLIP + KG):
+
+| Thiết lập | CLIP | + KG | Δ |
+| --- | --- | --- | --- |
+| CLIP đa ngữ ViT-H/14, tiếng Việt có dấu | 0,517 | 0,796 | +0,279 |
+| CLIP đa ngữ ViT-H/14, tiếng Việt không dấu | 0,299 | 0,767 | +0,468 |
+| CLIP đa ngữ ViT-H/14, truy vấn tiếng Anh (dịch từ KG) | 0,465 | 0,770 | +0,305 |
+| CLIP đa ngữ ViT-B/32, tiếng Việt | 0,366 | 0,674 | +0,308 |
+| CLIP tiếng Anh ViT-L/14 (backbone phần A), truy vấn tiếng Việt | 0,135 | 0,635 | +0,500 |
+| CLIP tiếng Anh ViT-L/14, truy vấn tiếng Anh | 0,413 | 0,718 | +0,305 |
+
+Phần chuyển giao được:
+- Cách trộn z-score + α chọn trên val, GNN trên đồ thị ảnh–node và điểm đường đi giữ nguyên từ phần A.
+- Giống Action Genome (0,171 → 0,650), đồ thị có ích nhất khi CLIP thiếu thông tin. Ở đây là tiếng Việt, mất dấu, hoặc thuộc tính không nhìn thấy trong ảnh (xuất xứ, nguyên liệu).
+- Với CLIP tiếng Anh, KG gần như bù được khoảng cách ngôn ngữ (0,135 → 0,635).
+
+Phần không chuyển được:
+- Nhánh ridge truy vấn → node của phần A không dùng được vì MMKG không có caption để học. Liên kết thực thể và mô tả node thay vai trò này.
+- Cần tự viết bảng bí danh cho từ đồng nghĩa.
+
+**Hạn chế của MMKG:**
+- Truy vấn gián tiếp sinh theo mẫu nên dùng đúng từ vựng của KG. Liên kết thực thể đúng 88/88, là điều kiện thuận lợi.
+- Tri thức và việc duyệt ảnh chưa có người kiểm tra độc lập.
+- Mỗi món chỉ có 1–10 ảnh. Test có 42 món, nên khoảng tin cậy rộng.
 
 ## Hạn chế và việc tiếp theo
 
