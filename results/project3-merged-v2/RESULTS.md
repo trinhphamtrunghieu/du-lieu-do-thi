@@ -192,3 +192,5 @@ Fidelity (video): {'n': 60, 'worse_top3': 0.5666666666666667, 'worse_random3': 0
 | Mở rộng | Chiều ảnh → văn bản (nhánh B) | ✅ | TN2, TN2b |
 | Nộp | Mã tạo split / file split cố định | ✅ | splits/ (CSV + SPLIT_RULES.json) |
 | Nộp | Notebook nhập truy vấn → top-k + giải thích | ✅ | Hàm search() (mục 10) |
+
+> **Ghi chú thêm 17/11/2026 (không phải output của lần chạy):** hai dòng "Hoãn" ở trên là bảng tự kiểm tra cố định của notebook phần B. Hai mục này đã được làm ở chỗ khác: bộ ≥ 20 truy vấn gián tiếp ở phần A (`results/project3-merged-v1/partA_*/eval_queries_20.json`) và MMKG tự xây + data card ở `mmkg/` (Kaggle `hieutrinh123/project3-mmkg-vn` v4). Xem `REQUIREMENTS_CHECK.md`.
