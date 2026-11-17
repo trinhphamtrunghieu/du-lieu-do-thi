@@ -1,6 +1,6 @@
 # Kết quả: đồ thị trong truy vấn đa phương thức (du-lieu-do-thi)
 
-Cập nhật 16/11/2026. Số liệu là kết quả trên tập **TEST** của notebook Kaggle `hieutrinh123/du-lieu-do-thi`, trung bình 3 seed; mọi tham số (α, λ, ridge, γ, β, trọng số node bộ ba) chọn trên tập **val**. Khoảng trong ngoặc vuông là khoảng tin cậy 95% (bootstrap cặp theo truy vấn, 10.000 lần).
+Cập nhật 17/11/2026 (thêm mục "Cấp 3 — MMKG Ẩm thực Việt Nam"). Số liệu là kết quả trên tập **TEST** của notebook Kaggle `hieutrinh123/du-lieu-do-thi`, trung bình 3 seed; mọi tham số (α, λ, ridge, γ, β, trọng số node bộ ba) chọn trên tập **val**. Khoảng trong ngoặc vuông là khoảng tin cậy 95% (bootstrap cặp theo truy vấn, 10.000 lần).
 
 ## Kết luận chính
 
