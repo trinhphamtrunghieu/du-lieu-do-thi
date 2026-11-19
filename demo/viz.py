@@ -117,3 +117,129 @@ def result_html(eng, R, with_graph=True, fid=None):
             f"<span style='color:#666'>(cos {it['clip_cos']:.3f}; d* chiếm {it['share']:.0%} điểm đồ thị)</span></div>"
             f"<ul style='margin:4px 0'>{paths}</ul>{fhtml}{graph}</div></div>")
     return head + "".join(rows) + "</div>"
+
+
+# ============================== AG / MSVD: đồ thị con giải thích dạng chuỗi ==============================
+AG_PATTERN_HOPS = {                      # = PATTERN_DESC của notebook phần A, tách thành các cạnh
+    "P0_contains": lambda n, r: [("VIDEO", "chứa", n[0])],
+    "P1_scene": lambda n, r: [("VIDEO", "chứa", n[0]), (n[0], r or "quan_hệ", n[1])],
+    "P2_isa": lambda n, r: [("VIDEO", "chứa", n[0]), (n[0], "là_một", n[1])],
+    "P3_related": lambda n, r: [("VIDEO", "chứa", n[0]), (n[0], "liên_quan", n[1])],
+    "P4_scene_isa": lambda n, r: [("VIDEO", "chứa", n[0]), (n[0], r or "quan_hệ", n[1]), (n[1], "là_một", n[2])],
+    "P5_related_isa": lambda n, r: [("VIDEO", "chứa", n[0]), (n[0], "liên_quan", n[1]), (n[1], "là_một", n[2])],
+    "P6_triple": lambda n, r: [("VIDEO", "thể_hiện", n[0])],
+}
+
+
+def chains_graph(query, concepts, chains, video_label):
+    """chains: list[list[(nguồn, quan hệ, đích)]] — 'VIDEO' là node kết quả. concepts: khái niệm khớp từ truy vấn."""
+    import textwrap
+    G = nx.DiGraph()
+    G.add_node("Q", label=textwrap.fill(f"«{query}»", 16), kind="query")
+    G.add_node("VIDEO", label=textwrap.fill(video_label, 14), kind="result")
+    for ch in chains:
+        for a, r, b in ch:
+            for n in (a, b):
+                if n not in G:
+                    G.add_node(n, label=textwrap.fill(str(n).replace("#n", "").replace("#v", ""), 14),
+                               kind="món" if n in concepts else "nguyên liệu")
+            G.add_edge(a, b, label=r, kind="kg")
+    for c in concepts:
+        if c in G:
+            G.add_edge("Q", c, label="nhắc", kind="mention")
+    return G
+
+
+def _chain_layout(G):
+    """Cột theo khoảng cách từ node VIDEO (đi ngược cạnh) — truy vấn bên trái, video bên phải."""
+    und = G.to_undirected()
+    dist = nx.single_source_shortest_path_length(und.subgraph([n for n in G if n != "Q"]), "VIDEO") if "VIDEO" in G else {}
+    maxd = max(dist.values(), default=1)
+    col = {n: (maxd + 1 - dist[n]) if n in dist else 1 for n in G}
+    col["Q"] = 0
+    pos = {}
+    for c in sorted(set(col.values())):
+        ns = [n for n in G if col[n] == c]
+        for i, n in enumerate(ns):
+            pos[n] = (c, -(i - (len(ns) - 1) / 2))
+    return pos
+
+
+def draw_chains(G, ax):
+    pos = _chain_layout(G)
+    kinds = nx.get_node_attributes(G, "kind")
+    nx.draw_networkx_nodes(G, pos, ax=ax, node_size=1700, node_color=[COLORS.get(kinds[n], "#cccccc") for n in G],
+                           edgecolors="#333", linewidths=0.6)
+    nx.draw_networkx_labels(G, pos, ax=ax, labels=nx.get_node_attributes(G, "label"), font_size=7.5)
+    for kind, st in {"mention": "dashed", "kg": "solid"}.items():
+        es = [(u, v) for u, v, a in G.edges(data=True) if a["kind"] == kind]
+        nx.draw_networkx_edges(G, pos, edgelist=es, ax=ax, style=st, arrows=True, arrowsize=12, node_size=1700,
+                               edge_color="#555")
+    nx.draw_networkx_edge_labels(G, pos, ax=ax, edge_labels=nx.get_edge_attributes(G, "label"), font_size=7,
+                                 rotate=False, bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.8))
+    ax.set_axis_off()
+    xs = [p[0] for p in pos.values()]; ys = [p[1] for p in pos.values()]
+    ax.set_xlim(min(xs) - 0.6, max(xs) + 0.6); ax.set_ylim(min(ys) - 0.8, max(ys) + 0.8)
+
+
+def ag_chains(item):
+    return [AG_PATTERN_HOPS[e["pattern"]](e["nodes"], e.get("rel")) for e in item["explanation"]]
+
+
+def msvd_chains(item):
+    out = []
+    for s in item["support"]:
+        if s["kind"] == "contains":
+            out.append([("VIDEO", "chứa", s["node"])])
+        else:
+            hops = [tuple(h) for h in s["hops"]]
+            out.append(hops + [("VIDEO", "chứa", hops[-1][2])])
+    return out
+
+
+def bundle_result_html(R, kind, with_graph=True):
+    """Thẻ kết quả cho AG (kind='ag') hoặc MSVD (kind='msvd')."""
+    e = html.escape
+    if kind == "ag":
+        concepts = [c for _, c in R["concepts"]]
+        head_c = ", ".join(e(c) for c in concepts) or "— (không khớp node nào ⇒ chỉ CLIP + GNN)"
+        hp = f"α={R['alpha']:.2f}, λ={R['lam']:.2f}"
+    else:
+        concepts = R["matched_concepts"]
+        head_c = ", ".join(e(c) for c in concepts) or "— (không khớp node nào)"
+        hp = f"α={R['alpha']:.2f}"
+    h = (f"<div style='font-family:sans-serif'><h3 style='margin:4px 0'>Truy vấn: «{e(R['query'])}»</h3>"
+         f"<div><b>Khái niệm khớp trong đồ thị:</b> {head_c}</div>"
+         f"<div style='color:#666;font-size:12px'>gallery test: {R['gallery_size']} video · {hp} (chọn trên val)</div>")
+    for it in R["results"]:
+        vid = it.get("id") or it.get("video_id")
+        img = (f"<img style='width:200px;border-radius:4px' src='data:image/jpeg;base64,{img_to_b64(it['thumb'])}'/>"
+               if it.get("thumb") else "<div style='width:200px;height:120px;background:#eee'></div>")
+        if kind == "ag":
+            score = (f"điểm <b>{it['score']:+.2f}</b> = CLIP {it['part_clip']:+.2f} + đồ thị {it['part_graph']:+.2f} "
+                     f"<span style='color:#666'>(cos {it['clip_cos']:.3f}, hạng CLIP {it['clip_rank']}; "
+                     f"{it['n_paths']} đường đi)</span>")
+            lines = "".join(f"<li>{e(x['text'])} <span style='color:#666'>[đóng góp {x['contribution']:+.3f}]</span></li>"
+                            for x in it["explanation"]) or "<li style='color:#a00'>không có đường đi đồ thị — xếp hạng dựa vào CLIP + GNN</li>"
+            f = it["fidelity"]
+            fid = (f"<div style='font-size:12px;background:#f6f6f6;padding:4px'><b>Fidelity điểm đường đi</b>: đầy đủ {f['score_full']:.3f} · "
+                   f"bỏ giải thích {f['score_without_explanation']:.3f} · bỏ ngẫu nhiên cùng số {f['score_without_random']:.3f} · "
+                   f"chỉ giữ giải thích {f['score_only_explanation']:.3f}</div>") if f["n_paths"] >= 2 else ""
+            cap = f"<div style='font-size:12px;color:#444'>mô tả gốc: {e(it['caption'][:160])}</div>"
+            chains = ag_chains(it)
+        else:
+            score = (f"điểm <b>{it['final']:+.2f}</b> = CLIP {it['part_clip']:+.2f} + đồ thị {it['part_graph']:+.2f} "
+                     f"<span style='color:#666'>(cos {it['clip_cos']:.3f}, hạng CLIP {it['clip_rank']}; phân rã {it['totals']})</span>")
+            lines = "".join(f"<li>{e(x)}</li>" for x in it["explanation"]) or f"<li style='color:#a00'>{e(it['note'])}</li>"
+            fid, cap = "", ""
+            chains = msvd_chains(it)
+        graph = ""
+        if with_graph and chains:
+            fig, ax = plt.subplots(figsize=(9, max(2.6, 0.75 * len(chains) + 1.2)))
+            draw_chains(chains_graph(R["query"], concepts, chains, vid), ax)
+            graph = f"<img style='max-width:100%' src='data:image/png;base64,{fig_to_b64(fig)}'/>"
+        h += (f"<div style='display:flex;gap:12px;border-top:1px solid #ddd;padding:8px 0'>"
+              f"<div style='flex:0 0 200px'>{img}<div style='font-size:11px;color:#666'>{e(str(vid))}</div></div>"
+              f"<div style='flex:1'><div><b>#{it['rank']} — {e(str(vid))}</b></div><div>{score}</div>{cap}"
+              f"<ul style='margin:4px 0'>{lines}</ul>{fid}{graph}</div></div>")
+    return h + "</div>"

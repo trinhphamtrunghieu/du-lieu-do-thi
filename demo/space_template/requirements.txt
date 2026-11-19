@@ -7,3 +7,5 @@ pandas
 pillow
 matplotlib
 networkx
+scipy
+nltk

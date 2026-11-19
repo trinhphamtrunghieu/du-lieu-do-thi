@@ -4,3 +4,4 @@ demo/cache/*
 !demo/cache/feats_mclip_b32.npz
 !demo/cache/gnn_mclip_b32_seed0.pt
 build/
+demo/bundles/
