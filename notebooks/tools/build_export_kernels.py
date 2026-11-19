@@ -29,29 +29,26 @@ def md(src):
 def build_ag():
     nb = json.load(open(ROOT / "notebooks/components/partA_du-lieu-do-thi.ipynb"))
     src = lambda c: "".join(c["source"])
-    skip_prefix = ("self_test(records", "# Thí nghiệm chính", "# Kiểm định CẶP", "# v5 — BỘ QUAN HỆ KHÓ trên Flickr8k",
-                   "# Mô hình cuối của Flickr8k", "# So sánh với nhãn ORACLE", "# Fidelity đo trên THỨ HẠNG",
-                   "# Độ nhạy theo α", "# Phân tích 5 thành công", "# Fidelity / validity / sparsity",
-                   "# Bộ ≥20 truy vấn", "# Demo", "# Gói kết quả")
+    cells = nb["cells"]
+    i_fl = next(i for i, c in enumerate(cells) if c["cell_type"] == "code" and "records, hf_parts = load_flickr8k()" in src(c))
+    i_ag = next(i for i, c in enumerate(cells) if c["cell_type"] == "code" and
+                'AG_CACHE_DIR = Path("/kaggle/working/output/action_genome/cache")' in src(c))
+    i_main = next(i for i, c in enumerate(cells) if c["cell_type"] == "code" and "def load_action_genome" in src(c))
     out, n_skip = [], 0
-    i_ag_setup = None
-    for c in nb["cells"]:
+    for i, c in enumerate(cells):
         s = src(c)
         if c["cell_type"] == "code":
-            first = s.split("\n")
-            flickr_run = (s.startswith(skip_prefix) or "records, hf_parts = load_flickr8k()" in s
-                          or (len(first) > 1 and first[1].startswith("# v7 — (a) kiểm định cặp"))
-                          or (len(first) > 1 and "explanation_grounding" in s and "def reference_sets" in s)
-                          or ("ag_vs = [paired_vs_clip(PQ_AG" in s) or ('match_vs_clip_ag' in s and "def " not in s))
-            if flickr_run:
+            if i_fl <= i < i_ag:                         # khối chạy thí nghiệm Flickr8k
+                if s.startswith("# Chọn CFG.learn_clip_w trên VALIDATION"):   # giữ định nghĩa, bỏ lời gọi trên Flickr
+                    c = dict(c, source=s.replace("\nclipw_flickr = pick_learn_clip_w(records, split, img_feat, txt_feat)", ""))
+                else:
+                    n_skip += 1
+                    continue
+            elif i > i_main and not s.lstrip().startswith("%%script true"):   # kiểm định cặp AG sau cell chính
                 n_skip += 1
                 continue
-            if s.startswith("# Chọn CFG.learn_clip_w trên VALIDATION"):
-                s = s.replace("\nclipw_flickr = pick_learn_clip_w(records, split, img_feat, txt_feat)", "")
-                c = dict(c, source=s)
         out.append(c)
-        if c["cell_type"] == "code" and 'AG_CACHE_DIR = Path("/kaggle/working/output/action_genome/cache")' in s:
-            i_ag_setup = len(out)
+        if i == i_ag:
             out.append(code(
                 "# ---- KERNEL XUẤT BUNDLE DEMO (notebooks/tools/build_export_kernels.py) ----\n"
                 "# Backbone ViT-L/14 (cùng CLIP với phần C ⇒ Space chỉ nạp một mô hình); cache clip_ag_ViT-L-14 lấy từ output\n"
@@ -60,7 +57,6 @@ def build_ag():
                 'CFG.ablations = ("none",)\n'
                 "CFG.seeds = [0]\n"
                 'print("Kernel xuất bundle AG:", CFG.clip_model, CFG.clip_weights, CFG.ablations, CFG.seeds)\n'))
-    assert i_ag_setup is not None
     out.insert(0, md("# Project 3 — kernel xuất bundle demo + checkpoint: Action Genome\n\n"
                      "Sinh tự động từ `notebooks/components/partA_du-lieu-do-thi.ipynb` bởi "
                      "`notebooks/tools/build_export_kernels.py`; bỏ các cell chỉ chạy thí nghiệm Flickr8k. "
@@ -74,7 +70,7 @@ def build_ag():
                    machine_shape="NvidiaTeslaT4", dataset_sources=[f"{OWNER}/action-genome"], competition_sources=[],
                    kernel_sources=[f"{OWNER}/du-lieu-do-thi"], model_sources=[]),
               open(d / "kernel-metadata.json", "w"), indent=2)
-    print(f"AG: {len(out)} cell (bỏ {n_skip} cell Flickr8k) → {d}")
+    print(f"AG: {len(out)} cell (bỏ {n_skip} cell Flickr8k / kiểm định cặp) → {d}")
 
 
 def build_msvd():
