@@ -18,5 +18,7 @@ Pillow
 matplotlib
 tqdm
 ipywidgets
+networkx
+gradio            # chỉ cần cho demo/app.py
 papermill
 gdown

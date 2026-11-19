@@ -15,6 +15,8 @@
 
 `notebooks/Project3_Merged.ipynb` gộp A + C + B để chạy một lần. MMKG là notebook riêng.
 
+**Demo (nhập truy vấn → top-k + đường đi giải thích):** `demo/Demo_Truy_Van.ipynb` (notebook có giao diện ipywidgets) hoặc `python demo/app.py` (giao diện web Gradio). Hướng dẫn chạy và đưa lên Hugging Face Spaces / GitHub Pages: `demo/README.md`.
+
 ## Cấu trúc
 
 ```
@@ -24,6 +26,7 @@ notebooks/
   Project3_Merged.ipynb    notebook gộp A + C + B (+ kernel-metadata.json)
   kaggle/                  bản Kaggle < 1 MB của notebook gộp (payload trong dataset hieutrinh123/project3-merged-assets)
   components/              notebook gốc của từng phần
+demo/                      notebook + giao diện demo, đóng gói HF Spaces / GitHub Pages
 mmkg/                      dữ liệu MMKG: kg_data.py, images/, images.csv, DATA_CARD.md, notebook, mã thu thập ảnh
 results/                   toàn bộ output thật từ Kaggle (xem results/README.md)
 ```

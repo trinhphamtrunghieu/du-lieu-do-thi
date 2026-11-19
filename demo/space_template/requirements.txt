@@ -1,0 +1,9 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
+open_clip_torch==3.2.0
+transformers
+numpy
+pandas
+pillow
+matplotlib
+networkx
