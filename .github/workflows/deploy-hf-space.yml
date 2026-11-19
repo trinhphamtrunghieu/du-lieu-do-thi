@@ -1,0 +1,95 @@
+# Đóng gói demo (demo/build_space.sh) và upload lên Hugging Face Space trinhphamtrunghieu/du-lieu-do-thi.
+#
+# Cần secret của repo: HF_TOKEN (token Hugging Face quyền Write) — Settings → Secrets and variables → Actions.
+# Tuỳ chọn: biến HF_SPACE (Settings → Variables) để đổi Space đích.
+#
+# Cache demo/cache/ (đặc trưng CLIP + GNN đã huấn luyện) được commit sẵn để Space khởi động nhanh và không phải
+# chạy optimizer trên ZeroGPU. Nếu KG / ảnh / split / mã huấn luyện đổi làm cache hết hạn, bước "Làm mới cache"
+# tự trích lại đặc trưng và huấn luyện lại GNN trên CPU của runner (vài phút) trước khi upload.
+name: Deploy HF Space
+
+on:
+  push:
+    branches: [kaggle-notebook-v11]
+    paths:
+      - "demo/**"
+      - "mmkg/kg_data.py"
+      - "mmkg/images.csv"
+      - "mmkg/images/**"
+      - "results/mmkg/splits.json"
+      - "results/mmkg/queries.json"
+      - ".github/workflows/deploy-hf-space.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-hf-space
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  HF_SPACE: ${{ vars.HF_SPACE || 'trinhphamtrunghieu/du-lieu-do-thi' }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Kiểm tra secret
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "::error::Thiếu secret HF_TOKEN (token Hugging Face quyền Write)."; exit 1
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Cài thư viện (CPU)
+        run: |
+          pip install --extra-index-url https://download.pytorch.org/whl/cpu \
+            "torch>=2.8" open_clip_torch==3.2.0 transformers numpy pandas pillow matplotlib networkx huggingface_hub
+
+      - name: Làm mới cache nếu hết hạn
+        run: |
+          python - <<'EOF'
+          import sys, hashlib, glob
+          sys.path.insert(0, "demo")
+          def digest():
+              return {f: hashlib.md5(open(f, "rb").read()).hexdigest() for f in sorted(glob.glob("demo/cache/*"))}
+          before = digest()
+          from mmkg_engine import MMKGSearch
+          MMKGSearch(model_key="mclip_b32", seed=0, device="cpu")   # dùng cache nếu còn khớp, không thì tạo lại
+          after = digest()
+          changed = [f for f in after if before.get(f) != after[f]]
+          if changed:
+              print("::warning::Cache demo/ đã được tạo lại trên runner:", changed,
+                    "— nên chạy 'python demo/app.py' ở máy rồi commit demo/cache/ để lần sau deploy nhanh hơn.")
+          else:
+              print("Cache còn khớp, dùng nguyên bản đã commit.")
+          EOF
+
+      - name: Đóng gói
+        run: bash demo/build_space.sh build/hf_space
+
+      - name: Upload lên Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          python - <<'EOF'
+          import os
+          from huggingface_hub import HfApi
+          sha = os.environ["GITHUB_SHA"][:7]
+          info = HfApi().upload_folder(
+              folder_path="build/hf_space", repo_id=os.environ["HF_SPACE"], repo_type="space",
+              commit_message=f"Deploy từ GitHub {os.environ['GITHUB_REPOSITORY']}@{sha}")
+          print("Đã upload:", info)
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a") as f:
+              f.write(f"Space: https://huggingface.co/spaces/{os.environ['HF_SPACE']}\n\nCommit: {info}\n")
+          EOF

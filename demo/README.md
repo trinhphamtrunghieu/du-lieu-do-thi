@@ -9,7 +9,8 @@ Demo chạy trên **MMKG Ẩm thực Việt Nam** (`mmkg/`). Ảnh, KG, split v�
 | `app.py` | Giao diện web nhỏ (Gradio), dùng cho demo trực tiếp và cho Hugging Face Spaces |
 | `mmkg_engine.py` | Bộ máy truy vấn: cùng công thức điểm với `mmkg/Project3_MMKG_VN.ipynb` (mục 5, 9), chọn α, λ, η, T, w2 trên val |
 | `viz.py` | Vẽ đồ thị con giải thích (networkx) và thẻ kết quả HTML |
-| `build_space.sh`, `space_template/` | Đóng gói thư mục để đưa lên Hugging Face Spaces |
+| `build_space.sh`, `space_template/` | Đóng gói thư mục để đưa lên Hugging Face Spaces (tự động qua `.github/workflows/deploy-hf-space.yml`) |
+| `cache/` | Đặc trưng CLIP + GNN đã huấn luyện (B/32, seed 0), commit sẵn cho Space |
 | `export_static.py`, `static_template/` | Xuất bản tĩnh (tính sẵn kết quả) cho GitHub Pages |
 
 ## Mỗi kết quả hiển thị gì
@@ -75,6 +76,17 @@ Theo tài liệu hiện tại của HF, tạo Space Gradio/Docker chạy trên C
 5. Trước buổi vấn đáp, mở link một lần để đánh thức Space (Space không có ai truy cập sẽ ngủ).
 
 Nếu không đủ điều kiện ZeroGPU, dùng link tạm từ Colab/Kaggle bên dưới, hoặc chạy trên máy cá nhân.
+
+### Tự động cập nhật Space bằng GitHub Actions
+
+Workflow `.github/workflows/deploy-hf-space.yml` đóng gói (`build_space.sh`) và upload lên Space mỗi khi có push vào `kaggle-notebook-v11` làm thay đổi `demo/`, dữ liệu MMKG (`mmkg/kg_data.py`, `images.csv`, `images/`) hoặc `results/mmkg/{splits,queries}.json`. Có thể chạy tay ở tab **Actions → Deploy HF Space → Run workflow**.
+
+Cài đặt một lần:
+1. Tạo token Hugging Face quyền **Write** (huggingface.co → Settings → Access Tokens).
+2. GitHub repo → **Settings → Secrets and variables → Actions → New repository secret**: tên `HF_TOKEN`, giá trị là token trên.
+3. (Tuỳ chọn) tab **Variables**: `HF_SPACE` = `<tài-khoản>/<tên-space>` nếu muốn đổi Space đích (mặc định `trinhphamtrunghieu/du-lieu-do-thi`).
+
+`demo/cache/feats_mclip_b32.npz` và `demo/cache/gnn_mclip_b32_seed0.pt` được commit để Space khởi động nhanh và không phải huấn luyện GNN trên ZeroGPU. Khoá cache gồm đặc trưng, split và mã huấn luyện; khi một trong số đó đổi, workflow tự tạo lại cache trên CPU của runner (vài phút) và cảnh báo trong log. Nên chạy `python demo/app.py` ở máy rồi commit `demo/cache/` để lần sau deploy nhanh hơn.
 
 ### Link tạm từ Colab/Kaggle
 

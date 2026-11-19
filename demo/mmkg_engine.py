@@ -371,15 +371,18 @@ class MMKGSearch:
         t0 = time.time()
         tag = "smoke" if self.smoke else self.model_key
         cache = os.path.join(self.cache_dir, f"gnn_{tag}_seed{self.seed}.pt")
+        import inspect
+        gnn_key = hashlib.md5((self.feat_key + json.dumps(self.split, sort_keys=True)
+                               + inspect.getsource(MMKGSearch._train_gnn) + inspect.getsource(RSAGE)).encode()).hexdigest()
         state = None
         if os.path.exists(cache):
             st = torch.load(cache, map_location="cpu", weights_only=False)
-            if st.get("feat_key") == self.feat_key:
+            if st.get("key") == gnn_key:
                 state = st
                 self.log("GNN lấy từ cache:", cache)
         self.gnn, self.X, self.E_t, self.dish_nodes, self.tau, acc = self._train_gnn(state=state)
         if state is None:
-            torch.save(dict(model=self.gnn.state_dict(), val_acc=acc, feat_key=self.feat_key), cache)
+            torch.save(dict(model=self.gnn.state_dict(), val_acc=acc, key=gnn_key), cache)
         self.P_gnn = self.gnn_probs(self.E_t)
         self.P_knn = self.knn_probs(self.gal["train"])
         self.desc_emb = np.stack([self.Ttab[self.dish_desc(d)] for d in self.DISHES])
