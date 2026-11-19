@@ -47,14 +47,14 @@ HF_HUB_OFFLINE=1 python demo/app.py
 
 | Cách | Nhập truy vấn tự do | Chi phí | Ghi chú |
 | --- | --- | --- | --- |
-| **Hugging Face Spaces — ZeroGPU** (khuyên dùng) | Có | Miễn phí: tài khoản free host được tối đa 2 Space ZeroGPU (cần email đã xác minh, tài khoản > 30 ngày) | Link cố định. Mỗi truy vấn tốn vài trăm ms trong quota GPU hằng ngày của người xem (khách chưa đăng nhập 2 phút/ngày, tài khoản free 5 phút/ngày), đủ cho hàng chục truy vấn |
+| **Hugging Face Spaces — ZeroGPU** (khuyên dùng) | Có | Miễn phí: tài khoản free host được tối đa 2 Space ZeroGPU (cần email đã xác minh, tài khoản > 30 ngày) | Link cố định. Chỉ bước mã hoá truy vấn mới chạy GPU (`duration=10`); truy vấn ví dụ dùng vector có sẵn; hết quota GPU của người xem thì tự mã hoá bằng CPU, nên không báo lỗi |
 | Colab / Kaggle + `P3_SHARE=1` | Có | Miễn phí | Link `*.gradio.live` tạm thời (~72 giờ), mất khi tắt notebook |
 | GitHub Pages (bản tĩnh) | Không, chỉ chọn trong 116 truy vấn tính sẵn | Miễn phí với repo public; repo private cần GitHub Pro | Không chạy được mô hình. Dùng làm dự phòng |
 | Máy cá nhân lúc vấn đáp | Có | — | Ổn định nhất. Nên kèm video ≤ 5 phút như đề yêu cầu |
 
 ### Hugging Face Spaces (ZeroGPU)
 
-Theo tài liệu hiện tại của HF, tạo Space Gradio/Docker chạy trên CPU basic cần gói trả phí. Tài khoản miễn phí chỉ host được **ZeroGPU** (tối đa 2 Space; cần email đã xác minh và tài khoản đã tạo > 30 ngày). `app.py` đã tương thích ZeroGPU: hàm xử lý truy vấn gắn `@spaces.GPU`, còn mô hình B/32 vẫn chạy trên CPU của Space. `space_template/README.md` đặt `python_version: 3.12.12`, `requirements.txt` dùng `torch>=2.8`, đúng yêu cầu của ZeroGPU.
+Theo tài liệu hiện tại của HF, tạo Space Gradio/Docker chạy trên CPU basic cần gói trả phí. Tài khoản miễn phí chỉ host được **ZeroGPU** (tối đa 2 Space; cần email đã xác minh và tài khoản đã tạo > 30 ngày). `app.py` đã tương thích ZeroGPU: chỉ hàm mã hoá truy vấn gắn `@spaces.GPU(duration=10)`; chấm điểm, giải thích, fidelity chạy trên CPU. GNN đã huấn luyện được ship trong `demo/cache/` nên Space không chạy optimizer lúc khởi động (trên ZeroGPU, `optimizer.step()` làm khởi tạo CUDA ngoài hàm `@spaces.GPU` và app sập). Khách chưa đăng nhập có quota GPU rất nhỏ; khi hết, app tự chuyển sang CPU. `space_template/README.md` đặt `python_version: 3.12.12`, `requirements.txt` dùng `torch>=2.8`, đúng yêu cầu của ZeroGPU.
 
 1. Tạo tài khoản tại huggingface.co, rồi tạo **New Space**: SDK **Gradio**, hardware **ZeroGPU**, chọn Public để giảng viên mở được mà không cần đăng nhập. Nếu tài khoản chưa đủ 30 ngày, dùng tài khoản của thành viên khác trong nhóm.
 2. Đóng gói. Thư mục tạo ra (~23 MB) gồm app, engine, `mmkg/` (KG + ảnh), split, truy vấn và đặc trưng đã cache nếu có:
