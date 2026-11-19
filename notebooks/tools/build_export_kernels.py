@@ -56,6 +56,7 @@ def build_ag():
                 'CFG.clip_model, CFG.clip_weights, CFG.clip_bs = "ViT-L-14", "laion2b_s32b_b82k", 128\n'
                 'CFG.ablations = ("none",)\n'
                 "CFG.seeds = [0]\n"
+                'dataset_name = "action_genome"       # bình thường đặt ở cell Flickr8k (đã bỏ); encode_free_text cần\n'
                 'print("Kernel xuất bundle AG:", CFG.clip_model, CFG.clip_weights, CFG.ablations, CFG.seeds)\n'))
     out.insert(0, md("# Project 3 — kernel xuất bundle demo + checkpoint: Action Genome\n\n"
                      "Sinh tự động từ `notebooks/components/partA_du-lieu-do-thi.ipynb` bởi "
