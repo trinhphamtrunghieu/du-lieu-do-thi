@@ -10,11 +10,22 @@ import os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 
+# Hugging Face ZeroGPU: gói `spaces` có sẵn trên Space; Space ZeroGPU bắt buộc có ít nhất một hàm @spaces.GPU.
+# Mô hình B/32 chạy đủ nhanh trên CPU, nên engine giữ trên CPU (P3_DEVICE=cpu) và chỉ hàm xử lý truy vấn được
+# đánh dấu @spaces.GPU. Mỗi truy vấn tốn vài trăm ms (fidelity ~3 s) trong quota ZeroGPU của người xem.
+try:
+    import spaces
+    os.environ.setdefault("P3_DEVICE", "cpu")
+    gpu = spaces.GPU(duration=60)
+except ImportError:          # chạy trên máy / Colab: không cần ZeroGPU
+    gpu = lambda f: f
+
 import gradio as gr
 from mmkg_engine import MMKGSearch
 from viz import result_html
 
 ENG = MMKGSearch()
+ENG._load_clip()   # nạp sẵn bộ mã hoá văn bản lúc khởi động (hàm @spaces.GPU chạy ở tiến trình con)
 
 EXAMPLES = [
     "bánh mặn của Huế, có tôm",
@@ -28,6 +39,7 @@ EXAMPLES = [
 ]
 
 
+@gpu
 def run(query, k, gallery, check_fid):
     query = (query or "").strip()
     if not query:

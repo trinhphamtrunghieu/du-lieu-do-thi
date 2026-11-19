@@ -98,7 +98,7 @@ class MMKGSearch:
         self.seed = seed
         self.cache_dir = cache_dir or os.path.join(self.repo, "demo", "cache")
         os.makedirs(self.cache_dir, exist_ok=True)
-        self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+        self.device = device or os.environ.get("P3_DEVICE") or ("cuda" if torch.cuda.is_available() else "cpu")
         self.smoke = (os.environ.get("P3_DEMO_SMOKE", "0") == "1") if smoke is None else smoke
         self.verbose = verbose
         self._clip = None

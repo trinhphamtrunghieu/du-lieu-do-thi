@@ -47,14 +47,16 @@ HF_HUB_OFFLINE=1 python demo/app.py
 
 | Cách | Nhập truy vấn tự do | Chi phí | Ghi chú |
 | --- | --- | --- | --- |
-| **Hugging Face Spaces** (khuyên dùng) | Có | Miễn phí (CPU basic: 2 vCPU, 16 GB RAM) | Link cố định. Space ngủ sau ~48 giờ không có ai truy cập, lần mở sau mất 1–3 phút khởi động |
+| **Hugging Face Spaces — ZeroGPU** (khuyên dùng) | Có | Miễn phí: tài khoản free host được tối đa 2 Space ZeroGPU (cần email đã xác minh, tài khoản > 30 ngày) | Link cố định. Mỗi truy vấn tốn vài trăm ms trong quota GPU hằng ngày của người xem (khách chưa đăng nhập 2 phút/ngày, tài khoản free 5 phút/ngày), đủ cho hàng chục truy vấn |
 | Colab / Kaggle + `P3_SHARE=1` | Có | Miễn phí | Link `*.gradio.live` tạm thời (~72 giờ), mất khi tắt notebook |
 | GitHub Pages (bản tĩnh) | Không, chỉ chọn trong 116 truy vấn tính sẵn | Miễn phí với repo public; repo private cần GitHub Pro | Không chạy được mô hình. Dùng làm dự phòng |
 | Máy cá nhân lúc vấn đáp | Có | — | Ổn định nhất. Nên kèm video ≤ 5 phút như đề yêu cầu |
 
-### Hugging Face Spaces
+### Hugging Face Spaces (ZeroGPU)
 
-1. Tạo tài khoản tại huggingface.co, rồi tạo **New Space**: SDK **Gradio**, hardware **CPU basic (free)**, chọn Public để giảng viên mở được mà không cần đăng nhập.
+Theo tài liệu hiện tại của HF, tạo Space Gradio/Docker chạy trên CPU basic cần gói trả phí. Tài khoản miễn phí chỉ host được **ZeroGPU** (tối đa 2 Space; cần email đã xác minh và tài khoản đã tạo > 30 ngày). `app.py` đã tương thích ZeroGPU: hàm xử lý truy vấn gắn `@spaces.GPU`, còn mô hình B/32 vẫn chạy trên CPU của Space. `space_template/README.md` đặt `python_version: 3.12.12`, `requirements.txt` dùng `torch>=2.8`, đúng yêu cầu của ZeroGPU.
+
+1. Tạo tài khoản tại huggingface.co, rồi tạo **New Space**: SDK **Gradio**, hardware **ZeroGPU**, chọn Public để giảng viên mở được mà không cần đăng nhập. Nếu tài khoản chưa đủ 30 ngày, dùng tài khoản của thành viên khác trong nhóm.
 2. Đóng gói. Thư mục tạo ra (~23 MB) gồm app, engine, `mmkg/` (KG + ảnh), split, truy vấn và đặc trưng đã cache nếu có:
    ```bash
    bash demo/build_space.sh
@@ -70,7 +72,9 @@ HF_HUB_OFFLINE=1 python demo/app.py
    hf upload <tài-khoản>/<tên-space> build/hf_space . --repo-type space
    ```
 4. Space tự cài `requirements.txt` rồi chạy `app.py`. Lần build đầu mất khoảng 5–10 phút, link có dạng `https://huggingface.co/spaces/<tài-khoản>/<tên-space>`.
-5. Trước buổi vấn đáp, mở link một lần để đánh thức Space.
+5. Trước buổi vấn đáp, mở link một lần để đánh thức Space (Space không có ai truy cập sẽ ngủ).
+
+Nếu không đủ điều kiện ZeroGPU, dùng link tạm từ Colab/Kaggle bên dưới, hoặc chạy trên máy cá nhân.
 
 ### Link tạm từ Colab/Kaggle
 
