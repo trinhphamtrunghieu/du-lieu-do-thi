@@ -11,7 +11,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PUSH = ROOT / "notebooks/tools/kaggle_push.py"
 SRC = {"ag": ("hieutrinh123/p3-export-ag", "output/action_genome/demo_bundle/action_genome", "action_genome"),
-       "msvd": ("hieutrinh123/p3-export-msvd", "project03_level4b/demo_bundle/msvd", "msvd")}
+       "msvd": ("hieutrinh123/p3-export-msvd", "project03_level4b_v2/demo_bundle/msvd", "msvd")}
 
 for key in (sys.argv[1:] or list(SRC)):
     kernel, prefix, name = SRC[key]
