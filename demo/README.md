@@ -1,13 +1,23 @@
-# Demo: nhập truy vấn → top-k ảnh + quan hệ/đường đi giải thích
+# Demo: nhập truy vấn → top-k kết quả + quan hệ/đường đi giải thích
 
 Sản phẩm nộp ở mục 8 của đề: *"Notebook hoặc giao diện nhỏ: nhập truy vấn, trả về top-k kết quả và hiển thị quan hệ/đường đi giải thích"*.
-Demo chạy trên **MMKG Ẩm thực Việt Nam** (`mmkg/`). Ảnh, KG, split và bộ truy vấn đều có sẵn trong repo, nên không cần tải dữ liệu Kaggle.
+
+`app.py` có 3 tab, mỗi tab dùng đúng cơ chế xếp hạng + giải thích của notebook tương ứng:
+
+| Tab | Dữ liệu | Engine | Nguồn dữ liệu cho demo |
+| --- | --- | --- | --- |
+| MMKG Ẩm thực Việt Nam | `mmkg/` (tiếng Việt, 316 ảnh) | `mmkg_engine.py` (tính lại khi khởi động) | Có sẵn trong repo |
+| Action Genome | gallery test phần A (video Charades) | `partA_engine.py` | Bundle `bundles/action_genome` do notebook phần A xuất trên Kaggle |
+| MSVD | gallery test MSVD phần C | `partC_engine.py` + `partC_lib.py` | Bundle `bundles/msvd` do notebook phần C xuất trên Kaggle |
 
 | Tệp | Vai trò |
 | --- | --- |
-| `Demo_Truy_Van.ipynb` | Notebook (đã chạy, giữ output): gọi `search()`, vẽ đồ thị con giải thích, đo fidelity, **giao diện ipywidgets** |
-| `app.py` | Giao diện web nhỏ (Gradio), dùng cho demo trực tiếp và cho Hugging Face Spaces |
-| `mmkg_engine.py` | Bộ máy truy vấn: cùng công thức điểm với `mmkg/Project3_MMKG_VN.ipynb` (mục 5, 9), chọn α, λ, η, T, w2 trên val |
+| `Demo_Truy_Van.ipynb` | Notebook (đã chạy, giữ output) cho MMKG: gọi `search()`, vẽ đồ thị con giải thích, đo fidelity, **giao diện ipywidgets** |
+| `app.py` | Giao diện web nhỏ (Gradio) 3 tab, dùng cho demo trực tiếp và cho Hugging Face Spaces |
+| `mmkg_engine.py` | Bộ máy truy vấn MMKG: cùng công thức điểm với `mmkg/Project3_MMKG_VN.ipynb` (mục 5, 9), chọn α, λ, η, T, w2 trên val |
+| `partA_engine.py` | Port `demo_query`, `ag_parse_query`, `enumerate_paths`, `explain_and_score` của notebook phần A, chạy trên bundle (khớp notebook tới ~1e-7) |
+| `partC_engine.py`, `partC_lib.py` | Port `demo_query` + `explain_full` của notebook phần C; `partC_lib.py` **sinh tự động** (`notebooks/tools/gen_partC_lib.py`), trích nguyên văn mã xử lý truy vấn và lớp QC-RGAT |
+| `fetch_bundles.py` | Tải bundle AG / MSVD từ output kernel Kaggle về `demo/bundles/` (không nằm trong git) |
 | `viz.py` | Vẽ đồ thị con giải thích (networkx) và thẻ kết quả HTML |
 | `build_space.sh`, `space_template/` | Đóng gói thư mục để đưa lên Hugging Face Spaces (tự động qua `.github/workflows/deploy-hf-space.yml`) |
 | `cache/` | Đặc trưng CLIP + GNN đã huấn luyện (B/32, seed 0), commit sẵn cho Space |
@@ -24,6 +34,24 @@ Demo chạy trên **MMKG Ẩm thực Việt Nam** (`mmkg/`). Ảnh, KG, split v�
 - **Fidelity** (tuỳ chọn): xoá đúng các cạnh của giải thích rồi chấm lại, so với xoá cùng số cạnh ngẫu nhiên. Ví dụ với «đồ uống của Hà Nội có trứng», ảnh #1 tụt từ hạng 1 xuống 14 khi xoá 6 cạnh giải thích, còn khi xoá 6 cạnh ngẫu nhiên thì vẫn ở hạng 1.
 
 Mô hình mặc định là CLIP đa ngữ `xlm-roberta-base-ViT-B-32`, chạy được trên CPU. Đặt `P3_DEMO_MODEL=mclip_h14` để dùng mô hình chính của báo cáo (cần GPU). Với B/32, độ chính xác ảnh→món thấp hơn H/14, nên một số truy vấn chọn đúng món qua KG nhưng ảnh trả về lại sai. Đây là chất liệu tốt cho phần "truy vấn thất bại". Số liệu chính thức nằm ở `results/mmkg/`.
+
+## Bundle Action Genome / MSVD và checkpoint
+
+Ảnh/video, đồ thị và mô hình của phần A, C chỉ có trên Kaggle, nên demo dùng **bundle** do chính notebook xuất ra:
+
+- **Notebook phần A** (mục 1.17 mới): `save_ckpt` / `train_or_load` lưu trọng số + (α, λ) của từng (bộ dữ liệu, CLIP, ablation, seed) vào `checkpoints/<tag>_<clip>_<ablation>_s<seed>.pt`; chạy lại thì tìm checkpoint cùng tên trong `checkpoints/`, `P3_RESUME_DIR` và `/kaggle/input/**/checkpoints`, nạp lại và **bỏ qua huấn luyện** (chỉ khi đồ thị dựng lại khớp số node/cạnh; `P3_RESUME=0` để tắt). `export_demo_bundle` (bước 9b/9 của AG) ghi đặc trưng CLIP + nhúng GNN của gallery test, ma trận đường đi, đồ thị cho giải thích, đầu chiếu truy vấn, α, λ, thumbnail và **kết quả tham chiếu** của `demo_query`.
+- **Notebook phần C**: `run_exp` nạp `checkpoints/<exp>_s<seed>.pt` nếu có (dựng đúng kiến trúc rồi `load_state_dict`), không huấn luyện lại; `MSVD_RESUME=0` để tắt. Cell mới sau cell demo xuất bundle MSVD (mô hình G3 seed đầu, tensor đồ thị, từ vựng node/vị từ, đặc trưng gallery, thumbnail, kết quả tham chiếu).
+- Patch notebook: `notebooks/tools/patch_partA_checkpoint.py`, `patch_partC_checkpoint.py` (idempotent).
+- Kernel Kaggle xuất bundle: `python notebooks/tools/build_export_kernels.py` dựng `notebooks/kaggle_export/{ag,msvd}`; đẩy và lấy kết quả bằng `notebooks/tools/kaggle_push.py` (REST API, cần Kaggle API key):
+  ```bash
+  python notebooks/tools/kaggle_push.py push notebooks/kaggle_export/ag
+  ```
+  ```bash
+  python demo/fetch_bundles.py
+  ```
+- Kiểm tra bản port: mỗi bundle có `reference_outputs.json` (top-k, điểm, giải thích **và vector truy vấn** do notebook tính). Engine chạy lại đúng các truy vấn đó bằng cùng vector và phải cho cùng kết quả.
+
+Bundle không nằm trong git (ảnh Charades / clip YouTube có giấy phép riêng). Chép lên Space bằng `P3_WITH_BUNDLES=1 bash demo/build_space.sh` rồi upload; GitHub Actions không xoá bundle đã có trên Space.
 
 ## Chạy trên máy
 
