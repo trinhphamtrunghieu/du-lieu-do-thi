@@ -258,6 +258,7 @@ class MMKGSearch:
         tag = "smoke" if self.smoke else self.model_key
         cache = os.path.join(self.cache_dir, f"feats_{tag}.npz")
         key = hashlib.md5(("\n".join(texts) + "\n".join(self.imgs.sha256)).encode()).hexdigest()
+        self.feat_key = key
         if os.path.exists(cache):
             z = np.load(cache, allow_pickle=True)
             if str(z["key"]) == key:
@@ -293,7 +294,7 @@ class MMKGSearch:
         E.append((list(tr[nb].ravel()), list(np.repeat(np.arange(n_img), k_img))))
         return np.concatenate([self.I, ent_feat]), E
 
-    def _train_gnn(self, epochs=300, mask_frac=0.4):
+    def _train_gnn(self, epochs=300, mask_frac=0.4, state=None):
         seed = self.seed
         torch.manual_seed(seed); np.random.seed(seed)
         labels = self.IMG_DISH
@@ -317,6 +318,10 @@ class MMKGSearch:
         tau = 0.07
         full_E = to_t(with_links(train_ids))
         val_idx = torch.tensor([self.IIDX[i] for i in val_ids], dtype=torch.long)
+        if state is not None:            # GNN đã huấn luyện, lấy từ cache: không chạy optimizer
+            model.load_state_dict(state["model"])
+            model.eval()
+            return model, X, full_E, dish_nodes, tau, state["val_acc"]
         best, best_state, bad = -1, None, 0
         rng = np.random.default_rng(seed)
         for ep in range(epochs):
@@ -364,11 +369,21 @@ class MMKGSearch:
 
     def _train_graph_parts(self):
         t0 = time.time()
-        self.gnn, self.X, self.E_t, self.dish_nodes, self.tau, acc = self._train_gnn()
+        tag = "smoke" if self.smoke else self.model_key
+        cache = os.path.join(self.cache_dir, f"gnn_{tag}_seed{self.seed}.pt")
+        state = None
+        if os.path.exists(cache):
+            st = torch.load(cache, map_location="cpu", weights_only=False)
+            if st.get("feat_key") == self.feat_key:
+                state = st
+                self.log("GNN lấy từ cache:", cache)
+        self.gnn, self.X, self.E_t, self.dish_nodes, self.tau, acc = self._train_gnn(state=state)
+        if state is None:
+            torch.save(dict(model=self.gnn.state_dict(), val_acc=acc, feat_key=self.feat_key), cache)
         self.P_gnn = self.gnn_probs(self.E_t)
         self.P_knn = self.knn_probs(self.gal["train"])
         self.desc_emb = np.stack([self.Ttab[self.dish_desc(d)] for d in self.DISHES])
-        self.log(f"GNN (R-SAGE) huấn luyện xong {time.time() - t0:.0f}s; độ chính xác ảnh→món trên val {acc:.3f}")
+        self.log(f"GNN (R-SAGE) sẵn sàng sau {time.time() - t0:.0f}s; độ chính xác ảnh→món trên val {acc:.3f}")
 
     # ------------------------------------------------------------------ chấm điểm
     def query_dish(self, text, qv, hp, R1=None, R2=None):

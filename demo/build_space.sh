@@ -11,6 +11,9 @@ cp "$ROOT/demo/app.py" "$ROOT/demo/mmkg_engine.py" "$ROOT/demo/viz.py" "$OUT/"
 cp "$ROOT/mmkg/kg_data.py" "$ROOT/mmkg/images.csv" "$ROOT/mmkg/DATA_CARD.md" "$OUT/mmkg/"
 cp -r "$ROOT/mmkg/images" "$OUT/mmkg/"
 cp "$ROOT/results/mmkg/splits.json" "$ROOT/results/mmkg/queries.json" "$OUT/results/mmkg/"
-# đặc trưng CLIP đã trích (nếu có) để Space khởi động nhanh, khỏi mã hoá lại 316 ảnh
-if [ -f "$ROOT/demo/cache/feats_mclip_b32.npz" ]; then cp "$ROOT/demo/cache/feats_mclip_b32.npz" "$OUT/demo/cache/"; fi
+# đặc trưng CLIP đã trích (nếu có) để Space khởi động nhanh, khỏi mã hoá lại 316 ảnh,
+# và GNN đã huấn luyện (seed 0) để Space không phải chạy optimizer lúc khởi động
+for f in feats_mclip_b32.npz gnn_mclip_b32_seed0.pt; do
+  if [ -f "$ROOT/demo/cache/$f" ]; then cp "$ROOT/demo/cache/$f" "$OUT/demo/cache/"; else echo "Chưa có demo/cache/$f — chạy 'python demo/app.py' một lần để tạo"; fi
+done
 du -sh "$OUT"; echo "Đã đóng gói vào $OUT"

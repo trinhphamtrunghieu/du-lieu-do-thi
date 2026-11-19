@@ -17,6 +17,10 @@ try:
     import spaces
     os.environ.setdefault("P3_DEVICE", "cpu")
     gpu = spaces.GPU(duration=60)
+    # ZeroGPU giả lập CUDA: optimizer.step() trên CPU vẫn gọi kiểm tra accelerator và làm khởi tạo CUDA thật
+    # (RuntimeError "Low-level CUDA init"). Bình thường GNN lấy từ cache nên không huấn luyện; đây là dự phòng.
+    import torch
+    torch.optim.Optimizer._accelerator_graph_capture_health_check = lambda self: None
 except ImportError:          # chạy trên máy / Colab: không cần ZeroGPU
     gpu = lambda f: f
 
