@@ -89,7 +89,7 @@ Phần A = `du-lieu-do-thi` (Flickr8k + Action Genome); phần B = pipeline ản
 | File requirements/environment + hướng dẫn chạy lại | Đạt (vừa thêm) | `requirements.txt`, `README.md`; phiên bản thật trong `results/partC_level4b/env_versions.json` |
 | Tập chia cố định / mã tạo split, mô tả chống rò rỉ | Đạt | Xem mục 6 ở trên |
 | Báo cáo kỹ thuật 12–18 trang, slide, bảng phân công | **Thiếu** | `RESULTS.md` là nguồn số liệu; cần viết báo cáo và slide |
-| Notebook nhập truy vấn → top-k + giải thích | Đạt | `demo/Demo_Truy_Van.ipynb` (giao diện ipywidgets, đồ thị con giải thích, fidelity từng kết quả), `demo/app.py` (Gradio, đưa lên HF Spaces được); ngoài ra `demo_query()` (phần A), `search()` (phần B và MMKG) |
+| Notebook nhập truy vấn → top-k + giải thích | Đạt | `demo/app.py` (Gradio, 3 tab: MMKG ẩm thực VN, Action Genome, MSVD; Space https://huggingface.co/spaces/trinhphamtrunghieu/du-lieu-do-thi), `demo/Demo_Truy_Van.ipynb` (ipywidgets, MMKG). Engine AG/MSVD port từ notebook phần A/C, khớp kết quả tham chiếu của notebook (26 + 20 truy vấn, sai số điểm < 1e-6); ngoài ra `demo_query()` (phần A, C), `search()` (phần B, MMKG) |
 | Phân tích chi tiết 5 thành công + 5 thất bại | Một phần | Có dữ liệu (`case_analysis.json`); cần viết phân tích bằng lời |
 | Bộ ≥ 20 truy vấn kèm mô tả cách xây | Đạt | `eval_queries_20.json` có trường `construction` |
 | MMKG tự xây + data card (cấp 3) | Đạt | `mmkg/` và `mmkg/DATA_CARD.md` |
