@@ -1,0 +1,20 @@
+{
+  "id": "hieutrinh123/p3-export-ag",
+  "title": "p3-export-ag",
+  "code_file": "p3_export_ag.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "hieutrinh123/action-genome"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [
+    "hieutrinh123/du-lieu-do-thi"
+  ],
+  "model_sources": []
+}

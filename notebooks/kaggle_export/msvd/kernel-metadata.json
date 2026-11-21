@@ -1,0 +1,18 @@
+{
+  "id": "hieutrinh123/p3-export-msvd",
+  "title": "p3-export-msvd",
+  "code_file": "p3_export_msvd.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [],
+  "competition_sources": [],
+  "kernel_sources": [
+    "lamvo30ai/project03-level4b-v2-graphfix"
+  ],
+  "model_sources": []
+}

@@ -1,0 +1,392 @@
+[
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A person is putting clothes into a laundry machine. They pick up a vacuum cleaner and sneeze before walking aw",
+    "group": "direct",
+    "rank_clip": 100,
+    "rank_graph": 1,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ vacuum",
+        "pattern": "P0_contains",
+        "contribution": 0.4850344657897949
+      },
+      {
+        "text": "ảnh –thể_hiện→ ⟨put clothes before sneeze⟩",
+        "pattern": "P6_triple",
+        "contribution": 0.3878748416900635
+      },
+      {
+        "text": "ảnh –chứa→ put clothes",
+        "pattern": "P0_contains",
+        "contribution": 0.33527207374572754
+      },
+      {
+        "text": "ảnh –chứa→ sneeze",
+        "pattern": "P0_contains",
+        "contribution": 0.330141544342041
+      },
+      {
+        "text": "ảnh –chứa→ walk doorway –là_một→ walk",
+        "pattern": "P2_isa",
+        "contribution": 0.30037522315979004
+      }
+    ],
+    "detail": {
+      "n_paths": 20,
+      "score_full": 4.194454193115234,
+      "score_without_explanation": 1.6515719890594482,
+      "score_only_explanation": 3.7984588146209717,
+      "score_without_random": 3.8166308879852293,
+      "sparsity": 0.75,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A person was cooking on a stove. The person then walked over to a window and threw multiple towels at it.",
+    "group": "direct",
+    "rank_clip": 100,
+    "rank_graph": 2,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ window",
+        "pattern": "P0_contains",
+        "contribution": 0.852820873260498
+      },
+      {
+        "text": "ảnh –chứa→ towel",
+        "pattern": "P0_contains",
+        "contribution": 0.5929710865020752
+      },
+      {
+        "text": "ảnh –chứa→ cook food –là_một→ cook",
+        "pattern": "P2_isa",
+        "contribution": 0.3081088066101074
+      },
+      {
+        "text": "ảnh –chứa→ throw towel –là_một→ throw",
+        "pattern": "P2_isa",
+        "contribution": 0.18932890892028809
+      },
+      {
+        "text": "ảnh –chứa→ food –afford→ cook food –là_một→ cook",
+        "pattern": "P4_scene_isa",
+        "contribution": 0.005876302719116211
+      }
+    ],
+    "detail": {
+      "n_paths": 16,
+      "score_full": 3.2947092056274414,
+      "score_without_explanation": 0.04615280404686928,
+      "score_only_explanation": 3.250735282897949,
+      "score_without_random": 2.493884688615799,
+      "sparsity": 0.6875,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A person steps up onto a chair and then steps down.  The person picks up a laptop from the counter and steps b",
+    "group": "direct",
+    "rank_clip": 100,
+    "rank_graph": 2,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ laptop",
+        "pattern": "P0_contains",
+        "contribution": 0.33447265625
+      },
+      {
+        "text": "ảnh –thể_hiện→ ⟨sit before stand⟩",
+        "pattern": "P6_triple",
+        "contribution": 0.2906773090362549
+      },
+      {
+        "text": "ảnh –chứa→ sit",
+        "pattern": "P0_contains",
+        "contribution": 0.2783982753753662
+      },
+      {
+        "text": "ảnh –chứa→ kitchen",
+        "pattern": "P0_contains",
+        "contribution": 0.24204587936401367
+      },
+      {
+        "text": "ảnh –chứa→ chair",
+        "pattern": "P0_contains",
+        "contribution": 0.23519301414489746
+      }
+    ],
+    "detail": {
+      "n_paths": 6,
+      "score_full": 3.4363696575164795,
+      "score_without_explanation": 1.3347543478012085,
+      "score_only_explanation": 3.206307888031006,
+      "score_without_random": 1.1791496455669404,
+      "sparsity": 0.16666666666666663,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "a person walks over to a closet and grabs a coat then puts it on looking in the mirror",
+    "group": "direct",
+    "rank_clip": 100,
+    "rank_graph": 2,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ look mirror",
+        "pattern": "P0_contains",
+        "contribution": 0.5066478252410889
+      },
+      {
+        "text": "ảnh –chứa→ mirror",
+        "pattern": "P0_contains",
+        "contribution": 0.504011869430542
+      },
+      {
+        "text": "ảnh –chứa→ closet",
+        "pattern": "P0_contains",
+        "contribution": 0.3684864044189453
+      },
+      {
+        "text": "ảnh –chứa→ walk doorway –là_một→ walk",
+        "pattern": "P2_isa",
+        "contribution": 0.2849717140197754
+      },
+      {
+        "text": "ảnh –chứa→ put clothes –là_một→ put",
+        "pattern": "P2_isa",
+        "contribution": 0.1084754467010498
+      }
+    ],
+    "detail": {
+      "n_paths": 52,
+      "score_full": 3.4567081928253174,
+      "score_without_explanation": 0.114812932908535,
+      "score_only_explanation": 3.3807499408721924,
+      "score_without_random": 3.2262967586517335,
+      "sparsity": 0.9038461538461539,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "She opens a bedroom door and falls to the ground. She takes a bottle of something out and smells it.",
+    "group": "direct",
+    "rank_clip": 100,
+    "rank_graph": 3,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ take cup",
+        "pattern": "P0_contains",
+        "contribution": 0.4592421054840088
+      },
+      {
+        "text": "ảnh –chứa→ door",
+        "pattern": "P0_contains",
+        "contribution": 0.3245048522949219
+      },
+      {
+        "text": "ảnh –chứa→ bedroom",
+        "pattern": "P0_contains",
+        "contribution": 0.3009207248687744
+      },
+      {
+        "text": "ảnh –chứa→ take cup –là_một→ take",
+        "pattern": "P2_isa",
+        "contribution": 0.26940083503723145
+      },
+      {
+        "text": "ảnh –chứa→ cup",
+        "pattern": "P0_contains",
+        "contribution": 0.24817657470703125
+      }
+    ],
+    "detail": {
+      "n_paths": 35,
+      "score_full": 3.254603147506714,
+      "score_without_explanation": 0.07434370368719101,
+      "score_only_explanation": 3.1802592277526855,
+      "score_without_random": 3.00758957862854,
+      "sparsity": 0.8571428571428572,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "Person standing at the top of the stair walks down the steps and lay on the steps",
+    "group": "indirect",
+    "rank_clip": 37,
+    "rank_graph": 84,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ stand floor –là_một→ stand",
+        "pattern": "P2_isa",
+        "contribution": 0.45463475584983826
+      },
+      {
+        "text": "ảnh –chứa→ sit –liên_quan→ stand",
+        "pattern": "P3_related",
+        "contribution": 0.04916942119598389
+      },
+      {
+        "text": "ảnh –chứa→ lie floor –liên_quan→ stand",
+        "pattern": "P3_related",
+        "contribution": 0.03843867778778076
+      },
+      {
+        "text": "ảnh –chứa→ sit floor –liên_quan→ stand",
+        "pattern": "P3_related",
+        "contribution": 0.038337767124176025
+      },
+      {
+        "text": "ảnh –chứa→ sit floor –liên_quan→ stair",
+        "pattern": "P3_related",
+        "contribution": 0.019563138484954834
+      }
+    ],
+    "detail": {
+      "n_paths": 11,
+      "score_full": 0.7316393256187439,
+      "score_without_explanation": 0.05126560479402542,
+      "score_only_explanation": 0.6803737878799438,
+      "score_without_random": 0.4052248030900955,
+      "sparsity": 0.5454545454545454,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A person walks around a room before tossing a blanket at a wall. The person proceeds to walk away and a dog co",
+    "group": "indirect",
+    "rank_clip": 18,
+    "rank_graph": 65,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ run –liên_quan→ walk doorway –là_một→ walk",
+        "pattern": "P5_related_isa",
+        "contribution": 0.007395059801638126
+      }
+    ],
+    "detail": {
+      "n_paths": 2,
+      "score_full": 0.01864638924598694,
+      "score_without_explanation": 0.011251329444348812,
+      "score_only_explanation": 0.011271674185991287,
+      "score_without_random": 0.011267605237662792,
+      "sparsity": 0.5,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A person laying on a bed reaches over the end towards a box sitting on the floor.",
+    "group": "direct",
+    "rank_clip": 23,
+    "rank_graph": 65,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ bed",
+        "pattern": "P0_contains",
+        "contribution": 1.7257201001048088
+      },
+      {
+        "text": "ảnh –chứa→ bed –afford→ sit bed –là_một→ sit",
+        "pattern": "P4_scene_isa",
+        "contribution": 0.01645803451538086
+      },
+      {
+        "text": "ảnh –chứa→ touch bed –liên_quan→ sit bed –là_một→ sit",
+        "pattern": "P5_related_isa",
+        "contribution": 0.005231618881225586
+      },
+      {
+        "text": "ảnh –chứa→ bed –liên_quan→ sit bed –là_một→ sit",
+        "pattern": "P5_related_isa",
+        "contribution": 0.0046234130859375
+      },
+      {
+        "text": "ảnh –chứa→ awaken bed –liên_quan→ sit bed –là_một→ sit",
+        "pattern": "P5_related_isa",
+        "contribution": 0.004250168800354004
+      }
+    ],
+    "detail": {
+      "n_paths": 10,
+      "score_full": 1.7895652055740356,
+      "score_without_explanation": 0.02838147059082985,
+      "score_only_explanation": 1.781581163406372,
+      "score_without_random": 0.2137918032705784,
+      "sparsity": 0.5,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A young girl is neatly folding a red coat while another lady watches her perform this in amusement",
+    "group": "indirect",
+    "rank_clip": 5,
+    "rank_graph": 37,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ look clothes –là_một→ look",
+        "pattern": "P2_isa",
+        "contribution": 0.016104653710499406
+      },
+      {
+        "text": "ảnh –chứa→ tidy clothes –liên_quan→ look clothes –là_một→ look",
+        "pattern": "P5_related_isa",
+        "contribution": 0.0006281137466430664
+      },
+      {
+        "text": "ảnh –chứa→ take clothes –liên_quan→ look clothes –là_một→ look",
+        "pattern": "P5_related_isa",
+        "contribution": 0.0006258022040128708
+      },
+      {
+        "text": "ảnh –chứa→ hold clothes –liên_quan→ look clothes –là_một→ look",
+        "pattern": "P5_related_isa",
+        "contribution": 0.0005827434360980988
+      },
+      {
+        "text": "ảnh –chứa→ clothes –liên_quan→ look clothes –là_một→ look",
+        "pattern": "P5_related_isa",
+        "contribution": 0.0005327146500349045
+      }
+    ],
+    "detail": {
+      "n_paths": 9,
+      "score_full": 0.019271306693553925,
+      "score_without_explanation": 0.0006941069150343537,
+      "score_only_explanation": 0.01860225759446621,
+      "score_without_random": 0.010942470200825482,
+      "sparsity": 0.4444444444444444,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A person walks up some stairs and drops something down the stairs. The person then peers down at the camera an",
+    "group": "direct",
+    "rank_clip": 2,
+    "rank_graph": 30,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ stair",
+        "pattern": "P0_contains",
+        "contribution": 1.823762457817793
+      }
+    ],
+    "detail": {
+      "n_paths": 2,
+      "score_full": 1.8350341320037842,
+      "score_without_explanation": 0.011271674185991287,
+      "score_only_explanation": 1.8237624168395996,
+      "score_without_random": 1.461264268308878,
+      "sparsity": 0.5,
+      "validity": 1.0
+    }
+  }
+]

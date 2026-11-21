@@ -1,0 +1,10 @@
+{
+  "n_queries": 20,
+  "mean_paths": 10.45,
+  "fidelity_minus": 2.6899038530886172,
+  "fidelity_minus_random_control": 1.1209494772180917,
+  "fidelity_plus_gap": 0.33964579105377196,
+  "sparsity": 0.5003427128427128,
+  "validity": 1.0,
+  "necessity_ratio": 2.3996655583124644
+}

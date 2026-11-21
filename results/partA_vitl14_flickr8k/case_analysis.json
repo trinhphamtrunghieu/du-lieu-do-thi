@@ -1,0 +1,392 @@
+[
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A football player in blue and one in red play in a game .",
+    "group": "direct",
+    "rank_clip": 30,
+    "rank_graph": 9,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ football player",
+        "pattern": "P0_contains",
+        "contribution": 0.30638790130615234
+      },
+      {
+        "text": "ảnh –chứa→ football",
+        "pattern": "P0_contains",
+        "contribution": 0.26590919494628906
+      },
+      {
+        "text": "ảnh –chứa→ game",
+        "pattern": "P0_contains",
+        "contribution": 0.22241878509521484
+      },
+      {
+        "text": "ảnh –chứa→ player",
+        "pattern": "P0_contains",
+        "contribution": 0.19965839385986328
+      },
+      {
+        "text": "ảnh –chứa→ play",
+        "pattern": "P0_contains",
+        "contribution": 0.13752365112304688
+      }
+    ],
+    "detail": {
+      "n_paths": 9,
+      "score_full": 4.315038681030273,
+      "score_without_explanation": 2.280153751373291,
+      "score_only_explanation": 3.8700764179229736,
+      "score_without_random": 3.1533689975738524,
+      "sparsity": 0.4444444444444444,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A lady looks to her right and holds a mini camera .",
+    "group": "direct",
+    "rank_clip": 19,
+    "rank_graph": 8,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ lady",
+        "pattern": "P0_contains",
+        "contribution": 0.8866944313049316
+      },
+      {
+        "text": "ảnh –chứa→ camera",
+        "pattern": "P0_contains",
+        "contribution": 0.6271038055419922
+      },
+      {
+        "text": "ảnh –chứa→ woman holding –liên_quan→ hold",
+        "pattern": "P3_related",
+        "contribution": 0.14827537536621094
+      }
+    ],
+    "detail": {
+      "n_paths": 4,
+      "score_full": 2.9885950088500977,
+      "score_without_explanation": 0.15474386513233185,
+      "score_only_explanation": 2.9060800075531006,
+      "score_without_random": 0.667713250219822,
+      "sparsity": 0.25,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "Children play with large hoops .",
+    "group": "direct",
+    "rank_clip": 21,
+    "rank_graph": 10,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ play",
+        "pattern": "P0_contains",
+        "contribution": 0.7531297206878662
+      },
+      {
+        "text": "ảnh –chứa→ child",
+        "pattern": "P0_contains",
+        "contribution": 0.6109004020690918
+      },
+      {
+        "text": "ảnh –chứa→ play –liên_quan→ child play",
+        "pattern": "P3_related",
+        "contribution": 0.07355618476867676
+      },
+      {
+        "text": "ảnh –chứa→ young child –liên_quan→ child play",
+        "pattern": "P3_related",
+        "contribution": 0.052681684494018555
+      },
+      {
+        "text": "ảnh –chứa→ child –liên_quan→ child play",
+        "pattern": "P3_related",
+        "contribution": 0.050539493560791016
+      }
+    ],
+    "detail": {
+      "n_paths": 6,
+      "score_full": 2.4057226181030273,
+      "score_without_explanation": 0.0038296000566333532,
+      "score_only_explanation": 2.401893138885498,
+      "score_without_random": 0.8947632716735825,
+      "sparsity": 0.16666666666666663,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A guy on a snowboard grinding .",
+    "group": "direct",
+    "rank_clip": 14,
+    "rank_graph": 4,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ grinding",
+        "pattern": "P0_contains",
+        "contribution": 2.479933947324753
+      },
+      {
+        "text": "ảnh –chứa→ snowboarder –liên_quan→ snowboard",
+        "pattern": "P3_related",
+        "contribution": 0.2751743793487549
+      },
+      {
+        "text": "ảnh –chứa→ pant –liên_quan→ snowboard",
+        "pattern": "P3_related",
+        "contribution": 0.03461170196533203
+      }
+    ],
+    "detail": {
+      "n_paths": 4,
+      "score_full": 2.8596572875976562,
+      "score_without_explanation": 0.004702756181359291,
+      "score_only_explanation": 2.854954481124878,
+      "score_without_random": 0.8860414057970047,
+      "sparsity": 0.25,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A black and white dog chases a pink Frisbee .",
+    "group": "direct",
+    "rank_clip": 12,
+    "rank_graph": 2,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ frisbee",
+        "pattern": "P0_contains",
+        "contribution": 0.34671735763549805
+      },
+      {
+        "text": "ảnh –chứa→ black white",
+        "pattern": "P0_contains",
+        "contribution": 0.2565784454345703
+      },
+      {
+        "text": "ảnh –chứa→ pink",
+        "pattern": "P0_contains",
+        "contribution": 0.2437129020690918
+      },
+      {
+        "text": "ảnh –chứa→ white dog",
+        "pattern": "P0_contains",
+        "contribution": 0.1890125274658203
+      },
+      {
+        "text": "ảnh –chứa→ black",
+        "pattern": "P0_contains",
+        "contribution": 0.11734580993652344
+      }
+    ],
+    "detail": {
+      "n_paths": 11,
+      "score_full": 4.344359874725342,
+      "score_without_explanation": 2.2411301136016846,
+      "score_only_explanation": 3.6748292446136475,
+      "score_without_random": 3.4862287759780886,
+      "sparsity": 0.5454545454545454,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A boy skateboarding",
+    "group": "indirect",
+    "rank_clip": 18,
+    "rank_graph": 41,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ skateboarder –liên_quan→ skateboarding",
+        "pattern": "P3_related",
+        "contribution": 0.11776071786880493
+      },
+      {
+        "text": "ảnh –chứa→ skateboard –liên_quan→ skateboarding",
+        "pattern": "P3_related",
+        "contribution": 0.10993996262550354
+      }
+    ],
+    "detail": {
+      "n_paths": 3,
+      "score_full": 0.4783002436161041,
+      "score_without_explanation": 0.17415110766887665,
+      "score_only_explanation": 0.4285210072994232,
+      "score_without_random": 0.25380204766988756,
+      "sparsity": 0.33333333333333337,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A helmeted boy flies through the air on a snowboard .",
+    "group": "indirect",
+    "rank_clip": 8,
+    "rank_graph": 27,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ snowboarder –liên_quan→ snowboard",
+        "pattern": "P3_related",
+        "contribution": 0.13734698295593262
+      },
+      {
+        "text": "ảnh –chứa→ above –liên_quan→ air",
+        "pattern": "P3_related",
+        "contribution": 0.046695560216903687
+      },
+      {
+        "text": "ảnh –chứa→ snowboarder –liên_quan→ through air",
+        "pattern": "P3_related",
+        "contribution": 0.042888909578323364
+      },
+      {
+        "text": "ảnh –chứa→ rail –liên_quan→ boy",
+        "pattern": "P3_related",
+        "contribution": 0.03084537386894226
+      },
+      {
+        "text": "ảnh –chứa→ night –liên_quan→ air",
+        "pattern": "P3_related",
+        "contribution": 0.01964670419692993
+      }
+    ],
+    "detail": {
+      "n_paths": 6,
+      "score_full": 0.5199764966964722,
+      "score_without_explanation": 0.004702756181359291,
+      "score_only_explanation": 0.5152737498283386,
+      "score_without_random": 0.17436945531517267,
+      "sparsity": 0.16666666666666663,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A female walking through grass .",
+    "group": "indirect",
+    "rank_clip": 9,
+    "rank_graph": 27,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ woman walk –liên_quan→ walking",
+        "pattern": "P3_related",
+        "contribution": 0.10710510611534119
+      },
+      {
+        "text": "ảnh –chứa→ girl walk –liên_quan→ walking",
+        "pattern": "P3_related",
+        "contribution": 0.09862217307090759
+      },
+      {
+        "text": "ảnh –chứa→ walk –liên_quan→ walking",
+        "pattern": "P3_related",
+        "contribution": 0.08049222826957703
+      },
+      {
+        "text": "ảnh –chứa→ girl –liên_quan→ little girl –là_một→ female",
+        "pattern": "P5_related_isa",
+        "contribution": 0.03735792636871338
+      }
+    ],
+    "detail": {
+      "n_paths": 5,
+      "score_full": 0.5711301565170288,
+      "score_without_explanation": 0.0015719159273430705,
+      "score_only_explanation": 0.5695582628250122,
+      "score_without_random": 0.11585775457788258,
+      "sparsity": 0.19999999999999996,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A cyclist is airborne over a jump in a public skate and bike park .",
+    "group": "indirect",
+    "rank_clip": 3,
+    "rank_graph": 16,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ biker –liên_quan→ bike",
+        "pattern": "P3_related",
+        "contribution": 0.06518203020095825
+      },
+      {
+        "text": "ảnh –chứa→ bicycle –liên_quan→ bike",
+        "pattern": "P3_related",
+        "contribution": 0.05868953466415405
+      },
+      {
+        "text": "ảnh –chứa→ trick air –liên_quan→ bike",
+        "pattern": "P3_related",
+        "contribution": 0.0398639440536499
+      },
+      {
+        "text": "ảnh –chứa→ person jumping –liên_quan→ over",
+        "pattern": "P3_related",
+        "contribution": 0.03479677438735962
+      },
+      {
+        "text": "ảnh –chứa→ jumping –liên_quan→ jump",
+        "pattern": "P3_related",
+        "contribution": 0.030324280261993408
+      }
+    ],
+    "detail": {
+      "n_paths": 12,
+      "score_full": 0.7802708745002747,
+      "score_without_explanation": 0.40481284260749817,
+      "score_only_explanation": 0.7013047933578491,
+      "score_without_random": 0.6257712185382843,
+      "sparsity": 0.5833333333333333,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A blonde haired man is doing a demonstration in front of a small crowd of people .",
+    "group": "direct",
+    "rank_clip": 16,
+    "rank_graph": 26,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ people",
+        "pattern": "P0_contains",
+        "contribution": 0.8024457693099976
+      },
+      {
+        "text": "ảnh –chứa→ man",
+        "pattern": "P0_contains",
+        "contribution": 0.47818779945373535
+      },
+      {
+        "text": "ảnh –chứa→ audience –liên_quan→ front",
+        "pattern": "P3_related",
+        "contribution": 0.1043100357055664
+      },
+      {
+        "text": "ảnh –chứa→ many people –liên_quan→ crowd",
+        "pattern": "P3_related",
+        "contribution": 0.07844829559326172
+      },
+      {
+        "text": "ảnh –chứa→ many –liên_quan→ crowd",
+        "pattern": "P3_related",
+        "contribution": 0.05383801460266113
+      }
+    ],
+    "detail": {
+      "n_paths": 6,
+      "score_full": 2.3132455348968506,
+      "score_without_explanation": 0.06772671639919281,
+      "score_only_explanation": 2.295179843902588,
+      "score_without_random": 0.31271865516901015,
+      "sparsity": 0.16666666666666663,
+      "validity": 1.0
+    }
+  }
+]

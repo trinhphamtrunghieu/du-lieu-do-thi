@@ -1,0 +1,19 @@
+{
+ "rules": {
+  "VAL (v3)": "sha1(id) theo v3, chỉ số lọc ≥ 83000; heldout KHÔNG dùng",
+  "DEV-G0": "sha1('p3-dir2:'+id) mod 1000 < 350, trong pool G0 (VAL trừ benchmark v3, cache v4, 99 ảnh Phase 5)",
+  "TN1 P-TUNE/P-CHECK": "sha1('p5-pilot:'+id) mod 2",
+  "TN2/2b TUNE/CHECK": "sha1(f'v6-{seed}:{image_key}') mod 2, seed ∈ {0,1,2}",
+  "lọc rò rỉ benchmark": "ảnh VG phải thuộc VAL; ảnh COCO phải không thuộc VG hoặc thuộc VG-VAL"
+ },
+ "md5": {
+  "VAL": "7fd4612d059eb7a7cd3bad7bf0f5e931",
+  "G0": "78c23bf3c338564adf36a9bf0020292d"
+ },
+ "counts": {
+  "tn1": 2404,
+  "gnn_train": 3529,
+  "tn2": 3984,
+  "tn2b": 292
+ }
+}

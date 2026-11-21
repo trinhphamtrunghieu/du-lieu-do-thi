@@ -1,0 +1,9 @@
+{
+  "n_queries": 50,
+  "rank_full": 2.44,
+  "rank_after_drop_explanation": 8.1,
+  "rank_after_drop_random": 4.658,
+  "rank_with_only_explanation": 2.58,
+  "frac_rank_worse_when_drop_expl": 0.7,
+  "frac_rank_worse_when_drop_rand": 0.62
+}

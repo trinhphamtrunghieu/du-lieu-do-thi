@@ -1,0 +1,1233 @@
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+0.00s - Debugger warning: It seems that frozen modules are being used, which may
+0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+0.00s - to python to disable frozen modules.
+0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+Kaggle environment: True
+torch 2.11.0+cu130 | device: cuda
+GPU: Tesla T4 | 15.6 GB
+Dùng lại cache CLIP từ input: clip_flickr8k_ViT-B-32_laion2b_s34b_b79k_8000.npz
+Dùng lại cache CLIP từ input: clip_flickr8k_ViT-L-14_laion2b_s32b_b82k_8000.npz
+Không đọc được HF_TOKEN từ Kaggle Secrets → tải ẩn danh: BackendError
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Flickr8k: 8000 ảnh | 6.1 danh từ/ảnh | 4.8 quan hệ/ảnh (rút từ caption)
+  • A black dog is running after a white dog in the snow . → ['body', 'dog', 'ground', 'snow', 'water'] [('body', 'of', 'water'), ('dog', 'chase across', 'ground'), ('dog', 'play in', 'snow')]
+  • A little baby plays croquet . → ['ball', 'boy', 'car', 'child', 'croquet', 'croquette', 'girl', 'hammer'] [('ball', 'beside', 'car'), ('boy', 'playing with', 'croquet'), ('car', 'with', 'ball')]
+  • A brown dog in the snow has something hot pink in its mouth . → ['dog', 'hat', 'mouth', 'shirt', 'snow'] [('dog', 'carrying in', 'mouth'), ('dog', 'holding', 'shirt'), ('dog', 'in holding', 'hat')]
+Split chính thức HF (sha1=005202c69674): train=6000 val=1000 test=1000
+Dùng lại cache CLIP: clip_flickr8k_ViT-L-14_laion2b_s32b_b82k_8000.npz
+Nhãn ảnh = oracle_grams (caption người viết 1–4) | 4 mô tả/ảnh | 37.0 node/ảnh | 4.5 bộ ba/ảnh | độ phủ từ/cụm từ của truy vấn test ở ảnh đúng: 42.6% | truy vấn test có bộ ba khớp ảnh đúng: 18.8%
+  • truy vấn : A basketball player performing a lay-up .
+      mô tả VLM: ['A boy in a blue basketball uniform , number 13 and a boy in a white basketball uniform , number 23 jump for the ball .', 'A man in a white uniform jumps while holding a basketball as another in blue blocks him .']
+      bộ ba    : ['basketball against man', 'basketball in block', 'boy in basketball', 'jersey jump ball']
+  • truy vấn : A man who has a gray beard and gray hair laughs while wearing a purple shirt .
+      mô tả VLM: ['A man with a bushy beard and pink shirt is smiling .', 'A man with disheveled hair and facial hair in a crowd of people is smiling .']
+      bộ ba    : ['beard pink shirt', 'hair in crowd', 'man with beard', 'man with hair']
+  • truy vấn : A big dog stands on his hand leg as tennis balls are thrown his direction .
+      mô tả VLM: ['A brown and white dog in front of a shed overwhelmed by the onslaught of tennis balls .', 'A brown and white dogs stands in front of a wooden building while tennis balls fly through the air .']
+      bộ ba    : ['dog in building', 'dog stand hind', 'leg amid shower']
+
+Dữ liệu: flickr8k | 8000 ảnh | đặc trưng CLIP (8000, 768)
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+WordNet(+fallback): 1024/6154 lớp đối tượng có khái niệm cha
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+Split chính thức HF (sha1=005202c69674): train=6000 val=1000 test=1000
+
+  ✓  Cạnh scene + đồng xuất hiện chỉ xây từ train
+  ✓  Điểm đường đi khớp giải thích liệt kê (300/300 cặp)
+  ✓  Split tái lập được từ seed
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+Nhóm truy vấn: {'direct': 7891, 'indirect': 93, 'other': 16}
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+Nhóm truy vấn: {'direct': 7891, 'indirect': 93, 'other': 16}
+→ CFG.learn_clip_w = False (chọn theo VAL MRR)
+Bộ quan hệ khó (Flickr8k): 246/764 truy vấn test có bộ ba đủ ≥3 âm | trung bình 13.5 âm/truy vấn
+
+==================================================================
+ABLATION = none
+==================================================================
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+Nhóm truy vấn: {'direct': 7891, 'indirect': 93, 'other': 16}
+Đồ thị: {'nodes': 35104, 'images': 8000, 'object_classes': 5353, 'concepts': 509, 'edges': 215467, 'contains': 200335, 'scene': 1503, 'related': 11699, 'isa': 1930, 'triple_nodes': 21242, 'triple_edges': 33459, 'paths': {'P0_contains': 200335, 'P1_scene': 218607, 'P2_isa': 100004, 'P3_related': 858610, 'P4_scene_isa': 376263, 'P5_related_isa': 252828, 'P6_triple': 33459}, 'ablation': 'none'}
+  cạnh dùng khi huấn luyện: 332882/430934 (đã bỏ 98052 cạnh chạm ảnh val/test)
+  epoch  0 | loss 17.1912 | w_path 1.000 0.147 0.145 0.203 0.092 0.086 0.222 | gate L0[scene,rel,isa] 0.19 0.18 0.19 | clip_w 1.00
+  epoch  3 | loss 12.1238 | w_path 1.000 0.081 0.090 0.217 0.059 0.052 0.114 | gate L0[scene,rel,isa] 0.16 0.22 0.16 | clip_w 1.00
+  epoch  6 | loss 9.5383 | w_path 1.000 0.059 0.070 0.227 0.047 0.040 0.089 | gate L0[scene,rel,isa] 0.17 0.25 0.15 | clip_w 1.00
+  epoch  9 | loss 7.2715 | w_path 1.000 0.046 0.067 0.231 0.047 0.039 0.078 | gate L0[scene,rel,isa] 0.15 0.28 0.13 | clip_w 1.00
+  epoch 12 | loss 5.2444 | w_path 1.000 0.036 0.055 0.227 0.046 0.035 0.070 | gate L0[scene,rel,isa] 0.16 0.27 0.11 | clip_w 1.00
+  epoch 15 | loss 3.8330 | w_path 1.000 0.031 0.051 0.230 0.045 0.032 0.064 | gate L0[scene,rel,isa] 0.15 0.28 0.11 | clip_w 1.00
+  epoch 18 | loss 3.0556 | w_path 1.000 0.025 0.048 0.231 0.044 0.030 0.063 | gate L0[scene,rel,isa] 0.16 0.27 0.09 | clip_w 1.00
+  epoch 19 | loss 2.7537 | w_path 1.000 0.023 0.045 0.220 0.041 0.028 0.063 | gate L0[scene,rel,isa] 0.16 0.28 0.10 | clip_w 1.00
+  Tốt nhất trên val: α=0.5, λ=0.25 (MRR=0.8427)
+    [quan hệ khó] none seed 0: MRR 0.8625 (CLIP 0.8778) | R@1 0.7846 | n=246
+    [match] lõi ridge: 6000 truy vấn train, TF-IDF 7193 chiều, 14s
+    [match] none seed 0: test MRR CLIP+Graph+Match 0.8415 (λr,γ,β=(1.0, 0.0, 0.1)) | CLIP+Match 0.8339 (λr,γ,β=(0.3, 1.0, 0.2)) | match-only val 0.5783 | w_tri=0.0 | 40s
+  seed 0: R@1=0.7530 MRR=0.8352 (α=0.5, λ=0.25) | adaptive MRR=0.8344 [CV val 0.8422 vs 0.8427; α(q) có/không khái niệm 0.50/nan]
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+    [quan hệ khó] none seed 1: MRR 0.8666 (CLIP 0.8778) | R@1 0.7846 | n=246
+    [match] none seed 1: test MRR CLIP+Graph+Match 0.8396 (λr,γ,β=(1.0, 1.0, 0.1)) | CLIP+Match 0.8339 (λr,γ,β=(0.3, 1.0, 0.2)) | match-only val 0.5783 | w_tri=0.0 | 25s
+  seed 1: R@1=0.7450 MRR=0.8283 (α=0.6, λ=0.25) | adaptive MRR=0.8256 [CV val 0.8331 vs 0.8367; α(q) có/không khái niệm 0.58/nan]
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+    [quan hệ khó] none seed 2: MRR 0.8507 (CLIP 0.8778) | R@1 0.7683 | n=246
+    [match] none seed 2: test MRR CLIP+Graph+Match 0.8368 (λr,γ,β=(0.3, 0.0, 0.1)) | CLIP+Match 0.8339 (λr,γ,β=(0.3, 1.0, 0.2)) | match-only val 0.5783 | w_tri=0.0 | 25s
+  seed 2: R@1=0.7520 MRR=0.8323 (α=0.5, λ=0.25) | adaptive MRR=0.8348 [CV val 0.8386 vs 0.8392; α(q) có/không khái niệm 0.50/nan]
+
+==================================================================
+ABLATION = no_class_edges
+==================================================================
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+Đồ thị: {'nodes': 35104, 'images': 8000, 'object_classes': 5353, 'concepts': 509, 'edges': 200335, 'contains': 200335, 'scene': 0, 'related': 0, 'isa': 0, 'triple_nodes': 21242, 'triple_edges': 33459, 'paths': {'P0_contains': 200335, 'P1_scene': 0, 'P2_isa': 0, 'P3_related': 0, 'P4_scene_isa': 0, 'P5_related_isa': 0, 'P6_triple': 33459}, 'ablation': 'no_class_edges'}
+  cạnh dùng khi huấn luyện: 302618/400670 (đã bỏ 98052 cạnh chạm ảnh val/test)
+  epoch  0 | loss 17.5146 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.217 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch  3 | loss 12.5272 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.102 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch  6 | loss 10.0835 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.078 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch  9 | loss 8.0341 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.067 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 12 | loss 5.9609 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.059 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 15 | loss 4.3227 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.052 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 18 | loss 3.1686 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.049 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 19 | loss 2.9972 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.048 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  Tốt nhất trên val: α=0.5, λ=0.25 (MRR=0.8384)
+    [quan hệ khó] no_class_edges seed 0: MRR 0.8608 (CLIP 0.8778) | R@1 0.7764 | n=246
+    [match] no_class_edges seed 0: test MRR CLIP+Graph+Match 0.8357 (λr,γ,β=(3.0, 0.0, 0.1)) | CLIP+Match 0.8339 (λr,γ,β=(0.3, 1.0, 0.2)) | match-only val 0.5783 | w_tri=0.0 | 13s
+  seed 0: R@1=0.7500 MRR=0.8327 (α=0.5, λ=0.25) | adaptive MRR=0.8297 [CV val 0.8352 vs 0.8384; α(q) có/không khái niệm 0.50/nan]
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+    [quan hệ khó] no_class_edges seed 1: MRR 0.8523 (CLIP 0.8778) | R@1 0.7602 | n=246
+    [match] no_class_edges seed 1: test MRR CLIP+Graph+Match 0.8318 (λr,γ,β=(1.0, 0.0, 0.1)) | CLIP+Match 0.8339 (λr,γ,β=(0.3, 1.0, 0.2)) | match-only val 0.5783 | w_tri=0.0 | 13s
+  seed 1: R@1=0.7420 MRR=0.8253 (α=0.5, λ=0.25) | adaptive MRR=0.8237 [CV val 0.8332 vs 0.8345; α(q) có/không khái niệm 0.50/nan]
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+    [quan hệ khó] no_class_edges seed 2: MRR 0.8765 (CLIP 0.8778) | R@1 0.7927 | n=246
+    [match] no_class_edges seed 2: test MRR CLIP+Graph+Match 0.8339 (λr,γ,β=(3.0, 0.0, 0.1)) | CLIP+Match 0.8339 (λr,γ,β=(0.3, 1.0, 0.2)) | match-only val 0.5783 | w_tri=0.0 | 13s
+  seed 2: R@1=0.7420 MRR=0.8265 (α=0.6, λ=0.25) | adaptive MRR=0.8275 [CV val 0.8345 vs 0.8360; α(q) có/không khái niệm 0.59/nan]
+
+==================================================================
+ABLATION = no_relations
+==================================================================
+Đồ thị: {'nodes': 13353, 'images': 8000, 'object_classes': 5353, 'concepts': 0, 'edges': 200335, 'contains': 200335, 'scene': 0, 'related': 0, 'isa': 0, 'triple_nodes': 0, 'triple_edges': 0, 'paths': {'P0_contains': 200335, 'P1_scene': 0, 'P2_isa': 0, 'P3_related': 0, 'P4_scene_isa': 0, 'P5_related_isa': 0, 'P6_triple': 0}, 'ablation': 'no_relations'}
+  cạnh dùng khi huấn luyện: 302618/400670 (đã bỏ 98052 cạnh chạm ảnh val/test)
+  epoch  0 | loss 17.2374 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch  3 | loss 12.4279 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch  6 | loss 9.4678 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch  9 | loss 6.8969 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 12 | loss 4.9072 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 15 | loss 3.5807 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 18 | loss 2.8538 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 19 | loss 2.5260 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  Tốt nhất trên val: α=0.6, λ=0.25 (MRR=0.8388)
+    [quan hệ khó] no_relations seed 0: MRR 0.8728 (CLIP 0.8778) | R@1 0.7886 | n=246
+    [match] no_relations seed 0: test MRR CLIP+Graph+Match 0.8336 (λr,γ,β=(1.0, 1.0, 0.1)) | CLIP+Match 0.8339 (λr,γ,β=(0.3, 1.0, 0.2)) | match-only val 0.5783 | w_tri=0.0 | 12s
+  seed 0: R@1=0.7400 MRR=0.8260 (α=0.6, λ=0.25) | adaptive MRR=0.8276 [CV val 0.8354 vs 0.8388; α(q) có/không khái niệm 0.59/nan]
+    [quan hệ khó] no_relations seed 1: MRR 0.8538 (CLIP 0.8778) | R@1 0.7602 | n=246
+    [match] no_relations seed 1: test MRR CLIP+Graph+Match 0.8334 (λr,γ,β=(0.3, 0.0, 0.1)) | CLIP+Match 0.8339 (λr,γ,β=(0.3, 1.0, 0.2)) | match-only val 0.5783 | w_tri=0.0 | 12s
+  seed 1: R@1=0.7500 MRR=0.8317 (α=0.5, λ=0.25) | adaptive MRR=0.8298 [CV val 0.8301 vs 0.8329; α(q) có/không khái niệm 0.50/nan]
+    [quan hệ khó] no_relations seed 2: MRR 0.8570 (CLIP 0.8778) | R@1 0.7642 | n=246
+    [match] no_relations seed 2: test MRR CLIP+Graph+Match 0.8351 (λr,γ,β=(1.0, 0.0, 0.1)) | CLIP+Match 0.8339 (λr,γ,β=(0.3, 1.0, 0.2)) | match-only val 0.5783 | w_tri=0.0 | 12s
+  seed 2: R@1=0.7500 MRR=0.8312 (α=0.5, λ=0.25) | adaptive MRR=0.8326 [CV val 0.8362 vs 0.8379; α(q) có/không khái niệm 0.50/nan]
+Nhãn tham chiếu: 'cap_objects' của 2000 ảnh VAL+TEST | top_m=5
+λ chọn trên val cho 'none': [0.25, 0.25, 0.25] (λ=1.0 ⇒ s_path KHÔNG tham gia điểm cuối)
+diff > 0 và ci_lo > 0 ⇒ 'none' (có bộ ba cấp ảnh) tốt hơn cấu hình so sánh một cách có ý nghĩa.
+→ Mô hình cuối (chọn trên VAL): đồ thị='none', kết hợp=global (VAL MRR 0.8395)
+  n_queries                            50
+  rank_full                            2.440
+  rank_after_drop_explanation          8.100
+  rank_after_drop_random               4.658
+  rank_with_only_explanation           2.580
+  frac_rank_worse_when_drop_expl       0.700
+  frac_rank_worse_when_drop_rand       0.620
+MRR trên VALIDATION theo (α, λ) — α=1.0 là CLIP thuần:
+lam      0.00    0.25    0.50    0.75
+alpha                                
+0.0    0.6032  0.5174  0.2707  0.1020
+0.2    0.7687  0.7800  0.6690  0.3788
+0.4    0.8250  0.8370  0.8134  0.7341
+0.5    0.8306  0.8427  0.8318  0.7914
+0.6    0.8371  0.8401  0.8335  0.8121
+0.7    0.8309  0.8317  0.8300  0.8221
+0.8    0.8221  0.8234  0.8200  0.8172
+0.9    0.8101  0.8084  0.8048  0.8054
+1.0    0.7973  0.7973  0.7973  0.7973
+
+[THÀNH CÔNG] nhóm=direct | hạng CLIP 30 → CLIP+Graph 9
+  truy vấn: A football player in blue and one in red play in a game .
+    • ảnh –chứa→ football player   [+0.3064]
+    • ảnh –chứa→ football   [+0.2659]
+    • ảnh –chứa→ game   [+0.2224]
+    • ảnh –chứa→ player   [+0.1997]
+    • ảnh –chứa→ play   [+0.1375]
+  fidelity−: +2.0349 | đối chứng ngẫu nhiên: +1.1617 | sparsity 0.44 | 9 đường đi
+
+[THÀNH CÔNG] nhóm=direct | hạng CLIP 19 → CLIP+Graph 8
+  truy vấn: A lady looks to her right and holds a mini camera .
+    • ảnh –chứa→ lady   [+0.8867]
+    • ảnh –chứa→ camera   [+0.6271]
+    • ảnh –chứa→ woman holding –liên_quan→ hold   [+0.1483]
+  fidelity−: +2.8339 | đối chứng ngẫu nhiên: +2.3209 | sparsity 0.25 | 4 đường đi
+
+[THÀNH CÔNG] nhóm=direct | hạng CLIP 21 → CLIP+Graph 10
+  truy vấn: Children play with large hoops .
+    • ảnh –chứa→ play   [+0.7531]
+    • ảnh –chứa→ child   [+0.6109]
+    • ảnh –chứa→ play –liên_quan→ child play   [+0.0736]
+    • ảnh –chứa→ young child –liên_quan→ child play   [+0.0527]
+    • ảnh –chứa→ child –liên_quan→ child play   [+0.0505]
+  fidelity−: +2.4019 | đối chứng ngẫu nhiên: +1.5110 | sparsity 0.17 | 6 đường đi
+
+[THÀNH CÔNG] nhóm=direct | hạng CLIP 14 → CLIP+Graph 4
+  truy vấn: A guy on a snowboard grinding .
+    • ảnh –chứa→ grinding   [+2.4799]
+    • ảnh –chứa→ snowboarder –liên_quan→ snowboard   [+0.2752]
+    • ảnh –chứa→ pant –liên_quan→ snowboard   [+0.0346]
+  fidelity−: +2.8550 | đối chứng ngẫu nhiên: +1.9736 | sparsity 0.25 | 4 đường đi
+
+[THÀNH CÔNG] nhóm=direct | hạng CLIP 12 → CLIP+Graph 2
+  truy vấn: A black and white dog chases a pink Frisbee .
+    • ảnh –chứa→ frisbee   [+0.3467]
+    • ảnh –chứa→ black white   [+0.2566]
+    • ảnh –chứa→ pink   [+0.2437]
+    • ảnh –chứa→ white dog   [+0.1890]
+    • ảnh –chứa→ black   [+0.1173]
+  fidelity−: +2.1032 | đối chứng ngẫu nhiên: +0.8581 | sparsity 0.55 | 11 đường đi
+
+[THẤT BẠI] nhóm=indirect | hạng CLIP 18 → CLIP+Graph 41
+  truy vấn: A boy skateboarding
+    • ảnh –chứa→ skateboarder –liên_quan→ skateboarding   [+0.1178]
+    • ảnh –chứa→ skateboard –liên_quan→ skateboarding   [+0.1099]
+  fidelity−: +0.3041 | đối chứng ngẫu nhiên: +0.2245 | sparsity 0.33 | 3 đường đi
+
+[THẤT BẠI] nhóm=indirect | hạng CLIP 8 → CLIP+Graph 27
+  truy vấn: A helmeted boy flies through the air on a snowboard .
+    • ảnh –chứa→ snowboarder –liên_quan→ snowboard   [+0.1373]
+    • ảnh –chứa→ above –liên_quan→ air   [+0.0467]
+    • ảnh –chứa→ snowboarder –liên_quan→ through air   [+0.0429]
+    • ảnh –chứa→ rail –liên_quan→ boy   [+0.0308]
+    • ảnh –chứa→ night –liên_quan→ air   [+0.0196]
+  fidelity−: +0.5153 | đối chứng ngẫu nhiên: +0.3456 | sparsity 0.17 | 6 đường đi
+
+[THẤT BẠI] nhóm=indirect | hạng CLIP 9 → CLIP+Graph 27
+  truy vấn: A female walking through grass .
+    • ảnh –chứa→ woman walk –liên_quan→ walking   [+0.1071]
+    • ảnh –chứa→ girl walk –liên_quan→ walking   [+0.0986]
+    • ảnh –chứa→ walk –liên_quan→ walking   [+0.0805]
+    • ảnh –chứa→ girl –liên_quan→ little girl –là_một→ female   [+0.0374]
+  fidelity−: +0.5696 | đối chứng ngẫu nhiên: +0.4553 | sparsity 0.20 | 5 đường đi
+
+[THẤT BẠI] nhóm=indirect | hạng CLIP 3 → CLIP+Graph 16
+  truy vấn: A cyclist is airborne over a jump in a public skate and bike park .
+    • ảnh –chứa→ biker –liên_quan→ bike   [+0.0652]
+    • ảnh –chứa→ bicycle –liên_quan→ bike   [+0.0587]
+    • ảnh –chứa→ trick air –liên_quan→ bike   [+0.0399]
+    • ảnh –chứa→ person jumping –liên_quan→ over   [+0.0348]
+    • ảnh –chứa→ jumping –liên_quan→ jump   [+0.0303]
+  fidelity−: +0.3755 | đối chứng ngẫu nhiên: +0.1545 | sparsity 0.58 | 12 đường đi
+
+[THẤT BẠI] nhóm=direct | hạng CLIP 16 → CLIP+Graph 26
+  truy vấn: A blonde haired man is doing a demonstration in front of a small crowd of people .
+    • ảnh –chứa→ people   [+0.8024]
+    • ảnh –chứa→ man   [+0.4782]
+    • ảnh –chứa→ audience –liên_quan→ front   [+0.1043]
+    • ảnh –chứa→ many people –liên_quan→ crowd   [+0.0784]
+    • ảnh –chứa→ many –liên_quan→ crowd   [+0.0538]
+  fidelity−: +2.2455 | đối chứng ngẫu nhiên: +2.0005 | sparsity 0.17 | 6 đường đi
+Tổng hợp xAI:
+  n_queries                          20
+  mean_paths                         10.4500
+  fidelity_minus                     2.6899
+  fidelity_minus_random_control      1.1209
+  fidelity_plus_gap                  0.3396
+  sparsity                           0.5003
+  validity                           1.0000
+  necessity_ratio                    2.3997
+
+necessity_ratio > 1 nghĩa là bỏ đường đi giải thích gây hại NHIỀU HƠN bỏ ngẫu nhiên
+cùng số lượng ⇒ giải thích thực sự là thứ mô hình dùng, không phải trang trí.
+Đã ghi 20 truy vấn đánh giá → /kaggle/working/results/eval_queries_20.json
+
+Truy vấn: 'a child playing football on the grass'
+Khái niệm nhận ra: ['child playing', 'playing football', 'child', 'playing', 'football', 'grass', 'child play football', 'football on grass']
+
+  #1  image_id=7924  score=2.0755
+      caption: Two boys in a field kicking a soccer ball .
+      đối tượng: ['ball', 'ball grass', 'ball green', 'boy', 'boy playing', 'child', 'child play', 'child playing']
+      GIẢI THÍCH (4 đường đi, hiển thị 3):
+        • ảnh –chứa→ child playing   [đóng góp +0.5672]
+        • ảnh –chứa→ grass   [đóng góp +0.3106]
+        • ảnh –chứa→ playing   [đóng góp +0.2543]
+
+  #2  image_id=7778  score=1.9341
+      caption: A boy in a green uniform is kicking a soccer ball in a game while two others stand behind 
+      đối tượng: ['ball', 'boy', 'boy get', 'boy play', 'child', 'child playing', 'field', 'field goal']
+      GIẢI THÍCH (8 đường đi, hiển thị 5):
+        • ảnh –chứa→ child playing   [đóng góp +0.7716]
+        • ảnh –chứa→ playing   [đóng góp +0.3314]
+        • ảnh –chứa→ child   [đóng góp +0.3256]
+        • ảnh –chứa→ field –liên_quan→ grass   [đóng góp +0.2130]
+        • ảnh –chứa→ field –of→ grass   [đóng góp +0.0050]
+
+  #3  image_id=7180  score=1.8313
+      caption: A boy soccer player running down the field .
+      đối tượng: ['another', 'another child', 'ball', 'ball field', 'ball while', 'behind', 'blue', 'blue watch']
+      GIẢI THÍCH (13 đường đi, hiển thị 5):
+        • ảnh –chứa→ child   [đóng góp +1.4169]
+        • ảnh –chứa→ ball while –liên_quan→ playing   [đóng góp +0.0645]
+        • ảnh –chứa→ field –liên_quan→ grass   [đóng góp +0.0588]
+        • ảnh –chứa→ ball field –liên_quan→ playing   [đóng góp +0.0580]
+        • ảnh –chứa→ kick soccer –liên_quan→ playing   [đóng góp +0.0558]
+
+Truy vấn: 'a person cooking food in a kitchen'
+Khái niệm nhận ra: ['person', 'cooking', 'food', 'kitchen']
+
+  #1  image_id=7026  score=3.0396
+      caption: A little girl is sitting on the counter dangling one foot in the sink whilst holding a dis
+      đối tượng: ['barefoot', 'barefoot girl', 'faucet', 'foot', 'foot into', 'girl', 'girl play', 'girl red']
+      GIẢI THÍCH (36 đường đi, hiển thị 5):
+        • ảnh –chứa→ kitchen   [đóng góp +2.5302]
+        • ảnh –chứa→ girl –là_một→ person   [đóng góp +0.0203]
+        • ảnh –chứa→ little girl –là_một→ person   [đóng góp +0.0203]
+        • ảnh –chứa→ young girl –là_một→ person   [đóng góp +0.0203]
+        • ảnh –chứa→ sunglass –standing beside→ man –là_một→ person   [đóng góp +0.0061]
+
+  #2  image_id=7268  score=2.3507
+      caption: A boy eating at a table .
+      đối tượng: ['all', 'all around', 'around', 'big', 'big mess', 'blue', 'blue white', 'bowl']
+      GIẢI THÍCH (19 đường đi, hiển thị 5):
+        • ảnh –chứa→ food   [đóng góp +2.3609]
+        • ảnh –chứa→ boy –là_một→ person   [đóng góp +0.0312]
+        • ảnh –chứa→ white –là_một→ person   [đóng góp +0.0312]
+        • ảnh –chứa→ blue white –liên_quan→ white –là_một→ person   [đóng góp +0.0046]
+        • ảnh –chứa→ boy sits –liên_quan→ boy –là_một→ person   [đóng góp +0.0046]
+
+  #3  image_id=7806  score=2.2599
+      caption: A ban in a grey swaetshirt picks out greens in a supermarket .
+      đối tượng: ['examines', 'examines produce', 'food', 'food product', 'fresh', 'fresh lettuce', 'lettuce', 'lettuce market']
+      GIẢI THÍCH (9 đường đi, hiển thị 5):
+        • ảnh –chứa→ food   [đóng góp +2.3609]
+        • ảnh –chứa→ man –là_một→ person   [đóng góp +0.0696]
+        • ảnh –chứa→ man looking –liên_quan→ man –là_một→ person   [đóng góp +0.0104]
+        • ảnh –chứa→ man taking –liên_quan→ man –là_một→ person   [đóng góp +0.0104]
+        • ảnh –chứa→ older man –liên_quan→ man –là_một→ person   [đóng góp +0.0104]
+
+==================================================================
+ABLATION = none
+==================================================================
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+Nhóm truy vấn: {'direct': 2859, 'indirect': 3650, 'other': 1491}
+Đồ thị: {'nodes': 35104, 'images': 8000, 'object_classes': 5353, 'concepts': 509, 'edges': 215467, 'contains': 200335, 'scene': 1503, 'related': 11699, 'isa': 1930, 'triple_nodes': 21242, 'triple_edges': 33459, 'paths': {'P0_contains': 200335, 'P1_scene': 218607, 'P2_isa': 100004, 'P3_related': 858610, 'P4_scene_isa': 376263, 'P5_related_isa': 252828, 'P6_triple': 33459}, 'ablation': 'none'}
+  cạnh dùng khi huấn luyện: 332882/430934 (đã bỏ 98052 cạnh chạm ảnh val/test)
+  epoch  0 | loss 34.7920 | w_path 1.000 0.313 0.290 0.313 0.189 0.207 0.224 | gate L0[scene,rel,isa] 0.19 0.20 0.22 | clip_w 1.00
+  epoch  3 | loss 19.3696 | w_path 1.000 0.862 0.271 0.836 0.324 0.320 0.161 | gate L0[scene,rel,isa] 0.19 0.16 0.22 | clip_w 1.00
+  epoch  6 | loss 13.7976 | w_path 1.000 1.253 0.244 1.023 0.362 0.348 0.137 | gate L0[scene,rel,isa] 0.20 0.16 0.21 | clip_w 1.00
+  epoch  9 | loss 10.0442 | w_path 1.000 1.394 0.236 1.072 0.437 0.375 0.134 | gate L0[scene,rel,isa] 0.20 0.19 0.21 | clip_w 1.00
+  epoch 12 | loss 7.3411 | w_path 1.000 1.502 0.219 1.092 0.518 0.369 0.132 | gate L0[scene,rel,isa] 0.19 0.20 0.18 | clip_w 1.00
+  epoch 15 | loss 5.6940 | w_path 1.000 1.496 0.201 1.123 0.572 0.357 0.136 | gate L0[scene,rel,isa] 0.20 0.23 0.18 | clip_w 1.00
+  epoch 18 | loss 4.4419 | w_path 1.000 1.469 0.187 1.093 0.603 0.358 0.130 | gate L0[scene,rel,isa] 0.21 0.23 0.18 | clip_w 1.00
+  epoch 19 | loss 4.1396 | w_path 1.000 1.493 0.173 1.140 0.625 0.350 0.127 | gate L0[scene,rel,isa] 0.22 0.23 0.17 | clip_w 1.00
+  Tốt nhất trên val: α=0.7, λ=0.75 (MRR=0.8013)
+    [quan hệ khó] shuffled_nodes seed 0: MRR 0.8736 (CLIP 0.8778) | R@1 0.7927 | n=246
+    [match] shuffled_nodes seed 0: test MRR CLIP+Graph+Match 0.7960 (λr,γ,β=(0.3, 0.0, 0.0)) | CLIP+Match 0.7996 (λr,γ,β=(3.0, 0.25, 0.0)) | match-only val 0.0097 | w_tri=0.0 | 23s
+  seed 0: R@1=0.7060 MRR=0.7960 (α=0.7, λ=0.75) | adaptive MRR=0.7977 [CV val 0.7896 vs 0.8013; α(q) có/không khái niệm 0.70/nan]
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+    [quan hệ khó] shuffled_nodes seed 1: MRR 0.8733 (CLIP 0.8778) | R@1 0.7967 | n=246
+    [match] shuffled_nodes seed 1: test MRR CLIP+Graph+Match 0.7970 (λr,γ,β=(0.3, 0.0, 0.1)) | CLIP+Match 0.7996 (λr,γ,β=(3.0, 0.25, 0.0)) | match-only val 0.0097 | w_tri=0.0 | 25s
+  seed 1: R@1=0.7090 MRR=0.8010 (α=0.9, λ=0.75) | adaptive MRR=0.7935 [CV val 0.7936 vs 0.7976; α(q) có/không khái niệm 0.84/nan]
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+    [quan hệ khó] shuffled_nodes seed 2: MRR 0.8738 (CLIP 0.8778) | R@1 0.8008 | n=246
+    [match] shuffled_nodes seed 2: test MRR CLIP+Graph+Match 0.7968 (λr,γ,β=(3.0, 0.25, 0.0)) | CLIP+Match 0.7996 (λr,γ,β=(3.0, 0.25, 0.0)) | match-only val 0.0097 | w_tri=0.0 | 23s
+  seed 2: R@1=0.7060 MRR=0.7985 (α=0.8, λ=0.75) | adaptive MRR=0.7939 [CV val 0.7924 vs 0.8001; α(q) có/không khái niệm 0.77/nan]
+Bộ quan hệ khó (Flickr8k), kèm đối chứng shuffled_nodes:
+
+==================================================================
+ABLATION = none
+==================================================================
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+Nhóm truy vấn: {'direct': 7891, 'indirect': 93, 'other': 16}
+Đồ thị: {'nodes': 35104, 'images': 8000, 'object_classes': 5353, 'concepts': 509, 'edges': 215467, 'contains': 200335, 'scene': 1503, 'related': 11699, 'isa': 1930, 'triple_nodes': 21242, 'triple_edges': 33459, 'paths': {'P0_contains': 200335, 'P1_scene': 218607, 'P2_isa': 100004, 'P3_related': 858610, 'P4_scene_isa': 376263, 'P5_related_isa': 252828, 'P6_triple': 33459}, 'ablation': 'none'}
+  cạnh dùng khi huấn luyện: 332882/430934 (đã bỏ 98052 cạnh chạm ảnh val/test)
+  epoch  0 | loss 19.9579 | w_path 1.000 0.144 0.137 0.203 0.082 0.081 0.237 | gate L0[scene,rel,isa] 0.20 0.20 0.20 | clip_w 1.00
+  epoch  3 | loss 14.2839 | w_path 1.000 0.081 0.086 0.215 0.050 0.050 0.140 | gate L0[scene,rel,isa] 0.16 0.28 0.16 | clip_w 1.00
+  epoch  6 | loss 11.5075 | w_path 1.000 0.062 0.067 0.221 0.040 0.040 0.119 | gate L0[scene,rel,isa] 0.15 0.29 0.15 | clip_w 1.00
+  epoch  9 | loss 8.1601 | w_path 1.000 0.053 0.060 0.222 0.035 0.037 0.106 | gate L0[scene,rel,isa] 0.18 0.28 0.13 | clip_w 1.00
+  epoch 12 | loss 5.5700 | w_path 1.000 0.045 0.052 0.227 0.037 0.035 0.101 | gate L0[scene,rel,isa] 0.17 0.28 0.12 | clip_w 1.00
+  epoch 15 | loss 4.0701 | w_path 1.000 0.039 0.051 0.220 0.036 0.034 0.097 | gate L0[scene,rel,isa] 0.15 0.28 0.12 | clip_w 1.00
+  epoch 18 | loss 3.0902 | w_path 1.000 0.033 0.049 0.224 0.038 0.034 0.091 | gate L0[scene,rel,isa] 0.14 0.29 0.11 | clip_w 1.00
+  epoch 19 | loss 2.7747 | w_path 1.000 0.031 0.045 0.211 0.036 0.030 0.092 | gate L0[scene,rel,isa] 0.14 0.28 0.10 | clip_w 1.00
+  Tốt nhất trên val: α=0.4, λ=0.25 (MRR=0.8069)
+    [quan hệ khó] none seed 0: MRR 0.8202 (CLIP 0.8195) | R@1 0.7195 | n=246
+    [match] lõi ridge: 6000 truy vấn train, TF-IDF 7193 chiều, 14s
+    [match] none seed 0: test MRR CLIP+Graph+Match 0.7967 (λr,γ,β=(0.3, 0.0, 0.1)) | CLIP+Match 0.7777 (λr,γ,β=(1.0, 0.0, 0.4)) | match-only val 0.5710 | w_tri=0.0 | 38s
+  seed 0: R@1=0.6920 MRR=0.7880 (α=0.4, λ=0.25) | adaptive MRR=0.7859 [CV val 0.8073 vs 0.8069; α(q) có/không khái niệm 0.40/nan]
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+    [quan hệ khó] none seed 1: MRR 0.8393 (CLIP 0.8195) | R@1 0.7439 | n=246
+    [match] none seed 1: test MRR CLIP+Graph+Match 0.8005 (λr,γ,β=(1.0, 0.25, 0.2)) | CLIP+Match 0.7777 (λr,γ,β=(1.0, 0.0, 0.4)) | match-only val 0.5710 | w_tri=0.0 | 24s
+  seed 1: R@1=0.6870 MRR=0.7865 (α=0.5, λ=0.25) | adaptive MRR=0.7847 [CV val 0.7941 vs 0.7986; α(q) có/không khái niệm 0.50/nan]
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+    [quan hệ khó] none seed 2: MRR 0.8224 (CLIP 0.8195) | R@1 0.7195 | n=246
+    [match] none seed 2: test MRR CLIP+Graph+Match 0.7975 (λr,γ,β=(3.0, 0.0, 0.2)) | CLIP+Match 0.7777 (λr,γ,β=(1.0, 0.0, 0.4)) | match-only val 0.5710 | w_tri=0.0 | 24s
+  seed 2: R@1=0.6970 MRR=0.7919 (α=0.4, λ=0.25) | adaptive MRR=0.7866 [CV val 0.8020 vs 0.8018; α(q) có/không khái niệm 0.40/nan]
+
+==================================================================
+ABLATION = no_class_edges
+==================================================================
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+Đồ thị: {'nodes': 35104, 'images': 8000, 'object_classes': 5353, 'concepts': 509, 'edges': 200335, 'contains': 200335, 'scene': 0, 'related': 0, 'isa': 0, 'triple_nodes': 21242, 'triple_edges': 33459, 'paths': {'P0_contains': 200335, 'P1_scene': 0, 'P2_isa': 0, 'P3_related': 0, 'P4_scene_isa': 0, 'P5_related_isa': 0, 'P6_triple': 33459}, 'ablation': 'no_class_edges'}
+  cạnh dùng khi huấn luyện: 302618/400670 (đã bỏ 98052 cạnh chạm ảnh val/test)
+  epoch  0 | loss 20.2815 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.234 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch  3 | loss 14.7211 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.129 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch  6 | loss 11.9398 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.103 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch  9 | loss 9.0169 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.090 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 12 | loss 6.3943 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.079 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 15 | loss 4.6812 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.071 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 18 | loss 3.5716 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.072 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  epoch 19 | loss 3.1325 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.072 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 1.00
+  Tốt nhất trên val: α=0.4, λ=0.25 (MRR=0.8041)
+    [quan hệ khó] no_class_edges seed 0: MRR 0.8254 (CLIP 0.8195) | R@1 0.7317 | n=246
+    [match] no_class_edges seed 0: test MRR CLIP+Graph+Match 0.7937 (λr,γ,β=(3.0, 0.0, 0.1)) | CLIP+Match 0.7777 (λr,γ,β=(1.0, 0.0, 0.4)) | match-only val 0.5710 | w_tri=0.0 | 12s
+  seed 0: R@1=0.6820 MRR=0.7815 (α=0.4, λ=0.25) | adaptive MRR=0.7814 [CV val 0.8013 vs 0.8041; α(q) có/không khái niệm 0.40/nan]
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+    [quan hệ khó] no_class_edges seed 1: MRR 0.8247 (CLIP 0.8195) | R@1 0.7236 | n=246
+    [match] no_class_edges seed 1: test MRR CLIP+Graph+Match 0.7910 (λr,γ,β=(1.0, 0.0, 0.2)) | CLIP+Match 0.7777 (λr,γ,β=(1.0, 0.0, 0.4)) | match-only val 0.5710 | w_tri=0.0 | 12s
+  seed 1: R@1=0.6900 MRR=0.7854 (α=0.4, λ=0.25) | adaptive MRR=0.7812 [CV val 0.7966 vs 0.8016; α(q) có/không khái niệm 0.40/nan]
+WordNet(+fallback): 945/5353 lớp đối tượng có khái niệm cha
+    [quan hệ khó] no_class_edges seed 2: MRR 0.8199 (CLIP 0.8195) | R@1 0.7195 | n=246
+    [match] no_class_edges seed 2: test MRR CLIP+Graph+Match 0.7955 (λr,γ,β=(3.0, 0.0, 0.1)) | CLIP+Match 0.7777 (λr,γ,β=(1.0, 0.0, 0.4)) | match-only val 0.5710 | w_tri=0.0 | 12s
+  seed 2: R@1=0.6870 MRR=0.7838 (α=0.4, λ=0.25) | adaptive MRR=0.7820 [CV val 0.7998 vs 0.8004; α(q) có/không khái niệm 0.40/nan]
+CLIP+Graph vs CLIP (kiểm định cặp, bootstrap theo truy vấn):
+           config     group     n  MRR_clip  MRR_graph  R1_clip  R1_graph    diff   ci_lo   ci_hi  backbone
+0            none       all  1000    0.7996     0.8319   0.7060    0.7500  0.0323  0.0203  0.0447  ViT-L-14
+1            none    direct   982    0.8037     0.8403   0.7098    0.7590  0.0366  0.0245  0.0486  ViT-L-14
+2            none  indirect    16    0.5835     0.3567   0.5000    0.2292 -0.2269 -0.3702 -0.1036  ViT-L-14
+0  no_class_edges       all  1000    0.7996     0.8282   0.7060    0.7447  0.0286  0.0164  0.0407  ViT-L-14
+1  no_class_edges    direct   982    0.8037     0.8368   0.7098    0.7539  0.0330  0.0209  0.0450  ViT-L-14
+2  no_class_edges  indirect    16    0.5835     0.3411   0.5000    0.2083 -0.2424 -0.3865 -0.1152  ViT-L-14
+0    no_relations       all  1000    0.7996     0.8296   0.7060    0.7467  0.0300  0.0178  0.0424  ViT-L-14
+1    no_relations    direct   982    0.8037     0.8385   0.7098    0.7563  0.0348  0.0225  0.0470  ViT-L-14
+2    no_relations  indirect    16    0.5835     0.3271   0.5000    0.1875 -0.2564 -0.4067 -0.1243  ViT-L-14
+0  shuffled_nodes       all  1000    0.7996     0.7985   0.7060    0.7070 -0.0011 -0.0080  0.0056  ViT-L-14
+1  shuffled_nodes    direct   343    0.8137     0.8146   0.7259    0.7279  0.0009 -0.0102  0.0117  ViT-L-14
+2  shuffled_nodes  indirect   465    0.8087     0.8049   0.7183    0.7161 -0.0038 -0.0136  0.0058  ViT-L-14
+0            none       all  1000    0.7227     0.7888   0.6120    0.6920  0.0662  0.0497  0.0821  ViT-B-32
+1            none    direct   982    0.7294     0.7996   0.6202    0.7026  0.0702  0.0540  0.0867  ViT-B-32
+2            none  indirect    16    0.3244     0.1569   0.1250    0.0625 -0.1675 -0.2592 -0.0904  ViT-B-32
+0  no_class_edges       all  1000    0.7227     0.7835   0.6120    0.6863  0.0609  0.0430  0.0782  ViT-B-32
+1  no_class_edges    direct   982    0.7294     0.7947   0.6202    0.6969  0.0652  0.0475  0.0831  ViT-B-32
+2  no_class_edges  indirect    16    0.3244     0.1302   0.1250    0.0625 -0.1941 -0.2997 -0.1067  ViT-B-32
+
+none vs shuffled_nodes:
+      group     n   MRR_a   MRR_b    diff   ci_lo   ci_hi  p_a_not_better  a_wins  b_wins     a               b
+0       all  1000  0.8319  0.7985  0.0335  0.0208  0.0463             0.0     226     118  none  shuffled_nodes
+1    direct   982  0.8403  0.8025  0.0378  0.0254  0.0505             0.0     226     104  none  shuffled_nodes
+2  indirect    16  0.3567  0.5864 -0.2297 -0.3727 -0.1064             1.0       0      13  none  shuffled_nodes
+Flickr8k — kiểm định cặp vs CLIP:
+                     config group     n  MRR_clip  MRR_graph  R1_clip  R1_graph    diff   ci_lo   ci_hi  backbone
+0                      none   all  1000    0.7996     0.8319    0.706    0.7500  0.0323  0.0203  0.0447  ViT-L-14
+0            none+clipmatch   all  1000    0.7996     0.8339    0.706    0.7540  0.0342  0.0224  0.0464  ViT-L-14
+0                none+match   all  1000    0.7996     0.8393    0.706    0.7607  0.0397  0.0256  0.0539  ViT-L-14
+0      no_class_edges+match   all  1000    0.7996     0.8338    0.706    0.7533  0.0342  0.0209  0.0478  ViT-L-14
+0        no_relations+match   all  1000    0.7996     0.8340    0.706    0.7520  0.0344  0.0205  0.0485  ViT-L-14
+0            shuffled_nodes   all  1000    0.7996     0.7985    0.706    0.7070 -0.0011 -0.0080  0.0056  ViT-L-14
+0  shuffled_nodes+clipmatch   all  1000    0.7996     0.7996    0.706    0.7060  0.0000  0.0000  0.0000  ViT-L-14
+0      shuffled_nodes+match   all  1000    0.7996     0.7966    0.706    0.7040 -0.0030 -0.0102  0.0041  ViT-L-14
+0                      none   all  1000    0.7227     0.7888    0.612    0.6920  0.0662  0.0497  0.0821  ViT-B-32
+0            none+clipmatch   all  1000    0.7227     0.7777    0.612    0.6690  0.0550  0.0391  0.0708  ViT-B-32
+0                none+match   all  1000    0.7227     0.7982    0.612    0.7007  0.0756  0.0571  0.0937  ViT-B-32
+
+Kiểm định cặp giữa các cấu hình:
+  group     n   MRR_a   MRR_b    diff   ci_lo   ci_hi  p_a_not_better  a_wins  b_wins               a                     b  backbone
+0   all  1000  0.8393  0.8319  0.0073  0.0011  0.0137          0.0110     139      96      none+match                  none       NaN
+0   all  1000  0.8393  0.8339  0.0054 -0.0054  0.0164          0.1587     132     129      none+match        none+clipmatch       NaN
+0   all  1000  0.8393  0.7966  0.0427  0.0284  0.0573          0.0000     245     120      none+match  shuffled_nodes+match       NaN
+0   all  1000  0.8393  0.8340  0.0053  0.0002  0.0105          0.0199     116      90      none+match    no_relations+match       NaN
+0   all  1000  0.8393  0.8338  0.0055  0.0005  0.0106          0.0154     125      78      none+match  no_class_edges+match       NaN
+0   all  1000  0.8339  0.8319  0.0019 -0.0099  0.0137          0.3859     146     139  none+clipmatch                  none       NaN
+0   all  1000  0.7982  0.7888  0.0094  0.0007  0.0180          0.0167     189     134      none+match                  none  ViT-B-32
+0   all  1000  0.7982  0.7777  0.0206  0.0088  0.0325          0.0005     174     150      none+match        none+clipmatch  ViT-B-32
+
+Bộ quan hệ khó (Flickr8k) với nhánh khớp:
+                       model  n_queries  seeds              MRR      R1
+0                       none        246      3  0.8599 ± 0.0068  0.7791
+1                       CLIP        246      3  0.8778 ± 0.0000  0.8049
+2                 none+match        246      3  0.8702 ± 0.0009  0.7967
+3             none+clipmatch        246      3  0.8781 ± 0.0000  0.8008
+4             no_class_edges        246      3  0.8632 ± 0.0100  0.7764
+5       no_class_edges+match        246      3  0.8692 ± 0.0078  0.7886
+6   no_class_edges+clipmatch        246      3  0.8781 ± 0.0000  0.8008
+7               no_relations        246      3  0.8612 ± 0.0083  0.7710
+8         no_relations+match        246      3  0.8680 ± 0.0051  0.7873
+9     no_relations+clipmatch        246      3  0.8781 ± 0.0000  0.8008
+10            shuffled_nodes        246      3  0.8736 ± 0.0002  0.7967
+11      shuffled_nodes+match        246      3  0.8722 ± 0.0021  0.7940
+12  shuffled_nodes+clipmatch        246      3  0.8778 ± 0.0000  0.8049
+  group    n   MRR_a   MRR_b    diff   ci_lo   ci_hi  p_a_not_better  a_wins  b_wins           a                     b
+0   all  246  0.8702  0.8778 -0.0076 -0.0362  0.0200          0.7048      33      31  none+match                  CLIP
+0   all  246  0.8702  0.8599  0.0103 -0.0016  0.0228          0.0456      25      20  none+match                  none
+0   all  246  0.8702  0.8781 -0.0079 -0.0343  0.0173          0.7272      29      31  none+match        none+clipmatch
+0   all  246  0.8702  0.8722 -0.0020 -0.0313  0.0261          0.5631      39      34  none+match  shuffled_nodes+match
+0   all  246  0.8702  0.8680  0.0022 -0.0083  0.0125          0.3376      25      20  none+match    no_relations+match
+
+Tệp đã ghi:
+  /kaggle/working/results/alpha_sensitivity.csv  (0.7 KB)
+  /kaggle/working/results/annotation_info.json  (0.3 KB)
+  /kaggle/working/results/case_analysis.json  (11.2 KB)
+  /kaggle/working/results/eval_queries_20.json  (3.9 KB)
+  /kaggle/working/results/explanation_grounding.csv  (0.5 KB)
+  /kaggle/working/results/explanation_grounding_per_query.csv  (34.3 KB)
+  /kaggle/working/results/fidelity_final_rank.csv  (1.0 KB)
+  /kaggle/working/results/fidelity_per_query.csv  (2.9 KB)
+  /kaggle/working/results/final_model_test.csv  (0.7 KB)
+  /kaggle/working/results/final_model_val_selection.csv  (0.1 KB)
+  /kaggle/working/results/fusion_log.csv  (2.0 KB)
+  /kaggle/working/results/main_results.csv  (5.4 KB)
+  /kaggle/working/results/main_results_oracle_grams.csv  (5.4 KB)
+  /kaggle/working/results/main_results_vitb32.csv  (3.6 KB)
+  /kaggle/working/results/main_results_with_controls.csv  (7.2 KB)
+  /kaggle/working/results/match_log.csv  (3.0 KB)
+  /kaggle/working/results/match_paired.csv  (3.6 KB)
+  /kaggle/working/results/match_vs_clip.csv  (5.3 KB)
+  /kaggle/working/results/paired_ablation_test.csv  (0.5 KB)
+  /kaggle/working/results/paired_adaptive_vs_global.csv  (0.5 KB)
+  /kaggle/working/results/paired_graph_vs_clip.csv  (2.8 KB)
+  /kaggle/working/results/paired_none_vs_shuffled_nodes.csv  (0.5 KB)
+  /kaggle/working/results/relational_hard_negatives.csv  (0.6 KB)
+  /kaggle/working/results/relational_hard_negatives_match.csv  (0.6 KB)
+  /kaggle/working/results/relational_hard_negatives_match_paired.csv  (0.8 KB)
+  /kaggle/working/results/relational_hard_negatives_paired.csv  (0.6 KB)
+  /kaggle/working/results/relational_hard_negatives_vitb32.csv  (0.3 KB)
+  /kaggle/working/results/relational_hard_negatives_vitb32_paired.csv  (0.3 KB)
+  /kaggle/working/results/triple_info.json  (0.0 KB)
+  /kaggle/working/results/xai_final_rank_summary.json  (0.2 KB)
+  /kaggle/working/results/xai_summary.json  (0.3 KB)
+  /kaggle/working/split.json  (45.9 KB)
+AG root: /kaggle/input/action-genome/action-genome | 38238 frame
+Predicate có trong dữ liệu nhưng KHÔNG dùng: {'behind': 9032, 'beneath': 7499, 'in_front_of': 28163, 'on_the_side_of': 19271, 'in': 3362, 'above': 2225, 'covered_by': 670}
+Alias danh từ sinh từ dữ liệu: {'camera': 'phone', 'couch': 'sofa', 'cabinet': 'closet', 'glass': 'cup', 'bottle': 'cup', 'notebook': 'paper'}
+Động từ phổ biến trên TRAIN chưa được ánh xạ: [('walk', 1962), ('take', 1224), ('put', 1073), ('pick', 828), ('open', 813), ('shoe', 467), ('clothe', 455), ('close', 409), ('get', 364), ('sneeze', 363), ('throw', 361), ('turn', 356), ('stave', 288), ('begin', 281), ('place', 257), ('start', 254), ('play', 253), ('leave', 249), ('laugh', 221), ('pour', 215)]
+IsA hành động: 219 node ghép → 14 khái niệm động từ
+[00:00 | +  0.0s] Bắt đầu Action Genome | ablations=('none', 'no_class_edges', 'no_relations') | seeds=[0, 1, 2] | epochs=20 | device=cuda
+[00:00 | +  0.0s] ▶ 1/9 nạp annotation AG
+Charades: 9848 video | 154 node hành động | tập động từ truy vấn: 40
+  + Charades: 11.3 node hành động/bối cảnh mỗi video | 20.2 bộ ba thời gian mỗi video
+Action Genome: 9587 video | 17.0 node/video | 11.7 quan hệ/video | 4.0 frame/video
+  • A person is sitting at adesk they pick up a bag and then they get up → ['bag', 'bedroom', 'chair', 'hold bag', 'laugh', 'lean chair', 'look bag', 'sit chair']
+  • A person sits on a toilet holding a cup of coffee and a container of medicine, u → ['bathroom', 'cup', 'doorway', 'drink cup', 'eat food', 'food', 'hold cup', 'hold food']
+  • A person dusts off some shelves furniture, then sweeps under a doorway. → ['broom', 'dining room', 'doorway', 'floor', 'hold broom', 'look broom', 'look doorway', 'look floor']
+[00:04 | +  4.3s] ✔ 1/9 nạp annotation AG (4.3s)
+[00:04 | +  0.0s] ▶ 2/9 split
+Split AG (sha1=1f1f4e811772): train=6611 val=1166 test=1810
+[00:04 | +  0.0s] ✔ 2/9 split (0.0s)
+[00:04 | +  0.0s] ▶ 3/9 đặc trưng CLIP (dùng cache nếu có)
+Dùng lại cache CLIP: clip_ag_ViT-L-14_laion2b_s32b_b82k_9587.npz
+[00:04 | +  0.3s] ✔ 3/9 đặc trưng CLIP (dùng cache nếu có) (0.3s)
+[00:04 | +  0.0s] ▶ 4/9 self-test
+[00:04 | +  0.0s] ▶ self-test (rò rỉ / khớp giải thích / split) — dựng đồ thị 3 lần, hơi lâu
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+WordNet(+fallback): 332/345 lớp đối tượng có khái niệm cha
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+Split AG (sha1=1f1f4e811772): train=6611 val=1166 test=1810
+
+  ✓  Cạnh scene + đồng xuất hiện chỉ xây từ train
+  ✓  Điểm đường đi khớp giải thích liệt kê (299/299 cặp)
+  ✓  Split tái lập được từ seed
+[00:26 | + 22.2s] ✔ self-test (rò rỉ / khớp giải thích / split) — dựng đồ thị 3 lần, hơi lâu (22.2s)
+[00:26 | +  0.0s] ✔ 4/9 self-test (22.2s)
+[00:26 | +  0.0s] ▶ 4b/9 chọn learn_clip_w trên VAL (2 lần huấn luyện 'none', seed 0)
+[00:26 | +  0.0s] ▶ [ablation 1/3 'none' | seed 1/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+Nhóm truy vấn: {'direct': 9155, 'indirect': 356, 'other': 76}
+[00:51 | + 24.3s] ✔ [ablation 1/3 'none' | seed 1/3] dựng đồ thị + bộ truy vấn (24.3s)
+[00:51 | +  0.0s]     nodes=28494 | scene=266 related=2987 isa=353 | đường đi P1..P5=1242819
+[00:51 | +  0.0s] ▶   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn)
+[10:19 | +568.3s] ✔   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn) (568.3s)
+[10:19 | +  0.0s]     loss 43.829 → 7.887 | clip_w 1.00 | path_w 1.00 | w_path 1.000 0.031 0.361 0.071 0.007 0.007 0.327 | gate L0[scene,rel,isa] 0.10 0.10 0.20
+[10:19 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[10:21 | +  2.5s] ✔   quét (α, λ) trên VAL (36 cặp) (2.5s)
+[10:21 | +  0.0s]     chọn α=0.2, λ=0.25 | VAL MRR=0.4890 (CLIP thuần: 0.1728)
+[10:21 | +  0.0s] ▶ [ablation 1/3 'none' | seed 2/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+Nhóm truy vấn: {'direct': 9155, 'indirect': 356, 'other': 76}
+[10:46 | + 24.4s] ✔ [ablation 1/3 'none' | seed 2/3] dựng đồ thị + bộ truy vấn (24.4s)
+[10:46 | +  0.0s]     nodes=28494 | scene=266 related=2987 isa=353 | đường đi P1..P5=1242819
+[10:46 | +  0.0s] ▶   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn)
+[20:23 | +576.7s] ✔   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn) (576.7s)
+[20:23 | +  0.0s]     loss 38.177 → 1.230 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.039 0.336 0.133 0.020 0.030 0.155 | gate L0[scene,rel,isa] 0.14 0.13 0.31
+[20:23 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[20:25 | +  2.6s] ✔   quét (α, λ) trên VAL (36 cặp) (2.6s)
+[20:25 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.5219 (CLIP thuần: 0.1728)
+→ CFG.learn_clip_w = True (chọn theo VAL MRR)
+[20:25 | +  0.0s] ✔ 4b/9 chọn learn_clip_w trên VAL (2 lần huấn luyện 'none', seed 0) (1198.8s)
+[20:25 | +  0.0s] ▶ 5/9 thí nghiệm chính: 3 ablation × 3 seed = 9 lần huấn luyện
+Bộ quan hệ khó (AG): 685/1373 truy vấn test có quan hệ người–vật đủ ≥3 âm | trung bình 21.3 âm/truy vấn
+
+==================================================================
+ABLATION = none
+==================================================================
+[20:26 | +  0.5s] ▶ [ablation 1/3 'none' | seed 1/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+Nhóm truy vấn: {'direct': 9155, 'indirect': 356, 'other': 76}
+[20:50 | + 24.8s] ✔ [ablation 1/3 'none' | seed 1/3] dựng đồ thị + bộ truy vấn (24.8s)
+[20:50 | +  0.0s]     nodes=28494 | scene=266 related=2987 isa=353 | đường đi P1..P5=1242819
+Đồ thị: {'nodes': 28494, 'images': 9587, 'object_classes': 333, 'concepts': 88, 'edges': 166097, 'contains': 162491, 'scene': 266, 'related': 2987, 'isa': 353, 'triple_nodes': 18486, 'triple_edges': 193428, 'paths': {'P0_contains': 162491, 'P1_scene': 162890, 'P2_isa': 128424, 'P3_related': 347733, 'P4_scene_isa': 147014, 'P5_related_isa': 263330, 'P6_triple': 193428}, 'ablation': 'none'}
+[20:50 | +  0.0s] ▶   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn)
+  cạnh dùng khi huấn luyện: 217960/332194 (đã bỏ 114234 cạnh chạm ảnh val/test)
+  epoch  0 | loss 38.1771 | w_path 1.000 0.112 0.240 0.114 0.068 0.067 0.469 | gate L0[scene,rel,isa] 0.17 0.18 0.16 | clip_w 0.70
+  epoch  3 | loss 9.2483 | w_path 1.000 0.073 0.336 0.085 0.039 0.038 0.301 | gate L0[scene,rel,isa] 0.22 0.21 0.21 | clip_w 0.30
+  epoch  6 | loss 4.6714 | w_path 1.000 0.064 0.327 0.108 0.029 0.027 0.199 | gate L0[scene,rel,isa] 0.19 0.18 0.24 | clip_w 0.18
+  epoch  9 | loss 3.0493 | w_path 1.000 0.056 0.331 0.123 0.025 0.025 0.174 | gate L0[scene,rel,isa] 0.17 0.16 0.26 | clip_w 0.13
+  epoch 12 | loss 2.2348 | w_path 1.000 0.051 0.327 0.133 0.022 0.025 0.167 | gate L0[scene,rel,isa] 0.16 0.15 0.28 | clip_w 0.10
+  epoch 15 | loss 1.7448 | w_path 1.000 0.043 0.319 0.136 0.021 0.028 0.159 | gate L0[scene,rel,isa] 0.15 0.14 0.28 | clip_w 0.09
+  epoch 18 | loss 1.3400 | w_path 1.000 0.040 0.335 0.130 0.021 0.029 0.157 | gate L0[scene,rel,isa] 0.14 0.12 0.31 | clip_w 0.07
+  epoch 19 | loss 1.1672 | w_path 1.000 0.040 0.320 0.128 0.021 0.028 0.162 | gate L0[scene,rel,isa] 0.14 0.12 0.30 | clip_w 0.07
+[30:31 | +580.9s] ✔   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn) (580.9s)
+[30:31 | +  0.0s]     loss 38.177 → 1.167 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.040 0.320 0.128 0.021 0.028 0.162 | gate L0[scene,rel,isa] 0.14 0.12 0.30
+[30:31 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[30:34 | +  2.6s] ✔   quét (α, λ) trên VAL (36 cặp) (2.6s)
+[30:34 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.5117 (CLIP thuần: 0.1728)
+[30:38 | +  4.3s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.4297
+    [quan hệ khó] none seed 0: MRR 0.9271 (CLIP 0.6260) | R@1 0.8832 | n=685
+[30:52 | + 13.7s] truy vấn phản thực tế: 683/685 truy vấn của bộ quan hệ khó
+  • [hold phone → touch phone]
+      gốc : A person holds a camera up to a light on the ceiling
+      đổi : A person touching a camera up to a light on the ceiling
+  • [open box → carry box]
+      gốc : A person is vacuuming the floor around an open box, then the person looks into the box and closes the lid.
+      đổi : A person is vacuuming the floor around an carrying box, then the person looks into the box and closes the lid.
+  • [look paper → carry paper]
+      gốc : The person in the video is watching a video and writing something on a piece of paper, then gets up and gets s
+      đổi : The person in the video is carrying a video and writing something on a piece of paper, then gets up and gets s
+  • [fix light → look light]
+      gốc : A person is at the top of the stairs fixing the stair rail. They then fix the light switch. Another person run
+      đổi : A person is at the top of the stairs looking the stair rail. They then fix the light switch. Another person ru
+    [phản thực tế] none seed 0: video đúng bị hạ hạng ở 33.4% truy vấn (CLIP 26.8%)
+    [match] lõi ridge: 6611 truy vấn train, TF-IDF 9019 chiều, 20s
+    [match] none seed 0: test MRR CLIP+Graph+Match 0.6582 (λr,γ,β=(1.0, 1.0, 0.3)) | CLIP+Match 0.5740 (λr,γ,β=(1.0, 2.0, 0.8)) | match-only val 0.6741 | w_tri=0.0 | 121s
+  seed 0: R@1=0.3414 MRR=0.4297 (α=0.2, λ=0.5) | adaptive MRR=0.4362 [CV val 0.5173 vs 0.5117; α(q) có/không khái niệm 0.20/0.26]
+[33:11 | +138.9s] ▶ [ablation 1/3 'none' | seed 2/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+[33:28 | + 16.6s] ✔ [ablation 1/3 'none' | seed 2/3] dựng đồ thị + bộ truy vấn (16.6s)
+[33:28 | +  0.0s]     nodes=28494 | scene=266 related=2987 isa=353 | đường đi P1..P5=1242819
+[33:28 | +  0.0s] ▶   huấn luyện GNN seed=1 (20 epoch, 6611 truy vấn)
+[43:23 | +595.7s] ✔   huấn luyện GNN seed=1 (20 epoch, 6611 truy vấn) (595.7s)
+[43:23 | +  0.0s]     loss 37.613 → 1.161 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.033 0.340 0.132 0.018 0.027 0.165 | gate L0[scene,rel,isa] 0.14 0.10 0.30
+[43:23 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[43:26 | +  2.6s] ✔   quét (α, λ) trên VAL (36 cặp) (2.6s)
+[43:26 | +  0.0s]     chọn α=0.0, λ=0.25 | VAL MRR=0.5079 (CLIP thuần: 0.1728)
+[43:30 | +  4.1s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.4123
+    [quan hệ khó] none seed 1: MRR 0.8832 (CLIP 0.6260) | R@1 0.8248 | n=685
+    [phản thực tế] none seed 1: video đúng bị hạ hạng ở 49.3% truy vấn (CLIP 26.8%)
+    [match] none seed 1: test MRR CLIP+Graph+Match 0.6165 (λr,γ,β=(1.0, 0.5, 0.5)) | CLIP+Match 0.5740 (λr,γ,β=(1.0, 2.0, 0.8)) | match-only val 0.6741 | w_tri=0.0 | 102s
+  seed 1: R@1=0.3232 MRR=0.4123 (α=0.0, λ=0.25) | adaptive MRR=0.4324 [CV val 0.5235 vs 0.5079; α(q) có/không khái niệm 0.03/0.21]
+[45:31 | +121.1s] ▶ [ablation 1/3 'none' | seed 3/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+[45:48 | + 16.4s] ✔ [ablation 1/3 'none' | seed 3/3] dựng đồ thị + bộ truy vấn (16.4s)
+[45:48 | +  0.0s]     nodes=28494 | scene=266 related=2987 isa=353 | đường đi P1..P5=1242819
+[45:48 | +  0.0s] ▶   huấn luyện GNN seed=2 (20 epoch, 6611 truy vấn)
+[55:37 | +589.4s] ✔   huấn luyện GNN seed=2 (20 epoch, 6611 truy vấn) (589.4s)
+[55:37 | +  0.0s]     loss 38.022 → 1.195 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.036 0.365 0.129 0.020 0.025 0.164 | gate L0[scene,rel,isa] 0.16 0.13 0.27
+[55:37 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[55:39 | +  2.5s] ✔   quét (α, λ) trên VAL (36 cặp) (2.5s)
+[55:39 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.5180 (CLIP thuần: 0.1728)
+[55:44 | +  4.4s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.4307
+    [quan hệ khó] none seed 2: MRR 0.9291 (CLIP 0.6260) | R@1 0.8891 | n=685
+    [phản thực tế] none seed 2: video đúng bị hạ hạng ở 34.0% truy vấn (CLIP 26.8%)
+    [match] none seed 2: test MRR CLIP+Graph+Match 0.6500 (λr,γ,β=(1.0, 2.0, 0.3)) | CLIP+Match 0.5740 (λr,γ,β=(1.0, 2.0, 0.8)) | match-only val 0.6741 | w_tri=0.0 | 101s
+  seed 2: R@1=0.3414 MRR=0.4307 (α=0.2, λ=0.5) | adaptive MRR=0.4335 [CV val 0.5288 vs 0.5180; α(q) có/không khái niệm 0.20/0.25]
+
+==================================================================
+ABLATION = no_class_edges
+==================================================================
+[57:45 | +120.8s] ▶ [ablation 2/3 'no_class_edges' | seed 1/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+[57:56 | + 10.9s] ✔ [ablation 2/3 'no_class_edges' | seed 1/3] dựng đồ thị + bộ truy vấn (10.9s)
+[57:56 | +  0.0s]     nodes=28494 | scene=0 related=0 isa=0 | đường đi P1..P5=193428
+Đồ thị: {'nodes': 28494, 'images': 9587, 'object_classes': 333, 'concepts': 88, 'edges': 162491, 'contains': 162491, 'scene': 0, 'related': 0, 'isa': 0, 'triple_nodes': 18486, 'triple_edges': 193428, 'paths': {'P0_contains': 162491, 'P1_scene': 0, 'P2_isa': 0, 'P3_related': 0, 'P4_scene_isa': 0, 'P5_related_isa': 0, 'P6_triple': 193428}, 'ablation': 'no_class_edges'}
+[57:56 | +  0.0s] ▶   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn)
+  cạnh dùng khi huấn luyện: 210748/324982 (đã bỏ 114234 cạnh chạm ảnh val/test)
+  epoch  0 | loss 38.7898 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.449 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.70
+  epoch  3 | loss 9.7628 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.238 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.31
+  epoch  6 | loss 4.9913 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.148 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.18
+  epoch  9 | loss 3.4173 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.121 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.13
+  epoch 12 | loss 2.4462 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.109 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.11
+  epoch 15 | loss 1.9731 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.108 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.09
+  epoch 18 | loss 1.4379 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.105 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.08
+  epoch 19 | loss 1.3900 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.109 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.07
+[59:41 | +105.8s] ✔   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn) (105.8s)
+[59:41 | +  0.0s]     loss 38.790 → 1.390 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.109 | gate L0[scene,rel,isa] 0.18 0.18 0.18
+[59:41 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[59:42 | +  0.4s] ✔   quét (α, λ) trên VAL (36 cặp) (0.4s)
+[59:42 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.5103 (CLIP thuần: 0.1728)
+[59:42 | +  0.6s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.4269
+    [quan hệ khó] no_class_edges seed 0: MRR 0.9093 (CLIP 0.6260) | R@1 0.8613 | n=685
+    [phản thực tế] no_class_edges seed 0: video đúng bị hạ hạng ở 34.4% truy vấn (CLIP 26.8%)
+    [match] no_class_edges seed 0: test MRR CLIP+Graph+Match 0.6536 (λr,γ,β=(1.0, 1.0, 0.3)) | CLIP+Match 0.5740 (λr,γ,β=(1.0, 2.0, 0.8)) | match-only val 0.6741 | w_tri=0.0 | 59s
+  seed 0: R@1=0.3381 MRR=0.4269 (α=0.2, λ=0.5) | adaptive MRR=0.4326 [CV val 0.5184 vs 0.5103; α(q) có/không khái niệm 0.20/0.28]
+[60:52 | + 69.6s] ▶ [ablation 2/3 'no_class_edges' | seed 2/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+[61:03 | + 10.9s] ✔ [ablation 2/3 'no_class_edges' | seed 2/3] dựng đồ thị + bộ truy vấn (10.9s)
+[61:03 | +  0.0s]     nodes=28494 | scene=0 related=0 isa=0 | đường đi P1..P5=193428
+[61:03 | +  0.0s] ▶   huấn luyện GNN seed=1 (20 epoch, 6611 truy vấn)
+[62:49 | +105.6s] ✔   huấn luyện GNN seed=1 (20 epoch, 6611 truy vấn) (105.6s)
+[62:49 | +  0.0s]     loss 38.199 → 1.324 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.108 | gate L0[scene,rel,isa] 0.18 0.18 0.18
+[62:49 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[62:49 | +  0.4s] ✔   quét (α, λ) trên VAL (36 cặp) (0.4s)
+[62:49 | +  0.0s]     chọn α=0.0, λ=0.25 | VAL MRR=0.5179 (CLIP thuần: 0.1728)
+[62:50 | +  0.6s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.4109
+    [quan hệ khó] no_class_edges seed 1: MRR 0.8649 (CLIP 0.6260) | R@1 0.8044 | n=685
+    [phản thực tế] no_class_edges seed 1: video đúng bị hạ hạng ở 44.2% truy vấn (CLIP 26.8%)
+    [match] no_class_edges seed 1: test MRR CLIP+Graph+Match 0.6055 (λr,γ,β=(1.0, 1.0, 0.4)) | CLIP+Match 0.5740 (λr,γ,β=(1.0, 2.0, 0.8)) | match-only val 0.6741 | w_tri=0.0 | 59s
+  seed 1: R@1=0.3199 MRR=0.4109 (α=0.0, λ=0.25) | adaptive MRR=0.4247 [CV val 0.5307 vs 0.5179; α(q) có/không khái niệm 0.03/0.20]
+[63:59 | + 69.5s] ▶ [ablation 2/3 'no_class_edges' | seed 3/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+[64:10 | + 10.9s] ✔ [ablation 2/3 'no_class_edges' | seed 3/3] dựng đồ thị + bộ truy vấn (10.9s)
+[64:10 | +  0.0s]     nodes=28494 | scene=0 related=0 isa=0 | đường đi P1..P5=193428
+[64:10 | +  0.0s] ▶   huấn luyện GNN seed=2 (20 epoch, 6611 truy vấn)
+[65:55 | +105.4s] ✔   huấn luyện GNN seed=2 (20 epoch, 6611 truy vấn) (105.4s)
+[65:55 | +  0.0s]     loss 38.554 → 1.425 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.110 | gate L0[scene,rel,isa] 0.18 0.18 0.18
+[65:55 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[65:56 | +  0.4s] ✔   quét (α, λ) trên VAL (36 cặp) (0.4s)
+[65:56 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.5095 (CLIP thuần: 0.1728)
+[65:56 | +  0.6s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.4176
+    [quan hệ khó] no_class_edges seed 2: MRR 0.9089 (CLIP 0.6260) | R@1 0.8657 | n=685
+    [phản thực tế] no_class_edges seed 2: video đúng bị hạ hạng ở 36.5% truy vấn (CLIP 26.8%)
+    [match] no_class_edges seed 2: test MRR CLIP+Graph+Match 0.6452 (λr,γ,β=(1.0, 1.0, 0.3)) | CLIP+Match 0.5740 (λr,γ,β=(1.0, 2.0, 0.8)) | match-only val 0.6741 | w_tri=0.0 | 59s
+  seed 2: R@1=0.3293 MRR=0.4176 (α=0.2, λ=0.5) | adaptive MRR=0.4243 [CV val 0.5117 vs 0.5095; α(q) có/không khái niệm 0.20/0.27]
+
+==================================================================
+ABLATION = no_relations
+==================================================================
+[67:05 | + 69.1s] ▶ [ablation 3/3 'no_relations' | seed 1/3] dựng đồ thị + bộ truy vấn
+[67:12 | +  6.1s] ✔ [ablation 3/3 'no_relations' | seed 1/3] dựng đồ thị + bộ truy vấn (6.1s)
+[67:12 | +  0.0s]     nodes=9920 | scene=0 related=0 isa=0 | đường đi P1..P5=0
+Đồ thị: {'nodes': 9920, 'images': 9587, 'object_classes': 333, 'concepts': 0, 'edges': 162491, 'contains': 162491, 'scene': 0, 'related': 0, 'isa': 0, 'triple_nodes': 0, 'triple_edges': 0, 'paths': {'P0_contains': 162491, 'P1_scene': 0, 'P2_isa': 0, 'P3_related': 0, 'P4_scene_isa': 0, 'P5_related_isa': 0, 'P6_triple': 0}, 'ablation': 'no_relations'}
+[67:12 | +  0.0s] ▶   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn)
+  cạnh dùng khi huấn luyện: 210748/324982 (đã bỏ 114234 cạnh chạm ảnh val/test)
+  epoch  0 | loss 40.1423 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.71
+  epoch  3 | loss 9.6959 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.30
+  epoch  6 | loss 5.2138 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.18
+  epoch  9 | loss 3.4792 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.13
+  epoch 12 | loss 2.5371 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.10
+  epoch 15 | loss 2.0331 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.09
+  epoch 18 | loss 1.5268 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.08
+  epoch 19 | loss 1.4162 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18 | clip_w 0.07
+[68:37 | + 85.4s] ✔   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn) (85.4s)
+[68:37 | +  0.0s]     loss 40.142 → 1.416 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18
+[68:37 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[68:37 | +  0.4s] ✔   quét (α, λ) trên VAL (36 cặp) (0.4s)
+[68:37 | +  0.0s]     chọn α=0.0, λ=0.25 | VAL MRR=0.5149 (CLIP thuần: 0.1728)
+[68:38 | +  0.5s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.4141
+    [quan hệ khó] no_relations seed 0: MRR 0.8612 (CLIP 0.6260) | R@1 0.8015 | n=685
+    [phản thực tế] no_relations seed 0: video đúng bị hạ hạng ở 45.1% truy vấn (CLIP 26.8%)
+    [match] no_relations seed 0: test MRR CLIP+Graph+Match 0.6080 (λr,γ,β=(1.0, 0.5, 0.4)) | CLIP+Match 0.5740 (λr,γ,β=(1.0, 2.0, 0.8)) | match-only val 0.6741 | w_tri=0.0 | 56s
+  seed 0: R@1=0.3265 MRR=0.4141 (α=0.0, λ=0.25) | adaptive MRR=0.4310 [CV val 0.5305 vs 0.5149; α(q) có/không khái niệm 0.03/0.12]
+[69:44 | + 66.5s] ▶ [ablation 3/3 'no_relations' | seed 2/3] dựng đồ thị + bộ truy vấn
+[69:50 | +  5.9s] ✔ [ablation 3/3 'no_relations' | seed 2/3] dựng đồ thị + bộ truy vấn (5.9s)
+[69:50 | +  0.0s]     nodes=9920 | scene=0 related=0 isa=0 | đường đi P1..P5=0
+[69:50 | +  0.0s] ▶   huấn luyện GNN seed=1 (20 epoch, 6611 truy vấn)
+[71:16 | + 85.5s] ✔   huấn luyện GNN seed=1 (20 epoch, 6611 truy vấn) (85.5s)
+[71:16 | +  0.0s]     loss 40.344 → 1.390 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18
+[71:16 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[71:16 | +  0.4s] ✔   quét (α, λ) trên VAL (36 cặp) (0.4s)
+[71:16 | +  0.0s]     chọn α=0.0, λ=0.25 | VAL MRR=0.5244 (CLIP thuần: 0.1728)
+[71:17 | +  0.6s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.4243
+    [quan hệ khó] no_relations seed 1: MRR 0.8745 (CLIP 0.6260) | R@1 0.8175 | n=685
+    [phản thực tế] no_relations seed 1: video đúng bị hạ hạng ở 44.4% truy vấn (CLIP 26.8%)
+    [match] no_relations seed 1: test MRR CLIP+Graph+Match 0.6083 (λr,γ,β=(1.0, 0.5, 0.4)) | CLIP+Match 0.5740 (λr,γ,β=(1.0, 2.0, 0.8)) | match-only val 0.6741 | w_tri=0.0 | 57s
+  seed 1: R@1=0.3381 MRR=0.4243 (α=0.0, λ=0.25) | adaptive MRR=0.4410 [CV val 0.5308 vs 0.5244; α(q) có/không khái niệm 0.03/0.12]
+[72:24 | + 67.2s] ▶ [ablation 3/3 'no_relations' | seed 3/3] dựng đồ thị + bộ truy vấn
+[72:30 | +  6.0s] ✔ [ablation 3/3 'no_relations' | seed 3/3] dựng đồ thị + bộ truy vấn (6.0s)
+[72:30 | +  0.0s]     nodes=9920 | scene=0 related=0 isa=0 | đường đi P1..P5=0
+[72:30 | +  0.0s] ▶   huấn luyện GNN seed=2 (20 epoch, 6611 truy vấn)
+[73:56 | + 85.8s] ✔   huấn luyện GNN seed=2 (20 epoch, 6611 truy vấn) (85.8s)
+[73:56 | +  0.0s]     loss 40.600 → 1.404 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.195 0.195 0.195 0.121 0.121 0.313 | gate L0[scene,rel,isa] 0.18 0.18 0.18
+[73:56 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[73:56 | +  0.4s] ✔   quét (α, λ) trên VAL (36 cặp) (0.4s)
+[73:56 | +  0.0s]     chọn α=0.0, λ=0.25 | VAL MRR=0.5104 (CLIP thuần: 0.1728)
+[73:57 | +  0.6s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.4099
+    [quan hệ khó] no_relations seed 2: MRR 0.8612 (CLIP 0.6260) | R@1 0.8015 | n=685
+    [phản thực tế] no_relations seed 2: video đúng bị hạ hạng ở 43.5% truy vấn (CLIP 26.8%)
+    [match] no_relations seed 2: test MRR CLIP+Graph+Match 0.5989 (λr,γ,β=(0.3, 0.5, 0.4)) | CLIP+Match 0.5740 (λr,γ,β=(1.0, 2.0, 0.8)) | match-only val 0.6741 | w_tri=0.0 | 56s
+  seed 2: R@1=0.3221 MRR=0.4099 (α=0.0, λ=0.25) | adaptive MRR=0.4303 [CV val 0.5267 vs 0.5104; α(q) có/không khái niệm 0.03/0.13]
+[75:04 | + 67.0s] ✔ 5/9 thí nghiệm chính: 3 ablation × 3 seed = 9 lần huấn luyện (3278.6s)
+
+MRR trên VALIDATION theo (α, λ):
+ lam      0.00    0.25    0.50    0.75
+alpha                                
+0.0    0.3977  0.5083  0.5064  0.4240
+0.2    0.4256  0.4910  0.5117  0.4770
+0.4    0.3302  0.3584  0.3701  0.3653
+0.5    0.2902  0.3037  0.3146  0.3122
+0.6    0.2533  0.2600  0.2650  0.2677
+0.7    0.2282  0.2296  0.2333  0.2350
+0.8    0.2080  0.2086  0.2097  0.2079
+0.9    0.1871  0.1870  0.1875  0.1888
+1.0    0.1728  0.1728  0.1728  0.1728
+[75:04 | +  0.0s] ▶ 6/9 phân tích 5 thành công / 5 thất bại
+[75:04 | +  0.0s] ✔ 6/9 phân tích 5 thành công / 5 thất bại (0.0s)
+
+[THÀNH CÔNG] nhóm=direct | hạng CLIP 100 → CLIP+Graph 1
+  truy vấn: A person is putting some plates in a box. They pick up the box and put it on a bed. They then pick up a blanke
+    • ảnh –chứa→ box   [+0.7733]
+    • ảnh –chứa→ blanket   [+0.6469]
+    • ảnh –chứa→ bedroom –liên_quan→ bed   [+0.1128]
+    • ảnh –chứa→ put box –là_một→ put   [+0.1118]
+    • ảnh –chứa→ put dish –là_một→ put   [+0.1118]
+
+[THÀNH CÔNG] nhóm=direct | hạng CLIP 100 → CLIP+Graph 4
+  truy vấn: A person takes a seat on a couch and looks at their phone. They put down the phone and look at the television.
+    • ảnh –chứa→ look television   [+0.3366]
+    • ảnh –chứa→ television   [+0.3349]
+    • ảnh –chứa→ sofa   [+0.2767]
+    • ảnh –chứa→ look phone   [+0.2108]
+    • ảnh –chứa→ phone   [+0.1947]
+
+[THÀNH CÔNG] nhóm=direct | hạng CLIP 99 → CLIP+Graph 3
+  truy vấn: A person sets down  her cup on a table. The person pulls out a phone and looks at it.
+    • ảnh –chứa→ phone   [+0.4875]
+    • ảnh –chứa→ table   [+0.4083]
+    • ảnh –chứa→ cup   [+0.3934]
+    • ảnh –chứa→ look cup –là_một→ look   [+0.0141]
+    • ảnh –chứa→ look phone –là_một→ look   [+0.0141]
+
+[THÀNH CÔNG] nhóm=direct | hạng CLIP 96 → CLIP+Graph 1
+  truy vấn: A person tidies the floor with a broom. They put down the broom, then take a picture from the top of a cabinet
+    • ảnh –thể_hiện→ ⟨tidy floor before sit⟩   [+0.4055]
+    • ảnh –chứa→ tidy floor   [+0.3408]
+    • ảnh –chứa→ broom   [+0.3401]
+    • ảnh –chứa→ sit   [+0.2416]
+    • ảnh –chứa→ floor   [+0.2148]
+
+[THÀNH CÔNG] nhóm=direct | hạng CLIP 97 → CLIP+Graph 2
+  truy vấn: A person walks into the room holding a phone and sits down in a chair. They watch the television and then look
+    • ảnh –chứa→ look television   [+0.2661]
+    • ảnh –chứa→ television   [+0.2649]
+    • ảnh –chứa→ sit   [+0.1735]
+    • ảnh –chứa→ look phone   [+0.1684]
+    • ảnh –chứa→ hold phone   [+0.1571]
+
+[THẤT BẠI] nhóm=direct | hạng CLIP 1 → CLIP+Graph 46
+  truy vấn: A person walks up some stairs and drops something down the stairs. The person then peers down at the camera an
+    • ảnh –chứa→ stair   [+1.8238]
+
+[THẤT BẠI] nhóm=indirect | hạng CLIP 7 → CLIP+Graph 50
+  truy vấn: A person walks around a room before tossing a blanket at a wall. The person proceeds to walk away and a dog co
+    • ảnh –chứa→ run –liên_quan→ walk doorway –là_một→ walk   [+0.0125]
+
+[THẤT BẠI] nhóm=direct | hạng CLIP 39 → CLIP+Graph 73
+  truy vấn: A person laying on a bed reaches over the end towards a box sitting on the floor.
+    • ảnh –chứa→ bed   [+1.7257]
+    • ảnh –chứa→ bed –afford→ sit bed –là_một→ sit   [+0.0261]
+    • ảnh –chứa→ touch bed –liên_quan→ sit bed –là_một→ sit   [+0.0088]
+    • ảnh –chứa→ bed –liên_quan→ sit bed –là_một→ sit   [+0.0078]
+    • ảnh –chứa→ awaken bed –liên_quan→ sit bed –là_một→ sit   [+0.0072]
+
+[THẤT BẠI] nhóm=direct | hạng CLIP 8 → CLIP+Graph 28
+  truy vấn: Person looking in the closet moving items on the shelf person moving clothes on hangers around the closet.
+    • ảnh –chứa→ shelf   [+0.5013]
+    • ảnh –chứa→ look closet   [+0.4557]
+    • ảnh –chứa→ closet   [+0.4022]
+    • ảnh –chứa→ look doorway –là_một→ look   [+0.0132]
+    • ảnh –chứa→ look door –là_một→ look   [+0.0132]
+
+[THẤT BẠI] nhóm=direct | hạng CLIP 5 → CLIP+Graph 24
+  truy vấn: A person is cooking in the kitchen
+    • ảnh –chứa→ kitchen   [+1.3739]
+    • ảnh –chứa→ cook food –là_một→ cook   [+0.6005]
+    • ảnh –chứa→ kitchen –liên_quan→ cook food –là_một→ cook   [+0.0218]
+[75:04 | +  0.0s] ▶ 7/9 fidelity trên điểm đường đi
+[75:04 | +  0.1s] ✔ 7/9 fidelity trên điểm đường đi (0.1s)
+
+xAI (điểm đường đi): {'n_queries': 20, 'mean_paths': 38.1, 'fidelity_minus': 2.3963, 'fidelity_minus_random_control': 0.4169, 'fidelity_plus_gap': 0.3728, 'sparsity': 0.7955, 'validity': 1.0, 'necessity_ratio': 5.7478}
+[75:04 | +  0.0s] ▶ 8/9 fidelity trên thứ hạng điểm cuối
+[75:05 | +  0.8s] ✔ 8/9 fidelity trên thứ hạng điểm cuối (0.8s)
+xAI (thứ hạng điểm cuối): {'n_queries': 50, 'rank_full': np.float64(3.26), 'rank_after_drop_explanation': np.float64(24.2), 'rank_after_drop_random': np.float64(6.598), 'rank_with_only_explanation': np.float64(5.24), 'frac_rank_worse_when_drop_expl': 0.94, 'frac_rank_worse_when_drop_rand': 0.58}
+[75:05 | +  0.0s] ▶ 9/9 xuất bộ truy vấn đánh giá + demo
+Đã ghi 20 truy vấn đánh giá → /kaggle/working/output/action_genome/results/eval_queries_20.json
+
+Truy vấn: 'a person drinking from a glass while sitting on the couch'
+Khái niệm nhận ra: ['drink cup', 'sit sofa', 'drink', 'cup', 'sit', 'sofa', 'drink cup before sit sofa']
+
+  #1  image_id=2492  score=1.6822
+      caption: A person sitting on the couch holds a cup of coffee while looking out the window.
+      đối tượng: ['chair', 'cup', 'drink cup', 'hold cup', 'lean chair', 'lean sofa', 'lie chair', 'living room']
+      GIẢI THÍCH (31 đường đi, hiển thị 5):
+        • ảnh –chứa→ sit sofa   [đóng góp +0.4120]
+        • ảnh –chứa→ sofa   [đóng góp +0.4066]
+        • ảnh –chứa→ drink cup   [đóng góp +0.2952]
+        • ảnh –chứa→ cup   [đóng góp +0.2308]
+        • ảnh –chứa→ sit chair –là_một→ sit   [đóng góp +0.1456]
+
+  #2  image_id=6055  score=1.4933
+      caption: A person is sitting on the couch taking a camera out of a bag and then drinks some coffee.
+      đối tượng: ['bag', 'chair', 'cup', 'drink cup', 'hold bag', 'hold cup', 'hold phone', 'look bag']
+      GIẢI THÍCH (30 đường đi, hiển thị 5):
+        • ảnh –chứa→ sit sofa   [đóng góp +0.4120]
+        • ảnh –chứa→ sofa   [đóng góp +0.4066]
+        • ảnh –chứa→ drink cup   [đóng góp +0.2952]
+        • ảnh –chứa→ cup   [đóng góp +0.2308]
+        • ảnh –chứa→ sit chair –là_một→ sit   [đóng góp +0.1456]
+
+  #3  image_id=3003  score=1.3267
+      caption: A person sits on a couch while drinking a beverage and tapping their feet as if they were 
+      đối tượng: ['bag', 'blanket', 'clothes', 'cup', 'drink cup', 'hold bag', 'hold blanket', 'hold clothes']
+      GIẢI THÍCH (23 đường đi, hiển thị 5):
+        • ảnh –chứa→ sit sofa   [đóng góp +0.4120]
+        • ảnh –chứa→ sofa   [đóng góp +0.4066]
+        • ảnh –chứa→ drink cup   [đóng góp +0.2952]
+        • ảnh –chứa→ cup   [đóng góp +0.2308]
+        • ảnh –chứa→ sit sofa –là_một→ sit   [đóng góp +0.2244]
+
+Truy vấn: 'someone watching tv and holding a phone'
+Khái niệm nhận ra: ['hold phone', 'look', 'hold', 'phone']
+
+  #1  image_id=6911  score=1.8460
+      caption: The person is standng in front of the couch messing wth a cell phone and then throws it an
+      đối tượng: ['hold phone', 'living room', 'look phone', 'phone', 'play phone', 'put phone', 'smile', 'touch phone']
+      GIẢI THÍCH (23 đường đi, hiển thị 5):
+        • ảnh –chứa→ hold phone   [đóng góp +0.6655]
+        • ảnh –chứa→ phone   [đóng góp +0.6582]
+        • ảnh –chứa→ hold phone –là_một→ hold   [đóng góp +0.0232]
+        • ảnh –chứa→ look phone –là_một→ look   [đóng góp +0.0143]
+        • ảnh –chứa→ look phone –liên_quan→ hold phone –là_một→ hold   [đóng góp +0.0015]
+
+  #2  image_id=3998  score=1.7421
+      caption: The person was sitting on the couch. The person smiled and laughed while playing on their 
+      đối tượng: ['hold phone', 'laugh', 'look phone', 'phone', 'play phone', 'recreation room', 'sit sofa', 'smile']
+      GIẢI THÍCH (28 đường đi, hiển thị 5):
+        • ảnh –chứa→ hold phone   [đóng góp +0.6655]
+        • ảnh –chứa→ phone   [đóng góp +0.6582]
+        • ảnh –chứa→ hold phone –là_một→ hold   [đóng góp +0.0232]
+        • ảnh –chứa→ look phone –là_một→ look   [đóng góp +0.0143]
+        • ảnh –chứa→ look phone –liên_quan→ hold phone –là_một→ hold   [đóng góp +0.0016]
+
+  #3  image_id=7711  score=1.5822
+      caption: A person walks into the room holding a phone and sits down in a chair. They watch the tele
+      đối tượng: ['chair', 'hold phone', 'laugh television', 'lean chair', 'look phone', 'look television', 'office', 'phone']
+      GIẢI THÍCH (35 đường đi, hiển thị 5):
+        • ảnh –chứa→ hold phone   [đóng góp +0.6655]
+        • ảnh –chứa→ phone   [đóng góp +0.6582]
+        • ảnh –chứa→ hold phone –là_một→ hold   [đóng góp +0.0225]
+        • ảnh –chứa→ look television –là_một→ look   [đóng góp +0.0138]
+        • ảnh –chứa→ look phone –là_một→ look   [đóng góp +0.0138]
+[75:10 | +  5.4s] ✔ 9/9 xuất bộ truy vấn đánh giá + demo (5.4s)
+[75:10 | +  0.0s] XONG toàn bộ cell Action Genome
+
+==================================================================
+ABLATION = none
+==================================================================
+[75:16 | +  5.8s] ▶ [ablation 1/1 'none' | seed 1/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 198/202 lớp đối tượng có khái niệm cha
+Nhóm truy vấn: {'direct': 8784, 'other': 344, 'indirect': 459}
+[75:34 | + 17.7s] ✔ [ablation 1/1 'none' | seed 1/3] dựng đồ thị + bộ truy vấn (17.7s)
+[75:34 | +  0.0s]     nodes=9847 | scene=167 related=1615 isa=221 | đường đi P1..P5=640036
+Đồ thị: {'nodes': 9847, 'images': 9587, 'object_classes': 202, 'concepts': 58, 'edges': 110163, 'contains': 108160, 'scene': 167, 'related': 1615, 'isa': 221, 'triple_nodes': 0, 'triple_edges': 0, 'paths': {'P0_contains': 108160, 'P1_scene': 91495, 'P2_isa': 88992, 'P3_related': 216593, 'P4_scene_isa': 75966, 'P5_related_isa': 166990, 'P6_triple': 0}, 'ablation': 'none'}
+[75:34 | +  0.0s] ▶   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn)
+  cạnh dùng khi huấn luyện: 144892/220326 (đã bỏ 75434 cạnh chạm ảnh val/test)
+  epoch  0 | loss 43.9689 | w_path 1.000 0.128 0.180 0.124 0.090 0.086 0.313 | gate L0[scene,rel,isa] 0.17 0.18 0.18 | clip_w 0.71
+  epoch  3 | loss 12.7794 | w_path 1.000 0.090 0.174 0.108 0.112 0.102 0.313 | gate L0[scene,rel,isa] 0.20 0.23 0.18 | clip_w 0.30
+  epoch  6 | loss 7.6688 | w_path 1.000 0.070 0.131 0.142 0.133 0.144 0.313 | gate L0[scene,rel,isa] 0.19 0.20 0.18 | clip_w 0.17
+  epoch  9 | loss 5.4946 | w_path 1.000 0.050 0.110 0.163 0.137 0.163 0.313 | gate L0[scene,rel,isa] 0.16 0.17 0.18 | clip_w 0.12
+  epoch 12 | loss 4.1494 | w_path 1.000 0.040 0.120 0.185 0.167 0.204 0.313 | gate L0[scene,rel,isa] 0.16 0.16 0.18 | clip_w 0.10
+  epoch 15 | loss 3.2527 | w_path 1.000 0.034 0.117 0.193 0.156 0.207 0.313 | gate L0[scene,rel,isa] 0.15 0.15 0.18 | clip_w 0.08
+  epoch 18 | loss 2.6316 | w_path 1.000 0.027 0.114 0.184 0.143 0.215 0.313 | gate L0[scene,rel,isa] 0.14 0.14 0.18 | clip_w 0.07
+  epoch 19 | loss 2.5292 | w_path 1.000 0.026 0.119 0.180 0.155 0.232 0.313 | gate L0[scene,rel,isa] 0.14 0.14 0.17 | clip_w 0.07
+[82:31 | +417.6s] ✔   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn) (417.6s)
+[82:31 | +  0.0s]     loss 43.969 → 2.529 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.026 0.119 0.180 0.155 0.232 0.313 | gate L0[scene,rel,isa] 0.14 0.14 0.17
+[82:31 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[82:33 | +  1.9s] ✔   quét (α, λ) trên VAL (36 cặp) (1.9s)
+[82:33 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.4532 (CLIP thuần: 0.1728)
+[82:37 | +  3.1s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.3706
+    [quan hệ khó] no_actions seed 0: MRR 0.8251 (CLIP 0.6260) | R@1 0.7416 | n=685
+    [phản thực tế] no_actions seed 0: video đúng bị hạ hạng ở 32.7% truy vấn (CLIP 26.8%)
+    [match] no_actions seed 0: test MRR CLIP+Graph+Match 0.5067 (λr,γ,β=(1.0, 1.0, 0.3)) | CLIP+Match 0.4319 (λr,γ,β=(1.0, 2.0, 0.7)) | match-only val 0.4809 | w_tri=0.0 | 86s
+  seed 0: R@1=0.2696 MRR=0.3706 (α=0.2, λ=0.5) | adaptive MRR=0.3765 [CV val 0.4642 vs 0.4532; α(q) có/không khái niệm 0.20/0.21]
+[84:19 | +102.1s] ▶ [ablation 1/1 'none' | seed 2/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 198/202 lớp đối tượng có khái niệm cha
+[84:30 | + 11.0s] ✔ [ablation 1/1 'none' | seed 2/3] dựng đồ thị + bộ truy vấn (11.0s)
+[84:30 | +  0.0s]     nodes=9847 | scene=167 related=1615 isa=221 | đường đi P1..P5=640036
+[84:30 | +  0.0s] ▶   huấn luyện GNN seed=1 (20 epoch, 6611 truy vấn)
+[91:25 | +415.7s] ✔   huấn luyện GNN seed=1 (20 epoch, 6611 truy vấn) (415.7s)
+[91:25 | +  0.0s]     loss 43.996 → 2.486 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.027 0.108 0.182 0.157 0.207 0.313 | gate L0[scene,rel,isa] 0.14 0.12 0.20
+[91:25 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[91:27 | +  1.9s] ✔   quét (α, λ) trên VAL (36 cặp) (1.9s)
+[91:27 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.4504 (CLIP thuần: 0.1728)
+[91:30 | +  3.1s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.3801
+    [quan hệ khó] no_actions seed 1: MRR 0.8138 (CLIP 0.6260) | R@1 0.7299 | n=685
+    [phản thực tế] no_actions seed 1: video đúng bị hạ hạng ở 32.4% truy vấn (CLIP 26.8%)
+    [match] no_actions seed 1: test MRR CLIP+Graph+Match 0.5107 (λr,γ,β=(1.0, 1.0, 0.2)) | CLIP+Match 0.4319 (λr,γ,β=(1.0, 2.0, 0.7)) | match-only val 0.4809 | w_tri=0.0 | 85s
+  seed 1: R@1=0.2862 MRR=0.3801 (α=0.2, λ=0.5) | adaptive MRR=0.3868 [CV val 0.4623 vs 0.4504; α(q) có/không khái niệm 0.20/0.21]
+[93:11 | +100.8s] ▶ [ablation 1/1 'none' | seed 3/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 198/202 lớp đối tượng có khái niệm cha
+[93:22 | + 10.7s] ✔ [ablation 1/1 'none' | seed 3/3] dựng đồ thị + bộ truy vấn (10.7s)
+[93:22 | +  0.0s]     nodes=9847 | scene=167 related=1615 isa=221 | đường đi P1..P5=640036
+[93:22 | +  0.0s] ▶   huấn luyện GNN seed=2 (20 epoch, 6611 truy vấn)
+[100:09 | +407.0s] ✔   huấn luyện GNN seed=2 (20 epoch, 6611 truy vấn) (407.0s)
+[100:09 | +  0.0s]     loss 44.385 → 2.477 | clip_w 0.07 | path_w 1.00 | w_path 1.000 0.028 0.104 0.185 0.166 0.228 0.313 | gate L0[scene,rel,isa] 0.17 0.14 0.19
+[100:09 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[100:11 | +  1.9s] ✔   quét (α, λ) trên VAL (36 cặp) (1.9s)
+[100:11 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.4506 (CLIP thuần: 0.1728)
+[100:14 | +  3.0s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.3794
+    [quan hệ khó] no_actions seed 2: MRR 0.8134 (CLIP 0.6260) | R@1 0.7255 | n=685
+    [phản thực tế] no_actions seed 2: video đúng bị hạ hạng ở 33.2% truy vấn (CLIP 26.8%)
+    [match] no_actions seed 2: test MRR CLIP+Graph+Match 0.5075 (λr,γ,β=(1.0, 1.0, 0.3)) | CLIP+Match 0.4319 (λr,γ,β=(1.0, 2.0, 0.7)) | match-only val 0.4809 | w_tri=0.0 | 84s
+  seed 2: R@1=0.2851 MRR=0.3794 (α=0.2, λ=0.5) | adaptive MRR=0.3858 [CV val 0.4622 vs 0.4506; α(q) có/không khái niệm 0.20/0.20]
+
+==================================================================
+ABLATION = none
+==================================================================
+[101:58 | +103.9s] ▶ [ablation 1/1 'none' | seed 1/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+Nhóm truy vấn: {'direct': 8907, 'indirect': 595, 'other': 85}
+[102:24 | + 26.6s] ✔ [ablation 1/1 'none' | seed 1/3] dựng đồ thị + bộ truy vấn (26.6s)
+[102:24 | +  0.0s]     nodes=28494 | scene=266 related=2772 isa=353 | đường đi P1..P5=1988795
+Đồ thị: {'nodes': 28494, 'images': 9587, 'object_classes': 333, 'concepts': 88, 'edges': 212930, 'contains': 209539, 'scene': 266, 'related': 2772, 'isa': 353, 'triple_nodes': 18486, 'triple_edges': 193428, 'paths': {'P0_contains': 209539, 'P1_scene': 371074, 'P2_isa': 174290, 'P3_related': 658334, 'P4_scene_isa': 200218, 'P5_related_isa': 391451, 'P6_triple': 193428}, 'ablation': 'none'}
+[102:24 | +  0.0s] ▶   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn)
+  cạnh dùng khi huấn luyện: 279416/425860 (đã bỏ 146444 cạnh chạm ảnh val/test)
+  epoch  0 | loss 50.5487 | w_path 1.000 0.269 0.121 0.176 0.111 0.085 0.201 | gate L0[scene,rel,isa] 0.16 0.17 0.18 | clip_w 0.71
+  epoch  3 | loss 18.1465 | w_path 1.000 0.422 0.054 0.125 0.179 0.077 0.088 | gate L0[scene,rel,isa] 0.17 0.21 0.13 | clip_w 0.33
+  epoch  6 | loss 10.7904 | w_path 1.000 0.389 0.035 0.114 0.223 0.062 0.060 | gate L0[scene,rel,isa] 0.17 0.17 0.15 | clip_w 0.21
+  epoch  9 | loss 7.6414 | w_path 1.000 0.363 0.027 0.117 0.243 0.053 0.045 | gate L0[scene,rel,isa] 0.16 0.15 0.14 | clip_w 0.16
+  epoch 12 | loss 5.4736 | w_path 1.000 0.358 0.025 0.125 0.293 0.061 0.039 | gate L0[scene,rel,isa] 0.16 0.14 0.15 | clip_w 0.13
+  epoch 15 | loss 4.1289 | w_path 1.000 0.352 0.022 0.131 0.304 0.060 0.035 | gate L0[scene,rel,isa] 0.15 0.13 0.16 | clip_w 0.11
+  epoch 18 | loss 3.2258 | w_path 1.000 0.333 0.020 0.129 0.330 0.061 0.031 | gate L0[scene,rel,isa] 0.15 0.13 0.16 | clip_w 0.10
+  epoch 19 | loss 2.9361 | w_path 1.000 0.345 0.020 0.129 0.331 0.062 0.030 | gate L0[scene,rel,isa] 0.16 0.13 0.16 | clip_w 0.09
+[113:26 | +661.9s] ✔   huấn luyện GNN seed=0 (20 epoch, 6611 truy vấn) (661.9s)
+[113:26 | +  0.0s]     loss 50.549 → 2.936 | clip_w 0.09 | path_w 1.00 | w_path 1.000 0.345 0.020 0.129 0.331 0.062 0.030 | gate L0[scene,rel,isa] 0.16 0.13 0.16
+[113:26 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[113:29 | +  3.1s] ✔   quét (α, λ) trên VAL (36 cặp) (3.1s)
+[113:29 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.4201 (CLIP thuần: 0.1728)
+[113:34 | +  5.0s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.3443
+    [quan hệ khó] shuffled_actions seed 0: MRR 0.7505 (CLIP 0.6260) | R@1 0.6380 | n=685
+    [phản thực tế] shuffled_actions seed 0: video đúng bị hạ hạng ở 26.6% truy vấn (CLIP 26.8%)
+    [match] shuffled_actions seed 0: test MRR CLIP+Graph+Match 0.4344 (λr,γ,β=(1.0, 0.5, 0.2)) | CLIP+Match 0.3494 (λr,γ,β=(3.0, 0.5, 0.7)) | match-only val 0.3333 | w_tri=0.0 | 108s
+  seed 0: R@1=0.2492 MRR=0.3443 (α=0.2, λ=0.5) | adaptive MRR=0.3496 [CV val 0.4260 vs 0.4201; α(q) có/không khái niệm 0.20/0.30]
+[115:43 | +128.6s] ▶ [ablation 1/1 'none' | seed 2/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+[116:01 | + 17.9s] ✔ [ablation 1/1 'none' | seed 2/3] dựng đồ thị + bộ truy vấn (17.9s)
+[116:01 | +  0.0s]     nodes=28494 | scene=266 related=2772 isa=353 | đường đi P1..P5=1988795
+[116:01 | +  0.0s] ▶   huấn luyện GNN seed=1 (20 epoch, 6611 truy vấn)
+[127:08 | +667.2s] ✔   huấn luyện GNN seed=1 (20 epoch, 6611 truy vấn) (667.2s)
+[127:08 | +  0.0s]     loss 50.351 → 2.957 | clip_w 0.09 | path_w 1.00 | w_path 1.000 0.355 0.020 0.131 0.334 0.051 0.029 | gate L0[scene,rel,isa] 0.17 0.13 0.27
+[127:08 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[127:11 | +  2.9s] ✔   quét (α, λ) trên VAL (36 cặp) (2.9s)
+[127:11 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.4182 (CLIP thuần: 0.1728)
+[127:16 | +  4.9s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.3410
+    [quan hệ khó] shuffled_actions seed 1: MRR 0.7431 (CLIP 0.6260) | R@1 0.6175 | n=685
+    [phản thực tế] shuffled_actions seed 1: video đúng bị hạ hạng ở 27.5% truy vấn (CLIP 26.8%)
+    [match] shuffled_actions seed 1: test MRR CLIP+Graph+Match 0.4390 (λr,γ,β=(3.0, 0.5, 0.2)) | CLIP+Match 0.3494 (λr,γ,β=(3.0, 0.5, 0.7)) | match-only val 0.3333 | w_tri=0.0 | 108s
+  seed 1: R@1=0.2431 MRR=0.3410 (α=0.2, λ=0.5) | adaptive MRR=0.3464 [CV val 0.4252 vs 0.4182; α(q) có/không khái niệm 0.20/0.29]
+[129:24 | +128.3s] ▶ [ablation 1/1 'none' | seed 3/3] dựng đồ thị + bộ truy vấn
+WordNet(+fallback): 322/333 lớp đối tượng có khái niệm cha
+[129:43 | + 18.7s] ✔ [ablation 1/1 'none' | seed 3/3] dựng đồ thị + bộ truy vấn (18.7s)
+[129:43 | +  0.0s]     nodes=28494 | scene=266 related=2772 isa=353 | đường đi P1..P5=1988795
+[129:43 | +  0.0s] ▶   huấn luyện GNN seed=2 (20 epoch, 6611 truy vấn)
+[140:31 | +648.1s] ✔   huấn luyện GNN seed=2 (20 epoch, 6611 truy vấn) (648.1s)
+[140:31 | +  0.0s]     loss 50.291 → 3.041 | clip_w 0.09 | path_w 1.00 | w_path 1.000 0.358 0.020 0.132 0.320 0.062 0.027 | gate L0[scene,rel,isa] 0.15 0.15 0.17
+[140:31 | +  0.0s] ▶   quét (α, λ) trên VAL (36 cặp)
+[140:34 | +  2.9s] ✔   quét (α, λ) trên VAL (36 cặp) (2.9s)
+[140:34 | +  0.0s]     chọn α=0.2, λ=0.5 | VAL MRR=0.4216 (CLIP thuần: 0.1728)
+[140:39 | +  4.9s]     TEST: CLIP MRR=0.1712 → CLIP+Graph MRR=0.3392
+    [quan hệ khó] shuffled_actions seed 2: MRR 0.7404 (CLIP 0.6260) | R@1 0.6131 | n=685
+    [phản thực tế] shuffled_actions seed 2: video đúng bị hạ hạng ở 29.1% truy vấn (CLIP 26.8%)
+    [match] shuffled_actions seed 2: test MRR CLIP+Graph+Match 0.4413 (λr,γ,β=(3.0, 0.5, 0.2)) | CLIP+Match 0.3494 (λr,γ,β=(3.0, 0.5, 0.7)) | match-only val 0.3333 | w_tri=0.0 | 104s
+  seed 2: R@1=0.2365 MRR=0.3392 (α=0.2, λ=0.5) | adaptive MRR=0.3428 [CV val 0.4262 vs 0.4216; α(q) có/không khái niệm 0.20/0.28]
+AG — CLIP+Graph vs CLIP (kiểm định cặp):
+             config group     n  MRR_clip  MRR_graph  R1_clip  R1_graph    diff   ci_lo   ci_hi dataset
+0              none   all  1810    0.1712     0.4243   0.1044    0.3354  0.2531  0.2359  0.2698      AG
+0    no_class_edges   all  1810    0.1712     0.4185   0.1044    0.3291  0.2473  0.2304  0.2636      AG
+0      no_relations   all  1810    0.1712     0.4161   0.1044    0.3289  0.2449  0.2243  0.2652      AG
+0        no_actions   all  1810    0.1712     0.3767   0.1044    0.2803  0.2055  0.1902  0.2204      AG
+0  shuffled_actions   all  1810    0.1712     0.3415   0.1044    0.2429  0.1703  0.1552  0.1851      AG
+
+AG — đồ thị đầy đủ (none) vs từng cấu hình:
+  group     n   MRR_a   MRR_b    diff   ci_lo   ci_hi  p_a_not_better  a_wins  b_wins     a                 b
+0   all  1810  0.4243  0.3767  0.0476  0.0371  0.0581          0.0000     591     369  none        no_actions
+0   all  1810  0.4243  0.3415  0.0827  0.0713  0.0943          0.0000     665     325  none  shuffled_actions
+0   all  1810  0.4243  0.4185  0.0058 -0.0008  0.0122          0.0415     455     411  none    no_class_edges
+0   all  1810  0.4243  0.4161  0.0082 -0.0029  0.0187          0.0712     470     424  none      no_relations
+
+Bộ quan hệ khó (AG):
+                         model  n_queries  seeds              MRR      R1
+0                         none        685      3  0.9131 ± 0.0212  0.8657
+1                         CLIP        685      3  0.6260 ± 0.0000  0.4847
+2                   none+match        685      3  0.9597 ± 0.0036  0.9363
+3               none+clipmatch        685      3  0.9312 ± 0.0000  0.8876
+4               no_class_edges        685      3  0.8943 ± 0.0208  0.8438
+5         no_class_edges+match        685      3  0.9389 ± 0.0107  0.9041
+6     no_class_edges+clipmatch        685      3  0.9312 ± 0.0000  0.8876
+7                 no_relations        685      3  0.8656 ± 0.0063  0.8068
+8           no_relations+match        685      3  0.9258 ± 0.0017  0.8856
+9       no_relations+clipmatch        685      3  0.9312 ± 0.0000  0.8876
+10                  no_actions        685      3  0.8174 ± 0.0054  0.7324
+11            no_actions+match        685      3  0.8531 ± 0.0083  0.7742
+12        no_actions+clipmatch        685      3  0.8435 ± 0.0000  0.7606
+13            shuffled_actions        685      3  0.7447 ± 0.0043  0.6229
+14      shuffled_actions+match        685      3  0.7907 ± 0.0026  0.6881
+15  shuffled_actions+clipmatch        685      3  0.7830 ± 0.0000  0.6847
+  group    n   MRR_a   MRR_b    diff   ci_lo   ci_hi  p_a_not_better  a_wins  b_wins     a                 b
+0   all  685  0.9131  0.6260  0.2871  0.2570  0.3171          0.0000     342      67  none              CLIP
+0   all  685  0.9131  0.8174  0.0957  0.0747  0.1171          0.0000     204      84  none        no_actions
+0   all  685  0.9131  0.7447  0.1685  0.1459  0.1920          0.0000     299      75  none  shuffled_actions
+0   all  685  0.9131  0.8943  0.0188  0.0072  0.0307          0.0005     116      77  none    no_class_edges
+0   all  685  0.9131  0.8656  0.0475  0.0323  0.0633          0.0000     138      65  none      no_relations
+
+Truy vấn phản thực tế:
+                         model    n  seeds  demoted  promoted  delta_RR
+0                         none  683      3   0.3890    0.0166    0.2221
+1                         CLIP  683      3   0.2679    0.1098    0.0445
+2                   none+match  683      3   0.1967    0.0063    0.1052
+3               none+clipmatch  683      3   0.1098    0.0088    0.0387
+4               no_class_edges  683      3   0.3836    0.0293    0.2325
+5         no_class_edges+match  683      3   0.2157    0.0151    0.1215
+6     no_class_edges+clipmatch  683      3   0.1098    0.0088    0.0387
+7                 no_relations  683      3   0.4431    0.0283    0.2874
+8           no_relations+match  683      3   0.2596    0.0117    0.1538
+9       no_relations+clipmatch  683      3   0.1098    0.0088    0.0387
+10                  no_actions  683      3   0.3275    0.0517    0.1312
+11            no_actions+match  683      3   0.2211    0.0386    0.0756
+12        no_actions+clipmatch  683      3   0.1376    0.0425    0.0344
+13            shuffled_actions  683      3   0.2777    0.0991    0.0776
+14      shuffled_actions+match  683      3   0.2225    0.0722    0.0583
+15  shuffled_actions+clipmatch  683      3   0.1625    0.0659    0.0292
+       a                           b    n  diff_delta_RR   ci_lo   ci_hi
+0   none                        CLIP  683         0.1776  0.1527  0.2022
+1   none                  none+match  683         0.1168  0.1001  0.1340
+2   none              none+clipmatch  683         0.1834  0.1610  0.2058
+3   none              no_class_edges  683        -0.0104 -0.0293  0.0088
+4   none        no_class_edges+match  683         0.1006  0.0816  0.1197
+5   none    no_class_edges+clipmatch  683         0.1834  0.1611  0.2061
+6   none                no_relations  683        -0.0654 -0.0889 -0.0415
+7   none          no_relations+match  683         0.0683  0.0472  0.0887
+8   none      no_relations+clipmatch  683         0.1834  0.1610  0.2063
+9   none                  no_actions  683         0.0908  0.0684  0.1129
+10  none            no_actions+match  683         0.1464  0.1245  0.1685
+11  none        no_actions+clipmatch  683         0.1877  0.1637  0.2117
+12  none            shuffled_actions  683         0.1444  0.1224  0.1660
+13  none      shuffled_actions+match  683         0.1638  0.1424  0.1855
+14  none  shuffled_actions+clipmatch  683         0.1929  0.1702  0.2165
+AG — kiểm định cặp vs CLIP:
+                   config group     n  MRR_clip  MRR_graph  R1_clip  R1_graph    diff   ci_lo   ci_hi dataset
+0                    none   all  1810    0.1712     0.4243   0.1044    0.3354  0.2531  0.2359  0.2698      AG
+0          none+clipmatch   all  1810    0.1712     0.5740   0.1044    0.4448  0.4028  0.3815  0.4235      AG
+0              none+match   all  1810    0.1712     0.6416   0.1044    0.5308  0.4704  0.4494  0.4911      AG
+0    no_class_edges+match   all  1810    0.1712     0.6348   0.1044    0.5241  0.4636  0.4423  0.4839      AG
+0      no_relations+match   all  1810    0.1712     0.6051   0.1044    0.4971  0.4339  0.4110  0.4559      AG
+0              no_actions   all  1810    0.1712     0.3767   0.1044    0.2803  0.2055  0.1902  0.2204      AG
+0        no_actions+match   all  1810    0.1712     0.5083   0.1044    0.3820  0.3371  0.3165  0.3569      AG
+0        shuffled_actions   all  1810    0.1712     0.3415   0.1044    0.2429  0.1703  0.1552  0.1851      AG
+0  shuffled_actions+match   all  1810    0.1712     0.4382   0.1044    0.3190  0.2670  0.2479  0.2860      AG
+
+Kiểm định cặp giữa các cấu hình:
+  group     n   MRR_a   MRR_b    diff   ci_lo   ci_hi  p_a_not_better  a_wins  b_wins               a                       b
+0   all  1810  0.6416  0.4243  0.2173  0.1990  0.2358           0.000    1051     389      none+match                    none
+0   all  1810  0.6416  0.5740  0.0676  0.0569  0.0783           0.000     710     344      none+match          none+clipmatch
+0   all  1810  0.6416  0.5083  0.1333  0.1202  0.1465           0.000     960     306      none+match        no_actions+match
+0   all  1810  0.6416  0.4382  0.2033  0.1871  0.2195           0.000    1110     316      none+match  shuffled_actions+match
+0   all  1810  0.6416  0.6051  0.0365  0.0285  0.0447           0.000     652     353      none+match      no_relations+match
+0   all  1810  0.6416  0.6348  0.0068  0.0007  0.0129           0.013     525     461      none+match    no_class_edges+match
+0   all  1810  0.5740  0.4243  0.1497  0.1298  0.1695           0.000    1034     449  none+clipmatch                    none
+
+Bộ quan hệ khó (AG) với nhánh khớp:
+                         model  n_queries  seeds              MRR      R1
+0                         none        685      3  0.9131 ± 0.0212  0.8657
+1                         CLIP        685      3  0.6260 ± 0.0000  0.4847
+2                   none+match        685      3  0.9597 ± 0.0036  0.9363
+3               none+clipmatch        685      3  0.9312 ± 0.0000  0.8876
+4               no_class_edges        685      3  0.8943 ± 0.0208  0.8438
+5         no_class_edges+match        685      3  0.9389 ± 0.0107  0.9041
+6     no_class_edges+clipmatch        685      3  0.9312 ± 0.0000  0.8876
+7                 no_relations        685      3  0.8656 ± 0.0063  0.8068
+8           no_relations+match        685      3  0.9258 ± 0.0017  0.8856
+9       no_relations+clipmatch        685      3  0.9312 ± 0.0000  0.8876
+10                  no_actions        685      3  0.8174 ± 0.0054  0.7324
+11            no_actions+match        685      3  0.8531 ± 0.0083  0.7742
+12        no_actions+clipmatch        685      3  0.8435 ± 0.0000  0.7606
+13            shuffled_actions        685      3  0.7447 ± 0.0043  0.6229
+14      shuffled_actions+match        685      3  0.7907 ± 0.0026  0.6881
+15  shuffled_actions+clipmatch        685      3  0.7830 ± 0.0000  0.6847
+  group    n   MRR_a   MRR_b    diff   ci_lo   ci_hi  p_a_not_better  a_wins  b_wins           a                       b
+0   all  685  0.9597  0.6260  0.3337  0.3045  0.3628             0.0     346      23  none+match                    CLIP
+0   all  685  0.9597  0.9131  0.0466  0.0362  0.0575             0.0     132      21  none+match                    none
+0   all  685  0.9597  0.9312  0.0286  0.0153  0.0422             0.0      66      30  none+match          none+clipmatch
+0   all  685  0.9597  0.8531  0.1066  0.0896  0.1244             0.0     180      20  none+match        no_actions+match
+0   all  685  0.9597  0.7907  0.1690  0.1485  0.1908             0.0     247      22  none+match  shuffled_actions+match
+0   all  685  0.9597  0.9258  0.0339  0.0226  0.0456             0.0      72      22  none+match      no_relations+match
+0   all  685  0.9597  0.9389  0.0209  0.0128  0.0295             0.0      70      21  none+match    no_class_edges+match
+
+Truy vấn phản thực tế với nhánh khớp:
+                         model    n  seeds  demoted  promoted  delta_RR
+0                         none  683      3   0.3890    0.0166    0.2221
+1                         CLIP  683      3   0.2679    0.1098    0.0445
+2                   none+match  683      3   0.1967    0.0063    0.1052
+3               none+clipmatch  683      3   0.1098    0.0088    0.0387
+4               no_class_edges  683      3   0.3836    0.0293    0.2325
+5         no_class_edges+match  683      3   0.2157    0.0151    0.1215
+6     no_class_edges+clipmatch  683      3   0.1098    0.0088    0.0387
+7                 no_relations  683      3   0.4431    0.0283    0.2874
+8           no_relations+match  683      3   0.2596    0.0117    0.1538
+9       no_relations+clipmatch  683      3   0.1098    0.0088    0.0387
+10                  no_actions  683      3   0.3275    0.0517    0.1312
+11            no_actions+match  683      3   0.2211    0.0386    0.0756
+12        no_actions+clipmatch  683      3   0.1376    0.0425    0.0344
+13            shuffled_actions  683      3   0.2777    0.0991    0.0776
+14      shuffled_actions+match  683      3   0.2225    0.0722    0.0583
+15  shuffled_actions+clipmatch  683      3   0.1625    0.0659    0.0292
+             a                           b    n  diff_delta_RR   ci_lo   ci_hi
+0   none+match                        none  683        -0.1168 -0.1339 -0.0996
+1   none+match                        CLIP  683         0.0607  0.0397  0.0816
+2   none+match              none+clipmatch  683         0.0666  0.0512  0.0822
+3   none+match              no_class_edges  683        -0.1272 -0.1490 -0.1058
+4   none+match        no_class_edges+match  683        -0.0162 -0.0289 -0.0037
+5   none+match    no_class_edges+clipmatch  683         0.0666  0.0511  0.0822
+6   none+match                no_relations  683        -0.1822 -0.2075 -0.1565
+7   none+match          no_relations+match  683        -0.0485 -0.0656 -0.0320
+8   none+match      no_relations+clipmatch  683         0.0666  0.0511  0.0824
+9   none+match                  no_actions  683        -0.0260 -0.0455 -0.0065
+10  none+match            no_actions+match  683         0.0296  0.0124  0.0465
+11  none+match        no_actions+clipmatch  683         0.0708  0.0528  0.0886
+12  none+match            shuffled_actions  683         0.0276  0.0075  0.0476
+13  none+match      shuffled_actions+match  683         0.0469  0.0288  0.0651
+14  none+match  shuffled_actions+clipmatch  683         0.0761  0.0581  0.0942
+Phần A xong. Kết quả: /kaggle/working/results/ và /kaggle/working/output/action_genome/results/
+[     0.0s] Chế độ REAL | out=/kaggle/working/p3_out
+Nhúng: 15128 id VAL, 13586 id G0, 1542 id benchmark v3
+Lõi đồ thị sẵn sàng: 150 lớp, 50 vị từ VG150 | 3s
+[     2.8s] VAL 15128 ảnh | DEV-G0 4752 ảnh (TN1)
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import sys;import papermill as pm;pm.execute_notebook("__notebook__.ipynb","__notebook__.ipynb",progress_bar=False,log_output=True,stdout_file=sys.stdout,stderr_file=sys.stderr,allow_errors=False,timeout=43200)
+                                      ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.13/dist-packages/papermill/execute.py", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at "In [57]":
+---------------------------------------------------------------------------
+AssertionError                            Traceback (most recent call last)
+/tmp/ipykernel_23/1891502158.py in <cell line: 0>()
+     39 
+     40 
+---> 41 P = find_inputs()
+     42 SHA = {k: sha256(P[k]) for k in ("image_data", "rel", "obj_dw")}
+     43 if not SMOKE:
+
+/tmp/ipykernel_23/1891502158.py in find_inputs()
+     33              obj_dw=pick("objects.json", "dannywu375/visualgenome"), cap_train=sorted(found["captions_train2017.json"]),
+     34              cap_val=sorted(found["captions_val2017.json"]))
+---> 35     for k, v in r.items(): assert v, f"thiếu input {k}"
+     36     r = {k: v[0] for k, v in r.items()}
+     37     r.update(vg_dirs=sorted(vgdirs), coco_val=sorted(cocoval)[0])
+
+AssertionError: thiếu input image_data
+
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+[NbConvertApp] Writing 923306 bytes to __notebook__.ipynb
+[NbConvertApp] Converting notebook __notebook__.ipynb to html
+[NbConvertApp] Writing 2640664 bytes to __results__.html

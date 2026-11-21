@@ -1,0 +1,493 @@
+[
+ {
+  "kind": "thanh_cong",
+  "query_image_id": 2326043,
+  "caption": "A black trash bag in a restroom next to a sink.",
+  "rank_clip": 19,
+  "rank_graph": 10,
+  "rank_obj_only": 10,
+  "parsed_triples": [
+   "bag|in|sink",
+   "bag|near|sink"
+  ],
+  "parsed_entities": [
+   "bag",
+   "sink"
+  ],
+  "relevant_evidence": {
+   "edges": [],
+   "nodes": [
+    "bag",
+    "sink"
+   ]
+  },
+  "top3": [
+   {
+    "image_id": 2323896,
+    "clip_pos": 1,
+    "relevant": false,
+    "edges": [],
+    "nodes": []
+   },
+   {
+    "image_id": 2320125,
+    "clip_pos": 2,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "sink"
+    ]
+   },
+   {
+    "image_id": 2414724,
+    "clip_pos": 3,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "sink"
+    ]
+   }
+  ]
+ },
+ {
+  "kind": "thanh_cong",
+  "query_image_id": 2318051,
+  "caption": "A view of a living room with a laptop sitting on a table.",
+  "rank_clip": 26,
+  "rank_graph": 19,
+  "rank_obj_only": 19,
+  "parsed_triples": [
+   "laptop|sitting on|table",
+   "room|with|laptop"
+  ],
+  "parsed_entities": [
+   "laptop",
+   "room",
+   "table"
+  ],
+  "relevant_evidence": {
+   "edges": [],
+   "nodes": [
+    "laptop",
+    "room",
+    "table"
+   ]
+  },
+  "top3": [
+   {
+    "image_id": 2415288,
+    "clip_pos": 1,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "laptop"
+    ]
+   },
+   {
+    "image_id": 2320546,
+    "clip_pos": 2,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "room",
+     "table"
+    ]
+   },
+   {
+    "image_id": 2319591,
+    "clip_pos": 3,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "laptop",
+     "table"
+    ]
+   }
+  ]
+ },
+ {
+  "kind": "thanh_cong",
+  "query_image_id": 2413544,
+  "caption": "some zebras and giraffes are walking around",
+  "rank_clip": 19,
+  "rank_graph": 12,
+  "rank_obj_only": 12,
+  "parsed_triples": [],
+  "parsed_entities": [
+   "giraffe",
+   "zebra"
+  ],
+  "relevant_evidence": {
+   "edges": [],
+   "nodes": [
+    "giraffe",
+    "zebra"
+   ]
+  },
+  "top3": [
+   {
+    "image_id": 2332653,
+    "clip_pos": 1,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "giraffe",
+     "zebra"
+    ]
+   },
+   {
+    "image_id": 2317729,
+    "clip_pos": 2,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "giraffe",
+     "zebra"
+    ]
+   },
+   {
+    "image_id": 2326274,
+    "clip_pos": 5,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "giraffe",
+     "zebra"
+    ]
+   }
+  ]
+ },
+ {
+  "kind": "thanh_cong",
+  "query_image_id": 2316598,
+  "caption": "A group of large ships on the back of a semi truck.",
+  "rank_clip": 25,
+  "rank_graph": 19,
+  "rank_obj_only": 19,
+  "parsed_triples": [],
+  "parsed_entities": [
+   "truck"
+  ],
+  "relevant_evidence": {
+   "edges": [],
+   "nodes": [
+    "truck"
+   ]
+  },
+  "top3": [
+   {
+    "image_id": 2416964,
+    "clip_pos": 1,
+    "relevant": false,
+    "edges": [],
+    "nodes": []
+   },
+   {
+    "image_id": 2328551,
+    "clip_pos": 2,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "truck"
+    ]
+   },
+   {
+    "image_id": 2324756,
+    "clip_pos": 3,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "truck"
+    ]
+   }
+  ]
+ },
+ {
+  "kind": "thanh_cong",
+  "query_image_id": 2325293,
+  "caption": "A man holding a large kite near the ocean.",
+  "rank_clip": 18,
+  "rank_graph": 12,
+  "rank_obj_only": 12,
+  "parsed_triples": [
+   "man|holding|kite"
+  ],
+  "parsed_entities": [
+   "kite",
+   "man"
+  ],
+  "relevant_evidence": {
+   "edges": [],
+   "nodes": [
+    "kite",
+    "man"
+   ]
+  },
+  "top3": [
+   {
+    "image_id": 2416533,
+    "clip_pos": 2,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "kite",
+     "man"
+    ]
+   },
+   {
+    "image_id": 2323790,
+    "clip_pos": 1,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "kite"
+    ]
+   },
+   {
+    "image_id": 2412527,
+    "clip_pos": 5,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "kite",
+     "man"
+    ]
+   }
+  ]
+ },
+ {
+  "kind": "that_bai",
+  "query_image_id": 2318287,
+  "caption": "A couple of traffic lights hanging over a street.",
+  "rank_clip": 83,
+  "rank_graph": 92,
+  "rank_obj_only": 92,
+  "parsed_triples": [
+   "light|above|street"
+  ],
+  "parsed_entities": [
+   "light",
+   "street"
+  ],
+  "relevant_evidence": {
+   "edges": [],
+   "nodes": []
+  },
+  "top3": [
+   {
+    "image_id": 2414496,
+    "clip_pos": 1,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "street"
+    ]
+   },
+   {
+    "image_id": 2317191,
+    "clip_pos": 2,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "light"
+    ]
+   },
+   {
+    "image_id": 2416030,
+    "clip_pos": 3,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "light"
+    ]
+   }
+  ]
+ },
+ {
+  "kind": "that_bai",
+  "query_image_id": 2331883,
+  "caption": "A colorful bus driving down a street in front of a bus.",
+  "rank_clip": 13,
+  "rank_graph": 18,
+  "rank_obj_only": 18,
+  "parsed_triples": [
+   "street|in front of|bus"
+  ],
+  "parsed_entities": [
+   "bus",
+   "street"
+  ],
+  "relevant_evidence": {
+   "edges": [],
+   "nodes": []
+  },
+  "top3": [
+   {
+    "image_id": 2326942,
+    "clip_pos": 1,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "bus"
+    ]
+   },
+   {
+    "image_id": 2326841,
+    "clip_pos": 2,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "bus",
+     "street"
+    ]
+   },
+   {
+    "image_id": 2330405,
+    "clip_pos": 5,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "bus",
+     "street"
+    ]
+   }
+  ]
+ },
+ {
+  "kind": "that_bai",
+  "query_image_id": 2333435,
+  "caption": "a living room with a couch table and a television set",
+  "rank_clip": 10,
+  "rank_graph": 15,
+  "rank_obj_only": 15,
+  "parsed_triples": [
+   "room|with|table"
+  ],
+  "parsed_entities": [
+   "room",
+   "table"
+  ],
+  "relevant_evidence": {
+   "edges": [],
+   "nodes": []
+  },
+  "top3": [
+   {
+    "image_id": 2320546,
+    "clip_pos": 1,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "room",
+     "table"
+    ]
+   },
+   {
+    "image_id": 2332986,
+    "clip_pos": 2,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "room",
+     "table"
+    ]
+   },
+   {
+    "image_id": 2330772,
+    "clip_pos": 6,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "room",
+     "table"
+    ]
+   }
+  ]
+ },
+ {
+  "kind": "that_bai",
+  "query_image_id": 2414270,
+  "caption": "an airplane is coming down for a landing",
+  "rank_clip": 10,
+  "rank_graph": 15,
+  "rank_obj_only": 15,
+  "parsed_triples": [],
+  "parsed_entities": [
+   "airplane"
+  ],
+  "relevant_evidence": {
+   "edges": [],
+   "nodes": []
+  },
+  "top3": [
+   {
+    "image_id": 2417089,
+    "clip_pos": 1,
+    "relevant": false,
+    "edges": [],
+    "nodes": []
+   },
+   {
+    "image_id": 2315611,
+    "clip_pos": 3,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "airplane"
+    ]
+   },
+   {
+    "image_id": 2328674,
+    "clip_pos": 2,
+    "relevant": false,
+    "edges": [],
+    "nodes": []
+   }
+  ]
+ },
+ {
+  "kind": "that_bai",
+  "query_image_id": 2321472,
+  "caption": "A bunch of umbellas sitting on a beach, during the day.",
+  "rank_clip": 17,
+  "rank_graph": 21,
+  "rank_obj_only": 21,
+  "parsed_triples": [],
+  "parsed_entities": [
+   "beach"
+  ],
+  "relevant_evidence": {
+   "edges": [],
+   "nodes": []
+  },
+  "top3": [
+   {
+    "image_id": 2323544,
+    "clip_pos": 1,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "beach"
+    ]
+   },
+   {
+    "image_id": 2323327,
+    "clip_pos": 3,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "beach"
+    ]
+   },
+   {
+    "image_id": 2320796,
+    "clip_pos": 5,
+    "relevant": false,
+    "edges": [],
+    "nodes": [
+     "beach"
+    ]
+   }
+  ]
+ }
+]

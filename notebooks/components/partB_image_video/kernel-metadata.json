@@ -1,0 +1,22 @@
+{
+  "id": "lamvo30ai/project3-full-pipeline",
+  "title": "project3-full-pipeline",
+  "code_file": "Project3_Final_Image_Video.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": true,
+  "machine_shape": "NvidiaTeslaT4",
+  "dataset_sources": [
+    "dannywu375/visualgenome",
+    "mathurinache/visual-genome",
+    "clkmuhammed/microsoft-coco-2017-common-objects-in-context"
+  ],
+  "competition_sources": [],
+  "kernel_sources": [
+    "lamvo30ai/project03-level4b-v2-graphfix"
+  ],
+  "model_sources": []
+}

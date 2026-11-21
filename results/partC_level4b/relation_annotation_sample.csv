@@ -1,0 +1,361 @@
+﻿sample_id,family,caption,subject,predicate,object,relation,auto_parser_agrees,double_annotate,annotator_1,annotator_2,adjudicated,note,video_id,src_node,dst_node,stratum,relation_support_videos,predicate_support_videos
+6094d0d50c45,svo,a dog is sitting and wagging his tail,dog,sit wag,tail,dog —sit wag→ tail,0,0,,,,,4ge5_V-xhP0_35_42,dog#n,tail#n,low,2,2
+dbad1a7dc6fd,prep,a woman shapes a ball of rice by squeezing it in plastic wrap and she then coats the rice with seasoning,ball,of,rice,ball —of→ rice,1,0,,,,,-_hbPLsZvvo_288_305,ball#n,rice#n,mid,3,412
+f51fb29b9d72,object_of,the lady added spices to the raw eggs,,add,spice,'spice' là ĐỐI TƯỢNG chịu hành động 'add',1,0,,,,,0lh_UWF9ZP4_79_82,spice#n,add#v,high,14,99
+8012669ca047,prep,a car is going on road,car,on,road,car —on→ road,0,1,,,,,P6eo3LULuuc_1_11,car#n,road#n,high,8,386
+00603a52c247,svo,a women make food with her dog,woman,make with,dog,woman —make with→ dog,1,1,,,,,ACOmKiJDkA4_75_81,woman#n,dog#n,high,11,23
+bfe355573d90,prep,a lady making a dish in the kitchen,dish,in,kitchen,dish —in→ kitchen,0,0,,,,,9Q0JfdP36kI_56_64,dish#n,kitchen#n,high,9,521
+cd90e10a739e,prep,a man is going behind a counter,man,behind,counter,man —behind→ counter,0,1,,,,,3n_Kqak2JdA_48_71,man#n,counter#n,low,2,11
+8767872c1069,svo,the man blew a long wooden flute,man,blow,flute,man —blow→ flute,1,0,,,,,1pw5ZdRhiig_50_59,man#n,flute#n,mid,3,9
+22b0643a0d25,svo,a man performing piano,man,perform,piano,man —perform→ piano,1,1,,,,,6BrHPMdyVtU_1_10,man#n,piano#n,low,2,25
+0750b39dacf3,agent_of,a girl is touching ash,girl,touch,,'girl' là CHỦ THỂ thực hiện hành động 'touch',0,1,,,,,NV6pq1W-I4g_7_16,girl#n,touch#v,mid,4,15
+c2f455810cf7,agent_of,a woman pours ingredients into a bowl and whisks them,woman,whisk,,'woman' là CHỦ THỂ thực hiện hành động 'whisk',1,0,,,,,0lh_UWF9ZP4_38_46,woman#n,whisk#v,high,7,12
+ce01ea492df6,object_of,a two person are speaking at the phone,,speak,phone,'phone' là ĐỐI TƯỢNG chịu hành động 'speak',0,1,,,,,KrBeBabazDU_15_20,phone#n,speak#v,high,8,30
+4f0694a5a163,agent_of,a cat is rubbing and smelling a bottle,cat,smell,,'cat' là CHỦ THỂ thực hiện hành động 'smell',1,0,,,,,NMlKMfiHSho_1_15,cat#n,smell#v,mid,3,8
+362bdb738ae7,svo,a man is cutting vegetable with knife,man,cut with,knife,man —cut with→ knife,1,0,,,,,DAmOfcvfKZ0_22_32,man#n,knife#n,high,6,17
+0a5c563dba94,prep,a person is slicing a potato into pieces,potato,into,piece,potato —into→ piece,0,0,,,,,Uc63MFVwfrs_360_372,potato#n,piece#n,high,12,286
+5d4e13014de1,prep,a man cooking in the kitchen,man,in,kitchen,man —in→ kitchen,0,1,,,,,3doK4FQM5-k_46_57,man#n,kitchen#n,mid,4,521
+0513ab84fb32,svo,the man sang into the microphone,man,sing into,microphone,man —sing into→ microphone,1,0,,,,,HZqscSWtHmo_24_34,man#n,microphone#n,high,6,11
+1dd60b8e9ed2,agent_of,a girl set classic bouffant hairstyle,girl,set,,'girl' là CHỦ THỂ thực hiện hành động 'set',1,1,,,,,aA05I5QaZnM_66_75,girl#n,set#v,mid,3,13
+96be24381abc,svo,a man takes a bite of something a woman is holding in her hand,woman,hold in,hand,woman —hold in→ hand,1,0,,,,,2YhDTpzxd3c_149_154,woman#n,hand#n,low,2,14
+8bf07c1941c3,prep,a guy wrecks on his bike,guy,on,bike,guy —on→ bike,0,1,,,,,_7nP9z6T9m8_11_17,guy#n,bike#n,mid,3,386
+81a6acc7e261,agent_of,a man uses a plunger to grate potatos,man,grate,,'man' là CHỦ THỂ thực hiện hành động 'grate',1,0,,,,,Je3V7U5Ctj4_504_511,man#n,grate#v,high,7,13
+a7d2dc3c142c,svo,man is beating eggs in a bowl,man,beat,egg,man —beat→ egg,1,0,,,,,UXs3eq68ZjE_235_240,man#n,egg#n,low,2,21
+62fa873c8942,svo,a woman is shooting a large gun,woman,shoot,gun,woman —shoot→ gun,1,0,,,,,6eokrw6_bjU_1_9,woman#n,gun#n,mid,4,19
+e038e093b3ce,prep,a man is slicing a large piece off of a loaf of bread,piece,off of,loaf,piece —off of→ loaf,0,1,,,,,1dfR0A_BXjw_524_532,piece#n,loaf#n,low,2,19
+f136400e56a6,svo,a man playing piano at home,man,play,piano,man —play→ piano,1,0,,,,,6BrHPMdyVtU_1_10,man#n,piano#n,high,13,143
+0048da97b2f6,agent_of,a man is speaking about the pizza,man,speak,,'man' là CHỦ THỂ thực hiện hành động 'speak',1,1,,,,,6owu8Mow0_g_527_534,man#n,speak#v,high,25,52
+3db3179a169d,svo,a man is lifting the car,man,lift,car,man —lift→ car,1,0,,,,,XtQdAPV2UZs_4_11,man#n,car#n,low,2,12
+7876ddabab0e,object_of,a man is breaking boards,,break,board,'board' là ĐỐI TƯỢNG chịu hành động 'break',0,0,,,,,2YhDTpzxd3c_102_105,board#n,break#v,mid,4,35
+5579b0c893c0,agent_of,a man is saying something as he removes a bottle from the refrigerator,man,say,,'man' là CHỦ THỂ thực hiện hành động 'say',1,0,,,,,4ge5_V-xhP0_138_142,man#n,say#v,high,19,42
+6987502fcc2e,svo,a man show the gun to the another man,man,show,gun,man —show→ gun,1,0,,,,,Gn4Iv5ARIXc_83_93,man#n,gun#n,mid,3,30
+78d719fbecdd,prep,the cate got his head wet trying to drink water from a bowl,water,from,bowl,water —from→ bowl,0,0,,,,,NaX51emUDn4_0_20,water#n,bowl#n,low,2,136
+03c659637cb8,object_of,the dog skateboarded down the street,,skateboard,street,'street' là ĐỐI TƯỢNG chịu hành động 'skateboard',1,0,,,,,XNzXXiE6qR4_0_10,street#n,skateboard#v,mid,3,5
+4dc985f87626,object_of,a person cuts up some tofu,,cut,tofu,'tofu' là ĐỐI TƯỢNG chịu hành động 'cut',1,0,,,,,_O9kWD8nuRU_37_43,tofu#n,cut#v,high,6,178
+1358a1e5a622,agent_of,a dog is walking along the side of a swimming pool and sees his shadow in the water,dog,see,,'dog' là CHỦ THỂ thực hiện hành động 'see',1,0,,,,,auFXfsCzAvQ_1_15,dog#n,see#v,high,6,51
+67816d1fb508,agent_of,a man cleaning the top oh his appliances,man,clean,,'man' là CHỦ THỂ thực hiện hành động 'clean',1,1,,,,,Zg0p5TXi_Cc_30_46,man#n,clean#v,high,18,40
+21a8dbdc083c,prep,a man is spreading butter on a slice of bread,butter,on of,bread,butter —on of→ bread,0,1,,,,,1dfR0A_BXjw_545_560,butter#n,bread#n,low,2,26
+369644a4f392,prep,a person is sprinkling seasonings onto a bowl of rice pudding,seasoning,onto,bowl,seasoning —onto→ bowl,0,0,,,,,UXs3eq68ZjE_508_513,seasoning#n,bowl#n,low,2,37
+8ac1a60d6efd,svo,a woman cuts up vegetables,woman,cut up,vegetable,woman —cut up→ vegetable,1,1,,,,,PeUHy0A1GF0_99_103,woman#n,vegetable#n,high,9,68
+ff3e3b3bcf3b,agent_of,this guy explain how to make one type of egg dish,guy,explain,,'guy' là CHỦ THỂ thực hiện hành động 'explain',1,0,,,,,_6OTzzK7t9Y_73_78,guy#n,explain#v,low,2,21
+c8add67d769b,agent_of,two people are entering a hall with suitcase,people,enter,,'people' là CHỦ THỂ thực hiện hành động 'enter',1,0,,,,,8BL9qmFRbd4_6_13,people#n,enter#v,low,2,13
+ed033c94f1e5,agent_of,a dog is staring and wagging it s tail,dog,wag,,'dog' là CHỦ THỂ thực hiện hành động 'wag',1,1,,,,,Cx1We6GX4IM_0_8,dog#n,wag#v,mid,5,6
+1b7231d3f030,object_of,a man making tomato soup,,make,soup,'soup' là ĐỐI TƯỢNG chịu hành động 'make',1,0,,,,,X6uJyuD_Zso_3_17,soup#n,make#v,mid,3,294
+064bb6064eb6,svo,a lady working in the kitchen and making omurice,lady,work in,kitchen,lady —work in→ kitchen,1,0,,,,,WTf5EgVY5uU_58_76,lady#n,kitchen#n,mid,3,7
+00cfe3a706e5,agent_of,a rabbit is grooming itself,rabbit,groom,,'rabbit' là CHỦ THỂ thực hiện hành động 'groom',1,0,,,,,Xh6rdpJNaf0_0_15,rabbit#n,groom#v,low,2,6
+71dc533019a7,prep,a person is slicing potatoes with a knife,potato,with,knife,potato —with→ knife,0,0,,,,,05gNigkqfNU_24_32,potato#n,knife#n,high,9,418
+c394513e0aaa,svo,a man wearing a cowboy hat swings from a rope inside a garage,man,wear,cowboy,man —wear→ cowboy,0,0,,,,,O9cOSO9L8Zs_1_16,man#n,cowboy#n,low,2,22
+01cc074695e4,agent_of,a monkey pulls a dogs tail,monkey,pull,,'monkey' là CHỦ THỂ thực hiện hành động 'pull',1,1,,,,,Gw0FU733zzg_58_66,monkey#n,pull#v,mid,4,50
+236aafef1d27,prep,a woman dices an onion with knife,onion,with,knife,onion —with→ knife,1,0,,,,,WTf5EgVY5uU_32_52,onion#n,knife#n,high,15,418
+5ea079ab1593,agent_of,the man crashed his motorcycle,man,crash,,'man' là CHỦ THỂ thực hiện hành động 'crash',1,0,,,,,W6_XuNhgtrM_2_5,man#n,crash#v,high,6,14
+00d36e0b06f3,object_of,the boy is singing with the guitar,,sing,guitar,'guitar' là ĐỐI TƯỢNG chịu hành động 'sing',0,0,,,,,G_hxdUG6QXE_23_28,guitar#n,sing#v,high,14,42
+3667288ff2f6,svo,a woman is singing into a microphone,woman,sing into,microphone,woman —sing into→ microphone,1,0,,,,,_JVxurtGIhI_32_42,woman#n,microphone#n,mid,4,11
+28fab5fd0897,prep,a monkey is inside the cage,monkey,inside,cage,monkey —inside→ cage,0,0,,,,,ao-9B8IV9_E_217_221,monkey#n,cage#n,low,2,25
+5d66227c222e,agent_of,a man puts some butter on some bread,man,put,,'man' là CHỦ THỂ thực hiện hành động 'put',1,0,,,,,IpHJffM3G1c_439_446,man#n,put#v,high,85,182
+8263795cd4c6,svo,a frog is biting a man s hand,frog,bite,man,frog —bite→ man,0,1,,,,,MrMG15y3rWU_5_13,frog#n,man#n,low,2,15
+db47b7e14ba7,prep,a lady is cutting the vegetables in to small pieces,vegetable,in to,piece,vegetable —in to→ piece,0,0,,,,,ACOmKiJDkA4_49_54,vegetable#n,piece#n,low,2,41
+9d8635debca3,prep,a cat is perched on a box with it s front paws on a window sill looking out the window,box,with,paw,box —with→ paw,0,1,,,,,MY-rGamtAJc_6_22,box#n,paw#n,low,2,418
+97203f196678,object_of,a man is drinking a clear liquid from a glass,,drink,liquid,'liquid' là ĐỐI TƯỢNG chịu hành động 'drink',1,0,,,,,9gbUM9oHBNI_557_563,liquid#n,drink#v,mid,3,21
+184c4b820537,prep,the woman threw the cat on the ceiling,cat,on,ceiling,cat —on→ ceiling,0,0,,,,,IytNBm8WA1c_63_67,cat#n,ceiling#n,low,2,386
+3bae8520f266,svo,a man prepares ground beef on a grill,man,prepare,beef,man —prepare→ beef,1,1,,,,,W8_63NiTENw_23_30,man#n,beef#n,low,2,83
+1e97011dabce,prep,a woman is holding a sheet of paper and reading the text,sheet,of,paper,sheet —of→ paper,1,0,,,,,HypgcCT1r68_38_46,sheet#n,paper#n,high,6,412
+a152ccb2a90c,svo,a man eats a piece of bread,man,eat,piece,man —eat→ piece,1,1,,,,,1dfR0A_BXjw_590_600,man#n,piece#n,low,2,49
+3843abc18d14,agent_of,a cow is grazing,cow,graze,,'cow' là CHỦ THỂ thực hiện hành động 'graze',1,1,,,,,DJWmm_Q9WvY_1_25,cow#n,graze#v,low,2,3
+6ed194aad573,object_of,the man is shooting at a barrel filled with water,,fill,water,'water' là ĐỐI TƯỢNG chịu hành động 'fill',0,1,,,,,Y4BeJ-64294_20_30,water#n,fill#v,high,10,27
+b1a57824251c,agent_of,a bill ball is thrown to hit,ball,throw,,'ball' là CHỦ THỂ thực hiện hành động 'throw',0,1,,,,,5fDBl1wT2Lk_34_39,ball#n,throw#v,low,2,30
+faf7eeadfdb5,agent_of,a man dressed in fatigues is loading a shotgun,man,load,,'man' là CHỦ THỂ thực hiện hành động 'load',1,1,,,,,b71bI0rH1g8_75_90,man#n,load#v,mid,3,6
+3df49fd6a2dd,svo,a woman puts some vegetables into a pan,woman,put,vegetable,woman —put→ vegetable,1,1,,,,,6t0BpjwYKco_142_151,woman#n,vegetable#n,high,6,134
+6fd25830680e,prep,a person is adding spaghetti to a pot of water,pot,of,water,pot —of→ water,1,0,,,,,SzEbtbNSg04_111_117,pot#n,water#n,high,10,412
+0cd2511cf1fa,agent_of,a man is feeding food to a wallaby in a grassland,man,feed,,'man' là CHỦ THỂ thực hiện hành động 'feed',1,0,,,,,a1i6T160REQ_5_18,man#n,feed#v,mid,5,11
+54fd4e63ee1d,prep,a man pours a cup of liquid on a camera,cup,of,liquid,cup —of→ liquid,1,1,,,,,D1tTBncIsm8_248_254,cup#n,liquid#n,mid,3,412
+23aa55539026,object_of,a person is cutting lettuce leaves with a knife,,leave,knife,'knife' là ĐỐI TƯỢNG chịu hành động 'leave',0,0,,,,,PeUHy0A1GF0_74_77,knife#n,leave#v,low,2,12
+e79e65a4993e,prep,a woman is cooking some pork in a pan,pork,in,pan,pork —in→ pan,0,0,,,,,-wa0umYJVGg_23_41,pork#n,pan#n,mid,3,521
+3e58a7559622,svo,the man is talking on the phone,man,talk on,phone,man —talk on→ phone,1,0,,,,,6owu8Mow0_g_850_855,man#n,phone#n,high,8,15
+606e6e54ee0e,object_of,a woman is preparing shrimps,,prepare,shrimp,'shrimp' là ĐỐI TƯỢNG chịu hành động 'prepare',1,1,,,,,PeUHy0A1GF0_114_121,shrimp#n,prepare#v,mid,5,144
+ee88713bb15e,svo,a man is cutting some cake,man,cut,cake,man —cut→ cake,1,0,,,,,0lh_UWF9ZP4_138_145,man#n,cake#n,mid,3,156
+a9f1a04717e4,agent_of,the lady rolled the dough,lady,roll,,'lady' là CHỦ THỂ thực hiện hành động 'roll',1,0,,,,,DBvSfds3FH4_76_80,lady#n,roll#v,mid,5,33
+adf1f7b8ee43,svo,a man is adding something to a bowl,man,add to,bowl,man —add to→ bowl,1,0,,,,,8MVo7fje_oE_139_144,man#n,bowl#n,high,6,37
+9c5c5774b9f7,svo,a man shooting with a gun,man,shoot with,gun,man —shoot with→ gun,1,1,,,,,4PayIIIOeIs_230_238,man#n,gun#n,high,12,15
+2ac0633f9cb4,prep,a person is riding a horse through a field,horse,through,field,horse —through→ field,0,0,,,,,WV9K6MbLjHA_106_116,horse#n,field#n,low,2,52
+2b5ec8c72c49,object_of,a person is performing a card trick,,perform,card,'card' là ĐỐI TƯỢNG chịu hành động 'perform',0,1,,,,,4yYapi-5QYQ_33_57,card#n,perform#v,mid,3,56
+39b826661ce3,prep,a person is pouring sugar into a pot on the stove,pot,on,stove,pot —on→ stove,1,0,,,,,UXs3eq68ZjE_382_387,pot#n,stove#n,high,11,386
+dbb65f9026ef,svo,a woman is chopping some spring onion,woman,chop,onion,woman —chop→ onion,1,1,,,,,PeUHy0A1GF0_68_73,woman#n,onion#n,high,15,68
+cdd44b59666b,object_of,chopped onions are sauteed in a pan,,saute,pan,'pan' là ĐỐI TƯỢNG chịu hành động 'saute',0,0,,,,,WTf5EgVY5uU_130_135,pan#n,saute#v,mid,5,11
+0eab9dd34f37,agent_of,a man is swinging on the rope,man,swing,,'man' là CHỦ THỂ thực hiện hành động 'swing',1,1,,,,,O9cOSO9L8Zs_1_16,man#n,swing#v,high,6,15
+7494ad21a839,prep,a woman is putting oil into a skillet,oil,into,skillet,oil —into→ skillet,0,1,,,,,IhwPQL9dFYc_143_147,oil#n,skillet#n,mid,4,286
+a41d45d69139,prep,a person is riding a motorbike off a ramp into a small body of water,body,of,water,body —of→ water,1,0,,,,,6gQu8PWhFoQ_30_35,body#n,water#n,high,6,412
+1e1b1205cffb,object_of,the cow chewed the grass,,chew,grass,'grass' là ĐỐI TƯỢNG chịu hành động 'chew',1,1,,,,,DJWmm_Q9WvY_1_25,grass#n,chew#v,low,2,13
+f48419b0380c,agent_of,a man is strumming his guitar,man,strum,,'man' là CHỦ THỂ thực hiện hành động 'strum',1,0,,,,,7_XASfcYdBk_3_13,man#n,strum#v,high,12,12
+27adf0662418,agent_of,a chef is pouring pasta sauce over noodles,chef,pour,,'chef' là CHỦ THỂ thực hiện hành động 'pour',1,0,,,,,8MVo7fje_oE_166_171,chef#n,pour#v,mid,4,85
+c354aa53ff15,prep,a man is combining and mixing ingredients in a bowl,ingredient,in,bowl,ingredient —in→ bowl,0,0,,,,,5JSbxHECb-I_97_110,ingredient#n,bowl#n,high,11,521
+3e4f827aca38,agent_of,a guy is riding a bike and crashing on the ground,guy,crash,,'guy' là CHỦ THỂ thực hiện hành động 'crash',1,0,,,,,-vg3vR86fu0_1_6,guy#n,crash#v,low,2,14
+1eb5d3cc3e07,svo,the old woman is peeling potatoes,woman,peel,potato,woman —peel→ potato,1,0,,,,,3OPQqH3YlHA_50_54,woman#n,potato#n,high,7,25
+28e4f2653060,svo,a man applying the butter on the bread,man,apply,butter,man —apply→ butter,1,0,,,,,1dfR0A_BXjw_545_560,man#n,butter#n,mid,3,11
+ee2f57bdb69d,prep,a person is cutting carrot into pieces,carrot,into,piece,carrot —into→ piece,0,0,,,,,DAmOfcvfKZ0_22_32,carrot#n,piece#n,high,8,286
+dffda985cced,agent_of,a man slices a peeled cucumber in half and then he scoops out the center of the cucumber half,man,scoop,,'man' là CHỦ THỂ thực hiện hành động 'scoop',1,0,,,,,K1ZM0LSLVw8_481_487,man#n,scoop#v,low,2,4
+18a7f8462985,object_of,a slow loris hanging on some kind of a rope,,hang,rope,'rope' là ĐỐI TƯỢNG chịu hành động 'hang',0,0,,,,,FHwC2THZJfA_0_10,rope#n,hang#v,high,6,22
+e884326beb9d,agent_of,a man is training a horse how to turn,man,train,,'man' là CHỦ THỂ thực hiện hành động 'train',1,1,,,,,WinaH9SkW9c_11_38,man#n,train#v,high,7,13
+a46caeb9a29f,svo,a man is playing on a guitar,man,play on,guitar,man —play on→ guitar,1,1,,,,,JsD6uEZsIsU_1_47,man#n,guitar#n,mid,4,52
+dedad9d736d8,svo,a man is pushing a car,man,push,car,man —push→ car,1,0,,,,,RWWvWFeE6_Q_2_26,man#n,car#n,mid,5,22
+d9127656fedb,object_of,the lady galloped on her horse,,gallop,horse,'horse' là ĐỐI TƯỢNG chịu hành động 'gallop',0,0,,,,,Hd-NeIhbYGc_28_31,horse#n,gallop#v,high,7,9
+f223dec99700,svo,a cat plays with the water in its water bowl,cat,play with,water,cat —play with→ water,1,1,,,,,1qV4wfjTYIo_151_164,cat#n,water#n,mid,5,130
+6e7cdac1d80c,prep,the lady added seasoning to the cooking vegetables in the pot,vegetable,in,pot,vegetable —in→ pot,0,1,,,,,0hyZ__3YhZc_341_348,vegetable#n,pot#n,high,6,521
+ad2d6b691a9e,object_of,a woman is rolling out dough,,roll,dough,'dough' là ĐỐI TƯỢNG chịu hành động 'roll',1,0,,,,,DBvSfds3FH4_84_88,dough#n,roll#v,high,6,29
+c72a76ee2237,object_of,a boy runs and leaps onto a wall and falls down,,leap,wall,'wall' là ĐỐI TƯỢNG chịu hành động 'leap',0,0,,,,,H7vezmDeZaw_2_7,wall#n,leap#v,low,2,11
+a5508157637c,agent_of,a boy in a seat belt in the backseat of a car is yelling at the electronic game he is playing,boy,yell,,'boy' là CHỦ THỂ thực hiện hành động 'yell',1,0,,,,,PTxHJMM6hHE_0_15,boy#n,yell#v,low,2,5
+f88bdd515e1b,svo,the plane took off the runway,plane,take off,runway,plane —take off→ runway,1,1,,,,,Gn4Iv5ARIXc_37_40,plane#n,runway#n,mid,3,7
+0ab5c067c7e1,agent_of,a guy is pushing a truck down the street,guy,push,,'guy' là CHỦ THỂ thực hiện hành động 'push',1,0,,,,,RWWvWFeE6_Q_2_26,guy#n,push#v,low,2,36
+b211965ca92f,svo,a man is driving a car,man,drive,car,man —drive→ car,1,0,,,,,De815YpTBic_41_48,man#n,car#n,high,8,40
+df48233a4e52,object_of,a dog is chasing a yoga ball,,chase,ball,'ball' là ĐỐI TƯỢNG chịu hành động 'chase',1,1,,,,,WWf0Z6ak3Dg_5_15,ball#n,chase#v,low,2,15
+56a1d67bbe25,agent_of,a man is playing scatting,man,scat,,'man' là CHỦ THỂ thực hiện hành động 'scat',0,0,,,,,Tm1HjqK0ABg_9_15,man#n,scat#v,mid,4,8
+f522b3d7dba2,prep,cars are going down a street,car,down,street,car —down→ street,0,0,,,,,OBLIjdMIIt8_54_61,car#n,street#n,high,6,46
+070fdc751be5,svo,a dog is looking on the mirror,dog,look on,mirror,dog —look on→ mirror,1,0,,,,,MqS82kBtUHQ_0_12,dog#n,mirror#n,low,2,2
+6b71e512b496,svo,the women is beating egg,woman,beat,egg,woman —beat→ egg,1,0,,,,,0lh_UWF9ZP4_71_77,woman#n,egg#n,high,8,21
+336a2402cbd5,svo,a woman holding a baby kangaroo in his hands,woman,hold,baby,woman —hold→ baby,0,1,,,,,2R_OAYQIkXM_14_22,woman#n,baby#n,mid,3,58
+f4e7ed6bc1cb,prep,a kitten is licking milk from a bowl,milk,from,bowl,milk —from→ bowl,0,1,,,,,5OvgDatToBU_0_8,milk#n,bowl#n,mid,3,136
+97a873825def,agent_of,a man lifts with his feet,man,lift,,'man' là CHỦ THỂ thực hiện hành động 'lift',1,0,,,,,TXabUVUxJqI_22_31,man#n,lift#v,high,10,24
+6777758ada3c,agent_of,the lady filed her painted nails,lady,paint,,'lady' là CHỦ THỂ thực hiện hành động 'paint',0,0,,,,,9W6aQNcU3PA_92_103,lady#n,paint#v,mid,3,5
+09e891f950d8,prep,a woman is peeling the skin of a boiled potato,skin,of,potato,skin —of→ potato,1,0,,,,,BOLKaQeB6j0_101_111,skin#n,potato#n,mid,3,412
+5cccd3926575,svo,a woman is cutting a yellow vegetablelooking substance into pieces,woman,cut into,piece,woman —cut into→ piece,1,1,,,,,_O9kWD8nuRU_25_35,woman#n,piece#n,high,6,17
+16a6add85664,agent_of,a man is breaking a concrete slab on a mans belly with a hammer,man,break,,'man' là CHỦ THỂ thực hiện hành động 'break',1,0,,,,,2YhDTpzxd3c_240_245,man#n,break#v,high,17,37
+6862117a4157,svo,a girl is jumping into the river,girl,jump into,river,girl —jump into→ river,1,0,,,,,88DOMJ11q2M_84_87,girl#n,river#n,low,2,10
+a613dd665960,prep,a woman chops a leek into strips and places them in a bowl of water,bowl,of,water,bowl —of→ water,1,0,,,,,-wa0umYJVGg_139_157,bowl#n,water#n,high,7,412
+8a119821a4ae,prep,the man took the girl on a motorcycle ride,girl,on,motorcycle,girl —on→ motorcycle,0,0,,,,,Rq_VfjGH7kg_104_110,girl#n,motorcycle#n,mid,3,386
+1de6dc713a30,svo,the car drove down a curving road,car,drive,road,car —drive→ road,1,0,,,,,P6eo3LULuuc_1_11,car#n,road#n,low,2,40
+5660c5af610c,object_of,a woman opens a window,,open,window,'window' là ĐỐI TƯỢNG chịu hành động 'open',1,0,,,,,EXyp0Q7L1zE_30_38,window#n,open#v,low,2,27
+7db8a96598bf,object_of,a woman cracked a egg into a bowl,,crack,egg,'egg' là ĐỐI TƯỢNG chịu hành động 'crack',1,1,,,,,PHDmVhShE80_78_82,egg#n,crack#v,high,17,19
+8bc27eee6c3f,prep,someone is adding vegetables to a pot,vegetable,to,pot,vegetable —to→ pot,0,0,,,,,0hyZ__3YhZc_289_295,vegetable#n,pot#n,mid,3,153
+ade9e61ed19d,object_of,a woman is grating an apple over a pan of food,,grate,apple,'apple' là ĐỐI TƯỢNG chịu hành động 'grate',1,0,,,,,6t0BpjwYKco_179_183,apple#n,grate#v,low,2,11
+8cb77176a2cd,svo,a man is sprinkling shredded cheese on a tortilla,man,sprinkle shred,cheese,man —sprinkle shred→ cheese,1,1,,,,,Je3V7U5Ctj4_569_576,man#n,cheese#n,low,2,2
+6a55215e41b2,prep,someone is slicing a cucumber into small pieces with a knife,cucumber,into,piece,cucumber —into→ piece,0,0,,,,,-_hbPLsZvvo_19_25,cucumber#n,piece#n,mid,5,286
+49c5b923eefe,object_of,a squirrel has a yogurt cup stuck on his head,,stick,head,'head' là ĐỐI TƯỢNG chịu hành động 'stick',0,1,,,,,GcfWD62sbcs_13_33,head#n,stick#v,mid,4,20
+d167a0bd4aa1,object_of,a grog grabbed onto the person s finger,,grab,finger,'finger' là ĐỐI TƯỢNG chịu hành động 'grab',0,1,,,,,EPgQ9QwbsLE_16_23,finger#n,grab#v,mid,3,20
+61b649e1b14a,svo,dog is shaking his tail,dog,shake,tail,dog —shake→ tail,1,0,,,,,6vC6AT27RUc_29_46,dog#n,tail#n,mid,3,11
+37d6fd301b3e,svo,car is moving on the road,car,move on,road,car —move on→ road,1,1,,,,,J3_hkgu6MGc_43_52,car#n,road#n,low,2,14
+be75e34b8ebb,prep,a woman is adding ingredients to a bowl,ingredient,to,bowl,ingredient —to→ bowl,0,0,,,,,-_hbPLsZvvo_172_179,ingredient#n,bowl#n,high,8,153
+b6bbd904bd74,agent_of,a boy wearing a soccer shirt practices kicking into the goal,boy,wear,,'boy' là CHỦ THỂ thực hiện hành động 'wear',1,0,,,,,S-Civm_fbK8_20_26,boy#n,wear#v,mid,5,36
+e262b730e8fd,prep,a man on a motorcycle turns to follow a woman walking down the road,man,on,motorcycle,man —on→ motorcycle,1,0,,,,,ItFqogTmAvQ_361_365,man#n,motorcycle#n,high,13,386
+b6eed1fe10d3,object_of,the couple leaned over the boat in the water,,lean,boat,'boat' là ĐỐI TƯỢNG chịu hành động 'lean',0,0,,,,,6vSKIUGGLvY_81_87,boat#n,lean#v,low,2,6
+4fa52cdfee19,agent_of,two men are standing in an open windy land as one of them sets a toy airplane into the air,man,set,,'man' là CHỦ THỂ thực hiện hành động 'set',1,0,,,,,aHiUM8uWxxo_17_25,man#n,set#v,high,7,13
+0134597f8440,object_of,a man crashes his bike,,crash,bike,'bike' là ĐỐI TƯỢNG chịu hành động 'crash',1,1,,,,,_7nP9z6T9m8_11_17,bike#n,crash#v,low,2,12
+ef4d5f8a6ac3,prep,a dog behind bars,dog,behind,bar,dog —behind→ bar,1,0,,,,,MWvCcwTw7Ac_78_86,dog#n,bar#n,low,2,11
+6dba380aa5fc,prep,a man is doing a wheelie on a bike,man,on,bike,man —on→ bike,0,1,,,,,CwPfvoqmV1Q_58_61,man#n,bike#n,high,11,386
+1c2de9f7c86d,agent_of,cat washing her paws in the washbasin,cat,wash,,'cat' là CHỦ THỂ thực hiện hành động 'wash',1,0,,,,,FCjpuJaUec0_19_26,cat#n,wash#v,low,2,20
+feaa38628dc5,object_of,two people raced in the pool,,race,pool,'pool' là ĐỐI TƯỢNG chịu hành động 'race',0,1,,,,,GyIs9B3A1Z0_0_7,pool#n,race#v,low,2,20
+ee7afde6ccf6,svo,a boy is cleaning the floor,boy,clean,floor,boy —clean→ floor,1,0,,,,,TPD5wO_LEPU_2_6,boy#n,floor#n,mid,3,35
+aca91defacb6,agent_of,a man is skating a skateboard,man,skate,,'man' là CHỦ THỂ thực hiện hành động 'skate',1,0,,,,,Tm1HjqK0ABg_9_15,man#n,skate#v,high,6,11
+229b6152b73c,svo,a man is buttering a slice of bread,man,butter of,bread,man —butter of→ bread,0,0,,,,,1dfR0A_BXjw_545_560,man#n,bread#n,low,2,2
+ad0a41e595e5,object_of,an airplane is taking off from a runway,,take,runway,'runway' là ĐỐI TƯỢNG chịu hành động 'take',0,0,,,,,5W02895vT8c_312_322,runway#n,take#v,mid,3,105
+09d077511ae9,agent_of,a woman is water skiing,woman,ski,,'woman' là CHỦ THỂ thực hiện hành động 'ski',0,0,,,,,0NPtAv3_uVI_46_54,woman#n,ski#v,low,2,5
+46d1af8e05eb,agent_of,a woman is writing on a chalkboard,woman,write,,'woman' là CHỦ THỂ thực hiện hành động 'write',1,1,,,,,9QI8cgBSGo8_28_41,woman#n,write#v,low,2,6
+3766af37f7f9,agent_of,meat is being mixed in a bowl with sauce,meat,mix,,'meat' là CHỦ THỂ thực hiện hành động 'mix',0,0,,,,,BVjvRpmHg0w_121_130,meat#n,mix#v,low,2,53
+6821172ed2db,svo,a monkey attacks a dog,monkey,attack,dog,monkey —attack→ dog,1,0,,,,,Gw0FU733zzg_58_66,monkey#n,dog#n,mid,3,24
+d4c2c3951a12,object_of,a basketball player is putting ball in the basket,,put,ball,'ball' là ĐỐI TƯỢNG chịu hành động 'put',1,0,,,,,SZP3Jpbbwj0_52_59,ball#n,put#v,high,6,179
+739f81eee828,prep,the woman knead the flour in a bowl,flour,in,bowl,flour —in→ bowl,0,0,,,,,LEz0puaKNTk_38_48,flour#n,bowl#n,mid,4,521
+f728fbeb93e6,object_of,the man lifted the car,,lift,car,'car' là ĐỐI TƯỢNG chịu hành động 'lift',1,0,,,,,Els1Cclg_sk_4_15,car#n,lift#v,low,2,18
+69f8123644a8,agent_of,women are skating,woman,skate,,'woman' là CHỦ THỂ thực hiện hành động 'skate',1,1,,,,,HAjwXjwN9-A_16_24,woman#n,skate#v,mid,3,11
+c37f60189e35,prep,the woman is cracking eggs into a bowl,egg,into,bowl,egg —into→ bowl,0,1,,,,,0lh_UWF9ZP4_71_77,egg#n,bowl#n,high,11,286
+1576fee6751e,object_of,a woman climbs a rocky mountain,,climb,mountain,'mountain' là ĐỐI TƯỢNG chịu hành động 'climb',1,0,,,,,8e0yXMa708Y_24_33,mountain#n,climb#v,mid,4,34
+16af3bfee65a,object_of,a horse and rider gallop down a dirt road,,gallop,dirt,'dirt' là ĐỐI TƯỢNG chịu hành động 'gallop',0,1,,,,,2F9jX7u5nOg_83_97,dirt#n,gallop#v,low,2,9
+74d1ed96b3d3,prep,someone is smashing pieces of garlic with the side of a knife,garlic,with of,knife,garlic —with of→ knife,0,0,,,,,SzEbtbNSg04_70_85,garlic#n,knife#n,low,2,19
+4ab23c7d40e2,agent_of,the man is blowing a chain of bubbles,man,blow,,'man' là CHỦ THỂ thực hiện hành động 'blow',1,0,,,,,0I4VKj4d0WI_24_40,man#n,blow#v,high,7,14
+dd9938fe3b7a,svo,the woman is cooking scrambled eggs,woman,cook scramble,egg,woman —cook scramble→ egg,1,0,,,,,0lh_UWF9ZP4_94_103,woman#n,egg#n,mid,5,5
+6165cf2c3011,agent_of,a car met an accident,car,meet,,'car' là CHỦ THỂ thực hiện hành động 'meet',1,1,,,,,4wT7zM8XgXQ_5_11,car#n,meet#v,low,2,6
+dc71615aa106,agent_of,a woman is typing on a keyboard,woman,type,,'woman' là CHỦ THỂ thực hiện hành động 'type',1,0,,,,,6mYnZbIwcNo_10_16,woman#n,type#v,mid,5,6
+343bafdece3a,agent_of,a man erases writing from a board,man,write,,'man' là CHỦ THỂ thực hiện hành động 'write',1,1,,,,,HVR7KpItLfA_62_70,man#n,write#v,mid,3,6
+af4fd0b18346,object_of,a lion seated on grass is tugging at the shoes and pants of a man knelt beside him,,seat,grass,'grass' là ĐỐI TƯỢNG chịu hành động 'seat',0,0,,,,,ao-9B8IV9_E_37_44,grass#n,seat#v,low,2,36
+513cb830b62f,prep,a girl rides a horse across a field,horse,across,field,horse —across→ field,0,1,,,,,NFxWwI0J3As_78_84,horse#n,field#n,mid,3,31
+8e66b86b7a63,object_of,a woman is firing with ar15 gun,,fire,gun,'gun' là ĐỐI TƯỢNG chịu hành động 'fire',0,1,,,,,6eokrw6_bjU_1_9,gun#n,fire#v,high,12,17
+4fb654e1a8d9,object_of,sauce is being poured over beef,,pour,beef,'beef' là ĐỐI TƯỢNG chịu hành động 'pour',0,1,,,,,BVjvRpmHg0w_47_51,beef#n,pour#v,low,2,91
+f5cac9f145a5,svo,a man is slicing with knife,man,slice with,knife,man —slice with→ knife,1,1,,,,,_ZwwKOzpt2I_69_76,man#n,knife#n,low,2,5
+69066efc2304,agent_of,the plane is soaring through the air,plane,soar,,'plane' là CHỦ THỂ thực hiện hành động 'soar',1,0,,,,,ZbzDGXEwtGc_6_15,plane#n,soar#v,low,2,4
+ae976be098e4,object_of,a women is bathing in a bathing tub,,bathe,tub,'tub' là ĐỐI TƯỢNG chịu hành động 'bathe',0,0,,,,,4yf2WP6K1gQ_28_32,tub#n,bathe#v,low,2,6
+5f3da0cdf5ee,object_of,a young man is singing while strumming a guitar,,strum,guitar,'guitar' là ĐỐI TƯỢNG chịu hành động 'strum',1,0,,,,,30PpKtVT8Z4_35_50,guitar#n,strum#v,high,13,13
+37e288938cc1,svo,a man makes a basketball shot from far away,man,make,basketball,man —make→ basketball,0,1,,,,,PD6eQY7yCfw_32_37,man#n,basketball#n,mid,4,143
+dc3637291e49,agent_of,a woman flours a piece of raw meat,woman,flour,,'woman' là CHỦ THỂ thực hiện hành động 'flour',1,1,,,,,6t0BpjwYKco_240_247,woman#n,flour#v,high,7,8
+2d0ca4f813bb,prep,a man is mixing meat in a bowl,meat,in,bowl,meat —in→ bowl,0,0,,,,,GPyFZMJ5Dow_56_70,meat#n,bowl#n,mid,5,521
+c6a8646a63e0,object_of,a man is singing into a studio microphone,,sing,studio,'studio' là ĐỐI TƯỢNG chịu hành động 'sing',0,0,,,,,EwTZ2xpQwpA_14_21,studio#n,sing#v,mid,3,42
+65a635102166,object_of,a girl is dancing in a dark room,,dance,room,'room' là ĐỐI TƯỢNG chịu hành động 'dance',0,1,,,,,ViWQUOGIaSU_9_16,room#n,dance#v,high,7,44
+61bfcd905268,svo,a women is cooking with her dog,woman,cook with,dog,woman —cook with→ dog,1,0,,,,,WTf5EgVY5uU_15_19,woman#n,dog#n,high,7,11
+721b333b3a88,agent_of,a fish is swimming,fish,swim,,'fish' là CHỦ THỂ thực hiện hành động 'swim',1,1,,,,,QsvBYKaCXEc_5_15,fish#n,swim#v,low,2,14
+32512492dc54,svo,a monkey is teasing a dog,monkey,tease,dog,monkey —tease→ dog,1,1,,,,,KpmVL4ANieA_0_9,monkey#n,dog#n,mid,3,10
+8c066ddbecdc,prep,a woman is talking to a man on the phone,man,on,phone,man —on→ phone,1,0,,,,,UdcObAQ5OOM_15_30,man#n,phone#n,high,7,386
+ad868751f134,svo,the man used a sword to slice the trash can,man,use,sword,man —use→ sword,1,0,,,,,8PQiaurIiDM_247_255,man#n,sword#n,high,6,110
+62561372eda6,prep,a person is slicing an onion into pieces with a knife,piece,with,knife,piece —with→ knife,0,1,,,,,aeA-HN7BMdo_16_33,piece#n,knife#n,high,13,418
+a7ae24c25500,object_of,a man is pushing a car,,push,car,'car' là ĐỐI TƯỢNG chịu hành động 'push',1,0,,,,,RWWvWFeE6_Q_2_26,car#n,push#v,high,7,31
+30a14ce34861,svo,the woman is chopping the garlic,woman,chop,garlic,woman —chop→ garlic,1,1,,,,,WTf5EgVY5uU_58_76,woman#n,garlic#n,mid,3,68
+d57297e9d960,prep,a woman pours oil from a small glass bowl into a woklike skillet,bowl,into,skillet,bowl —into→ skillet,0,1,,,,,IhwPQL9dFYc_143_147,bowl#n,skillet#n,low,2,286
+5fcc70c3b4ba,svo,a man is walking in the forest,man,walk in,forest,man —walk in→ forest,1,1,,,,,I9gLTZY1ouc_142_147,man#n,forest#n,low,2,20
+381f71ee767a,agent_of,a boy is pointing at a calender on the wall,boy,point,,'boy' là CHỦ THỂ thực hiện hành động 'point',1,1,,,,,GPT4vUwlrXY_1_10,boy#n,point#v,low,2,6
+51c083f83def,prep,the man is spreading cheese over the tortilla,cheese,over,tortilla,cheese —over→ tortilla,0,0,,,,,Je3V7U5Ctj4_582_587,cheese#n,tortilla#n,low,2,54
+af64c9fb012f,agent_of,a small white rabbit sitting infront of a house door awaiting for it to open,rabbit,sit,,'rabbit' là CHỦ THỂ thực hiện hành động 'sit',1,0,,,,,Xh6rdpJNaf0_0_15,rabbit#n,sit#v,low,2,158
+c810b9b27694,object_of,a boy talking in phone,,talk,phone,'phone' là ĐỐI TƯỢNG chịu hành động 'talk',0,0,,,,,YJ2aGe7CLBo_25_35,phone#n,talk#v,high,15,70
+a1cc2bbcf8b3,object_of,a woman is styling her hair,,style,hair,'hair' là ĐỐI TƯỢNG chịu hành động 'style',1,0,,,,,5dv8MSWlxoQ_10_40,hair#n,style#v,high,7,7
+803bb07a4104,object_of,the cute puppies were fighting with the cat,,fight,cat,'cat' là ĐỐI TƯỢNG chịu hành động 'fight',0,0,,,,,7bcV-TL9mho_0_7,cat#n,fight#v,low,2,24
+1f234baa4eb3,agent_of,the woman is grilling pineapple rings,woman,grill,,'woman' là CHỦ THỂ thực hiện hành động 'grill',1,0,,,,,NoCgvH4xZHo_240_251,woman#n,grill#v,mid,5,8
+f6d9d5929dad,svo,a man lifts the rear end of a car off the ground,man,lift of,car,man —lift of→ car,0,1,,,,,Els1Cclg_sk_4_15,man#n,car#n,low,2,2
+4e8137233c4a,object_of,a woman is mixing meat,,mix,meat,'meat' là ĐỐI TƯỢNG chịu hành động 'mix',1,1,,,,,BVjvRpmHg0w_121_130,meat#n,mix#v,mid,3,58
+a17aa2a77b78,object_of,a man is breaking an egg,,break,egg,'egg' là ĐỐI TƯỢNG chịu hành động 'break',1,0,,,,,UXs3eq68ZjE_194_200,egg#n,break#v,high,14,35
+b65cb4146fb6,prep,a man is cutting the meat in to pieces,meat,in to,piece,meat —in to→ piece,0,0,,,,,_ZwwKOzpt2I_69_76,meat#n,piece#n,low,2,41
+3c05796e0e5e,object_of,the dolphin jumped high out of the water,,jump,water,'water' là ĐỐI TƯỢNG chịu hành động 'jump',0,0,,,,,8jP8CC2rKj4_80_88,water#n,jump#v,high,12,60
+f914ea353169,agent_of,a woman is tearing chicken into pieces,woman,tear,,'woman' là CHỦ THỂ thực hiện hành động 'tear',1,1,,,,,b4mJ3AQc-ag_30_34,woman#n,tear#v,low,2,5
+61f1acfefdf5,prep,a woman with a knife is slicing an onion,woman,with,knife,woman —with→ knife,1,0,,,,,6t0BpjwYKco_15_31,woman#n,knife#n,high,9,418
+b0dcfc9242f5,object_of,a woman is beating eggs in a bowl,,beat,egg,'egg' là ĐỐI TƯỢNG chịu hành động 'beat',1,0,,,,,QMJY29QMewQ_42_52,egg#n,beat#v,high,13,32
+66b60681f880,prep,a man is shuffling a deck of cards,deck,of,card,deck —of→ card,1,1,,,,,2KrdBUFeFtY_22_27,deck#n,card#n,mid,3,412
+a2983f94242b,object_of,a dog is wagging its tail,,wag,tail,'tail' là ĐỐI TƯỢNG chịu hành động 'wag',1,1,,,,,4ge5_V-xhP0_35_42,tail#n,wag#v,high,7,7
+8cdd6064fcc8,agent_of,a lady taking bath in bathtub,lady,take,,'lady' là CHỦ THỂ thực hiện hành động 'take',1,1,,,,,4yf2WP6K1gQ_28_32,lady#n,take#v,high,9,142
+8dc6cfb86b80,object_of,the motorcyle rider is riding on the front wheel,,ride,wheel,'wheel' là ĐỐI TƯỢNG chịu hành động 'ride',0,0,,,,,AjZ-R3LFMzo_5_10,wheel#n,ride#v,mid,3,97
+9b3432e83a2f,agent_of,a man is squeezing food wrapped in a cloth,man,wrap,,'man' là CHỦ THỂ thực hiện hành động 'wrap',0,0,,,,,OE6H_M52Sng_89_97,man#n,wrap#v,mid,4,15
+2c815e56d61e,prep,the couple rode on the motorcycle down the street,motorcycle,down,street,motorcycle —down→ street,0,0,,,,,ItFqogTmAvQ_240_246,motorcycle#n,street#n,mid,5,46
+3687bbf043b2,svo,a girl is combing hair,girl,comb,hair,girl —comb→ hair,1,1,,,,,NZWiKMZS_k8_39_48,girl#n,hair#n,high,6,9
+598f45cd412a,agent_of,a small monkey is chewing its mouth,monkey,chew,,'monkey' là CHỦ THỂ thực hiện hành động 'chew',1,0,,,,,ZYaxg5NZW_g_21_27,monkey#n,chew#v,low,2,12
+a0f3ca50b561,agent_of,two men are holding a man at gunpoint when a fourth man sneaks up and attacks one of the two,man,attack,,'man' là CHỦ THỂ thực hiện hành động 'attack',1,1,,,,,PqvKNqkGI9o_47_52,man#n,attack#v,high,11,33
+1c208d7e1d09,prep,the boy and girl is going on the bike,girl,on,bike,girl —on→ bike,0,1,,,,,E4k0Aylzdyo_97_104,girl#n,bike#n,mid,5,386
+4122b88c6bb7,svo,a man is performing guitar,man,perform,guitar,man —perform→ guitar,1,0,,,,,X4yzrIc072w_4_20,man#n,guitar#n,high,6,25
+0ed929015c05,prep,a person is peeling the skin off an onion,skin,off,onion,skin —off→ onion,0,0,,,,,4QYPZM01xFE_14_26,skin#n,onion#n,low,2,33
+893e18190194,prep,a women in the garden,woman,in,garden,woman —in→ garden,1,0,,,,,-rkErLY0rRc_63_67,woman#n,garden#n,low,2,521
+f5d3dccfc274,svo,a man is spinning in a special chair,man,spin in,chair,man —spin in→ chair,1,0,,,,,TIubRrkku-4_1_10,man#n,chair#n,low,2,2
+99d111a56cf6,agent_of,a woman tosses a cat up on the ceiling,woman,toss,,'woman' là CHỦ THỂ thực hiện hành động 'toss',1,0,,,,,IytNBm8WA1c_63_67,woman#n,toss#v,mid,3,14
+7fcb28b55c60,svo,the woman is dicing an onion,woman,dice,onion,woman —dice→ onion,1,0,,,,,04Gt01vatkk_248_265,woman#n,onion#n,high,13,39
+475d9851ea4d,agent_of,a women saw a glass,woman,see,,'woman' là CHỦ THỂ thực hiện hành động 'see',1,0,,,,,9QI8cgBSGo8_28_41,woman#n,see#v,mid,4,51
+77d9283d7c71,prep,someone pours a pan of chopped vegetables into a pan of broth,vegetable,into,pan,vegetable —into→ pan,0,0,,,,,KPPCwmU5OHQ_467_472,vegetable#n,pan#n,mid,5,286
+1e2218c506df,prep,a woman is putting tap water into a pan,water,into,pan,water —into→ pan,0,1,,,,,NjCqtzZ3OtU_62_67,water#n,pan#n,high,6,286
+38aeb460b5cc,prep,a man is cutting a potato in to pieces,potato,in to,piece,potato —in to→ piece,0,0,,,,,05gNigkqfNU_24_32,potato#n,piece#n,mid,3,41
+a2fc09522450,prep,someone is removing skin and fat from meat,fat,from,meat,fat —from→ meat,1,0,,,,,9Q0JfdP36kI_19_27,fat#n,meat#n,low,2,136
+a1ff8fbaf4b6,prep,a woman is slicing a tomato with a knife,tomato,with,knife,tomato —with→ knife,0,0,,,,,aeA-HN7BMdo_52_58,tomato#n,knife#n,mid,3,418
+f3fba9c46ed7,object_of,someone is grating a carrot,,grate,carrot,'carrot' là ĐỐI TƯỢNG chịu hành động 'grate',1,0,,,,,GtrTNldo0LI_33_46,carrot#n,grate#v,mid,3,11
+03ec33d50ef6,prep,the greek gyro sandwich recipe with tzatziki sauce,sandwich,with,sauce,sandwich —with→ sauce,0,0,,,,,YXixZrSxefk_6_15,sandwich#n,sauce#n,mid,3,418
+2bf97d819782,agent_of,a man is exercising,man,exercise,,'man' là CHỦ THỂ thực hiện hành động 'exercise',1,0,,,,,TXabUVUxJqI_22_31,man#n,exercise#v,high,6,12
+62aac5b6d606,svo,man cutting a potato into pieces,man,cut,potato,man —cut→ potato,1,0,,,,,YXixZrSxefk_17_48,man#n,potato#n,high,11,156
+84e5f84d294b,svo,the plane flew in the sky,plane,fly in,sky,plane —fly in→ sky,1,0,,,,,0bSz70pYAP0_5_15,plane#n,sky#n,mid,4,6
+fd3947ab2916,svo,a cat is trying to drink water and getting its head wet,cat,to drink,water,cat —to drink→ water,0,0,,,,,NaX51emUDn4_0_20,cat#n,water#n,low,2,2
+2cd645fc837c,svo,a monkey is pulling a dogs tail,monkey,pull,dog,monkey —pull→ dog,0,1,,,,,53dc4z7HLyg_16_23,monkey#n,dog#n,mid,3,24
+83a4e4b6af77,object_of,a cat is drinking the milk,,drink,milk,'milk' là ĐỐI TƯỢNG chịu hành động 'drink',1,0,,,,,5OvgDatToBU_0_8,milk#n,drink#v,high,6,21
+359e7ac675c4,object_of,a person is applying seasoning to meat in a bowl,,season,bowl,'bowl' là ĐỐI TƯỢNG chịu hành động 'season',0,0,,,,,QsC8__3lwO0_50_60,bowl#n,season#v,high,9,29
+98e956e8654d,svo,a man seated in a room is strumming the guitar and singing a song,man,seat in,room,man —seat in→ room,1,0,,,,,QHkvBU8diwU_1_18,man#n,room#n,mid,3,8
+b3387877b84e,object_of,a person is taking out boiled rice from a pot into a pan,,boil,rice,'rice' là ĐỐI TƯỢNG chịu hành động 'boil',0,0,,,,,ACOmKiJDkA4_23_30,rice#n,boil#v,low,2,25
+e3b3a06883a9,agent_of,the man is covering the container,man,cover,,'man' là CHỦ THỂ thực hiện hành động 'cover',1,0,,,,,8MVo7fje_oE_125_130,man#n,cover#v,high,6,16
+2a288e05b6f2,prep,a man appears to be draining water off of pasta in a rectangular plastic container into a sink,water,off of,pasta,water —off of→ pasta,0,0,,,,,8MVo7fje_oE_130_136,water#n,pasta#n,low,2,19
+b74f5d2c99cd,svo,a man is performing stunts on a motorcycle,man,perform on,motorcycle,man —perform on→ motorcycle,1,0,,,,,AjZ-R3LFMzo_18_23,man#n,motorcycle#n,mid,4,16
+7fe7fb767c4c,object_of,a man makes funny faces at the camera,,face,camera,'camera' là ĐỐI TƯỢNG chịu hành động 'face',0,1,,,,,Jag7oTemldY_12_25,camera#n,face#v,mid,4,9
+4bd4b5dddf5e,object_of,a wallaby is eating out of a man s hand,,eat,man,'man' là ĐỐI TƯỢNG chịu hành động 'eat',0,0,,,,,a1i6T160REQ_5_18,man#n,eat#v,mid,3,65
+a842c2cb4477,object_of,broccoli is being cooled in water,,cool,water,'water' là ĐỐI TƯỢNG chịu hành động 'cool',0,0,,,,,PqSZ89FqpiY_65_75,water#n,cool#v,low,2,2
+615225ecc779,agent_of,a woman turns two eggs in boiling water,woman,turn,,'woman' là CHỦ THỂ thực hiện hành động 'turn',1,0,,,,,-wa0umYJVGg_100_115,woman#n,turn#v,mid,5,27
+c0aa224ffe83,object_of,someone is peeling an onion,,peel,onion,'onion' là ĐỐI TƯỢNG chịu hành động 'peel',1,0,,,,,4QYPZM01xFE_14_26,onion#n,peel#v,mid,4,32
+7261df0d86dd,agent_of,a lady is grating the potatoes,lady,grate,,'lady' là CHỦ THỂ thực hiện hành động 'grate',1,1,,,,,05gNigkqfNU_11_23,lady#n,grate#v,mid,3,13
+f422e8dcd0b5,agent_of,a teacher is teaching a lesson two a students,teacher,teach,,'teacher' là CHỦ THỂ thực hiện hành động 'teach',1,0,,,,,HypgcCT1r68_38_46,teacher#n,teach#v,mid,3,32
+6631921895ad,prep,two women are carying a tap down a hill,woman,down,hill,woman —down→ hill,0,0,,,,,CcvJs77L-e8_15_22,woman#n,hill#n,low,2,46
+e12f18dece68,prep,a man is filling a pot up with water,pot,up with,water,pot —up with→ water,0,1,,,,,3doK4FQM5-k_46_57,pot#n,water#n,low,2,2
+06259d81f3d0,object_of,a bull dog is waving his tail,,wave,tail,'tail' là ĐỐI TƯỢNG chịu hành động 'wave',1,0,,,,,4ge5_V-xhP0_35_42,tail#n,wave#v,high,6,12
+df98f608f46b,prep,a lady is breaking the eggs in to a bowl,egg,in to,bowl,egg —in to→ bowl,0,0,,,,,0lh_UWF9ZP4_71_77,egg#n,bowl#n,mid,3,41
+014b49daf9ec,object_of,a dog is shaking water off and then running,,shake,water,'water' là ĐỐI TƯỢNG chịu hành động 'shake',1,1,,,,,8yS2wqwActs_2_14,water#n,shake#v,low,2,13
+60a46f5af147,agent_of,a cat gets a bag stuck on its head,cat,stick,,'cat' là CHỦ THỂ thực hiện hành động 'stick',0,1,,,,,08pVpBq706k_175_212,cat#n,stick#v,high,6,16
+993113979092,prep,someone appears to be trying to cut into a storewrapped tube of frozen meat with a knife,meat,with,knife,meat —with→ knife,0,0,,,,,WPG-BIWOrG4_755_761,meat#n,knife#n,high,9,418
+d195fe73ad32,prep,two dachshunds are swimming to the stairs of a pool,stair,of,pool,stair —of→ pool,1,1,,,,,MTjrZthHwJQ_2_11,stair#n,pool#n,low,2,412
+b0ebfd702fb2,svo,a man cutting photo with a sword,man,cut with,sword,man —cut with→ sword,1,0,,,,,-8y1Q0rA3n8_95_102,man#n,sword#n,low,2,17
+cec64404cb25,object_of,a man pokes a drinking straw below his chin and opens his mouth to reveal the straw,,open,mouth,'mouth' là ĐỐI TƯỢNG chịu hành động 'open',1,1,,,,,Xp6rxW4hFFo_32_40,mouth#n,open#v,mid,5,27
+287416ccb9be,svo,a car is driving down the road,car,drive down,road,car —drive down→ road,1,0,,,,,De815YpTBic_41_48,car#n,road#n,high,7,15
+47e9ab680358,svo,a woman is cooking eggs,woman,cook,egg,woman —cook→ egg,1,0,,,,,0lh_UWF9ZP4_103_110,woman#n,egg#n,high,7,75
+b9874863cbee,svo,a player scores a basket during a match,player,score,basket,player —score→ basket,1,0,,,,,MJoxGpEswOI_9_16,player#n,basket#n,low,2,5
+32e1a5af76f4,prep,someone is stirring a beef and sauce mixture in a bowl with a wooden spoon,bowl,with,spoon,bowl —with→ spoon,0,0,,,,,BVjvRpmHg0w_121_130,bowl#n,spoon#n,mid,3,418
+08211b5e5a81,prep,a chinese lady cooking some sort of chicken and rice dish with her dog,dish,with,dog,dish —with→ dog,0,0,,,,,WTf5EgVY5uU_108_116,dish#n,dog#n,mid,5,418
+7cb505e397e0,agent_of,a woman is wiping down a box,woman,wipe,,'woman' là CHỦ THỂ thực hiện hành động 'wipe',1,0,,,,,QT8iCDc7NGU_18_23,woman#n,wipe#v,mid,3,11
+6b7f0fe9e274,prep,a man is speeding down the road on a motorcycle,road,on,motorcycle,road —on→ motorcycle,0,1,,,,,DIebwNHGjm8_27_38,road#n,motorcycle#n,low,2,386
+8045713cf84b,svo,a goose is attacking a man,goose,attack,man,goose —attack→ man,1,0,,,,,XzCcRzEa83U_39_46,goose#n,man#n,low,2,24
+1aa7c7d56b45,object_of,the cook is flipping the food with the pan,,flip,pan,'pan' là ĐỐI TƯỢNG chịu hành động 'flip',0,0,,,,,JktNQQnLblQ_4_9,pan#n,flip#v,low,2,11
+b9b7734d65ab,svo,a young man is pedaling his bicycle on the grill,man,pedal,bicycle,man —pedal→ bicycle,1,0,,,,,ZnLgsasu82g_71_81,man#n,bicycle#n,low,2,2
+51515a499c07,svo,a lady is riding on the horse,lady,ride on,horse,lady —ride on→ horse,1,1,,,,,ao-9B8IV9_E_72_77,lady#n,horse#n,high,6,53
+46f98cfbb218,agent_of,a man is performing a complex yoga posture called suryanamaskar,man,call,,'man' là CHỦ THỂ thực hiện hành động 'call',0,0,,,,,Hu9Sq1RvuoA_19_62,man#n,call#v,high,6,20
+0a60b12ace3f,agent_of,three guys are fighting in the middle of the street,guy,fight,,'guy' là CHỦ THỂ thực hiện hành động 'fight',1,0,,,,,DvYN53KBDr0_51_62,guy#n,fight#v,mid,3,41
+af861bb53623,agent_of,a cat is teasing a shoe,cat,tease,,'cat' là CHỦ THỂ thực hiện hành động 'tease',1,0,,,,,3FnUTQMJVXI_31_36,cat#n,tease#v,mid,3,11
+332bf93f31f9,prep,a car is going down a winding road,car,down,road,car —down→ road,0,1,,,,,P6eo3LULuuc_1_11,car#n,road#n,mid,4,46
+1af38913bd21,object_of,the woman is slicing cabbage,,slice,cabbage,'cabbage' là ĐỐI TƯỢNG chịu hành động 'slice',1,0,,,,,PeUHy0A1GF0_74_77,cabbage#n,slice#v,mid,3,152
+72ceaa338a76,svo,a rice and liquid mixture is stirred on the stove,mixture,stir on,stove,mixture —stir on→ stove,0,0,,,,,UXs3eq68ZjE_320_325,mixture#n,stove#n,low,2,2
+af70892086c6,agent_of,boys are practicing cricket,boy,practice,,'boy' là CHỦ THỂ thực hiện hành động 'practice',1,0,,,,,NKtfKR4GNjU_0_20,boy#n,practice#v,high,6,33
+dfe93d62807a,object_of,a girl is walking down a hallway,,walk,hallway,'hallway' là ĐỐI TƯỢNG chịu hành động 'walk',0,0,,,,,Puh1n8DTKw8_2_9,hallway#n,walk#v,mid,3,89
+6fb1c6b6df60,svo,a man is stunt riding on a bicycle,man,ride on,bicycle,man —ride on→ bicycle,0,1,,,,,BGG0uYWZBdw_6_12,man#n,bicycle#n,mid,5,53
+06303dde0b4a,prep,a man slices a loaf of bread with a knife,bread,with,knife,bread —with→ knife,0,1,,,,,WPG-BIWOrG4_635_640,bread#n,knife#n,high,7,418
+78e41256cd32,object_of,a dog is trying to catch the fish,,catch,fish,'fish' là ĐỐI TƯỢNG chịu hành động 'catch',1,0,,,,,LYSPQqUvNO0_43_57,fish#n,catch#v,mid,3,25
+b3386013ac6f,svo,a man is demonstrating a sword,man,demonstrate,sword,man —demonstrate→ sword,1,0,,,,,8PQiaurIiDM_94_99,man#n,sword#n,mid,3,11
+a9c3124da7a9,prep,a woman is cutting small piece of meat from a larger piece,piece,of,meat,piece —of→ meat,1,1,,,,,WTf5EgVY5uU_15_19,piece#n,meat#n,high,32,412
+a16fe5f55452,object_of,a man combs his hair,,comb,hair,'hair' là ĐỐI TƯỢNG chịu hành động 'comb',1,0,,,,,0piwbTivpDg_10_40,hair#n,comb#v,high,8,9
+1b76f63e9e75,agent_of,a woman lying on her back on a platform in water is laughing as a dolphin sitting on top of her is swinging its tail fin,woman,laugh,,'woman' là CHỦ THỂ thực hiện hành động 'laugh',1,1,,,,,53dc4z7HLyg_25_29,woman#n,laugh#v,low,2,20
+ff0b542d11f2,prep,a person is slicing raw chicken meat into small pieces,meat,into,piece,meat —into→ piece,0,0,,,,,WTf5EgVY5uU_18_23,meat#n,piece#n,high,9,286
+9a78848a24c0,prep,the fox ate out of the man s hand,ate,out of,man,ate —out of→ man,0,0,,,,,06CbMa0kDr8_3_13,ate#n,man#n,low,2,39
+9c1ac2ccde50,agent_of,a man is talking telling a news story,man,tell,,'man' là CHỦ THỂ thực hiện hành động 'tell',1,0,,,,,GnwKcpfr_ng_47_57,man#n,tell#v,high,11,23
+34811915a180,svo,a man fires a flare gun into the dark sky,man,fire,gun,man —fire→ gun,1,0,,,,,RieF9wrFd8s_1_8,man#n,gun#n,high,7,13
+75089daf27a0,agent_of,a cat is pawing something in it s water dish,cat,paw,,'cat' là CHỦ THỂ thực hiện hành động 'paw',1,0,,,,,1qV4wfjTYIo_151_164,cat#n,paw#v,high,7,9
+f3a99ea89d48,object_of,a man is placing meat in a bag,,place,meat,'meat' là ĐỐI TƯỢNG chịu hành động 'place',1,1,,,,,bQJQGoJF7_k_145_153,meat#n,place#v,high,8,81
+7ce68be6223b,agent_of,a monkey is searching and playing,monkey,search,,'monkey' là CHỦ THỂ thực hiện hành động 'search',1,0,,,,,XdB0pVjFYoU_1_8,monkey#n,search#v,low,2,14
+38b75b617a69,object_of,a man is trimming the fat off meat,,trim,fat,'fat' là ĐỐI TƯỢNG chịu hành động 'trim',0,1,,,,,OUII8_aOfNM_26_55,fat#n,trim#v,low,2,6
+c0a6e8ff06fe,prep,the lady added the eggs to the pan to make an omelette,egg,to,pan,egg —to→ pan,0,1,,,,,0lh_UWF9ZP4_94_103,egg#n,pan#n,low,2,153
+ca76d0d818a2,svo,a woman is scrambling two eggs in a bowl,woman,scramble,egg,woman —scramble→ egg,1,0,,,,,WTf5EgVY5uU_104_108,woman#n,egg#n,high,6,9
+cd52899318f0,agent_of,a boy keeping a ball bounceing with out touching it with his hands,boy,touch,,'boy' là CHỦ THỂ thực hiện hành động 'touch',1,0,,,,,_sJ_09Mf1HY_49_72,boy#n,touch#v,low,2,15
+4e325477188e,svo,a woman is styling her hair,woman,style,hair,woman —style→ hair,1,0,,,,,5dv8MSWlxoQ_10_40,woman#n,hair#n,mid,4,7
+08ba93026ccb,object_of,someone is sprinkling some spice on some quail in a pan,,sprinkle,spice,'spice' là ĐỐI TƯỢNG chịu hành động 'sprinkle',1,0,,,,,QsC8__3lwO0_50_60,spice#n,sprinkle#v,mid,4,20
+367db403168c,agent_of,the cat is eating mashed potatoes,cat,eat,,'cat' là CHỦ THỂ thực hiện hành động 'eat',1,0,,,,,UhI-p6AysWY_25_30,cat#n,eat#v,high,14,85
+035a635ea254,svo,a woman is mixing eggs in the bowl,woman,mix,egg,woman —mix→ egg,1,0,,,,,WTf5EgVY5uU_104_108,woman#n,egg#n,high,6,38
+15cc087e8039,object_of,a small furry kitten seated on a sofa is almost dozing off,,seat,sofa,'sofa' là ĐỐI TƯỢNG chịu hành động 'seat',0,1,,,,,_9iG5Ge01PM_3_11,sofa#n,seat#v,high,8,36
+41e45487ecfe,object_of,someone is frying onions in a pan,,fry,onion,'onion' là ĐỐI TƯỢNG chịu hành động 'fry',1,0,,,,,WTf5EgVY5uU_130_135,onion#n,fry#v,mid,4,47
+70a75963188c,object_of,a lady is arranging her hair,,arrange,hair,'hair' là ĐỐI TƯỢNG chịu hành động 'arrange',1,0,,,,,NZWiKMZS_k8_39_48,hair#n,arrange#v,low,2,9
+827e81fcc2aa,prep,a man is adding tomato sauce to a plate of spaghetti,plate,of,spaghetti,plate —of→ spaghetti,1,0,,,,,8MVo7fje_oE_166_171,plate#n,spaghetti#n,low,2,412
+b64d0e63f9ba,agent_of,balls are flying and rolling,ball,roll,,'ball' là CHỦ THỂ thực hiện hành động 'roll',1,0,,,,,-zOrV-5vh1A_69_76,ball#n,roll#v,low,2,33
+43b89b4abfa5,prep,the man added water to the pot,water,to,pot,water —to→ pot,0,0,,,,,UXs3eq68ZjE_246_250,water#n,pot#n,mid,4,153
+94bc2b4652c0,prep,a man in a black suit speaking on the microphone,man,in,suit,man —in→ suit,1,1,,,,,QklHhN8pQBE_0_10,man#n,suit#n,high,6,521
+48658df97a4d,prep,a cartoon chef is flipping a pancake in a pan,pancake,in,pan,pancake —in→ pan,0,0,,,,,JktNQQnLblQ_4_9,pancake#n,pan#n,low,2,521
+c3de12bf237e,object_of,a cartoon woman is diving into the water,,dive,water,'water' là ĐỐI TƯỢNG chịu hành động 'dive',0,0,,,,,88DOMJ11q2M_84_87,water#n,dive#v,high,8,12
+5b2f78d7d55c,agent_of,a small boy has placed his hands on the window pane and is tapping it while partially climbing a bean bag kept beside it,boy,climb,,'boy' là CHỦ THỂ thực hiện hành động 'climb',1,1,,,,,AzMrltkXGJk_0_10,boy#n,climb#v,low,2,31
+3df44359ac8e,svo,a woman is slicing a meat into pieces,woman,slice,meat,woman —slice→ meat,1,0,,,,,0lh_UWF9ZP4_183_190,woman#n,meat#n,high,6,133
+746dceb2d252,prep,the lady is peeling the skin off the potato,skin,off,potato,skin —off→ potato,0,0,,,,,BOLKaQeB6j0_101_111,skin#n,potato#n,mid,3,33
+80daed8a2f51,agent_of,a little a boy is caught passing a love note in class,boy,catch,,'boy' là CHỦ THỂ thực hiện hành động 'catch',0,0,,,,,HypgcCT1r68_38_46,boy#n,catch#v,mid,3,32
+96d5e8fa1162,agent_of,the ladies are performing a dance,lady,perform,,'lady' là CHỦ THỂ thực hiện hành động 'perform',1,0,,,,,9OvXb1fot74_21_29,lady#n,perform#v,low,2,103
+b97a040fd81b,agent_of,a woman is shredding roasted chicken,woman,shred,,'woman' là CHỦ THỂ thực hiện hành động 'shred',1,1,,,,,b4mJ3AQc-ag_30_34,woman#n,shred#v,mid,4,11
+e480924d46a7,object_of,the chef killed the snake and shed it s skin,,kill,snake,'snake' là ĐỐI TƯỢNG chịu hành động 'kill',1,0,,,,,R3a9r8qFlhQ_0_12,snake#n,kill#v,low,2,5
+6b2aa668d79f,prep,a person is slicing up an onion into little pieces,onion,into,piece,onion —into→ piece,0,1,,,,,9HTUcMjWB3g_143_151,onion#n,piece#n,high,13,286
+a18ec54f82e7,object_of,the man is aiming a gun,,aim,gun,'gun' là ĐỐI TƯỢNG chịu hành động 'aim',1,0,,,,,IAvBB2lv8iw_142_148,gun#n,aim#v,mid,3,5
+65ca4927ac18,svo,a man is falling from a bike into the pond,man,fall from,bike,man —fall from→ bike,1,0,,,,,6gQu8PWhFoQ_30_35,man#n,bike#n,mid,4,8
+eb33b10eda66,agent_of,a woman is picking tomatoes from a garden,woman,pick,,'woman' là CHỦ THỂ thực hiện hành động 'pick',1,0,,,,,32_A0-er4Ws_16_20,woman#n,pick#v,high,7,30
+8dee6925f724,agent_of,the little dog chased the big blue ball,dog,chase,,'dog' là CHỦ THỂ thực hiện hành động 'chase',1,0,,,,,WWf0Z6ak3Dg_5_15,dog#n,chase#v,mid,4,17
+68ee7823b5ac,object_of,a car is driving down the street,,drive,street,'street' là ĐỐI TƯỢNG chịu hành động 'drive',1,1,,,,,De815YpTBic_41_48,street#n,drive#v,high,12,53
+07266b2629d2,agent_of,a man seated on a park bench is rocking a woman seated on his lap,man,rock,,'man' là CHỦ THỂ thực hiện hành động 'rock',1,1,,,,,Yh2N6ZtRBdU_110_120,man#n,rock#v,mid,4,8
+d373d05ddde7,prep,a person is slicing an onion into rings with a knife,onion,into with,knife,onion —into with→ knife,0,0,,,,,ObBss94n3gI_35_46,onion#n,knife#n,low,2,11
+d94adc278834,agent_of,the dogs are fighting,dog,fight,,'dog' là CHỦ THỂ thực hiện hành động 'fight',1,1,,,,,Q6HuQEIJqcA_9_16,dog#n,fight#v,high,7,41
+1fc240487802,agent_of,the dog opened a can of dog food,dog,open,,'dog' là CHỦ THỂ thực hiện hành động 'open',1,0,,,,,MWvCcwTw7Ac_154_181,dog#n,open#v,mid,3,36
+1d6bc0f0e4a2,object_of,woman is lying in a boat,,lie,boat,'boat' là ĐỐI TƯỢNG chịu hành động 'lie',0,0,,,,,QhRqJp-CgEs_7_14,boat#n,lie#v,low,2,44
+fdfb112254d6,object_of,how to make bento japanese boxed lunch,,box,lunch,'lunch' là ĐỐI TƯỢNG chịu hành động 'box',0,1,,,,,-_hbPLsZvvo_323_328,lunch#n,box#v,mid,3,8
+a64369f815bc,object_of,fighting dogs,,fight,dog,'dog' là ĐỐI TƯỢNG chịu hành động 'fight',1,0,,,,,3eqFFRSXwGE_84_96,dog#n,fight#v,mid,3,24
+c26041528619,prep,a man is beating two eggs in a bowl with a fork,egg,in,bowl,egg —in→ bowl,0,0,,,,,UXs3eq68ZjE_235_240,egg#n,bowl#n,high,18,521
+78f68f0bb013,prep,two teams are playing basketball on a court and a member of the blue team shoots the ball into the basket,ball,into,basket,ball —into→ basket,0,0,,,,,MJoxGpEswOI_9_16,ball#n,basket#n,mid,3,286
+2e7bac5378bc,object_of,a man packing some sort of food item in the lunch box,,pack,lunch,'lunch' là ĐỐI TƯỢNG chịu hành động 'pack',0,0,,,,,8MVo7fje_oE_125_130,lunch#n,pack#v,low,2,6
+898a47f65701,prep,a woman is peeling a boiled potato with her hands,potato,with,hand,potato —with→ hand,0,0,,,,,BOLKaQeB6j0_101_111,potato#n,hand#n,low,2,418
+1e1f45ccd8bf,svo,a man appears to be draining water off of pasta in a plastic container into a sink,man,to drain,water,man —to drain→ water,0,0,,,,,8MVo7fje_oE_139_144,man#n,water#n,low,2,3
+4d167cb7cd4d,svo,a dog is playing with ball,dog,play with,ball,dog —play with→ ball,1,0,,,,,9HDUADeA2xg_3_31,dog#n,ball#n,high,7,130
+e29ec33d76d9,object_of,a small dog is pushing a large blue ball around,,push,ball,'ball' là ĐỐI TƯỢNG chịu hành động 'push',1,1,,,,,WWf0Z6ak3Dg_5_15,ball#n,push#v,mid,3,31
+51beb4175198,agent_of,a kitten is sniffing a bunny,kitten,sniff,,'kitten' là CHỦ THỂ thực hiện hành động 'sniff',1,0,,,,,M4It3DrhbE0_13_22,kitten#n,sniff#v,low,2,12
+4c305673757c,prep,a woman is adding oil to a pan,oil,to,pan,oil —to→ pan,0,1,,,,,P4IjNV3lZkQ_136_144,oil#n,pan#n,mid,4,153
+d9dae19261c2,agent_of,a child is saying something with sign language,child,say,,'child' là CHỦ THỂ thực hiện hành động 'say',1,1,,,,,Oq3FV_zdyy0_843_855,child#n,say#v,low,2,42
+a104553744ea,object_of,a cricket player misses the ball,,miss,ball,'ball' là ĐỐI TƯỢNG chịu hành động 'miss',1,0,,,,,Qp-k0H93iJE_35_39,ball#n,miss#v,mid,4,5
+193e72d5e1ca,prep,a woman adds salt to a bowl of peas,salt,to,bowl,salt —to→ bowl,1,1,,,,,WTf5EgVY5uU_94_98,salt#n,bowl#n,low,2,153
+88ec8cdae9a7,object_of,a man is scooping food out of a pot on the stove into a bowl,,scoop,pot,'pot' là ĐỐI TƯỢNG chịu hành động 'scoop',0,0,,,,,5U3xz9Ovmhk_214_222,pot#n,scoop#v,low,2,5
+20d563dc04d7,svo,the man is given practice to the horse,man,give to,horse,man —give to→ horse,0,1,,,,,4VLrxtf7Z_8_0_7,man#n,horse#n,low,2,8
+776225f79834,svo,a woman is slicing up some onions,woman,slice up,onion,woman —slice up→ onion,1,1,,,,,-wa0umYJVGg_139_157,woman#n,onion#n,mid,3,20
+6e7ab79939cd,prep,man on telephone pole is electrocuted,man,on,telephone,man —on→ telephone,0,0,,,,,BtQtRGI0F2Q_15_20,man#n,telephone#n,mid,3,386
+64dfee40c69c,object_of,a dog is knocking down a little boy,,knock,boy,'boy' là ĐỐI TƯỢNG chịu hành động 'knock',0,1,,,,,VLBsAPZ2DDE_34_41,boy#n,knock#v,low,2,12
+3c9b2640d10a,svo,a woman is putting on her makeup,woman,put on,makeup,woman —put on→ makeup,1,1,,,,,O9yLRzpPp44_36_55,woman#n,makeup#n,high,6,22
+cfa3a07cbb19,object_of,a young man is pushing a van down the street,,push,van,'van' là ĐỐI TƯỢNG chịu hành động 'push',1,1,,,,,RWWvWFeE6_Q_2_26,van#n,push#v,low,2,31
+7d8ea33cc124,svo,the man is using scissors to cut paper,man,use,scissors,man —use→ scissors,1,0,,,,,_0nX-El-ySo_83_93,man#n,scissors#n,mid,3,110
+8a0b2b42164a,object_of,an individual is mixing a ricelike mixture around in a frying pan,,mix,mixture,'mixture' là ĐỐI TƯỢNG chịu hành động 'mix',1,0,,,,,8HB7ywgJuTg_131_142,mixture#n,mix#v,high,6,58
+d294946693c4,svo,a man is drawing on a white sheet,man,draw on,sheet,man —draw on→ sheet,1,0,,,,,1dA1RQgPN3c_72_82,man#n,sheet#n,low,2,2
+379059f9a2ca,svo,a woman is applying makeup,woman,apply,makeup,woman —apply→ makeup,1,1,,,,,O9yLRzpPp44_36_55,woman#n,makeup#n,high,6,11
+ba5fcae659b8,agent_of,a baby is laughing,baby,laugh,,'baby' là CHỦ THỂ thực hiện hành động 'laugh',1,1,,,,,MPuKVz3sjBA_1_12,baby#n,laugh#v,high,9,20
+44f7b1afbb8b,svo,a woman is putting on eye makeup,woman,put on,eye,woman —put on→ eye,0,0,,,,,b4FM9OLBGyM_37_49,woman#n,eye#n,low,2,22
+42c4d944e335,agent_of,some guys are trying to break a car,guy,break,,'guy' là CHỦ THỂ thực hiện hành động 'break',1,0,,,,,DvYN53KBDr0_51_62,guy#n,break#v,low,2,37
+2fe296a2ac76,object_of,a girl kissing a boy,,kiss,boy,'boy' là ĐỐI TƯỢNG chịu hành động 'kiss',1,0,,,,,E6sqA9QtV5I_195_201,boy#n,kiss#v,low,2,9
+62c9244bd0b7,prep,a woman is slicing a piece of onion,piece,of,onion,piece —of→ onion,1,0,,,,,9HTUcMjWB3g_143_151,piece#n,onion#n,high,6,412
+83beb9185bf6,object_of,a wall of bouncing balls descend a street,,bounce,ball,'ball' là ĐỐI TƯỢNG chịu hành động 'bounce',0,1,,,,,-zOrV-5vh1A_69_76,ball#n,bounce#v,mid,5,8
+b3844deeaf29,svo,a man is walking across a rope,man,walk across,rope,man —walk across→ rope,1,0,,,,,MoqC84sXu88_47_59,man#n,rope#n,low,2,5
+7ab80fee2548,svo,two women are cooking in the kitchen,woman,cook in,kitchen,woman —cook in→ kitchen,1,0,,,,,NjblUomxFQo_100_108,woman#n,kitchen#n,mid,4,20
+93837c5e586e,object_of,butter is melting in a pan,,melt,pan,'pan' là ĐỐI TƯỢNG chịu hành động 'melt',0,0,,,,,_WRC7HXBJpU_360_370,pan#n,melt#v,low,2,6
+02a46450b738,agent_of,the frog grabbed onto the finger,frog,grab,,'frog' là CHỦ THỂ thực hiện hành động 'grab',1,0,,,,,EPgQ9QwbsLE_16_23,frog#n,grab#v,low,2,24
+a536bafb8567,object_of,making the pizza,,make,pizza,'pizza' là ĐỐI TƯỢNG chịu hành động 'make',1,1,,,,,Je3V7U5Ctj4_569_576,pizza#n,make#v,high,10,294
+233e5bcb9461,object_of,a man is demonstrating how to spread cooked rice on a plate,,spread,rice,'rice' là ĐỐI TƯỢNG chịu hành động 'spread',1,0,,,,,ACOmKiJDkA4_23_30,rice#n,spread#v,low,2,21

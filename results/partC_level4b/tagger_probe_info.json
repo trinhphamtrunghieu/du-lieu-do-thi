@@ -1,0 +1,21 @@
+{
+  "wd": 0.1,
+  "k_noun": 5,
+  "k_verb": 2,
+  "val_P": 0.4785714285714286,
+  "val_R": 0.4962962962962963,
+  "val_F1": 0.48727272727272725,
+  "method": "logistic đa nhãn trên CLIP video (TRAIN, out-of-fold cho TRAIN)",
+  "folds": 5,
+  "epochs": 300,
+  "n_terms_with_train_positive": 727,
+  "zero_shot_val": {
+    "pool": "video",
+    "norm": "raw+z",
+    "k_noun": 5,
+    "k_verb": 3,
+    "val_P": 0.29875,
+    "val_R": 0.3540740740740741,
+    "val_F1": 0.32406779661016955
+  }
+}

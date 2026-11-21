@@ -1,0 +1,224 @@
+[
+  {
+    "query": "horses are nice",
+    "clip_rank": 13,
+    "graph_rank": 11,
+    "top1_video": "lvFYUmDSOvU_34_38",
+    "top1_is_gold": false,
+    "top1_edge_contributions": {
+      "clip": 0.206,
+      "pe": 3.798,
+      "hub_clip": 0.471,
+      "hub_pe": 0.334,
+      "br_clip": -0.04,
+      "br_pe": 0.083
+    },
+    "top1_bridge_paths": [
+      {
+        "train_caption": "a horse is a man s best friend",
+        "train_video": "39Ce7I6nXIw_96_104",
+        "weight": 0.0258
+      },
+      {
+        "train_caption": "horses are driven by women",
+        "train_video": "NFxWwI0J3As_78_84",
+        "weight": 0.0098
+      },
+      {
+        "train_caption": "the horses are racing",
+        "train_video": "5-8z5U-o4O4_0_3",
+        "weight": 0.0088
+      }
+    ],
+    "top1_hub_neighbours": [
+      "horse is runing",
+      "a horse is in the mountain landscape",
+      "a horse is running"
+    ]
+  },
+  {
+    "query": "a person is cutting a piece of paper in half",
+    "clip_rank": 6,
+    "graph_rank": 2,
+    "top1_video": "nc0fVlaTYEs_34_44",
+    "top1_is_gold": false,
+    "top1_edge_contributions": {
+      "clip": 0.49,
+      "pe": 5.471,
+      "hub_clip": 0.008,
+      "hub_pe": 0.053,
+      "br_clip": 0.141,
+      "br_pe": 0.561
+    },
+    "top1_bridge_paths": [
+      {
+        "train_caption": "a person is cutting a paper",
+        "train_video": "AX38yo7Wuws_81_91",
+        "weight": 0.0786
+      },
+      {
+        "train_caption": "a person cuts a piece of paper",
+        "train_video": "HmVPxs4ygMc_44_53",
+        "weight": 0.0697
+      },
+      {
+        "train_caption": "a person is cutting paper with scissors",
+        "train_video": "AX38yo7Wuws_81_91",
+        "weight": 0.0369
+      }
+    ],
+    "top1_hub_neighbours": [
+      "a man folding paper",
+      "a guy is playing with the paper",
+      "a man folds a paper diagnolly and tears of the extra paper on one side to make it square shaped"
+    ]
+  },
+  {
+    "query": "a man is walking behind the tree",
+    "clip_rank": 21,
+    "graph_rank": 19,
+    "top1_video": "jlahRlo4jlU_30_36",
+    "top1_is_gold": false,
+    "top1_edge_contributions": {
+      "clip": 0.412,
+      "pe": 4.115,
+      "hub_clip": 0.073,
+      "hub_pe": -0.003,
+      "br_clip": -0.005,
+      "br_pe": -0.018
+    },
+    "top1_bridge_paths": [
+      {
+        "train_caption": "a man pushes a tree",
+        "train_video": "YmXCfQm0_CA_68_75",
+        "weight": 0.0157
+      },
+      {
+        "train_caption": "a man is carrying a tree",
+        "train_video": "YmXCfQm0_CA_68_75",
+        "weight": 0.0112
+      },
+      {
+        "train_caption": "a man is carrying a tree",
+        "train_video": "YmXCfQm0_CA_68_75",
+        "weight": 0.0112
+      }
+    ],
+    "top1_hub_neighbours": [
+      "a song from a south indian movie named ghajini",
+      "a cinema song oru maalai from ghajini",
+      "the man is walking down a path"
+    ]
+  },
+  {
+    "query": "a dog is running",
+    "clip_rank": 21,
+    "graph_rank": 6,
+    "top1_video": "qPXynwa_2iM_15_25",
+    "top1_is_gold": false,
+    "top1_edge_contributions": {
+      "clip": 0.62,
+      "pe": 5.628,
+      "hub_clip": -0.276,
+      "hub_pe": -0.151,
+      "br_clip": 0.002,
+      "br_pe": 0.398
+    },
+    "top1_bridge_paths": [
+      {
+        "train_caption": "a dog is running",
+        "train_video": "8yS2wqwActs_2_14",
+        "weight": 0.0184
+      },
+      {
+        "train_caption": "a dog is running",
+        "train_video": "8yS2wqwActs_2_14",
+        "weight": 0.0184
+      },
+      {
+        "train_caption": "a dog is running",
+        "train_video": "8yS2wqwActs_2_14",
+        "weight": 0.0184
+      }
+    ],
+    "top1_hub_neighbours": [
+      "a black dog runs",
+      "one dog is jumping in water",
+      "a dog is jumping into water"
+    ]
+  },
+  {
+    "query": "two car raceing on the road",
+    "clip_rank": 1,
+    "graph_rank": 4,
+    "top1_video": "urXDqw3S34I_12_17",
+    "top1_is_gold": false,
+    "top1_edge_contributions": {
+      "clip": 0.254,
+      "pe": 4.018,
+      "hub_clip": 0.11,
+      "hub_pe": 0.187,
+      "br_clip": -0.012,
+      "br_pe": 0.107
+    },
+    "top1_bridge_paths": [
+      {
+        "train_caption": "two cars are racing along a track",
+        "train_video": "J8cP93yG1Ao_14_24",
+        "weight": 0.0503
+      },
+      {
+        "train_caption": "race cars are being driven on road",
+        "train_video": "OBLIjdMIIt8_54_61",
+        "weight": 0.0097
+      },
+      {
+        "train_caption": "the two cars are coming very fast each other in the race",
+        "train_video": "J8cP93yG1Ao_14_24",
+        "weight": 0.0096
+      }
+    ],
+    "top1_hub_neighbours": [
+      "a car drives down a country road",
+      "the car drove down a curving road",
+      "a car drives along a road"
+    ]
+  },
+  {
+    "query": "the couple kissed passionately in the living room",
+    "clip_rank": 1,
+    "graph_rank": 1,
+    "top1_video": "q3I3R_gqy8M_34_37",
+    "top1_is_gold": true,
+    "top1_edge_contributions": {
+      "clip": 0.724,
+      "pe": 7.24,
+      "hub_clip": 0.167,
+      "hub_pe": -0.584,
+      "br_clip": 0.097,
+      "br_pe": 0.35
+    },
+    "top1_bridge_paths": [
+      {
+        "train_caption": "the couple kissed passionately on the couch",
+        "train_video": "E6sqA9QtV5I_195_201",
+        "weight": 0.0584
+      },
+      {
+        "train_caption": "the couple kissed passionately",
+        "train_video": "E6sqA9QtV5I_195_201",
+        "weight": 0.0258
+      },
+      {
+        "train_caption": "the couple are kissing each other",
+        "train_video": "5L5MoemWC6g_10_13",
+        "weight": 0.0044
+      }
+    ],
+    "top1_hub_neighbours": [
+      "a man and woman kissing",
+      "a man and woman are kissing passionately",
+      "a man and a woman kiss"
+    ]
+  }
+]

@@ -1,0 +1,146 @@
+{
+  "n_concepts": 537,
+  "hubs": [
+    {
+      "target": "person.n.01",
+      "train_videos": 627,
+      "frac": 0.522
+    },
+    {
+      "target": "animal.n.01",
+      "train_videos": 289,
+      "frac": 0.241
+    },
+    {
+      "target": "food.n.01",
+      "train_videos": 281,
+      "frac": 0.234
+    },
+    {
+      "target": "performer.n.01",
+      "train_videos": 261,
+      "frac": 0.217
+    },
+    {
+      "target": "entertainer.n.01",
+      "train_videos": 237,
+      "frac": 0.198
+    },
+    {
+      "target": "food.n.02",
+      "train_videos": 207,
+      "frac": 0.172
+    },
+    {
+      "target": "plant#n",
+      "train_videos": 193,
+      "frac": 0.161
+    },
+    {
+      "target": "separate.v.02",
+      "train_videos": 165,
+      "frac": 0.138
+    },
+    {
+      "target": "cut#v",
+      "train_videos": 158,
+      "frac": 0.132
+    },
+    {
+      "target": "dish#n",
+      "train_videos": 147,
+      "frac": 0.122
+    },
+    {
+      "target": "cook#v",
+      "train_videos": 145,
+      "frac": 0.121
+    },
+    {
+      "target": "vascular_plant.n.01",
+      "train_videos": 139,
+      "frac": 0.116
+    },
+    {
+      "target": "container#n",
+      "train_videos": 134,
+      "frac": 0.112
+    },
+    {
+      "target": "nutriment.n.01",
+      "train_videos": 132,
+      "frac": 0.11
+    },
+    {
+      "target": "herb#n",
+      "train_videos": 126,
+      "frac": 0.105
+    },
+    {
+      "target": "carnivore.n.01",
+      "train_videos": 124,
+      "frac": 0.103
+    },
+    {
+      "target": "foodstuff.n.02",
+      "train_videos": 117,
+      "frac": 0.098
+    },
+    {
+      "target": "sport.n.01",
+      "train_videos": 114,
+      "frac": 0.095
+    },
+    {
+      "target": "vehicle#n",
+      "train_videos": 101,
+      "frac": 0.084
+    },
+    {
+      "target": "adult.n.01",
+      "train_videos": 98,
+      "frac": 0.082
+    },
+    {
+      "target": "condiment.n.01",
+      "train_videos": 97,
+      "frac": 0.081
+    },
+    {
+      "target": "talk#v",
+      "train_videos": 97,
+      "frac": 0.081
+    },
+    {
+      "target": "flavorer.n.01",
+      "train_videos": 87,
+      "frac": 0.072
+    },
+    {
+      "target": "fry#v",
+      "train_videos": 84,
+      "frac": 0.07
+    },
+    {
+      "target": "musical_instrument.n.01",
+      "train_videos": 83,
+      "frac": 0.069
+    }
+  ],
+  "n_hub": 7,
+  "n_shallow": 107,
+  "cycles": {
+    "heuristic": 0,
+    "sense": 0,
+    "filtered": 0,
+    "none": 0
+  },
+  "n_ambiguous": 296,
+  "n_sense_differs": 281,
+  "isa_edges": {
+    "heuristic": 1208,
+    "sense": 722,
+    "filtered": 857,
+    "none": 0
+  }
+}

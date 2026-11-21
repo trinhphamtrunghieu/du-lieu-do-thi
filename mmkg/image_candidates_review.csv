@@ -1,0 +1,411 @@
+candidate_id,dish_id,commons_title,source_url,decision
+0000,dish_banh_beo,"File:Bánh bèo at Nha Trang, Eden Center, January 2025.jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o_at_Nha_Trang,_Eden_Center,_January_2025.jpg",ok
+0001,dish_banh_beo,"File:Bánh Bèo, Da Nang, Vietnam.jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_B%C3%A8o,_Da_Nang,_Vietnam.jpg",ok
+0002,dish_banh_beo,File:Banh beo Thien Mu.jpg,https://commons.wikimedia.org/wiki/File:Banh_beo_Thien_Mu.jpg,rejected_visual
+0003,dish_banh_beo,"File:Bánh bèo, bột lọc...jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o,_b%E1%BB%99t_l%E1%BB%8Dc...jpg",rejected_visual
+0004,dish_banh_beo,File:Banh beo Da Nang.JPG,https://commons.wikimedia.org/wiki/File:Banh_beo_Da_Nang.JPG,ok
+0005,dish_banh_beo,File:Banh beo.jpg,https://commons.wikimedia.org/wiki/File:Banh_beo.jpg,rejected_visual
+0006,dish_banh_beo,"File:Bánh bèo, bột lọc, nem chua.jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o,_b%E1%BB%99t_l%E1%BB%8Dc,_nem_chua.jpg",rejected_visual
+0007,dish_banh_beo,File:Bánh bèo de Saigon.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o_de_Saigon.jpg,ok
+0008,dish_banh_beo,File:Bánh bèo Quy Nhon.JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o_Quy_Nhon.JPG,ok
+0009,dish_banh_beo,"File:Bánh bèo, Bánh ít trần, Bánh bột lọc trần.jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o,_B%C3%A1nh_%C3%ADt_tr%E1%BA%A7n,_B%C3%A1nh_b%E1%BB%99t_l%E1%BB%8Dc_tr%E1%BA%A7n.jpg",ok
+0010,dish_banh_beo,File:Bánh bèo sucré.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o_sucr%C3%A9.jpg,ok
+0011,dish_banh_beo,File:Bánh bèo 2.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%C3%A8o_2.jpg,ok
+0012,dish_banh_bot_loc,File:Bánh bột lọc saigonnais.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%E1%BB%99t_l%E1%BB%8Dc_saigonnais.jpg,ok
+0013,dish_banh_bot_loc,File:Banh bot loc.JPG,https://commons.wikimedia.org/wiki/File:Banh_bot_loc.JPG,ok
+0014,dish_banh_bot_loc,File:Bánh bột lọc.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_b%E1%BB%99t_l%E1%BB%8Dc.jpg,ok
+0015,dish_banh_bot_loc,File:Banh bot loc hue.jpg,https://commons.wikimedia.org/wiki/File:Banh_bot_loc_hue.jpg,ok
+0016,dish_banh_bot_loc,"File:Banh Bot Loc in Danang, Vietnam.jpg","https://commons.wikimedia.org/wiki/File:Banh_Bot_Loc_in_Danang,_Vietnam.jpg",rejected_visual
+0017,dish_banh_bot_loc,"File:Honeymoon Part 1 Hoi An, Vietnam (16126375528).jpg","https://commons.wikimedia.org/wiki/File:Honeymoon_Part_1_Hoi_An,_Vietnam_(16126375528).jpg",ok
+0018,dish_banh_bot_loc,File:Bánh lọc Mỹ Chánh (hình gốc) (2).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_l%E1%BB%8Dc_M%E1%BB%B9_Ch%C3%A1nh_(h%C3%ACnh_g%E1%BB%91c)_(2).jpg,ok
+0019,dish_banh_bot_loc,"File:Bánh lọc Mỹ Chánh, đặc sản Quảng Trị, Tết 2018 (3).jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_l%E1%BB%8Dc_M%E1%BB%B9_Ch%C3%A1nh,_%C4%91%E1%BA%B7c_s%E1%BA%A3n_Qu%E1%BA%A3ng_Tr%E1%BB%8B,_T%E1%BA%BFt_2018_(3).jpg",ok
+0020,dish_banh_bot_loc,"File:Bánh lọc Mỹ Chánh, đặc sản Quảng Trị, Tết 2018 (5).jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_l%E1%BB%8Dc_M%E1%BB%B9_Ch%C3%A1nh,_%C4%91%E1%BA%B7c_s%E1%BA%A3n_Qu%E1%BA%A3ng_Tr%E1%BB%8B,_T%E1%BA%BFt_2018_(5).jpg",ok
+0021,dish_banh_bot_loc,File:Transluent ravioli in Hanoi.jpg,https://commons.wikimedia.org/wiki/File:Transluent_ravioli_in_Hanoi.jpg,ok
+0022,dish_banh_bot_loc,File:Bánh lọc Mỹ Chánh (hình gốc) (1).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_l%E1%BB%8Dc_M%E1%BB%B9_Ch%C3%A1nh_(h%C3%ACnh_g%E1%BB%91c)_(1).jpg,ok
+0023,dish_banh_bot_loc,"File:Nhà mình Lễ 30th4n2023 (món beéng loọc Mỹ Chánh, bóc ra) (2).jpg","https://commons.wikimedia.org/wiki/File:Nh%C3%A0_m%C3%ACnh_L%E1%BB%85_30th4n2023_(m%C3%B3n_be%C3%A9ng_lo%E1%BB%8Dc_M%E1%BB%B9_Ch%C3%A1nh,_b%C3%B3c_ra)_(2).jpg",over_cap
+0024,dish_banh_can,File:Bánh căn (Vietnamese mini pancake) clay cooking pots.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_c%C4%83n_(Vietnamese_mini_pancake)_clay_cooking_pots.jpg,ok
+0025,dish_banh_can,File:Bánh căn (Vietnamese mini pancake) clay cooking pots 2.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_c%C4%83n_(Vietnamese_mini_pancake)_clay_cooking_pots_2.jpg,ok
+0026,dish_banh_can,"File:Bánh căn in phan rang, vietnam.jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_c%C4%83n_in_phan_rang,_vietnam.jpg",ok
+0027,dish_banh_can,File:Banh can tui ve.jpg,https://commons.wikimedia.org/wiki/File:Banh_can_tui_ve.jpg,rejected_visual
+0028,dish_banh_can,File:Banh Can Nem Cha hawker.jpg,https://commons.wikimedia.org/wiki/File:Banh_Can_Nem_Cha_hawker.jpg,rejected_visual
+0029,dish_banh_can,"File:Banh Can, meatballs, sausage VND15000.jpg","https://commons.wikimedia.org/wiki/File:Banh_Can,_meatballs,_sausage_VND15000.jpg",ok
+0030,dish_banh_can,File:Frying Banh Can and meat balls.jpg,https://commons.wikimedia.org/wiki/File:Frying_Banh_Can_and_meat_balls.jpg,ok
+0031,dish_banh_can,"File:Nha Huong Theo Ban Banh Can. So, 46 Duong, Tan Trao - F, Vinh Nguyen - Nha trang - Khanh Hoa - panoramio.jpg","https://commons.wikimedia.org/wiki/File:Nha_Huong_Theo_Ban_Banh_Can._So,_46_Duong,_Tan_Trao_-_F,_Vinh_Nguyen_-_Nha_trang_-_Khanh_Hoa_-_panoramio.jpg",rejected_visual
+0032,dish_banh_can,"File:Banh Can, meatballs, sausage - close-up VND15000.jpg","https://commons.wikimedia.org/wiki/File:Banh_Can,_meatballs,_sausage_-_close-up_VND15000.jpg",ok
+0033,dish_banh_can,File:Bánh căn 1.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_c%C4%83n_1.jpg,ok
+0034,dish_banh_canh_cua,"File:Bánh canh cá lóc (bánh canh bột mì) ở P1 Đông Hà, Tết năm 2019 (1).jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_canh_c%C3%A1_l%C3%B3c_(b%C3%A1nh_canh_b%E1%BB%99t_m%C3%AC)_%E1%BB%9F_P1_%C4%90%C3%B4ng_H%C3%A0,_T%E1%BA%BFt_n%C4%83m_2019_(1).jpg",ok
+0035,dish_banh_canh_cua,"File:Bánh canh cá lóc (bánh canh bột mì) ở P1 Đông Hà, Tết năm 2019 (2).jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_canh_c%C3%A1_l%C3%B3c_(b%C3%A1nh_canh_b%E1%BB%99t_m%C3%AC)_%E1%BB%9F_P1_%C4%90%C3%B4ng_H%C3%A0,_T%E1%BA%BFt_n%C4%83m_2019_(2).jpg",near_duplicate_of_0034
+0036,dish_banh_canh_cua,File:Bánh canh cua.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_canh_cua.jpg,ok
+0037,dish_banh_canh_cua,File:Món ăn Tết 2023 (bánh canh bột mì cá lóc Đông Hà) (1).jpg,https://commons.wikimedia.org/wiki/File:M%C3%B3n_%C4%83n_T%E1%BA%BFt_2023_(b%C3%A1nh_canh_b%E1%BB%99t_m%C3%AC_c%C3%A1_l%C3%B3c_%C4%90%C3%B4ng_H%C3%A0)_(1).jpg,ok
+0038,dish_banh_canh_cua,File:Món ăn Tết 2023 (bánh canh bột mì cá lóc Đông Hà) (2).jpg,https://commons.wikimedia.org/wiki/File:M%C3%B3n_%C4%83n_T%E1%BA%BFt_2023_(b%C3%A1nh_canh_b%E1%BB%99t_m%C3%AC_c%C3%A1_l%C3%B3c_%C4%90%C3%B4ng_H%C3%A0)_(2).jpg,ok
+0039,dish_banh_canh_cua,File:Bánh canh cua (Vietnamese thick noodle with crab soup).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_canh_cua_(Vietnamese_thick_noodle_with_crab_soup).jpg,ok
+0040,dish_banh_canh_cua,"File:Banh Canh with Pork Knuckle, Pork Blood Jelly, Prawn Cakes in Tomato and Crab Soup - Hoa Tran AUD9 (3999697937).jpg","https://commons.wikimedia.org/wiki/File:Banh_Canh_with_Pork_Knuckle,_Pork_Blood_Jelly,_Prawn_Cakes_in_Tomato_and_Crab_Soup_-_Hoa_Tran_AUD9_(3999697937).jpg",ok
+0041,dish_banh_canh_cua,File:Bánh Canh Cua.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_Canh_Cua.jpg,ok
+0042,dish_banh_canh_cua,File:Banhcanhcua.jpg,https://commons.wikimedia.org/wiki/File:Banhcanhcua.jpg,ok
+0043,dish_banh_chung,File:Bánh chưng chấm mật 2.JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_ch%C6%B0ng_ch%E1%BA%A5m_m%E1%BA%ADt_2.JPG,ok
+0044,dish_banh_chung,File:Bánh chưng chấm mật mía.JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_ch%C6%B0ng_ch%E1%BA%A5m_m%E1%BA%ADt_m%C3%ADa.JPG,ok
+0045,dish_banh_chung,File:Banh Chung in Vietnam.jpg,https://commons.wikimedia.org/wiki/File:Banh_Chung_in_Vietnam.jpg,ok
+0046,dish_banh_chung,File:Banh chung 1.JPG,https://commons.wikimedia.org/wiki/File:Banh_chung_1.JPG,ok
+0047,dish_banh_chung,File:Banh chung 2.JPG,https://commons.wikimedia.org/wiki/File:Banh_chung_2.JPG,ok
+0048,dish_banh_chung,File:Bánh chưng và giò lụa.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_ch%C6%B0ng_v%C3%A0_gi%C3%B2_l%E1%BB%A5a.jpg,ok
+0049,dish_banh_chung,File:Bánh chưng cúng tạ lăng họ Bùi năm 2017 tại Cát Sơn (1).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_ch%C6%B0ng_c%C3%BAng_t%E1%BA%A1_l%C4%83ng_h%E1%BB%8D_B%C3%B9i_n%C4%83m_2017_t%E1%BA%A1i_C%C3%A1t_S%C6%A1n_(1).jpg,ok
+0050,dish_banh_chung,File:Bánh chưng cúng tạ lăng họ Bùi năm 2017 tại Cát Sơn (2).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_ch%C6%B0ng_c%C3%BAng_t%E1%BA%A1_l%C4%83ng_h%E1%BB%8D_B%C3%B9i_n%C4%83m_2017_t%E1%BA%A1i_C%C3%A1t_S%C6%A1n_(2).jpg,near_duplicate_of_0049
+0051,dish_banh_chung,File:Bánh chưng cúng Tết năm 2010 (4).JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_ch%C6%B0ng_c%C3%BAng_T%E1%BA%BFt_n%C4%83m_2010_(4).JPG,rejected_visual
+0052,dish_banh_chung,File:Banh chung (goi khong khuon).jpg,https://commons.wikimedia.org/wiki/File:Banh_chung_(goi_khong_khuon).jpg,ok
+0053,dish_banh_chung,File:Banh chung vuong 2.JPG,https://commons.wikimedia.org/wiki/File:Banh_chung_vuong_2.JPG,ok
+0054,dish_banh_chung,File:Nồi bánh chưng.JPG,https://commons.wikimedia.org/wiki/File:N%E1%BB%93i_b%C3%A1nh_ch%C6%B0ng.JPG,ok
+0055,dish_banh_cuon,"File:Banh cuon nhan thit cha lua, Banh Cuon Thang Long.jpg","https://commons.wikimedia.org/wiki/File:Banh_cuon_nhan_thit_cha_lua,_Banh_Cuon_Thang_Long.jpg",ok
+0056,dish_banh_cuon,File:Banh-cuon-hanoi.jpg,https://commons.wikimedia.org/wiki/File:Banh-cuon-hanoi.jpg,ok
+0057,dish_banh_cuon,File:Banh Cuon.jpg,https://commons.wikimedia.org/wiki/File:Banh_Cuon.jpg,ok
+0058,dish_banh_cuon,File:Banh cuon nhan thit.jpg,https://commons.wikimedia.org/wiki/File:Banh_cuon_nhan_thit.jpg,ok
+0059,dish_banh_cuon,File:Banh Cuon Thit (tossed).jpg,https://commons.wikimedia.org/wiki/File:Banh_Cuon_Thit_(tossed).jpg,ok
+0060,dish_banh_cuon,File:Bánh cuốn Thanh Trì.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_cu%E1%BB%91n_Thanh_Tr%C3%AC.jpg,ok
+0061,dish_banh_cuon,File:Bánh cuốn nhân thịt.JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_cu%E1%BB%91n_nh%C3%A2n_th%E1%BB%8Bt.JPG,ok
+0062,dish_banh_cuon,File:Bánh cuốn.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_cu%E1%BB%91n.jpg,ok
+0063,dish_banh_cuon,File:Bánh cuốn chả lụa.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_cu%E1%BB%91n_ch%E1%BA%A3_l%E1%BB%A5a.jpg,ok
+0064,dish_banh_cuon,File:Bat banh cuon cha.jpg,https://commons.wikimedia.org/wiki/File:Bat_banh_cuon_cha.jpg,ok
+0065,dish_banh_cuon,File:Bánh cuốn Saigon.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_cu%E1%BB%91n_Saigon.jpg,over_cap
+0066,dish_banh_cuon,File:Bánh cuốn ở Paris.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_cu%E1%BB%91n_%E1%BB%9F_Paris.jpg,over_cap
+0067,dish_banh_da_cua,File:Bánh đa cua Hải Phòng (27.2 (2).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_%C4%91a_cua_H%E1%BA%A3i_Ph%C3%B2ng_(27.2_(2).jpg,ok
+0068,dish_banh_da_cua,File:Bánh đa cua Hải Phòng (27.2 (3).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_%C4%91a_cua_H%E1%BA%A3i_Ph%C3%B2ng_(27.2_(3).jpg,ok
+0069,dish_banh_da_cua,File:BANH DA CUA 1.jpg,https://commons.wikimedia.org/wiki/File:BANH_DA_CUA_1.jpg,ok
+0070,dish_banh_da_cua,File:BANH DA CUA 2.jpg,https://commons.wikimedia.org/wiki/File:BANH_DA_CUA_2.jpg,rejected_visual
+0071,dish_banh_da_lon,File:Green Leaf Cake bánh da lợn.jpg,https://commons.wikimedia.org/wiki/File:Green_Leaf_Cake_b%C3%A1nh_da_l%E1%BB%A3n.jpg,ok
+0072,dish_banh_da_lon,File:Bánh da lợn sầu riêng.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_da_l%E1%BB%A3n_s%E1%BA%A7u_ri%C3%AAng.jpg,ok
+0073,dish_banh_da_lon,File:Bánh da lơn đậu xanh và lá dứa..jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_da_l%C6%A1n_%C4%91%E1%BA%ADu_xanh_v%C3%A0_l%C3%A1_d%E1%BB%A9a..jpg,ok
+0074,dish_banh_hoi,File:Bánh Hỏi Như Ý.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_H%E1%BB%8Fi_Nh%C6%B0_%C3%9D.jpg,ok
+0075,dish_banh_hoi,"File:Banh hoi with crispy pork belly - Cambridge, MA.jpg","https://commons.wikimedia.org/wiki/File:Banh_hoi_with_crispy_pork_belly_-_Cambridge,_MA.jpg",ok
+0076,dish_banh_hoi,File:Bánh hỏi không hành.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_h%E1%BB%8Fi_kh%C3%B4ng_h%C3%A0nh.jpg,ok
+0077,dish_banh_hoi,File:Bánh hỏi trình bày trên đĩa.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_h%E1%BB%8Fi_tr%C3%ACnh_b%C3%A0y_tr%C3%AAn_%C4%91%C4%A9a.jpg,ok
+0078,dish_banh_hoi,File:Banh hoi.jpg,https://commons.wikimedia.org/wiki/File:Banh_hoi.jpg,ok
+0079,dish_banh_hoi,File:Banh-hoi-1500px.jpg,https://commons.wikimedia.org/wiki/File:Banh-hoi-1500px.jpg,near_duplicate_of_0077
+0080,dish_banh_hoi,File:Bánh hỏi thịt quay.JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_h%E1%BB%8Fi_th%E1%BB%8Bt_quay.JPG,ok
+0081,dish_banh_hoi,File:Bánh hỏi nem nướng ăn với bánh tráng tháng 6 năm 2018 (1).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_h%E1%BB%8Fi_nem_n%C6%B0%E1%BB%9Bng_%C4%83n_v%E1%BB%9Bi_b%C3%A1nh_tr%C3%A1ng_th%C3%A1ng_6_n%C4%83m_2018_(1).jpg,ok
+0082,dish_banh_hoi,File:Bánh hỏi nem nướng ăn với bánh tráng tháng 6 năm 2018 (2).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_h%E1%BB%8Fi_nem_n%C6%B0%E1%BB%9Bng_%C4%83n_v%E1%BB%9Bi_b%C3%A1nh_tr%C3%A1ng_th%C3%A1ng_6_n%C4%83m_2018_(2).jpg,ok
+0083,dish_banh_hoi,File:Banh Hoi Bo La Lot.jpg,https://commons.wikimedia.org/wiki/File:Banh_Hoi_Bo_La_Lot.jpg,ok
+0084,dish_banh_hoi,File:春卷滨海 Spring Roll with Bánh hỏi Rice Vermicelli Cake - Pho Hoang Dakao AUD10 (3667392193).jpg,https://commons.wikimedia.org/wiki/File:%E6%98%A5%E5%8D%B7%E6%BB%A8%E6%B5%B7_Spring_Roll_with_B%C3%A1nh_h%E1%BB%8Fi_Rice_Vermicelli_Cake_-_Pho_Hoang_Dakao_AUD10_(3667392193).jpg,ok
+0085,dish_banh_it,"File:0040323 Thap Banh It complex, Nhon Hoa, Binh Dinh Vietnam 001.jpg","https://commons.wikimedia.org/wiki/File:0040323_Thap_Banh_It_complex,_Nhon_Hoa,_Binh_Dinh_Vietnam_001.jpg",rejected_visual
+0086,dish_banh_it,"File:0040323 Thap Banh It complex, Nhon Hoa, Binh Dinh Vietnam 012.jpg","https://commons.wikimedia.org/wiki/File:0040323_Thap_Banh_It_complex,_Nhon_Hoa,_Binh_Dinh_Vietnam_012.jpg",rejected_visual
+0087,dish_banh_it,"File:Thap Banh It, Nhon Hoa 01.jpg","https://commons.wikimedia.org/wiki/File:Thap_Banh_It,_Nhon_Hoa_01.jpg",rejected_visual
+0088,dish_banh_it,"File:Thap Banh It, Nhon Hoa 02.jpg","https://commons.wikimedia.org/wiki/File:Thap_Banh_It,_Nhon_Hoa_02.jpg",rejected_visual
+0089,dish_banh_it,File:Bánh ít trần.JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_%C3%ADt_tr%E1%BA%A7n.JPG,rejected_visual
+0090,dish_banh_it,"File:Cụm tháp Bánh Ít, Tuy Phước, Bình Định.JPG","https://commons.wikimedia.org/wiki/File:C%E1%BB%A5m_th%C3%A1p_B%C3%A1nh_%C3%8Dt,_Tuy_Ph%C6%B0%E1%BB%9Bc,_B%C3%ACnh_%C4%90%E1%BB%8Bnh.JPG",rejected_visual
+0091,dish_banh_it,File:Đĩa bánh ít trần.jpg,https://commons.wikimedia.org/wiki/File:%C4%90%C4%A9a_b%C3%A1nh_%C3%ADt_tr%E1%BA%A7n.jpg,ok
+0092,dish_banh_it,File:Historical monument engraved of Banh It Pass.jpg,https://commons.wikimedia.org/wiki/File:Historical_monument_engraved_of_Banh_It_Pass.jpg,rejected_visual
+0093,dish_banh_it,File:Brickwork in Cham tower Bánh Ít.jpg,https://commons.wikimedia.org/wiki/File:Brickwork_in_Cham_tower_B%C3%A1nh_%C3%8Dt.jpg,rejected_visual
+0094,dish_banh_it,File:Banh It - VND5000 for 4.jpg,https://commons.wikimedia.org/wiki/File:Banh_It_-_VND5000_for_4.jpg,ok
+0095,dish_banh_it,"File:Vietnam, shiva, da thap banh it (torre d'argento), stile di transiz. tra my son A1 e thap mam, Xi-Xii sec, 01.JPG","https://commons.wikimedia.org/wiki/File:Vietnam,_shiva,_da_thap_banh_it_(torre_d%27argento),_stile_di_transiz._tra_my_son_A1_e_thap_mam,_Xi-Xii_sec,_01.JPG",rejected_visual
+0096,dish_banh_it,File:Banhit.jpg,https://commons.wikimedia.org/wiki/File:Banhit.jpg,ok
+0097,dish_banh_khot,File:Bánh khọt by Nguyenhai314.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_kh%E1%BB%8Dt_by_Nguyenhai314.jpg,ok
+0098,dish_banh_khot,File:Bánh khọt by Baoothersks.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_kh%E1%BB%8Dt_by_Baoothersks.jpg,ok
+0099,dish_banh_khot,File:Bánh khọt trên khuôn.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_kh%E1%BB%8Dt_tr%C3%AAn_khu%C3%B4n.jpg,ok
+0100,dish_banh_khot,File:Phan Thiết ng24th7n2023 (bánh khọt nhân mực) (1).jpg,https://commons.wikimedia.org/wiki/File:Phan_Thi%E1%BA%BFt_ng24th7n2023_(b%C3%A1nh_kh%E1%BB%8Dt_nh%C3%A2n_m%E1%BB%B1c)_(1).jpg,ok
+0101,dish_banh_khot,File:Phan Thiết ng24th7n2023 (bánh khọt nhân mực) (10).jpg,https://commons.wikimedia.org/wiki/File:Phan_Thi%E1%BA%BFt_ng24th7n2023_(b%C3%A1nh_kh%E1%BB%8Dt_nh%C3%A2n_m%E1%BB%B1c)_(10).jpg,ok
+0102,dish_banh_khot,File:Phan Thiết ng24th7n2023 (bánh khọt) (1).jpg,https://commons.wikimedia.org/wiki/File:Phan_Thi%E1%BA%BFt_ng24th7n2023_(b%C3%A1nh_kh%E1%BB%8Dt)_(1).jpg,ok
+0103,dish_banh_khot,File:Phan Thiết ng24th7n2023 (bánh khọt) (2).jpg,https://commons.wikimedia.org/wiki/File:Phan_Thi%E1%BA%BFt_ng24th7n2023_(b%C3%A1nh_kh%E1%BB%8Dt)_(2).jpg,ok
+0104,dish_banh_khot,File:Brodard - Banh khot.jpg,https://commons.wikimedia.org/wiki/File:Brodard_-_Banh_khot.jpg,ok
+0105,dish_banh_khot,File:Bánh khọt.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_kh%E1%BB%8Dt.jpg,ok
+0106,dish_banh_khot,File:Bánh khọt (2020-3-28).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_kh%E1%BB%8Dt_(2020-3-28).jpg,ok
+0107,dish_banh_khot,File:Banh khot aka Banh can - Thanh Ha AUD8 (4171696432).jpg,https://commons.wikimedia.org/wiki/File:Banh_khot_aka_Banh_can_-_Thanh_Ha_AUD8_(4171696432).jpg,over_cap
+0108,dish_banh_khot,File:Shrimp Cakes.jpg,https://commons.wikimedia.org/wiki/File:Shrimp_Cakes.jpg,over_cap
+0109,dish_banh_mi,File:Banh Mi Burger & Quinoa Tabbouleh (15837858388).jpg,https://commons.wikimedia.org/wiki/File:Banh_Mi_Burger_%26_Quinoa_Tabbouleh_(15837858388).jpg,rejected_visual
+0110,dish_banh_mi,File:Banh mi sandwich @ Takeout @ Chez Mamie Anh @ Annecy (44552356375).jpg,https://commons.wikimedia.org/wiki/File:Banh_mi_sandwich_@_Takeout_@_Chez_Mamie_Anh_@_Annecy_(44552356375).jpg,ok
+0111,dish_banh_mi,File:Banh mi sandwich @ Takeout @ Chez Mamie Anh @ Annecy (44552357855).jpg,https://commons.wikimedia.org/wiki/File:Banh_mi_sandwich_@_Takeout_@_Chez_Mamie_Anh_@_Annecy_(44552357855).jpg,ok
+0112,dish_banh_mi,File:Breakfast Banh Mi (33545578383).jpg,https://commons.wikimedia.org/wiki/File:Breakfast_Banh_Mi_(33545578383).jpg,rejected_visual
+0113,dish_banh_mi,File:Bánh mì chả cá Ánh Hồng ngày 24 tháng 12 năm 2018 (3).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%C3%AC_ch%E1%BA%A3_c%C3%A1_%C3%81nh_H%E1%BB%93ng_ng%C3%A0y_24_th%C3%A1ng_12_n%C4%83m_2018_(3).jpg,ok
+0114,dish_banh_mi,File:Bánh mì by Baoothersks.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%C3%AC_by_Baoothersks.jpg,ok
+0115,dish_banh_mi,File:Bánh mì nướng muối ớt.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%C3%AC_n%C6%B0%E1%BB%9Bng_mu%E1%BB%91i_%E1%BB%9Bt.jpg,ok
+0116,dish_banh_mi,"File:Brisket Banh Mi, Pickled Red Onion & Carrots, Cilantro, Jalapeño Vinegar, Aioli, Baguette (28558987942).jpg","https://commons.wikimedia.org/wiki/File:Brisket_Banh_Mi,_Pickled_Red_Onion_%26_Carrots,_Cilantro,_Jalape%C3%B1o_Vinegar,_Aioli,_Baguette_(28558987942).jpg",ok
+0117,dish_banh_mi,File:Bánh mì cá sấu.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%C3%AC_c%C3%A1_s%E1%BA%A5u.jpg,ok
+0118,dish_banh_mi,File:Bánh mì bò kho ở cà phê Nguyệt Ca.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_m%C3%AC_b%C3%B2_kho_%E1%BB%9F_c%C3%A0_ph%C3%AA_Nguy%E1%BB%87t_Ca.jpg,rejected_visual
+0119,dish_banh_mi,File:Bánh Mì Phượng (2024) - img 04.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_M%C3%AC_Ph%C6%B0%E1%BB%A3ng_(2024)_-_img_04.jpg,ok
+0120,dish_banh_mi,"File:Bánh Mì with Spicy Miso Aubergine, Kimchi - Earl's Sandwiches 2023-09-25.jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_M%C3%AC_with_Spicy_Miso_Aubergine,_Kimchi_-_Earl%27s_Sandwiches_2023-09-25.jpg",ok
+0121,dish_banh_pia,File:Bánh pía 01.JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_p%C3%ADa_01.JPG,ok
+0122,dish_banh_pia,File:Bánh pía 02.JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_p%C3%ADa_02.JPG,ok
+0123,dish_banh_pia,File:Bánh pía new.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_p%C3%ADa_new.jpg,ok
+0124,dish_banh_pia,File:Bánh pía là một trong những đặc sản của Sóc Trăng.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_p%C3%ADa_l%C3%A0_m%E1%BB%99t_trong_nh%E1%BB%AFng_%C4%91%E1%BA%B7c_s%E1%BA%A3n_c%E1%BB%A7a_S%C3%B3c_Tr%C4%83ng.jpg,rejected_visual
+0125,dish_banh_pia,File:Hop pia 4 cai.jpg,https://commons.wikimedia.org/wiki/File:Hop_pia_4_cai.jpg,ok
+0126,dish_banh_tet,File:Bánh Tét - València.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_T%C3%A9t_-_Val%C3%A8ncia.jpg,ok
+0127,dish_banh_tet,File:Banana cake (bánh tet chuối).jpg,https://commons.wikimedia.org/wiki/File:Banana_cake_(b%C3%A1nh_tet_chu%E1%BB%91i).jpg,ok
+0128,dish_banh_tet,File:Banh Tet.jpg,https://commons.wikimedia.org/wiki/File:Banh_Tet.jpg,ok
+0129,dish_banh_tet,File:Dia banh tet.jpg,https://commons.wikimedia.org/wiki/File:Dia_banh_tet.jpg,ok
+0130,dish_banh_tet,File:Bánh tét sính lễ.JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_t%C3%A9t_s%C3%ADnh_l%E1%BB%85.JPG,ok
+0131,dish_banh_tet,File:Banh tet chien.jpg,https://commons.wikimedia.org/wiki/File:Banh_tet_chien.jpg,ok
+0132,dish_banh_tet,File:Banh tet.jpg,https://commons.wikimedia.org/wiki/File:Banh_tet.jpg,ok
+0133,dish_banh_tet,File:Tet holiday in Vietnam.jpg,https://commons.wikimedia.org/wiki/File:Tet_holiday_in_Vietnam.jpg,rejected_visual
+0134,dish_banh_tet,File:Sweets at Eden Center (4380292315).jpg,https://commons.wikimedia.org/wiki/File:Sweets_at_Eden_Center_(4380292315).jpg,ok
+0135,dish_banh_tet,File:Sweets at Eden Center (4381045694).jpg,https://commons.wikimedia.org/wiki/File:Sweets_at_Eden_Center_(4381045694).jpg,ok
+0136,dish_banh_tet,File:Tet Banh.jpg,https://commons.wikimedia.org/wiki/File:Tet_Banh.jpg,ok
+0137,dish_banh_tet,File:Banhtet.jpg,https://commons.wikimedia.org/wiki/File:Banhtet.jpg,over_cap
+0138,dish_banh_trang_nuong,File:Banh trang nuong dalat.jpg,https://commons.wikimedia.org/wiki/File:Banh_trang_nuong_dalat.jpg,rejected_visual
+0139,dish_banh_trang_nuong,File:Pizzabanhtrangnuong1.jpg,https://commons.wikimedia.org/wiki/File:Pizzabanhtrangnuong1.jpg,ok
+0140,dish_banh_trang_nuong,File:Pizzabanhtrangnuong2.jpg,https://commons.wikimedia.org/wiki/File:Pizzabanhtrangnuong2.jpg,ok
+0141,dish_banh_trang_nuong,File:Pizzabanhtrangnuong.JPG,https://commons.wikimedia.org/wiki/File:Pizzabanhtrangnuong.JPG,ok
+0142,dish_banh_trang_nuong,File:Pizzabanhtrangnuong3.JPG,https://commons.wikimedia.org/wiki/File:Pizzabanhtrangnuong3.JPG,ok
+0143,dish_banh_trang_nuong,File:Girl (3.jpg,https://commons.wikimedia.org/wiki/File:Girl_(3.jpg,rejected_visual
+0144,dish_banh_xeo,"File:Crispy Vietnamese Pancake (Banh Xeo) - Xin Chao, Eastbourne 2026-08-14 (1).jpg","https://commons.wikimedia.org/wiki/File:Crispy_Vietnamese_Pancake_(Banh_Xeo)_-_Xin_Chao,_Eastbourne_2026-08-14_(1).jpg",ok
+0145,dish_banh_xeo,"File:Crispy Vietnamese Pancake (Banh Xeo) - Xin Chao, Eastbourne 2026-08-14 (2).jpg","https://commons.wikimedia.org/wiki/File:Crispy_Vietnamese_Pancake_(Banh_Xeo)_-_Xin_Chao,_Eastbourne_2026-08-14_(2).jpg",ok
+0146,dish_banh_xeo,File:Bánh xèo (15826153307).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_(15826153307).jpg,ok
+0147,dish_banh_xeo,File:Bánh xèo at Mirrabooka Village 2023.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_at_Mirrabooka_Village_2023.jpg,ok
+0148,dish_banh_xeo,File:Bánh xèo with pork sausage and shrimp served with various garnishes.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_with_pork_sausage_and_shrimp_served_with_various_garnishes.jpg,ok
+0149,dish_banh_xeo,File:Side dishes for Banh Xeo at Tay Ho in 2014.jpg,https://commons.wikimedia.org/wiki/File:Side_dishes_for_Banh_Xeo_at_Tay_Ho_in_2014.jpg,rejected_visual
+0150,dish_banh_xeo,"File:Bánh xèo nhân Mực, Nha Trang.jpg","https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_nh%C3%A2n_M%E1%BB%B1c,_Nha_Trang.jpg",rejected_visual
+0151,dish_banh_xeo,File:Bánh xèo vỉa hè ở đường Kênh Nước Đen (1).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_v%E1%BB%89a_h%C3%A8_%E1%BB%9F_%C4%91%C6%B0%E1%BB%9Dng_K%C3%AAnh_N%C6%B0%E1%BB%9Bc_%C4%90en_(1).jpg,ok
+0152,dish_banh_xeo,File:Bánh xèo vỉa hè ở đường Kênh Nước Đen (2).jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_v%E1%BB%89a_h%C3%A8_%E1%BB%9F_%C4%91%C6%B0%E1%BB%9Dng_K%C3%AAnh_N%C6%B0%E1%BB%9Bc_%C4%90en_(2).jpg,ok
+0153,dish_banh_xeo,File:Một đĩa bánh xèo.jpg,https://commons.wikimedia.org/wiki/File:M%E1%BB%99t_%C4%91%C4%A9a_b%C3%A1nh_x%C3%A8o.jpg,ok
+0154,dish_banh_xeo,File:Bánh xèo 1.jpg,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_x%C3%A8o_1.jpg,ok
+0155,dish_banh_xeo,"File:Banh Xeo, Eden Center.jpg","https://commons.wikimedia.org/wiki/File:Banh_Xeo,_Eden_Center.jpg",ok
+0156,dish_bo_la_lot,File:Bò nướng lá lốt (39354093491).jpg,https://commons.wikimedia.org/wiki/File:B%C3%B2_n%C6%B0%E1%BB%9Bng_l%C3%A1_l%E1%BB%91t_(39354093491).jpg,ok
+0157,dish_bo_la_lot,File:Một phần bò nướng lá lốt.jpg,https://commons.wikimedia.org/wiki/File:M%E1%BB%99t_ph%E1%BA%A7n_b%C3%B2_n%C6%B0%E1%BB%9Bng_l%C3%A1_l%E1%BB%91t.jpg,ok
+0158,dish_bo_la_lot,File:Bò nướng lá lốt.jpg,https://commons.wikimedia.org/wiki/File:B%C3%B2_n%C6%B0%E1%BB%9Bng_l%C3%A1_l%E1%BB%91t.jpg,ok
+0159,dish_bo_la_lot,File:Bò nướng lá lốt tại Manchester.jpg,https://commons.wikimedia.org/wiki/File:B%C3%B2_n%C6%B0%E1%BB%9Bng_l%C3%A1_l%E1%BB%91t_t%E1%BA%A1i_Manchester.jpg,ok
+0160,dish_bun_bo_hue,File:Bún bò Huế (39838132032).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_b%C3%B2_Hu%E1%BA%BF_(39838132032).jpg,ok
+0161,dish_bun_bo_hue,File:Bun Bo Hue (23409070614).jpg,https://commons.wikimedia.org/wiki/File:Bun_Bo_Hue_(23409070614).jpg,ok
+0162,dish_bun_bo_hue,File:Bún bò Huế ở Đà Nẵng.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_b%C3%B2_Hu%E1%BA%BF_%E1%BB%9F_%C4%90%C3%A0_N%E1%BA%B5ng.jpg,ok
+0163,dish_bun_bo_hue,File:Bún bò Huế minh28397.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_b%C3%B2_Hu%E1%BA%BF_minh28397.jpg,ok
+0164,dish_bun_bo_hue,File:Đông Hà th5n2023 (bún bò Huế mụ Ty) (2).jpg,https://commons.wikimedia.org/wiki/File:%C4%90%C3%B4ng_H%C3%A0_th5n2023_(b%C3%BAn_b%C3%B2_Hu%E1%BA%BF_m%E1%BB%A5_Ty)_(2).jpg,ok
+0165,dish_bun_bo_hue,File:Đông Hà th5n2023 (bún bò Huế mụ Ty) (3).jpg,https://commons.wikimedia.org/wiki/File:%C4%90%C3%B4ng_H%C3%A0_th5n2023_(b%C3%BAn_b%C3%B2_Hu%E1%BA%BF_m%E1%BB%A5_Ty)_(3).jpg,ok
+0166,dish_bun_bo_hue,File:Bún bò Huế-Feb 2025.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_b%C3%B2_Hu%E1%BA%BF-Feb_2025.jpg,ok
+0167,dish_bun_bo_hue,File:Bun-Bo-Hue-from-Huong-Giang-2011.jpg,https://commons.wikimedia.org/wiki/File:Bun-Bo-Hue-from-Huong-Giang-2011.jpg,ok
+0168,dish_bun_bo_hue,File:Pot of Bun Bo Hue.jpg,https://commons.wikimedia.org/wiki/File:Pot_of_Bun_Bo_Hue.jpg,ok
+0169,dish_bun_bo_hue,File:Bún bò huê - Dakao Hoang.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_b%C3%B2_hu%C3%AA_-_Dakao_Hoang.jpg,ok
+0170,dish_bun_bo_hue,File:Bún bò huê close-up - Dakao Hoang.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_b%C3%B2_hu%C3%AA_close-up_-_Dakao_Hoang.jpg,over_cap
+0171,dish_bun_bo_hue,File:Saigon Bun bo hue.jpg,https://commons.wikimedia.org/wiki/File:Saigon_Bun_bo_hue.jpg,over_cap
+0172,dish_bun_cha,File:Bun-cha-hanoi.jpg,https://commons.wikimedia.org/wiki/File:Bun-cha-hanoi.jpg,ok
+0173,dish_bun_cha,File:Bun cha Hanoi.jpg,https://commons.wikimedia.org/wiki/File:Bun_cha_Hanoi.jpg,ok
+0174,dish_bun_cha,File:Bún chả with chili peppers and fresh garlic.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_with_chili_peppers_and_fresh_garlic.jpg,ok
+0175,dish_bun_cha,File:Bún chả Hàng Mành.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_H%C3%A0ng_M%C3%A0nh.jpg,ok
+0176,dish_bun_cha,File:Bún chả Hà Nội (tháng 7 năm 2018) (1).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_H%C3%A0_N%E1%BB%99i_(th%C3%A1ng_7_n%C4%83m_2018)_(1).jpg,ok
+0177,dish_bun_cha,File:Bún chả Thụy Khuê.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_Th%E1%BB%A5y_Khu%C3%AA.jpg,ok
+0178,dish_bun_cha,"File:Bún chả Hà Nội (thịt nướng) tại Nguyễn Sơn, Tân Phú (1).jpg","https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_H%C3%A0_N%E1%BB%99i_(th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng)_t%E1%BA%A1i_Nguy%E1%BB%85n_S%C6%A1n,_T%C3%A2n_Ph%C3%BA_(1).jpg",ok
+0179,dish_bun_cha,"File:Bún chả Hà Nội (thịt nướng) tại Nguyễn Sơn, Tân Phú (2).jpg","https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_H%C3%A0_N%E1%BB%99i_(th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng)_t%E1%BA%A1i_Nguy%E1%BB%85n_S%C6%A1n,_T%C3%A2n_Ph%C3%BA_(2).jpg",ok
+0180,dish_bun_cha,File:Bún chả Hà Nội tại Aeonmall Tân Phú tháng 4 năm 2018 (1).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_H%C3%A0_N%E1%BB%99i_t%E1%BA%A1i_Aeonmall_T%C3%A2n_Ph%C3%BA_th%C3%A1ng_4_n%C4%83m_2018_(1).jpg,ok
+0181,dish_bun_cha,File:Bún chả Hà Nội tại Aeonmall Tân Phú tháng 4 năm 2018 (2).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_H%C3%A0_N%E1%BB%99i_t%E1%BA%A1i_Aeonmall_T%C3%A2n_Ph%C3%BA_th%C3%A1ng_4_n%C4%83m_2018_(2).jpg,ok
+0182,dish_bun_cha,File:Bún chả Hà Nội (tháng 7 năm 2018) (2).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_H%C3%A0_N%E1%BB%99i_(th%C3%A1ng_7_n%C4%83m_2018)_(2).jpg,over_cap
+0183,dish_bun_cha,File:Bún chả Vietnamese food.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_Vietnamese_food.jpg,rejected_visual
+0184,dish_bun_cha_ca,File:Bun cha ca.jpg,https://commons.wikimedia.org/wiki/File:Bun_cha_ca.jpg,ok
+0185,dish_bun_cha_ca,"File:Bún chả cá, tháng 8 năm 2018.JPG","https://commons.wikimedia.org/wiki/File:B%C3%BAn_ch%E1%BA%A3_c%C3%A1,_th%C3%A1ng_8_n%C4%83m_2018.JPG",ok
+0186,dish_bun_cha_ca,File:Bun cha ca nha trang.jpg,https://commons.wikimedia.org/wiki/File:Bun_cha_ca_nha_trang.jpg,ok
+0187,dish_bun_cha_ca,File:Bun cha ca rau can.jpg,https://commons.wikimedia.org/wiki/File:Bun_cha_ca_rau_can.jpg,ok
+0188,dish_bun_dau,"File:Bún đậu mắm tôm, bún nem rán.JPG","https://commons.wikimedia.org/wiki/File:B%C3%BAn_%C4%91%E1%BA%ADu_m%E1%BA%AFm_t%C3%B4m,_b%C3%BAn_nem_r%C3%A1n.JPG",ok
+0189,dish_bun_dau,File:Bún đậu mắm tôm 3 chị em Nguyễn Sơn năm 2016 (2).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_%C4%91%E1%BA%ADu_m%E1%BA%AFm_t%C3%B4m_3_ch%E1%BB%8B_em_Nguy%E1%BB%85n_S%C6%A1n_n%C4%83m_2016_(2).jpg,rejected_visual
+0190,dish_bun_dau,File:Bún đậu mắm tôm 3 chị em Nguyễn Sơn năm 2016 (3).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_%C4%91%E1%BA%ADu_m%E1%BA%AFm_t%C3%B4m_3_ch%E1%BB%8B_em_Nguy%E1%BB%85n_S%C6%A1n_n%C4%83m_2016_(3).jpg,rejected_visual
+0191,dish_bun_dau,File:Bún đậu mắm tôm (1).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_%C4%91%E1%BA%ADu_m%E1%BA%AFm_t%C3%B4m_(1).jpg,ok
+0192,dish_bun_dau,File:Bún đậu mắm tôm.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_%C4%91%E1%BA%ADu_m%E1%BA%AFm_t%C3%B4m.jpg,ok
+0193,dish_bun_dau,File:Dau hu ABC.png,https://commons.wikimedia.org/wiki/File:Dau_hu_ABC.png,near_duplicate_of_0192
+0194,dish_bun_mam,File:Bún mắm Bạc Liêu tại đường Nguyễn Sơn tháng 7 năm 2016 (1).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_m%E1%BA%AFm_B%E1%BA%A1c_Li%C3%AAu_t%E1%BA%A1i_%C4%91%C6%B0%E1%BB%9Dng_Nguy%E1%BB%85n_S%C6%A1n_th%C3%A1ng_7_n%C4%83m_2016_(1).jpg,ok
+0195,dish_bun_mam,File:Bún mắm Bạc Liêu tại đường Nguyễn Sơn tháng 7 năm 2016 (2).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_m%E1%BA%AFm_B%E1%BA%A1c_Li%C3%AAu_t%E1%BA%A1i_%C4%91%C6%B0%E1%BB%9Dng_Nguy%E1%BB%85n_S%C6%A1n_th%C3%A1ng_7_n%C4%83m_2016_(2).jpg,ok
+0196,dish_bun_mam,File:Bún mắm.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_m%E1%BA%AFm.jpg,ok
+0197,dish_bun_mam,File:Bún mắm thịt heo luộc ở Đà Nẵng.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_m%E1%BA%AFm_th%E1%BB%8Bt_heo_lu%E1%BB%99c_%E1%BB%9F_%C4%90%C3%A0_N%E1%BA%B5ng.jpg,ok
+0198,dish_bun_mam,File:Bún mắm Bạc Liêu năm 2016 với eHy (1).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_m%E1%BA%AFm_B%E1%BA%A1c_Li%C3%AAu_n%C4%83m_2016_v%E1%BB%9Bi_eHy_(1).jpg,ok
+0199,dish_bun_mam,File:Bún mắm Bạc Liêu năm 2016 với eHy (2).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_m%E1%BA%AFm_B%E1%BA%A1c_Li%C3%AAu_n%C4%83m_2016_v%E1%BB%9Bi_eHy_(2).jpg,ok
+0200,dish_bun_mam,File:Bún Mắm Sóc Trăng.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_M%E1%BA%AFm_S%C3%B3c_Tr%C4%83ng.jpg,ok
+0201,dish_bun_oc,File:Bún ốc 2.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_%E1%BB%91c_2.jpg,ok
+0202,dish_bun_oc,File:Bun oc Hoe Nhai.JPG,https://commons.wikimedia.org/wiki/File:Bun_oc_Hoe_Nhai.JPG,ok
+0203,dish_bun_oc,File:Nước dùng bún ốc.jpg,https://commons.wikimedia.org/wiki/File:N%C6%B0%E1%BB%9Bc_d%C3%B9ng_b%C3%BAn_%E1%BB%91c.jpg,ok
+0204,dish_bun_oc,File:Nước dùng bún ốc (cropped).jpg,https://commons.wikimedia.org/wiki/File:N%C6%B0%E1%BB%9Bc_d%C3%B9ng_b%C3%BAn_%E1%BB%91c_(cropped).jpg,ok
+0205,dish_bun_oc,File:Bún ốc.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_%E1%BB%91c.jpg,ok
+0206,dish_bun_rieu,File:Bún riêu cua khô.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ri%C3%AAu_cua_kh%C3%B4.jpg,ok
+0207,dish_bun_rieu,File:Bún riêu cua nước.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ri%C3%AAu_cua_n%C6%B0%E1%BB%9Bc.jpg,ok
+0208,dish_bun_rieu,File:Ingredients of bún riêu cua.jpg,https://commons.wikimedia.org/wiki/File:Ingredients_of_b%C3%BAn_ri%C3%AAu_cua.jpg,rejected_visual
+0209,dish_bun_rieu,"File:Bún riêu cua, crab roe pate and fried shallots.jpg","https://commons.wikimedia.org/wiki/File:B%C3%BAn_ri%C3%AAu_cua,_crab_roe_pate_and_fried_shallots.jpg",ok
+0210,dish_bun_rieu,File:Bún riêu Taipei.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ri%C3%AAu_Taipei.jpg,ok
+0211,dish_bun_rieu,File:Bun rieu with herbs.jpg,https://commons.wikimedia.org/wiki/File:Bun_rieu_with_herbs.jpg,ok
+0212,dish_bun_rieu,File:Bún riêu đặc biệt.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ri%C3%AAu_%C4%91%E1%BA%B7c_bi%E1%BB%87t.jpg,ok
+0213,dish_bun_rieu,File:BUN RIEU TOM 1.jpg,https://commons.wikimedia.org/wiki/File:BUN_RIEU_TOM_1.jpg,ok
+0214,dish_bun_rieu,File:Bún mắm bún riêu xóm đình.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_m%E1%BA%AFm_b%C3%BAn_ri%C3%AAu_x%C3%B3m_%C4%91%C3%ACnh.jpg,rejected_visual
+0215,dish_bun_rieu,File:Bún riêu Bà Ti ngày 28 tháng 12 năm 2018 (4).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ri%C3%AAu_B%C3%A0_Ti_ng%C3%A0y_28_th%C3%A1ng_12_n%C4%83m_2018_(4).jpg,rejected_visual
+0216,dish_bun_rieu,File:Bun Rieu.jpg,https://commons.wikimedia.org/wiki/File:Bun_Rieu.jpg,ok
+0217,dish_bun_rieu,File:Bún riêu Bà Ti ngày 28 tháng 12 năm 2018 (1).jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_ri%C3%AAu_B%C3%A0_Ti_ng%C3%A0y_28_th%C3%A1ng_12_n%C4%83m_2018_(1).jpg,ok
+0218,dish_bun_thit_nuong,File:Bún Thịt Nướng Chả Giò.JPG,https://commons.wikimedia.org/wiki/File:B%C3%BAn_Th%E1%BB%8Bt_N%C6%B0%E1%BB%9Bng_Ch%E1%BA%A3_Gi%C3%B2.JPG,ok
+0219,dish_bun_thit_nuong,File:Bún thịt nướng bò in Xizhimen (20141226135500).JPG,https://commons.wikimedia.org/wiki/File:B%C3%BAn_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng_b%C3%B2_in_Xizhimen_(20141226135500).JPG,ok
+0220,dish_bun_thit_nuong,File:Bun thit nuong.jpg,https://commons.wikimedia.org/wiki/File:Bun_thit_nuong.jpg,ok
+0221,dish_bun_thit_nuong,File:Saigon Bun thit nuong.jpg,https://commons.wikimedia.org/wiki/File:Saigon_Bun_thit_nuong.jpg,ok
+0222,dish_bun_thit_nuong,File:Bun Bo Hue and Bun Thit Nuong.jpg,https://commons.wikimedia.org/wiki/File:Bun_Bo_Hue_and_Bun_Thit_Nuong.jpg,rejected_visual
+0223,dish_bun_thit_nuong,"File:Vietnamese bowl of grilled pork, bun thit nuong.jpg","https://commons.wikimedia.org/wiki/File:Vietnamese_bowl_of_grilled_pork,_bun_thit_nuong.jpg",ok
+0224,dish_bun_thit_nuong,"File:Bún thịt nướng cảng Cát Lái, ng10th5n2022 (thịt nướng than khói) (1).jpg","https://commons.wikimedia.org/wiki/File:B%C3%BAn_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng_c%E1%BA%A3ng_C%C3%A1t_L%C3%A1i,_ng10th5n2022_(th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng_than_kh%C3%B3i)_(1).jpg",ok
+0225,dish_bun_thit_nuong,"File:Bún thịt nướng cảng Cát Lái, ng10th5n2022 (thịt nướng than khói) (2).jpg","https://commons.wikimedia.org/wiki/File:B%C3%BAn_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng_c%E1%BA%A3ng_C%C3%A1t_L%C3%A1i,_ng10th5n2022_(th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng_than_kh%C3%B3i)_(2).jpg",ok
+0226,dish_bun_thit_nuong,File:Bún thịt nướng of Aosun'sIMG 20220811 150325 HDR 02.jpg,https://commons.wikimedia.org/wiki/File:B%C3%BAn_th%E1%BB%8Bt_n%C6%B0%E1%BB%9Bng_of_Aosun%27sIMG_20220811_150325_HDR_02.jpg,ok
+0227,dish_bun_thit_nuong,File:Bun. (Combo) - The Big Bowl 2024-07-08.jpg,https://commons.wikimedia.org/wiki/File:Bun._(Combo)_-_The_Big_Bowl_2024-07-08.jpg,ok
+0228,dish_bun_thit_nuong,File:Bun. BBQ Honey Pork - The Big Bowl 2024-01-14.jpg,https://commons.wikimedia.org/wiki/File:Bun._BBQ_Honey_Pork_-_The_Big_Bowl_2024-01-14.jpg,ok
+0229,dish_bun_thit_nuong,"File:Pho Lan - Westside, Las Vegas.jpg","https://commons.wikimedia.org/wiki/File:Pho_Lan_-_Westside,_Las_Vegas.jpg",over_cap
+0230,dish_ca_kho_to,File:Cá kho cúng đưa Tết 2018 (2).jpg,https://commons.wikimedia.org/wiki/File:C%C3%A1_kho_c%C3%BAng_%C4%91%C6%B0a_T%E1%BA%BFt_2018_(2).jpg,ok
+0231,dish_ca_kho_to,File:Cá kho cúng đưa Tết 2018 (1).jpg,https://commons.wikimedia.org/wiki/File:C%C3%A1_kho_c%C3%BAng_%C4%91%C6%B0a_T%E1%BA%BFt_2018_(1).jpg,ok
+0232,dish_ca_kho_to,File:Món ăn Tết 2023 (lát cá kho chảo) (1).jpg,https://commons.wikimedia.org/wiki/File:M%C3%B3n_%C4%83n_T%E1%BA%BFt_2023_(l%C3%A1t_c%C3%A1_kho_ch%E1%BA%A3o)_(1).jpg,ok
+0233,dish_ca_kho_to,File:Món ăn Tết 2023 (lát cá kho trong chảo) (2).jpg,https://commons.wikimedia.org/wiki/File:M%C3%B3n_%C4%83n_T%E1%BA%BFt_2023_(l%C3%A1t_c%C3%A1_kho_trong_ch%E1%BA%A3o)_(2).jpg,ok
+0234,dish_ca_kho_to,File:Món ăn Tết 2023 (lát cá kho) (1).jpg,https://commons.wikimedia.org/wiki/File:M%C3%B3n_%C4%83n_T%E1%BA%BFt_2023_(l%C3%A1t_c%C3%A1_kho)_(1).jpg,ok
+0235,dish_ca_kho_to,File:Món ăn Tết 2023 (lát cá kho) (2).jpg,https://commons.wikimedia.org/wiki/File:M%C3%B3n_%C4%83n_T%E1%BA%BFt_2023_(l%C3%A1t_c%C3%A1_kho)_(2).jpg,ok
+0236,dish_ca_kho_to,File:Cá kho tộ.JPG,https://commons.wikimedia.org/wiki/File:C%C3%A1_kho_t%E1%BB%99.JPG,ok
+0237,dish_ca_kho_to,"File:Cá kho tộ, cá hú.jpg","https://commons.wikimedia.org/wiki/File:C%C3%A1_kho_t%E1%BB%99,_c%C3%A1_h%C3%BA.jpg",ok
+0238,dish_ca_kho_to,File:Cá khô Cà Mau.jpg,https://commons.wikimedia.org/wiki/File:C%C3%A1_kh%C3%B4_C%C3%A0_Mau.jpg,rejected_visual
+0239,dish_ca_phe_sua_da,File:Cà Phê Sữa Đá Vị Coconut.jpg,https://commons.wikimedia.org/wiki/File:C%C3%A0_Ph%C3%AA_S%E1%BB%AFa_%C4%90%C3%A1_V%E1%BB%8B_Coconut.jpg,ok
+0240,dish_ca_phe_sua_da,File:Cà Phê Sữa Đá Vị Hazelnut.jpg,https://commons.wikimedia.org/wiki/File:C%C3%A0_Ph%C3%AA_S%E1%BB%AFa_%C4%90%C3%A1_V%E1%BB%8B_Hazelnut.jpg,ok
+0241,dish_ca_phe_sua_da,File:Cà phê sữa đá (509309424).jpg,https://commons.wikimedia.org/wiki/File:C%C3%A0_ph%C3%AA_s%E1%BB%AFa_%C4%91%C3%A1_(509309424).jpg,ok
+0242,dish_ca_phe_sua_da,File:Cà Phê Sữa Đá - Đặc trưng của Việt Nam.jpg,https://commons.wikimedia.org/wiki/File:C%C3%A0_Ph%C3%AA_S%E1%BB%AFa_%C4%90%C3%A1_-_%C4%90%E1%BA%B7c_tr%C6%B0ng_c%E1%BB%A7a_Vi%E1%BB%87t_Nam.jpg,ok
+0243,dish_ca_phe_sua_da,File:Ca Phe Sua Da.jpg,https://commons.wikimedia.org/wiki/File:Ca_Phe_Sua_Da.jpg,ok
+0244,dish_ca_phe_sua_da,File:Cà phê sữa đá preparation.jpg,https://commons.wikimedia.org/wiki/File:C%C3%A0_ph%C3%AA_s%E1%BB%AFa_%C4%91%C3%A1_preparation.jpg,ok
+0245,dish_ca_phe_sua_da,File:Vietnam - preparing coffee.jpg,https://commons.wikimedia.org/wiki/File:Vietnam_-_preparing_coffee.jpg,ok
+0246,dish_ca_phe_sua_da,File:2023-12-10 Coffee and bánh mì in Saigon.jpg,https://commons.wikimedia.org/wiki/File:2023-12-10_Coffee_and_b%C3%A1nh_m%C3%AC_in_Saigon.jpg,rejected_visual
+0247,dish_ca_phe_sua_da,File:Dinner at Pho Brighton 2023-09-04.jpg,https://commons.wikimedia.org/wiki/File:Dinner_at_Pho_Brighton_2023-09-04.jpg,rejected_visual
+0248,dish_ca_phe_sua_da,"File:Vietnamese iced coffee - Jan 31, 2018.jpg","https://commons.wikimedia.org/wiki/File:Vietnamese_iced_coffee_-_Jan_31,_2018.jpg",ok
+0249,dish_ca_phe_sua_da,File:Vietnamese Iced Coffee Ba Chi Canteen.jpg,https://commons.wikimedia.org/wiki/File:Vietnamese_Iced_Coffee_Ba_Chi_Canteen.jpg,ok
+0250,dish_ca_phe_sua_da,File:Vietnam 08 - 132 - Vietnamese coffee (3185747640).jpg,https://commons.wikimedia.org/wiki/File:Vietnam_08_-_132_-_Vietnamese_coffee_(3185747640).jpg,ok
+0251,dish_ca_phe_trung,File:Lang ca phe Trung Nguyen.JPG,https://commons.wikimedia.org/wiki/File:Lang_ca_phe_Trung_Nguyen.JPG,rejected_visual
+0252,dish_ca_phe_trung,File:Egg Coffee in Yokohama.jpg,https://commons.wikimedia.org/wiki/File:Egg_Coffee_in_Yokohama.jpg,ok
+0253,dish_ca_phe_trung,File:Viet Egg Coffee (30918733287).jpg,https://commons.wikimedia.org/wiki/File:Viet_Egg_Coffee_(30918733287).jpg,rejected_visual
+0254,dish_ca_phe_trung,File:Cà phê trứng.jpg,https://commons.wikimedia.org/wiki/File:C%C3%A0_ph%C3%AA_tr%E1%BB%A9ng.jpg,ok
+0255,dish_ca_phe_trung,"File:Egg Coffee at Cafe Giảng, Hà Nội, Vietnam.jpg","https://commons.wikimedia.org/wiki/File:Egg_Coffee_at_Cafe_Gi%E1%BA%A3ng,_H%C3%A0_N%E1%BB%99i,_Vietnam.jpg",ok
+0256,dish_ca_phe_trung,File:Cà phê trứng Trung Lịch 2020-06-11.jpg,https://commons.wikimedia.org/wiki/File:C%C3%A0_ph%C3%AA_tr%E1%BB%A9ng_Trung_L%E1%BB%8Bch_2020-06-11.jpg,ok
+0257,dish_ca_phe_trung,File:NewOne - egg coffee 33 Tan Ap 001.jpg,https://commons.wikimedia.org/wiki/File:NewOne_-_egg_coffee_33_Tan_Ap_001.jpg,ok
+0258,dish_ca_phe_trung,File:NewOne-egg coffee 1.jpg,https://commons.wikimedia.org/wiki/File:NewOne-egg_coffee_1.jpg,ok
+0259,dish_ca_phe_trung,File:NewOne-egg coffee 2.jpg,https://commons.wikimedia.org/wiki/File:NewOne-egg_coffee_2.jpg,ok
+0260,dish_ca_phe_trung,File:Egg coffee at Café Giang closeup.jpg,https://commons.wikimedia.org/wiki/File:Egg_coffee_at_Caf%C3%A9_Giang_closeup.jpg,ok
+0261,dish_ca_phe_trung,File:Cà phê trứng Giảng (cơ sở 1 Nguyễn Hữu Huân).jpg,https://commons.wikimedia.org/wiki/File:C%C3%A0_ph%C3%AA_tr%E1%BB%A9ng_Gi%E1%BA%A3ng_(c%C6%A1_s%E1%BB%9F_1_Nguy%E1%BB%85n_H%E1%BB%AFu_Hu%C3%A2n).jpg,ok
+0262,dish_ca_phe_trung,File:Cà phê trứng ở Q1 ng16th9n2022 (1a).jpg,https://commons.wikimedia.org/wiki/File:C%C3%A0_ph%C3%AA_tr%E1%BB%A9ng_%E1%BB%9F_Q1_ng16th9n2022_(1a).jpg,ok
+0263,dish_canh_chua,File:Canh chua Đông Hà.jpg,https://commons.wikimedia.org/wiki/File:Canh_chua_%C4%90%C3%B4ng_H%C3%A0.jpg,ok
+0264,dish_canh_chua,File:Giác Hoàng Phạm Ngữ (cảnh chùa Giác Hoàng trong Kinh thành Huế) result.jpg,https://commons.wikimedia.org/wiki/File:Gi%C3%A1c_Ho%C3%A0ng_Ph%E1%BA%A1m_Ng%E1%BB%AF_(c%E1%BA%A3nh_ch%C3%B9a_Gi%C3%A1c_Ho%C3%A0ng_trong_Kinh_th%C3%A0nh_Hu%E1%BA%BF)_result.jpg,rejected_visual
+0265,dish_canh_chua,File:Thiên Mụ Chung Thanh (cảnh chùa Thiên Mụ) result.jpg,https://commons.wikimedia.org/wiki/File:Thi%C3%AAn_M%E1%BB%A5_Chung_Thanh_(c%E1%BA%A3nh_ch%C3%B9a_Thi%C3%AAn_M%E1%BB%A5)_result.jpg,rejected_visual
+0266,dish_canh_chua,File:Vân Sơn Thắng Tích (cảnh chùa Thánh Duyên trên núi Thúy Vân) result.jpg,https://commons.wikimedia.org/wiki/File:V%C3%A2n_S%C6%A1n_Th%E1%BA%AFng_T%C3%ADch_(c%E1%BA%A3nh_ch%C3%B9a_Th%C3%A1nh_Duy%C3%AAn_tr%C3%AAn_n%C3%BAi_Th%C3%BAy_V%C3%A2n)_result.jpg,rejected_visual
+0267,dish_canh_chua,File:Canh chua cá diêu hồng.jpg,https://commons.wikimedia.org/wiki/File:Canh_chua_c%C3%A1_di%C3%AAu_h%E1%BB%93ng.jpg,ok
+0268,dish_cao_lau,File:Cao lầu in Hoi An.jpg,https://commons.wikimedia.org/wiki/File:Cao_l%E1%BA%A7u_in_Hoi_An.jpg,ok
+0269,dish_cao_lau,File:Cao lầu Hội An (2024).jpg,https://commons.wikimedia.org/wiki/File:Cao_l%E1%BA%A7u_H%E1%BB%99i_An_(2024).jpg,ok
+0270,dish_cao_lau,File:Cao Lau Hoi An.JPG,https://commons.wikimedia.org/wiki/File:Cao_Lau_Hoi_An.JPG,ok
+0271,dish_cao_lau,File:Cao lầu (144854 994).jpg,https://commons.wikimedia.org/wiki/File:Cao_l%E1%BA%A7u_(144854_994).jpg,ok
+0272,dish_cao_lau,File:Cao lầu 2.jpg,https://commons.wikimedia.org/wiki/File:Cao_l%E1%BA%A7u_2.jpg,ok
+0273,dish_cao_lau,File:Cao lầu crispy bits.jpg,https://commons.wikimedia.org/wiki/File:Cao_l%E1%BA%A7u_crispy_bits.jpg,ok
+0274,dish_cao_lau,File:Cao lầu noodles.jpg,https://commons.wikimedia.org/wiki/File:Cao_l%E1%BA%A7u_noodles.jpg,ok
+0275,dish_cao_lau,File:Cao Lau + Spring Rolls - close-up VND20000.jpg,https://commons.wikimedia.org/wiki/File:Cao_Lau_%2B_Spring_Rolls_-_close-up_VND20000.jpg,ok
+0276,dish_cao_lau,File:Cao Lau + Spring Rolls VND20000.jpg,https://commons.wikimedia.org/wiki/File:Cao_Lau_%2B_Spring_Rolls_VND20000.jpg,ok
+0277,dish_cao_lau,File:Cao Lau Noodles - Cao Lau + Spring Rolls VND20000.jpg,https://commons.wikimedia.org/wiki/File:Cao_Lau_Noodles_-_Cao_Lau_%2B_Spring_Rolls_VND20000.jpg,ok
+0278,dish_cao_lau,File:Trun Bac Hoi An.JPG,https://commons.wikimedia.org/wiki/File:Trun_Bac_Hoi_An.JPG,rejected_visual
+0279,dish_cha_ca,File:Chả cá tại Phố Chả Cá - Hà Nội.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_c%C3%A1_t%E1%BA%A1i_Ph%E1%BB%91_Ch%E1%BA%A3_C%C3%A1_-_H%C3%A0_N%E1%BB%99i.jpg,ok
+0280,dish_cha_ca,File:Chả cá tại Phố chả cá Hà Nội.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_c%C3%A1_t%E1%BA%A1i_Ph%E1%BB%91_ch%E1%BA%A3_c%C3%A1_H%C3%A0_N%E1%BB%99i.jpg,ok
+0281,dish_cha_ca,File:Grilled fish @ Cha Ca La Vong.jpg,https://commons.wikimedia.org/wiki/File:Grilled_fish_@_Cha_Ca_La_Vong.jpg,ok
+0282,dish_cha_ca,"File:Chả Cá Hà Nội, Ecopark (2018).jpg","https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_C%C3%A1_H%C3%A0_N%E1%BB%99i,_Ecopark_(2018).jpg",rejected_visual
+0283,dish_cha_ca,File:Chả cá Lã Vọng và bia Hà Nội tháng 2 năm 2018 (3).jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_c%C3%A1_L%C3%A3_V%E1%BB%8Dng_v%C3%A0_bia_H%C3%A0_N%E1%BB%99i_th%C3%A1ng_2_n%C4%83m_2018_(3).jpg,ok
+0284,dish_cha_ca,File:Chả cá Thát Lát chiên.JPG,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_c%C3%A1_Th%C3%A1t_L%C3%A1t_chi%C3%AAn.JPG,rejected_visual
+0285,dish_cha_ca,File:Chả cá Lã Vọng Hà Nội tháng 2 năm 2018 (2).jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_c%C3%A1_L%C3%A3_V%E1%BB%8Dng_H%C3%A0_N%E1%BB%99i_th%C3%A1ng_2_n%C4%83m_2018_(2).jpg,ok
+0286,dish_cha_ca,File:Chả cá Lã Vọng Hà Nội.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_c%C3%A1_L%C3%A3_V%E1%BB%8Dng_H%C3%A0_N%E1%BB%99i.jpg,ok
+0287,dish_cha_ca,File:Nhà mình dịp Lễ 2th9n2023 (chả cá Lã Vọng mua về) (1).jpg,https://commons.wikimedia.org/wiki/File:Nh%C3%A0_m%C3%ACnh_d%E1%BB%8Bp_L%E1%BB%85_2th9n2023_(ch%E1%BA%A3_c%C3%A1_L%C3%A3_V%E1%BB%8Dng_mua_v%E1%BB%81)_(1).jpg,ok
+0288,dish_cha_ca,File:Nhà mình dịp Lễ 2th9n2023 (chả cá Lã Vọng mua về) (10).jpg,https://commons.wikimedia.org/wiki/File:Nh%C3%A0_m%C3%ACnh_d%E1%BB%8Bp_L%E1%BB%85_2th9n2023_(ch%E1%BA%A3_c%C3%A1_L%C3%A3_V%E1%BB%8Dng_mua_v%E1%BB%81)_(10).jpg,ok
+0289,dish_cha_ca,File:Gia vi Cha Ca.JPG,https://commons.wikimedia.org/wiki/File:Gia_vi_Cha_Ca.JPG,ok
+0290,dish_cha_ca,File:Chả cá thát lát chiên.JPG,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_c%C3%A1_th%C3%A1t_l%C3%A1t_chi%C3%AAn.JPG,rejected_visual
+0291,dish_com_ga,File:Com ga Viet Nam voi ga luoc com vang va nuoc cham.jpg,https://commons.wikimedia.org/wiki/File:Com_ga_Viet_Nam_voi_ga_luoc_com_vang_va_nuoc_cham.jpg,ok
+0292,dish_com_ga,File:Dung Hoi An.JPG,https://commons.wikimedia.org/wiki/File:Dung_Hoi_An.JPG,rejected_visual
+0293,dish_com_hen,File:Lễ hội ẩm thực Cửa Việt th4n2023 (gian hàng cơm hến Thôn Vĩ).jpg,https://commons.wikimedia.org/wiki/File:L%E1%BB%85_h%E1%BB%99i_%E1%BA%A9m_th%E1%BB%B1c_C%E1%BB%ADa_Vi%E1%BB%87t_th4n2023_(gian_h%C3%A0ng_c%C6%A1m_h%E1%BA%BFn_Th%C3%B4n_V%C4%A9).jpg,rejected_visual
+0294,dish_com_hen,File:Lễ hội ẩm thực Cửa Việt th4n2023 đặc sản cơm hến Vĩ Dạ (1).jpg,https://commons.wikimedia.org/wiki/File:L%E1%BB%85_h%E1%BB%99i_%E1%BA%A9m_th%E1%BB%B1c_C%E1%BB%ADa_Vi%E1%BB%87t_th4n2023_%C4%91%E1%BA%B7c_s%E1%BA%A3n_c%C6%A1m_h%E1%BA%BFn_V%C4%A9_D%E1%BA%A1_(1).jpg,rejected_visual
+0295,dish_com_hen,File:Lễ hội ẩm thực Cửa Việt th4n2023 đặc sản cơm hến Vĩ Dạ (2).jpg,https://commons.wikimedia.org/wiki/File:L%E1%BB%85_h%E1%BB%99i_%E1%BA%A9m_th%E1%BB%B1c_C%E1%BB%ADa_Vi%E1%BB%87t_th4n2023_%C4%91%E1%BA%B7c_s%E1%BA%A3n_c%C6%A1m_h%E1%BA%BFn_V%C4%A9_D%E1%BA%A1_(2).jpg,rejected_visual
+0296,dish_com_hen,File:Com-hen-hue.jpg,https://commons.wikimedia.org/wiki/File:Com-hen-hue.jpg,ok
+0297,dish_com_hen,File:Com Hen at Hue Vietnam.JPG,https://commons.wikimedia.org/wiki/File:Com_Hen_at_Hue_Vietnam.JPG,ok
+0298,dish_com_tam,"File:Cơm Tấm, Da Nang, Vietnam.jpg","https://commons.wikimedia.org/wiki/File:C%C6%A1m_T%E1%BA%A5m,_Da_Nang,_Vietnam.jpg",ok
+0299,dish_com_tam,File:Cơm tấm SG (cơm sườn) ng27th9n2020 (1).jpg,https://commons.wikimedia.org/wiki/File:C%C6%A1m_t%E1%BA%A5m_SG_(c%C6%A1m_s%C6%B0%E1%BB%9Dn)_ng27th9n2020_(1).jpg,ok
+0300,dish_com_tam,File:Cơm tấm SG (cơm sườn) ng27th9n2020 (2).jpg,https://commons.wikimedia.org/wiki/File:C%C6%A1m_t%E1%BA%A5m_SG_(c%C6%A1m_s%C6%B0%E1%BB%9Dn)_ng27th9n2020_(2).jpg,ok
+0301,dish_com_tam,"File:Cơm tấm SG lề đường (cơm sườn, miếng sườn nướng mật ong) ng30th7n2022 (1).jpg","https://commons.wikimedia.org/wiki/File:C%C6%A1m_t%E1%BA%A5m_SG_l%E1%BB%81_%C4%91%C6%B0%E1%BB%9Dng_(c%C6%A1m_s%C6%B0%E1%BB%9Dn,_mi%E1%BA%BFng_s%C6%B0%E1%BB%9Dn_n%C6%B0%E1%BB%9Bng_m%E1%BA%ADt_ong)_ng30th7n2022_(1).jpg",ok
+0302,dish_com_tam,"File:Cơm tấm SG lề đường (cơm sườn, miếng sườn nướng mật ong) ng30th7n2022 (2).jpg","https://commons.wikimedia.org/wiki/File:C%C6%A1m_t%E1%BA%A5m_SG_l%E1%BB%81_%C4%91%C6%B0%E1%BB%9Dng_(c%C6%A1m_s%C6%B0%E1%BB%9Dn,_mi%E1%BA%BFng_s%C6%B0%E1%BB%9Dn_n%C6%B0%E1%BB%9Bng_m%E1%BA%ADt_ong)_ng30th7n2022_(2).jpg",ok
+0303,dish_com_tam,File:Cơm tấm bì chả.jpg,https://commons.wikimedia.org/wiki/File:C%C6%A1m_t%E1%BA%A5m_b%C3%AC_ch%E1%BA%A3.jpg,ok
+0304,dish_com_tam,File:Cơm tấm sườn bì chả.jpg,https://commons.wikimedia.org/wiki/File:C%C6%A1m_t%E1%BA%A5m_s%C6%B0%E1%BB%9Dn_b%C3%AC_ch%E1%BA%A3.jpg,ok
+0305,dish_com_tam,File:Com-Tam-2008.jpg,https://commons.wikimedia.org/wiki/File:Com-Tam-2008.jpg,ok
+0306,dish_com_tam,File:Cơm Tấm Bì Sườn Chả.jpg,https://commons.wikimedia.org/wiki/File:C%C6%A1m_T%E1%BA%A5m_B%C3%AC_S%C6%B0%E1%BB%9Dn_Ch%E1%BA%A3.jpg,ok
+0307,dish_com_tam,"File:Special Broken Rice with Pork Chop, Shredded Pork Skin and Fried Egg - Thanh Ha (3015036072).jpg","https://commons.wikimedia.org/wiki/File:Special_Broken_Rice_with_Pork_Chop,_Shredded_Pork_Skin_and_Fried_Egg_-_Thanh_Ha_(3015036072).jpg",ok
+0308,dish_com_tam,File:Steamed Rice Noodles with Pork Loaf and Mung Bean Pie - Thanh Ha (3014200871).jpg,https://commons.wikimedia.org/wiki/File:Steamed_Rice_Noodles_with_Pork_Loaf_and_Mung_Bean_Pie_-_Thanh_Ha_(3014200871).jpg,over_cap
+0309,dish_gio_lua,File:Giò lụa.jpg,https://commons.wikimedia.org/wiki/File:Gi%C3%B2_l%E1%BB%A5a.jpg,ok
+0310,dish_gio_lua,File:Giò lụa 2.jpg,https://commons.wikimedia.org/wiki/File:Gi%C3%B2_l%E1%BB%A5a_2.jpg,ok
+0311,dish_gio_lua,File:Gio lua Uoc Le.jpg,https://commons.wikimedia.org/wiki/File:Gio_lua_Uoc_Le.jpg,ok
+0312,dish_gio_lua,File:Món ăn cúng mồng 2 Tết 2022 (chả lụa) (1).jpg,https://commons.wikimedia.org/wiki/File:M%C3%B3n_%C4%83n_c%C3%BAng_m%E1%BB%93ng_2_T%E1%BA%BFt_2022_(ch%E1%BA%A3_l%E1%BB%A5a)_(1).jpg,rejected_visual
+0313,dish_gio_lua,File:Món ăn cúng mồng 2 Tết 2022 (chả lụa) (2).jpg,https://commons.wikimedia.org/wiki/File:M%C3%B3n_%C4%83n_c%C3%BAng_m%E1%BB%93ng_2_T%E1%BA%BFt_2022_(ch%E1%BA%A3_l%E1%BB%A5a)_(2).jpg,rejected_visual
+0314,dish_gio_lua,File:Chả lụa que.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_l%E1%BB%A5a_que.jpg,rejected_visual
+0315,dish_gio_lua,File:Beef noodles soup in vietnamese style.jpg,https://commons.wikimedia.org/wiki/File:Beef_noodles_soup_in_vietnamese_style.jpg,rejected_visual
+0316,dish_gio_lua,File:Bánh giầy giò.JPG,https://commons.wikimedia.org/wiki/File:B%C3%A1nh_gi%E1%BA%A7y_gi%C3%B2.JPG,ok
+0317,dish_gio_lua,File:Chả ớt Sài Gòn 1.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_%E1%BB%9Bt_S%C3%A0i_G%C3%B2n_1.jpg,rejected_visual
+0318,dish_gio_lua,File:Chả ớt Sài Gòn.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_%E1%BB%9Bt_S%C3%A0i_G%C3%B2n.jpg,rejected_visual
+0319,dish_gio_lua,File:Nhà mình Lễ 30th4n2023 (chạo nem lụi) (1).jpg,https://commons.wikimedia.org/wiki/File:Nh%C3%A0_m%C3%ACnh_L%E1%BB%85_30th4n2023_(ch%E1%BA%A1o_nem_l%E1%BB%A5i)_(1).jpg,rejected_visual
+0320,dish_gio_lua,File:Nhà mình Lễ 30th4n2023 (chạo nem lụi) (2).jpg,https://commons.wikimedia.org/wiki/File:Nh%C3%A0_m%C3%ACnh_L%E1%BB%85_30th4n2023_(ch%E1%BA%A1o_nem_l%E1%BB%A5i)_(2).jpg,rejected_visual
+0321,dish_goi_cuon,File:Gỏi Cuốn Chay Vietnamese Fresh Vegetarian Spring Roll 2019-1599.jpg,https://commons.wikimedia.org/wiki/File:G%E1%BB%8Fi_Cu%E1%BB%91n_Chay_Vietnamese_Fresh_Vegetarian_Spring_Roll_2019-1599.jpg,ok
+0322,dish_goi_cuon,File:Gỏi cuốn.jpg,https://commons.wikimedia.org/wiki/File:G%E1%BB%8Fi_cu%E1%BB%91n.jpg,ok
+0323,dish_goi_cuon,"File:Rollos goi cuon, Mazatlán, 31 de mayo de 2023 02.jpg","https://commons.wikimedia.org/wiki/File:Rollos_goi_cuon,_Mazatl%C3%A1n,_31_de_mayo_de_2023_02.jpg",ok
+0324,dish_goi_cuon,"File:Rollos goi cuon, Mazatlán, 31 de mayo de 2023.jpg","https://commons.wikimedia.org/wiki/File:Rollos_goi_cuon,_Mazatl%C3%A1n,_31_de_mayo_de_2023.jpg",ok
+0325,dish_goi_cuon,File:Goi cuon Phuongnhu.JPG,https://commons.wikimedia.org/wiki/File:Goi_cuon_Phuongnhu.JPG,ok
+0326,dish_goi_cuon,File:Gỏi cuốn (49358210697).jpg,https://commons.wikimedia.org/wiki/File:G%E1%BB%8Fi_cu%E1%BB%91n_(49358210697).jpg,ok
+0327,dish_goi_cuon,File:Summer roll.jpg,https://commons.wikimedia.org/wiki/File:Summer_roll.jpg,ok
+0328,dish_goi_cuon,File:WV banner Vietnamese cuisine Goi cuon.jpg,https://commons.wikimedia.org/wiki/File:WV_banner_Vietnamese_cuisine_Goi_cuon.jpg,rejected_visual
+0329,dish_goi_cuon,"File:Khu nghỉ dưỡng ở Cái Bè (Đồ ăn, gỏi cuốn) (1).jpg","https://commons.wikimedia.org/wiki/File:Khu_ngh%E1%BB%89_d%C6%B0%E1%BB%A1ng_%E1%BB%9F_C%C3%A1i_B%C3%A8_(%C4%90%E1%BB%93_%C4%83n,_g%E1%BB%8Fi_cu%E1%BB%91n)_(1).jpg",ok
+0330,dish_goi_cuon,"File:Khu nghỉ dưỡng ở Cái Bè (Đồ ăn, gỏi cuốn) (2).jpg","https://commons.wikimedia.org/wiki/File:Khu_ngh%E1%BB%89_d%C6%B0%E1%BB%A1ng_%E1%BB%9F_C%C3%A1i_B%C3%A8_(%C4%90%E1%BB%93_%C4%83n,_g%E1%BB%8Fi_cu%E1%BB%91n)_(2).jpg",ok
+0331,dish_goi_cuon,File:Rouleaux Vietnamien Gỏi cuốn.jpg,https://commons.wikimedia.org/wiki/File:Rouleaux_Vietnamien_G%E1%BB%8Fi_cu%E1%BB%91n.jpg,rejected_visual
+0332,dish_goi_cuon,"File:Prawn Rice Paper Roll - Lunch Deli, Brighton 2026-09-29.jpg","https://commons.wikimedia.org/wiki/File:Prawn_Rice_Paper_Roll_-_Lunch_Deli,_Brighton_2026-09-29.jpg",ok
+0333,dish_hu_tieu_nam_vang,File:Hủ tiếu nam vang giò 5.jpg,https://commons.wikimedia.org/wiki/File:H%E1%BB%A7_ti%E1%BA%BFu_nam_vang_gi%C3%B2_5.jpg,ok
+0334,dish_hu_tieu_nam_vang,File:Hủ tiếu Nam Vang giò 2.jpg,https://commons.wikimedia.org/wiki/File:H%E1%BB%A7_ti%E1%BA%BFu_Nam_Vang_gi%C3%B2_2.jpg,ok
+0335,dish_hu_tieu_nam_vang,File:Hủ tiếu Nam Vang.jpg,https://commons.wikimedia.org/wiki/File:H%E1%BB%A7_ti%E1%BA%BFu_Nam_Vang.jpg,ok
+0336,dish_hu_tieu_nam_vang,File:Hu Tieu Nam Vang.jpg,https://commons.wikimedia.org/wiki/File:Hu_Tieu_Nam_Vang.jpg,ok
+0337,dish_hu_tieu_nam_vang,File:Hủ tiếu Nam Vang Sài Gòn.jpg,https://commons.wikimedia.org/wiki/File:H%E1%BB%A7_ti%E1%BA%BFu_Nam_Vang_S%C3%A0i_G%C3%B2n.jpg,ok
+0338,dish_hu_tieu_nam_vang,File:Hu tieu.jpg,https://commons.wikimedia.org/wiki/File:Hu_tieu.jpg,ok
+0339,dish_mi_quang,"File:Mì Quảng, Da Nang, Vietnam.jpg","https://commons.wikimedia.org/wiki/File:M%C3%AC_Qu%E1%BA%A3ng,_Da_Nang,_Vietnam.jpg",ok
+0340,dish_mi_quang,File:Mi Quang 1A Danang.jpg,https://commons.wikimedia.org/wiki/File:Mi_Quang_1A_Danang.jpg,ok
+0341,dish_mi_quang,File:Mi Quang Hoi An (2024).jpg,https://commons.wikimedia.org/wiki/File:Mi_Quang_Hoi_An_(2024).jpg,ok
+0342,dish_mi_quang,File:Mi Quang at Ngoc Mai (with noodles uncovered).jpg,https://commons.wikimedia.org/wiki/File:Mi_Quang_at_Ngoc_Mai_(with_noodles_uncovered).jpg,ok
+0343,dish_mi_quang,"File:Mì Quảng chay, tháng 9 năm 2018 (1).jpg","https://commons.wikimedia.org/wiki/File:M%C3%AC_Qu%E1%BA%A3ng_chay,_th%C3%A1ng_9_n%C4%83m_2018_(1).jpg",ok
+0344,dish_mi_quang,"File:Mì Quảng chay, tháng 9 năm 2018 (2).jpg","https://commons.wikimedia.org/wiki/File:M%C3%AC_Qu%E1%BA%A3ng_chay,_th%C3%A1ng_9_n%C4%83m_2018_(2).jpg",ok
+0345,dish_mi_quang,File:Mì Quảng.jpg,https://commons.wikimedia.org/wiki/File:M%C3%AC_Qu%E1%BA%A3ng.jpg,ok
+0346,dish_mi_quang,"File:Mì quảng cô chú Bình Long, ngày 02 tháng 4 năm 2021 (2).jpg","https://commons.wikimedia.org/wiki/File:M%C3%AC_qu%E1%BA%A3ng_c%C3%B4_ch%C3%BA_B%C3%ACnh_Long,_ng%C3%A0y_02_th%C3%A1ng_4_n%C4%83m_2021_(2).jpg",ok
+0347,dish_mi_quang,"File:Mì quảng cô chú Bình Long, ngày 02 tháng 4 năm 2021 (4).jpg","https://commons.wikimedia.org/wiki/File:M%C3%AC_qu%E1%BA%A3ng_c%C3%B4_ch%C3%BA_B%C3%ACnh_Long,_ng%C3%A0y_02_th%C3%A1ng_4_n%C4%83m_2021_(4).jpg",ok
+0348,dish_mi_quang,File:Mi-quang-da-nang.jpg,https://commons.wikimedia.org/wiki/File:Mi-quang-da-nang.jpg,rejected_visual
+0349,dish_mi_quang,File:Mì quảng cá lóc ở Nguyễn Sơn ngày 05 tháng 11 năm 2019 (3).jpg,https://commons.wikimedia.org/wiki/File:M%C3%AC_qu%E1%BA%A3ng_c%C3%A1_l%C3%B3c_%E1%BB%9F_Nguy%E1%BB%85n_S%C6%A1n_ng%C3%A0y_05_th%C3%A1ng_11_n%C4%83m_2019_(3).jpg,ok
+0350,dish_mi_quang,File:Mì quảng cá lóc ở Nguyễn Sơn ngày 05 tháng 11 năm 2019 (4).jpg,https://commons.wikimedia.org/wiki/File:M%C3%AC_qu%E1%BA%A3ng_c%C3%A1_l%C3%B3c_%E1%BB%9F_Nguy%E1%BB%85n_S%C6%A1n_ng%C3%A0y_05_th%C3%A1ng_11_n%C4%83m_2019_(4).jpg,over_cap
+0351,dish_nem_chua,File:Nem chua.jpg,https://commons.wikimedia.org/wiki/File:Nem_chua.jpg,ok
+0352,dish_nem_chua,File:Nem chua nuong.JPG,https://commons.wikimedia.org/wiki/File:Nem_chua_nuong.JPG,rejected_visual
+0353,dish_nem_chua,File:Bia tiger và nem chua.jpg,https://commons.wikimedia.org/wiki/File:Bia_tiger_v%C3%A0_nem_chua.jpg,rejected_visual
+0354,dish_nem_chua,File:Nem Chua.jpg,https://commons.wikimedia.org/wiki/File:Nem_Chua.jpg,ok
+0355,dish_nem_chua,File:Nem Chua after cutting.jpg,https://commons.wikimedia.org/wiki/File:Nem_Chua_after_cutting.jpg,ok
+0356,dish_nem_chua,File:Vietnamese Nem Chua Pic.png,https://commons.wikimedia.org/wiki/File:Vietnamese_Nem_Chua_Pic.png,ok
+0357,dish_nem_chua,File:Nem chua Thanh Hoa.jpg,https://commons.wikimedia.org/wiki/File:Nem_chua_Thanh_Hoa.jpg,rejected_visual
+0358,dish_nem_chua,File:Nem chua Yen Mac.jpg,https://commons.wikimedia.org/wiki/File:Nem_chua_Yen_Mac.jpg,rejected_visual
+0359,dish_nem_chua,File:Nem chua Lai Vung.jpg,https://commons.wikimedia.org/wiki/File:Nem_chua_Lai_Vung.jpg,ok
+0360,dish_nem_chua,File:Lá mơ lông served with nem chua.jpg,https://commons.wikimedia.org/wiki/File:L%C3%A1_m%C6%A1_l%C3%B4ng_served_with_nem_chua.jpg,rejected_visual
+0361,dish_nem_chua,File:Nem-chua-ran2.jpg,https://commons.wikimedia.org/wiki/File:Nem-chua-ran2.jpg,rejected_visual
+0362,dish_nem_chua,File:Xau nem Ninh Hoa.JPG,https://commons.wikimedia.org/wiki/File:Xau_nem_Ninh_Hoa.JPG,ok
+0363,dish_nem_ran,File:Chả giò (Vietnamese Spring Rolls) - 12.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_gi%C3%B2_(Vietnamese_Spring_Rolls)_-_12.jpg,ok
+0364,dish_nem_ran,File:Chả giò (Vietnamese Spring Rolls) - 14.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_gi%C3%B2_(Vietnamese_Spring_Rolls)_-_14.jpg,rejected_visual
+0365,dish_nem_ran,File:Cuốn nem rán (đa nem) 1.JPG,https://commons.wikimedia.org/wiki/File:Cu%E1%BB%91n_nem_r%C3%A1n_(%C4%91a_nem)_1.JPG,rejected_visual
+0366,dish_nem_ran,File:Cuốn nem rán (đa nem) 2 (1).JPG,https://commons.wikimedia.org/wiki/File:Cu%E1%BB%91n_nem_r%C3%A1n_(%C4%91a_nem)_2_(1).JPG,rejected_visual
+0367,dish_nem_ran,File:Món nem rán 2012 (1).JPG,https://commons.wikimedia.org/wiki/File:M%C3%B3n_nem_r%C3%A1n_2012_(1).JPG,ok
+0368,dish_nem_ran,File:Món nem rán 2012 (2).JPG,https://commons.wikimedia.org/wiki/File:M%C3%B3n_nem_r%C3%A1n_2012_(2).JPG,ok
+0369,dish_nem_ran,File:Cha Gio.jpg,https://commons.wikimedia.org/wiki/File:Cha_Gio.jpg,ok
+0370,dish_nem_ran,File:Chả giò.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_gi%C3%B2.jpg,ok
+0371,dish_nem_ran,File:Chả giò rế giòn rụm 20201108.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_gi%C3%B2_r%E1%BA%BF_gi%C3%B2n_r%E1%BB%A5m_20201108.jpg,ok
+0372,dish_nem_ran,File:Chả giò rế kiểu Việt Nam 20201122.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_gi%C3%B2_r%E1%BA%BF_ki%E1%BB%83u_Vi%E1%BB%87t_Nam_20201122.jpg,ok
+0373,dish_nem_ran,File:Chả giò rế nhà làm 20201108.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_gi%C3%B2_r%E1%BA%BF_nh%C3%A0_l%C3%A0m_20201108.jpg,ok
+0374,dish_nem_ran,File:Chả giò rế nhà mình 20201108.jpg,https://commons.wikimedia.org/wiki/File:Ch%E1%BA%A3_gi%C3%B2_r%E1%BA%BF_nh%C3%A0_m%C3%ACnh_20201108.jpg,ok
+0375,dish_pho_bo,File:Beef noodle soup (Phở bò) - Pho Hanoi Authentic 2024-12-01.jpg,https://commons.wikimedia.org/wiki/File:Beef_noodle_soup_(Ph%E1%BB%9F_b%C3%B2)_-_Pho_Hanoi_Authentic_2024-12-01.jpg,ok
+0376,dish_pho_bo,File:Phở bò (39425047901).jpg,https://commons.wikimedia.org/wiki/File:Ph%E1%BB%9F_b%C3%B2_(39425047901).jpg,ok
+0377,dish_pho_bo,File:Beef Pho in Hong Kong.jpg,https://commons.wikimedia.org/wiki/File:Beef_Pho_in_Hong_Kong.jpg,ok
+0378,dish_pho_bo,File:Beef pho (14698023972).jpg,https://commons.wikimedia.org/wiki/File:Beef_pho_(14698023972).jpg,ok
+0379,dish_pho_bo,File:Beef Pho (M) - Milk No Sugar.jpg,https://commons.wikimedia.org/wiki/File:Beef_Pho_(M)_-_Milk_No_Sugar.jpg,ok
+0380,dish_pho_bo,File:Noodle soup beef Pho.jpg,https://commons.wikimedia.org/wiki/File:Noodle_soup_beef_Pho.jpg,ok
+0381,dish_pho_bo,File:Beef Pho in Jakarta 2.jpg,https://commons.wikimedia.org/wiki/File:Beef_Pho_in_Jakarta_2.jpg,ok
+0382,dish_pho_bo,File:Beef pho (16463761467).jpg,https://commons.wikimedia.org/wiki/File:Beef_pho_(16463761467).jpg,ok
+0383,dish_pho_bo,File:Phở bò Taipei.jpg,https://commons.wikimedia.org/wiki/File:Ph%E1%BB%9F_b%C3%B2_Taipei.jpg,ok
+0384,dish_pho_bo,File:Beef Pho in Jakarta 1.jpg,https://commons.wikimedia.org/wiki/File:Beef_Pho_in_Jakarta_1.jpg,ok
+0385,dish_pho_bo,"File:Phở bò, Cầu Giấy, Hà Nội.jpg","https://commons.wikimedia.org/wiki/File:Ph%E1%BB%9F_b%C3%B2,_C%E1%BA%A7u_Gi%E1%BA%A5y,_H%C3%A0_N%E1%BB%99i.jpg",over_cap
+0386,dish_pho_bo,"File:Pho Bo, Noi Bai International Airport, Hanoi (6914024252).jpg","https://commons.wikimedia.org/wiki/File:Pho_Bo,_Noi_Bai_International_Airport,_Hanoi_(6914024252).jpg",rejected_visual
+0387,dish_pho_ga,"File:Chicken Pho, Pho 21, Montparnasse, Paris 001.jpg","https://commons.wikimedia.org/wiki/File:Chicken_Pho,_Pho_21,_Montparnasse,_Paris_001.jpg",ok
+0388,dish_pho_ga,File:Pho ga (29741913464).jpg,https://commons.wikimedia.org/wiki/File:Pho_ga_(29741913464).jpg,ok
+0389,dish_pho_ga,File:Pho's Saigon SSF Pho Ga contents.JPG,https://commons.wikimedia.org/wiki/File:Pho%27s_Saigon_SSF_Pho_Ga_contents.JPG,rejected_visual
+0390,dish_pho_ga,File:Dong Van-style chicken pho.jpg,https://commons.wikimedia.org/wiki/File:Dong_Van-style_chicken_pho.jpg,rejected_visual
+0391,dish_pho_ga,File:Pho ga (Mary's chicken) (25735388134).jpg,https://commons.wikimedia.org/wiki/File:Pho_ga_(Mary%27s_chicken)_(25735388134).jpg,ok
+0392,dish_pho_ga,"File:Homemade ""Phở gà"" by A.jpeg",https://commons.wikimedia.org/wiki/File:Homemade_%22Ph%E1%BB%9F_g%C3%A0%22_by_A.jpeg,ok
+0393,dish_pho_ga,"File:Chicken Noodle Soup (Pho Ga), Tây Hồ (7069116563).jpg","https://commons.wikimedia.org/wiki/File:Chicken_Noodle_Soup_(Pho_Ga),_T%C3%A2y_H%E1%BB%93_(7069116563).jpg",rejected_visual
+0394,dish_pho_ga,"File:Pho ga (noodle soup with chicken), Hanoi (6945821707).jpg","https://commons.wikimedia.org/wiki/File:Pho_ga_(noodle_soup_with_chicken),_Hanoi_(6945821707).jpg",ok
+0395,dish_pho_ga,File:Chicken-pho-vietnamese-soup.JPG,https://commons.wikimedia.org/wiki/File:Chicken-pho-vietnamese-soup.JPG,ok
+0396,dish_pho_ga,File:Vietnamská kuřecí polévka “phở gà“ se širokými rýžovými nudlemi 01.JPG,https://commons.wikimedia.org/wiki/File:Vietnamsk%C3%A1_ku%C5%99ec%C3%AD_pol%C3%A9vka_%E2%80%9Cph%E1%BB%9F_g%C3%A0%E2%80%9C_se_%C5%A1irok%C3%BDmi_r%C3%BD%C5%BEov%C3%BDmi_nudlemi_01.JPG,ok
+0397,dish_pho_ga,File:Vietnamská kuřecí polévka “phở gà“ se širokými rýžovými nudlemi 02.JPG,https://commons.wikimedia.org/wiki/File:Vietnamsk%C3%A1_ku%C5%99ec%C3%AD_pol%C3%A9vka_%E2%80%9Cph%E1%BB%9F_g%C3%A0%E2%80%9C_se_%C5%A1irok%C3%BDmi_r%C3%BD%C5%BEov%C3%BDmi_nudlemi_02.JPG,ok
+0398,dish_pho_ga,File:Pho-ga-ha-noi.jpg,https://commons.wikimedia.org/wiki/File:Pho-ga-ha-noi.jpg,ok
+0399,dish_thit_kho,File:Thịt kho hột vịt.jpg,https://commons.wikimedia.org/wiki/File:Th%E1%BB%8Bt_kho_h%E1%BB%99t_v%E1%BB%8Bt.jpg,ok
+0400,dish_thit_kho,File:Thịt kho Tàu.jpg,https://commons.wikimedia.org/wiki/File:Th%E1%BB%8Bt_kho_T%C3%A0u.jpg,ok
+0401,dish_thit_kho,File:Thịt kho chỉ.jpg,https://commons.wikimedia.org/wiki/File:Th%E1%BB%8Bt_kho_ch%E1%BB%89.jpg,ok
+0402,dish_thit_kho,"File:Vietnamese thit kho, braised pork belly and boiled eggs - 40779385343.jpg","https://commons.wikimedia.org/wiki/File:Vietnamese_thit_kho,_braised_pork_belly_and_boiled_eggs_-_40779385343.jpg",ok
+0403,dish_thit_kho,"File:Vietnamese thit kho, braised pork belly and boiled eggs.jpg","https://commons.wikimedia.org/wiki/File:Vietnamese_thit_kho,_braised_pork_belly_and_boiled_eggs.jpg",ok
+0404,dish_thit_kho,File:Bi-quyet-nau-thit-kho-tau-thom-ngon-vang-ngay1.jpg,https://commons.wikimedia.org/wiki/File:Bi-quyet-nau-thit-kho-tau-thom-ngon-vang-ngay1.jpg,ok
+0405,dish_thit_kho,File:Thit-kho-tieu-1.jpg,https://commons.wikimedia.org/wiki/File:Thit-kho-tieu-1.jpg,ok
+0406,dish_thit_kho,File:Porc au caramel 02.jpg,https://commons.wikimedia.org/wiki/File:Porc_au_caramel_02.jpg,rejected_visual
+0407,dish_thit_kho,File:Porc au caramel.jpg,https://commons.wikimedia.org/wiki/File:Porc_au_caramel.jpg,rejected_visual
+0408,dish_thit_kho,File:Caramelized Pork and Eggs.jpg,https://commons.wikimedia.org/wiki/File:Caramelized_Pork_and_Eggs.jpg,ok
+0409,dish_xoi_xeo,File:Xôi xéo.jpg,https://commons.wikimedia.org/wiki/File:X%C3%B4i_x%C3%A9o.jpg,ok

@@ -1,0 +1,3 @@
+ablation,val_MRR,mode
+none,0.8395452013274772,global
+none,0.8379368536844168,adaptive

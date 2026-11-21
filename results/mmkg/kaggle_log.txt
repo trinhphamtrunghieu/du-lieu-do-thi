@@ -1,0 +1,424 @@
+Ảnh khớp sha256 với repo: 316/316
+$ pip install -q open_clip_torch==3.2.0 papermill
+$ nvidia-smi --query-gpu=name,memory.total --format=csv || true
+name, memory.total [MiB]
+Tesla T4, 15360 MiB
+Tesla T4, 15360 MiB
+$ cd /kaggle/tmp/mmkg && papermill Project3_MMKG_VN.ipynb /kaggle/working/mmkg_out/Project3_MMKG_VN_executed.ipynb -k python3 --log-output
+Input Notebook:  Project3_MMKG_VN.ipynb
+Output Notebook: /kaggle/working/mmkg_out/Project3_MMKG_VN_executed.ipynb
+Executing notebook with kernel: python3
+Executing Cell 1---------------------------------------
+Ending Cell 1------------------------------------------
+Executing Cell 2---------------------------------------
+MMKG_DIR = /kaggle/tmp/mmkg | OUT = /kaggle/working/mmkg_out | SMOKE = False
+
+Ending Cell 2------------------------------------------
+Executing Cell 3---------------------------------------
+Ending Cell 3------------------------------------------
+Executing Cell 4---------------------------------------
+Thực thể theo loại: {'vùng': 4, 'tỉnh': 13, 'loại món': 12, 'cách chế biến': 10, 'nhóm nguyên liệu': 10, 'món': 45, 'nguyên liệu': 54}
+Triple theo quan hệ: {'thuộc_loại': 45, 'xuất_xứ': 45, 'chế_biến_bằng': 56, 'có_nguyên_liệu': 221, 'thuộc_nhóm': 54, 'thuộc_vùng': 13, 'mô_tả': 316}
+Ảnh theo giấy phép: {'CC0': 33, 'CC BY-SA 4.0': 106, 'CC BY-SA 3.0': 36, 'CC BY-SA 2.0': 43, 'Public domain': 40, 'CC BY 3.0': 8, 'CC BY 2.0': 39, 'CC BY 4.0': 9, 'CC BY 2.5': 1, 'CC BY 2.0 kr': 1}
+Ảnh theo cách liên kết: {'category': 186, 'search': 125, 'other_dish_query': 5}
+
+ĐẠT  Số thực thể trong [50, 150]: 148
+ĐẠT  Số triple trong [300, 1000]: 750
+ĐẠT  Số ảnh trong [200, 500]: 316
+Món có ảnh: 44/45; ảnh/món: min 1, trung vị 8, max 10
+Món không có ảnh: ['Lẩu mắm']
+
+Ending Cell 4------------------------------------------
+Executing Cell 5---------------------------------------
+Ending Cell 5------------------------------------------
+Executing Cell 6---------------------------------------
+R1: 367 cặp món–thực thể 1 bước; R2: 227 cặp 2 bước
+
+Ending Cell 6------------------------------------------
+Executing Cell 7---------------------------------------
+Ending Cell 7------------------------------------------
+Executing Cell 8---------------------------------------
+seed 0 {'test': 101, 'val': 70, 'train': 145}
+seed 1 {'test': 99, 'val': 69, 'train': 148}
+seed 2 {'test': 99, 'val': 75, 'train': 142}
+
+Ending Cell 8------------------------------------------
+Executing Cell 9---------------------------------------
+Ending Cell 9------------------------------------------
+Executing Cell 10--------------------------------------
+Counter({('direct', 'both'): 44, ('indirect', 'test'): 44, ('indirect', 'val'): 44, ('paraphrase', 'test'): 24})
+Truy vấn gián tiếp test cần 2 bước suy luận: 41
+  [2 bước] 'món sợi nước của Bắc Bộ, có hoa hồi'  |  'a noodle soup from Northern Vietnam with star anise'  →  Phở bò
+  [2 bước] 'món sợi nước của Bắc Bộ, có thịt gà'  |  'a noodle soup from Northern Vietnam with chicken'  →  Phở gà
+  [2 bước] 'món sợi trộn của Bắc Bộ, có ớt'  |  'a dry noodle dish from Northern Vietnam with chili'  →  Bún chả
+  [2 bước] 'món sợi nước của Trung Bộ, có mắm ruốc'  |  'a noodle soup from Central Vietnam with fermented krill paste'  →  Bún bò Huế
+  [2 bước] 'món sợi nước của Bắc Bộ, có mắm tôm'  |  'a noodle soup from Northern Vietnam with shrimp paste'  →  Bún riêu cua
+  [2 bước] 'món sợi trộn của Nam Bộ, có nước mắm'  |  'a dry noodle dish from Southern Vietnam with fish sauce'  →  Bún thịt nướng
+
+Ending Cell 10-----------------------------------------
+Executing Cell 11--------------------------------------
+Ending Cell 11-----------------------------------------
+Executing Cell 12--------------------------------------
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+open_clip_pytorch_model.bin: reconstructing file:   0%|          |  0.00B / 4.77GB            
+open_clip_pytorch_model.bin: downloading bytes:           |  0.00B            
+config.json:   0%|          | 0.00/616 [00:00<?, ?B/s]
+tokenizer_config.json:   0%|          | 0.00/25.0 [00:00<?, ?B/s]
+sentencepiece.bpe.model:   0%|          | 0.00/5.07M [00:00<?, ?B/s]
+tokenizer.json:   0%|          | 0.00/9.10M [00:00<?, ?B/s]
+mclip_h14: xlm-roberta-large-ViT-H-14/frozen_laion5b_s13b_b90k trên cuda, 65s, ảnh (316, 1024), văn bản (864, 1024)
+
+open_clip_pytorch_model.bin: reconstructing file:   0%|          |  0.00B / 1.46GB            
+open_clip_pytorch_model.bin: downloading bytes:           |  0.00B            
+config.json:   0%|          | 0.00/615 [00:00<?, ?B/s]
+tokenizer_config.json:   0%|          | 0.00/25.0 [00:00<?, ?B/s]
+sentencepiece.bpe.model:   0%|          | 0.00/5.07M [00:00<?, ?B/s]
+tokenizer.json:   0%|          | 0.00/9.10M [00:00<?, ?B/s]
+mclip_b32: xlm-roberta-base-ViT-B-32/laion5b_s13b_b90k trên cuda, 21s, ảnh (316, 512), văn bản (864, 512)
+
+open_clip_model.safetensors: reconstructing file:   0%|          |  0.00B / 1.71GB            
+open_clip_model.safetensors: downloading bytes:           |  0.00B            
+clip_l14_en: ViT-L-14/openai trên cuda, 21s, ảnh (316, 768), văn bản (864, 768)
+Mô hình có đặc trưng: ['mclip_h14', 'mclip_b32', 'clip_l14_en'] | chính: mclip_h14
+
+Ending Cell 12-----------------------------------------
+Executing Cell 13--------------------------------------
+Ending Cell 13-----------------------------------------
+Executing Cell 14--------------------------------------
+Liên kết thực thể đúng hoàn toàn trên 88/88 truy vấn gián tiếp (tiếng Việt có dấu)
+
+Ending Cell 14-----------------------------------------
+Executing Cell 15--------------------------------------
+Ending Cell 15-----------------------------------------
+Executing Cell 16--------------------------------------
+Ending Cell 16-----------------------------------------
+Executing Cell 17--------------------------------------
+Ending Cell 17-----------------------------------------
+Executing Cell 18--------------------------------------
+Ending Cell 18-----------------------------------------
+Executing Cell 19--------------------------------------
+Ending Cell 19-----------------------------------------
+Executing Cell 20--------------------------------------
+full: xong (45s); tham số seed 0: {'alpha': np.float64(0.5), 'lam': 0.5, 'eta': 1.0, 'T': 0.1, 'w2': 0.5}, GNN val acc 0.657
+
+no_kg_attr: xong (75s); tham số seed 0: {'alpha': np.float64(0.4), 'lam': 0.5, 'eta': 0.5, 'T': 0.1, 'w2': 0.5}, GNN val acc 0.629
+
+random_kg: xong (118s); tham số seed 0: {'alpha': np.float64(0.7), 'lam': 0, 'eta': 0, 'T': 0.1, 'w2': 0.5}, GNN val acc 0.629
+
+shuffled_links: xong (156s); tham số seed 0: {'alpha': np.float64(0.9), 'lam': 0.5, 'eta': 0, 'T': 0.1, 'w2': 0.5}, GNN val acc 0.100
+Mô hình: ('xlm-roberta-large-ViT-H-14', 'frozen_laion5b_s13b_b90k'); test; trung bình ± độ lệch chuẩn qua 3 seed
+
+                  config       group  n_queries             R1             R5  \
+0       CLIP (đóng băng)         all        108  0.389 ± 0.015  0.654 ± 0.031   
+1       CLIP (đóng băng)      direct         42  0.492 ± 0.011  0.770 ± 0.062   
+2       CLIP (đóng băng)    indirect         42  0.222 ± 0.030  0.413 ± 0.030   
+3       CLIP (đóng băng)  paraphrase         24  0.500 ± 0.034  0.875 ± 0.068   
+4     CLIP + KG (đầy đủ)         all        108  0.716 ± 0.037  0.886 ± 0.019   
+5     CLIP + KG (đầy đủ)      direct         42  0.714 ± 0.019  0.921 ± 0.011   
+6     CLIP + KG (đầy đủ)    indirect         42  0.706 ± 0.040  0.865 ± 0.022   
+7     CLIP + KG (đầy đủ)  paraphrase         24  0.736 ± 0.071  0.861 ± 0.039   
+8       Bỏ thuộc tính KG         all        108  0.460 ± 0.064  0.688 ± 0.050   
+9       Bỏ thuộc tính KG      direct         42  0.714 ± 0.034  0.913 ± 0.045   
+10      Bỏ thuộc tính KG    indirect         42  0.190 ± 0.078  0.405 ± 0.051   
+11      Bỏ thuộc tính KG  paraphrase         24  0.486 ± 0.104  0.792 ± 0.090   
+12         KG ngẫu nhiên         all        108  0.463 ± 0.039  0.710 ± 0.042   
+13         KG ngẫu nhiên      direct         42  0.706 ± 0.030  0.905 ± 0.039   
+14         KG ngẫu nhiên    indirect         42  0.230 ± 0.040  0.444 ± 0.092   
+15         KG ngẫu nhiên  paraphrase         24  0.444 ± 0.161  0.833 ± 0.000   
+16  Xáo liên kết ảnh–món         all        108  0.392 ± 0.017  0.654 ± 0.035   
+17  Xáo liên kết ảnh–món      direct         42  0.500 ± 0.019  0.778 ± 0.056   
+18  Xáo liên kết ảnh–món    indirect         42  0.214 ± 0.019  0.421 ± 0.011   
+19  Xáo liên kết ảnh–món  paraphrase         24  0.514 ± 0.020  0.847 ± 0.079   
+
+              R10            MRR         nDCG10  
+0   0.787 ± 0.008  0.517 ± 0.015  0.482 ± 0.011  
+1   0.865 ± 0.011  0.634 ± 0.011  0.595 ± 0.011  
+2   0.627 ± 0.022  0.327 ± 0.027  0.286 ± 0.022  
+3   0.931 ± 0.039  0.646 ± 0.039  0.628 ± 0.022  
+4   0.954 ± 0.015  0.796 ± 0.024  0.770 ± 0.013  
+5   0.968 ± 0.030  0.807 ± 0.013  0.791 ± 0.014  
+6   0.921 ± 0.011  0.783 ± 0.027  0.740 ± 0.028  
+7   0.986 ± 0.020  0.800 ± 0.052  0.785 ± 0.008  
+8   0.821 ± 0.029  0.571 ± 0.049  0.563 ± 0.042  
+9   0.960 ± 0.030  0.801 ± 0.028  0.782 ± 0.019  
+10  0.627 ± 0.030  0.312 ± 0.062  0.309 ± 0.059  
+11  0.917 ± 0.034  0.620 ± 0.078  0.623 ± 0.060  
+12  0.784 ± 0.016  0.574 ± 0.029  0.546 ± 0.019  
+13  0.944 ± 0.022  0.793 ± 0.030  0.758 ± 0.036  
+14  0.571 ± 0.051  0.334 ± 0.046  0.305 ± 0.050  
+15  0.875 ± 0.000  0.610 ± 0.098  0.596 ± 0.056  
+16  0.781 ± 0.016  0.521 ± 0.013  0.489 ± 0.009  
+17  0.857 ± 0.019  0.637 ± 0.007  0.597 ± 0.009  
+18  0.619 ± 0.034  0.329 ± 0.020  0.296 ± 0.026  
+19  0.931 ± 0.020  0.657 ± 0.023  0.640 ± 0.010  
+Ending Cell 20-----------------------------------------
+Executing Cell 21--------------------------------------
+Ending Cell 21-----------------------------------------
+Executing Cell 22--------------------------------------
+                     so_sánh       group    n   delta   ci_lo   ci_hi  \
+0              Đầy đủ − CLIP         all  108  0.2789  0.2083  0.3513   
+1              Đầy đủ − CLIP      direct   42  0.1726  0.0731  0.2757   
+2              Đầy đủ − CLIP    indirect   42  0.4563  0.3390  0.5746   
+3              Đầy đủ − CLIP  paraphrase   24  0.1543  0.0373  0.2839   
+0  Đầy đủ − bỏ thuộc tính KG         all  108  0.2256  0.1643  0.2891   
+1  Đầy đủ − bỏ thuộc tính KG      direct   42  0.0059 -0.0187  0.0332   
+2  Đầy đủ − bỏ thuộc tính KG    indirect   42  0.4709  0.3639  0.5792   
+3  Đầy đủ − bỏ thuộc tính KG  paraphrase   24  0.1806  0.0744  0.2959   
+0     Đầy đủ − KG ngẫu nhiên         all  108  0.2219  0.1614  0.2849   
+1     Đầy đủ − KG ngẫu nhiên      direct   42  0.0134 -0.0312  0.0591   
+2     Đầy đủ − KG ngẫu nhiên    indirect   42  0.4485  0.3437  0.5556   
+3     Đầy đủ − KG ngẫu nhiên  paraphrase   24  0.1904  0.0865  0.2981   
+0  Đầy đủ − xáo liên kết ảnh         all  108  0.2747  0.2016  0.3474   
+1  Đầy đủ − xáo liên kết ảnh      direct   42  0.1700  0.0667  0.2772   
+2  Đầy đủ − xáo liên kết ảnh    indirect   42  0.4541  0.3389  0.5720   
+3  Đầy đủ − xáo liên kết ảnh  paraphrase   24  0.1438  0.0164  0.2782   
+
+   p_one_sided  
+0       0.0000  
+1       0.0001  
+2       0.0000  
+3       0.0051  
+0       0.0000  
+1       0.3221  
+2       0.0000  
+3       0.0002  
+0       0.0000  
+1       0.2821  
+2       0.0000  
+3       0.0000  
+0       0.0000  
+1       0.0007  
+2       0.0000  
+3       0.0145  
+Ending Cell 22-----------------------------------------
+Executing Cell 23--------------------------------------
+Ending Cell 23-----------------------------------------
+Executing Cell 24--------------------------------------
+Tham số seed 0: {'alpha': np.float64(0.5), 'lam': 0.5, 'eta': 1.0, 'T': 0.1, 'w2': 0.5}
+
+                                cấu_hình  MRR_all  MRR_direct  MRR_indirect  \
+0                  Tham số chọn trên val    0.829       0.812         0.821   
+1                     Chỉ đồ thị (α = 0)    0.804       0.816         0.815   
+2                       Chỉ CLIP (α = 1)    0.525       0.620         0.363   
+3           Ảnh→món chỉ bằng kNN (λ = 0)    0.766       0.755         0.747   
+4           Ảnh→món chỉ bằng GNN (λ = 1)    0.842       0.825         0.840   
+5  Truy vấn→món chỉ ràng buộc KG (η = 1)    0.829       0.812         0.821   
+6    Truy vấn→món chỉ mô tả node (η = 0)    0.666       0.786         0.455   
+
+   MRR_paraphrase  R1_all  
+0           0.872   0.769  
+1           0.763   0.741  
+2           0.640   0.407  
+3           0.818   0.685  
+4           0.876   0.796  
+5           0.872   0.769  
+6           0.826   0.583  
+Ending Cell 24-----------------------------------------
+Executing Cell 25--------------------------------------
+Ending Cell 25-----------------------------------------
+Executing Cell 26--------------------------------------
+n_queries                              108
+fidelity_score_drop_expl               1.912
+fidelity_score_drop_random             0.009
+frac_rank_worse_expl                   0.722
+frac_rank_worse_random                 0.065
+validity_dstar_is_image_dish           0.796
+validity_triples_exist                 1.000
+sparsity_mean_edges                    5.009
+share_of_graph_score_by_dstar          0.974
+top1_correct                           0.769
+
+Theo nhóm truy vấn:
+            drop_expl  drop_rand  valid_dish  n_explanation_edges
+group                                                            
+direct          0.437     -0.003       0.738                3.524
+indirect        3.022      0.018       0.810                6.524
+paraphrase      2.549      0.017       0.875                4.958
+
+Ending Cell 26-----------------------------------------
+Executing Cell 27--------------------------------------
+       group                                   query         top1_dish  \
+0     direct                                  Phở bò        Bún bò Huế   
+1   indirect     món sợi nước của Bắc Bộ, có hoa hồi            Phở bò   
+2     direct                                  Phở gà            Phở gà   
+3   indirect     món sợi nước của Bắc Bộ, có thịt gà            Phở gà   
+4     direct                                 Bún chả           Bún chả   
+5   indirect          món sợi trộn của Bắc Bộ, có ớt           Bún chả   
+6     direct                              Bún bò Huế  Hủ tiếu Nam Vang   
+7   indirect  món sợi nước của Trung Bộ, có mắm ruốc  Hủ tiếu Nam Vang   
+8     direct                            Bún riêu cua           Cơm hến   
+9   indirect     món sợi nước của Bắc Bộ, có mắm tôm           Cơm hến   
+10    direct                          Bún thịt nướng    Bún thịt nướng   
+11  indirect    món sợi trộn của Nam Bộ, có nước mắm    Bún thịt nướng   
+
+    top1_correct          d_star  \
+0          False          Phở bò   
+1           True          Phở bò   
+2           True          Phở gà   
+3           True          Phở gà   
+4           True         Bún chả   
+5           True         Bún chả   
+6          False      Bún bò Huế   
+7          False      Bún bò Huế   
+8          False    Bún riêu cua   
+9          False    Bún riêu cua   
+10          True  Bún thịt nướng   
+11          True  Bún thịt nướng   
+
+                                                                                                                                                        explanation  
+0                                                                          truy_vấn —nhắc_tên→ Phở bò | ảnh bằng chứng: img_pho_bo_04, img_pho_bo_05, img_pho_bo_07  
+1   Phở bò —thuộc_loại→ món sợi nước | Phở bò —có_nguyên_liệu→ hoa hồi | Phở bò —xuất_xứ→ Hà Nội → Hà Nội —thuộc_vùng→ Bắc Bộ | ảnh bằng chứng: img_pho_bo_05, i...  
+2                                                                          truy_vấn —nhắc_tên→ Phở gà | ảnh bằng chứng: img_pho_ga_05, img_pho_ga_01, img_pho_ga_02  
+3   Phở gà —thuộc_loại→ món sợi nước | Phở gà —có_nguyên_liệu→ thịt gà | Phở gà —xuất_xứ→ Hà Nội → Hà Nội —thuộc_vùng→ Bắc Bộ | ảnh bằng chứng: img_pho_ga_05, i...  
+4                                                                      truy_vấn —nhắc_tên→ Bún chả | ảnh bằng chứng: img_bun_cha_02, img_bun_cha_06, img_bun_cha_03  
+5   Bún chả —thuộc_loại→ món sợi trộn | Bún chả —xuất_xứ→ Hà Nội → Hà Nội —thuộc_vùng→ Bắc Bộ | Bún chả —có_nguyên_liệu→ ớt | ảnh bằng chứng: img_bun_cha_02, im...  
+6                                                          truy_vấn —nhắc_tên→ Bún bò Huế | ảnh bằng chứng: img_bun_bo_hue_07, img_bun_bo_hue_03, img_bun_bo_hue_10  
+7   Bún bò Huế —thuộc_loại→ món sợi nước | Bún bò Huế —xuất_xứ→ Huế → Huế —thuộc_vùng→ Trung Bộ | Bún bò Huế —có_nguyên_liệu→ mắm ruốc | ảnh bằng chứng: img_bun...  
+8                                                              truy_vấn —nhắc_tên→ Bún riêu cua | ảnh bằng chứng: img_bun_rieu_09, img_bun_rieu_04, img_bun_rieu_02  
+9   Bún riêu cua —thuộc_loại→ món sợi nước | Bún riêu cua —có_nguyên_liệu→ mắm tôm | Bún riêu cua —xuất_xứ→ Hà Nội → Hà Nội —thuộc_vùng→ Bắc Bộ | ảnh bằng chứng...  
+10                                         truy_vấn —nhắc_tên→ Bún thịt nướng | ảnh bằng chứng: img_bun_thit_nuong_05, img_bun_thit_nuong_04, img_bun_thit_nuong_02  
+11  Bún thịt nướng —thuộc_loại→ món sợi trộn | Bún thịt nướng —có_nguyên_liệu→ nước mắm | Bún thịt nướng —xuất_xứ→ TP. Hồ Chí Minh → TP. Hồ Chí Minh —thuộc_vùng...  
+Ending Cell 27-----------------------------------------
+Executing Cell 28--------------------------------------
+Ending Cell 28-----------------------------------------
+Executing Cell 29--------------------------------------
+config                                          setup       group   CLIP  \
+0             CLIP tiếng Anh L/14, truy vấn tiếng Anh         all  0.413   
+1             CLIP tiếng Anh L/14, truy vấn tiếng Anh      direct  0.543   
+2             CLIP tiếng Anh L/14, truy vấn tiếng Anh    indirect  0.282   
+3            CLIP tiếng Anh L/14, truy vấn tiếng Việt         all  0.135   
+4            CLIP tiếng Anh L/14, truy vấn tiếng Việt      direct  0.192   
+5            CLIP tiếng Anh L/14, truy vấn tiếng Việt    indirect  0.095   
+6            CLIP tiếng Anh L/14, truy vấn tiếng Việt  paraphrase  0.105   
+7                        CLIP đa ngữ B/32, tiếng Việt         all  0.366   
+8                        CLIP đa ngữ B/32, tiếng Việt      direct  0.474   
+9                        CLIP đa ngữ B/32, tiếng Việt    indirect  0.220   
+10                       CLIP đa ngữ B/32, tiếng Việt  paraphrase  0.433   
+11            CLIP đa ngữ chính, tiếng Việt không dấu         all  0.299   
+12            CLIP đa ngữ chính, tiếng Việt không dấu      direct  0.373   
+13            CLIP đa ngữ chính, tiếng Việt không dấu    indirect  0.219   
+14            CLIP đa ngữ chính, tiếng Việt không dấu  paraphrase  0.308   
+15              CLIP đa ngữ chính, truy vấn tiếng Anh         all  0.465   
+16              CLIP đa ngữ chính, truy vấn tiếng Anh      direct  0.608   
+17              CLIP đa ngữ chính, truy vấn tiếng Anh    indirect  0.322   
+18      xlm-roberta-large-ViT-H-14, tiếng Việt có dấu         all  0.517   
+19      xlm-roberta-large-ViT-H-14, tiếng Việt có dấu      direct  0.634   
+20      xlm-roberta-large-ViT-H-14, tiếng Việt có dấu    indirect  0.327   
+21      xlm-roberta-large-ViT-H-14, tiếng Việt có dấu  paraphrase  0.646   
+
+config  CLIP + KG   ΔMRR  
+0           0.718  0.306  
+1           0.733  0.191  
+2           0.704  0.421  
+3           0.635  0.500  
+4           0.663  0.470  
+5           0.630  0.534  
+6           0.596  0.491  
+7           0.674  0.308  
+8           0.665  0.191  
+9           0.674  0.453  
+10          0.691  0.258  
+11          0.767  0.468  
+12          0.790  0.417  
+13          0.762  0.543  
+14          0.735  0.428  
+15          0.770  0.305  
+16          0.783  0.175  
+17          0.756  0.435  
+18          0.796  0.279  
+19          0.807  0.173  
+20          0.783  0.456  
+21          0.800  0.154  
+Ending Cell 29-----------------------------------------
+Executing Cell 30--------------------------------------
+                                 tập   CLIP  CLIP + đồ thị  \
+0        Flickr8k (phần A, ViT-L/14)  0.800          0.833   
+1   Action Genome (phần A, ViT-L/14)  0.171          0.650   
+2  MMKG ẩm thực — truy vấn trực tiếp  0.634          0.807   
+3  MMKG ẩm thực — truy vấn gián tiếp  0.327          0.783   
+4   MMKG ẩm thực — diễn đạt tự nhiên  0.646          0.800   
+
+                                      ghi_chú      Δ  
+0  caption tiếng Anh; đồ thị ít thông tin mới  0.033  
+1  nhãn hành động/bối cảnh mà CLIP không thấy  0.479  
+2                          tên món tiếng Việt  0.173  
+3                  thuộc tính chỉ có trong KG  0.456  
+4                   viết tay, từ ngữ ngoài KG  0.154  
+Ending Cell 30-----------------------------------------
+Executing Cell 31--------------------------------------
+Ending Cell 31-----------------------------------------
+Executing Cell 32--------------------------------------
+Truy vấn: 'bánh mặn của Huế, có tôm'
+Thực thể nhận ra: ['bánh mặn', 'Huế', 'tôm']
+Món ứng viên từ KG: Bánh bột lọc (0.47), Bánh bèo (0.47), Bánh khọt (0.02)
+ 1. img_banh_bot_loc_06          điểm +2.96 | ảnh là «Bánh bột lọc» | qua món «Bánh bột lọc» (100% điểm đồ thị): Bánh bột lọc —thuộc_loại→ bánh mặn; Bánh bột lọc —xuất_xứ→ Huế; Bánh bột lọc —có_nguyên_liệu→ tôm
+ 2. img_banh_beo_02              điểm +2.47 | ảnh là «Bánh bèo» | qua món «Bánh bèo» (90% điểm đồ thị): Bánh bèo —thuộc_loại→ bánh mặn; Bánh bèo —xuất_xứ→ Huế; Bánh bèo —có_nguyên_liệu→ tôm
+ 3. img_banh_it_02               điểm +2.45 | ảnh là «Bánh ít» | qua món «Bánh bột lọc» (100% điểm đồ thị): Bánh bột lọc —thuộc_loại→ bánh mặn; Bánh bột lọc —xuất_xứ→ Huế; Bánh bột lọc —có_nguyên_liệu→ tôm
+ 4. img_banh_bot_loc_10          điểm +2.26 | ảnh là «Bánh bột lọc» | qua món «Bánh bột lọc» (100% điểm đồ thị): Bánh bột lọc —thuộc_loại→ bánh mặn; Bánh bột lọc —xuất_xứ→ Huế; Bánh bột lọc —có_nguyên_liệu→ tôm
+ 5. img_banh_beo_01              điểm +1.58 | ảnh là «Bánh bèo» | qua món «Bánh bèo» (99% điểm đồ thị): Bánh bèo —thuộc_loại→ bánh mặn; Bánh bèo —xuất_xứ→ Huế; Bánh bèo —có_nguyên_liệu→ tôm
+
+<Figure size 1500x300 with 5 Axes>
+Ending Cell 32-----------------------------------------
+Executing Cell 33--------------------------------------
+Truy vấn: 'món sợi nước của Nam Bộ, có mắm cá'
+Thực thể nhận ra: ['món sợi nước', 'Nam Bộ', 'mắm cá']
+Món ứng viên từ KG: Bún mắm (0.82), Hủ tiếu Nam Vang (0.03), Bánh canh cua (0.03)
+ 1. img_bun_mam_01               điểm +3.70 | ảnh là «Bún mắm» | qua món «Bún mắm» (99% điểm đồ thị): Bún mắm —thuộc_loại→ món sợi nước; Bún mắm —xuất_xứ→ Sóc Trăng —thuộc_vùng→ Nam Bộ; Bún mắm —có_nguyên_liệu→ mắm cá
+ 2. img_banh_canh_cua_02         điểm +3.02 | ảnh là «Bánh canh cua» | qua món «Bún mắm» (99% điểm đồ thị): Bún mắm —thuộc_loại→ món sợi nước; Bún mắm —xuất_xứ→ Sóc Trăng —thuộc_vùng→ Nam Bộ; Bún mắm —có_nguyên_liệu→ mắm cá
+ 3. img_mi_quang_07              điểm +2.68 | ảnh là «Mì Quảng» | qua món «Bún mắm» (100% điểm đồ thị): Bún mắm —thuộc_loại→ món sợi nước; Bún mắm —xuất_xứ→ Sóc Trăng —thuộc_vùng→ Nam Bộ; Bún mắm —có_nguyên_liệu→ mắm cá
+ 4. img_bun_bo_hue_05            điểm +1.90 | ảnh là «Bún bò Huế» | qua món «Bún mắm» (93% điểm đồ thị): Bún mắm —thuộc_loại→ món sợi nước; Bún mắm —xuất_xứ→ Sóc Trăng —thuộc_vùng→ Nam Bộ; Bún mắm —có_nguyên_liệu→ mắm cá
+ 5. img_hu_tieu_nam_vang_03      điểm +1.69 | ảnh là «Hủ tiếu Nam Vang» | qua món «Bún mắm» (98% điểm đồ thị): Bún mắm —thuộc_loại→ món sợi nước; Bún mắm —xuất_xứ→ Sóc Trăng —thuộc_vùng→ Nam Bộ; Bún mắm —có_nguyên_liệu→ mắm cá
+
+<Figure size 1500x300 with 5 Axes>
+Ending Cell 33-----------------------------------------
+Executing Cell 34--------------------------------------
+Truy vấn: 'đồ uống của Hà Nội có trứng'
+Thực thể nhận ra: ['đồ uống', 'Hà Nội', 'trứng']
+Món ứng viên từ KG: Cà phê trứng (0.95), Nem rán (0.03), Phở bò (0.00)
+ 1. img_ca_phe_trung_05          điểm +4.09 | ảnh là «Cà phê trứng» | qua món «Cà phê trứng» (100% điểm đồ thị): Cà phê trứng —thuộc_loại→ đồ uống; Cà phê trứng —xuất_xứ→ Hà Nội; Cà phê trứng —có_nguyên_liệu→ trứng
+ 2. img_ca_phe_sua_da_05         điểm +3.25 | ảnh là «Cà phê sữa đá» | qua món «Cà phê trứng» (100% điểm đồ thị): Cà phê trứng —thuộc_loại→ đồ uống; Cà phê trứng —xuất_xứ→ Hà Nội; Cà phê trứng —có_nguyên_liệu→ trứng
+ 3. img_ca_phe_trung_09          điểm +3.03 | ảnh là «Cà phê trứng» | qua món «Cà phê trứng» (100% điểm đồ thị): Cà phê trứng —thuộc_loại→ đồ uống; Cà phê trứng —xuất_xứ→ Hà Nội; Cà phê trứng —có_nguyên_liệu→ trứng
+ 4. img_ca_phe_trung_08          điểm +2.15 | ảnh là «Cà phê trứng» | qua món «Cà phê trứng» (100% điểm đồ thị): Cà phê trứng —thuộc_loại→ đồ uống; Cà phê trứng —xuất_xứ→ Hà Nội; Cà phê trứng —có_nguyên_liệu→ trứng
+ 5. img_thit_kho_08              điểm +1.00 | ảnh là «Thịt kho trứng» | qua món «Cà phê trứng» (72% điểm đồ thị): Cà phê trứng —thuộc_loại→ đồ uống; Cà phê trứng —xuất_xứ→ Hà Nội; Cà phê trứng —có_nguyên_liệu→ trứng
+
+<Figure size 1500x300 with 5 Axes>
+Ending Cell 34-----------------------------------------
+Executing Cell 35--------------------------------------
+Ending Cell 35-----------------------------------------
+Executing Cell 36--------------------------------------
+{"entities": 148, "triples_total": 750, "triples_knowledge": 434, "triples_image": 316, "images": 316, "dishes": 45}
+Test (tất cả truy vấn): CLIP MRR 0.517 → CLIP + KG 0.796; R@1 0.389 → 0.716
+direct {'CLIP (đóng băng)': 0.634, 'CLIP + KG (đầy đủ)': 0.807, 'Bỏ thuộc tính KG': 0.801, 'KG ngẫu nhiên': 0.793, 'Xáo liên kết ảnh–món': 0.637}
+indirect {'CLIP (đóng băng)': 0.327, 'CLIP + KG (đầy đủ)': 0.783, 'Bỏ thuộc tính KG': 0.312, 'KG ngẫu nhiên': 0.334, 'Xáo liên kết ảnh–món': 0.329}
+paraphrase {'CLIP (đóng băng)': 0.646, 'CLIP + KG (đầy đủ)': 0.8, 'Bỏ thuộc tính KG': 0.62, 'KG ngẫu nhiên': 0.61, 'Xáo liên kết ảnh–món': 0.657}
+
+Ending Cell 36-----------------------------------------
+$ ls -la /kaggle/working/mmkg_out
+total 13668
+drwxr-xr-x 2 root root    4096 Nov 17 03:30 .
+drwxr-xr-x 3 root root    4096 Nov 17 03:20 ..
+-rw-r--r-- 1 root root     978 Nov 17 03:26 component_ablation_seed0.csv
+-rw-r--r-- 1 root root     673 Nov 17 03:30 cross_dataset.csv
+-rw-r--r-- 1 root root    8086 Nov 17 03:21 entities.csv
+-rw-r--r-- 1 root root 3676056 Nov 17 03:23 feats_clip_l14_en.npz
+-rw-r--r-- 1 root root 2467736 Nov 17 03:23 feats_mclip_b32.npz
+-rw-r--r-- 1 root root 4884376 Nov 17 03:23 feats_mclip_h14.npz
+-rw-r--r-- 1 root root    4639 Nov 17 03:26 main_results.csv
+-rw-r--r-- 1 root root    1789 Nov 17 03:26 paired_tests.csv
+-rw-r--r-- 1 root root 2696084 Nov 17 03:30 Project3_MMKG_VN_executed.ipynb
+-rw-r--r-- 1 root root   61727 Nov 17 03:21 queries.json
+-rw-r--r-- 1 root root   26668 Nov 17 03:21 splits.json
+-rw-r--r-- 1 root root    5337 Nov 17 03:30 summary.json
+-rw-r--r-- 1 root root   11710 Nov 17 03:30 transfer_results.csv
+-rw-r--r-- 1 root root   60076 Nov 17 03:21 triples.csv
+-rw-r--r-- 1 root root   41288 Nov 17 03:27 xai_per_query.csv
+-rw-r--r-- 1 root root     435 Nov 17 03:27 xai_summary.json
+/usr/local/lib/python3.13/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+  cells[i][c] = re.sub('\\\\\|', '|', cell)
+/usr/local/lib/python3.13/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+  text = re.sub(r'_', '\_', text) # Escape underscores in display text
+[NbConvertApp] Converting notebook __script__.ipynb to html
+[NbConvertApp] Writing 371896 bytes to __results__.html

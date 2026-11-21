@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Truy vấn MMKG Ẩm thực</title>
+<style>
+:root{--bg:#fbfaf7;--fg:#1f2328;--muted:#667;--card:#fff;--line:#e3e0d8;--accent:#c8553d;--ok:#2a9d8f;--bad:#c1121f;--chip:#f1ede4}
+@media (prefers-color-scheme:dark){:root{--bg:#16181c;--fg:#e8e6e1;--muted:#9aa;--card:#1f2227;--line:#33373e;--accent:#e9785f;--ok:#4cc9b0;--bad:#ff6b6b;--chip:#2a2e35}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:1080px;margin:0 auto;padding:20px 16px 60px}
+h1{font-size:22px;margin:0 0 4px}
+.sub{color:var(--muted);font-size:13px;margin-bottom:16px}
+.ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+input,select{font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg)}
+input{flex:1 1 320px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 14px}
+.chip{background:var(--chip);border:1px solid var(--line);border-radius:999px;padding:3px 10px;font-size:13px;cursor:pointer;color:var(--fg)}
+.qhead{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-bottom:12px;font-size:14px}
+.res{display:flex;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;margin-bottom:12px}
+.res img.thumb{width:200px;height:auto;border-radius:6px;flex:0 0 200px;align-self:flex-start}
+.res .body{flex:1;min-width:0}
+.cap{font-size:11px;color:var(--muted);word-break:break-word}
+.ok{color:var(--ok)} .bad{color:var(--bad)}
+ul{margin:4px 0 6px;padding-left:20px}
+.fid{font-size:12.5px;background:var(--chip);border-radius:6px;padding:5px 8px;margin:6px 0}
+svg{width:100%;height:auto;display:block;margin-top:6px}
+svg text{fill:var(--fg);font-size:11px}
+.note{font-size:12.5px;color:var(--muted);margin-top:20px}
+@media (max-width:640px){.res{flex-direction:column}.res img.thumb{width:100%;flex:none}}
+</style>
+</head>
+<body>
+<main>
+<h1>Truy vấn ảnh món ăn Việt Nam có giải thích bằng đồ thị tri thức</h1>
+<div class="sub" id="sub"></div>
+<div class="ctl">
+  <input id="q" list="qlist" placeholder="Gõ để lọc truy vấn đã tính sẵn…" autocomplete="off">
+  <datalist id="qlist"></datalist>
+  <select id="grp"><option value="">mọi nhóm</option></select>
+</div>
+<div class="chips" id="chips"></div>
+<div id="out"></div>
+<div class="note">
+Đây là bản <b>tĩnh</b> (GitHub Pages không chạy được mô hình): kết quả được tính sẵn bằng <code>demo/export_static.py</code> cho các truy vấn ở trên,
+trên ảnh test của seed 0. Muốn nhập truy vấn tự do, chạy <code>demo/app.py</code> hoặc notebook <code>demo/Demo_Truy_Van.ipynb</code>.
+Ảnh từ Wikimedia Commons, ghi tác giả và giấy phép dưới mỗi ảnh.
+</div>
+</main>
+<script src="data.js"></script>
+<script>
+const D = window.DEMO, $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const hp = D.meta.hp;
+$("#sub").innerHTML = `Điểm = α·z(cos CLIP) + (1−α)·z(Σ<sub>d</sub> P(món d | truy vấn)·p(món d | ảnh)). Giải thích = các số hạng của điểm đồ thị:
+món trung gian d*, đường đi KG từ thực thể trong truy vấn tới d*, ảnh train có cạnh <i>mô_tả</i> → d*.<br>
+Mô hình <code>${esc(D.meta.model)}</code> · α=${hp.alpha}, λ=${hp.lam}, η=${hp.eta}, T=${hp.T}, w2=${hp.w2} (chọn trên val, MRR ${D.meta.val_mrr.toFixed(3)}) · gallery ${D.meta.gallery_size} ảnh test`;
+const groups = [...new Set(D.queries.map(q => q.group))];
+for (const g of groups) $("#grp").insertAdjacentHTML("beforeend", `<option>${esc(g)}</option>`);
+for (const q of D.queries) $("#qlist").insertAdjacentHTML("beforeend", `<option value="${esc(q.query)}">${esc(q.group)}</option>`);
+function chips(){
+  const g = $("#grp").value;
+  $("#chips").innerHTML = D.queries.filter(q => !g || q.group === g).slice(0, 40)
+    .map(q => `<button class="chip" data-q="${esc(q.query)}">${esc(q.query)}</button>`).join("");
+}
+$("#chips").addEventListener("click", e => { if (e.target.dataset.q) { $("#q").value = e.target.dataset.q; show(); } });
+$("#grp").addEventListener("change", chips);
+$("#q").addEventListener("input", show);
+
+const COL = {query:"#f4a261",result:"#2a9d8f","món":"#e76f51",evidence:"#8ab17d",unmatched:"#bbbbbb","loại món":"#457b9d","tỉnh":"#6d597a","vùng":"#9d4edd","nguyên liệu":"#e9c46a","nhóm nguyên liệu":"#f2cc8f","cách chế biến":"#81b29a"};
+function graphSVG(G){
+  const kind = {}, col = {};
+  G.nodes.forEach(n => kind[n.id] = n.kind);
+  G.nodes.forEach(n => col[n.id] = n.kind==="query"?0:(n.kind==="result"||n.kind==="evidence")?4:n.kind==="món"?3:1);
+  G.nodes.forEach(n => { if (col[n.id]===1 && G.edges.some(e=>e.t===n.id&&kind[e.s]==="món") && G.edges.some(e=>e.s===n.id&&kind[e.t]!=="món")) col[n.id]=2; });
+  const W=900, colX=[80,270,450,630,810], pos={}; let maxN=1;
+  for (let c=0;c<5;c++){ const ns=G.nodes.filter(n=>col[n.id]===c); maxN=Math.max(maxN,ns.length); ns.forEach((n,i)=>pos[n.id]=[colX[c],i]); }
+  const H=Math.max(160, maxN*62+30);
+  for (let c=0;c<5;c++){ const ns=G.nodes.filter(n=>col[n.id]===c); ns.forEach((n,i)=>pos[n.id]=[colX[c], H/2+(i-(ns.length-1)/2)*62]); }
+  const R=26; let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Đồ thị con giải thích"><defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0L10,5L0,10z" fill="#888"/></marker></defs>`;
+  for (const e of G.edges){
+    const [x1,y1]=pos[e.s],[x2,y2]=pos[e.t], dx=x2-x1, dy=y2-y1, L=Math.hypot(dx,dy)||1;
+    const a=[x1+dx/L*R,y1+dy/L*R], b=[x2-dx/L*(R+2),y2-dy/L*(R+2)];
+    const dash = e.kind==="mention"?"6 4":e.kind==="pred"?"2 3":"";
+    s+=`<line x1="${a[0]}" y1="${a[1]}" x2="${b[0]}" y2="${b[1]}" stroke="#888" stroke-width="1.3" stroke-dasharray="${dash}" marker-end="url(#ar)"/>`;
+    s+=`<text x="${(a[0]+b[0])/2}" y="${(a[1]+b[1])/2-4}" text-anchor="middle" style="font-size:10px;opacity:.85">${esc(e.label)}</text>`;
+  }
+  for (const n of G.nodes){
+    const [x,y]=pos[n.id], lines=String(n.label).split("\n").flatMap(l=>l.match(/.{1,18}(\s|$)|\S+/g)||[l]).slice(0,4);
+    s+=`<circle cx="${x}" cy="${y}" r="${R}" fill="${COL[n.kind]||"#ccc"}" stroke="#333" stroke-width=".6"/>`;
+    lines.forEach((l,i)=> s+=`<text x="${x}" y="${y+(i-(lines.length-1)/2)*12+4}" text-anchor="middle" style="font-size:10.5px;fill:#111;paint-order:stroke;stroke:#fff;stroke-width:2.5px">${esc(l.trim())}</text>`);
+  }
+  return s+"</svg>";
+}
+function show(){
+  const t = $("#q").value.trim();
+  const Q = D.queries.find(q => q.query === t);
+  if (!Q) { $("#out").innerHTML = t ? `<div class="qhead">Chưa có kết quả tính sẵn cho truy vấn này — chọn trong danh sách gợi ý.</div>` : ""; return; }
+  let h = `<div class="qhead"><b>«${esc(Q.query)}»</b> <span class="cap">(${esc(Q.group)}${Q.gold?` · đáp án: ${esc(Q.gold.join(", "))}`:""})</span><br>
+  <b>Thực thể nhận ra:</b> ${Q.entities.length?Q.entities.map(esc).join(", "):"— (chỉ CLIP + mô tả node)"}<br>
+  <b>P(món | truy vấn):</b> ${Q.query_dishes.map(([d,p])=>`${esc(d)} ${p.toFixed(2)}`).join(", ")}</div>`;
+  for (const r of Q.results){
+    const mark = r.correct===null?"":r.correct?` <span class="ok">✓ đúng</span>`:` <span class="bad">✗ sai</span>`;
+    let li = r.paths.map(p=>`<li>${esc(p)}</li>`).join("") + r.unmatched.map(u=>`<li class="bad">ràng buộc «${esc(u)}» không thỏa với món này</li>`).join("");
+    if (r.evidence.length) li += `<li>ảnh train gần nhất —mô_tả→ ${esc(r.d_star)}: ${r.evidence.map(esc).join(", ")}</li>`;
+    const f = r.fidelity ? `<div class="fid"><b>Fidelity</b> — xoá ${f0(r.fidelity)}</div>` : "";
+    h += `<div class="res"><div><img class="thumb" src="img/${esc(r.img)}.jpg" alt="${esc(r.dish)}" loading="lazy">
+      <div class="cap">${esc(r.img)} · ${esc(r.author)} · <a href="${esc(r.source)}" target="_blank" rel="noopener">${esc(r.license)}</a></div></div>
+      <div class="body"><div><b>#${r.rank} — ảnh là «${esc(r.dish)}»</b>${mark} · <span class="${r.via_ok?"ok":"bad"}">qua món «${esc(r.d_star)}»</span></div>
+      <div>điểm <b>${r.score.toFixed(2)}</b> = CLIP ${r.part_clip.toFixed(2)} + đồ thị ${r.part_graph.toFixed(2)} <span class="cap">(cos ${r.cos}; d* chiếm ${(r.share*100).toFixed(0)}% điểm đồ thị)</span></div>
+      <ul>${li}</ul>${f}${graphSVG(r.graph)}</div></div>`;
+  }
+  $("#out").innerHTML = h;
+}
+function f0(f){ return `${f.n_edges} cạnh của giải thích (không huấn luyện lại): điểm ${f.score_before.toFixed(2)} → ${f.score_after_expl.toFixed(2)}, hạng ${f.rank_before} → ${f.rank_after_expl} · xoá ngẫu nhiên cùng số cạnh: điểm ${f.score_after_rand.toFixed(2)}, hạng ${f.rank_after_rand.toFixed(1)}`; }
+chips(); $("#q").value = D.queries[0].query; show();
+</script>
+</body>
+</html>

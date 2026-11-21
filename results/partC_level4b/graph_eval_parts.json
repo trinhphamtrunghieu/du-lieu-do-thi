@@ -1,0 +1,65 @@
+{
+  "explore": {
+    "part": "test",
+    "kind": "exploratory_test_6th_look",
+    "n_queries": 27763,
+    "n_videos": 670,
+    "candidate_recall": 0.9439902027878831,
+    "groups": {
+      "direct": 19621,
+      "indirect": 4906,
+      "other": 3236
+    },
+    "predicate_groups": {
+      "pred_common": 22881,
+      "no_pred": 2895,
+      "pred_rare": 1987
+    },
+    "seconds": 673.1,
+    "cand_hashes": [
+      "ff2b36782a59"
+    ]
+  },
+  "confirm": {
+    "part": "ext",
+    "kind": "confirmatory",
+    "n_queries": 20000,
+    "n_videos": 1000,
+    "candidate_recall": 0.88005,
+    "groups": {
+      "other": 4394,
+      "indirect": 4089,
+      "direct": 11517
+    },
+    "predicate_groups": {
+      "pred_common": 16798,
+      "no_pred": 1497,
+      "pred_rare": 1705
+    },
+    "seconds": 486.1,
+    "cand_hashes": [
+      "99e19395eed2"
+    ]
+  },
+  "confirm_std": {
+    "part": "ext_std",
+    "kind": "confirmatory_secondary",
+    "n_queries": 1000,
+    "n_videos": 1000,
+    "candidate_recall": 0.879,
+    "groups": {
+      "other": 235,
+      "direct": 570,
+      "indirect": 195
+    },
+    "predicate_groups": {
+      "pred_common": 824,
+      "pred_rare": 88,
+      "no_pred": 88
+    },
+    "seconds": 24.9,
+    "cand_hashes": [
+      "55eb0660ee58"
+    ]
+  }
+}

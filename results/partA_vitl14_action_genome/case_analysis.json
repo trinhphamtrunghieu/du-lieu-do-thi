@@ -1,0 +1,382 @@
+[
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A person is putting some plates in a box. They pick up the box and put it on a bed. They then pick up a blanke",
+    "group": "direct",
+    "rank_clip": 100,
+    "rank_graph": 1,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ box",
+        "pattern": "P0_contains",
+        "contribution": 0.7732999324798584
+      },
+      {
+        "text": "ảnh –chứa→ blanket",
+        "pattern": "P0_contains",
+        "contribution": 0.6469080448150635
+      },
+      {
+        "text": "ảnh –chứa→ bedroom –liên_quan→ bed",
+        "pattern": "P3_related",
+        "contribution": 0.1128227710723877
+      },
+      {
+        "text": "ảnh –chứa→ put box –là_một→ put",
+        "pattern": "P2_isa",
+        "contribution": 0.11176228523254395
+      },
+      {
+        "text": "ảnh –chứa→ put dish –là_một→ put",
+        "pattern": "P2_isa",
+        "contribution": 0.11176228523254395
+      }
+    ],
+    "detail": {
+      "n_paths": 41,
+      "score_full": 3.083979845046997,
+      "score_without_explanation": 0.34850844740867615,
+      "score_only_explanation": 2.8657114505767822,
+      "score_without_random": 2.6337227821350098,
+      "sparsity": 0.8780487804878049,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A person takes a seat on a couch and looks at their phone. They put down the phone and look at the television.",
+    "group": "direct",
+    "rank_clip": 100,
+    "rank_graph": 4,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ look television",
+        "pattern": "P0_contains",
+        "contribution": 0.33656811714172363
+      },
+      {
+        "text": "ảnh –chứa→ television",
+        "pattern": "P0_contains",
+        "contribution": 0.334911584854126
+      },
+      {
+        "text": "ảnh –chứa→ sofa",
+        "pattern": "P0_contains",
+        "contribution": 0.2767152786254883
+      },
+      {
+        "text": "ảnh –chứa→ look phone",
+        "pattern": "P0_contains",
+        "contribution": 0.21077966690063477
+      },
+      {
+        "text": "ảnh –chứa→ phone",
+        "pattern": "P0_contains",
+        "contribution": 0.19466352462768555
+      }
+    ],
+    "detail": {
+      "n_paths": 52,
+      "score_full": 4.202497482299805,
+      "score_without_explanation": 0.7613572478294373,
+      "score_only_explanation": 3.4411404132843018,
+      "score_without_random": 4.092584013938904,
+      "sparsity": 0.9038461538461539,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A person sets down  her cup on a table. The person pulls out a phone and looks at it.",
+    "group": "direct",
+    "rank_clip": 99,
+    "rank_graph": 3,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ phone",
+        "pattern": "P0_contains",
+        "contribution": 0.48751020431518555
+      },
+      {
+        "text": "ảnh –chứa→ table",
+        "pattern": "P0_contains",
+        "contribution": 0.40831875801086426
+      },
+      {
+        "text": "ảnh –chứa→ cup",
+        "pattern": "P0_contains",
+        "contribution": 0.39336681365966797
+      },
+      {
+        "text": "ảnh –chứa→ look cup –là_một→ look",
+        "pattern": "P2_isa",
+        "contribution": 0.014127254486083984
+      },
+      {
+        "text": "ảnh –chứa→ look phone –là_một→ look",
+        "pattern": "P2_isa",
+        "contribution": 0.014127254486083984
+      }
+    ],
+    "detail": {
+      "n_paths": 25,
+      "score_full": 2.433695077896118,
+      "score_without_explanation": 0.02933807671070099,
+      "score_only_explanation": 2.405374050140381,
+      "score_without_random": 2.124324142932892,
+      "sparsity": 0.8,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A person tidies the floor with a broom. They put down the broom, then take a picture from the top of a cabinet",
+    "group": "direct",
+    "rank_clip": 96,
+    "rank_graph": 1,
+    "explanation": [
+      {
+        "text": "ảnh –thể_hiện→ ⟨tidy floor before sit⟩",
+        "pattern": "P6_triple",
+        "contribution": 0.4055452346801758
+      },
+      {
+        "text": "ảnh –chứa→ tidy floor",
+        "pattern": "P0_contains",
+        "contribution": 0.3408064842224121
+      },
+      {
+        "text": "ảnh –chứa→ broom",
+        "pattern": "P0_contains",
+        "contribution": 0.34009361267089844
+      },
+      {
+        "text": "ảnh –chứa→ sit",
+        "pattern": "P0_contains",
+        "contribution": 0.24157190322875977
+      },
+      {
+        "text": "ảnh –chứa→ floor",
+        "pattern": "P0_contains",
+        "contribution": 0.2147679328918457
+      }
+    ],
+    "detail": {
+      "n_paths": 129,
+      "score_full": 4.835009574890137,
+      "score_without_explanation": 2.46695876121521,
+      "score_only_explanation": 3.515228509902954,
+      "score_without_random": 4.797651147842407,
+      "sparsity": 0.9612403100775194,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THÀNH CÔNG",
+    "query": "A person walks into the room holding a phone and sits down in a chair. They watch the television and then look",
+    "group": "direct",
+    "rank_clip": 97,
+    "rank_graph": 2,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ look television",
+        "pattern": "P0_contains",
+        "contribution": 0.26613950729370117
+      },
+      {
+        "text": "ảnh –chứa→ television",
+        "pattern": "P0_contains",
+        "contribution": 0.2648649215698242
+      },
+      {
+        "text": "ảnh –chứa→ sit",
+        "pattern": "P0_contains",
+        "contribution": 0.1735215187072754
+      },
+      {
+        "text": "ảnh –chứa→ look phone",
+        "pattern": "P0_contains",
+        "contribution": 0.1683521270751953
+      },
+      {
+        "text": "ảnh –chứa→ hold phone",
+        "pattern": "P0_contains",
+        "contribution": 0.1570892333984375
+      }
+    ],
+    "detail": {
+      "n_paths": 48,
+      "score_full": 4.31333589553833,
+      "score_without_explanation": 2.627835512161255,
+      "score_only_explanation": 3.392624616622925,
+      "score_without_random": 4.126292610168457,
+      "sparsity": 0.8958333333333334,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A person walks up some stairs and drops something down the stairs. The person then peers down at the camera an",
+    "group": "direct",
+    "rank_clip": 1,
+    "rank_graph": 46,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ stair",
+        "pattern": "P0_contains",
+        "contribution": 1.8237625192850828
+      }
+    ],
+    "detail": {
+      "n_paths": 2,
+      "score_full": 1.8427578210830688,
+      "score_without_explanation": 0.01899530179798603,
+      "score_only_explanation": 1.8237624168395996,
+      "score_without_random": 1.462808993831277,
+      "sparsity": 0.5,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A person walks around a room before tossing a blanket at a wall. The person proceeds to walk away and a dog co",
+    "group": "indirect",
+    "rank_clip": 7,
+    "rank_graph": 50,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ run –liên_quan→ walk doorway –là_một→ walk",
+        "pattern": "P5_related_isa",
+        "contribution": 0.01246233843266964
+      }
+    ],
+    "detail": {
+      "n_paths": 2,
+      "score_full": 0.031423356384038925,
+      "score_without_explanation": 0.018961017951369286,
+      "score_only_explanation": 0.01899530179798603,
+      "score_without_random": 0.018988445028662683,
+      "sparsity": 0.5,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A person laying on a bed reaches over the end towards a box sitting on the floor.",
+    "group": "direct",
+    "rank_clip": 39,
+    "rank_graph": 73,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ bed",
+        "pattern": "P0_contains",
+        "contribution": 1.7257199510931969
+      },
+      {
+        "text": "ảnh –chứa→ bed –afford→ sit bed –là_một→ sit",
+        "pattern": "P4_scene_isa",
+        "contribution": 0.02612745761871338
+      },
+      {
+        "text": "ảnh –chứa→ touch bed –liên_quan→ sit bed –là_một→ sit",
+        "pattern": "P5_related_isa",
+        "contribution": 0.008816242218017578
+      },
+      {
+        "text": "ảnh –chứa→ bed –liên_quan→ sit bed –là_một→ sit",
+        "pattern": "P5_related_isa",
+        "contribution": 0.007791280746459961
+      },
+      {
+        "text": "ảnh –chứa→ awaken bed –liên_quan→ sit bed –là_một→ sit",
+        "pattern": "P5_related_isa",
+        "contribution": 0.007162332534790039
+      }
+    ],
+    "detail": {
+      "n_paths": 10,
+      "score_full": 1.8316659927368164,
+      "score_without_explanation": 0.04778972640633583,
+      "score_only_explanation": 1.8182260990142822,
+      "score_without_random": 0.24103775173425673,
+      "sparsity": 0.5,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "Person looking in the closet moving items on the shelf person moving clothes on hangers around the closet.",
+    "group": "direct",
+    "rank_clip": 8,
+    "rank_graph": 28,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ shelf",
+        "pattern": "P0_contains",
+        "contribution": 0.5013449192047119
+      },
+      {
+        "text": "ảnh –chứa→ look closet",
+        "pattern": "P0_contains",
+        "contribution": 0.45572805404663086
+      },
+      {
+        "text": "ảnh –chứa→ closet",
+        "pattern": "P0_contains",
+        "contribution": 0.4022035598754883
+      },
+      {
+        "text": "ảnh –chứa→ look doorway –là_một→ look",
+        "pattern": "P2_isa",
+        "contribution": 0.013237953186035156
+      },
+      {
+        "text": "ảnh –chứa→ look door –là_một→ look",
+        "pattern": "P2_isa",
+        "contribution": 0.013237953186035156
+      }
+    ],
+    "detail": {
+      "n_paths": 63,
+      "score_full": 2.826946496963501,
+      "score_without_explanation": 0.07595852017402649,
+      "score_only_explanation": 2.753844738006592,
+      "score_without_random": 2.6273106813430784,
+      "sparsity": 0.9206349206349207,
+      "validity": 1.0
+    }
+  },
+  {
+    "kind": "THẤT BẠI",
+    "query": "A person is cooking in the kitchen",
+    "group": "direct",
+    "rank_clip": 5,
+    "rank_graph": 24,
+    "explanation": [
+      {
+        "text": "ảnh –chứa→ kitchen",
+        "pattern": "P0_contains",
+        "contribution": 1.373921275138855
+      },
+      {
+        "text": "ảnh –chứa→ cook food –là_một→ cook",
+        "pattern": "P2_isa",
+        "contribution": 0.6005465984344482
+      },
+      {
+        "text": "ảnh –chứa→ kitchen –liên_quan→ cook food –là_một→ cook",
+        "pattern": "P5_related_isa",
+        "contribution": 0.021806836128234863
+      }
+    ],
+    "detail": {
+      "n_paths": 4,
+      "score_full": 2.009063720703125,
+      "score_without_explanation": 0.01278871763497591,
+      "score_only_explanation": 1.9962750673294067,
+      "score_without_random": 0.1918215911835432,
+      "sparsity": 0.25,
+      "validity": 1.0
+    }
+  }
+]

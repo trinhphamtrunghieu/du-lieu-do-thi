@@ -1,0 +1,156 @@
+{
+  "config": {
+    "K": 30,
+    "clip": "ViT-L-14/laion2b_s32b_b82k",
+    "dedup_source": true,
+    "feats": {
+      "G1_clip_graph": [
+        "clip",
+        "hub_clip",
+        "br_clip"
+      ],
+      "G1_ctrl_both": [
+        "clip",
+        "hub_clip",
+        "br_clip"
+      ],
+      "M0_clip": [
+        "clip"
+      ],
+      "M1_clip_pe_flat": [
+        "clip",
+        "pe"
+      ],
+      "M2_clip_pe_hub": [
+        "clip",
+        "pe",
+        "hub_clip",
+        "hub_pe"
+      ],
+      "M3_clip_pe_bridge": [
+        "clip",
+        "pe",
+        "br_clip",
+        "br_pe"
+      ],
+      "M4_ctrl_both": [
+        "clip",
+        "pe",
+        "hub_clip",
+        "hub_pe",
+        "br_clip",
+        "br_pe"
+      ],
+      "M4_ctrl_bridge_shuffled": [
+        "clip",
+        "pe",
+        "hub_clip",
+        "hub_pe",
+        "br_clip",
+        "br_pe"
+      ],
+      "M4_ctrl_hub_random": [
+        "clip",
+        "pe",
+        "hub_clip",
+        "hub_pe",
+        "br_clip",
+        "br_pe"
+      ],
+      "M4_full_graph": [
+        "clip",
+        "pe",
+        "hub_clip",
+        "hub_pe",
+        "br_clip",
+        "br_pe"
+      ]
+    },
+    "hp": {
+      "bridge_m": 64,
+      "bridge_tau": 0.02,
+      "hub_k": 8
+    },
+    "pe": "PE-Core-L-14-336/meta",
+    "pooling": {
+      "n_frames": 12,
+      "pooling": "centrality",
+      "val_MRR": 0.8094808581263709
+    },
+    "vlm": {
+      "M": 10,
+      "beta": 0.5,
+      "beta_clip": 0.5,
+      "grid": 3,
+      "model": "Qwen/Qwen2.5-VL-7B-Instruct",
+      "prompt": "The image shows 9 frames of one video in temporal order (left to right, top to bottom). Does the video show the following: \"<query>\"? Answer yes or no.",
+      "vis_fp32": false
+    },
+    "weights": {
+      "G1_clip_graph": [
+        1.8278566541969534,
+        -0.9738939733786495,
+        0.4251899789178407
+      ],
+      "G1_ctrl_both": [
+        1.788194585235529,
+        -0.215399934193292,
+        -0.22236757949341762
+      ],
+      "M0_clip": [
+        1.8048326591720387
+      ],
+      "M1_clip_pe_flat": [
+        0.12422803653929294,
+        2.472371515658146
+      ],
+      "M2_clip_pe_hub": [
+        0.2021942063741024,
+        2.424775657346226,
+        -0.1283641730388982,
+        -0.30952933110884506
+      ],
+      "M3_clip_pe_bridge": [
+        0.0773809521483148,
+        2.3724183447999607,
+        0.018357729701726964,
+        0.20130620362007726
+      ],
+      "M4_ctrl_both": [
+        0.09053173199300879,
+        2.5241956049565295,
+        -0.03449953949271808,
+        -0.13173283187848242,
+        0.15995157828833464,
+        -0.5172608853734655
+      ],
+      "M4_ctrl_bridge_shuffled": [
+        0.18720873242295666,
+        2.462063471827336,
+        -0.08132828723090837,
+        -0.2534660093470713,
+        0.16047318383985326,
+        -0.5093792568433204
+      ],
+      "M4_ctrl_hub_random": [
+        0.029175425888836762,
+        2.388466073106359,
+        -0.2600321380309351,
+        -0.08468271013773951,
+        0.05852958253122108,
+        0.19423874429744692
+      ],
+      "M4_full_graph": [
+        0.1812951369210405,
+        2.244651215929726,
+        -0.21558786436289148,
+        -0.3609391912337198,
+        0.05435222802187105,
+        0.2653855583270105
+      ]
+    }
+  },
+  "sha1": "b21cc9d20c2b",
+  "frozen_at": 1794872066.7732077,
+  "frozen_at_str": "2026-11-16 23:34:26"
+}

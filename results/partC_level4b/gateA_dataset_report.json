@@ -1,0 +1,246 @@
+{
+  "source": "zip",
+  "source_label": "hf_hub_download",
+  "n_video_files": 1970,
+  "json": {
+    "train": "/tmp/msvd_hf/msvd_train.json",
+    "val": "/tmp/msvd_hf/msvd_val.json",
+    "test": "/tmp/msvd_hf/msvd_test.json"
+  },
+  "splits": {
+    "train": {
+      "videos": 1200,
+      "captions": 48774,
+      "fields": [
+        "caption",
+        "source",
+        "video",
+        "video_id"
+      ],
+      "missing_files": 0,
+      "missing_examples": [],
+      "captions_per_video": [
+        18,
+        40.6,
+        66
+      ],
+      "video_field_is_filename": true
+    },
+    "val": {
+      "videos": 100,
+      "captions": 4290,
+      "fields": [
+        "caption",
+        "source",
+        "video",
+        "video_id"
+      ],
+      "missing_files": 0,
+      "missing_examples": [],
+      "captions_per_video": [
+        25,
+        42.9,
+        62
+      ],
+      "video_field_is_filename": true
+    },
+    "test": {
+      "videos": 670,
+      "captions": 27763,
+      "fields": [
+        "caption",
+        "source",
+        "video",
+        "video_id"
+      ],
+      "missing_files": 0,
+      "missing_examples": [],
+      "captions_per_video": [
+        21,
+        41.4,
+        81
+      ],
+      "video_field_is_filename": true
+    }
+  },
+  "probes": [
+    {
+      "split": "train",
+      "video_id": "WTf5EgVY5uU_98_104",
+      "codec": "h264",
+      "fps": 29.917,
+      "width": 320,
+      "height": 240,
+      "frames_meta": 180,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 180,
+      "duration_s": 6.02
+    },
+    {
+      "split": "train",
+      "video_id": "WeOU0Iba1Xg_1_30",
+      "codec": "h264",
+      "fps": 20.0,
+      "width": 320,
+      "height": 240,
+      "frames_meta": 581,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 581,
+      "duration_s": 29.05
+    },
+    {
+      "split": "train",
+      "video_id": "0wutCy2ZGOQ_4_10",
+      "codec": "h264",
+      "fps": 29.97,
+      "width": 640,
+      "height": 480,
+      "frames_meta": 180,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 180,
+      "duration_s": 6.01
+    },
+    {
+      "split": "val",
+      "video_id": "btuxO-C2IzE_64_72",
+      "codec": "h264",
+      "fps": 30.0,
+      "width": 320,
+      "height": 240,
+      "frames_meta": 241,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 241,
+      "duration_s": 8.03
+    },
+    {
+      "split": "val",
+      "video_id": "dabI5gfaFm4_19_25",
+      "codec": "h264",
+      "fps": 29.962,
+      "width": 480,
+      "height": 320,
+      "frames_meta": 180,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 180,
+      "duration_s": 6.01
+    },
+    {
+      "split": "val",
+      "video_id": "dJCtOz32dnw_40_60",
+      "codec": "h264",
+      "fps": 25.0,
+      "width": 480,
+      "height": 360,
+      "frames_meta": 501,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 501,
+      "duration_s": 20.04
+    },
+    {
+      "split": "test",
+      "video_id": "fr9H1WLcF1A_256_261",
+      "codec": "h264",
+      "fps": 29.97,
+      "width": 640,
+      "height": 480,
+      "frames_meta": 150,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 150,
+      "duration_s": 5.01
+    },
+    {
+      "split": "test",
+      "video_id": "wFPmKChNrhU_3_11",
+      "codec": "h264",
+      "fps": 29.97,
+      "width": 640,
+      "height": 480,
+      "frames_meta": 240,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 240,
+      "duration_s": 8.01
+    },
+    {
+      "split": "test",
+      "video_id": "o4OsYxsNGMI_77_82",
+      "codec": "h264",
+      "fps": 25.0,
+      "width": 480,
+      "height": 360,
+      "frames_meta": 126,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 126,
+      "duration_s": 5.04
+    },
+    {
+      "split": "ext",
+      "video_id": "video200",
+      "codec": "h264",
+      "fps": 3.0,
+      "width": 298,
+      "height": 224,
+      "frames_meta": 38,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 38,
+      "duration_s": 12.67
+    },
+    {
+      "split": "ext",
+      "video_id": "video206",
+      "codec": "h264",
+      "fps": 3.0,
+      "width": 298,
+      "height": 224,
+      "frames_meta": 35,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 35,
+      "duration_s": 11.67
+    },
+    {
+      "split": "ext",
+      "video_id": "video213",
+      "codec": "h264",
+      "fps": 3.0,
+      "width": 298,
+      "height": 224,
+      "frames_meta": 80,
+      "backend": "FFMPEG",
+      "ok": true,
+      "frames_decoded": 80,
+      "duration_s": 26.67
+    }
+  ],
+  "ext": {
+    "label": "MSR-VTT fresh1k-C: 1000 video train-9k (ngoài 1k-A, dev, fresh1k, fresh1k-B; seed 20261031) — CHƯA dùng ở v1–v4 và Level 4(b) v1",
+    "set": "fresh1kC",
+    "dev": false,
+    "videos": 1000,
+    "captions": 20000,
+    "captions_per_video": [
+      20,
+      20.0,
+      20
+    ],
+    "std_captions_added": 0,
+    "missing_files": 0,
+    "missing_examples": [],
+    "n_test_1kA_ids": 1000,
+    "overlap_with_test_1kA": 0,
+    "overlap_with_dev": 0,
+    "overlap_with_fresh1k": 0,
+    "overlap_with_fresh1kB": 0,
+    "zip_members": 10000,
+    "status": "OK"
+  }
+}
