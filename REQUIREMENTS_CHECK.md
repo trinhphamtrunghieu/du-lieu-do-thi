@@ -69,7 +69,7 @@ Phần A = `du-lieu-do-thi` (Flickr8k + Action Genome); phần B = pipeline ản
 | Test không dùng để huấn luyện / chọn tham số / xây cạnh thống kê | Đạt | Cạnh mức lớp và IDF chỉ tính trên train; nhánh khớp học trên train; α, λ, β… chọn trên val |
 | Cạnh thống kê xây từ tập huấn luyện | Đạt | `MultimodalGraph` (phần A) chỉ đếm trên train; phần B lọc rò rỉ benchmark |
 | α và mọi siêu tham số chọn trên validation | Đạt | `match_log.csv`, `final_model_val_selection.csv`; phần B chọn α trên TUNE |
-| Cùng một tệp chia; nộp split hoặc seed + mã tạo split | Đạt (phần A cần thêm file) | Phần A: mã `make_split` / `ag_make_split` trong notebook, split cố định theo seed; file `split.json` có trong output Kaggle nhưng chưa lưu vào repo. Phần B: `results/partB_image_video/splits/`. Phần C: `split_manifest.json` |
+| Cùng một tệp chia; nộp split hoặc seed + mã tạo split | Đạt | Danh mục: `splits/README.md`. Phần A: `splits/partA_flickr8k_split.json`, `splits/partA_action_genome_split.json` (bản gốc từ output Kaggle) + mã tạo lại `splits/make_splits.py`, có kiểm tra sha1. Phần B: `results/partB_image_video/splits/`. Phần C: `split_manifest.json`. MMKG: `results/mmkg/splits.json` |
 | ≥ 3 seed, báo cáo trung bình ± độ lệch chuẩn | Đạt | Mọi thí nghiệm chính: seed 0, 1, 2 |
 
 ## Đánh giá (mục 7)
