@@ -29,6 +29,7 @@ notebooks/
 demo/                      notebook + giao diện demo, đóng gói HF Spaces / GitHub Pages
 mmkg/                      dữ liệu MMKG: kg_data.py, images/, images.csv, DATA_CARD.md, notebook, mã thu thập ảnh
 results/                   toàn bộ output thật từ Kaggle (xem results/README.md)
+splits/                    split cố định của phần A + mã tạo lại; danh mục split của mọi phần (xem splits/README.md)
 ```
 
 ## Chạy lại
